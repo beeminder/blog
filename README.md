@@ -1,1 +1,1 @@
-# blog
+The [actual blog](https://blog.beeminder.com ) isn't in GitHub currently (it's hosted by WP Engine) but I intend to make gissues for blog post ideas starting now. I'm not sure if I'll backfill previous blog posts.
