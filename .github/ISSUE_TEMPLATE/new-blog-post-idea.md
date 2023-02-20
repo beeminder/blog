@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-## Desiderata
-
+```[tasklist]
+### Desiderata
 - [ ] Preview link
 - [ ] Keywords/tags
 - [ ] Image
@@ -16,3 +16,4 @@ assignees: ''
 - [ ] Blog blurbs
 - [ ] Tweet
 - [ ] Tip of the day
+```
