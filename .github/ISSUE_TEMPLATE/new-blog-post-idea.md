@@ -12,7 +12,8 @@ assignees: ''
 - [ ] Have someone read a coherent draft
 - [ ] Preview link
 - [ ] Keywords/tags
-- [ ] Image
+- [ ] Title Image
+- [ ] Link preview excerpt
 - [ ] Publish
 - [ ] Blog blurbs
 - [ ] Tweet
