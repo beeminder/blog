@@ -1,5 +1,6 @@
 // This webservice is documented at expost.padm.us
 
+// TODO: remove these stubs when we have real implementations
 const SmartyPants = (c: string) => c;
 const Markdown = (c: string) => c;
 
