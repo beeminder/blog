@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: beemblog
+    env: static
+    buildCommand: pnpm run build
+    staticPublishPath: ./dist
+    pullRequestPreviewsEnabled: true
