@@ -1,0 +1,32 @@
+---
+import { marked } from "marked";
+import parseTitle from "../helpers/parseTitle";
+import trimContent from "../helpers/trimContent";
+
+export async function getStaticPaths() {
+  const url = "http://padm.us/beemblog-akrasia/export/txt";
+  const response = await fetch(url);
+  const markdown = await response.text();
+  const trimmed = trimContent(markdown);
+  return [
+    {
+      params: {
+        slug: "akrasia",
+      },
+      props: {
+        title: parseTitle(markdown),
+        content: marked.parse(trimmed),
+      },
+    },
+  ];
+}
+
+const { slug } = Astro.params;
+const { content, title } = Astro.props;
+---
+
+<div>
+  <h1>{title}</h1>
+  <a href=`/${slug}`>Permalink</a>
+  <div set:html={content} />
+</div>
