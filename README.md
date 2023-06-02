@@ -11,9 +11,14 @@ aka
 ## Development
 
 ```bash
+nvm use
 pnpm install
 pnpm run dev
 ```
+
+## Production
+
+Commits merged to `master` are automatically deployed via <render.com>.
 
 ## Astro Starter Kit: Basics
 
