@@ -1,9 +1,8 @@
 name: CI
 on:
   push:
-strategy:
-  matrix:
-    node-version: ["18"]
+env:
+  NODE_VERSION: "18"
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -12,10 +11,10 @@ jobs:
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - name: Install
         run: pnpm install
@@ -28,10 +27,10 @@ jobs:
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - name: Install
         run: pnpm install
