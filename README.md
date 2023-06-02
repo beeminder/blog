@@ -14,6 +14,7 @@ aka
 nvm use
 pnpm install
 pnpm run dev
+pnpm run test
 ```
 
 ## Production
