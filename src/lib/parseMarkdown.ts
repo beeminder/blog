@@ -3,6 +3,7 @@ import parseTitle from "./parseTitle";
 import trimContent from "./trimContent";
 import { markedSmartypants } from "marked-smartypants";
 import hooks from "./markedHooks";
+import addBlankLines from "./addBlankLines";
 
 marked.use(markedSmartypants());
 marked.use({ hooks });
@@ -10,14 +11,14 @@ marked.use({ hooks });
 const MARKED_OPTIONS = {
   mangle: false,
   headerIds: false,
-  pedantic: true,
 } as const;
 
 export default function parseMarkdown(markdown: string): {
   title: string;
   content: string;
 } {
-  const trimmed = trimContent(markdown);
+  const blanked = addBlankLines(markdown);
+  const trimmed = trimContent(blanked);
 
   return {
     title: parseTitle(markdown),

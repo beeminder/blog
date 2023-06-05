@@ -1,6 +1,5 @@
 http://padm.us/beemblog-akrasia
 http://padm.us/beemblog-easyhard
-http://padm.us/beemblog-change
 http://padm.us/beemblog-preeat
 http://padm.us/foodrules
 http://padm.us/lildeb
@@ -74,7 +73,6 @@ http://padm.us/sociallyefficient
 http://padm.us/beebox
 http://padm.us/exponential
 http://padm.us/beemium
-http://padm.us/expostdebug
 http://padm.us/legit
 http://padm.us/wsj
 http://padm.us/duo
