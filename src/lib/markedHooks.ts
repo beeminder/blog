@@ -6,9 +6,15 @@ export default {
 
     const elements = Array.from(
       dom.window.document.querySelectorAll(
-        "*:not(script):not(noscript):not(style) > :only-child"
+        "*:not(script):not(noscript):not(style)"
       )
-    ).filter((e) => e.textContent?.length && /\{.*?\}/.test(e.textContent));
+    ).filter((e) => {
+      return (
+        e.textContent?.length &&
+        e.children.length === 0 &&
+        /\{.*?\}/.test(e.textContent)
+      );
+    });
 
     elements.forEach((el) => {
       if (!el.textContent) return;

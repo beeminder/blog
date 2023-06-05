@@ -28,4 +28,23 @@ paragraph
 
     expect(content).toContain('<h1 id="id">heading</h1>');
   });
+
+  it("handles id properly", () => {
+    const { content } = parseMarkdown(
+      "## More Real-World Commitment Devices  {#AUG}"
+    );
+
+    expect(content).toContain('id="AUG"');
+  });
+
+  it("handles multiple IDs", () => {
+    const { content } = parseMarkdown(`
+## What Commitment Devices Have You Used on Yourself? {#POL}
+
+## More Real-World Commitment Devices  {#AUG}
+`);
+
+    expect(content).toContain('id="POL"');
+    expect(content).toContain('id="AUG"');
+  });
 });
