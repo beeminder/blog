@@ -47,4 +47,14 @@ paragraph
     expect(content).toContain('id="POL"');
     expect(content).toContain('id="AUG"');
   });
+
+  it("supports link nonsense", () => {
+    const { content } = parseMarkdown(`
+[paying is not punishment](
+  https://blog.beeminder.com/depunish
+  "Our paying-is-not-punishment post is also a prequel to our announcement of No-Excuses Mode"
+) because
+`);
+    expect(content).toContain('href="https://blog.beeminder.com/depunish"');
+  });
 });

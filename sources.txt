@@ -1,6 +1,5 @@
 http://<etherpad-host>/beemblog-akrasia
 http://<etherpad-host>/beemblog-easyhard
-http://<etherpad-host>/beemblog-change
 http://<etherpad-host>/beemblog-preeat
 http://<etherpad-host>/foodrules
 http://<etherpad-host>/lildeb
@@ -74,7 +73,6 @@ http://<etherpad-host>/sociallyefficient
 http://<etherpad-host>/beebox
 http://<etherpad-host>/exponential
 http://<etherpad-host>/beemium
-http://<etherpad-host>/expostdebug
 http://<etherpad-host>/legit
 http://<etherpad-host>/wsj
 http://<etherpad-host>/duo
