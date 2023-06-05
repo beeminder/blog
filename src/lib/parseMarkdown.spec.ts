@@ -22,4 +22,10 @@ paragraph
 
     expect(content).toContain("<p>");
   });
+
+  it("allows for PHP Markdown Extra-style IDs", () => {
+    const { content } = parseMarkdown("# heading {#id}");
+
+    expect(content).toContain('<h1 id="id">heading</h1>');
+  });
 });
