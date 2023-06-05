@@ -17,4 +17,12 @@ describe("addBlankLines", () => {
 
     expect(result).toEqual("<div>hello</div>\n\nparagraph");
   });
+
+  it("does not add blank lines after inline elements", () => {
+    const markdown = "<div><span>hello</span></div>\nparagraph";
+
+    const result = addBlankLines(markdown);
+
+    expect(result).toEqual("<div><span>hello</span></div>\n\nparagraph");
+  });
 });

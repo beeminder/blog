@@ -15,8 +15,7 @@
     "jsdom": "^22.1.0",
     "marked": "^5.0.4",
     "marked-smartypants": "^1.0.2",
-    "vite-plugin-csv": "^1.0.0",
-    "vite-plugin-txt": "^1.0.2"
+    "vite-plugin-csv": "^1.0.0"
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.1",
