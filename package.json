@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "astro": "^2.5.6",
-    "marked": "^5.0.4"
+    "marked": "^5.0.4",
+    "marked-smartypants": "^1.0.2"
   },
   "devDependencies": {
     "@types/marked": "^5.0.0",
