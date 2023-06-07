@@ -63,4 +63,10 @@ paragraph
 
     expect(content).toContain('<a id="foo1" href="#foo">1</a>');
   });
+
+  it("expands refs", () => {
+    const { content } = parseMarkdown("$REF[foo] $REF[foo]");
+
+    expect(content).toContain("2");
+  });
 });

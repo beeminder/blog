@@ -5,6 +5,7 @@ import { markedSmartypants } from "marked-smartypants";
 import hooks from "./markedHooks";
 import addBlankLines from "./addBlankLines";
 import linkFootnotes from "./linkFootnotes";
+import expandRefs from "./expandRefs";
 
 marked.use(markedSmartypants());
 marked.use({ hooks });
@@ -21,9 +22,10 @@ export default function parseMarkdown(markdown: string): {
   const blanked = addBlankLines(markdown);
   const trimmed = trimContent(blanked);
   const linked = linkFootnotes(trimmed);
+  const expanded = expandRefs(linked);
 
   return {
     title: parseTitle(markdown),
-    content: marked.parse(linked, MARKED_OPTIONS),
+    content: marked.parse(expanded, MARKED_OPTIONS),
   };
 }
