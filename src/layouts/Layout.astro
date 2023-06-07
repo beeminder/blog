@@ -32,7 +32,7 @@ const { title, redirect } = Astro.props;
     </ul>
     <div class="content">
       <div><slot /></div>
-      <Sidebar />
+      <div><Sidebar /></div>
     </div>
   </body>
 </html>
@@ -50,6 +50,7 @@ const { title, redirect } = Astro.props;
   }
   .content > *:last-child {
     flex: 0 0 300px;
+    padding-left: 1em;
   }
 </style>
 
@@ -70,5 +71,12 @@ const { title, redirect } = Astro.props;
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+  .pullquote {
+    float: right;
+    width: 300px;
+    border: 1px solid gray;
+    padding: 1em;
+    margin-left: 1em;
   }
 </style>
