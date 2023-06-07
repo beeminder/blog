@@ -26,6 +26,10 @@ const { title, redirect } = Astro.props;
     <h2>
       <a href="/">Beeminder Blog</a>
     </h2>
+    <ul class="nav">
+      <li><a href="https://beeminder.com">Beeminder Home</a></li>
+      <li><a href="/">Blog Home</a></li>
+    </ul>
     <div class="content">
       <div><slot /></div>
       <Sidebar />
@@ -34,6 +38,10 @@ const { title, redirect } = Astro.props;
 </html>
 
 <style>
+  .nav li {
+    display: inline-block;
+    margin-right: 1em;
+  }
   .content {
     display: flex;
   }
