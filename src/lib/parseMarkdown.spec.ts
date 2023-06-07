@@ -65,7 +65,7 @@ paragraph
   });
 
   it("expands refs", () => {
-    const { content } = parseMarkdown("$REF[foo] $REF[foo]");
+    const { content } = parseMarkdown("$REF[foo] $REF[bar]");
 
     expect(content).toContain("2");
   });
