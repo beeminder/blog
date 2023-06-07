@@ -57,4 +57,10 @@ paragraph
 `);
     expect(content).toContain('href="https://blog.beeminder.com/depunish"');
   });
+
+  it("links footnotes", () => {
+    const { content } = parseMarkdown("$FN[foo] $FN[foo]");
+
+    expect(content).toContain('<a id="foo1" href="#foo">1</a>');
+  });
 });

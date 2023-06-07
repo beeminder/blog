@@ -4,6 +4,7 @@ import trimContent from "./trimContent";
 import { markedSmartypants } from "marked-smartypants";
 import hooks from "./markedHooks";
 import addBlankLines from "./addBlankLines";
+import linkFootnotes from "./linkFootnotes";
 
 marked.use(markedSmartypants());
 marked.use({ hooks });
@@ -19,9 +20,10 @@ export default function parseMarkdown(markdown: string): {
 } {
   const blanked = addBlankLines(markdown);
   const trimmed = trimContent(blanked);
+  const linked = linkFootnotes(trimmed);
 
   return {
     title: parseTitle(markdown),
-    content: marked.parse(trimmed, MARKED_OPTIONS),
+    content: marked.parse(linked, MARKED_OPTIONS),
   };
 }
