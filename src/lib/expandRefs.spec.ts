@@ -15,20 +15,39 @@ describe("expandRefs", () => {
   });
 
   it("increments refs", () => {
-    const result = expandRefs("$REF[foo]\n\n$REF[foo]");
-
-    expect(result).toContain("2");
-  });
-
-  it("isolates ref counting", () => {
-    const result = expandRefs("$REF[foo]\n\n$REF[bar]");
+    const result = expandRefs("$REF[foo] $REF[foo]");
 
     expect(result).not.toContain("2");
   });
 
-  it("handls short syntax", () => {
-    const result = expandRefs("$REF[foo] $foo");
+  it("isolates ref counting", () => {
+    const result = expandRefs("$REF[foo] $REF[bar]");
 
     expect(result).toContain("2");
+  });
+
+  it("handls short syntax", () => {
+    const result = expandRefs("$REF[foo] $REF[bar]");
+
+    expect(result).toContain("2");
+  });
+
+  it("handles multiple refs", () => {
+    const result = expandRefs("$REF[foo] $REF[bar] $foo");
+
+    expect(result).toEqual("1 2 1");
+  });
+
+  it("retains integer after multiple refs", () => {
+    const markdown = `
+$REF[fd]
+$REF[pr]
+$REF[fr]
+$REF[en] #$fr
+        `;
+
+    const result = expandRefs(markdown);
+
+    expect(result).toContain("#3");
   });
 });
