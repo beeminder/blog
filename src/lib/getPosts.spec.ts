@@ -1,6 +1,7 @@
 import getPosts, { __reset } from "./getPosts";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { readFileSync } from "fs";
+import fetchPost from "./fetchPost";
 
 vi.mock("../../wp-export.csv", () => ({
   __esModule: true,
@@ -48,6 +49,6 @@ describe("getPosts", () => {
 
     await getPosts();
 
-    expect(fetch).toBeCalled();
+    expect(fetchPost).toBeCalledWith("https://padm.us/psychpricing");
   });
 });

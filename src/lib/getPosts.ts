@@ -1,6 +1,7 @@
 import meta from "../../wp-export.csv";
 import fs from "fs";
 import parseMarkdown from "./parseMarkdown";
+import fetchPost from "./fetchPost";
 
 function formatUrl(url: string) {
   const hasSchema = url.startsWith("http");
@@ -15,7 +16,6 @@ function formatUrl(url: string) {
 
 type Post = {
   url: string;
-  exportUrl: string;
   wp: (typeof meta)[0] | undefined;
   title: string;
   content: string;
@@ -34,20 +34,18 @@ async function _getPosts(): Promise<Post[]> {
   const urls = sources.split("\n").filter(Boolean);
   const posts = urls.map((url) => ({
     url: formatUrl(url),
-    exportUrl: `${formatUrl(url)}/export/txt`,
     wp: meta.find((p) => p.expost_source_url === url),
   }));
   const values: Post[] = [];
 
   for (const p of posts) {
-    console.log("start", p.exportUrl);
+    console.log("start", p.url);
 
-    const response = await fetch(p.exportUrl);
-    const markdown = await response.text();
+    const markdown = await fetchPost(p.url);
     const slug = p.wp?.Slug;
 
     if (typeof slug !== "string") {
-      throw new Error(`No slug for ${p.exportUrl}`);
+      throw new Error(`No slug for ${p.url}`);
     }
 
     values.push({
@@ -56,7 +54,7 @@ async function _getPosts(): Promise<Post[]> {
       slug,
     });
 
-    console.log("end", p.exportUrl);
+    console.log("end", p.url);
   }
 
   return values;
