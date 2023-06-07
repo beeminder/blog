@@ -14,13 +14,13 @@ describe("expandRefs", () => {
     expect(result).not.toContain("href");
   });
 
-  it("increments refs", () => {
+  it("retains ref index", () => {
     const result = expandRefs("$REF[foo] $REF[foo]");
 
     expect(result).not.toContain("2");
   });
 
-  it("isolates ref counting", () => {
+  it("increments index over multiple refs", () => {
     const result = expandRefs("$REF[foo] $REF[bar]");
 
     expect(result).toContain("2");
