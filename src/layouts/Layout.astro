@@ -37,6 +37,9 @@ const { title, redirect } = Astro.props;
   .content {
     display: flex;
   }
+  .content > *:last-child {
+    flex: 0 0 300px;
+  }
 </style>
 
 <style is:global>
