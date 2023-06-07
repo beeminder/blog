@@ -15,6 +15,8 @@ export async function getStaticPaths() {
     props: {
       content: p.content,
       title: p.title,
+      date: p.wp?.Date,
+      author: p.wp?.["Author Username"],
     },
   }));
 }
@@ -23,11 +25,13 @@ type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { post } = Astro.params as Params;
-const { content, title } = Astro.props as Props;
+const { content, title, date, author } = Astro.props as Props;
 ---
 
 <Layout title={title}>
   <h1>{title}</h1>
+  <p>{date}</p>
+  <p>By {author}</p>
   <a href=`/${post}`>Permalink</a>
   <div set:html={content} />
 </Layout>

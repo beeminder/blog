@@ -1,4 +1,6 @@
 ---
+import Sidebar from "../components/Sidebar.astro";
+
 export interface Props {
   title: string;
   redirect?: string;
@@ -16,14 +18,27 @@ const { title, redirect } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
 
-    <title>{title}</title>
+    <title>{title} | Beeminder Blog</title>
 
     {redirect && <meta http-equiv="refresh" content={`0; url=${redirect}`} />}
   </head>
   <body>
-    <slot />
+    <h2>
+      <a href="/">Beeminder Blog</a>
+    </h2>
+    <div class="content">
+      <div><slot /></div>
+      <Sidebar />
+    </div>
   </body>
 </html>
+
+<style>
+  .content {
+    display: flex;
+  }
+</style>
+
 <style is:global>
   :root {
     --accent: 124, 58, 237;
