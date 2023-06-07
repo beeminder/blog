@@ -1,6 +1,8 @@
 ---
 import Sidebar from "../components/Sidebar.astro";
 
+const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
+
 export interface Props {
   title: string;
   redirect?: string;
@@ -33,6 +35,13 @@ const { title, redirect } = Astro.props;
     <div class="content">
       <div><slot /></div>
       <div><Sidebar /></div>
+    </div>
+    <div class="footer">
+      {
+        sha && (
+          <a href={`https://github.com/beeminder/blog/commit/${sha}`}>${sha}</a>
+        )
+      }
     </div>
   </body>
 </html>
