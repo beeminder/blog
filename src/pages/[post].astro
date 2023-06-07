@@ -6,8 +6,6 @@ import getPosts from "../lib/getPosts";
 export async function getStaticPaths() {
   const posts = await getPosts();
 
-  console.log(posts.map((p) => p.slug));
-
   return posts.map((p) => ({
     params: {
       post: p.slug,
