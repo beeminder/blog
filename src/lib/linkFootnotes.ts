@@ -1,3 +1,5 @@
+// http://expost.padm.us/
+
 function findIdentifiers(markdown: string): string[] {
   const fns = markdown.matchAll(/\$FN\[(.*?)\]/g);
   const ids: string[] = Array.from(fns)
