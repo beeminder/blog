@@ -1,3 +1,17 @@
+---
+import getArchives from "../lib/getArchives";
+import getTags from "../lib/getTags";
+
+const rawTags = await getTags();
+const tags = Object.values(rawTags);
+
+tags.sort((a, b) => {
+  return b.count - a.count;
+});
+
+const archives = await getArchives();
+---
+
 <div>
   <div>
     <h3>About</h3>
@@ -21,6 +35,24 @@
   </div>
   <div>
     <h3>Archives</h3>
+    <ul>
+      {
+        Object.values(archives).map((y) => (
+          <li>
+            {y.label} ({y.post_count})
+            <ul>
+              {Object.values(y.months).map((m) => (
+                <li>
+                  <a href={`/${y.label}/${m.label}`}>
+                    {m.label} ({m.post_count})
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))
+      }
+    </ul>
   </div>
   <div>
     <h3>Eating Our Own Dog Food</h3>
@@ -47,7 +79,21 @@
       "science" tags, if you're into that.
     </p>
   </div>
-  <div><h3>Tags</h3></div>
+  <div>
+    <h3>Tags</h3>
+    <ul>
+      {
+        tags.slice(0, 20).map((t) => (
+          <li>
+            <a href={`/tags/${t.name}`}>
+              {t.name} ({t.count})
+            </a>
+          </li>
+        ))
+      }
+      <li><a href="/tags">...and {tags.length - 20} more tags</a></li>
+    </ul>
+  </div>
   <div>
     <h3>Beeminder Community</h3>
     <p>

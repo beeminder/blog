@@ -1,9 +1,23 @@
 import { beforeEach, vi } from "vitest";
 import fetch from "node-fetch-cache";
 import fetchPost from "./src/lib/fetchPost";
+import getLegacyData from "./src/lib/getLegacyData";
 
 vi.mock("./src/lib/fetchPost");
+vi.mock("./src/lib/getLegacyData");
 vi.mock("node-fetch-cache");
+
+vi.mock("fs", () => {
+  const readFileSync = vi.fn(() => "");
+
+  return {
+    __esModule: true,
+    readFileSync,
+    default: {
+      readFileSync,
+    },
+  };
+});
 
 beforeEach(() => {
   global.fetch = vi.fn(() =>
@@ -15,4 +29,5 @@ beforeEach(() => {
   );
 
   vi.mocked(fetchPost).mockResolvedValue("");
+  vi.mocked(getLegacyData).mockResolvedValue([]);
 });

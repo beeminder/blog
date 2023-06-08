@@ -1,0 +1,62 @@
+import { readFileSync } from "fs";
+import { describe, it, expect, beforeEach, vi } from "vitest";
+import getArchives from "./getArchives";
+import getLegacyData from "./getLegacyData";
+import { __reset } from "./getPosts";
+
+describe("getArchives", () => {
+  beforeEach(() => {
+    __reset();
+    vi.mocked(readFileSync).mockReturnValue("https://<etherpad-host>/psychpricing");
+
+    vi.mocked(getLegacyData).mockResolvedValue([
+      {
+        Date: "2011-01-24",
+        Slug: "psychpricing",
+        expost_source_url: "https://<etherpad-host>/psychpricing",
+      },
+    ]);
+  });
+
+  it("gets archives", async () => {
+    const result = await getArchives();
+
+    expect(result[2011]).toBeDefined();
+  });
+
+  it("batches by month", async () => {
+    const result = await getArchives();
+
+    expect(result[2011]?.months[0]?.posts).toHaveLength(1);
+  });
+
+  it("sets month label", async () => {
+    const result = await getArchives();
+
+    expect(result[2011]?.months[0]?.label).toEqual("January");
+  });
+
+  it("properly batches by year", async () => {
+    vi.mocked(getLegacyData).mockResolvedValue([
+      {
+        Date: "2013-02-22",
+        Slug: "psychpricing",
+        expost_source_url: "https://<etherpad-host>/psychpricing",
+      },
+      {
+        Date: "2015-02-22",
+        Slug: "psychpricing",
+        expost_source_url: "https://<etherpad-host>/second",
+      },
+    ]);
+
+    vi.mocked(readFileSync).mockReturnValue(`
+https://<etherpad-host>/psychpricing
+https://<etherpad-host>/second
+`);
+
+    const result = await getArchives();
+
+    expect(result[2013]?.months[1]?.posts).toHaveLength(1);
+  });
+});

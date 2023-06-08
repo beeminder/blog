@@ -1,0 +1,25 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import getTags from "../../lib/getTags";
+
+const rawTags = await getTags();
+const tags = Object.values(rawTags);
+
+tags.sort((a, b) => {
+  return b.count - a.count;
+});
+---
+
+<Layout title="Tags">
+  <ul>
+    {
+      tags.map((t) => (
+        <li>
+          <a href={`/tags/${t.name}`}>
+            {t.name} ({t.count})
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
