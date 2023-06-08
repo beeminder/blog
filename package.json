@@ -2,6 +2,11 @@
   "name": "beemblog",
   "type": "module",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=18.16.0",
+    "pnpm": ">=8.2.0"
+  },
+  "packageManager": "pnpm@8.2.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
