@@ -28,8 +28,7 @@ const { title, redirect } = Astro.props;
       type="text/javascript"
       id="MathJax-script"
       async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
-    ></script>
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   </head>
   <body>
     <h2>
@@ -63,6 +62,9 @@ const { title, redirect } = Astro.props;
   }
   .content {
     display: flex;
+  }
+  .content > *:first-child {
+    flex-grow: 1;
   }
   .content > *:last-child {
     flex: 0 0 300px;

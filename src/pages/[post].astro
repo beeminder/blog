@@ -1,21 +1,15 @@
 ---
 import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
 import Layout from "../layouts/Layout.astro";
-import getPosts from "../lib/getPosts";
+import getPosts, { Post } from "../lib/getPosts";
 
 export async function getStaticPaths() {
   const posts = await getPosts();
-
   return posts.map((p) => ({
     params: {
       post: p.slug,
     },
-    props: {
-      content: p.content,
-      title: p.title,
-      date: p.wp?.Date,
-      author: p.wp?.["Author Username"],
-    },
+    props: p,
   }));
 }
 
@@ -23,7 +17,15 @@ type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { post } = Astro.params as Params;
-const { content, title, date, author } = Astro.props as Props;
+const { content, title, date, author, tags } = Astro.props as Props;
+
+const posts = await getPosts();
+const post1 = posts[Math.floor(Math.random() * posts.length)];
+const post2 = posts[Math.floor(Math.random() * posts.length)];
+const post3 = posts[Math.floor(Math.random() * posts.length)];
+const recommendedPosts: Post[] = [post1, post2, post3].filter(
+  (p): p is Post => !!p
+);
 ---
 
 <Layout title={title}>
@@ -32,4 +34,25 @@ const { content, title, date, author } = Astro.props as Props;
   <p>By {author}</p>
   <a href=`/${post}`>Permalink</a>
   <div set:html={content} />
+  <h2>Tags</h2>
+  <ul class="tags">
+    {
+      tags.map((t) => (
+        <li>
+          <a href={`/tags/${t}`}>{t}</a>
+        </li>
+      ))
+    }
+  </ul>
+  <h2>Recommended Posts</h2>
+  <ul>
+    {
+      recommendedPosts.map((p) => (
+        <li>
+          <a href={`/${p.slug}`}>{p.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+  <h2>Comments</h2>
 </Layout>
