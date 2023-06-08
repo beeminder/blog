@@ -1,9 +1,4 @@
-type Redirect = {
-  from: string;
-  to: string;
-};
-
-export default function makeRedirects(slugs: string[]): Redirect[] {
+export default function makeRedirects(slugs: string[]): Record<string, string> {
   const redirects = slugs
     .sort((a, b) => a.length - b.length)
     .map((s) =>
@@ -14,9 +9,8 @@ export default function makeRedirects(slugs: string[]): Redirect[] {
     )
     .flat();
 
-  return redirects.reduce((acc: Redirect[], r) => {
-    const matches = acc.filter((a) => a.from === r.from);
-    if (matches.length) return acc;
-    return [...acc, r];
-  }, []);
+  return redirects.reduce((acc: Record<string, string>, r) => {
+    if (acc[r.from]) return acc;
+    return { ...acc, [r.from]: r.to };
+  }, {});
 }
