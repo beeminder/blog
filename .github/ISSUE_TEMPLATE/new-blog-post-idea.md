@@ -9,13 +9,14 @@ assignees: ''
 
 ```[tasklist]
 ### Desiderata
-- [ ] Have someone read a coherent draft
-- [ ] Preview link
+- [ ] Have someone read a draft
+- [ ] Secretpreview link
 - [ ] Keywords/tags
-- [ ] Title Image
+- [ ] Title image
 - [ ] Link preview excerpt
 - [ ] Publish
 - [ ] Blog blurbs
+- [ ] Waggledance
 - [ ] Tweet
 - [ ] Tip of the day
 ```
