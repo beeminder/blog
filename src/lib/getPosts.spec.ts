@@ -70,4 +70,28 @@ describe("getPosts", () => {
 
     expect(fetchPost).toBeCalledWith(expect.stringContaining("padm.us"));
   });
+
+  it("sorts post by date descending", async () => {
+    vi.mocked(readFileSync).mockReturnValue(`
+https://dtherpad.com/old
+https://dtherpad.com/new
+`);
+
+    vi.mocked(getLegacyData).mockResolvedValue([
+      {
+        expost_source_url: "https://dtherpad.com/old",
+        Slug: "old",
+        Date: "2020-01-01",
+      },
+      {
+        expost_source_url: "https://dtherpad.com/new",
+        Slug: "new",
+        Date: "2020-01-02",
+      },
+    ]);
+
+    const result = await getPosts();
+
+    expect(result[0]?.url).toContain("new");
+  });
 });

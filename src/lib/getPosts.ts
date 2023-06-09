@@ -23,6 +23,8 @@ async function makePosts(): Promise<Post[]> {
   }
   console.timeEnd("Gathering posts");
 
+  values.sort((a, b) => b.date.getTime() - a.date.getTime());
+
   return values;
 }
 
