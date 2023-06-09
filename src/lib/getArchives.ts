@@ -1,4 +1,5 @@
-import getPosts, { Post } from "./getPosts";
+import getPosts from "./getPosts";
+import type { Post } from "./makePost";
 
 type Month = {
   label: string;
@@ -61,7 +62,7 @@ function makeYear(yyyy: number, posts: Post[]): Year {
   };
 }
 
-export default async function getArchives(): Promise<Archives> {
+async function makeArchives() {
   const posts = await getPosts();
   const yearKeys = posts.map((p) => p.date.getFullYear());
   return yearKeys.reduce(
@@ -71,4 +72,15 @@ export default async function getArchives(): Promise<Archives> {
     }),
     {}
   );
+}
+
+let archives: Archives | undefined;
+
+export default async function getArchives(): Promise<Archives> {
+  if (!archives) archives = await makeArchives();
+  return archives;
+}
+
+export function __resetArchives() {
+  archives = undefined;
 }
