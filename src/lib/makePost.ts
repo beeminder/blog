@@ -1,5 +1,6 @@
 import parseMarkdown from "./parseMarkdown";
 import fetchPost from "./fetchPost";
+import getLegacyData from "./getLegacyData";
 
 export type Post = {
   url: string;
@@ -22,11 +23,8 @@ function formatUrl(url: string) {
   return hasSchema ? url : `https://${url}`;
 }
 
-export default async function makePost(
-  url: string,
-  meta: Record<string, unknown>[]
-): Promise<Post> {
-  const wp = meta.find((p) => p.expost_source_url === url);
+export default async function makePost(url: string): Promise<Post> {
+  const wp = await getLegacyData(url);
   const formattedUrl = formatUrl(url);
   const markdown = await fetchPost(formattedUrl);
   const slug = wp?.Slug;

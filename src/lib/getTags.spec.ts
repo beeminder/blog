@@ -7,13 +7,11 @@ import { __reset } from "./getPosts";
 describe("getTags", () => {
   beforeEach(() => {
     vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
-    vi.mocked(getLegacyData).mockResolvedValue([
-      {
-        expost_source_url: "https://padm.us/psychpricing",
-        Slug: "psychpricing",
-        Tags: "the_tag",
-      },
-    ]);
+    vi.mocked(getLegacyData).mockResolvedValue({
+      expost_source_url: "https://padm.us/psychpricing",
+      Slug: "psychpricing",
+      Tags: "the_tag",
+    });
   });
 
   it("returns tags", async () => {
@@ -43,13 +41,11 @@ describe("getTags", () => {
   it("does not include blank tags", async () => {
     __reset();
 
-    vi.mocked(getLegacyData).mockResolvedValue([
-      {
-        expost_source_url: "https://padm.us/psychpricing",
-        Slug: "psychpricing",
-        Tags: "",
-      },
-    ]);
+    vi.mocked(getLegacyData).mockResolvedValue({
+      expost_source_url: "https://padm.us/psychpricing",
+      Slug: "psychpricing",
+      Tags: "",
+    });
 
     const result = await getTags();
 

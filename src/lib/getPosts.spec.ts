@@ -8,12 +8,10 @@ describe("getPosts", () => {
   beforeEach(() => {
     __reset();
     vi.mocked(readFileSync).mockReturnValue("");
-    vi.mocked(getLegacyData).mockResolvedValue([
-      {
-        expost_source_url: "https://padm.us/psychpricing",
-        Slug: "psychpricing",
-      },
-    ]);
+    vi.mocked(getLegacyData).mockResolvedValue({
+      expost_source_url: "https://padm.us/psychpricing",
+      Slug: "psychpricing",
+    });
   });
 
   it("filters out blank lines", async () => {
@@ -42,12 +40,10 @@ describe("getPosts", () => {
       "https://dtherpad.com/psychpricing"
     );
 
-    vi.mocked(getLegacyData).mockResolvedValue([
-      {
-        expost_source_url: "https://dtherpad.com/psychpricing",
-        Slug: "psychpricing",
-      },
-    ]);
+    vi.mocked(getLegacyData).mockResolvedValue({
+      expost_source_url: "https://dtherpad.com/psychpricing",
+      Slug: "psychpricing",
+    });
 
     const result = await getPosts();
 
@@ -59,12 +55,10 @@ describe("getPosts", () => {
       "https://dtherpad.com/psychpricing"
     );
 
-    vi.mocked(getLegacyData).mockResolvedValue([
-      {
-        expost_source_url: "https://dtherpad.com/psychpricing",
-        Slug: "psychpricing",
-      },
-    ]);
+    vi.mocked(getLegacyData).mockResolvedValue({
+      expost_source_url: "https://dtherpad.com/psychpricing",
+      Slug: "psychpricing",
+    });
 
     await getPosts();
 
@@ -77,18 +71,23 @@ https://dtherpad.com/old
 https://dtherpad.com/new
 `);
 
-    vi.mocked(getLegacyData).mockResolvedValue([
-      {
-        expost_source_url: "https://dtherpad.com/old",
-        Slug: "old",
-        Date: "2020-01-01",
-      },
-      {
-        expost_source_url: "https://dtherpad.com/new",
-        Slug: "new",
-        Date: "2020-01-02",
-      },
-    ]);
+    vi.mocked(getLegacyData).mockImplementation(async (url: string) => {
+      if (url === "https://dtherpad.com/old") {
+        return {
+          expost_source_url: "https://dtherpad.com/old",
+          Slug: "old",
+          Date: "2020-01-01",
+        };
+      }
+      if (url === "https://dtherpad.com/new") {
+        return {
+          expost_source_url: "https://dtherpad.com/new",
+          Slug: "new",
+          Date: "2020-01-02",
+        };
+      }
+      return undefined;
+    });
 
     const result = await getPosts();
 
