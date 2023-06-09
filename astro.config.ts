@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import makeRedirects from "./src/lib/makeRedirects";
 import getPosts from "./src/lib/getPosts";
-
+import prefetch from "@astrojs/prefetch";
 const posts = await getPosts();
 const slugs = posts.map((p) => p.slug);
 
@@ -15,4 +15,9 @@ export default defineConfig({
   experimental: {
     redirects: true,
   },
+  integrations: [
+    prefetch({
+      selector: "a",
+    }),
+  ],
 });
