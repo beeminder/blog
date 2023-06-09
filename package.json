@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "engines": {
     "node": ">=18.16.0",
-    "pnpm": ">=8.2.0"
+    "pnpm": ">=7.26.3"
   },
-  "packageManager": "pnpm@8.2.0",
+  "packageManager": "pnpm@7.26.3",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
