@@ -1,5 +1,6 @@
 import getPosts from "./getPosts";
 import type { Post } from "./makePost";
+import memoize from "./memoize";
 
 type Month = {
   label: string;
@@ -62,7 +63,7 @@ function makeYear(yyyy: number, posts: Post[]): Year {
   };
 }
 
-async function makeArchives() {
+async function makeArchives(): Promise<Archives> {
   const posts = await getPosts();
   const yearKeys = posts.map((p) => p.date.getFullYear());
   return yearKeys.reduce(
@@ -74,13 +75,6 @@ async function makeArchives() {
   );
 }
 
-let archives: Archives | undefined;
+const getArchives = memoize(makeArchives, "archives");
 
-export default async function getArchives(): Promise<Archives> {
-  if (!archives) archives = await makeArchives();
-  return archives;
-}
-
-export function __resetArchives() {
-  archives = undefined;
-}
+export default getArchives;

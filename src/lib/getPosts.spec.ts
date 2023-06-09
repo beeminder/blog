@@ -1,8 +1,9 @@
-import getPosts, { __reset } from "./getPosts";
+import getPosts from "./getPosts";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { readFileSync } from "fs";
 import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
+import { __reset } from "./memoize";
 
 describe("getPosts", () => {
   beforeEach(() => {

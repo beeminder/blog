@@ -1,13 +1,12 @@
 import { readFileSync } from "fs";
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import getArchives, { __resetArchives } from "./getArchives";
+import getArchives from "./getArchives";
 import getLegacyData from "./getLegacyData";
-import { __reset } from "./getPosts";
+import { __reset } from "./memoize";
 
 describe("getArchives", () => {
   beforeEach(() => {
     __reset();
-    __resetArchives();
     vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
 
     vi.mocked(getLegacyData).mockResolvedValue({

@@ -1,5 +1,6 @@
 import getPosts from "./getPosts";
 import type { Post } from "./makePost";
+import memoize from "./memoize";
 
 type Tag = {
   name: string;
@@ -7,12 +8,9 @@ type Tag = {
   count: number;
 };
 
-let tags: Record<string, Tag> | undefined;
+const getTags = memoize(makeTags, "tags");
 
-export default async function getTags(): Promise<Record<string, Tag>> {
-  if (!tags) tags = await makeTags();
-  return tags;
-}
+export default getTags;
 
 async function makeTags(): Promise<Record<string, Tag>> {
   const posts = await getPosts();
@@ -30,8 +28,4 @@ async function makeTags(): Promise<Record<string, Tag>> {
   });
 
   return Object.fromEntries(entries);
-}
-
-export function __resetTags(): void {
-  tags = undefined;
 }

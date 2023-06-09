@@ -1,12 +1,12 @@
 import { readFileSync } from "fs";
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import getTags, { __resetTags } from "./getTags";
+import getTags from "./getTags";
 import getLegacyData from "./getLegacyData";
-import { __reset } from "./getPosts";
+import { __reset } from "./memoize";
 
 describe("getTags", () => {
   beforeEach(() => {
-    __resetTags();
+    __reset();
     vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
     vi.mocked(getLegacyData).mockResolvedValue({
       expost_source_url: "https://padm.us/psychpricing",
