@@ -26,11 +26,11 @@ async function makePosts(): Promise<Post[]> {
   const urls = sources.split("\n").filter(Boolean);
   const values: Post[] = [];
 
+  console.time("Gathering posts");
   for (const url of urls) {
-    console.log("start", url);
     values.push(await makePost(url, meta));
-    console.log("end", url);
   }
+  console.timeEnd("Gathering posts");
 
   return values;
 }
