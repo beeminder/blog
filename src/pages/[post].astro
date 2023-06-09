@@ -1,7 +1,8 @@
 ---
 import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
 import Layout from "../layouts/Layout.astro";
-import getPosts, { Post } from "../lib/getPosts";
+import getPosts from "../lib/getPosts";
+import type { Post } from "../lib/makePost";
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -20,6 +21,11 @@ const { post } = Astro.params as Params;
 const { content, title, date, author, tags } = Astro.props as Props;
 
 const posts = await getPosts();
+
+const postIndex = posts.findIndex((p) => p.slug === post);
+const newer = posts[postIndex - 1];
+const older = posts[postIndex + 1];
+
 const post1 = posts[Math.floor(Math.random() * posts.length)];
 const post2 = posts[Math.floor(Math.random() * posts.length)];
 const post3 = posts[Math.floor(Math.random() * posts.length)];
@@ -29,6 +35,18 @@ const recommendedPosts: Post[] = [post1, post2, post3].filter(
 ---
 
 <Layout title={title}>
+  {newer && (
+    <a href={`/${newer.slug}`}>
+      <h2>« {newer.title}</h2>
+    </a>
+  )}
+  {
+    older && (
+      <a href={`/${older.slug}`}>
+        <h2>{older.title} »</h2>
+      </a>
+    )
+  }
   <h1>{title}</h1>
   <p>{date}</p>
   <p>By {author}</p>
