@@ -10,6 +10,10 @@ export type Post = {
   tags: string[];
   date: Date;
   author: string;
+  disqus: {
+    id: string;
+    url: string;
+  };
 };
 
 function formatUrl(url: string) {
@@ -28,11 +32,6 @@ export default async function makePost(url: string): Promise<Post> {
   const formattedUrl = formatUrl(url);
   const markdown = await fetchPost(formattedUrl);
   const slug = wp?.Slug;
-  const date = new Date(String(wp?.Date));
-  const author = String(wp?.["Author Username"]);
-  const tags = String(wp?.Tags || "")
-    .split("|")
-    .filter(Boolean);
 
   if (typeof slug !== "string") {
     throw new Error(`Invalid slug for ${url}`);
@@ -41,9 +40,15 @@ export default async function makePost(url: string): Promise<Post> {
   return {
     ...parseMarkdown(markdown),
     slug,
-    tags,
-    date,
+    tags: String(wp?.Tags || "")
+      .split("|")
+      .filter(Boolean),
+    date: new Date(String(wp?.Date)),
     url: formattedUrl,
-    author,
+    author: String(wp?.["Author Username"]),
+    disqus: {
+      id: `${wp?.ID} https://blog.beeminder.com/?p=${wp?.ID}`,
+      url: `https://blog.beeminder.com/${slug}/`,
+    },
   };
 }
