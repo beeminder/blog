@@ -50,6 +50,7 @@ const { title, redirect } = Astro.props;
 <style>
   .content {
     display: flex;
+    padding: var(--gap);
   }
   .content > *:first-child {
     flex-grow: 1;
@@ -63,6 +64,7 @@ const { title, redirect } = Astro.props;
 <style is:global>
   :root {
     --accent: 124, 58, 237;
+    --gap: 1rem;
   }
   html {
     font-family: system-ui, sans-serif;
@@ -71,7 +73,6 @@ const { title, redirect } = Astro.props;
   body {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1em;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -93,7 +94,7 @@ const { title, redirect } = Astro.props;
     float: right;
     width: 300px;
     border: 1px solid gray;
-    padding: 1em;
-    margin-left: 1em;
+    padding: var(--gap);
+    margin-left: var(--gap);
   }
 </style>
