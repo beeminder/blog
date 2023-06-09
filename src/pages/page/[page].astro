@@ -1,0 +1,27 @@
+---
+import type { GetStaticPaths, Page } from "astro";
+import getPosts from "../../lib/getPosts";
+import Layout from "../../layouts/Layout.astro";
+import type { Post } from "../../lib/makePost";
+import Posts from "../../components/Posts.astro";
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+    const posts = await getPosts();
+
+    return paginate(posts, {
+        pageSize: 6
+    });
+}
+
+interface Props {
+    page: Page<Post>
+}
+
+const {page} = Astro.props
+---
+
+<Layout title={`Page ${page.currentPage}`}>
+    <Posts posts={page.data} />
+    {page.url.next && <a href={page.url.next}>« Older Entries</a>}
+    {page.url.prev && <a href={page.currentPage === 2 ? '/' : page.url.prev}>Newer Entries »</a>}
+</Layout>
