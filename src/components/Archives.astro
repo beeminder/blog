@@ -1,0 +1,33 @@
+---
+import getArchives from "../lib/getArchives";
+
+function getSortedValues<T>(obj: Record<string, T>): T[] {
+  return Object.entries(obj)
+    .sort((a, b) => +b[0] - +a[0])
+    .map(([, v]) => v);
+}
+
+const archives = await getArchives();
+---
+
+<div>
+  <h3>Archives</h3>
+  <ul>
+    {
+      getSortedValues(archives).map((y) => (
+        <li>
+          {y.label} ({y.post_count})
+          <ul>
+            {getSortedValues(y.months).map((m) => (
+              <li>
+                <a href={`/${y.label}/${m.label}`}>
+                  {m.label} ({m.post_count})
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))
+    }
+  </ul>
+</div>

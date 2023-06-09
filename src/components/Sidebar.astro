@@ -1,6 +1,6 @@
 ---
-import getArchives from "../lib/getArchives";
 import getTags from "../lib/getTags";
+import Archives from "./Archives.astro";
 
 const rawTags = await getTags();
 const tags = Object.values(rawTags);
@@ -8,8 +8,6 @@ const tags = Object.values(rawTags);
 tags.sort((a, b) => {
   return b.count - a.count;
 });
-
-const archives = await getArchives();
 ---
 
 <div>
@@ -33,27 +31,7 @@ const archives = await getArchives();
       <input type="hidden" name="sites" value="blog.beeminder.com" />
     </form>
   </div>
-  <div>
-    <h3>Archives</h3>
-    <ul>
-      {
-        Object.values(archives).map((y) => (
-          <li>
-            {y.label} ({y.post_count})
-            <ul>
-              {Object.values(y.months).map((m) => (
-                <li>
-                  <a href={`/${y.label}/${m.label}`}>
-                    {m.label} ({m.post_count})
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))
-      }
-    </ul>
-  </div>
+  <Archives />
   <div>
     <h3>Eating Our Own Dog Food</h3>
     <a href="http://beeminder.com/meta/blog">
