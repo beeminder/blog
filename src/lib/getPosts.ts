@@ -1,13 +1,11 @@
 import fs from "fs";
 import type { Post } from "./makePost";
 import makePost from "./makePost";
+import memoize from "./memoize";
 
-let _result: Post[] | undefined;
+const getPosts = memoize(makePosts, "posts");
 
-export default async function getPosts(): Promise<Post[]> {
-  if (!_result) _result = await makePosts();
-  return _result;
-}
+export default getPosts;
 
 async function makePosts(): Promise<Post[]> {
   const sources = fs.readFileSync("sources.txt", "utf-8");
@@ -23,9 +21,4 @@ async function makePosts(): Promise<Post[]> {
   values.sort((a, b) => b.date.getTime() - a.date.getTime());
 
   return values;
-}
-
-// For testing
-export function __reset() {
-  _result = undefined;
 }
