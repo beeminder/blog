@@ -28,12 +28,14 @@ const older = posts[postIndex + 1];
 ---
 
 <Layout title={title}>
-  {newer && (
+  <div class="nav">
+    {newer && (
     <a href={`/${newer.slug}`} set:html={`« ${newer.title}`} />
   )}
   {older && (
     <a href={`/${older.slug}`} set:html={`${older.title} »`} />
   )}
+  </div>
   <h1 set:html={title} />
   <p>{date}</p>
   <p>By {author}</p>
@@ -59,3 +61,10 @@ const older = posts[postIndex + 1];
       (d.head || d.body).appendChild(s);
     })();
 </script>
+
+<style>
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
