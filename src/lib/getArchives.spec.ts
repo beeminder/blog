@@ -9,13 +9,11 @@ describe("getArchives", () => {
     __reset();
     vi.mocked(readFileSync).mockReturnValue("https://<etherpad-host>/psychpricing");
 
-    vi.mocked(getLegacyData).mockResolvedValue([
-      {
-        Date: "2011-01-24",
-        Slug: "psychpricing",
-        expost_source_url: "https://<etherpad-host>/psychpricing",
-      },
-    ]);
+    vi.mocked(getLegacyData).mockResolvedValue({
+      Date: "2011-01-24",
+      Slug: "psychpricing",
+      expost_source_url: "https://<etherpad-host>/psychpricing",
+    });
   });
 
   it("gets archives", async () => {
@@ -37,23 +35,29 @@ describe("getArchives", () => {
   });
 
   it("properly batches by year", async () => {
-    vi.mocked(getLegacyData).mockResolvedValue([
-      {
-        Date: "2013-02-22",
-        Slug: "psychpricing",
-        expost_source_url: "https://<etherpad-host>/psychpricing",
-      },
-      {
-        Date: "2015-02-22",
-        Slug: "psychpricing",
-        expost_source_url: "https://<etherpad-host>/second",
-      },
-    ]);
-
     vi.mocked(readFileSync).mockReturnValue(`
 https://<etherpad-host>/psychpricing
 https://<etherpad-host>/second
 `);
+
+    vi.mocked(getLegacyData).mockImplementation(async (url: string) => {
+      switch (url) {
+        case "https://<etherpad-host>/psychpricing":
+          return {
+            Date: "2013-02-22",
+            Slug: "psychpricing",
+            expost_source_url: "https://<etherpad-host>/psychpricing",
+          };
+        case "https://<etherpad-host>/second":
+          return {
+            Date: "2015-02-22",
+            Slug: "psychpricing",
+            expost_source_url: "https://<etherpad-host>/second",
+          };
+        default:
+          return undefined;
+      }
+    });
 
     const result = await getArchives();
 
