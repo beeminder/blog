@@ -30,4 +30,6 @@ beforeEach(() => {
 
   vi.mocked(fetchPost).mockResolvedValue("");
   vi.mocked(getLegacyData).mockResolvedValue([]);
+
+  global.console.time = vi.fn();
 });
