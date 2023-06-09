@@ -26,7 +26,7 @@ const title = `Tag: ${name}`;
     {
       posts.map((p) => (
         <li>
-          <a href={`/${p.slug}`}>{p.title}</a>
+          <a href={`/${p.slug}`} set:html={p.title} />
         </li>
       ))
     }

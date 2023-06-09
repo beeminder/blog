@@ -37,17 +37,15 @@ const recommendedPosts: Post[] = [post1, post2, post3].filter(
 <Layout title={title}>
   {newer && (
     <a href={`/${newer.slug}`}>
-      <h2>« {newer.title}</h2>
+      <h2 set:html={`« ${newer.title}`} />
     </a>
   )}
-  {
-    older && (
-      <a href={`/${older.slug}`}>
-        <h2>{older.title} »</h2>
-      </a>
-    )
-  }
-  <h1>{title}</h1>
+  {older && (
+    <a href={`/${older.slug}`}>
+      <h2 set:html={`${older.title} »`} />
+    </a>
+  )}
+  <h1 set:html={title} />
   <p>{date}</p>
   <p>By {author}</p>
   <a href=`/${post}`>Permalink</a>
@@ -67,7 +65,7 @@ const recommendedPosts: Post[] = [post1, post2, post3].filter(
     {
       recommendedPosts.map((p) => (
         <li>
-          <a href={`/${p.slug}`}>{p.title}</a>
+          <a href={`/${p.slug}`} set:html={p.title} />
         </li>
       ))
     }
