@@ -18,7 +18,7 @@ type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { post } = Astro.params as Params;
-const { content, title, date, author, tags } = Astro.props as Props;
+const { content, title, date, author, tags, disqus } = Astro.props as Props;
 
 const posts = await getPosts();
 
@@ -71,4 +71,26 @@ const recommendedPosts: Post[] = [post1, post2, post3].filter(
     }
   </ul>
   <h2>Comments</h2>
+  <div id="disqus_thread" data-url={disqus.url} data-identifier={disqus.id}></div>
 </Layout>
+
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    // @ts-ignore - disqus_config is a global function
+    var disqus_config = function (this: any) {
+      const thread = document.getElementById("disqus_thread");
+      if (!thread) throw new Error('could not find disqus thread');
+      this.page.url = thread.dataset.url;
+      this.page.identifier = thread.dataset.identifier;
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://beemblog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', String(+new Date()));
+      (d.head || d.body).appendChild(s);
+    })();
+</script>
