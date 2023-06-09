@@ -22,6 +22,16 @@ const {page} = Astro.props
 
 <Layout title={`Page ${page.currentPage}`}>
     <Posts posts={page.data} />
-    {page.url.next && <a href={page.url.next}>« Older Entries</a>}
-    {page.url.prev && <a href={page.currentPage === 2 ? '/' : page.url.prev}>Newer Entries »</a>}
+    <div class="nav">
+        {page.url.next && <a href={page.url.next}>« Older Entries</a>}
+        {page.url.prev && <a href={page.currentPage === 2 ? '/' : page.url.prev}>Newer Entries »</a>}
+    </div>
 </Layout>
+
+<style>
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
