@@ -1,0 +1,19 @@
+---
+import type { Post } from '../lib/makePost'
+
+interface Props {
+    posts: Post[]
+}
+
+const { posts } = Astro.props
+---
+
+<ul>
+    {
+      posts.map((p) => (
+        <li>
+          <a href={`/${p.slug}`} set:html={p.title} />
+        </li>
+      ))
+    }
+  </ul>
