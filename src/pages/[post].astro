@@ -2,7 +2,6 @@
 import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
 import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
-import type { Post } from "../lib/makePost";
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -25,13 +24,6 @@ const posts = await getPosts();
 const postIndex = posts.findIndex((p) => p.slug === post);
 const newer = posts[postIndex - 1];
 const older = posts[postIndex + 1];
-
-const post1 = posts[Math.floor(Math.random() * posts.length)];
-const post2 = posts[Math.floor(Math.random() * posts.length)];
-const post3 = posts[Math.floor(Math.random() * posts.length)];
-const recommendedPosts: Post[] = [post1, post2, post3].filter(
-  (p): p is Post => !!p
-);
 ---
 
 <Layout title={title}>
@@ -60,17 +52,6 @@ const recommendedPosts: Post[] = [post1, post2, post3].filter(
       ))
     }
   </ul>
-  <h2>Recommended Posts</h2>
-  <ul>
-    {
-      recommendedPosts.map((p) => (
-        <li>
-          <a href={`/${p.slug}`} set:html={p.title} />
-        </li>
-      ))
-    }
-  </ul>
-  <h2>Comments</h2>
   <div id="disqus_thread" data-url={disqus.url} data-identifier={disqus.id}></div>
 </Layout>
 
@@ -84,7 +65,6 @@ const recommendedPosts: Post[] = [post1, post2, post3].filter(
       if (!thread) throw new Error('could not find disqus thread');
       this.page.url = thread.dataset.url;
       this.page.identifier = thread.dataset.identifier;
-      console.log({ url: this.page.url, identifier: this.page.identifier })
     };
     
     (function() { // DON'T EDIT BELOW THIS LINE
