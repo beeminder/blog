@@ -1,5 +1,6 @@
 ---
 import Sidebar from "../components/Sidebar.astro";
+import Header from "../components/Header.astro";
 
 const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
 
@@ -31,13 +32,7 @@ const { title, redirect } = Astro.props;
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   </head>
   <body>
-    <h2>
-      <a href="/">Beeminder Blog</a>
-    </h2>
-    <ul class="nav">
-      <li><a href="https://beeminder.com">Beeminder Home</a></li>
-      <li><a href="/">Blog Home</a></li>
-    </ul>
+    <Header />
     <div class="content">
       <div><slot /></div>
       <div><Sidebar /></div>
@@ -53,13 +48,6 @@ const { title, redirect } = Astro.props;
 </html>
 
 <style>
-  .nav {
-    padding-left: 0;
-  }
-  .nav li {
-    display: inline-block;
-    margin-right: 1em;
-  }
   .content {
     display: flex;
   }
