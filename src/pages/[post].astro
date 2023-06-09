@@ -85,6 +85,7 @@ const recommendedPosts: Post[] = [post1, post2, post3].filter(
       if (!thread) throw new Error('could not find disqus thread');
       this.page.url = thread.dataset.url;
       this.page.identifier = thread.dataset.identifier;
+      console.log({ url: this.page.url, identifier: this.page.identifier })
     };
     
     (function() { // DON'T EDIT BELOW THIS LINE
