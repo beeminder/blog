@@ -2,11 +2,9 @@ import { readFileSync } from "fs";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getArchives from "./getArchives";
 import getLegacyData from "./getLegacyData";
-import { __reset } from "./memoize";
 
 describe("getArchives", () => {
   beforeEach(() => {
-    __reset();
     vi.mocked(readFileSync).mockReturnValue("https://<etherpad-host>/psychpricing");
 
     vi.mocked(getLegacyData).mockResolvedValue({

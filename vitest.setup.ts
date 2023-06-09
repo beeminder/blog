@@ -2,6 +2,7 @@ import { beforeEach, vi } from "vitest";
 import fetch from "node-fetch-cache";
 import fetchPost from "./src/lib/fetchPost";
 import getLegacyData from "./src/lib/getLegacyData";
+import { __reset } from "./src/lib/memoize";
 
 vi.mock("./src/lib/fetchPost");
 vi.mock("./src/lib/getLegacyData");
@@ -29,8 +30,10 @@ beforeEach(() => {
   );
 
   vi.mocked(fetchPost).mockResolvedValue("");
-  vi.mocked(getLegacyData).mockResolvedValue([]);
+  vi.mocked(getLegacyData).mockResolvedValue({});
 
   global.console.time = vi.fn();
   global.console.timeEnd = vi.fn();
+
+  __reset();
 });
