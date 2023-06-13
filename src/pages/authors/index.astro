@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import getPosts from "../../lib/getPosts";
+
+const posts = await getPosts();
+const authors = [...new Set(posts.map((post) => post.author))];
+
+authors.sort();
+
+function getPostsByAuthor(author: string) {
+  return posts.filter((post) => post.author === author);
+}
+---
+
+<Layout title="Authors">
+  <h1>Authors</h1>
+  <ul>
+    {
+      authors.map((author) => (
+        <li>
+          <a href={`/authors/${author}`}>
+            {author} ({getPostsByAuthor(author).length})
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
