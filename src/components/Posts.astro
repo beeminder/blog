@@ -1,5 +1,6 @@
 ---
 import type { Post } from "../lib/makePost";
+import Shadowbox from "./Shadowbox.astro";
 
 interface Props {
   posts: Post[];
@@ -12,27 +13,31 @@ const { posts } = Astro.props;
   {
     posts.map((p) => (
       <li>
-        {p.image && (
-          <a href={`/${p.slug}`}>
-            <img
-              src={p.image.src}
-              alt={p.image.alt}
-              title={p.image.alt}
-              width="200"
-              height="200"
-            />
-          </a>
-        )}
-        <div class="meta">
-          <h2>
-            <a href={`/${p.slug}`} set:html={p.title} />
-          </h2>
-          <p>{p.date_string}</p>
-          <p>
-            By <a href={`/authors/${p.author}`}>{p.author}</a>
-          </p>
-          <p>{p.excerpt}</p>
-        </div>
+        <Shadowbox>
+          <div class="content">
+            {p.image && (
+              <a class="thumbnail" href={`/${p.slug}`}>
+                <img
+                  src={p.image.src}
+                  alt={p.image.alt}
+                  title={p.image.alt}
+                  width="200"
+                  height="200"
+                />
+              </a>
+            )}
+            <div class="meta">
+              <h2>
+                <a href={`/${p.slug}`} set:html={p.title} />
+              </h2>
+              <p>{p.date_string}</p>
+              <p>
+                By <a href={`/authors/${p.author}`}>{p.author}</a>
+              </p>
+              <p>{p.excerpt}</p>
+            </div>
+          </div>
+        </Shadowbox>
       </li>
     ))
   }
@@ -44,13 +49,12 @@ const { posts } = Astro.props;
     padding: 0;
   }
 
-  li {
-    margin-bottom: 1rem;
+  .content {
     display: flex;
     flex-wrap: wrap;
   }
 
-  li > a {
+  .thumbnail {
     flex-shrink: 0;
   }
 
@@ -68,7 +72,7 @@ const { posts } = Astro.props;
   }
 
   img {
-    margin-right: 1rem;
+    margin-right: var(--gap);
     object-fit: cover;
   }
 </style>
