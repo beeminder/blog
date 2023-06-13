@@ -1,17 +1,37 @@
+---
+import Icon from "./Icon.astro";
+---
+
 <div class="header">
-  <a href="https://beeminder.com">« Beeminder home</a>
-  <h2>
-    <a href="/">Beeminder Blog</a>
-  </h2>
+  <div>
+    <a href="https://beeminder.com">« Beeminder home</a>
+    <h2>
+      <a href="/">Beeminder Blog</a>
+    </h2>
+  </div>
+
+  <div>
+    <a href="http://feedburner.google.com/fb/a/mailverify?uri=bmndr&loc=en_US"
+      ><Icon name="mail" /></a
+    >
+    <a href="http://feedburner.google.com/fb/a/mailverify?uri=bmndr&loc=en_US"
+      ><Icon name="rss" /></a
+    >
+    <a href="http://twitter.com/bmndr"><Icon name="twitter" /></a>
+    <a href="http://beeminder.com/facebook"><Icon name="facebook" /></a>
+  </div>
 </div>
 
 <style>
   .header {
     background-color: var(--secondary);
     padding: var(--gap);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   h2 {
-    margin: 0;
+    margin: 0.25rem 0 0 0;
   }
 </style>
