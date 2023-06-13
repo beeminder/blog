@@ -6,6 +6,7 @@ import hooks from "./markedHooks";
 import addBlankLines from "./addBlankLines";
 import linkFootnotes from "./linkFootnotes";
 import expandRefs from "./expandRefs";
+import getExcerpt from "./getExcerpt";
 
 marked.use(markedSmartypants());
 marked.use({ hooks });
@@ -18,14 +19,17 @@ const MARKED_OPTIONS = {
 export default function parseMarkdown(markdown: string): {
   title: string;
   content: string;
+  excerpt: string;
 } {
   const blanked = addBlankLines(markdown);
   const trimmed = trimContent(blanked);
   const linked = linkFootnotes(trimmed);
   const expanded = expandRefs(linked);
+  const content = marked.parse(expanded, MARKED_OPTIONS);
 
   return {
     title: parseTitle(markdown),
-    content: marked.parse(expanded, MARKED_OPTIONS),
+    content,
+    excerpt: getExcerpt(content),
   };
 }
