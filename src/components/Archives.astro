@@ -8,26 +8,26 @@ function getSortedValues<T>(obj: Record<string, T>): T[] {
 }
 
 const archives = await getArchives();
+const years = getSortedValues(archives);
 ---
 
 <div>
   <h3>Archives</h3>
   <ul>
     {
-      getSortedValues(archives).map((y) => (
+      years.map((y) => (
         <li>
-          {y.label} ({y.post_count})
-          <ul>
-            {getSortedValues(y.months).map((m) => (
-              <li>
-                <a href={`/${y.label}/${m.label}`}>
-                  {m.label} ({m.post_count})
-                </a>
-              </li>
-            ))}
-          </ul>
+          <a href={`/${y.label}`}>
+            {y.label} ({y.post_count})
+          </a>
         </li>
       ))
     }
   </ul>
 </div>
+
+<style>
+  ul {
+    padding-left: 1em;
+  }
+</style>
