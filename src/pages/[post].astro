@@ -53,7 +53,7 @@ const older = posts[postIndex + 1];
     </div>
     <h1 set:html={title} />
     <p>{date_string}</p>
-    <p>By {author}</p>
+    <p>By <a href={`/authors/${author}`}>{author}</a></p>
 
     <div set:html={content} />
   </Shadowbox>
