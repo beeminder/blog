@@ -30,8 +30,24 @@ const older = posts[postIndex + 1];
 
 <Layout title={title}>
   <div class="nav">
-    {newer && <a href={`/${newer.slug}`} set:html={`« ${newer.title}`} />}
-    {older && <a href={`/${older.slug}`} set:html={`${older.title} »`} />}
+    {
+      newer && (
+        <a
+          class="older"
+          href={`/${newer.slug}`}
+          set:html={`« ${newer.title}`}
+        />
+      )
+    }
+    {
+      older && (
+        <a
+          class="newer"
+          href={`/${older.slug}`}
+          set:html={`${older.title} »`}
+        />
+      )
+    }
   </div>
   <h1 set:html={title} />
   <p>{date_string}</p>
@@ -66,5 +82,13 @@ const older = posts[postIndex + 1];
   .nav {
     display: flex;
     justify-content: space-between;
+  }
+
+  .nav a {
+    flex-grow: 1;
+  }
+
+  .newer {
+    text-align: right;
   }
 </style>
