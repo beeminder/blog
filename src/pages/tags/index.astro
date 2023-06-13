@@ -1,4 +1,5 @@
 ---
+import Shadowbox from "../../components/Shadowbox.astro";
 import Layout from "../../layouts/Layout.astro";
 import getTags from "../../lib/getTags";
 
@@ -11,15 +12,18 @@ tags.sort((a, b) => {
 ---
 
 <Layout title="Tags">
-  <ul>
-    {
-      tags.map((t) => (
-        <li>
-          <a href={`/tags/${t.name}`}>
-            {t.name} ({t.count})
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  <Shadowbox>
+    <h1>Tags</h1>
+    <ul>
+      {
+        tags.map((t) => (
+          <li>
+            <a href={`/tags/${t.name}`}>
+              {t.name} ({t.count})
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </Shadowbox>
 </Layout>
