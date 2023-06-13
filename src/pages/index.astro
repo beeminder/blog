@@ -1,12 +1,59 @@
 ---
-import Posts from '../components/Posts.astro';
-import Layout from '../layouts/Layout.astro';
-import getPosts from '../lib/getPosts';
+import Posts from "../components/Posts.astro";
+import Shadowbox from "../components/Shadowbox.astro";
+import Layout from "../layouts/Layout.astro";
+import getPosts from "../lib/getPosts";
 
 const posts = await getPosts();
+const featured = posts[0];
 ---
 
 <Layout title="Home">
-	  <Posts posts={posts.slice(0,6)} />
-	  <a href='/page/2'>« Older Entries</a>
+  {
+    featured && (
+      <Shadowbox>
+        <div class="content">
+          {featured.image && (
+            <a class="thumbnail" href={`/${featured.slug}`}>
+              <img
+                src={featured.image.src}
+                alt={featured.image.alt}
+                title={featured.image.alt}
+                width="500"
+                height="500"
+              />
+            </a>
+          )}
+          <div class="meta">
+            <h2>
+              <a href={`/${featured.slug}`} set:html={featured.title} />
+            </h2>
+            <p>{featured.date_string}</p>
+            <p>
+              By <a href={`/authors/${featured.author}`}>{featured.author}</a>
+            </p>
+            <p>{featured.excerpt}</p>
+          </div>
+        </div>
+      </Shadowbox>
+    )
+  }
+  <Posts posts={posts.slice(1, 6)} />
+  <a href="/page/2">« Older Entries</a>
 </Layout>
+
+<style>
+  .thumbnail {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: var(--gap);
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+</style>
