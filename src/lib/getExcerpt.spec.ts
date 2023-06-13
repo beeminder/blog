@@ -24,4 +24,10 @@ describe("getExcerpt", () => {
 
     expect(words[words.length - 1]).toBe("cillum...");
   });
+
+  it("strips footnotes", () => {
+    const result = getExcerpt('<a class="footnote" id="fn1" href="#1">1</a>');
+
+    expect(result).toBe("...");
+  });
 });

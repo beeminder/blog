@@ -24,7 +24,7 @@ export default function linkFootnotes(markdown: string): string {
       const htmlId = isEndNote ? id : `${id}${j}`;
       const href = isEndNote ? `${id}1` : id;
 
-      return `${acc}<a id="${htmlId}" href="#${href}">${text}</a>${chunk}`;
+      return `${acc}<a class="footnote" id="${htmlId}" href="#${href}">${text}</a>${chunk}`;
     });
   }, markdown);
 }
