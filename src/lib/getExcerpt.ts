@@ -9,9 +9,7 @@ export default function getExcerpt(html: string): string {
     dom.window.document.querySelectorAll("a.footnote")
   );
 
-  footnotes.forEach((footnote) => {
-    footnote.remove();
-  });
+  footnotes.forEach((el) => el.remove());
 
   const text = dom.window.document.body.textContent || "";
   const noNewlines = text.replace(/[\n\r]+/g, " ");

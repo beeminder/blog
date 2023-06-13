@@ -46,7 +46,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <style>
       .content {
         display: flex;
-        flex-wrap: wrap;
         padding: var(--gap);
         max-width: var(--content-width);
         margin: 0 auto;
@@ -58,6 +57,17 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       .content > *:last-child {
         flex: 0 0 300px;
         padding-left: var(--gap);
+      }
+
+      @media (max-width: 900px) {
+        .content {
+          flex-direction: column;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .content > *:last-child {
+          padding-left: 0;
+        }
       }
     </style>
 
