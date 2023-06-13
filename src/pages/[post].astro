@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Tags from "../components/Tags.astro";
 import getPosts from "../lib/getPosts";
 import Shadowbox from "../components/Shadowbox.astro";
+import PostMeta from "../components/PostMeta.astro";
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -19,8 +20,7 @@ type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { post } = Astro.params as Params;
-const { content, title, date_string, author, tags, disqus, excerpt, image } =
-  Astro.props as Props;
+const { content, title, tags, disqus, excerpt, image } = Astro.props as Props;
 
 const posts = await getPosts();
 
@@ -51,9 +51,13 @@ const older = posts[postIndex + 1];
         )
       }
     </div>
-    <h1 set:html={title} />
-    <p>{date_string}</p>
-    <p>By <a href={`/authors/${author}`}>{author}</a></p>
+
+    <PostMeta
+      post={Astro.props}
+      includeExcerpt={false}
+      linkTitle={false}
+      Heading="h1"
+    />
 
     <div set:html={content} />
   </Shadowbox>
