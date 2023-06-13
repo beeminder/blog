@@ -14,7 +14,8 @@ export default function getExcerpt(html: string): string {
   });
 
   const text = dom.window.document.body.textContent || "";
-  const words = text.split(" ");
+  const noNewlines = text.replace(/[\n\r]+/g, " ");
+  const words = noNewlines.split(" ");
   const excerpt = words.reduce((acc, word) => {
     if (acc.length > EXCERPT_LENGTH) return acc;
     return acc ? `${acc} ${word}` : word;

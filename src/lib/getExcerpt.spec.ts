@@ -30,4 +30,10 @@ describe("getExcerpt", () => {
 
     expect(result).toBe("...");
   });
+
+  it("strips newlines", () => {
+    const result = getExcerpt("foo\nbar");
+
+    expect(result).toBe("foo bar...");
+  });
 });
