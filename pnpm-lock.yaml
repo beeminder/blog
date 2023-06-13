@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/prefetch': ^0.2.3
+  '@astrojs/rss': ^2.4.3
   '@types/jsdom': ^21.1.1
   '@types/marked': ^5.0.0
   '@types/node-fetch-cache': ^3.0.0
@@ -15,6 +16,7 @@ specifiers:
 
 dependencies:
   '@astrojs/prefetch': 0.2.3
+  '@astrojs/rss': 2.4.3
   astro: 2.6.2
   csv-parse: 5.4.0
   jsdom: 22.1.0
@@ -99,6 +101,13 @@ packages:
     engines: {node: '>=16.12.0'}
     dependencies:
       prismjs: 1.29.0
+    dev: false
+
+  /@astrojs/rss/2.4.3:
+    resolution: {integrity: sha512-Dc8lxsXiDlnxONVIUuc3ohO1+vV1Hp9fRFdUianOola0S9/xv/6FzIHhkQ62MkaFSlcZm5uIOllRWNKVvuFuoA==}
+    dependencies:
+      fast-xml-parser: 4.2.4
+      kleur: 4.1.5
     dev: false
 
   /@astrojs/telemetry/2.1.1:
@@ -1593,6 +1602,13 @@ packages:
       glob-parent: 5.1.2
       merge2: 1.4.1
       micromatch: 4.0.5
+    dev: false
+
+  /fast-xml-parser/4.2.4:
+    resolution: {integrity: sha512-fbfMDvgBNIdDJLdLOwacjFAPYt67tr31H9ZhWSm45CDAxvd0I6WTlSOUo7K2P/K5sA5JgMKG64PI3DMcaFdWpQ==}
+    hasBin: true
+    dependencies:
+      strnum: 1.0.5
     dev: false
 
   /fastq/1.15.0:
@@ -3420,6 +3436,10 @@ packages:
     dependencies:
       acorn: 8.8.2
     dev: true
+
+  /strnum/1.0.5:
+    resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
+    dev: false
 
   /suf-log/2.5.3:
     resolution: {integrity: sha512-KvC8OPjzdNOe+xQ4XWJV2whQA0aM1kGVczMQ8+dStAO6KfEB140JEVQ9dE76ONZ0/Ylf67ni4tILPJB41U0eow==}

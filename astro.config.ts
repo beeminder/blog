@@ -11,6 +11,7 @@ const redirects = makeRedirects(slugs) as any;
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://blog.beeminder.com",
   redirects,
   experimental: {
     redirects: true,

@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@astrojs/prefetch": "^0.2.3",
+    "@astrojs/rss": "^2.4.3",
     "astro": "^2.6.1",
     "csv-parse": "^5.4.0",
     "jsdom": "^22.1.0",
