@@ -65,7 +65,7 @@ const { title, redirect } = Astro.props;
 
 <style is:global>
   :root {
-    --accent: 124, 58, 237;
+    --accent: #cc0000;
     --gap: 1rem;
   }
   html {
@@ -79,7 +79,7 @@ const { title, redirect } = Astro.props;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   a {
-    color: rgb(var(--accent));
+    color: var(--accent);
     text-decoration: none;
   }
   a:hover {
