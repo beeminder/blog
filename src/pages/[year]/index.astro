@@ -1,0 +1,41 @@
+---
+import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
+import getArchives from "../../lib/getArchives";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const archives = await getArchives();
+  const years = Object.values(archives);
+
+  return years.map((y) => ({
+    params: {
+      year: y.label.toString(),
+    },
+    props: y,
+  }));
+}
+
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { year } = Astro.params as Params;
+const { months } = Astro.props;
+---
+
+<Layout title={year}>
+  <h1>{year}</h1>
+  {
+    Object.values(months).map((m) => (
+      <>
+        <h2>{m.label}</h2>
+        <ul>
+          {m.posts.map((p) => (
+            <li>
+              <a href={`/${p.slug}`} set:html={p.title} />
+            </li>
+          ))}
+        </ul>
+      </>
+    ))
+  }
+</Layout>
