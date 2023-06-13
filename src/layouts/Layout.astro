@@ -50,10 +50,11 @@ const { title, redirect } = Astro.props;
 <style>
   .content {
     display: flex;
+    flex-wrap: wrap;
     padding: var(--gap);
   }
   .content > *:first-child {
-    flex-grow: 1;
+    flex: 1 0 500px;
   }
   .content > *:last-child {
     flex: 0 0 300px;
