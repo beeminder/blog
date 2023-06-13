@@ -1,6 +1,7 @@
 import parseMarkdown from "./parseMarkdown";
 import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
+import type { Image } from "./getImage";
 
 export type Post = {
   url: string;
@@ -17,6 +18,7 @@ export type Post = {
     id: string;
     url: string;
   };
+  image: Image | undefined;
 };
 
 function formatUrl(url: string) {

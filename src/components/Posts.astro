@@ -12,12 +12,17 @@ const { posts } = Astro.props;
   {
     posts.map((p) => (
       <li>
-        <h2>
-          <a href={`/${p.slug}`} set:html={p.title} />
-        </h2>
-        <p>{p.date_string}</p>
-        <p>By {p.author}</p>
-        <p>{p.excerpt}</p>
+        {p.image && (
+          <img src={p.image.src} alt={p.image.alt} width="200" height="200" />
+        )}
+        <div>
+          <h2>
+            <a href={`/${p.slug}`} set:html={p.title} />
+          </h2>
+          <p>{p.date_string}</p>
+          <p>By {p.author}</p>
+          <p>{p.excerpt}</p>
+        </div>
       </li>
     ))
   }
@@ -31,13 +36,20 @@ const { posts } = Astro.props;
 
   li {
     margin-bottom: 1rem;
+    display: flex;
   }
 
   h2 {
+    margin-top: 0;
     margin-bottom: 0.5rem;
   }
 
   p {
     margin: 0.5rem 0;
+  }
+
+  img {
+    margin-right: 1rem;
+    object-fit: cover;
   }
 </style>
