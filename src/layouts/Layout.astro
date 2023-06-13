@@ -46,7 +46,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <style>
       .content {
         display: flex;
-        padding: var(--gap);
+        padding: var(--gap-2);
         max-width: var(--content-width);
         margin: 0 auto;
       }
@@ -56,7 +56,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       }
       .content > *:last-child {
         flex: 0 0 300px;
-        padding-left: var(--gap);
+        padding-left: var(--gap-1);
       }
 
       @media (max-width: 900px) {
@@ -75,7 +75,11 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       :root {
         --primary: #cc0000;
         --secondary: #ffcb06;
-        --gap: 2rem;
+
+        --gap-1: 1rem;
+        --gap-2: 2rem;
+        --gap-3: 3rem;
+
         --line-height: 1.35em;
         --line-height-headings: 1.2em;
         --content-width: 1200px;
@@ -126,8 +130,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         font-style: italic;
         font-size: 1.2em;
         line-height: var(--line-height);
-        padding: var(--gap);
-        margin-left: var(--gap);
+        padding: var(--gap-1);
+        margin-left: var(--gap-2);
       }
       .aligncenter {
         display: block;

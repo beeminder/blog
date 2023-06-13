@@ -1,5 +1,6 @@
 ---
 import type { Post } from "../lib/makePost";
+import PostMeta from "./PostMeta.astro";
 import Shadowbox from "./Shadowbox.astro";
 
 interface Props {
@@ -26,16 +27,7 @@ const { posts } = Astro.props;
                 />
               </a>
             )}
-            <div class="meta">
-              <h2>
-                <a href={`/${p.slug}`} set:html={p.title} />
-              </h2>
-              <p>{p.date_string}</p>
-              <p>
-                By <a href={`/authors/${p.author}`}>{p.author}</a>
-              </p>
-              <p>{p.excerpt}</p>
-            </div>
+            <PostMeta post={p} />
           </div>
         </Shadowbox>
       </li>
@@ -53,29 +45,17 @@ const { posts } = Astro.props;
   .content {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
   }
 
   .thumbnail {
     flex-shrink: 0;
   }
 
-  .meta {
-    flex: 1 0 275px;
-    max-width: 100%;
-  }
-
-  h2 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    overflow: hidden;
-  }
-
-  p {
-    margin: 0.5rem 0;
-  }
-
   img {
-    margin-right: var(--gap);
+    margin-right: var(--gap-1);
     object-fit: cover;
+    min-height: 0;
+    height: 100%;
   }
 </style>
