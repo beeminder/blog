@@ -2,6 +2,8 @@
 import type { InferGetStaticPropsType } from "astro";
 import Layout from "../../layouts/Layout.astro";
 import getTags from "../../lib/getTags";
+import Posts from "../../components/Posts.astro";
+
 export async function getStaticPaths() {
   const tags = await getTags();
 
@@ -22,13 +24,5 @@ const title = `Tag: ${name}`;
 <Layout title={title}>
   <h1>{title}</h1>
   <p>{count} posts</p>
-  <ul>
-    {
-      posts.map((p) => (
-        <li>
-          <a href={`/${p.slug}`} set:html={p.title} />
-        </li>
-      ))
-    }
-  </ul>
+  <Posts posts={posts} />
 </Layout>

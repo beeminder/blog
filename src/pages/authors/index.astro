@@ -1,4 +1,5 @@
 ---
+import Shadowbox from "../../components/Shadowbox.astro";
 import Layout from "../../layouts/Layout.astro";
 import getPosts from "../../lib/getPosts";
 
@@ -13,16 +14,18 @@ function getPostsByAuthor(author: string) {
 ---
 
 <Layout title="Authors">
-  <h1>Authors</h1>
-  <ul>
-    {
-      authors.map((author) => (
-        <li>
-          <a href={`/authors/${author}`}>
-            {author} ({getPostsByAuthor(author).length})
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  <Shadowbox>
+    <h1>Authors</h1>
+    <ul>
+      {
+        authors.map((author) => (
+          <li>
+            <a href={`/authors/${author}`}>
+              {author} ({getPostsByAuthor(author).length})
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </Shadowbox>
 </Layout>
