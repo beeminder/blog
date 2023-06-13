@@ -7,6 +7,7 @@ import addBlankLines from "./addBlankLines";
 import linkFootnotes from "./linkFootnotes";
 import expandRefs from "./expandRefs";
 import getExcerpt from "./getExcerpt";
+import getImage, { Image } from "./getImage";
 
 marked.use(markedSmartypants());
 marked.use({ hooks });
@@ -20,6 +21,7 @@ export default function parseMarkdown(markdown: string): {
   title: string;
   content: string;
   excerpt: string;
+  image: Image | undefined;
 } {
   const blanked = addBlankLines(markdown);
   const trimmed = trimContent(blanked);
@@ -31,5 +33,6 @@ export default function parseMarkdown(markdown: string): {
     title: parseTitle(markdown),
     content,
     excerpt: getExcerpt(content),
+    image: getImage(content),
   };
 }
