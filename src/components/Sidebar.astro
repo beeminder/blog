@@ -8,6 +8,8 @@ const tags = Object.values(rawTags);
 tags.sort((a, b) => {
   return b.count - a.count;
 });
+
+const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
 ---
 
 <div>
@@ -101,4 +103,20 @@ tags.sort((a, b) => {
       >
     </p>
   </div>
+  <div class="sha">
+    {
+      sha && (
+        <a href={`https://github.com/beeminder/blog/commit/${sha}`}>
+          {sha.slice(0, 7)}
+        </a>
+      )
+    }
+  </div>
 </div>
+
+<style>
+  .sha {
+    font-size: 0.8em;
+    opacity: 0.5;
+  }
+</style>
