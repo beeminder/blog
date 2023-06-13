@@ -13,7 +13,15 @@ const { posts } = Astro.props;
     posts.map((p) => (
       <li>
         {p.image && (
-          <img src={p.image.src} alt={p.image.alt} width="200" height="200" />
+          <a href={`/${p.slug}`}>
+            <img
+              src={p.image.src}
+              alt={p.image.alt}
+              title={p.image.alt}
+              width="200"
+              height="200"
+            />
+          </a>
         )}
         <div>
           <h2>
@@ -37,6 +45,10 @@ const { posts } = Astro.props;
   li {
     margin-bottom: 1rem;
     display: flex;
+  }
+
+  li > a {
+    flex-shrink: 0;
   }
 
   h2 {
