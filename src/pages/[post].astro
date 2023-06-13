@@ -3,6 +3,7 @@ import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
 import Layout from "../layouts/Layout.astro";
 import Tags from "../components/Tags.astro";
 import getPosts from "../lib/getPosts";
+import Shadowbox from "../components/Shadowbox.astro";
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -29,35 +30,43 @@ const older = posts[postIndex + 1];
 ---
 
 <Layout title={title}>
-  <div class="nav">
-    {
-      newer && (
-        <a
-          class="older"
-          href={`/${newer.slug}`}
-          set:html={`« ${newer.title}`}
-        />
-      )
-    }
-    {
-      older && (
-        <a
-          class="newer"
-          href={`/${older.slug}`}
-          set:html={`${older.title} »`}
-        />
-      )
-    }
-  </div>
-  <h1 set:html={title} />
-  <p>{date_string}</p>
-  <p>By {author}</p>
+  <Shadowbox>
+    <div class="nav">
+      {
+        newer && (
+          <a
+            class="older"
+            href={`/${newer.slug}`}
+            set:html={`« ${newer.title}`}
+          />
+        )
+      }
+      {
+        older && (
+          <a
+            class="newer"
+            href={`/${older.slug}`}
+            set:html={`${older.title} »`}
+          />
+        )
+      }
+    </div>
+    <h1 set:html={title} />
+    <p>{date_string}</p>
+    <p>By {author}</p>
 
-  <div set:html={content} />
-  <Tags tags={tags} />
-  <a href=`/${post}`>Permalink</a>
-  <div id="disqus_thread" data-url={disqus.url} data-identifier={disqus.id}>
-  </div>
+    <div set:html={content} />
+  </Shadowbox>
+
+  <Shadowbox>
+    <Tags tags={tags} />
+    <a href=`/${post}`>Permalink</a>
+  </Shadowbox>
+
+  <Shadowbox>
+    <div id="disqus_thread" data-url={disqus.url} data-identifier={disqus.id}>
+    </div>
+  </Shadowbox>
 </Layout>
 
 <script is:inline>
