@@ -1,0 +1,11 @@
+---
+import feather, { FeatherIconNames } from "feather-icons";
+
+interface Props {
+  name: FeatherIconNames;
+}
+
+const { name } = Astro.props;
+---
+
+<span set:html={feather.icons[name].toSvg()} />
