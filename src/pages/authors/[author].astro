@@ -1,0 +1,32 @@
+---
+import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
+import Layout from "../../layouts/Layout.astro";
+import getPosts from "../../lib/getPosts";
+import Posts from "../../components/Posts.astro";
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  const authors = [...new Set(posts.map((post) => post.author))];
+
+  return authors.map((a) => ({
+    params: {
+      author: a,
+    },
+    props: {
+      posts: posts.filter((p) => p.author === a),
+    },
+  }));
+}
+
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { author } = Astro.params as Params;
+const { posts } = Astro.props as Props;
+---
+
+<Layout title={author}>
+  <h1>{author}</h1>
+  <p>{posts.length} posts</p>
+  <Posts posts={posts} />
+</Layout>

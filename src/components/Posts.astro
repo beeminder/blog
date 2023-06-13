@@ -28,7 +28,9 @@ const { posts } = Astro.props;
             <a href={`/${p.slug}`} set:html={p.title} />
           </h2>
           <p>{p.date_string}</p>
-          <p>By {p.author}</p>
+          <p>
+            By <a href={`/authors/${p.author}`}>{p.author}</a>
+          </p>
           <p>{p.excerpt}</p>
         </div>
       </li>
