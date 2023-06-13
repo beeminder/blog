@@ -30,28 +30,27 @@ const older = posts[postIndex + 1];
 ---
 
 <Layout title={title} description={excerpt} image={image?.src}>
+  <div class="nav">
+    {
+      newer && (
+        <a
+          class="older"
+          href={`/${newer.slug}`}
+          set:html={`« ${newer.title}`}
+        />
+      )
+    }
+    {
+      older && (
+        <a
+          class="newer"
+          href={`/${older.slug}`}
+          set:html={`${older.title} »`}
+        />
+      )
+    }
+  </div>
   <Shadowbox>
-    <div class="nav">
-      {
-        newer && (
-          <a
-            class="older"
-            href={`/${newer.slug}`}
-            set:html={`« ${newer.title}`}
-          />
-        )
-      }
-      {
-        older && (
-          <a
-            class="newer"
-            href={`/${older.slug}`}
-            set:html={`${older.title} »`}
-          />
-        )
-      }
-    </div>
-
     <PostMeta
       post={Astro.props}
       includeExcerpt={false}
@@ -60,11 +59,8 @@ const older = posts[postIndex + 1];
     />
 
     <div set:html={content} />
-  </Shadowbox>
 
-  <Shadowbox>
     <Tags tags={tags} />
-    <a href=`/${post}`>Permalink</a>
   </Shadowbox>
 
   <Shadowbox>
@@ -95,6 +91,7 @@ const older = posts[postIndex + 1];
   .nav {
     display: flex;
     justify-content: space-between;
+    padding: 0 var(--gap-2) var(--gap-1) var(--gap-2);
   }
 
   .nav a {
