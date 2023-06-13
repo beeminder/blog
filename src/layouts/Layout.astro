@@ -68,10 +68,11 @@ const { title, redirect } = Astro.props;
     --primary: #cc0000;
     --secondary: #ffcb06;
     --gap: 2rem;
+    --line-height: 1.35em;
   }
   html {
     font-family: system-ui, sans-serif;
-    line-height: 1.35em;
+    line-height: var(--line-height);
     background-color: #f6f6f6;
   }
   body {
@@ -100,9 +101,10 @@ const { title, redirect } = Astro.props;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     font-family: Georgia, serif;
-    font-weight: normal;
+    font-weight: 200;
     font-style: italic;
     font-size: 1.2em;
+    line-height: var(--line-height);
     padding: var(--gap);
     margin-left: var(--gap);
   }
