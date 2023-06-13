@@ -6,14 +6,17 @@ import getLegacyData from "./getLegacyData";
 
 describe("getPosts", () => {
   beforeEach(() => {
-    vi.mocked(readFileSync).mockReturnValue("");
+    vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
     vi.mocked(getLegacyData).mockResolvedValue({
       expost_source_url: "https://padm.us/psychpricing",
       Slug: "psychpricing",
+      Date: "2021-09-01",
     });
   });
 
   it("filters out blank lines", async () => {
+    vi.mocked(readFileSync).mockReturnValue("");
+
     const posts = await getPosts();
 
     expect(posts).toHaveLength(0);
@@ -27,8 +30,6 @@ describe("getPosts", () => {
   });
 
   it("fetches post content", async () => {
-    vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
-
     await getPosts();
 
     expect(fetchPost).toBeCalledWith("https://padm.us/psychpricing");
@@ -42,6 +43,7 @@ describe("getPosts", () => {
     vi.mocked(getLegacyData).mockResolvedValue({
       expost_source_url: "https://dtherpad.com/psychpricing",
       Slug: "psychpricing",
+      Date: "2021-09-01",
     });
 
     const result = await getPosts();
@@ -57,6 +59,7 @@ describe("getPosts", () => {
     vi.mocked(getLegacyData).mockResolvedValue({
       expost_source_url: "https://dtherpad.com/psychpricing",
       Slug: "psychpricing",
+      Date: "2021-09-01",
     });
 
     await getPosts();
@@ -91,5 +94,13 @@ https://dtherpad.com/new
     const result = await getPosts();
 
     expect(result[0]?.url).toContain("new");
+  });
+
+  it("includes excerpts", async () => {
+    vi.mocked(fetchPost).mockResolvedValue("word");
+
+    const posts = await getPosts();
+
+    expect(posts[0]?.excerpt).toContain("word");
   });
 });

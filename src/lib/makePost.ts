@@ -5,10 +5,13 @@ import getLegacyData from "./getLegacyData";
 export type Post = {
   url: string;
   title: string;
+  excerpt: string;
   content: string;
+  markdown: string;
   slug: string;
   tags: string[];
   date: Date;
+  date_string: string;
   author: string;
   disqus: {
     id: string;
@@ -29,21 +32,30 @@ function formatUrl(url: string) {
 
 export default async function makePost(url: string): Promise<Post> {
   const wp = await getLegacyData(url);
-  const formattedUrl = formatUrl(url);
-  const markdown = await fetchPost(formattedUrl);
   const slug = wp?.Slug;
 
   if (typeof slug !== "string") {
     throw new Error(`Invalid slug for ${url}`);
   }
 
+  const formattedUrl = formatUrl(url);
+  const markdown = await fetchPost(formattedUrl);
+  const date = new Date(String(wp?.Date));
+  const date_string = date.toISOString().split("T")[0];
+
+  if (!date_string) {
+    throw new Error(`Invalid date for ${url}`);
+  }
+
   return {
     ...parseMarkdown(markdown),
     slug,
+    markdown,
     tags: String(wp?.Tags || "")
       .split("|")
       .filter(Boolean),
-    date: new Date(String(wp?.Date)),
+    date,
+    date_string,
     url: formattedUrl,
     author: String(wp?.["Author Username"]),
     disqus: {

@@ -18,7 +18,8 @@ type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { post } = Astro.params as Params;
-const { content, title, date, author, tags, disqus } = Astro.props as Props;
+const { content, title, date_string, author, tags, disqus } =
+  Astro.props as Props;
 
 const posts = await getPosts();
 
@@ -33,7 +34,7 @@ const older = posts[postIndex + 1];
     {older && <a href={`/${older.slug}`} set:html={`${older.title} »`} />}
   </div>
   <h1 set:html={title} />
-  <p>{date.toISOString().split("T")[0]}</p>
+  <p>{date_string}</p>
   <p>By {author}</p>
 
   <div set:html={content} />

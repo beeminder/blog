@@ -1,19 +1,43 @@
 ---
-import type { Post } from '../lib/makePost'
+import type { Post } from "../lib/makePost";
 
 interface Props {
-    posts: Post[]
+  posts: Post[];
 }
 
-const { posts } = Astro.props
+const { posts } = Astro.props;
 ---
 
 <ul>
-    {
-      posts.map((p) => (
-        <li>
+  {
+    posts.map((p) => (
+      <li>
+        <h2>
           <a href={`/${p.slug}`} set:html={p.title} />
-        </li>
-      ))
-    }
-  </ul>
+        </h2>
+        <p>{p.date_string}</p>
+        <p>By {p.author}</p>
+        <p>{p.excerpt}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
+</style>

@@ -10,6 +10,7 @@ describe("getTags", () => {
       expost_source_url: "https://padm.us/psychpricing",
       Slug: "psychpricing",
       Tags: "the_tag",
+      Date: "2021-09-01",
     });
   });
 
@@ -42,6 +43,7 @@ describe("getTags", () => {
       expost_source_url: "https://padm.us/psychpricing",
       Slug: "psychpricing",
       Tags: "",
+      Date: "2021-09-01",
     });
 
     const result = await getTags();
