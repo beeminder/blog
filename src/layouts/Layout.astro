@@ -4,24 +4,32 @@ import Header from "../components/Header.astro";
 
 export interface Props {
   title: string;
-  redirect?: string;
+  description?: string | undefined;
+  image?: string | undefined;
 }
 
-const { title, redirect } = Astro.props;
+const { title, description, image } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
 
     <title>{title} | Beeminder Blog</title>
 
-    {redirect && <meta http-equiv="refresh" content={`0; url=${redirect}`} />}
+    <link rel="canonical" href={canonicalUrl} />
+    {description && <meta name="description" content={description} />}
+
+    <meta property="og:title" content={title} />
+    <meta property="og:url" content={canonicalUrl} />
+    {description && <meta property="og:description" content={description} />}
+    {image && <meta property="og:image" content={image} />}
 
     <script
       type="text/javascript"
@@ -35,73 +43,72 @@ const { title, redirect } = Astro.props;
       <div><slot /></div>
       <div><Sidebar /></div>
     </div>
+    <style>
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: var(--gap);
+        max-width: var(--content-width);
+        margin: 0 auto;
+      }
+      .content > *:first-child {
+        flex: 1 0 500px;
+        max-width: 100%;
+      }
+      .content > *:last-child {
+        flex: 0 0 300px;
+        padding-left: var(--gap);
+      }
+    </style>
+
+    <style is:global>
+      :root {
+        --primary: #cc0000;
+        --secondary: #ffcb06;
+        --gap: 2rem;
+        --line-height: 1.35em;
+        --content-width: 1200px;
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        line-height: var(--line-height);
+        background-color: #eee;
+      }
+      body {
+        margin: 0;
+      }
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      img {
+        max-width: 100%;
+      }
+      code {
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+      .pullquote {
+        float: right;
+        width: 15rem;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        font-family: Georgia, serif;
+        font-weight: 200;
+        font-style: italic;
+        font-size: 1.2em;
+        line-height: var(--line-height);
+        padding: var(--gap);
+        margin-left: var(--gap);
+      }
+      .aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: var(--gap);
-    max-width: var(--content-width);
-    margin: 0 auto;
-  }
-  .content > *:first-child {
-    flex: 1 0 500px;
-    max-width: 100%;
-  }
-  .content > *:last-child {
-    flex: 0 0 300px;
-    padding-left: var(--gap);
-  }
-</style>
-
-<style is:global>
-  :root {
-    --primary: #cc0000;
-    --secondary: #ffcb06;
-    --gap: 2rem;
-    --line-height: 1.35em;
-    --content-width: 1200px;
-  }
-  html {
-    font-family: system-ui, sans-serif;
-    line-height: var(--line-height);
-    background-color: #eee;
-  }
-  body {
-    margin: 0;
-  }
-  a {
-    color: var(--primary);
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  img {
-    max-width: 100%;
-  }
-  code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-  }
-  .pullquote {
-    float: right;
-    width: 15rem;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    font-family: Georgia, serif;
-    font-weight: 200;
-    font-style: italic;
-    font-size: 1.2em;
-    line-height: var(--line-height);
-    padding: var(--gap);
-    margin-left: var(--gap);
-  }
-  .aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
