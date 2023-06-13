@@ -2,6 +2,7 @@
 import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
 import getArchives from "../../lib/getArchives";
 import Layout from "../../layouts/Layout.astro";
+import Posts from "../../components/Posts.astro";
 
 export async function getStaticPaths() {
   const archives = await getArchives();
@@ -33,13 +34,5 @@ const title = `${month} ${year}`;
 <Layout title={title}>
   <h1>{title}</h1>
   <p>{posts.length} posts</p>
-  <ul>
-    {
-      posts.map((p) => (
-        <li>
-          <a href={`/${p.slug}`} set:html={p.title} />
-        </li>
-      ))
-    }
-  </ul>
+  <Posts posts={posts} />
 </Layout>
