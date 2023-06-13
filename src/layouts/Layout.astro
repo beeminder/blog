@@ -77,11 +77,26 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         --secondary: #ffcb06;
         --gap: 2rem;
         --line-height: 1.35em;
+        --line-height-headings: 1.2em;
         --content-width: 1200px;
+      }
+      *:not(h1, h2, h3, h4, h5) {
+        line-height: var(--line-height);
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h1 > *,
+      h2 > *,
+      h3 > *,
+      h4 > *,
+      h5 > * {
+        line-height: var(--line-height-headings);
       }
       html {
         font-family: system-ui, sans-serif;
-        line-height: var(--line-height);
         background-color: #eee;
       }
       body {
