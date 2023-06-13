@@ -43,6 +43,8 @@ const { title, redirect } = Astro.props;
     display: flex;
     flex-wrap: wrap;
     padding: var(--gap);
+    max-width: var(--content-width);
+    margin: 0 auto;
   }
   .content > *:first-child {
     flex: 1 0 500px;
@@ -60,6 +62,7 @@ const { title, redirect } = Astro.props;
     --secondary: #ffcb06;
     --gap: 2rem;
     --line-height: 1.35em;
+    --content-width: 1200px;
   }
   html {
     font-family: system-ui, sans-serif;

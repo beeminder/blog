@@ -3,41 +3,49 @@ import Icon from "./Icon.astro";
 ---
 
 <div class="header">
-  <div>
-    <a href="https://beeminder.com">« Beeminder home</a>
-    <h2>
-      <a href="/">Beeminder Blog</a>
-    </h2>
-  </div>
+  <div class="inner">
+    <div>
+      <a href="https://beeminder.com">« Beeminder home</a>
+      <h2>
+        <a href="/">Beeminder Blog</a>
+      </h2>
+    </div>
 
-  <div>
-    <a
-      title="Email Notifications"
-      href="http://feedburner.google.com/fb/a/mailverify?uri=bmndr&loc=en_US"
-      ><Icon name="mail" /></a
-    >
-    <a
-      title="Subscribe by RSS"
-      href="http://feedburner.google.com/fb/a/mailverify?uri=bmndr&loc=en_US"
-      ><Icon name="rss" /></a
-    >
-    <a title="Follow us on Twitter" href="http://twitter.com/bmndr"
-      ><Icon name="twitter" /></a
-    >
-    <a title="Follow us on Facebook" href="http://beeminder.com/facebook"
-      ><Icon name="facebook" /></a
-    >
+    <div>
+      <a
+        title="Email Notifications"
+        href="http://feedburner.google.com/fb/a/mailverify?uri=bmndr&loc=en_US"
+        ><Icon name="mail" /></a
+      >
+      <a
+        title="Subscribe by RSS"
+        href="http://feedburner.google.com/fb/a/mailverify?uri=bmndr&loc=en_US"
+        ><Icon name="rss" /></a
+      >
+      <a title="Follow us on Twitter" href="http://twitter.com/bmndr"
+        ><Icon name="twitter" /></a
+      >
+      <a title="Follow us on Facebook" href="http://beeminder.com/facebook"
+        ><Icon name="facebook" /></a
+      >
+    </div>
   </div>
 </div>
 
 <style>
   .header {
     background-color: var(--secondary);
+
+    box-shadow: 0 -9px 5px 10px #a9a9a9;
+  }
+
+  .inner {
     padding: var(--gap);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    box-shadow: 0 -9px 5px 10px #a9a9a9;
+    max-width: var(--content-width);
+    margin: 0 auto;
   }
 
   .header a {
