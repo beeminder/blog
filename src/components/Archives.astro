@@ -1,5 +1,6 @@
 ---
 import getArchives from "../lib/getArchives";
+import Shadowbox from "./Shadowbox.astro";
 
 function getSortedValues<T>(obj: Record<string, T>): T[] {
   return Object.entries(obj)
@@ -11,7 +12,7 @@ const archives = await getArchives();
 const years = getSortedValues(archives);
 ---
 
-<div>
+<Shadowbox>
   <h3>Archives</h3>
   <ul>
     {
@@ -24,4 +25,4 @@ const years = getSortedValues(archives);
       ))
     }
   </ul>
-</div>
+</Shadowbox>
