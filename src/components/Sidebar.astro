@@ -1,6 +1,7 @@
 ---
 import getTags from "../lib/getTags";
 import Archives from "./Archives.astro";
+import Icon from "./Icon.astro";
 import Shadowbox from "./Shadowbox.astro";
 
 const rawTags = await getTags();
@@ -15,6 +16,13 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
 
 <div>
   <Shadowbox>
+    <form action="https://duckduckgo.com">
+      <button type="submit"><Icon name="search" /></button>
+      <input name="q" placeholder="Search" />
+      <input type="hidden" name="sites" value="blog.beeminder.com" />
+    </form>
+  </Shadowbox>
+  <Shadowbox>
     <div class="inner">
       <h3>About</h3>
       <p>
@@ -27,15 +35,6 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
         The Beeminder blog is a hodgepodge of productivity nerdery and
         behavioral economics written by the founders and various friends.
       </p>
-    </div>
-  </Shadowbox>
-  <Shadowbox>
-    <div class="inner">
-      <h3>Search</h3>
-      <form action="https://duckduckgo.com">
-        <input name="q" placeholder="Enter your search" />
-        <input type="hidden" name="sites" value="blog.beeminder.com" />
-      </form>
     </div>
   </Shadowbox>
   <Archives />
@@ -136,6 +135,25 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
 
   .inner > *:last-child {
     margin-bottom: 0;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+  }
+
+  form button {
+    cursor: pointer;
+    background: none;
+    border: 0;
+    padding: 0;
+    padding-right: 1em;
+  }
+
+  form input {
+    border: 0;
+    outline: 0;
+    flex-grow: 1;
   }
 
   .sha {
