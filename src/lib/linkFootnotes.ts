@@ -19,7 +19,7 @@ export default function linkFootnotes(markdown: string): string {
     return chunks.reduce((acc, chunk, j, arr) => {
       if (j === 0) return chunk;
 
-      const text = i + 1;
+      const text = `[${i + 1}]`;
       const isEndNote = j === arr.length - 1;
       const htmlId = isEndNote ? id : `${id}${j}`;
       const href = isEndNote ? `${id}1` : id;
