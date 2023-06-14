@@ -29,27 +29,19 @@ const newer = posts[postIndex - 1];
 const older = posts[postIndex + 1];
 ---
 
-<Layout title={title} description={excerpt} image={image?.src}>
-  <div class="nav">
-    {
-      newer && (
-        <a
-          class="older"
-          href={`/${newer.slug}`}
-          set:html={`« ${newer.title}`}
-        />
-      )
-    }
-    {
-      older && (
-        <a
-          class="newer"
-          href={`/${older.slug}`}
-          set:html={`${older.title} »`}
-        />
-      )
-    }
-  </div>
+<Layout
+  title={title}
+  description={excerpt}
+  image={image?.src}
+  next={newer && {
+    title: newer.title,
+    url: newer.slug,
+  }}
+  previous={older && {
+    title: older.title,
+    url: older.slug,
+  }}
+>
   <Shadowbox>
     <PostMeta
       post={Astro.props}
@@ -86,19 +78,3 @@ const older = posts[postIndex + 1];
     (d.head || d.body).appendChild(s);
   })();
 </script>
-
-<style>
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 var(--gap-2) var(--gap-1) var(--gap-2);
-  }
-
-  .nav a {
-    flex-grow: 1;
-  }
-
-  .newer {
-    text-align: right;
-  }
-</style>

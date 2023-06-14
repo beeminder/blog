@@ -6,9 +6,21 @@ export interface Props {
   title: string;
   description?: string | undefined;
   image?: string | undefined;
+  previous?:
+    | {
+        title: string;
+        url: string;
+      }
+    | undefined;
+  next?:
+    | {
+        title: string;
+        url: string;
+      }
+    | undefined;
 }
 
-const { title, description, image } = Astro.props;
+const { title, description, image, previous, next } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -39,14 +51,60 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
   </head>
   <body>
     <Header />
+
+    <div class="nav">
+      {
+        previous && (
+          <a class="previous" href={previous.url}>
+            « {previous.title}
+          </a>
+        )
+      }
+      {
+        next && (
+          <a class="next" href={next.url}>
+            {next.title} »
+          </a>
+        )
+      }
+    </div>
+
     <div class="content">
-      <div><slot /></div>
+      <div>
+        <slot /><div class="nav">
+          {
+            previous && (
+              <a class="previous" href={previous.url}>
+                « {previous.title}
+              </a>
+            )
+          }
+          {
+            next && (
+              <a class="next" href={next.url}>
+                {next.title} »
+              </a>
+            )
+          }
+        </div>
+      </div>
       <div><Sidebar /></div>
     </div>
     <style>
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: var(--content-width);
+        margin: 0 auto;
+        padding: var(--gap-1) var(--gap-3) 0 var(--gap-3);
+      }
+      .next {
+        text-align: right;
+        flex-grow: 1;
+      }
       .content {
         display: flex;
-        padding: var(--gap-2);
+        padding: var(--gap-1) var(--gap-2);
         max-width: var(--content-width);
         margin: 0 auto;
       }
@@ -54,12 +112,19 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         flex: 1 0 500px;
         max-width: 100%;
       }
+      .content .nav {
+        padding: 0 var(--gap-1) var(--gap-1) var(--gap-1);
+      }
       .content > *:last-child {
         flex: 0 0 300px;
         padding-left: var(--gap-1);
       }
 
       @media (max-width: 900px) {
+        .nav {
+          padding-left: var(--gap-1);
+          padding-right: var(--gap-1);
+        }
         .content {
           flex-direction: column;
           padding-left: 0;
@@ -83,6 +148,9 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         --line-height: 1.35em;
         --line-height-headings: 1.2em;
         --content-width: 1200px;
+      }
+      * {
+        box-sizing: border-box;
       }
       *:not(h1, h2, h3, h4, h5) {
         line-height: var(--line-height);
