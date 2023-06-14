@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar.astro";
 import Header from "../components/Header.astro";
 import "@fontsource/source-sans-pro/700.css";
 import "@fontsource-variable/lora";
+import Pagination from "../components/Pagination.astro";
 
 export interface Props {
   title: string;
@@ -54,42 +55,12 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
   <body>
     <Header />
 
-    <div class="nav">
-      {
-        previous && (
-          <a class="previous" href={previous.url}>
-            « {previous.title}
-          </a>
-        )
-      }
-      {
-        next && (
-          <a class="next" href={next.url}>
-            {next.title} »
-          </a>
-        )
-      }
-    </div>
+    <Pagination class="nav" previous={previous} next={next} />
 
     <div class="content">
       <div>
         <slot />
-        <div class="nav">
-          {
-            previous && (
-              <a class="previous" href={previous.url}>
-                « {previous.title}
-              </a>
-            )
-          }
-          {
-            next && (
-              <a class="next" href={next.url}>
-                {next.title} »
-              </a>
-            )
-          }
-        </div>
+        <Pagination class="nav" previous={previous} next={next} />
       </div>
       <div><Sidebar /></div>
     </div>
