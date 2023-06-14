@@ -62,7 +62,7 @@ paragraph
     const { content } = parseMarkdown("$FN[foo] $FN[foo]");
 
     expect(content).toContain(
-      '<a class="footnote" id="foo1" href="#foo">1</a>'
+      '<a class="footnote" id="foo1" href="#foo">[1]</a>'
     );
   });
 
