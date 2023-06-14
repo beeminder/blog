@@ -11,6 +11,7 @@ interface Props {
 }
 
 const {
+  Heading,
   post,
   includeExcerpt = true,
   linkTitle = true,
@@ -20,6 +21,7 @@ const {
 
 <div class:list={["post-meta", className]}>
   <TitleLockup
+    Heading={Heading}
     title={post.title}
     href={linkTitle ? `/${post.slug}` : undefined}
   >
