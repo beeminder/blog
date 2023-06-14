@@ -3,6 +3,7 @@ import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
 import getArchives from "../../lib/getArchives";
 import Layout from "../../layouts/Layout.astro";
 import Posts from "../../components/Posts.astro";
+import TitleLockup from "../../components/TitleLockup.astro";
 
 export async function getStaticPaths() {
   const archives = await getArchives();
@@ -32,7 +33,6 @@ const title = `${month} ${year}`;
 ---
 
 <Layout title={title}>
-  <h1>{title}</h1>
-  <p>{posts.length} posts</p>
+  <TitleLockup Heading="h1" title={title}>{posts.length} posts</TitleLockup>
   <Posts posts={posts} />
 </Layout>

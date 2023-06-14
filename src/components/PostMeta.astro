@@ -1,5 +1,6 @@
 ---
 import type { Post } from "../lib/makePost";
+import TitleLockup from "./TitleLockup.astro";
 
 interface Props {
   post: Post;
@@ -13,28 +14,18 @@ const {
   post,
   includeExcerpt = true,
   linkTitle = true,
-  Heading = "h2",
   class: className,
 } = Astro.props;
 ---
 
 <div class:list={["post-meta", className]}>
-  <Heading>
-    {
-      linkTitle ? (
-        <a href={`/${post.slug}`} set:html={post.title} />
-      ) : (
-        <span set:html={post.title} />
-      )
-    }
-  </Heading>
-  <small>
-    <span class="date">{post.date_string}</span>
-    <span class="separator">•</span>
-    <span class="author">
-      by <a href={`/authors/${post.author}`}>{post.author}</a>
-    </span>
-  </small>
+  <TitleLockup
+    title={post.title}
+    href={linkTitle ? `/${post.slug}` : undefined}
+  >
+    {post.date_string} • by <a href={`/authors/${post.author}`}>{post.author}</a
+    >
+  </TitleLockup>
   {includeExcerpt && <p class="excerpt">{post.excerpt}</p>}
 </div>
 
@@ -42,16 +33,6 @@ const {
   .post-meta {
     flex: 1 0 275px;
     max-width: 100%;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-    overflow: hidden;
   }
 
   .excerpt {

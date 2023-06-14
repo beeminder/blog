@@ -3,6 +3,7 @@ import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
 import Layout from "../../layouts/Layout.astro";
 import getPosts from "../../lib/getPosts";
 import Posts from "../../components/Posts.astro";
+import TitleLockup from "../../components/TitleLockup.astro";
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -23,10 +24,11 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { author } = Astro.params as Params;
 const { posts } = Astro.props as Props;
+
+const title = `Author: ${author}`;
 ---
 
-<Layout title={author}>
-  <h1>{author}</h1>
-  <p>{posts.length} posts</p>
+<Layout title={title}>
+  <TitleLockup Heading="h1" title={title}>{posts.length} posts</TitleLockup>
   <Posts posts={posts} />
 </Layout>
