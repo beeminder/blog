@@ -1,3 +1,5 @@
+.temp*
+
 # build output
 dist/
 .cache/

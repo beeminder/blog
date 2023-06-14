@@ -1,6 +1,8 @@
 ---
 import Sidebar from "../components/Sidebar.astro";
 import Header from "../components/Header.astro";
+import "@fontsource/source-sans-pro/700.css";
+import "@fontsource-variable/lora";
 
 export interface Props {
   title: string;
@@ -71,7 +73,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
     <div class="content">
       <div>
-        <slot /><div class="nav">
+        <slot />
+        <div class="nav">
           {
             previous && (
               <a class="previous" href={previous.url}>
@@ -140,12 +143,13 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       :root {
         --primary: #cc0000;
         --secondary: #ffcb06;
+        --black: #3b3b3b;
 
         --gap-1: 1rem;
         --gap-2: 2rem;
         --gap-3: 3rem;
 
-        --line-height: 1.35em;
+        --line-height: 1.4em;
         --line-height-headings: 1.2em;
         --content-width: 1200px;
       }
@@ -166,10 +170,13 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       h4 > *,
       h5 > * {
         line-height: var(--line-height-headings);
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
       }
       html {
-        font-family: system-ui, sans-serif;
         background-color: #eee;
+        font-family: sans-serif;
+        color: var(--black);
       }
       body {
         margin: 0;
@@ -187,6 +194,11 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       code {
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+      p,
+      .pullquote,
+      blockquote {
+        font-family: "Lora Variable", serif;
       }
       .pullquote {
         float: right;

@@ -1,5 +1,6 @@
 ---
 import Icon from "./Icon.astro";
+import "@fontsource/source-sans-pro/900.css";
 ---
 
 <div class="header">
@@ -46,15 +47,18 @@ import Icon from "./Icon.astro";
     margin: 0 auto;
   }
   .header a {
-    color: #3b3b3b;
+    color: var(--black);
   }
   .header a:hover {
     text-decoration: none;
     color: var(--primary);
   }
-  h2 {
+  .header h2 {
     margin: 0;
     font-size: 2.5em;
+  }
+  .header h2 a {
+    font-weight: 900;
   }
   .icons {
     text-align: right;
