@@ -24,6 +24,10 @@ export type ParsedMarkdown = {
   excerpt: string;
   image: Image | undefined;
   frontmatter: Record<string, unknown>;
+  slug: string | undefined;
+  date: Date | undefined;
+  author: string | undefined;
+  tags: string[];
 };
 
 export default function parseMarkdown(markdown: string): ParsedMarkdown {
@@ -39,6 +43,10 @@ export default function parseMarkdown(markdown: string): ParsedMarkdown {
     typeof data.excerpt === "string" ? data.excerpt : getExcerpt(content);
   const image =
     typeof data.image?.src === "string" ? data.image : getImage(content);
+  const slug = typeof data.slug === "string" ? data.slug : undefined;
+  const date = data.date instanceof Date ? data.date : undefined;
+  const author = typeof data.author === "string" ? data.author : undefined;
+  const tags = Array.isArray(data.tags) ? data.tags : [];
 
   return {
     title,
@@ -46,5 +54,9 @@ export default function parseMarkdown(markdown: string): ParsedMarkdown {
     excerpt,
     image,
     frontmatter: data,
+    slug,
+    date,
+    author,
+    tags,
   };
 }

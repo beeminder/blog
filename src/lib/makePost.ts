@@ -37,49 +37,34 @@ export default async function makePost(url: string): Promise<Post> {
   const formattedUrl = formatUrl(url);
   const markdown = await fetchPost(formattedUrl);
   const parsed = parseMarkdown(markdown);
-  const slug =
-    typeof parsed.frontmatter.slug === "string"
-      ? parsed.frontmatter.slug
-      : wp?.Slug;
+
+  if (!wp?.id && !parsed.excerpt) {
+    throw new Error("Custom excerpts are required for new posts.");
+  }
+
+  const slug = parsed.slug || wp?.Slug;
 
   if (typeof slug !== "string") {
     throw new Error(`Invalid slug for ${url}`);
   }
 
-  const date =
-    parsed.frontmatter.date instanceof Date
-      ? parsed.frontmatter.date
-      : new Date(
-          typeof parsed.frontmatter.date === "string"
-            ? parsed.frontmatter.date
-            : String(wp?.Date)
-        );
+  const date = parsed.date || new Date(String(wp?.Date));
   const date_string = date.toISOString().split("T")[0];
 
   if (!date_string) {
     throw new Error(`Invalid date for ${url}`);
   }
 
-  const author =
-    typeof parsed.frontmatter.author === "string"
-      ? parsed.frontmatter.author
-      : wp?.["Author Username"]?.toString() || "";
-  const frontmatterTags = Array.isArray(parsed.frontmatter.tags)
-    ? parsed.frontmatter.tags
-    : [];
+  const author = parsed.author || wp?.["Author Username"]?.toString() || "";
   const wpTags = String(wp?.Tags || "")
     .split("|")
     .filter(Boolean);
-
-  if (!wp?.id && !parsed.excerpt) {
-    throw new Error("Custom excerpts are required for new posts.");
-  }
 
   return {
     ...parsed,
     slug,
     markdown,
-    tags: [...frontmatterTags, ...wpTags],
+    tags: [...parsed.tags, ...wpTags],
     date,
     date_string,
     url: formattedUrl,
