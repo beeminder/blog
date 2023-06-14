@@ -71,6 +71,10 @@ export default async function makePost(url: string): Promise<Post> {
     .split("|")
     .filter(Boolean);
 
+  if (!wp?.id && !parsed.excerpt) {
+    throw new Error("Custom excerpts are required for new posts.");
+  }
+
   return {
     ...parsed,
     slug,
