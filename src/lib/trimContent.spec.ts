@@ -13,4 +13,10 @@ describe("trimContent", () => {
 
     expect(result).not.toContain("END_MAGIC");
   });
+
+  it("handles start tag without title", () => {
+    const result = trimContent("BEGIN_MAGIC\nhello world");
+
+    expect(result).not.toContain("BEGIN_MAGIC");
+  });
 });
