@@ -9,7 +9,13 @@ const posts = await getPosts();
 const featured = posts[0];
 ---
 
-<Layout title="Home">
+<Layout
+  title="Home"
+  previous={{
+    url: "/page/2",
+    title: "Older Entries",
+  }}
+>
   {
     featured && (
       <Shadowbox>
@@ -31,7 +37,6 @@ const featured = posts[0];
     )
   }
   <Posts posts={posts.slice(1, 6)} />
-  <a class="older" href="/page/2">« Older Entries</a>
 </Layout>
 
 <style>
@@ -47,11 +52,5 @@ const featured = posts[0];
 
   .featured-meta :global(h2) {
     font-size: 2.5em;
-  }
-
-  .older {
-    display: block;
-    margin-bottom: var(--gap-2);
-    margin-left: var(--gap-2);
   }
 </style>

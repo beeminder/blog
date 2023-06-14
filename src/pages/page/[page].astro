@@ -18,27 +18,22 @@ interface Props {
 }
 
 const { page } = Astro.props;
+
+const older = page.url.next
+  ? {
+      url: page.url.next,
+      title: "Older Entries",
+    }
+  : undefined;
+
+const newer = page.url.prev
+  ? {
+      url: page.currentPage === 2 ? "/" : page.url.prev,
+      title: "Newer Entries",
+    }
+  : undefined;
 ---
 
-<Layout title={`Page ${page.currentPage}`}>
+<Layout title={`Page ${page.currentPage}`} previous={older} next={newer}>
   <Posts posts={page.data} />
-  <div class="nav">
-    {page.url.next && <a href={page.url.next}>« Older Entries</a>}
-    {
-      page.url.prev && (
-        <a href={page.currentPage === 2 ? "/" : page.url.prev}>
-          Newer Entries »
-        </a>
-      )
-    }
-  </div>
 </Layout>
-
-<style>
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 var(--gap-2) var(--gap-2);
-  }
-</style>
