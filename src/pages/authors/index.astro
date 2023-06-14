@@ -1,5 +1,6 @@
 ---
 import Shadowbox from "../../components/Shadowbox.astro";
+import TitleLockup from "../../components/TitleLockup.astro";
 import Layout from "../../layouts/Layout.astro";
 import getPosts from "../../lib/getPosts";
 
@@ -15,7 +16,7 @@ function getPostsByAuthor(author: string) {
 
 <Layout title="Authors">
   <Shadowbox>
-    <h1>Authors</h1>
+    <TitleLockup Heading="h1" title="Authors" />
     <ul>
       {
         authors.map((author) => (

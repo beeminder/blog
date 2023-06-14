@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  Heading?: string;
+  href?: string | undefined;
+  class?: string;
+}
+
+const { title, href, Heading = "h2", class: className } = Astro.props;
+---
+
+<div class:list={["title-lockup", className]}>
+  <Heading>
+    {href ? <a href={href} set:html={title} /> : <span set:html={title} />}
+  </Heading>
+  <small><slot /></small>
+</div>
+
+<style>
+  .title-lockup {
+    flex: 1 0 275px;
+    max-width: 100%;
+    margin-bottom: var(--gap-1);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    overflow: hidden;
+  }
+</style>

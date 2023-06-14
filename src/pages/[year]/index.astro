@@ -3,6 +3,7 @@ import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
 import getArchives from "../../lib/getArchives";
 import Layout from "../../layouts/Layout.astro";
 import Posts from "../../components/Posts.astro";
+import TitleLockup from "../../components/TitleLockup.astro";
 
 export async function getStaticPaths() {
   const archives = await getArchives();
@@ -21,10 +22,15 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { year } = Astro.params as Params;
 const { months } = Astro.props;
+
+const postCount = Object.values(months).reduce(
+  (acc, m) => acc + m.posts.length,
+  0
+);
 ---
 
 <Layout title={year}>
-  <h1>{year}</h1>
+  <TitleLockup Heading="h1" title={year}>{postCount} posts</TitleLockup>
   {
     Object.values(months).map((m) => (
       <>

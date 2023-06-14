@@ -1,5 +1,6 @@
 ---
 import Shadowbox from "../../components/Shadowbox.astro";
+import TitleLockup from "../../components/TitleLockup.astro";
 import Layout from "../../layouts/Layout.astro";
 import getTags from "../../lib/getTags";
 
@@ -13,7 +14,7 @@ tags.sort((a, b) => {
 
 <Layout title="Tags">
   <Shadowbox>
-    <h1>Tags</h1>
+    <TitleLockup Heading="h1" title="Tags" />
     <ul>
       {
         tags.map((t) => (
