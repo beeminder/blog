@@ -35,34 +35,34 @@ import Icon from "./Icon.astro";
 <style>
   .header {
     background-color: var(--secondary);
-
     box-shadow: 0 -9px 5px 10px #a9a9a9;
   }
-
   .inner {
-    padding: var(--gap-2);
+    padding: var(--gap-2) var(--gap-3);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     max-width: var(--content-width);
     margin: 0 auto;
   }
-
   .header a {
     color: #3b3b3b;
   }
-
   .header a:hover {
     text-decoration: none;
     color: var(--primary);
   }
-
   h2 {
     margin: 0;
     font-size: 2.5em;
   }
-
   .icons {
     text-align: right;
+  }
+
+  @media (max-width: 900px) {
+    .inner {
+      padding: var(--gap-1);
+    }
   }
 </style>
