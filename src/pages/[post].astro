@@ -49,11 +49,10 @@ const older = posts[postIndex + 1];
       linkTitle={false}
       Heading="h1"
     />
-
     <div set:html={content} />
-
-    <Tags tags={tags} />
   </Shadowbox>
+
+  <Shadowbox><Tags tags={tags} /></Shadowbox>
 
   <Shadowbox>
     <div id="disqus_thread" data-url={disqus.url} data-identifier={disqus.id}>
