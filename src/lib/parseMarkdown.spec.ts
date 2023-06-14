@@ -77,4 +77,14 @@ paragraph
 
     expect(frontmatter).toEqual({ foo: "bar" });
   });
+
+  it("parses frontmatter with magic present", () => {
+    const { frontmatter } = parseMarkdown(`---
+foo: bar
+---
+BEGIN_MAGIC
+`);
+
+    expect(frontmatter).toEqual({ foo: "bar" });
+  });
 });
