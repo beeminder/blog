@@ -1,9 +1,36 @@
 ---
 interface Props {
-    tags: string[];
+  tags: string[];
 }
 
-const {tags} = Astro.props; 
+const { tags } = Astro.props;
 ---
 
-<p>Tags: {tags.map((t, i, a) => (<><a href={`/tags/${t}`}>{t}</a>{i < a.length - 1 ? ', ' : ''}</>))}</p>
+<div>
+  Tags: <ul>
+    {
+      tags.map((t) => (
+        <li>
+          <a href={`/tags/${t}`}>{t}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  ul {
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+  li {
+    display: inline-flex;
+  }
+  li:after {
+    content: ",\a0";
+  }
+  li:last-child:after {
+    content: "";
+  }
+</style>
