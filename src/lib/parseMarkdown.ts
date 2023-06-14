@@ -32,7 +32,7 @@ export default function parseMarkdown(markdown: string): ParsedMarkdown {
   const linked = linkFootnotes(trimmed);
   const expanded = expandRefs(linked);
   const content = marked.parse(expanded, MARKED_OPTIONS);
-  const { data } = matter(expanded);
+  const { data } = matter(markdown);
   const title =
     typeof data.title === "string" ? data.title : parseTitle(markdown);
   const excerpt =
