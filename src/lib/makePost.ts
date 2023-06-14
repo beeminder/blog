@@ -34,32 +34,52 @@ function formatUrl(url: string) {
 
 export default async function makePost(url: string): Promise<Post> {
   const wp = await getLegacyData(url);
-  const slug = wp?.Slug;
+  const formattedUrl = formatUrl(url);
+  const markdown = await fetchPost(formattedUrl);
+  const parsed = parseMarkdown(markdown);
+  const slug =
+    typeof parsed.frontmatter.slug === "string"
+      ? parsed.frontmatter.slug
+      : wp?.Slug;
 
   if (typeof slug !== "string") {
     throw new Error(`Invalid slug for ${url}`);
   }
 
-  const formattedUrl = formatUrl(url);
-  const markdown = await fetchPost(formattedUrl);
-  const date = new Date(String(wp?.Date));
+  const date =
+    parsed.frontmatter.date instanceof Date
+      ? parsed.frontmatter.date
+      : new Date(
+          typeof parsed.frontmatter.date === "string"
+            ? parsed.frontmatter.date
+            : String(wp?.Date)
+        );
   const date_string = date.toISOString().split("T")[0];
 
   if (!date_string) {
     throw new Error(`Invalid date for ${url}`);
   }
 
+  const author =
+    typeof parsed.frontmatter.author === "string"
+      ? parsed.frontmatter.author
+      : wp?.["Author Username"]?.toString() || "";
+  const frontmatterTags = Array.isArray(parsed.frontmatter.tags)
+    ? parsed.frontmatter.tags
+    : [];
+  const wpTags = String(wp?.Tags || "")
+    .split("|")
+    .filter(Boolean);
+
   return {
-    ...parseMarkdown(markdown),
+    ...parsed,
     slug,
     markdown,
-    tags: String(wp?.Tags || "")
-      .split("|")
-      .filter(Boolean),
+    tags: [...frontmatterTags, ...wpTags],
     date,
     date_string,
     url: formattedUrl,
-    author: String(wp?.["Author Username"]),
+    author,
     disqus: {
       id: `${wp?.ID} https://blog.beeminder.com/?p=${wp?.ID}`,
       url: `https://blog.beeminder.com/${slug}/`,

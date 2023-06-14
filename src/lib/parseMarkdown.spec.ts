@@ -71,4 +71,10 @@ paragraph
 
     expect(content).toContain("2");
   });
+
+  it("parses frontmatter", () => {
+    const { frontmatter } = parseMarkdown("---\nfoo: bar\n---");
+
+    expect(frontmatter).toEqual({ foo: "bar" });
+  });
 });

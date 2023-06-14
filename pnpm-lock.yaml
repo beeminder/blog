@@ -12,6 +12,7 @@ specifiers:
   astro: ^2.6.1
   csv-parse: ^5.4.0
   feather-icons: ^4.29.0
+  gray-matter: ^4.0.3
   jsdom: ^22.1.0
   marked: ^5.0.4
   marked-smartypants: ^1.0.2
@@ -26,6 +27,7 @@ dependencies:
   astro: 2.6.2
   csv-parse: 5.4.0
   feather-icons: 4.29.0
+  gray-matter: 4.0.3
   jsdom: 22.1.0
   marked: 5.0.5
   marked-smartypants: 1.0.2_marked@5.0.5
