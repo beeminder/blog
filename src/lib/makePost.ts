@@ -38,7 +38,7 @@ export default async function makePost(url: string): Promise<Post> {
   const markdown = await fetchPost(formattedUrl);
   const parsed = parseMarkdown(markdown);
 
-  if (!wp?.id && !parsed.excerpt) {
+  if (wp === undefined && !parsed.frontmatter.excerpt) {
     throw new Error("Custom excerpts are required for new posts.");
   }
 
