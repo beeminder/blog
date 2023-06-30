@@ -117,6 +117,15 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     </style>
 
     <style is:global>
+      /*
+      WORKAROUND:
+      @fount-source's CSS custom property for font-display doesn't currently work,
+      so we have to redeclare the font-face rules here in order to set font-display
+      to auto.
+      https://github.com/fontsource/fontsource/issues/726
+      https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+      */
+
       @font-face {
         font-family: "Source Sans Pro";
         font-style: normal;
