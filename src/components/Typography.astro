@@ -1,12 +1,13 @@
 ---
 interface Props {
   sans?: boolean;
+  small?: boolean;
 }
 
-const { sans = false } = Astro.props;
+const { sans = false, small = false } = Astro.props;
 ---
 
-<div class="typography" class:list={{ sans }}>
+<div class="typography" class:list={{ sans, small }}>
   <slot />
 </div>
 
@@ -24,6 +25,9 @@ const { sans = false } = Astro.props;
     .typography :global(p) {
       text-align: justify;
       font-size: 1.1rem;
+    }
+    .small :global(p) {
+      font-size: 0.9rem;
     }
   }
 </style>

@@ -2,6 +2,7 @@
 import type { Post } from "../lib/makePost";
 import PostMeta from "./PostMeta.astro";
 import Shadowbox from "./Shadowbox.astro";
+import Typography from "./Typography.astro";
 
 interface Props {
   posts: Post[];
@@ -15,7 +16,7 @@ const { posts } = Astro.props;
     posts.map((p) => (
       <li>
         <Shadowbox>
-          <div class="content">
+          <Typography small sans>
             {p.image && (
               <a class="thumbnail" href={`/${p.slug}`}>
                 <img
@@ -28,7 +29,7 @@ const { posts } = Astro.props;
               </a>
             )}
             <PostMeta post={p} />
-          </div>
+          </Typography>
         </Shadowbox>
       </li>
     ))
@@ -42,14 +43,17 @@ const { posts } = Astro.props;
     margin: 0;
   }
 
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+  .posts :global(.typography) {
+    position: relative;
+    padding-left: calc(200px + var(--gap-1));
   }
 
   .thumbnail {
-    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
   }
 
   img {
