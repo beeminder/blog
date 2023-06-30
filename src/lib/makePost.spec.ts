@@ -9,6 +9,7 @@ describe("makePost", () => {
       ID: 14,
       Slug: "psychpricing",
       Date: "2021-09-01",
+      Status: "publish",
     });
   });
 
@@ -104,5 +105,21 @@ describe("makePost", () => {
     const result = await makePost("https://padm.us/psychpricing");
 
     expect(result.image?.src).toEqual("https://example.com/image.png");
+  });
+
+  it("uses legacy status", async () => {
+    const result = await makePost("https://padm.us/psychpricing");
+
+    expect(result.status).toEqual("publish");
+  });
+
+  it("uses frontmatter status", async () => {
+    vi.mocked(fetchPost).mockResolvedValue(
+      "---\nstatus: publish\n---\n\n# World"
+    );
+
+    const result = await makePost("https://padm.us/psychpricing");
+
+    expect(result.status).toEqual("publish");
   });
 });
