@@ -15,13 +15,18 @@ The frontmatter for each post is a [YAML][1] block at the top of the file:
 ```yaml
 ---
 title: The Title of the Post
+slug: title-of-post
 date: 2021-01-01
-author: Danny
+author: dreeves
 tags: [tag1, tag2]
 image:
-  src: /images/2021-01-01-title-of-post/image.png
+  src: https://example.com/image.jpg
   alt: alt text
-status: publish
+status: publish # or draft or pending
+excerpt: >
+  The excerpt is used for the post preview on the blog index page.
+  It can be multiple lines long.
+  All HTML and markdown will be stripped.
 ---
 The actual content of the post goes here.
 ```
