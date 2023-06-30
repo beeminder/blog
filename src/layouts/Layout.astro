@@ -44,7 +44,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
 
-    <title>{title} | Beeminder Blog</title>
+    <title set:html={`${title} | Beeminder Blog`} />
 
     <link rel="canonical" href={canonicalUrl} />
     {description && <meta name="description" content={description} />}
