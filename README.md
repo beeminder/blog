@@ -2,11 +2,15 @@
 
 ## Post Ideas
 
-Ideas for new blog posts live here as gissues.
-Danny curates the collection via
-[freshgishing][3]
-aka
-[backlog freshening][4].
+Ideas for new blog posts live here as gissues. Danny curates the collection via
+[freshgishing][3] aka [backlog freshening][4].
+
+## Adding a Post
+
+To add a new post, add its etherpad URL to the `sources.txt` file in this
+repository. Once merged to the `master` branch, the post will be automatically
+added to the blog. Deployments can be manually triggered via the Render.com
+dashboard.
 
 ## Post Markdown
 
