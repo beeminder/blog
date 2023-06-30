@@ -21,16 +21,40 @@ const { class: className, previous, next } = Astro.props;
 <div class:list={["pagination", className]}>
   {
     previous && (
-      <a class="previous" href={previous.url}>
-        « <span set:html={previous.title} />
-      </a>
+      <a class="previous" href={previous.url} set:html={previous.title} />
     )
   }
-  {
-    next && (
-      <a class="next" href={next.url}>
-        <span set:html={next.title} /> »
-      </a>
-    )
-  }
+  {next && <a class="next" href={next.url} set:html={next.title} />}
 </div>
+
+<style>
+  .pagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--gap-1);
+  }
+  .pagination a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+  }
+  .pagination a.previous {
+    text-align: left;
+    padding-left: 1em;
+  }
+  .pagination a.next {
+    text-align: right;
+    padding-right: 1em;
+  }
+  .pagination a.previous:before {
+    content: "«";
+    position: absolute;
+    left: 0;
+  }
+  .pagination a.next:after {
+    content: "»";
+    position: absolute;
+    right: 0;
+  }
+</style>
