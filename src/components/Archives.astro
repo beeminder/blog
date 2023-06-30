@@ -1,6 +1,7 @@
 ---
 import getArchives from "../lib/getArchives";
 import Shadowbox from "./Shadowbox.astro";
+import Typography from "./Typography.astro";
 
 function getSortedValues<T>(obj: Record<string, T>): T[] {
   return Object.entries(obj)
@@ -13,18 +14,20 @@ const years = getSortedValues(archives);
 ---
 
 <Shadowbox>
-  <h3>Archives</h3>
-  <ul>
-    {
-      years.map((y) => (
-        <li>
-          <a href={`/${y.label}`}>
-            {y.label} ({y.post_count})
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  <Typography sans>
+    <h3>Archives</h3>
+    <ul>
+      {
+        years.map((y) => (
+          <li>
+            <a href={`/${y.label}`}>
+              {y.label} ({y.post_count})
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </Typography>
 </Shadowbox>
 
 <style>
