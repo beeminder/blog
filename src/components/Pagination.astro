@@ -29,23 +29,25 @@ const { class: className, previous, next } = Astro.props;
 
 <style>
   .pagination {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(--gap-1);
+    display: flex;
+    justify-content: space-between;
   }
   .pagination a {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     position: relative;
+    min-width: 100px;
   }
   .pagination a.previous {
     text-align: left;
     padding-left: 1em;
+    padding-right: calc(var(--gap-1) / 2);
   }
   .pagination a.next {
     text-align: right;
     padding-right: 1em;
+    padding-left: calc(var(--gap-1) / 2);
   }
   .pagination a.previous:before {
     content: "«";
