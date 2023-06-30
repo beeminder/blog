@@ -1,6 +1,7 @@
 import parseMarkdown from "./parseMarkdown";
 import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
+import type { HTMLAttributes } from "astro/types";
 
 export enum Status {
   Publish = "publish",
@@ -8,9 +9,8 @@ export enum Status {
   Pending = "pending",
 }
 
-export type Image = {
+export type Image = HTMLAttributes<"img"> & {
   src: string;
-  alt: string | undefined;
   extracted: boolean;
 };
 

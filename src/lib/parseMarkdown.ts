@@ -40,22 +40,19 @@ function parseFrontmatter(markdown: string) {
 
 function getImage({ image }: Record<string, unknown>): Image | undefined {
   if (typeof image === "string") {
-    return { src: image, alt: undefined, extracted: false };
+    return { src: image, extracted: false };
   }
 
-  if (typeof image === "object" && image !== null) {
-    const src =
-      "src" in image && typeof image.src === "string" ? image.src : undefined;
-    const alt =
-      "alt" in image && typeof image.alt === "string" ? image.alt : undefined;
-
-    if (!src) return undefined;
-
+  if (
+    typeof image === "object" &&
+    image !== null &&
+    "src" in image &&
+    typeof image.src === "string"
+  ) {
     return {
-      src,
-      alt,
+      ...image,
       extracted: false,
-    };
+    } as Image;
   }
 
   return undefined;
