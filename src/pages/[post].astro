@@ -6,9 +6,12 @@ import getPosts from "../lib/getPosts";
 import Shadowbox from "../components/Shadowbox.astro";
 import PostMeta from "../components/PostMeta.astro";
 import Typography from "../components/Typography.astro";
+import { Status } from "../lib/makePost";
 
 export async function getStaticPaths() {
-  const posts = await getPosts();
+  const posts = await getPosts({
+    includeUnpublished: true,
+  });
   return posts.map((p) => ({
     params: {
       post: p.slug,
@@ -21,7 +24,19 @@ type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { post } = Astro.params as Params;
-const { content, title, tags, disqus, excerpt, image } = Astro.props as Props;
+const {
+  content,
+  title: rawTitle,
+  tags,
+  disqus,
+  excerpt,
+  image,
+  status,
+} = Astro.props as Props;
+
+const isDraft = status === Status.Draft;
+const className = isDraft ? "draft" : undefined;
+const title = isDraft ? `DRAFT: ${rawTitle}` : rawTitle;
 
 const posts = await getPosts();
 
@@ -43,9 +58,12 @@ const older = posts[postIndex + 1];
     url: older.slug,
   }}
 >
-  <Shadowbox padding={2}>
+  <Shadowbox padding={2} class={className}>
     <PostMeta
-      post={Astro.props}
+      post={{
+        ...Astro.props,
+        title,
+      }}
       includeExcerpt={false}
       linkTitle={false}
       Heading="h1"
@@ -77,3 +95,9 @@ const older = posts[postIndex + 1];
     (d.head || d.body).appendChild(s);
   })();
 </script>
+
+<style>
+  .draft {
+    border: 1rem solid #ff700a;
+  }
+</style>

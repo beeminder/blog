@@ -89,7 +89,6 @@ http://<etherpad-host>/nwo
 http://<etherpad-host>/cheating
 http://<etherpad-host>/runkeeper
 http://<etherpad-host>/breaks
-http://<etherpad-host>/breaks
 http://<etherpad-host>/doless
 http://<etherpad-host>/moreless
 http://<etherpad-host>/two
