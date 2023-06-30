@@ -2,6 +2,7 @@
 import PostMeta from "../components/PostMeta.astro";
 import Posts from "../components/Posts.astro";
 import Shadowbox from "../components/Shadowbox.astro";
+import Typography from "../components/Typography.astro";
 import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
 
@@ -19,7 +20,7 @@ const featured = posts[0];
   {
     featured && (
       <Shadowbox padding={2}>
-        <div class="content">
+        <Typography>
           {featured.image && (
             <a class="thumbnail" href={`/${featured.slug}`}>
               <img
@@ -32,7 +33,7 @@ const featured = posts[0];
             </a>
           )}
           <PostMeta post={featured} class="featured-meta" />
-        </div>
+        </Typography>
       </Shadowbox>
     )
   }
