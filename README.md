@@ -37,7 +37,7 @@ excerpt: >
 The actual content of the post goes here.
 ```
 
-In addition, all Beeminder extended features documented [here][2] are supported.
+In addition, all Markdown extended features documented [here][2] are supported.
 
 ## Development
 
