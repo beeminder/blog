@@ -7,9 +7,9 @@ import addBlankLines from "./addBlankLines";
 import linkFootnotes from "./linkFootnotes";
 import expandRefs from "./expandRefs";
 import getExcerpt from "./getExcerpt";
-import getImage, { Image } from "./getImage";
+import extractImage from "./extractImage";
 import matter from "gray-matter";
-import { Status, getStatus } from "./makePost";
+import { Status, getStatus, Image } from "./makePost";
 
 marked.use(markedSmartypants());
 marked.use({ hooks });
@@ -32,19 +32,45 @@ export type ParsedMarkdown = {
   status: Status | undefined;
 };
 
+function parseFrontmatter(markdown: string) {
+  return matter(markdown);
+}
+
+function getImage({ image }: Record<string, unknown>): Image | undefined {
+  if (typeof image === "string") {
+    return { src: image, alt: undefined, extracted: false };
+  }
+
+  if (typeof image === "object" && image !== null) {
+    const src =
+      "src" in image && typeof image.src === "string" ? image.src : undefined;
+    const alt =
+      "alt" in image && typeof image.alt === "string" ? image.alt : undefined;
+
+    if (!src) return undefined;
+
+    return {
+      src,
+      alt,
+      extracted: false,
+    };
+  }
+
+  return undefined;
+}
+
 export default function parseMarkdown(markdown: string): ParsedMarkdown {
-  const blanked = addBlankLines(markdown);
+  const { data, content: rawContent } = parseFrontmatter(markdown);
+  const blanked = addBlankLines(rawContent);
   const trimmed = trimContent(blanked);
   const linked = linkFootnotes(trimmed);
   const expanded = expandRefs(linked);
   const content = marked.parse(expanded, MARKED_OPTIONS);
-  const { data } = matter(markdown);
   const title =
     typeof data.title === "string" ? data.title : parseTitle(markdown);
   const excerpt =
     typeof data.excerpt === "string" ? data.excerpt : getExcerpt(content);
-  const image =
-    typeof data.image?.src === "string" ? data.image : getImage(content);
+  const image = getImage(data) ?? extractImage(content);
   const slug = typeof data.slug === "string" ? data.slug : undefined;
   const date = data.date instanceof Date ? data.date : undefined;
   const author = typeof data.author === "string" ? data.author : undefined;
