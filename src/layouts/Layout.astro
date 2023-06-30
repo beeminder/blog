@@ -139,7 +139,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       WORKAROUND:
       @fount-source's CSS custom property for font-display doesn't currently work,
       so we have to redeclare the font-face rules here in order to set font-display
-      to auto.
+      to block.
       https://github.com/fontsource/fontsource/issues/726
       https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
       */
@@ -147,7 +147,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       @font-face {
         font-family: "Source Sans Pro";
         font-style: normal;
-        font-display: auto;
+        font-display: block;
         font-weight: 700;
         src: url(@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff2)
             format("woff2"),
@@ -158,7 +158,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       @font-face {
         font-family: "Source Sans Pro";
         font-style: normal;
-        font-display: auto;
+        font-display: block;
         font-weight: 900;
         src: url(@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff2)
             format("woff2"),
@@ -169,7 +169,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       @font-face {
         font-family: "Lora Variable";
         font-style: normal;
-        font-display: auto;
+        font-display: block;
         font-weight: 400 700;
         src: url(@fontsource-variable/lora/files/lora-latin-wght-normal.woff2)
           format("woff2-variations");
