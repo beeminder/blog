@@ -44,6 +44,8 @@ const posts = await getPosts();
 const postIndex = posts.findIndex((p) => p.slug === post);
 const newer = posts[postIndex - 1];
 const older = posts[postIndex + 1];
+
+const { extracted, ...imageProps } = image || {};
 ---
 
 <Layout
@@ -69,6 +71,7 @@ const older = posts[postIndex + 1];
       linkTitle={false}
       Heading="h1"
     />
+    {extracted ? undefined : <img class="aligncenter" {...imageProps} />}
     <Typography set:html={content} />
     <Tags tags={tags} />
   </Shadowbox>
