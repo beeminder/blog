@@ -61,33 +61,29 @@ function getImage({ image }: Record<string, unknown>): Image | undefined {
   return undefined;
 }
 
-export default function parseMarkdown(markdown: string): ParsedMarkdown {
-  const { data: fm, content: rawContent } = parseFrontmatter(markdown);
-  const blanked = addBlankLines(rawContent);
+function parseContent(markdown: string) {
+  const blanked = addBlankLines(markdown);
   const trimmed = trimContent(blanked);
   const linked = linkFootnotes(trimmed);
   const expanded = expandRefs(linked);
-  const content = marked.parse(expanded, MARKED_OPTIONS);
-  const title = typeof fm.title === "string" ? fm.title : parseTitle(markdown);
-  const excerpt =
-    typeof fm.excerpt === "string" ? fm.excerpt : getExcerpt(content);
-  const image = getImage(fm) ?? extractImage(content);
-  const slug = typeof fm.slug === "string" ? fm.slug : undefined;
-  const date = fm.date instanceof Date ? fm.date : undefined;
-  const author = typeof fm.author === "string" ? fm.author : undefined;
-  const tags = Array.isArray(fm.tags) ? fm.tags : [];
-  const status = getStatus(fm.status);
+
+  return marked.parse(expanded, MARKED_OPTIONS);
+}
+
+export default function parseMarkdown(markdown: string): ParsedMarkdown {
+  const { data: fm, content: rawContent } = parseFrontmatter(markdown);
+  const content = parseContent(rawContent);
 
   return {
-    title,
+    title: typeof fm.title === "string" ? fm.title : parseTitle(markdown),
     content,
-    excerpt,
-    image,
+    excerpt: typeof fm.excerpt === "string" ? fm.excerpt : getExcerpt(content),
+    image: getImage(fm) ?? extractImage(content),
     frontmatter: fm,
-    slug,
-    date,
-    author,
-    tags,
-    status,
+    slug: typeof fm.slug === "string" ? fm.slug : undefined,
+    date: fm.date instanceof Date ? fm.date : undefined,
+    author: typeof fm.author === "string" ? fm.author : undefined,
+    tags: Array.isArray(fm.tags) ? fm.tags : [],
+    status: getStatus(fm.status),
   };
 }
