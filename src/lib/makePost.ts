@@ -1,13 +1,18 @@
 import parseMarkdown from "./parseMarkdown";
 import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
-import type { Image } from "./getImage";
 
 export enum Status {
   Publish = "publish",
   Draft = "draft",
   Pending = "pending",
 }
+
+export type Image = {
+  src: string;
+  alt: string | undefined;
+  extracted: boolean;
+};
 
 export type Post = {
   url: string;

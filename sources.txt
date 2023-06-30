@@ -344,3 +344,4 @@ https://<etherpad-host>/blingily
 https://<etherpad-host>/lichess
 http://<etherpad-host>/datasmithing
 https://<etherpad-host>/trydeepwork
+https://<etherpad-host>/test-post
