@@ -11,55 +11,70 @@ interface Props {
 const { posts } = Astro.props;
 ---
 
-<ul class="posts">
-  {
-    posts.map((p) => (
-      <li>
-        <Shadowbox>
-          <Typography small sans>
-            {p.image && (
-              <a class="thumbnail" href={`/${p.slug}`}>
-                <img
-                  src={p.image.src}
-                  alt={p.image.alt}
-                  title={p.image.alt}
-                  width="200"
-                  height="200"
-                />
-              </a>
-            )}
-            <PostMeta post={p} />
-          </Typography>
-        </Shadowbox>
-      </li>
-    ))
-  }
-</ul>
+<div class="posts">
+  <ul>
+    {
+      posts.map((p) => (
+        <li>
+          <Shadowbox>
+            <Typography small sans>
+              <div class="inner">
+                {p.image && (
+                  <a class="thumbnail" href={`/${p.slug}`}>
+                    <img
+                      src={p.image.src}
+                      alt={p.image.alt}
+                      title={p.image.alt}
+                      width="200"
+                      height="200"
+                    />
+                  </a>
+                )}
+                <PostMeta post={p} />
+              </div>
+            </Typography>
+          </Shadowbox>
+        </li>
+      ))
+    }
+  </ul>
+</div>
 
 <style>
-  ul {
+  .posts ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  .posts :global(.typography) {
+  .posts .inner {
     position: relative;
-    padding-left: calc(200px + var(--gap-1));
   }
 
   .thumbnail {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 200px;
+    display: block;
+    margin-bottom: var(--gap-1);
   }
 
-  img {
-    margin-right: var(--gap-1);
-    object-fit: cover;
-    min-height: 0;
-    height: 100%;
+  @container (min-width: 600px) {
+    .posts .inner {
+      padding-left: calc(200px + var(--gap-1));
+    }
+
+    .thumbnail {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-right: var(--gap-1);
+      object-fit: cover;
+      min-height: 0;
+      height: 100%;
+    }
   }
 </style>
