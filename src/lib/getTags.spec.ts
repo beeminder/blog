@@ -11,6 +11,7 @@ describe("getTags", () => {
       Slug: "psychpricing",
       Tags: "the_tag",
       Date: "2021-09-01",
+      Status: "publish",
     });
   });
 

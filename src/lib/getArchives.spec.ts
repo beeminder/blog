@@ -11,6 +11,7 @@ describe("getArchives", () => {
       Date: "2011-01-24",
       Slug: "psychpricing",
       expost_source_url: "https://<etherpad-host>/psychpricing",
+      Status: "publish",
     });
   });
 
@@ -45,12 +46,14 @@ https://<etherpad-host>/second
             Date: "2013-02-22",
             Slug: "psychpricing",
             expost_source_url: "https://<etherpad-host>/psychpricing",
+            Status: "publish",
           };
         case "https://<etherpad-host>/second":
           return {
             Date: "2015-02-22",
             Slug: "psychpricing",
             expost_source_url: "https://<etherpad-host>/second",
+            Status: "publish",
           };
         default:
           return undefined;

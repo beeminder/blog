@@ -1,13 +1,17 @@
 import fs from "fs";
 import type { Post } from "./makePost";
-import makePost from "./makePost";
+import makePost, { Status } from "./makePost";
 import memoize from "./memoize";
 
 const getPosts = memoize(makePosts, "posts");
 
 export default getPosts;
 
-async function makePosts(): Promise<Post[]> {
+async function makePosts({
+  includeUnpublished = false,
+}: {
+  includeUnpublished?: boolean;
+} = {}): Promise<Post[]> {
   const sources = fs.readFileSync("sources.txt", "utf-8");
   const urls = sources.split("\n").filter(Boolean);
   const values: Post[] = [];
@@ -20,5 +24,9 @@ async function makePosts(): Promise<Post[]> {
 
   values.sort((a, b) => b.date.getTime() - a.date.getTime());
 
-  return values;
+  if (includeUnpublished) {
+    return values;
+  }
+
+  return values.filter((p) => p.status === Status.Publish);
 }
