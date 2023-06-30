@@ -7,6 +7,7 @@ import Shadowbox from "../components/Shadowbox.astro";
 import PostMeta from "../components/PostMeta.astro";
 import Typography from "../components/Typography.astro";
 import { Status } from "../lib/makePost";
+import Comments from "../components/Comments.astro";
 
 export async function getStaticPaths() {
   const posts = await getPosts({
@@ -73,28 +74,9 @@ const older = posts[postIndex + 1];
   </Shadowbox>
 
   <Shadowbox padding={2}>
-    <div id="disqus_thread" data-url={disqus.url} data-identifier={disqus.id}>
-    </div>
+    <Comments id={disqus.id} url={disqus.url} />
   </Shadowbox>
 </Layout>
-
-<script is:inline>
-  var disqus_config = function () {
-    const thread = document.getElementById("disqus_thread");
-    if (!thread) throw new Error("could not find disqus thread");
-    this.page.url = thread.dataset.url;
-    this.page.identifier = thread.dataset.identifier;
-  };
-
-  (function () {
-    // DON'T EDIT BELOW THIS LINE
-    var d = document,
-      s = d.createElement("script");
-    s.src = "https://beemblog.disqus.com/embed.js";
-    s.setAttribute("data-timestamp", +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
 
 <style>
   .draft {
