@@ -33,7 +33,9 @@ export type ParsedMarkdown = {
 };
 
 function parseFrontmatter(markdown: string) {
-  return matter(markdown);
+  return matter(markdown) as matter.GrayMatterFile<string> & {
+    data: Record<string, unknown>;
+  };
 }
 
 function getImage({ image }: Record<string, unknown>): Image | undefined {
@@ -60,29 +62,28 @@ function getImage({ image }: Record<string, unknown>): Image | undefined {
 }
 
 export default function parseMarkdown(markdown: string): ParsedMarkdown {
-  const { data, content: rawContent } = parseFrontmatter(markdown);
+  const { data: fm, content: rawContent } = parseFrontmatter(markdown);
   const blanked = addBlankLines(rawContent);
   const trimmed = trimContent(blanked);
   const linked = linkFootnotes(trimmed);
   const expanded = expandRefs(linked);
   const content = marked.parse(expanded, MARKED_OPTIONS);
-  const title =
-    typeof data.title === "string" ? data.title : parseTitle(markdown);
+  const title = typeof fm.title === "string" ? fm.title : parseTitle(markdown);
   const excerpt =
-    typeof data.excerpt === "string" ? data.excerpt : getExcerpt(content);
-  const image = getImage(data) ?? extractImage(content);
-  const slug = typeof data.slug === "string" ? data.slug : undefined;
-  const date = data.date instanceof Date ? data.date : undefined;
-  const author = typeof data.author === "string" ? data.author : undefined;
-  const tags = Array.isArray(data.tags) ? data.tags : [];
-  const status = getStatus(data.status);
+    typeof fm.excerpt === "string" ? fm.excerpt : getExcerpt(content);
+  const image = getImage(fm) ?? extractImage(content);
+  const slug = typeof fm.slug === "string" ? fm.slug : undefined;
+  const date = fm.date instanceof Date ? fm.date : undefined;
+  const author = typeof fm.author === "string" ? fm.author : undefined;
+  const tags = Array.isArray(fm.tags) ? fm.tags : [];
+  const status = getStatus(fm.status);
 
   return {
     title,
     content,
     excerpt,
     image,
-    frontmatter: data,
+    frontmatter: fm,
     slug,
     date,
     author,
