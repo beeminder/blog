@@ -134,4 +134,11 @@ https://dtherpad.com/new
 
     expect(posts).toHaveLength(1);
   });
+
+  it('caches posts without reference to "includeUnpublished"', async () => {
+    await getPosts();
+    await getPosts({ includeUnpublished: true });
+
+    expect(fetchPost).toHaveBeenCalledTimes(1);
+  });
 });
