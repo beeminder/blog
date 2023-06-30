@@ -3,6 +3,12 @@ import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
 import type { Image } from "./getImage";
 
+export enum Status {
+  Publish = "publish",
+  Draft = "draft",
+  Pending = "pending",
+}
+
 export type Post = {
   url: string;
   title: string;
@@ -19,6 +25,7 @@ export type Post = {
     url: string;
   };
   image: Image | undefined;
+  status: Status;
 };
 
 function formatUrl(url: string) {
@@ -30,6 +37,19 @@ function formatUrl(url: string) {
   }
 
   return hasSchema ? url : `https://${url}`;
+}
+
+export function getStatus(value: unknown): Status | undefined {
+  switch (value) {
+    case "publish":
+      return Status.Publish;
+    case "pending":
+      return Status.Pending;
+    case "draft":
+      return Status.Draft;
+    default:
+      return undefined;
+  }
 }
 
 export default async function makePost(url: string): Promise<Post> {
@@ -59,6 +79,7 @@ export default async function makePost(url: string): Promise<Post> {
   const wpTags = String(wp?.Tags || "")
     .split("|")
     .filter(Boolean);
+  const status = parsed.status ?? getStatus(wp?.Status) ?? Status.Draft;
 
   return {
     ...parsed,
@@ -73,5 +94,6 @@ export default async function makePost(url: string): Promise<Post> {
       id: `${wp?.ID} https://blog.beeminder.com/?p=${wp?.ID}`,
       url: `https://blog.beeminder.com/${slug}/`,
     },
+    status,
   };
 }

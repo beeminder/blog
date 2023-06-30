@@ -1,22 +1,20 @@
-const fns = new Map<string, any>();
+const fns = new Map<string, unknown>();
 
-export default function memoize<T>(fn: () => T, id: string) {
-  return (): T => {
-    if (fns.has(id)) {
-      return fns.get(id);
+export default function memoize<T, P extends Array<unknown>>(
+  fn: (...args: P) => T,
+  id: string
+) {
+  return (...args: P): T => {
+    const _id = id + JSON.stringify(args);
+
+    if (!fns.has(_id)) {
+      fns.set(_id, fn(...args));
     }
 
-    const result = fn();
-    fns.set(id, result);
-
-    return result;
+    return fns.get(_id) as T;
   };
 }
 
-export function __reset(id?: string) {
-  if (id) {
-    fns.delete(id);
-  } else {
-    fns.clear();
-  }
+export function __reset() {
+  fns.clear();
 }

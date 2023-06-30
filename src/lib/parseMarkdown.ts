@@ -9,6 +9,7 @@ import expandRefs from "./expandRefs";
 import getExcerpt from "./getExcerpt";
 import getImage, { Image } from "./getImage";
 import matter from "gray-matter";
+import { Status, getStatus } from "./makePost";
 
 marked.use(markedSmartypants());
 marked.use({ hooks });
@@ -28,6 +29,7 @@ export type ParsedMarkdown = {
   date: Date | undefined;
   author: string | undefined;
   tags: string[];
+  status: Status | undefined;
 };
 
 export default function parseMarkdown(markdown: string): ParsedMarkdown {
@@ -47,6 +49,7 @@ export default function parseMarkdown(markdown: string): ParsedMarkdown {
   const date = data.date instanceof Date ? data.date : undefined;
   const author = typeof data.author === "string" ? data.author : undefined;
   const tags = Array.isArray(data.tags) ? data.tags : [];
+  const status = getStatus(data.status);
 
   return {
     title,
@@ -58,5 +61,6 @@ export default function parseMarkdown(markdown: string): ParsedMarkdown {
     date,
     author,
     tags,
+    status,
   };
 }
