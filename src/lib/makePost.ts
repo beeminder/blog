@@ -59,8 +59,8 @@ export function getStatus(value: unknown): Status | undefined {
 
 export default async function makePost(url: string): Promise<Post> {
   const wp = await getLegacyData(url);
-  const formattedUrl = formatUrl(url);
-  const markdown = await fetchPost(formattedUrl);
+  const markdownUrl = formatUrl(url);
+  const markdown = await fetchPost(markdownUrl);
   const parsed = parseMarkdown(markdown);
 
   if (wp === undefined && !parsed.frontmatter.excerpt) {
@@ -84,7 +84,6 @@ export default async function makePost(url: string): Promise<Post> {
   const wpTags = String(wp?.Tags || "")
     .split("|")
     .filter(Boolean);
-  const status = parsed.status ?? getStatus(wp?.Status) ?? Status.Draft;
 
   return {
     ...parsed,
@@ -93,12 +92,12 @@ export default async function makePost(url: string): Promise<Post> {
     tags: [...parsed.tags, ...wpTags],
     date,
     date_string,
-    url: formattedUrl,
+    url: markdownUrl,
     author,
     disqus: {
       id: `${wp?.ID} https://blog.beeminder.com/?p=${wp?.ID}`,
       url: `https://blog.beeminder.com/${slug}/`,
     },
-    status,
+    status: parsed.status ?? getStatus(wp?.Status) ?? Status.Draft,
   };
 }
