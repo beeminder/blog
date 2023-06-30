@@ -3,6 +3,7 @@ import getTags from "../lib/getTags";
 import Archives from "./Archives.astro";
 import Icon from "./Icon.astro";
 import Shadowbox from "./Shadowbox.astro";
+import Typography from "./Typography.astro";
 
 const rawTags = await getTags();
 const tags = Object.values(rawTags);
@@ -14,7 +15,7 @@ tags.sort((a, b) => {
 const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
 ---
 
-<div>
+<div class="sidebar">
   <Shadowbox>
     <form action="https://duckduckgo.com">
       <button type="submit"><Icon name="search" /></button>
@@ -23,7 +24,7 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
     </form>
   </Shadowbox>
   <Shadowbox>
-    <div class="inner">
+    <Typography sans>
       <h3>About</h3>
       <p>
         <a href="http://beeminder.com">Beeminder</a> is goal-tracking with teeth.
@@ -35,11 +36,11 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
         The Beeminder blog is a hodgepodge of productivity nerdery and
         behavioral economics written by the founders and various friends.
       </p>
-    </div>
+    </Typography>
   </Shadowbox>
   <Archives />
   <Shadowbox>
-    <div class="inner">
+    <Typography sans>
       <h3>Eating Our Own Dog Food</h3>
       <a href="http://beeminder.com/meta/blog">
         <img
@@ -49,10 +50,10 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
           width="160"
         />
       </a>
-    </div>
+    </Typography>
   </Shadowbox>
   <Shadowbox>
-    <div class="inner">
+    <Typography sans>
       <h3>Start Here</h3>
       <p>
         Does Beeminder sound super crazypants? Just confusing? One of the first
@@ -65,10 +66,10 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
         everything we still think is worth reading. Other good ones are the
         "rationality" and "science" tags, if you're into that.
       </p>
-    </div>
+    </Typography>
   </Shadowbox>
   <Shadowbox>
-    <div class="inner">
+    <Typography sans>
       <h3>Tags</h3>
       <ul>
         {
@@ -82,10 +83,10 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
         }
         <li><a href="/tags">...and {tags.length - 20} more tags</a></li>
       </ul>
-    </div>
+    </Typography>
   </Shadowbox>
   <Shadowbox>
-    <div class="inner">
+    <Typography sans>
       <h3>Beeminder Community</h3>
       <p>
         Most of the action is in the <a
@@ -100,10 +101,10 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
           >the Beeminder coworking room on Complice</a
         >.
       </p>
-    </div>
+    </Typography>
   </Shadowbox>
   <Shadowbox>
-    <div class="inner">
+    <Typography sans>
       <h3>Akrasia</h3>
       <p>
         Akrasia (ancient Greek ἀκρασία, "lacking command over oneself";
@@ -117,7 +118,7 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
           >wikipedia.org/wiki/Akrasia</a
         >
       </p>
-    </div>
+    </Typography>
   </Shadowbox>
   {
     sha && (
@@ -133,7 +134,7 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
     margin-top: 0;
   }
 
-  .inner > *:last-child {
+  .sidebar :global(.shadowbox > .typography > *:last-child) {
     margin-bottom: 0;
   }
 

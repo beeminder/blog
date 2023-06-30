@@ -1,10 +1,25 @@
-<div class="shadowbox"><slot /></div>
+---
+interface Props {
+  padding?: number;
+}
+
+const { padding = 1 } = Astro.props;
+---
+
+<div
+  class="shadowbox"
+  style={{
+    "--gap-multiplier": padding,
+  }}
+>
+  <slot />
+</div>
 
 <style>
   .shadowbox {
     background-color: white;
     box-shadow: 0 0 6px #ccc;
-    padding: var(--gap-1);
+    padding: calc(var(--gap-1) * var(--gap-multiplier));
     margin-bottom: var(--gap-1);
   }
 </style>

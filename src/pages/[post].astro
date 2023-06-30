@@ -5,6 +5,7 @@ import Tags from "../components/Tags.astro";
 import getPosts from "../lib/getPosts";
 import Shadowbox from "../components/Shadowbox.astro";
 import PostMeta from "../components/PostMeta.astro";
+import Typography from "../components/Typography.astro";
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -42,19 +43,18 @@ const older = posts[postIndex + 1];
     url: older.slug,
   }}
 >
-  <Shadowbox>
+  <Shadowbox padding={2}>
     <PostMeta
       post={Astro.props}
       includeExcerpt={false}
       linkTitle={false}
       Heading="h1"
     />
-    <div set:html={content} />
+    <Typography set:html={content} />
+    <Tags tags={tags} />
   </Shadowbox>
 
-  <Shadowbox><Tags tags={tags} /></Shadowbox>
-
-  <Shadowbox>
+  <Shadowbox padding={2}>
     <div id="disqus_thread" data-url={disqus.url} data-identifier={disqus.id}>
     </div>
   </Shadowbox>

@@ -1,0 +1,29 @@
+---
+interface Props {
+  sans?: boolean;
+}
+
+const { sans = false } = Astro.props;
+---
+
+<div class="typography" class:list={{ sans }}>
+  <slot />
+</div>
+
+<style>
+  .typography {
+    container-type: inline-size;
+    font-size: 0.9rem;
+  }
+
+  .sans {
+    --font-family: sans-serif;
+  }
+
+  @container (min-width: 500px) {
+    .typography :global(p) {
+      text-align: justify;
+      font-size: 1.1rem;
+    }
+  }
+</style>
