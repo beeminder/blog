@@ -11,6 +11,7 @@ describe("getPosts", () => {
       expost_source_url: "https://padm.us/psychpricing",
       Slug: "psychpricing",
       Date: "2021-09-01",
+      Status: "publish",
     });
   });
 
@@ -44,6 +45,7 @@ describe("getPosts", () => {
       expost_source_url: "https://dtherpad.com/psychpricing",
       Slug: "psychpricing",
       Date: "2021-09-01",
+      Status: "publish",
     });
 
     const result = await getPosts();
@@ -60,6 +62,7 @@ describe("getPosts", () => {
       expost_source_url: "https://dtherpad.com/psychpricing",
       Slug: "psychpricing",
       Date: "2021-09-01",
+      Status: "publish",
     });
 
     await getPosts();
@@ -79,6 +82,7 @@ https://dtherpad.com/new
           expost_source_url: "https://dtherpad.com/old",
           Slug: "old",
           Date: "2020-01-01",
+          Status: "publish",
         };
       }
       if (url === "https://dtherpad.com/new") {
@@ -86,6 +90,7 @@ https://dtherpad.com/new
           expost_source_url: "https://dtherpad.com/new",
           Slug: "new",
           Date: "2020-01-02",
+          Status: "publish",
         };
       }
       return undefined;
@@ -102,5 +107,31 @@ https://dtherpad.com/new
     const posts = await getPosts();
 
     expect(posts[0]?.excerpt).toContain("word");
+  });
+
+  it("excludes unpublished posts by default", async () => {
+    vi.mocked(getLegacyData).mockResolvedValue({
+      expost_source_url: "https://padm.us/psychpricing",
+      Slug: "psychpricing",
+      Date: "2021-09-01",
+      Status: "draft",
+    });
+
+    const posts = await getPosts();
+
+    expect(posts).toHaveLength(0);
+  });
+
+  it("includes unpublished posts when requested", async () => {
+    vi.mocked(getLegacyData).mockResolvedValue({
+      expost_source_url: "https://padm.us/psychpricing",
+      Slug: "psychpricing",
+      Date: "2021-09-01",
+      Status: "draft",
+    });
+
+    const posts = await getPosts({ includeUnpublished: true });
+
+    expect(posts).toHaveLength(1);
   });
 });

@@ -11,6 +11,7 @@ describe("getArchives", () => {
       Date: "2011-01-24",
       Slug: "psychpricing",
       expost_source_url: "https://padm.us/psychpricing",
+      Status: "publish",
     });
   });
 
@@ -45,12 +46,14 @@ https://padm.us/second
             Date: "2013-02-22",
             Slug: "psychpricing",
             expost_source_url: "https://padm.us/psychpricing",
+            Status: "publish",
           };
         case "https://padm.us/second":
           return {
             Date: "2015-02-22",
             Slug: "psychpricing",
             expost_source_url: "https://padm.us/second",
+            Status: "publish",
           };
         default:
           return undefined;
