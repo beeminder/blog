@@ -1,8 +1,6 @@
 ---
 import Sidebar from "../components/Sidebar.astro";
 import Header from "../components/Header.astro";
-import "@fontsource/source-sans-pro/700.css";
-import "@fontsource-variable/lora";
 import Pagination from "../components/Pagination.astro";
 
 import sourcesanspro700 from "@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff2";
@@ -72,6 +70,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       </div>
       <div><Sidebar /></div>
     </div>
+
     <style>
       .nav {
         max-width: var(--content-width);
@@ -118,6 +117,37 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     </style>
 
     <style is:global>
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-display: auto;
+        font-weight: 700;
+        src: url(@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff2)
+            format("woff2"),
+          url(@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff)
+            format("woff");
+      }
+
+      @font-face {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-display: auto;
+        font-weight: 900;
+        src: url(@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff2)
+            format("woff2"),
+          url(@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff)
+            format("woff");
+      }
+
+      @font-face {
+        font-family: "Lora Variable";
+        font-style: normal;
+        font-display: auto;
+        font-weight: 400 700;
+        src: url(@fontsource-variable/lora/files/lora-latin-wght-normal.woff2)
+          format("woff2-variations");
+      }
+
       :root {
         --primary: #cc0000;
         --secondary: #ffcb06;
