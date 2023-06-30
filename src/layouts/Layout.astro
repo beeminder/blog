@@ -3,6 +3,10 @@ import Sidebar from "../components/Sidebar.astro";
 import Header from "../components/Header.astro";
 import Pagination from "../components/Pagination.astro";
 
+import sourcesanspro700 from "@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff2";
+import sourcesanspro900 from "@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff2";
+import lora from "@fontsource-variable/lora/files/lora-latin-wght-normal.woff2";
+
 export interface Props {
   title: string;
   description?: string | undefined;
@@ -29,6 +33,28 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="preload"
+      as="font"
+      href={sourcesanspro700}
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href={sourcesanspro900}
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href={lora}
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
