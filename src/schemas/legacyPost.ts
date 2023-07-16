@@ -16,13 +16,12 @@ export const legacyPostInput = z
     "Post Modified Date": z.string(),
     Status: z.enum(["publish", "pending", "draft"]),
   })
-  .partial()
-  .optional();
+  .partial();
 
 export const legacyPost = z
   .string()
   .transform((url) => readLegacyData().find((p) => p.expost_source_url === url))
-  .transform(legacyPostInput.parse)
+  .pipe(legacyPostInput.optional())
   .transform(
     (wp) =>
       wp && {
