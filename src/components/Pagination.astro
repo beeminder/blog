@@ -42,12 +42,12 @@ const { class: className, previous, next } = Astro.props;
   .pagination a.previous {
     text-align: left;
     padding-left: 1em;
-    padding-right: calc(var(--gap-1) / 2);
+    padding-right: var(--gap-0-5);
   }
   .pagination a.next {
     text-align: right;
     padding-right: 1em;
-    padding-left: calc(var(--gap-1) / 2);
+    padding-left: var(--gap-0-5);
   }
   .pagination a.previous:before {
     content: "«";
