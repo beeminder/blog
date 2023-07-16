@@ -180,9 +180,12 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         --secondary: #ffcb06;
         --black: #3b3b3b;
 
-        --gap-1: 1rem;
-        --gap-2: 2rem;
-        --gap-3: 3rem;
+        --gap: 1rem;
+
+        --gap-0-5: calc(var(--gap) * 0.5);
+        --gap-1: calc(var(--gap) * 1);
+        --gap-2: calc(var(--gap) * 2);
+        --gap-3: calc(var(--gap) * 3);
 
         --line-height: 1.4em;
         --line-height-headings: 1.2em;
