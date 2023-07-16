@@ -1,9 +1,8 @@
 import fs from "fs";
-import type { Post } from "./makePost";
 import makePostInput from "./makePost";
 import memoize from "./memoize";
 import { z } from "zod";
-import { PostInput, post } from "../schemas/post";
+import { Post, PostInput, post } from "../schemas/post";
 
 export default async function getPosts({
   includeUnpublished = false,

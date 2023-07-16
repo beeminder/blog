@@ -1,7 +1,5 @@
 import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
-import type { Image } from "../schemas/image";
-import type { Status } from "../schemas/status";
 import type { PostInput } from "../schemas/post";
 import { marked } from "marked";
 import trimContent from "./trimContent";
@@ -21,25 +19,6 @@ const MARKED_OPTIONS = {
   mangle: false,
   headerIds: false,
 } as const;
-
-export type Post = {
-  url: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  markdown: string;
-  slug: string;
-  tags: string[];
-  date: Date;
-  date_string: string;
-  author: string;
-  disqus: {
-    id: string;
-    url: string;
-  };
-  image: Image | undefined;
-  status: Status;
-};
 
 function formatUrl(url: string) {
   const hasSchema = url.startsWith("http");
