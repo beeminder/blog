@@ -4,7 +4,7 @@ import memoize from "./memoize";
 
 const postSchema = z
   .object({
-    ID: z.number(),
+    ID: z.coerce.number(),
     Title: z.string(),
     Date: z.coerce.date(),
     Tags: z.preprocess(
@@ -12,7 +12,7 @@ const postSchema = z
       z.array(z.string())
     ),
     expost_source_url: z.string(),
-    dsq_thread_id: z.number(),
+    dsq_thread_id: z.coerce.number(),
     "Author Username": z.string(),
     Slug: z.string(),
     "Comment Status": z.enum(["open", "closed"]),
