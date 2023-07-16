@@ -1,7 +1,9 @@
 import fs from "fs";
 import type { Post } from "./makePost";
-import makePost from "./makePost";
+import makePostInput from "./makePost";
 import memoize from "./memoize";
+import { z } from "zod";
+import { PostInput, post } from "../schemas/post";
 
 export default async function getPosts({
   includeUnpublished = false,
@@ -22,15 +24,17 @@ const makePosts = memoize(_makePosts, "posts");
 async function _makePosts(): Promise<Post[]> {
   const sources = fs.readFileSync("sources.txt", "utf-8");
   const urls = sources.split("\n").filter(Boolean);
-  const values: Post[] = [];
+  const inputs: PostInput[] = [];
 
   console.time("Gathering posts");
   for (const url of urls) {
-    values.push(await makePost(url));
+    inputs.push(await makePostInput(url));
   }
   console.timeEnd("Gathering posts");
 
-  values.sort((a, b) => b.date.getTime() - a.date.getTime());
+  const posts = z.array(post).parse(inputs);
 
-  return values;
+  posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+
+  return posts;
 }

@@ -4,7 +4,7 @@ import { frontmatter } from "./frontmatter";
 import parseTitle from "../lib/parseTitle";
 import getExcerpt from "../lib/getExcerpt";
 import extractImage from "../lib/extractImage";
-import { getStatus } from "../lib/makePost";
+import { status } from "./status";
 
 export const parsedMarkdown = z
   .object({
@@ -23,7 +23,7 @@ export const parsedMarkdown = z
     date: fm.date instanceof Date ? fm.date : undefined,
     author: typeof fm.author === "string" ? fm.author : undefined,
     tags: Array.isArray(fm.tags) ? fm.tags : [],
-    status: getStatus(fm.status),
+    status: status.optional().parse(fm.status),
   }));
 
 export type ParsedMarkdown = z.infer<typeof parsedMarkdown>;
