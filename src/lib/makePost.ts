@@ -58,7 +58,7 @@ export function getStatus(value: unknown): Status | undefined {
 }
 
 export default async function makePost(url: string): Promise<Post> {
-  const wp = await getLegacyData(url);
+  const wp = getLegacyData(url);
   const markdownUrl = formatUrl(url);
   const markdown = await fetchPost(markdownUrl);
   const parsed = parseMarkdown(markdown);
