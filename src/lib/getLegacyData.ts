@@ -2,7 +2,7 @@ import readLegacyData from "./readLegacyData";
 import { z } from "zod";
 import memoize from "./memoize";
 
-export const postInput = z
+export const legacyPostInput = z
   .object({
     ID: z.string(),
     Title: z.string(),
@@ -19,7 +19,7 @@ export const postInput = z
   })
   .partial();
 
-export const postOutput = postInput.transform((val) => ({
+export const legacyPostOutput = legacyPostInput.transform((val) => ({
   id: Number(val.ID),
   title: val.Title,
   date: val.Date ? new Date(val.Date) : undefined,
@@ -38,15 +38,15 @@ export const postOutput = postInput.transform((val) => ({
 
 const getParsedLegacyData = memoize(() => {
   const raw = readLegacyData();
-  return z.array(postInput).parse(raw);
+  return z.array(legacyPostInput).parse(raw);
 }, "getParsedLegacyData");
 
-export type LegacyPostInput = z.infer<typeof postInput>;
-export type LegacyPostOutput = z.infer<typeof postOutput>;
+export type LegacyPostInput = z.infer<typeof legacyPostInput>;
+export type LegacyPostOutput = z.infer<typeof legacyPostOutput>;
 
 export default function getLegacyData(
   url: string
 ): LegacyPostOutput | undefined {
   const raw = getParsedLegacyData().find((p) => p.expost_source_url === url);
-  return raw ? postOutput.parse(raw) : undefined;
+  return raw ? legacyPostOutput.parse(raw) : undefined;
 }

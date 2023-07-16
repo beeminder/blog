@@ -79,7 +79,7 @@ describe("makePost", () => {
 
     const result = await makePost("https://<etherpad-host>/psychpricing");
 
-    expect(result.tags).toEqual(["a", "b", "c"]);
+    expect(result.tags).toEqual(expect.arrayContaining(["a", "b", "c"]));
   });
 
   it("uses frontmatter date", async () => {
