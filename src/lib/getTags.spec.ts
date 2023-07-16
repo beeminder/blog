@@ -1,12 +1,12 @@
 import { readFileSync } from "fs";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getTags from "./getTags";
-import loadLegacyData from "./loadLegacyData";
+import loadLegacyData from "./test/loadLegacyData";
 
 describe("getTags", () => {
   beforeEach(() => {
     vi.mocked(readFileSync).mockReturnValue("https://<etherpad-host>/psychpricing");
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://<etherpad-host>/psychpricing",
         Slug: "psychpricing",
@@ -42,7 +42,7 @@ describe("getTags", () => {
   });
 
   it("does not include blank tags", async () => {
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://<etherpad-host>/psychpricing",
         Slug: "psychpricing",

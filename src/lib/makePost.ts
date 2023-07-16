@@ -67,13 +67,13 @@ export default async function makePost(url: string): Promise<Post> {
     throw new Error("Custom excerpts are required for new posts.");
   }
 
-  const slug = parsed.slug || wp?.Slug;
+  const slug = parsed.slug || wp?.slug;
 
   if (typeof slug !== "string") {
     throw new Error(`Invalid slug for ${url}`);
   }
 
-  const date = parsed.date || wp?.Date;
+  const date = parsed.date || wp?.date;
 
   if (!(date instanceof Date)) {
     throw new Error(`Invalid date for ${url}`);
@@ -89,18 +89,18 @@ export default async function makePost(url: string): Promise<Post> {
     ...parsed,
     slug,
     title: parsed.isLegacyTitle
-      ? wp?.Title?.toString() || parsed.title
+      ? wp?.title?.toString() || parsed.title
       : parsed.title,
     markdown,
-    tags: [...parsed.tags, ...(wp?.Tags || [])],
+    tags: [...parsed.tags, ...(wp?.tags || [])],
     date,
     date_string,
     url: markdownUrl,
-    author: parsed.author || wp?.["Author Username"] || "",
+    author: parsed.author || wp?.author || "",
     disqus: {
-      id: `${wp?.ID} https://blog.beeminder.com/?p=${wp?.ID}`,
+      id: `${wp?.id} https://blog.beeminder.com/?p=${wp?.id}`,
       url: `https://blog.beeminder.com/${slug}/`,
     },
-    status: parsed.status ?? getStatus(wp?.Status) ?? Status.Draft,
+    status: parsed.status ?? getStatus(wp?.status) ?? Status.Draft,
   };
 }
