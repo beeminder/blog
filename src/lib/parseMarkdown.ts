@@ -21,6 +21,7 @@ const MARKED_OPTIONS = {
 
 export type ParsedMarkdown = {
   title: string;
+  isLegacyTitle: boolean;
   content: string;
   excerpt: string;
   image: Image | undefined;
@@ -73,6 +74,7 @@ export default function parseMarkdown(markdown: string): ParsedMarkdown {
 
   return {
     title: typeof fm.title === "string" ? fm.title : parseTitle(markdown),
+    isLegacyTitle: typeof fm.title !== "string",
     content,
     excerpt: typeof fm.excerpt === "string" ? fm.excerpt : getExcerpt(content),
     image: getImage(fm) ?? extractImage(content),

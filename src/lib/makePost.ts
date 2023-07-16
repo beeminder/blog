@@ -88,6 +88,9 @@ export default async function makePost(url: string): Promise<Post> {
   return {
     ...parsed,
     slug,
+    title: parsed.isLegacyTitle
+      ? wp?.Title?.toString() || parsed.title
+      : parsed.title,
     markdown,
     tags: [...parsed.tags, ...wpTags],
     date,

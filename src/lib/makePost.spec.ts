@@ -122,4 +122,38 @@ describe("makePost", () => {
 
     expect(result.status).toEqual("publish");
   });
+
+  it("uses wp title over magic title", async () => {
+    vi.mocked(getLegacyData).mockResolvedValue({
+      ID: 14,
+      Slug: "psychpricing",
+      Date: "2021-09-01",
+      Status: "publish",
+      Title: "wp_title",
+    });
+
+    vi.mocked(fetchPost).mockResolvedValue("BEGIN_MAGIC[magic_title]");
+
+    const result = await makePost("https://padm.us/psychpricing");
+
+    expect(result.title).toEqual("wp_title");
+  });
+
+  it("uses frontmatter title over wp title", async () => {
+    vi.mocked(getLegacyData).mockResolvedValue({
+      ID: 14,
+      Slug: "psychpricing",
+      Date: "2021-09-01",
+      Status: "publish",
+      Title: "wp_title",
+    });
+
+    vi.mocked(fetchPost).mockResolvedValue(
+      "---\ntitle: frontmatter_title\n---\n\n# World"
+    );
+
+    const result = await makePost("https://padm.us/psychpricing");
+
+    expect(result.title).toEqual("frontmatter_title");
+  });
 });
