@@ -1,9 +1,9 @@
-import { LegacyPostInput, postInput } from "../getLegacyData";
+import { LegacyPostInput, legacyPostInput } from "../getLegacyData";
 import { vi } from "vitest";
 import readLegacyData from "../readLegacyData";
 import { generateMock } from "@anatine/zod-mock";
 
-const post = generateMock(postInput);
+const post = generateMock(legacyPostInput);
 
 export default function loadLegacyData(posts: LegacyPostInput[] = []) {
   vi.mocked(readLegacyData).mockReturnValue(
