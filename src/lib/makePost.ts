@@ -73,17 +73,17 @@ export default async function makePost(url: string): Promise<Post> {
     throw new Error(`Invalid slug for ${url}`);
   }
 
-  const date = parsed.date || new Date(String(wp?.Date));
+  const date = parsed.date || wp?.Date;
+
+  if (!(date instanceof Date)) {
+    throw new Error(`Invalid date for ${url}`);
+  }
+
   const date_string = date.toISOString().split("T")[0];
 
   if (!date_string) {
     throw new Error(`Invalid date for ${url}`);
   }
-
-  const author = parsed.author || wp?.["Author Username"]?.toString() || "";
-  const wpTags = String(wp?.Tags || "")
-    .split("|")
-    .filter(Boolean);
 
   return {
     ...parsed,
@@ -92,11 +92,11 @@ export default async function makePost(url: string): Promise<Post> {
       ? wp?.Title?.toString() || parsed.title
       : parsed.title,
     markdown,
-    tags: [...parsed.tags, ...wpTags],
+    tags: [...parsed.tags, ...(wp?.Tags || [])],
     date,
     date_string,
     url: markdownUrl,
-    author,
+    author: parsed.author || wp?.["Author Username"] || "",
     disqus: {
       id: `${wp?.ID} https://blog.beeminder.com/?p=${wp?.ID}`,
       url: `https://blog.beeminder.com/${slug}/`,
