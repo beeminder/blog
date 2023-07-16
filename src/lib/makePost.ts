@@ -9,8 +9,7 @@ import addBlankLines from "./addBlankLines";
 import linkFootnotes from "./linkFootnotes";
 import expandRefs from "./expandRefs";
 import matter from "gray-matter";
-import type { z } from "zod";
-import { frontmatter } from "../schemas/frontmatter";
+import { Frontmatter, frontmatter } from "../schemas/frontmatter";
 
 marked.use(markedSmartypants());
 marked.use({ hooks });
@@ -41,7 +40,7 @@ function parseContent(markdown: string): string {
 }
 
 function parseFrontmatter(markdown: string): matter.GrayMatterFile<string> & {
-  data: z.infer<typeof frontmatter>;
+  data: Frontmatter;
 } {
   const result = matter(markdown);
 
@@ -53,16 +52,16 @@ function parseFrontmatter(markdown: string): matter.GrayMatterFile<string> & {
 
 export default async function makePostInput(url: string): Promise<PostInput> {
   const wp = getLegacyData(url);
-  const markdownUrl = formatUrl(url);
-  const markdown = await fetchPost(markdownUrl);
-  const { data: fm, content: rawContent } = parseFrontmatter(markdown);
+  const source = formatUrl(url);
+  const md = await fetchPost(source);
+  const { data: fm, content: rawContent } = parseFrontmatter(md);
   const content = parseContent(rawContent);
-  const parsed = { fm, md: markdown, content };
 
   return {
     wp,
-    markdownUrl,
-    markdown,
-    parsed,
+    source,
+    md,
+    content,
+    fm,
   };
 }

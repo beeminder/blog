@@ -14,3 +14,5 @@ export const frontmatter = z
     status,
   })
   .partial();
+
+export type Frontmatter = z.infer<typeof frontmatter>;
