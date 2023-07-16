@@ -1,6 +1,6 @@
-import fs from "fs";
 import memoize from "./memoize";
 import { Post, post } from "../schemas/post";
+import readSources from "./readSources";
 
 export default async function getPosts({
   includeUnpublished = false,
@@ -9,9 +9,7 @@ export default async function getPosts({
 } = {}) {
   const posts = await makePosts();
 
-  if (includeUnpublished) {
-    return posts;
-  }
+  if (includeUnpublished) return posts;
 
   return posts.filter((p) => p.status === "publish");
 }
@@ -19,8 +17,7 @@ export default async function getPosts({
 const makePosts = memoize(_makePosts, "posts");
 
 async function _makePosts(): Promise<Post[]> {
-  const sources = fs.readFileSync("sources.txt", "utf-8");
-  const urls = sources.split("\n").filter(Boolean);
+  const urls = readSources();
   const posts: Post[] = [];
 
   console.time("Gathering posts");
