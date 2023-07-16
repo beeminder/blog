@@ -33,7 +33,6 @@ export const post = z
 
     return {
       wp: legacyPostOutput.optional().parse(wp),
-      source,
       md,
       content: body.parse(content),
       fm: frontmatter.parse(data),
@@ -42,7 +41,7 @@ export const post = z
   .refine((p) => p.wp !== undefined || p.fm.excerpt !== undefined, {
     message: `Custom excerpts are required for new posts.`,
   })
-  .transform(({ wp, fm, source, md, content }) => ({
+  .transform(({ wp, fm, md, content }) => ({
     content,
     excerpt: fm.excerpt || getExcerpt(content),
     slug: z.string().parse(fm.slug || wp?.slug),
@@ -50,7 +49,6 @@ export const post = z
     title: fm.title || wp?.title?.toString() || parseTitle(md),
     tags: [...(fm.tags || []), ...(wp?.tags || [])],
     date: z.date().parse(fm.date || wp?.date),
-    url: source,
     author: z.string().parse(fm.author || wp?.author),
     status: status.default("draft").parse(fm.status || wp?.status),
     _wpId: wp?.id,
