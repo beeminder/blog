@@ -1,18 +1,11 @@
 import parseMarkdown from "./parseMarkdown";
 import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
-import type { HTMLAttributes } from "astro/types";
-
-export enum Status {
-  Publish = "publish",
-  Draft = "draft",
-  Pending = "pending",
-}
-
-export type Image = HTMLAttributes<"img"> & {
-  src: string;
-  extracted: boolean;
-};
+import { z } from "zod";
+import type { Image } from "../schemas/image";
+import { legacyPostOutput } from "../schemas/legacyPostOutput";
+import { parsedMarkdown } from "../schemas/parsedMarkdown";
+import { Status, status } from "../schemas/status";
 
 export type Post = {
   url: string;
@@ -45,17 +38,13 @@ function formatUrl(url: string) {
 }
 
 export function getStatus(value: unknown): Status | undefined {
-  switch (value) {
-    case "publish":
-      return Status.Publish;
-    case "pending":
-      return Status.Pending;
-    case "draft":
-      return Status.Draft;
-    default:
-      return undefined;
-  }
+  return status.optional().parse(value);
 }
+
+const postSchema = z.object({
+  wp: legacyPostOutput.optional(),
+  parsed: parsedMarkdown,
+});
 
 export default async function makePost(url: string): Promise<Post> {
   const wp = getLegacyData(url);
@@ -101,6 +90,6 @@ export default async function makePost(url: string): Promise<Post> {
       id: `${wp?.id} https://blog.beeminder.com/?p=${wp?.id}`,
       url: `https://blog.beeminder.com/${slug}/`,
     },
-    status: parsed.status ?? getStatus(wp?.status) ?? Status.Draft,
+    status: parsed.status ?? getStatus(wp?.status) ?? "draft",
   };
 }

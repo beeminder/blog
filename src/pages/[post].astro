@@ -6,7 +6,6 @@ import getPosts from "../lib/getPosts";
 import Shadowbox from "../components/Shadowbox.astro";
 import PostMeta from "../components/PostMeta.astro";
 import Typography from "../components/Typography.astro";
-import { Status } from "../lib/makePost";
 import Comments from "../components/Comments.astro";
 
 export async function getStaticPaths() {
@@ -35,7 +34,7 @@ const {
   status,
 } = Astro.props as Props;
 
-const isDraft = status === Status.Draft;
+const isDraft = status === "draft";
 const className = isDraft ? "draft" : undefined;
 const title = isDraft ? `DRAFT: ${rawTitle}` : rawTitle;
 

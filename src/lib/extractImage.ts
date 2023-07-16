@@ -1,5 +1,5 @@
 import { JSDOM } from "jsdom";
-import type { Image } from "./makePost";
+import type { Image } from "../schemas/image";
 
 export default function extractImage(html: string): Image | undefined {
   const dom = new JSDOM(html);

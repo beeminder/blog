@@ -73,18 +73,18 @@ paragraph
   });
 
   it("parses frontmatter", () => {
-    const { frontmatter } = parseMarkdown("---\nfoo: bar\n---");
+    const { frontmatter } = parseMarkdown("---\nslug: val\n---");
 
-    expect(frontmatter).toEqual({ foo: "bar" });
+    expect(frontmatter).toEqual({ slug: "val" });
   });
 
   it("parses frontmatter with magic present", () => {
     const { frontmatter } = parseMarkdown(`---
-foo: bar
+slug: val
 ---
 BEGIN_MAGIC
 `);
 
-    expect(frontmatter).toEqual({ foo: "bar" });
+    expect(frontmatter).toEqual({ slug: "val" });
   });
 });
