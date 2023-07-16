@@ -180,6 +180,15 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
           format("woff2-variations");
       }
 
+      @font-face {
+        font-family: "Lora Variable";
+        font-style: italic;
+        font-display: block;
+        font-weight: 50 100 200 300 500;
+        src: url(@fontsource-variable/lora/files/lora-latin-wght-italic.woff2)
+          format("woff2-variations");
+      }
+
       :root {
         --primary: #cc0000;
         --secondary: #ffcb06;
@@ -189,6 +198,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
         --gap-0-5: calc(var(--gap) * 0.5);
         --gap-1: calc(var(--gap) * 1);
+        --gap-1-5: calc(var(--gap) * 1.5);
         --gap-2: calc(var(--gap) * 2);
         --gap-3: calc(var(--gap) * 3);
 
@@ -251,16 +261,26 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       }
       .pullquote {
         float: right;
-        width: 15rem;
+        width: 50%;
+        max-width: 30rem;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
-        font-family: Georgia, serif;
-        font-weight: 200;
+        font-weight: 300;
         font-style: italic;
-        font-size: 1.2em;
+        font-size: 2em;
         line-height: var(--line-height);
         padding: var(--gap-1);
-        margin-left: var(--gap-2);
+        margin: var(--gap-0-5) 0 var(--gap-0-5) var(--gap-1-5);
+        text-align: center;
+      }
+      @media (max-width: 40rem) {
+        .pullquote {
+          float: none;
+          width: auto;
+          max-width: none;
+          margin-left: 0;
+          margin-right: 0;
+        }
       }
       .aligncenter {
         display: block;
