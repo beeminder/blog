@@ -53,9 +53,9 @@ describe("getPosts", () => {
       },
     ]);
 
-    const result = await getPosts();
+    await getPosts();
 
-    expect(result[0]?.url).toContain("padm.us");
+    expect(fetchPost).toBeCalledWith(expect.stringContaining("padm.us"));
   });
 
   it("uses formatted url for fetching markdown", async () => {
@@ -98,9 +98,9 @@ https://dtherpad.com/new
       },
     ]);
 
-    const result = await getPosts();
+    await getPosts();
 
-    expect(result[0]?.url).toContain("new");
+    expect(fetchPost).toBeCalledWith(expect.stringContaining("new"));
   });
 
   it("includes excerpts", async () => {
