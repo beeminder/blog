@@ -7,23 +7,10 @@ import extractImage from "../lib/extractImage";
 import getLegacyData from "../lib/getLegacyData";
 import fetchPost from "../lib/fetchPost";
 import matter from "gray-matter";
-import { marked } from "marked";
-import trimContent from "../lib/trimContent";
-import { markedSmartypants } from "marked-smartypants";
-import hooks from "../lib/markedHooks";
-import addBlankLines from "../lib/addBlankLines";
-import linkFootnotes from "../lib/linkFootnotes";
-import expandRefs from "../lib/expandRefs";
-import { Frontmatter, frontmatter } from "./frontmatter";
+
+import { frontmatter } from "./frontmatter";
 import { legacyPostOutput } from "./legacyPostOutput";
-
-marked.use(markedSmartypants());
-marked.use({ hooks });
-
-const MARKED_OPTIONS = {
-  mangle: false,
-  headerIds: false,
-} as const;
+import { body } from "./body";
 
 function formatUrl(url: string) {
   const hasSchema = url.startsWith("http");
@@ -36,40 +23,19 @@ function formatUrl(url: string) {
   return hasSchema ? url : `https://${url}`;
 }
 
-function parseContent(markdown: string): string {
-  const blanked = addBlankLines(markdown);
-  const trimmed = trimContent(blanked);
-  const linked = linkFootnotes(trimmed);
-  const expanded = expandRefs(linked);
-
-  return marked.parse(expanded, MARKED_OPTIONS);
-}
-
-function parseFrontmatter(markdown: string): matter.GrayMatterFile<string> & {
-  data: Frontmatter;
-} {
-  const result = matter(markdown);
-
-  return {
-    ...result,
-    data: frontmatter.parse(result.data),
-  };
-}
-
 export const post = z
   .string()
   .transform(async (url) => {
     const wp = getLegacyData(url);
     const source = formatUrl(url);
     const md = await fetchPost(source);
-    const { data, content: rawContent } = parseFrontmatter(md);
-    const content = parseContent(rawContent);
+    const { data, content } = matter(md);
 
     return {
       wp: legacyPostOutput.optional().parse(wp),
       source,
       md,
-      content,
+      content: body.parse(content),
       fm: frontmatter.parse(data),
     };
   })
