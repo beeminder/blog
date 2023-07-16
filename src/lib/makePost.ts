@@ -1,8 +1,8 @@
 import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
 import type { Image } from "../schemas/image";
-import { Status, status } from "../schemas/status";
-import { post } from "../schemas/post";
+import type { Status } from "../schemas/status";
+import type { PostInput } from "../schemas/post";
 import { marked } from "marked";
 import trimContent from "./trimContent";
 import { markedSmartypants } from "marked-smartypants";
@@ -52,10 +52,6 @@ function formatUrl(url: string) {
   return hasSchema ? url : `https://${url}`;
 }
 
-export function getStatus(value: unknown): Status | undefined {
-  return status.optional().parse(value);
-}
-
 function parseContent(markdown: string): string {
   const blanked = addBlankLines(markdown);
   const trimmed = trimContent(blanked);
@@ -76,7 +72,7 @@ function parseFrontmatter(markdown: string): matter.GrayMatterFile<string> & {
   };
 }
 
-export default async function makePost(url: string): Promise<Post> {
+export default async function makePostInput(url: string): Promise<PostInput> {
   const wp = getLegacyData(url);
   const markdownUrl = formatUrl(url);
   const markdown = await fetchPost(markdownUrl);
@@ -84,10 +80,10 @@ export default async function makePost(url: string): Promise<Post> {
   const content = parseContent(rawContent);
   const parsed = { fm, md: markdown, content };
 
-  return post.parse({
+  return {
     wp,
     markdownUrl,
     markdown,
     parsed,
-  });
+  };
 }
