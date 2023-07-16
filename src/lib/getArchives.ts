@@ -1,5 +1,5 @@
+import type { Post } from "../schemas/post";
 import getPosts from "./getPosts";
-import type { Post } from "./makePost";
 import memoize from "./memoize";
 
 type Month = {
