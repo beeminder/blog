@@ -1,15 +1,14 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import makePost from "./makePost";
-import getLegacyData from "./getLegacyData";
 import fetchPost from "./fetchPost";
-import loadLegacyData from "./loadLegacyData";
+import loadLegacyData from "./test/loadLegacyData";
 
 describe("makePost", () => {
   beforeEach(() => {
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://padm.us/psychpricing",
-        ID: 14,
+        ID: "14",
         Slug: "psychpricing",
         Date: "2021-09-01",
         Status: "publish",
@@ -128,10 +127,10 @@ describe("makePost", () => {
   });
 
   it("uses wp title over magic title", async () => {
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://padm.us/psychpricing",
-        ID: 14,
+        ID: "14",
         Slug: "psychpricing",
         Date: "2021-09-01",
         Status: "publish",
@@ -147,10 +146,10 @@ describe("makePost", () => {
   });
 
   it("uses frontmatter title over wp title", async () => {
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://padm.us/psychpricing",
-        ID: 14,
+        ID: "14",
         Slug: "psychpricing",
         Date: "2021-09-01",
         Status: "publish",

@@ -1,14 +1,13 @@
 import { readFileSync } from "fs";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getArchives from "./getArchives";
-import getLegacyData from "./getLegacyData";
-import loadLegacyData from "./loadLegacyData";
+import loadLegacyData from "./test/loadLegacyData";
 
 describe("getArchives", () => {
   beforeEach(() => {
     vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
 
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         Date: "2011-01-24",
         Slug: "psychpricing",
@@ -42,7 +41,7 @@ https://padm.us/psychpricing
 https://padm.us/second
 `);
 
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         Date: "2013-02-22",
         Slug: "psychpricing",

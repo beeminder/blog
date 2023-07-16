@@ -2,13 +2,12 @@ import getPosts from "./getPosts";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { readFileSync } from "fs";
 import fetchPost from "./fetchPost";
-import getLegacyData from "./getLegacyData";
-import loadLegacyData from "./loadLegacyData";
+import loadLegacyData from "./test/loadLegacyData";
 
 describe("getPosts", () => {
   beforeEach(() => {
     vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://padm.us/psychpricing",
         Slug: "psychpricing",
@@ -44,7 +43,7 @@ describe("getPosts", () => {
       "https://dtherpad.com/psychpricing"
     );
 
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://dtherpad.com/psychpricing",
         Slug: "psychpricing",
@@ -63,7 +62,7 @@ describe("getPosts", () => {
       "https://dtherpad.com/psychpricing"
     );
 
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://dtherpad.com/psychpricing",
         Slug: "psychpricing",
@@ -83,7 +82,7 @@ https://dtherpad.com/old
 https://dtherpad.com/new
 `);
 
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://dtherpad.com/old",
         Slug: "old",
@@ -112,7 +111,7 @@ https://dtherpad.com/new
   });
 
   it("excludes unpublished posts by default", async () => {
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://padm.us/psychpricing",
         Slug: "psychpricing",
@@ -127,7 +126,7 @@ https://dtherpad.com/new
   });
 
   it("includes unpublished posts when requested", async () => {
-    vi.mocked(loadLegacyData).mockReturnValue([
+    loadLegacyData([
       {
         expost_source_url: "https://padm.us/psychpricing",
         Slug: "psychpricing",
