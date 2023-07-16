@@ -4,23 +4,22 @@ import parseTitle from "../lib/parseTitle";
 import getExcerpt from "../lib/getExcerpt";
 import { image } from "./image";
 import extractImage from "../lib/extractImage";
-import getLegacyData from "../lib/getLegacyData";
 import matter from "gray-matter";
 
 import { frontmatter } from "./frontmatter";
-import { legacyPostOutput } from "./legacyPostOutput";
+import { legacyPost } from "./legacyPost";
 import { body } from "./body";
 import { markdown } from "./markdown";
+import { dateString } from "./dateString";
 
 export const post = z
   .string()
   .transform(async (url) => {
-    const wp = getLegacyData(url);
     const md = await markdown.parseAsync(url);
     const { data, content } = matter(md);
 
     return {
-      wp: legacyPostOutput.optional().parse(wp),
+      wp: legacyPost.optional().parse(url),
       md,
       content: body.parse(content),
       fm: frontmatter.parse(data),
@@ -43,7 +42,7 @@ export const post = z
   }))
   .transform((post) => ({
     ...post,
-    date_string: z.string().parse(post.date?.toISOString().split("T")[0]),
+    date_string: dateString.parse(post.date),
     disqus: {
       id: `${post._wpId} https://blog.beeminder.com/?p=${post._wpId}`,
       url: `https://blog.beeminder.com/${post.slug}/`,
