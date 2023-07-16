@@ -14,9 +14,7 @@ export default async function getPosts({
   return posts.filter((p) => p.status === "publish");
 }
 
-const makePosts = memoize(_makePosts, "posts");
-
-async function _makePosts(): Promise<Post[]> {
+const makePosts = memoize(async (): Promise<Post[]> => {
   const urls = readSources();
   const posts: Post[] = [];
 
@@ -29,4 +27,4 @@ async function _makePosts(): Promise<Post[]> {
   posts.sort((a, b) => b.date.getTime() - a.date.getTime());
 
   return posts;
-}
+}, "posts");
