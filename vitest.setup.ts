@@ -29,7 +29,7 @@ beforeEach(() => {
     Promise.resolve({ text: vi.fn(async () => "") } as any)
   );
 
-  vi.mocked(fetchPost).mockResolvedValue("");
+  vi.mocked(fetchPost).mockResolvedValue("raw_markdown");
   loadLegacyData();
 
   global.console.time = vi.fn();

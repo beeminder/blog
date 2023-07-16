@@ -1,11 +1,26 @@
-import parseMarkdown from "./parseMarkdown";
 import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
-import { z } from "zod";
 import type { Image } from "../schemas/image";
-import { legacyPostOutput } from "../schemas/legacyPostOutput";
-import { parsedMarkdown } from "../schemas/parsedMarkdown";
 import { Status, status } from "../schemas/status";
+import { post } from "../schemas/post";
+import { marked } from "marked";
+import trimContent from "./trimContent";
+import { markedSmartypants } from "marked-smartypants";
+import hooks from "./markedHooks";
+import addBlankLines from "./addBlankLines";
+import linkFootnotes from "./linkFootnotes";
+import expandRefs from "./expandRefs";
+import matter from "gray-matter";
+import type { z } from "zod";
+import { frontmatter } from "../schemas/frontmatter";
+
+marked.use(markedSmartypants());
+marked.use({ hooks });
+
+const MARKED_OPTIONS = {
+  mangle: false,
+  headerIds: false,
+} as const;
 
 export type Post = {
   url: string;
@@ -41,55 +56,38 @@ export function getStatus(value: unknown): Status | undefined {
   return status.optional().parse(value);
 }
 
-const postSchema = z.object({
-  wp: legacyPostOutput.optional(),
-  parsed: parsedMarkdown,
-});
+function parseContent(markdown: string): string {
+  const blanked = addBlankLines(markdown);
+  const trimmed = trimContent(blanked);
+  const linked = linkFootnotes(trimmed);
+  const expanded = expandRefs(linked);
+
+  return marked.parse(expanded, MARKED_OPTIONS);
+}
+
+function parseFrontmatter(markdown: string): matter.GrayMatterFile<string> & {
+  data: z.infer<typeof frontmatter>;
+} {
+  const result = matter(markdown);
+
+  return {
+    ...result,
+    data: frontmatter.parse(result.data),
+  };
+}
 
 export default async function makePost(url: string): Promise<Post> {
   const wp = getLegacyData(url);
   const markdownUrl = formatUrl(url);
   const markdown = await fetchPost(markdownUrl);
-  const parsed = parseMarkdown(markdown);
+  const { data: fm, content: rawContent } = parseFrontmatter(markdown);
+  const content = parseContent(rawContent);
+  const parsed = { fm, md: markdown, content };
 
-  if (wp === undefined && !parsed.frontmatter.excerpt) {
-    throw new Error("Custom excerpts are required for new posts.");
-  }
-
-  const slug = parsed.slug || wp?.slug;
-
-  if (typeof slug !== "string") {
-    throw new Error(`Invalid slug for ${url}`);
-  }
-
-  const date = parsed.date || wp?.date;
-
-  if (!(date instanceof Date)) {
-    throw new Error(`Invalid date for ${url}`);
-  }
-
-  const date_string = date.toISOString().split("T")[0];
-
-  if (!date_string) {
-    throw new Error(`Invalid date for ${url}`);
-  }
-
-  return {
-    ...parsed,
-    slug,
-    title: parsed.isLegacyTitle
-      ? wp?.title?.toString() || parsed.title
-      : parsed.title,
+  return post.parse({
+    wp,
+    markdownUrl,
     markdown,
-    tags: [...parsed.tags, ...(wp?.tags || [])],
-    date,
-    date_string,
-    url: markdownUrl,
-    author: parsed.author || wp?.author || "",
-    disqus: {
-      id: `${wp?.id} https://blog.beeminder.com/?p=${wp?.id}`,
-      url: `https://blog.beeminder.com/${slug}/`,
-    },
-    status: parsed.status ?? getStatus(wp?.status) ?? "draft",
-  };
+    parsed,
+  });
 }

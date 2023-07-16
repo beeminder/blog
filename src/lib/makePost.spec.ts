@@ -165,4 +165,113 @@ describe("makePost", () => {
 
     expect(result.title).toEqual("frontmatter_title");
   });
+
+  it("returns html", async () => {
+    vi.mocked(fetchPost).mockResolvedValue("hello world");
+
+    const { content } = await makePost("https://padm.us/psychpricing");
+
+    expect(content).toBe("<p>hello world</p>\n");
+  });
+
+  it("uses smartypants", async () => {
+    vi.mocked(fetchPost).mockResolvedValue('"hello world"');
+
+    const { content } = await makePost("https://padm.us/psychpricing");
+
+    expect(content).toBe("<p>&#8220;hello world&#8221;</p>\n");
+  });
+
+  it("does not require new line after html element", async () => {
+    vi.mocked(fetchPost).mockResolvedValue(`
+<h1>heading</h1>
+paragraph
+`);
+
+    const { content } = await makePost("https://padm.us/psychpricing");
+
+    expect(content).toContain("<p>");
+  });
+
+  it("allows for PHP Markdown Extra-style IDs", async () => {
+    vi.mocked(fetchPost).mockResolvedValue("# heading {#id}");
+
+    const { content } = await makePost("https://padm.us/psychpricing");
+
+    expect(content).toContain('<h1 id="id">heading</h1>');
+  });
+
+  it("handles id properly", async () => {
+    vi.mocked(fetchPost).mockResolvedValue(
+      "## More Real-World Commitment Devices  {#AUG}"
+    );
+
+    const { content } = await makePost("https://padm.us/psychpricing");
+
+    expect(content).toContain('id="AUG"');
+  });
+
+  it("handles multiple IDs", async () => {
+    vi.mocked(fetchPost).mockResolvedValue(`
+## What Commitment Devices Have You Used on Yourself? {#POL}
+
+## More Real-World Commitment Devices  {#AUG}
+`);
+
+    const { content } = await makePost("https://padm.us/psychpricing");
+
+    expect(content).toContain('id="POL"');
+    expect(content).toContain('id="AUG"');
+  });
+
+  it("supports link nonsense", async () => {
+    vi.mocked(fetchPost).mockResolvedValue(`
+[paying is not punishment](
+  https://blog.beeminder.com/depunish
+  "Our paying-is-not-punishment post is also a prequel to our announcement of No-Excuses Mode"
+) because
+`);
+
+    const { content } = await makePost("https://padm.us/psychpricing");
+
+    expect(content).toContain('href="https://blog.beeminder.com/depunish"');
+  });
+
+  it("links footnotes", async () => {
+    vi.mocked(fetchPost).mockResolvedValue("$FN[foo] $FN[foo]");
+
+    const { content } = await makePost("https://padm.us/psychpricing");
+
+    expect(content).toContain(
+      '<a class="footnote" id="foo1" href="#foo">[1]</a>'
+    );
+  });
+
+  it("expands refs", async () => {
+    vi.mocked(fetchPost).mockResolvedValue("$REF[foo] $REF[bar]");
+
+    const { content } = await makePost("https://padm.us/psychpricing");
+
+    expect(content).toContain("2");
+  });
+
+  it("parses frontmatter", async () => {
+    vi.mocked(fetchPost).mockResolvedValue("---\nslug: val\n---");
+
+    const { slug } = await makePost("https://padm.us/psychpricing");
+
+    expect(slug).toEqual("val");
+  });
+
+  it("parses frontmatter with magic present", async () => {
+    vi.mocked(fetchPost).mockResolvedValue(`---
+slug: val
+---
+BEGIN_MAGIC
+`);
+
+    const { slug } = await makePost("https://padm.us/psychpricing");
+
+    expect(slug).toEqual("val");
+  });
 });
