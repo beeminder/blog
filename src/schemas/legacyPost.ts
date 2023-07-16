@@ -16,28 +16,32 @@ export const legacyPostInput = z
     "Post Modified Date": z.string(),
     Status: z.enum(["publish", "pending", "draft"]),
   })
-  .partial();
+  .partial()
+  .optional();
 
 export const legacyPost = z
   .string()
   .transform((url) => readLegacyData().find((p) => p.expost_source_url === url))
   .transform(legacyPostInput.parse)
-  .transform((val) => ({
-    id: Number(val.ID),
-    title: val.Title,
-    date: val.Date ? new Date(val.Date) : undefined,
-    tags: val.Tags ? String(val.Tags).split("|").filter(Boolean) : [],
-    source: val.expost_source_url,
-    disqus_id: Number(val.dsq_thread_id),
-    author: val["Author Username"],
-    slug: val.Slug,
-    commentStatus: val["Comment Status"],
-    pingStatus: val["Ping Status"],
-    dateModified: val["Post Modified Date"]
-      ? new Date(val["Post Modified Date"])
-      : undefined,
-    status: val.Status,
-  }));
+  .transform(
+    (wp) =>
+      wp && {
+        id: Number(wp.ID),
+        title: wp.Title,
+        date: wp.Date ? new Date(wp.Date) : undefined,
+        tags: wp.Tags ? String(wp.Tags).split("|").filter(Boolean) : [],
+        source: wp.expost_source_url,
+        disqus_id: Number(wp.dsq_thread_id),
+        author: wp["Author Username"],
+        slug: wp.Slug,
+        commentStatus: wp["Comment Status"],
+        pingStatus: wp["Ping Status"],
+        dateModified: wp["Post Modified Date"]
+          ? new Date(wp["Post Modified Date"])
+          : undefined,
+        status: wp.Status,
+      }
+  );
 
 export type LegacyPost = z.infer<typeof legacyPost>;
 export type LegacyPostInput = z.infer<typeof legacyPostInput>;

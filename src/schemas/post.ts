@@ -19,7 +19,7 @@ export const post = z
     const { data, content } = matter(md);
 
     return {
-      wp: legacyPost.optional().parse(url),
+      wp: legacyPost.parse(url),
       md,
       content: body.parse(content),
       fm: frontmatter.parse(data),
