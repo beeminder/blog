@@ -1,6 +1,6 @@
 import fs from "fs";
 import type { Post } from "./makePost";
-import makePost, { Status } from "./makePost";
+import makePost from "./makePost";
 import memoize from "./memoize";
 
 export default async function getPosts({
@@ -14,7 +14,7 @@ export default async function getPosts({
     return posts;
   }
 
-  return posts.filter((p) => p.status === Status.Publish);
+  return posts.filter((p) => p.status === "publish");
 }
 
 const makePosts = memoize(_makePosts, "posts");

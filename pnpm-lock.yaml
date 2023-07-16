@@ -19,6 +19,7 @@ specifiers:
   marked: ^5.0.4
   marked-smartypants: ^1.0.2
   node-fetch-cache: ^3.1.3
+  typescript: ^5.1.6
   vitest: ^0.31.4
   zod: ^3.21.4
 
@@ -44,6 +45,7 @@ devDependencies:
   '@types/jsdom': 21.1.1
   '@types/marked': 5.0.0
   '@types/node-fetch-cache': 3.0.0
+  typescript: 5.1.6
   vitest: 0.31.4_jsdom@22.1.0
 
 packages:
@@ -1022,7 +1024,7 @@ packages:
       strip-ansi: 7.1.0
       supports-esm: 1.0.0
       tsconfig-resolver: 3.0.1
-      typescript: 5.1.3
+      typescript: 5.1.6
       unist-util-visit: 4.1.2
       vfile: 5.3.7
       vite: 4.3.9
@@ -3669,11 +3671,10 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /typescript/5.1.3:
-    resolution: {integrity: sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==}
+  /typescript/5.1.6:
+    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: false
 
   /ufo/1.1.2:
     resolution: {integrity: sha512-TrY6DsjTQQgyS3E3dBaOXf0TpPD8u9FVrVYmKVegJuFw51n/YB9XPt+U6ydzFG5ZIN7+DIjPbNmXoBj9esYhgQ==}

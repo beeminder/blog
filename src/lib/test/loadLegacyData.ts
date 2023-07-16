@@ -1,7 +1,10 @@
-import { LegacyPostInput, legacyPostInput } from "../getLegacyData";
 import { vi } from "vitest";
 import readLegacyData from "../readLegacyData";
 import { generateMock } from "@anatine/zod-mock";
+import {
+  LegacyPostInput,
+  legacyPostInput,
+} from "../../schemas/legacyPostInput";
 
 const post = generateMock(legacyPostInput);
 
