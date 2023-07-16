@@ -36,7 +36,10 @@ describe("getPosts", () => {
   it("fetches post content", async () => {
     await getPosts();
 
-    expect(fetchPost).toBeCalledWith("https://padm.us/psychpricing");
+    expect(fetchPost).toBeCalledWith(
+      "https://padm.us/psychpricing",
+      expect.anything()
+    );
   });
 
   it("handles dtherpad legacy domain", async () => {
@@ -55,7 +58,10 @@ describe("getPosts", () => {
 
     await getPosts();
 
-    expect(fetchPost).toBeCalledWith(expect.stringContaining("padm.us"));
+    expect(fetchPost).toBeCalledWith(
+      expect.stringContaining("padm.us"),
+      expect.anything()
+    );
   });
 
   it("uses formatted url for fetching markdown", async () => {
@@ -74,7 +80,10 @@ describe("getPosts", () => {
 
     await getPosts();
 
-    expect(fetchPost).toBeCalledWith(expect.stringContaining("padm.us"));
+    expect(fetchPost).toBeCalledWith(
+      expect.stringContaining("padm.us"),
+      expect.anything()
+    );
   });
 
   it("sorts post by date descending", async () => {
@@ -100,7 +109,10 @@ https://dtherpad.com/new
 
     await getPosts();
 
-    expect(fetchPost).toBeCalledWith(expect.stringContaining("new"));
+    expect(fetchPost).toBeCalledWith(
+      expect.stringContaining("new"),
+      expect.anything()
+    );
   });
 
   it("includes excerpts", async () => {
@@ -431,5 +443,25 @@ BEGIN_MAGIC
     const { slug } = posts.find((p) => p.slug === "val") || {};
 
     expect(slug).toEqual("val");
+  });
+
+  it("adds schema if missing", async () => {
+    vi.mocked(readFileSync).mockReturnValue("dtherpad.com/psychpricing");
+
+    loadLegacyData([
+      {
+        expost_source_url: "dtherpad.com/psychpricing",
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "publish",
+      },
+    ]);
+
+    await getPosts();
+
+    expect(fetchPost).toBeCalledWith(
+      expect.stringContaining("https://"),
+      expect.anything()
+    );
   });
 });

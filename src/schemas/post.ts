@@ -5,30 +5,18 @@ import getExcerpt from "../lib/getExcerpt";
 import { image } from "./image";
 import extractImage from "../lib/extractImage";
 import getLegacyData from "../lib/getLegacyData";
-import fetchPost from "../lib/fetchPost";
 import matter from "gray-matter";
 
 import { frontmatter } from "./frontmatter";
 import { legacyPostOutput } from "./legacyPostOutput";
 import { body } from "./body";
-
-function formatUrl(url: string) {
-  const hasSchema = url.startsWith("http");
-  const isDtherpad = url.includes("dtherpad.com");
-
-  if (isDtherpad) {
-    url = url.replace("dtherpad.com", "padm.us");
-  }
-
-  return hasSchema ? url : `https://${url}`;
-}
+import { markdown } from "./markdown";
 
 export const post = z
   .string()
   .transform(async (url) => {
     const wp = getLegacyData(url);
-    const source = formatUrl(url);
-    const md = await fetchPost(source);
+    const md = await markdown.parseAsync(url);
     const { data, content } = matter(md);
 
     return {
