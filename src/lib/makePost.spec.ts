@@ -2,15 +2,19 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 import makePost from "./makePost";
 import getLegacyData from "./getLegacyData";
 import fetchPost from "./fetchPost";
+import loadLegacyData from "./loadLegacyData";
 
 describe("makePost", () => {
   beforeEach(() => {
-    vi.mocked(getLegacyData).mockResolvedValue({
-      ID: 14,
-      Slug: "psychpricing",
-      Date: "2021-09-01",
-      Status: "publish",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://padm.us/psychpricing",
+        ID: 14,
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "publish",
+      },
+    ]);
   });
 
   it("sets disqus id", async () => {
@@ -124,13 +128,16 @@ describe("makePost", () => {
   });
 
   it("uses wp title over magic title", async () => {
-    vi.mocked(getLegacyData).mockResolvedValue({
-      ID: 14,
-      Slug: "psychpricing",
-      Date: "2021-09-01",
-      Status: "publish",
-      Title: "wp_title",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://padm.us/psychpricing",
+        ID: 14,
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "publish",
+        Title: "wp_title",
+      },
+    ]);
 
     vi.mocked(fetchPost).mockResolvedValue("BEGIN_MAGIC[magic_title]");
 
@@ -140,13 +147,16 @@ describe("makePost", () => {
   });
 
   it("uses frontmatter title over wp title", async () => {
-    vi.mocked(getLegacyData).mockResolvedValue({
-      ID: 14,
-      Slug: "psychpricing",
-      Date: "2021-09-01",
-      Status: "publish",
-      Title: "wp_title",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://padm.us/psychpricing",
+        ID: 14,
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "publish",
+        Title: "wp_title",
+      },
+    ]);
 
     vi.mocked(fetchPost).mockResolvedValue(
       "---\ntitle: frontmatter_title\n---\n\n# World"

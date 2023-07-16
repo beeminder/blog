@@ -2,17 +2,20 @@ import { readFileSync } from "fs";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getArchives from "./getArchives";
 import getLegacyData from "./getLegacyData";
+import loadLegacyData from "./loadLegacyData";
 
 describe("getArchives", () => {
   beforeEach(() => {
     vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
 
-    vi.mocked(getLegacyData).mockResolvedValue({
-      Date: "2011-01-24",
-      Slug: "psychpricing",
-      expost_source_url: "https://padm.us/psychpricing",
-      Status: "publish",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        Date: "2011-01-24",
+        Slug: "psychpricing",
+        expost_source_url: "https://padm.us/psychpricing",
+        Status: "publish",
+      },
+    ]);
   });
 
   it("gets archives", async () => {
@@ -39,26 +42,20 @@ https://padm.us/psychpricing
 https://padm.us/second
 `);
 
-    vi.mocked(getLegacyData).mockImplementation(async (url: string) => {
-      switch (url) {
-        case "https://padm.us/psychpricing":
-          return {
-            Date: "2013-02-22",
-            Slug: "psychpricing",
-            expost_source_url: "https://padm.us/psychpricing",
-            Status: "publish",
-          };
-        case "https://padm.us/second":
-          return {
-            Date: "2015-02-22",
-            Slug: "psychpricing",
-            expost_source_url: "https://padm.us/second",
-            Status: "publish",
-          };
-        default:
-          return undefined;
-      }
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        Date: "2013-02-22",
+        Slug: "psychpricing",
+        expost_source_url: "https://padm.us/psychpricing",
+        Status: "publish",
+      },
+      {
+        Date: "2015-02-22",
+        Slug: "psychpricing",
+        expost_source_url: "https://padm.us/second",
+        Status: "publish",
+      },
+    ]);
 
     const result = await getArchives();
 

@@ -3,16 +3,19 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 import { readFileSync } from "fs";
 import fetchPost from "./fetchPost";
 import getLegacyData from "./getLegacyData";
+import loadLegacyData from "./loadLegacyData";
 
 describe("getPosts", () => {
   beforeEach(() => {
     vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
-    vi.mocked(getLegacyData).mockResolvedValue({
-      expost_source_url: "https://padm.us/psychpricing",
-      Slug: "psychpricing",
-      Date: "2021-09-01",
-      Status: "publish",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://padm.us/psychpricing",
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "publish",
+      },
+    ]);
   });
 
   it("filters out blank lines", async () => {
@@ -41,12 +44,14 @@ describe("getPosts", () => {
       "https://dtherpad.com/psychpricing"
     );
 
-    vi.mocked(getLegacyData).mockResolvedValue({
-      expost_source_url: "https://dtherpad.com/psychpricing",
-      Slug: "psychpricing",
-      Date: "2021-09-01",
-      Status: "publish",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://dtherpad.com/psychpricing",
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "publish",
+      },
+    ]);
 
     const result = await getPosts();
 
@@ -58,12 +63,14 @@ describe("getPosts", () => {
       "https://dtherpad.com/psychpricing"
     );
 
-    vi.mocked(getLegacyData).mockResolvedValue({
-      expost_source_url: "https://dtherpad.com/psychpricing",
-      Slug: "psychpricing",
-      Date: "2021-09-01",
-      Status: "publish",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://dtherpad.com/psychpricing",
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "publish",
+      },
+    ]);
 
     await getPosts();
 
@@ -76,25 +83,20 @@ https://dtherpad.com/old
 https://dtherpad.com/new
 `);
 
-    vi.mocked(getLegacyData).mockImplementation(async (url: string) => {
-      if (url === "https://dtherpad.com/old") {
-        return {
-          expost_source_url: "https://dtherpad.com/old",
-          Slug: "old",
-          Date: "2020-01-01",
-          Status: "publish",
-        };
-      }
-      if (url === "https://dtherpad.com/new") {
-        return {
-          expost_source_url: "https://dtherpad.com/new",
-          Slug: "new",
-          Date: "2020-01-02",
-          Status: "publish",
-        };
-      }
-      return undefined;
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://dtherpad.com/old",
+        Slug: "old",
+        Date: "2020-01-01",
+        Status: "publish",
+      },
+      {
+        expost_source_url: "https://dtherpad.com/new",
+        Slug: "new",
+        Date: "2020-01-02",
+        Status: "publish",
+      },
+    ]);
 
     const result = await getPosts();
 
@@ -110,12 +112,14 @@ https://dtherpad.com/new
   });
 
   it("excludes unpublished posts by default", async () => {
-    vi.mocked(getLegacyData).mockResolvedValue({
-      expost_source_url: "https://padm.us/psychpricing",
-      Slug: "psychpricing",
-      Date: "2021-09-01",
-      Status: "draft",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://padm.us/psychpricing",
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "draft",
+      },
+    ]);
 
     const posts = await getPosts();
 
@@ -123,12 +127,14 @@ https://dtherpad.com/new
   });
 
   it("includes unpublished posts when requested", async () => {
-    vi.mocked(getLegacyData).mockResolvedValue({
-      expost_source_url: "https://padm.us/psychpricing",
-      Slug: "psychpricing",
-      Date: "2021-09-01",
-      Status: "draft",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://padm.us/psychpricing",
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "draft",
+      },
+    ]);
 
     const posts = await getPosts({ includeUnpublished: true });
 

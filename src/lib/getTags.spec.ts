@@ -1,18 +1,20 @@
 import { readFileSync } from "fs";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getTags from "./getTags";
-import getLegacyData from "./getLegacyData";
+import loadLegacyData from "./loadLegacyData";
 
 describe("getTags", () => {
   beforeEach(() => {
     vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
-    vi.mocked(getLegacyData).mockResolvedValue({
-      expost_source_url: "https://padm.us/psychpricing",
-      Slug: "psychpricing",
-      Tags: "the_tag",
-      Date: "2021-09-01",
-      Status: "publish",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://padm.us/psychpricing",
+        Slug: "psychpricing",
+        Tags: "the_tag",
+        Date: "2021-09-01",
+        Status: "publish",
+      },
+    ]);
   });
 
   it("returns tags", async () => {
@@ -40,12 +42,14 @@ describe("getTags", () => {
   });
 
   it("does not include blank tags", async () => {
-    vi.mocked(getLegacyData).mockResolvedValue({
-      expost_source_url: "https://padm.us/psychpricing",
-      Slug: "psychpricing",
-      Tags: "",
-      Date: "2021-09-01",
-    });
+    vi.mocked(loadLegacyData).mockReturnValue([
+      {
+        expost_source_url: "https://padm.us/psychpricing",
+        Slug: "psychpricing",
+        Tags: "",
+        Date: "2021-09-01",
+      },
+    ]);
 
     const result = await getTags();
 
