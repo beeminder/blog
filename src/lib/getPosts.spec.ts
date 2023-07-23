@@ -14,6 +14,7 @@ describe("getPosts", () => {
         Slug: "psychpricing",
         Date: "2021-09-01",
         Status: "publish",
+        Excerpt: undefined,
       },
     ]);
   });
@@ -463,5 +464,25 @@ BEGIN_MAGIC
       expect.stringContaining("https://"),
       expect.anything()
     );
+  });
+
+  it("uses wordpress excerpt", async () => {
+    vi.mocked(readFileSync).mockReturnValue("dtherpad.com/psychpricing");
+
+    loadLegacyData([
+      {
+        expost_source_url: "dtherpad.com/psychpricing",
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "publish",
+        Excerpt: "wp excerpt",
+      },
+    ]);
+
+    const posts = await getPosts();
+
+    const { excerpt } = posts.find((p) => p.slug === "psychpricing") || {};
+
+    expect(excerpt).toEqual("wp excerpt");
   });
 });

@@ -30,7 +30,7 @@ export const post = z
   })
   .transform(({ wp, fm, md, content }) => ({
     content,
-    excerpt: fm.excerpt || getExcerpt(content),
+    excerpt: fm.excerpt || wp?.excerpt || getExcerpt(content),
     slug: z.string().parse(fm.slug || wp?.slug),
     image: image.optional().parse(fm.image || extractImage(content)),
     title: fm.title || wp?.title?.toString() || parseTitle(md),

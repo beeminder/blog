@@ -5,6 +5,7 @@ export const legacyPostInput = z
   .object({
     ID: z.string(),
     Title: z.string(),
+    Excerpt: z.string(),
     Date: z.string(),
     Tags: z.string(),
     expost_source_url: z.string(),
@@ -27,6 +28,7 @@ export const legacyPost = z
       wp && {
         id: Number(wp.ID),
         title: wp.Title,
+        excerpt: wp.Excerpt,
         date: wp.Date ? new Date(wp.Date) : undefined,
         tags: wp.Tags ? String(wp.Tags).split("|").filter(Boolean) : [],
         source: wp.expost_source_url,
