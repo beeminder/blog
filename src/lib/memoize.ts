@@ -2,7 +2,7 @@ const fns = new Map<string, unknown>();
 
 export default function memoize<T, P extends Array<unknown>>(
   fn: (...args: P) => T,
-  id: string
+  id: string,
 ) {
   return (...args: P): T => {
     const _id = id + JSON.stringify(args);

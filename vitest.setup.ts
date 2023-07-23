@@ -22,11 +22,11 @@ vi.mock("fs", () => {
 
 beforeEach(() => {
   global.fetch = vi.fn(() =>
-    Promise.resolve({ text: vi.fn(async () => "") } as any)
+    Promise.resolve({ text: vi.fn(async () => "") } as any),
   );
 
   vi.mocked(fetch).mockReturnValue(
-    Promise.resolve({ text: vi.fn(async () => "") } as any)
+    Promise.resolve({ text: vi.fn(async () => "") } as any),
   );
 
   vi.mocked(fetchPost).mockResolvedValue("raw_markdown");

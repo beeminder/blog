@@ -17,7 +17,8 @@
     "cache:clear": "rm -rf .cache",
     "check": "astro check",
     "check:ts": "tsc --noEmit",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@astrojs/prefetch": "^0.2.3",
@@ -44,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
     "eslint": "^8.45.0",
+    "prettier": "3.0.0",
     "typescript": "^5.1.6",
     "vitest": "^0.31.4"
   }

@@ -41,7 +41,7 @@ export const legacyPost = z
           ? new Date(wp["Post Modified Date"])
           : undefined,
         status: wp.Status,
-      }
+      },
   );
 
 export type LegacyPost = z.infer<typeof legacyPost>;

@@ -6,7 +6,7 @@ export default function getExcerpt(html: string): string {
   const dom = new JSDOM(html);
 
   const footnotes = Array.from(
-    dom.window.document.querySelectorAll("a.footnote")
+    dom.window.document.querySelectorAll("a.footnote"),
   );
 
   footnotes.forEach((el) => el.remove());

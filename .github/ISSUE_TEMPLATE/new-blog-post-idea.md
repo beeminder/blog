@@ -1,10 +1,9 @@
 ---
 name: New blog post idea
 about: Old blog post ideas also acceptable
-title: ''
+title: ""
 labels: IDEA
-assignees: ''
-
+assignees: ""
 ---
 
 ```[tasklist]

@@ -17,7 +17,7 @@ export default function expandRefs(markdown: string): string {
     const chunks = acc.split(regex);
 
     return chunks.reduce((acc, chunk, j) =>
-      j === 0 ? chunk : `${acc}${i + 1}${chunk}`
+      j === 0 ? chunk : `${acc}${i + 1}${chunk}`,
     );
   }, markdown);
 }

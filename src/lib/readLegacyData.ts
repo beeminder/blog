@@ -7,7 +7,7 @@ const readLegacyData = memoize(
     parse(fs.readFileSync("wp-export.csv", "utf-8"), {
       columns: true,
     }),
-  "wpExport"
+  "wpExport",
 );
 
 export default readLegacyData;
