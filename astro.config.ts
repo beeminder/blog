@@ -14,9 +14,6 @@ const redirects = makeRedirects(slugs) as any;
 export default defineConfig({
   site: "https://blog.beeminder.com",
   redirects,
-  experimental: {
-    redirects: true,
-  },
   integrations: [
     prefetch({
       selector: "a",
