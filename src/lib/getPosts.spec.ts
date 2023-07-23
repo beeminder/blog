@@ -39,13 +39,13 @@ describe("getPosts", () => {
 
     expect(fetchPost).toBeCalledWith(
       "https://padm.us/psychpricing",
-      expect.anything()
+      expect.anything(),
     );
   });
 
   it("handles dtherpad legacy domain", async () => {
     vi.mocked(readFileSync).mockReturnValue(
-      "https://dtherpad.com/psychpricing"
+      "https://dtherpad.com/psychpricing",
     );
 
     loadLegacyData([
@@ -61,13 +61,13 @@ describe("getPosts", () => {
 
     expect(fetchPost).toBeCalledWith(
       expect.stringContaining("padm.us"),
-      expect.anything()
+      expect.anything(),
     );
   });
 
   it("uses formatted url for fetching markdown", async () => {
     vi.mocked(readFileSync).mockReturnValue(
-      "https://dtherpad.com/psychpricing"
+      "https://dtherpad.com/psychpricing",
     );
 
     loadLegacyData([
@@ -83,7 +83,7 @@ describe("getPosts", () => {
 
     expect(fetchPost).toBeCalledWith(
       expect.stringContaining("padm.us"),
-      expect.anything()
+      expect.anything(),
     );
   });
 
@@ -112,7 +112,7 @@ https://dtherpad.com/new
 
     expect(fetchPost).toBeCalledWith(
       expect.stringContaining("new"),
-      expect.anything()
+      expect.anything(),
     );
   });
 
@@ -184,7 +184,7 @@ https://dtherpad.com/new
 
   it("extracts image url", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      '<img src="https://example.com/image.png" />'
+      '<img src="https://example.com/image.png" />',
     );
 
     const posts = await getPosts();
@@ -204,7 +204,7 @@ https://dtherpad.com/new
 
   it("uses frontmatter author", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\nauthor: Alice\n---\n\n# World"
+      "---\nauthor: Alice\n---\n\n# World",
     );
 
     const posts = await getPosts();
@@ -215,7 +215,7 @@ https://dtherpad.com/new
 
   it("uses frontmatter excerpt", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\nexcerpt: Hello\n---\n\n# World"
+      "---\nexcerpt: Hello\n---\n\n# World",
     );
 
     const posts = await getPosts();
@@ -226,7 +226,7 @@ https://dtherpad.com/new
 
   it("uses frontmatter tags", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\ntags:\n- a\n- b\n- c\n---\n\n# World"
+      "---\ntags:\n- a\n- b\n- c\n---\n\n# World",
     );
 
     const posts = await getPosts();
@@ -237,7 +237,7 @@ https://dtherpad.com/new
 
   it("uses frontmatter date", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\ndate: 2021-09-02\n---\n\n# World"
+      "---\ndate: 2021-09-02\n---\n\n# World",
     );
 
     const posts = await getPosts();
@@ -257,7 +257,7 @@ https://dtherpad.com/new
 
   it("uses frontmatter image", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\nimage:\n  src: https://example.com/image.png\n---\n\n# World"
+      "---\nimage:\n  src: https://example.com/image.png\n---\n\n# World",
     );
 
     const posts = await getPosts();
@@ -275,7 +275,7 @@ https://dtherpad.com/new
 
   it("uses frontmatter status", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\nstatus: publish\n---\n\n# World"
+      "---\nstatus: publish\n---\n\n# World",
     );
 
     const posts = await getPosts();
@@ -317,7 +317,7 @@ https://dtherpad.com/new
     ]);
 
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\ntitle: frontmatter_title\n---\n\n# World"
+      "---\ntitle: frontmatter_title\n---\n\n# World",
     );
 
     const posts = await getPosts();
@@ -367,7 +367,7 @@ paragraph
 
   it("handles id properly", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "## More Real-World Commitment Devices  {#AUG}"
+      "## More Real-World Commitment Devices  {#AUG}",
     );
 
     const posts = await getPosts();
@@ -411,7 +411,7 @@ paragraph
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
 
     expect(content).toContain(
-      '<a class="footnote" id="foo1" href="#foo">[1]</a>'
+      '<a class="footnote" id="foo1" href="#foo">[1]</a>',
     );
   });
 
@@ -462,7 +462,7 @@ BEGIN_MAGIC
 
     expect(fetchPost).toBeCalledWith(
       expect.stringContaining("https://"),
-      expect.anything()
+      expect.anything(),
     );
   });
 

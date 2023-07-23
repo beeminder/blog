@@ -5,8 +5,8 @@ function applyIdsToElements(html: string): string {
 
   const elements = Array.from(
     dom.window.document.querySelectorAll(
-      "*:not(script):not(noscript):not(style)"
-    )
+      "*:not(script):not(noscript):not(style)",
+    ),
   ).filter((e) => {
     return (
       e.textContent?.length &&

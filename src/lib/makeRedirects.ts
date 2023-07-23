@@ -5,7 +5,7 @@ export default function makeRedirects(slugs: string[]): Record<string, string> {
       Array.from({ length: s.length - 1 }, (_, i) => i + 1).map((n) => ({
         from: s.slice(0, n),
         to: s,
-      }))
+      })),
     )
     .flat();
 

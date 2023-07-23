@@ -10,6 +10,6 @@ export default function loadLegacyData(posts: LegacyPostInput[] = []) {
     posts.map((p) => ({
       ...post,
       ...p,
-    }))
+    })),
   );
 }

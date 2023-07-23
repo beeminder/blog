@@ -58,7 +58,7 @@ function makeYear(yyyy: number, posts: Post[]): Year {
         ...acc,
         [k]: makeMonth(k, yearPosts),
       }),
-      {}
+      {},
     ),
   };
 }
@@ -71,7 +71,7 @@ async function makeArchives(): Promise<Archives> {
       ...acc,
       [k]: makeYear(k, posts),
     }),
-    {}
+    {},
   );
 }
 
