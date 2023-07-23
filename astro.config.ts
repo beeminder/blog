@@ -7,6 +7,7 @@ const slugs = posts.map((p) => p.slug);
 
 // WORKAROUND: `as any` was added to sidestep an incorrect upstream Astro type definition
 // https://github.com/withastro/astro/issues/7322#issuecomment-1581891586
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const redirects = makeRedirects(slugs) as any;
 
 // https://astro.build/config
