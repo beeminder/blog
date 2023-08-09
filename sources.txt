@@ -345,3 +345,6 @@ https://padm.us/lichess
 http://padm.us/datasmithing
 https://padm.us/trydeepwork
 https://padm.us/test-post
+https://padm.us/reactions
+https://padm.us/inertia
+https://padm.us/ontologies
