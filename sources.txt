@@ -345,3 +345,6 @@ https://<etherpad-host>/lichess
 http://<etherpad-host>/datasmithing
 https://<etherpad-host>/trydeepwork
 https://<etherpad-host>/test-post
+https://<etherpad-host>/reactions
+https://<etherpad-host>/inertia
+https://<etherpad-host>/ontologies
