@@ -348,3 +348,4 @@ https://<etherpad-host>/test-post
 https://<etherpad-host>/reactions
 https://<etherpad-host>/inertia
 https://<etherpad-host>/ontologies
+https://<etherpad-host>/athletes
