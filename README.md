@@ -17,7 +17,7 @@ dashboard.
 The frontmatter for each post is a [YAML][1] block at the top of the file:
 
 ```yaml
----
+--- # nothing above this line
 title: The Title of the Post
 slug: title-of-post
 date: 2021-01-01
@@ -47,6 +47,9 @@ pnpm install
 pnpm run dev
 pnpm run test
 ```
+
+Note that fetch requests are cached to the `.cache` directory during local
+development. To clear the cache, run `pnpm run cache:clear`.
 
 ## Production
 
