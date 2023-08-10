@@ -1,11 +1,11 @@
-import { readFileSync } from "fs";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getTags from "./getTags";
 import loadLegacyData from "./test/loadLegacyData";
+import readSources from "./readSources";
 
 describe("getTags", () => {
   beforeEach(() => {
-    vi.mocked(readFileSync).mockReturnValue("https://<etherpad-host>/psychpricing");
+    vi.mocked(readSources).mockReturnValue(["https://<etherpad-host>/psychpricing"]);
     loadLegacyData([
       {
         expost_source_url: "https://<etherpad-host>/psychpricing",
