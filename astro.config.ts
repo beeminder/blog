@@ -1,22 +1,25 @@
 import { defineConfig } from "astro/config";
-import makeRedirects from "./src/lib/makeRedirects";
-import getPosts from "./src/lib/getPosts";
 import prefetch from "@astrojs/prefetch";
-const posts = await getPosts();
-const slugs = posts.map((p) => p.slug);
-
-// WORKAROUND: `as any` was added to sidestep an incorrect upstream Astro type definition
-// https://github.com/withastro/astro/issues/7322#issuecomment-1581891586
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const redirects = makeRedirects(slugs) as any;
+import dsv from "@rollup/plugin-dsv";
+import stripBom from "strip-bom";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://blog.beeminder.com",
-  redirects,
   integrations: [
     prefetch({
       selector: "a",
     }),
   ],
+  vite: {
+    plugins: [
+      dsv({
+        processRow: (row) => {
+          const entries = Object.entries(row);
+          const stripped = entries.map(([k, v]) => [stripBom(k), v]);
+          return Object.fromEntries(stripped);
+        },
+      }),
+    ],
+  },
 });

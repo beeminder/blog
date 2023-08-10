@@ -17,7 +17,7 @@ export const legacyPostInput = z
     "Post Modified Date": z.string(),
     Status: z.enum(["publish", "pending", "draft"]),
     user: z.object({
-      id: z.string(),
+      ID: z.string(),
       display_name: z.string(),
     }),
   })

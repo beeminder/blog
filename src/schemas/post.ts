@@ -15,7 +15,6 @@ import { dateString } from "./dateString";
 export const post = z
   .string()
   .transform(async (url) => {
-    console.log({ url });
     const md = await markdown.parseAsync(url);
     const { data, content } = matter(md);
 
