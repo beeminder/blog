@@ -4,21 +4,31 @@ import TitleLockup from "../components/TitleLockup.astro";
 import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
 
-const posts = await getPosts();
+const posts = await getPosts().then((posts) => posts.map((p) => ({
+  title: p.title,
+  slug: p.slug
+})));
 ---
 
 <Layout title="Page not found">
   <Shadowbox>
     <TitleLockup Heading="h1" title="Page not found" />
     <p>Sorry, we couldn't find the page you were looking for.</p>
-    <ul>
-      {
-        posts.slice(0, 6).map((p) => (
-          <li>
-            <a href={`/${p.slug}`} set:html={p.title} />
-          </li>
-        ))
-      }
-    </ul>
+    <ul id="matches" />
   </Shadowbox>
 </Layout>
+
+<script define:vars={{posts}}>
+  const matches = posts.filter((p) => p.slug.startsWith(location.pathname.slice(1)));
+  const links = matches.length > 0 ? matches : posts.slice(0, 6)
+  const ul = document.querySelector("#matches");
+  
+  for (const l of links) {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = l.slug;
+    a.textContent = l.title;
+    li.appendChild(a);
+    ul.appendChild(li);
+  }
+</script>
