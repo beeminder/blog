@@ -22,9 +22,7 @@ const { posts } = Astro.props;
                 {p.image && (
                   <a class="thumbnail" href={`/${p.slug}`}>
                     <img
-                      src={p.image.src}
-                      alt={p.image.alt}
-                      title={p.image.alt}
+                      {...p.image}
                       width="200"
                       height="200"
                     />
