@@ -348,3 +348,4 @@ https://padm.us/test-post
 https://padm.us/reactions
 https://padm.us/inertia
 https://padm.us/ontologies
+https://padm.us/athletes
