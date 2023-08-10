@@ -1,11 +1,11 @@
-import { readFileSync } from "fs";
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getArchives from "./getArchives";
 import loadLegacyData from "./test/loadLegacyData";
+import readSources from "./readSources";
 
 describe("getArchives", () => {
   beforeEach(() => {
-    vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
+    vi.mocked(readSources).mockReturnValue(["https://padm.us/psychpricing"]);
 
     loadLegacyData([
       {
@@ -36,10 +36,10 @@ describe("getArchives", () => {
   });
 
   it("properly batches by year", async () => {
-    vi.mocked(readFileSync).mockReturnValue(`
-https://padm.us/psychpricing
-https://padm.us/second
-`);
+    vi.mocked(readSources).mockReturnValue([
+      "https://padm.us/psychpricing",
+      "https://padm.us/second",
+    ]);
 
     loadLegacyData([
       {

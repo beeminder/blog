@@ -16,6 +16,10 @@ export const legacyPostInput = z
     "Ping Status": z.enum(["open", "closed"]),
     "Post Modified Date": z.string(),
     Status: z.enum(["publish", "pending", "draft"]),
+    user: z.object({
+      id: z.string(),
+      display_name: z.string(),
+    }),
   })
   .partial();
 
@@ -33,7 +37,7 @@ export const legacyPost = z
         tags: wp.Tags ? String(wp.Tags).split("|").filter(Boolean) : [],
         source: wp.expost_source_url,
         disqus_id: Number(wp.dsq_thread_id),
-        author: wp["Author Username"],
+        author: wp.user?.display_name,
         slug: wp.Slug,
         commentStatus: wp["Comment Status"],
         pingStatus: wp["Ping Status"],

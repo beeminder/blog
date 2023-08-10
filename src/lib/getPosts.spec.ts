@@ -1,12 +1,12 @@
 import getPosts from "./getPosts";
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { readFileSync } from "fs";
 import fetchPost from "./fetchPost";
 import loadLegacyData from "./test/loadLegacyData";
+import readSources from "./readSources";
 
 describe("getPosts", () => {
   beforeEach(() => {
-    vi.mocked(readFileSync).mockReturnValue("https://padm.us/psychpricing");
+    vi.mocked(readSources).mockReturnValue(["https://padm.us/psychpricing"]);
     loadLegacyData([
       {
         expost_source_url: "https://padm.us/psychpricing",
@@ -19,19 +19,11 @@ describe("getPosts", () => {
     ]);
   });
 
-  it("filters out blank lines", async () => {
-    vi.mocked(readFileSync).mockReturnValue("");
-
-    const posts = await getPosts();
-
-    expect(posts).toHaveLength(0);
-  });
-
   it("only loads sources once", async () => {
     await getPosts();
     await getPosts();
 
-    expect(readFileSync).toHaveBeenCalledTimes(1);
+    expect(readSources).toHaveBeenCalledTimes(1);
   });
 
   it("fetches post content", async () => {
@@ -44,9 +36,9 @@ describe("getPosts", () => {
   });
 
   it("handles dtherpad legacy domain", async () => {
-    vi.mocked(readFileSync).mockReturnValue(
+    vi.mocked(readSources).mockReturnValue([
       "https://dtherpad.com/psychpricing",
-    );
+    ]);
 
     loadLegacyData([
       {
@@ -66,9 +58,9 @@ describe("getPosts", () => {
   });
 
   it("uses formatted url for fetching markdown", async () => {
-    vi.mocked(readFileSync).mockReturnValue(
+    vi.mocked(readSources).mockReturnValue([
       "https://dtherpad.com/psychpricing",
-    );
+    ]);
 
     loadLegacyData([
       {
@@ -88,10 +80,10 @@ describe("getPosts", () => {
   });
 
   it("sorts post by date descending", async () => {
-    vi.mocked(readFileSync).mockReturnValue(`
-https://dtherpad.com/old
-https://dtherpad.com/new
-`);
+    vi.mocked(readSources).mockReturnValue([
+      "https://dtherpad.com/old",
+      "https://dtherpad.com/new",
+    ]);
 
     loadLegacyData([
       {
@@ -447,7 +439,7 @@ BEGIN_MAGIC
   });
 
   it("adds schema if missing", async () => {
-    vi.mocked(readFileSync).mockReturnValue("dtherpad.com/psychpricing");
+    vi.mocked(readSources).mockReturnValue(["dtherpad.com/psychpricing"]);
 
     loadLegacyData([
       {
@@ -467,7 +459,7 @@ BEGIN_MAGIC
   });
 
   it("uses wordpress excerpt", async () => {
-    vi.mocked(readFileSync).mockReturnValue("dtherpad.com/psychpricing");
+    vi.mocked(readSources).mockReturnValue(["dtherpad.com/psychpricing"]);
 
     loadLegacyData([
       {

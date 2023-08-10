@@ -6,19 +6,8 @@ import loadLegacyData from "./src/lib/test/loadLegacyData";
 
 vi.mock("./src/lib/fetchPost");
 vi.mock("./src/lib/readLegacyData");
+vi.mock("./src/lib/readSources");
 vi.mock("node-fetch-cache");
-
-vi.mock("fs", () => {
-  const readFileSync = vi.fn(() => "");
-
-  return {
-    __esModule: true,
-    readFileSync,
-    default: {
-      readFileSync,
-    },
-  };
-});
 
 beforeEach(() => {
   global.fetch = vi.fn(() =>
