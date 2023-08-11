@@ -9,13 +9,14 @@ import matter from "gray-matter";
 import { frontmatter } from "./frontmatter";
 import { legacyPost } from "./legacyPost";
 import { body } from "./body";
-import { markdown } from "./markdown";
 import { dateString } from "./dateString";
 
 export const post = z
-  .string()
-  .transform(async (url) => {
-    const md = await markdown.parseAsync(url);
+  .object({
+    url: z.string(),
+    md: z.string(),
+  })
+  .transform(({ url, md }) => {
     const { data, content } = matter(md);
 
     return {

@@ -1,6 +1,7 @@
 import memoize from "./memoize";
-import { Post, post } from "../schemas/post";
+import { Post, PostInput, post } from "../schemas/post";
 import readSources from "./readSources";
+import { markdown } from "../schemas/markdown";
 
 export default async function getPosts({
   includeUnpublished = false,
@@ -16,12 +17,23 @@ export default async function getPosts({
 
 const makePosts = memoize(async (): Promise<Post[]> => {
   const urls = readSources();
-  const posts: Post[] = [];
+  const inputs: PostInput[] = [];
 
   console.time("Gathering posts");
+
+  console.time("Fetching markdown");
   for (const url of urls) {
-    posts.push(await post.parseAsync(url));
+    inputs.push({
+      url,
+      md: await markdown.parseAsync(url),
+    });
   }
+  console.timeEnd("Fetching markdown");
+
+  console.time("Parsing posts");
+  const posts: Post[] = inputs.map((i) => post.parse(i));
+  console.timeEnd("Parsing posts");
+
   console.timeEnd("Gathering posts");
 
   posts.sort((a, b) => b.date.getTime() - a.date.getTime());
