@@ -10,11 +10,11 @@ export type Month = {
 
 type Year = {
   label: number;
-  months: Record<number, Month>;
+  months: Month[];
   post_count: number;
 };
 
-type Archives = Record<number, Year>;
+type Archives = Year[];
 
 const MONTH_LABELS = {
   0: "January",
@@ -49,30 +49,21 @@ function makeMonth(m: number, posts: Post[]): Month {
 
 function makeYear(yyyy: number, posts: Post[]): Year {
   const yearPosts = posts.filter((p) => p.date.getFullYear() === yyyy);
-  const monthKeys = yearPosts.map((p) => p.date.getMonth());
+  const allMonths = [...new Set(yearPosts.map((p) => p.date.getMonth()))];
   return {
     label: yyyy,
     post_count: yearPosts.length,
-    months: monthKeys.reduce(
-      (acc, k) => ({
-        ...acc,
-        [k]: makeMonth(k, yearPosts),
-      }),
-      {},
-    ),
+    months: allMonths.map((m) => makeMonth(m, yearPosts)),
   };
 }
 
 async function makeArchives(): Promise<Archives> {
   const posts = await getPosts();
-  const yearKeys = posts.map((p) => p.date.getFullYear());
-  return yearKeys.reduce(
-    (acc, k) => ({
-      ...acc,
-      [k]: makeYear(k, posts),
-    }),
-    {},
-  );
+  const allYears = [...new Set(posts.map((p) => p.date.getFullYear()))];
+
+  allYears.sort((a, b) => b - a);
+
+  return allYears.map((yyyy) => makeYear(yyyy, posts));
 }
 
 const getArchives = memoize(makeArchives, "archives");

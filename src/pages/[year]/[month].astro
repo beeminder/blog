@@ -6,19 +6,16 @@ import Posts from "../../components/Posts.astro";
 import TitleLockup from "../../components/TitleLockup.astro";
 
 export async function getStaticPaths() {
-  const archives = await getArchives();
-  const years = Object.values(archives);
+  const years = await getArchives();
 
   return years
     .map((y) =>
-      Object.values(y.months).map((m) => ({
+      y.months.map((m) => ({
         params: {
           year: y.label.toString(),
           month: m.label,
         },
-        props: {
-          posts: m.posts,
-        },
+        props: m,
       }))
     )
     .flat();
