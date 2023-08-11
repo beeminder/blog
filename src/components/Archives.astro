@@ -1,16 +1,9 @@
 ---
-import getArchives from "../lib/getArchives";
+import getYears from "../lib/getYears";
 import Shadowbox from "./Shadowbox.astro";
 import Typography from "./Typography.astro";
 
-function getSortedValues<T>(obj: Record<string, T>): T[] {
-  return Object.entries(obj)
-    .sort((a, b) => +b[0] - +a[0])
-    .map(([, v]) => v);
-}
-
-const archives = await getArchives();
-const years = getSortedValues(archives);
+const years = await getYears();
 ---
 
 <Shadowbox>

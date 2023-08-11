@@ -12,20 +12,19 @@ const getTags = memoize(makeTags, "tags");
 
 export default getTags;
 
-async function makeTags(): Promise<Record<string, Tag>> {
+async function makeTags(): Promise<Tag[]> {
   const posts = await getPosts();
-  const tagNames = posts.map((p) => p.tags).flat();
-  const entries = tagNames.map((t) => {
+  const tagNames = [...new Set(posts.map((p) => p.tags).flat())];
+  const tags = tagNames.map((t) => {
     const matched = posts.filter((p) => p.tags.includes(t));
-    return [
-      t,
-      {
-        name: t,
-        posts: matched,
-        count: matched.length,
-      },
-    ];
+    return {
+      name: t,
+      posts: matched,
+      count: matched.length,
+    };
   });
 
-  return Object.fromEntries(entries);
+  tags.sort((a, b) => b.count - a.count);
+
+  return tags;
 }

@@ -20,25 +20,25 @@ describe("getTags", () => {
   it("returns tags", async () => {
     const result = await getTags();
 
-    expect(result.the_tag).toBeDefined();
+    expect(result.length).toEqual(1);
   });
 
   it("includes posts in tags", async () => {
     const result = await getTags();
 
-    expect(result.the_tag?.posts).toHaveLength(1);
+    expect(result[0]?.posts).toHaveLength(1);
   });
 
   it("includes post count on tags", async () => {
     const result = await getTags();
 
-    expect(result.the_tag?.count).toEqual(1);
+    expect(result[0]?.count).toEqual(1);
   });
 
   it("includes tag name in tag", async () => {
     const result = await getTags();
 
-    expect(result.the_tag?.name).toEqual("the_tag");
+    expect(result[0]?.name).toEqual("the_tag");
   });
 
   it("does not include blank tags", async () => {
