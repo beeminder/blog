@@ -23,11 +23,6 @@ slug: title-of-post
 date: 2021-01-01
 author: dreeves
 tags: [tag1, tag2]
-image:
-  src: https://example.com/image.jpg
-  alt: alt text
-  width: 500
-  height: 500
 status: publish # or draft or pending
 excerpt: >
   The excerpt is used for the post preview on the blog index page.
