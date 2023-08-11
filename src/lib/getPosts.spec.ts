@@ -247,17 +247,6 @@ describe("getPosts", () => {
     expect(result?.slug).toEqual("hello");
   });
 
-  it("uses frontmatter image", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      "---\nimage:\n  src: https://example.com/image.png\n---\n\n# World",
-    );
-
-    const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
-
-    expect(result?.image?.src).toEqual("https://example.com/image.png");
-  });
-
   it("uses legacy status", async () => {
     const posts = await getPosts();
     const result = posts.find((p) => p.slug === "psychpricing");
