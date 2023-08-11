@@ -27,7 +27,7 @@ const posts = await getPosts().then((posts) => posts.map((p) => ({
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.href = l.slug;
-    a.textContent = l.title;
+    a.innerHTML = l.title;
     li.appendChild(a);
     ul.appendChild(li);
   }
