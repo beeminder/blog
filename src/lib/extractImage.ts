@@ -9,6 +9,7 @@ export default function extractImage(html: string): Image | undefined {
     ? {
         src: img.src,
         alt: img.alt,
+        title: img.title,
         extracted: true,
       }
     : undefined;
