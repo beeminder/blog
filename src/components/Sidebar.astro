@@ -5,13 +5,7 @@ import Icon from "./Icon.astro";
 import Shadowbox from "./Shadowbox.astro";
 import Typography from "./Typography.astro";
 
-const rawTags = await getTags();
-const tags = Object.values(rawTags);
-
-tags.sort((a, b) => {
-  return b.count - a.count;
-});
-
+const tags = await getTags();
 const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
 ---
 

@@ -4,12 +4,7 @@ import TitleLockup from "../../components/TitleLockup.astro";
 import Layout from "../../layouts/Layout.astro";
 import getTags from "../../lib/getTags";
 
-const rawTags = await getTags();
-const tags = Object.values(rawTags);
-
-tags.sort((a, b) => {
-  return b.count - a.count;
-});
+const tags = await getTags();
 ---
 
 <Layout title="Tags">

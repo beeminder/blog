@@ -8,7 +8,7 @@ import TitleLockup from "../../components/TitleLockup.astro";
 export async function getStaticPaths() {
   const tags = await getTags();
 
-  return Object.values(tags).map((t) => ({
+  return tags.map((t) => ({
     params: {
       tag: t.name,
     },
