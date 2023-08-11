@@ -32,7 +32,7 @@ export const post = z
     content,
     excerpt: fm.excerpt || wp?.excerpt || getExcerpt(content),
     slug: z.string().parse(fm.slug || wp?.slug),
-    image: image.optional().parse(fm.image || extractImage(content)),
+    image: image.optional().parse(extractImage(content)),
     title: fm.title || wp?.title?.toString() || parseTitle(md),
     tags: [...(fm.tags || []), ...(wp?.tags || [])],
     date: z.date().parse(fm.date || wp?.date),
