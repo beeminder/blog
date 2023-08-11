@@ -5,7 +5,7 @@ import linkFootnotes from "../lib/linkFootnotes";
 import expandRefs from "../lib/expandRefs";
 import { marked } from "marked";
 import { markedSmartypants } from "marked-smartypants";
-import hooks from "../lib/markedHooks";
+import applyIdsToElements from "../lib/applyIdsToElements";
 
 const MARKED_OPTIONS = {
   mangle: false,
@@ -13,7 +13,11 @@ const MARKED_OPTIONS = {
 } as const;
 
 marked.use(markedSmartypants());
-marked.use({ hooks });
+marked.use({
+  hooks: {
+    postprocess: applyIdsToElements,
+  },
+});
 
 export const body = z
   .string()
