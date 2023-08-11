@@ -35,35 +35,56 @@ function isMonthIndex(m: number): m is keyof typeof MONTH_LABELS {
   return m in MONTH_LABELS;
 }
 
-function makeMonth(m: number, posts: Post[]): Month {
+function getMonthLabel(m: number): string {
   if (!isMonthIndex(m)) throw new Error("Invalid month index");
 
-  const monthPosts = posts.filter((p) => p.date.getMonth() === m);
-
-  return {
-    label: MONTH_LABELS[m],
-    posts: monthPosts,
-    post_count: monthPosts.length,
-  };
-}
-
-function makeYear(yyyy: number, posts: Post[]): Year {
-  const yearPosts = posts.filter((p) => p.date.getFullYear() === yyyy);
-  const allMonths = [...new Set(yearPosts.map((p) => p.date.getMonth()))];
-  return {
-    label: yyyy,
-    post_count: yearPosts.length,
-    months: allMonths.map((m) => makeMonth(m, yearPosts)),
-  };
+  return MONTH_LABELS[m];
 }
 
 async function makeArchives(): Promise<Archives> {
   const posts = await getPosts();
-  const allYears = [...new Set(posts.map((p) => p.date.getFullYear()))];
 
-  allYears.sort((a, b) => b - a);
+  return posts.reduce<Archives>((acc, post) => {
+    const yyyy = post.date.getFullYear();
+    const mm = post.date.getMonth();
+    const monthLabel = getMonthLabel(mm);
+    const year = acc[yyyy];
 
-  return allYears.map((yyyy) => makeYear(yyyy, posts));
+    if (year) {
+      const month = year.months[mm];
+
+      if (month) {
+        month.posts[mm] = post;
+        month.post_count++;
+      } else {
+        year.months[mm] = {
+          label: monthLabel,
+          posts: [post],
+          post_count: 1,
+        };
+      }
+
+      year.post_count++;
+    } else {
+      acc[yyyy] = {
+        label: yyyy,
+        post_count: 1,
+        months: [],
+      };
+
+      const y = acc[yyyy];
+
+      if (!y) throw new Error("Year not found");
+
+      y.months[mm] = {
+        label: monthLabel,
+        posts: [post],
+        post_count: 1,
+      };
+    }
+
+    return acc;
+  }, []);
 }
 
 const getArchives = memoize(makeArchives, "archives");
