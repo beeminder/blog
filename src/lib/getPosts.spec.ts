@@ -29,54 +29,7 @@ describe("getPosts", () => {
   it("fetches post content", async () => {
     await getPosts();
 
-    expect(fetchPost).toBeCalledWith(
-      "https://padm.us/psychpricing",
-      expect.anything(),
-    );
-  });
-
-  it("handles dtherpad legacy domain", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      "https://dtherpad.com/psychpricing",
-    ]);
-
-    loadLegacyData([
-      {
-        expost_source_url: "https://dtherpad.com/psychpricing",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "publish",
-      },
-    ]);
-
-    await getPosts();
-
-    expect(fetchPost).toBeCalledWith(
-      expect.stringContaining("padm.us"),
-      expect.anything(),
-    );
-  });
-
-  it("uses formatted url for fetching markdown", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      "https://dtherpad.com/psychpricing",
-    ]);
-
-    loadLegacyData([
-      {
-        expost_source_url: "https://dtherpad.com/psychpricing",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "publish",
-      },
-    ]);
-
-    await getPosts();
-
-    expect(fetchPost).toBeCalledWith(
-      expect.stringContaining("padm.us"),
-      expect.anything(),
-    );
+    expect(fetchPost).toBeCalledWith("https://padm.us/psychpricing");
   });
 
   it("sorts post by date descending", async () => {
@@ -102,10 +55,7 @@ describe("getPosts", () => {
 
     await getPosts();
 
-    expect(fetchPost).toBeCalledWith(
-      expect.stringContaining("new"),
-      expect.anything(),
-    );
+    expect(fetchPost).toBeCalledWith(expect.stringContaining("new"));
   });
 
   it("includes excerpts", async () => {
@@ -425,26 +375,6 @@ BEGIN_MAGIC
     const { slug } = posts.find((p) => p.slug === "val") || {};
 
     expect(slug).toEqual("val");
-  });
-
-  it("adds schema if missing", async () => {
-    vi.mocked(readSources).mockReturnValue(["dtherpad.com/psychpricing"]);
-
-    loadLegacyData([
-      {
-        expost_source_url: "dtherpad.com/psychpricing",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "publish",
-      },
-    ]);
-
-    await getPosts();
-
-    expect(fetchPost).toBeCalledWith(
-      expect.stringContaining("https://"),
-      expect.anything(),
-    );
   });
 
   it("uses wordpress excerpt", async () => {
