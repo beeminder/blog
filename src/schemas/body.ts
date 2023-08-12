@@ -16,7 +16,9 @@ marked.use(markedSmartypants());
 marked.use({
   hooks: {
     postprocess: applyIdsToElements,
-  },
+    // WORKAROUND: @types/marked incorrectly requires `preprocess` to be defined.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } as any,
 });
 
 export const body = z
