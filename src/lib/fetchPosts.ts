@@ -10,13 +10,7 @@ async function get(url: string): Promise<PostInput> {
   };
 }
 
-export default async function fetchPosts(): Promise<PostInput[]> {
-  const urls = readSources();
-  const limit = pLimit(10);
-
-  console.time("Fetching markdown from Etherpad");
-  const inputs = await Promise.all(urls.map((url) => limit(get, url)));
-  console.timeEnd("Fetching markdown from Etherpad");
-
-  return inputs;
+export default function fetchPosts(): Promise<PostInput>[] {
+  const l = pLimit(10);
+  return readSources().map((url) => l(get, url));
 }
