@@ -20,9 +20,6 @@ dependencies:
   astro:
     specifier: ^2.9.1
     version: 2.9.1
-  csv-parse:
-    specifier: ^5.4.0
-    version: 5.4.0
   feather-icons:
     specifier: ^4.29.0
     version: 4.29.0
@@ -1866,10 +1863,6 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       rrweb-cssom: 0.6.0
-
-  /csv-parse@5.4.0:
-    resolution: {integrity: sha512-JiQosUWiOFgp4hQn0an+SBoV9IKdqzhROM0iiN4LB7UpfJBlsSJlWl9nq4zGgxgMAzHJ6V4t29VAVD+3+2NJAg==}
-    dev: false
 
   /d3-dsv@2.0.0:
     resolution: {integrity: sha512-E+Pn8UJYx9mViuIUkoc93gJGGYut6mSDKy2+XaPwccwkRGlR+LO97L2VCCRjQivTwLHkSnAJG7yo00BWY6QM+w==}
