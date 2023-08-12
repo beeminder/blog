@@ -15,11 +15,10 @@ export default async function getPosts({
 }
 
 const makePosts = memoize(async (): Promise<Post[]> => {
-  const inputs = await fetchPosts();
-
-  console.time("Parsing posts");
-  const posts: Post[] = inputs.map((i) => post.parse(i));
-  console.timeEnd("Parsing posts");
+  console.time("Gathering posts");
+  const inputs = fetchPosts();
+  const posts = await Promise.all(inputs.map((p) => p.then(post.parse)));
+  console.timeEnd("Gathering posts");
 
   posts.sort((a, b) => b.date.getTime() - a.date.getTime());
 
