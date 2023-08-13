@@ -1,5 +1,5 @@
 ---
-import type { InferGetStaticParamsType, InferGetStaticPropsType } from "astro";
+import type {  InferGetStaticPropsType } from "astro";
 import Layout from "../layouts/Layout.astro";
 import Tags from "../components/Tags.astro";
 import getPosts from "../lib/getPosts";
@@ -11,19 +11,29 @@ import Comments from "../components/Comments.astro";
 export async function getStaticPaths() {
   const posts = await getPosts({
     includeUnpublished: true,
+    sort: true
   });
-  return posts.map((p) => ({
+  
+  return posts.map((post, i) => ({
     params: {
-      post: p.slug,
+      slug: post.slug,
     },
-    props: p,
+    props: {
+      post,
+      newer: posts[i - 1],
+      older: posts[i + 1],
+    },
   }));
 }
 
-type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-const { post } = Astro.params as Params;
+const {
+  post,
+  newer,
+  older
+} = Astro.props as Props;
+
 const {
   content,
   title: rawTitle,
@@ -32,18 +42,11 @@ const {
   excerpt,
   image,
   status,
-} = Astro.props as Props;
+} = post
 
 const isDraft = status === "draft";
 const className = isDraft ? "draft" : undefined;
 const title = isDraft ? `DRAFT: ${rawTitle}` : rawTitle;
-
-const posts = await getPosts();
-
-const postIndex = posts.findIndex((p) => p.slug === post);
-const newer = posts[postIndex - 1];
-const older = posts[postIndex + 1];
-
 const { extracted, ...imageProps } = image || {};
 ---
 
@@ -63,7 +66,7 @@ const { extracted, ...imageProps } = image || {};
   <Shadowbox padding={2} class={className}>
     <PostMeta
       post={{
-        ...Astro.props,
+        ...post,
         title,
       }}
       includeExcerpt={false}

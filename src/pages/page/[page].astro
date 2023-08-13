@@ -6,7 +6,9 @@ import Posts from "../../components/Posts.astro";
 import type { Post } from "../../schemas/post";
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
-  const posts = await getPosts();
+  const posts = await getPosts({
+    sort: true
+  });
 
   return paginate(posts, {
     pageSize: 10,

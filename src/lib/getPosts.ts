@@ -2,25 +2,30 @@ import memoize from "./memoize";
 import { Post, post } from "../schemas/post";
 import fetchPosts from "./fetchPosts";
 
-export default async function getPosts({
-  includeUnpublished = false,
-}: {
-  includeUnpublished?: boolean;
-} = {}) {
-  const posts = await makePosts();
+const makePosts = memoize(
+  (): Promise<Post>[] => fetchPosts().map((p) => p.then(post.parse)),
+  "makePosts",
+);
 
-  if (includeUnpublished) return posts;
+const getPosts = memoize(
+  async ({
+    includeUnpublished = false,
+    sort = false,
+  }: {
+    includeUnpublished?: boolean;
+    sort?: boolean;
+  } = {}): Promise<Post[]> => {
+    const posts = await Promise.all(makePosts());
 
-  return posts.filter((p) => p.status === "publish");
-}
+    if (sort) {
+      posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+    }
 
-const makePosts = memoize(async (): Promise<Post[]> => {
-  console.time("Gathering posts");
-  const inputs = fetchPosts();
-  const posts = await Promise.all(inputs.map((p) => p.then(post.parse)));
-  console.timeEnd("Gathering posts");
+    if (includeUnpublished) return posts;
 
-  posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+    return posts.filter((p) => p.status === "publish");
+  },
+  "getPosts",
+);
 
-  return posts;
-}, "posts");
+export default getPosts;
