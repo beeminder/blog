@@ -48,6 +48,10 @@ const { posts } = Astro.props;
     display: block;
   }
 
+  .post-meta {
+    overflow: hidden;
+  }
+
   @container (min-width: 600px) {
     .thumbnail {
       margin-bottom: 0;
@@ -57,7 +61,7 @@ const { posts } = Astro.props;
 
     img {
       width: 130px;
-      height: 130px;
+      height: auto;
       margin-bottom: 0;
       display: block;
     }
