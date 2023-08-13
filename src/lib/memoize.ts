@@ -1,20 +1,15 @@
-const fns = new Map<string, unknown>();
+import memize, { MemizeMemoizedFunction } from "memize";
+
+const fns: MemizeMemoizedFunction[] = [];
 
 export default function memoize<T, P extends Array<unknown>>(
   fn: (...args: P) => T,
-  id: string,
 ) {
-  return (...args: P): T => {
-    const _id = id + JSON.stringify(args);
-
-    if (!fns.has(_id)) {
-      fns.set(_id, fn(...args));
-    }
-
-    return fns.get(_id) as T;
-  };
+  const f = memize(fn);
+  fns.push(f);
+  return f;
 }
 
 export function __reset() {
-  fns.clear();
+  fns.forEach((f) => f.clear());
 }

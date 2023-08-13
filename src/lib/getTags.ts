@@ -8,7 +8,7 @@ type Tag = {
   count: number;
 };
 
-const getTags = memoize(makeTags, "tags");
+const getTags = memoize(makeTags);
 
 export default getTags;
 

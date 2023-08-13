@@ -3,8 +3,9 @@ import Shadowbox from "../components/Shadowbox.astro";
 import TitleLockup from "../components/TitleLockup.astro";
 import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
+import type { Post } from "../schemas/post";
 
-const posts = await getPosts().then((posts) => posts.map((p) => ({
+const posts = await getPosts().then((posts: Post[]) => posts.map((p) => ({
   title: p.title,
   slug: p.slug
 })));

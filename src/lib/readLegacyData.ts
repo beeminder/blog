@@ -10,6 +10,6 @@ const readLegacyData = memoize((): Array<Record<string, unknown>> => {
   }));
   console.timeEnd("readLegacyData");
   return data;
-}, "wpExport");
+});
 
 export default readLegacyData;
