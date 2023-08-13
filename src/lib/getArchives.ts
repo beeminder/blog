@@ -87,6 +87,6 @@ async function makeArchives(): Promise<Archives> {
   }, []);
 }
 
-const getArchives = memoize(makeArchives, "archives");
+const getArchives = memoize(makeArchives);
 
 export default getArchives;
