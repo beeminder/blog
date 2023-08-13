@@ -6,7 +6,9 @@ import Typography from "../components/Typography.astro";
 import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
 
-const posts = await getPosts();
+const posts = await getPosts({
+  sort: true
+});
 const featured = posts[0];
 ---
 

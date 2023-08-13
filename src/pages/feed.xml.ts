@@ -7,7 +7,9 @@ export async function get(context: APIContext) {
     throw new Error("Missing site metadata");
   }
 
-  const posts = await getPosts();
+  const posts = await getPosts({
+    sort: true,
+  });
 
   return rss({
     title: "Beeminder Blog",
