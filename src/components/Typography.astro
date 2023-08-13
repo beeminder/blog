@@ -23,11 +23,11 @@ const { sans = false, small = false, class: className } = Astro.props;
   }
 
   @container (min-width: 500px) {
-    .typography :global(p) {
+    .typography :global(p), .typography :global(li) {
       text-align: justify;
       font-size: 1.1rem;
     }
-    .small :global(p) {
+    .small :global(p), .small :global(li) {
       font-size: 0.9rem;
     }
   }
