@@ -1,8 +1,9 @@
-import { JSDOM } from "jsdom";
+import getDom from "./getDom";
 
 function apply(html: string) {
-  const dom = new JSDOM(html);
-  const matches = dom.window.document.querySelectorAll(
+  const { document } = getDom(html);
+
+  const matches = document.querySelectorAll(
     "*:not(script):not(noscript):not(style):not(:empty)",
   );
 
@@ -20,7 +21,7 @@ function apply(html: string) {
     el.textContent = newTextContent;
   });
 
-  return dom.window.document.body.innerHTML;
+  return document.body.innerHTML;
 }
 
 export default function applyIdsToElements(html: string): string {
