@@ -273,6 +273,25 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         margin: var(--gap-0-5) 0 var(--gap-0-5) var(--gap-1-5);
         text-align: center;
       }
+      .beelist {
+        list-style: none;
+        padding-inline-start: 1rem;
+      }
+      .beelist li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+      }
+      .beelist li:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-image: url(https://s.w.org/images/core/emoji/14.0.0/svg/1f41d.svg);
+        background-size: contain;
+        background-position: center;
+        left: 0;
+      }
       @media (max-width: 40rem) {
         .pullquote {
           float: none;
