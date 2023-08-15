@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: beemblog
+    name: beeblog
     env: static
     buildCommand: pnpm run build
     staticPublishPath: ./dist
