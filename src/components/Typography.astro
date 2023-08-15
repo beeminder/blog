@@ -9,26 +9,44 @@ const { sans = false, small = false, class: className } = Astro.props;
 ---
 
 <div class="typography" class:list={[{ sans, small }, className]}>
-  <slot />
+  <div class="inner"><slot /></div>
 </div>
 
 <style>
   .typography {
     container-type: inline-size;
+  }
+  .inner {
     font-size: 0.9rem;
   }
-
   .sans {
     --font-family: sans-serif;
   }
+  .inner :global(h1) {
+    font-size: 2em;
+  }
+  .inner :global(h2) {
+    font-size: 1.75em;
+  }
+  .inner :global(h3) {
+    font-size: 1.5em;
+  }
+  .inner :global(h4) {
+    font-size: 1.25em;
+  }
+  .inner :global(h5) {
+    font-size: 1.1em;
+  }
 
   @container (min-width: 500px) {
-    .typography :global(p), .typography :global(li) {
-      text-align: justify;
+    .inner {
       font-size: 1.1rem;
     }
-    .small :global(p), .small :global(li) {
-      font-size: 0.9rem;
+    .inner :global(p), .inner :global(li) {
+      text-align: justify;
+    }
+    .small {
+      font-size: 0.9em;
     }
   }
 </style>
