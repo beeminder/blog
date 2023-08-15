@@ -1,5 +1,6 @@
 import { z } from "zod";
 import readLegacyData from "../lib/readLegacyData";
+import striptags from "striptags";
 
 export const legacyPostInput = z
   .object({
@@ -32,7 +33,7 @@ export const legacyPost = z
       wp && {
         id: Number(wp.ID),
         title: wp.Title,
-        excerpt: wp.Excerpt,
+        excerpt: wp.Excerpt && striptags(wp.Excerpt),
         date: wp.Date ? new Date(wp.Date) : undefined,
         tags: wp.Tags ? String(wp.Tags).split("|").filter(Boolean) : [],
         source: wp.expost_source_url,
