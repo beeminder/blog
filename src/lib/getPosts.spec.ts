@@ -396,4 +396,23 @@ BEGIN_MAGIC
 
     expect(excerpt).toEqual("wp excerpt");
   });
+  it("strips html from wp excerpts", async () => {
+    vi.mocked(readSources).mockReturnValue(["dtherpad.com/psychpricing"]);
+
+    loadLegacyData([
+      {
+        expost_source_url: "dtherpad.com/psychpricing",
+        Slug: "psychpricing",
+        Date: "2021-09-01",
+        Status: "publish",
+        Excerpt: "<strong>wp excerpt</strong>",
+      },
+    ]);
+
+    const posts = await getPosts();
+
+    const { excerpt } = posts.find((p) => p.slug === "psychpricing") || {};
+
+    expect(excerpt).toEqual("wp excerpt");
+  });
 });
