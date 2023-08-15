@@ -47,6 +47,9 @@ dependencies:
   strip-bom:
     specifier: ^5.0.0
     version: 5.0.0
+  striptags:
+    specifier: ^3.2.0
+    version: 3.2.0
   zod:
     specifier: ^3.21.4
     version: 3.21.4
@@ -4126,6 +4129,10 @@ packages:
     dependencies:
       acorn: 8.10.0
     dev: true
+
+  /striptags@3.2.0:
+    resolution: {integrity: sha512-g45ZOGzHDMe2bdYMdIvdAfCQkCTDMGBazSw1ypMowwGIee7ZQ5dU0rBJ8Jqgl+jAKIv4dbeE1jscZq9wid1Tkw==}
+    dev: false
 
   /strnum@1.0.5:
     resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
