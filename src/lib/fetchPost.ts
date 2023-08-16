@@ -1,5 +1,5 @@
 import { fetchBuilder, FileSystemCache, MemoryCache } from "node-fetch-cache";
-import formatEtherpadUrl from "./formatEtherpadUrl";
+import canonicalizeUrl from "./canonicalizeUrl";
 
 function buildCache() {
   if (import.meta.env.RENDER || import.meta.env.FILE_SYSTEM_CACHE === "false") {
@@ -15,6 +15,5 @@ const cache = buildCache();
 const fetch = fetchBuilder.withCache(cache);
 
 export default async function fetchPost(url: string): Promise<string> {
-  url = formatEtherpadUrl(url);
-  return fetch(`${url}/export/txt`).then((r) => r.text());
+  return fetch(canonicalizeUrl(url)).then((r) => r.text());
 }
