@@ -21,8 +21,12 @@ beforeEach(() => {
   vi.mocked(fetchPost).mockResolvedValue("raw_markdown");
   loadLegacyData();
 
-  global.console.time = vi.fn();
-  global.console.timeEnd = vi.fn();
+  vi.stubGlobal("console", {
+    ...console,
+    info: vi.fn(),
+    time: vi.fn(),
+    timeEnd: vi.fn(),
+  });
 
   __reset();
 });
