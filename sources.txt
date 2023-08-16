@@ -344,8 +344,8 @@ https://padm.us/blingily/export/txt
 https://padm.us/lichess/export/txt
 https://padm.us/datasmithing/export/txt
 https://padm.us/trydeepwork/export/txt
-https://padm.us/test-post/export/txt
-https://padm.us/reactions/export/txt
-https://padm.us/inertia/export/txt
-https://padm.us/ontologies/export/txt
-https://padm.us/athletes/export/txt
+padm.us/test-post/export/txt
+padm.us/reactions
+etherpad/inertia
+doc.bmndr.co/ontologies
+doc.beeminder.com/athletes
