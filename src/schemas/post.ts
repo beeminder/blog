@@ -27,9 +27,12 @@ export const post = z
       fm: frontmatter.parse(data),
     };
   })
-  .refine((p) => p.wp !== undefined || p.fm.excerpt !== undefined, (p) => ({
-    message: `Custom excerpts are required for new posts. URL: ${p.url}`,
-  }))
+  .refine(
+    (p) => p.wp !== undefined || p.fm.excerpt !== undefined,
+    (p) => ({
+      message: `Custom excerpts are required for new posts. URL: ${p.url}`,
+    }),
+  )
   .transform(({ wp, fm, md, content }) => ({
     content,
     excerpt: fm.excerpt || wp?.excerpt || getExcerpt(content),
