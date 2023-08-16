@@ -1,4 +1,5 @@
 import { fetchBuilder, FileSystemCache, MemoryCache } from "node-fetch-cache";
+import memoize from "./memoize";
 
 function buildCache() {
   if (import.meta.env.RENDER || import.meta.env.FILE_SYSTEM_CACHE === "false") {
@@ -10,9 +11,8 @@ function buildCache() {
   }
 }
 
-const cache = buildCache();
-const fetch = fetchBuilder.withCache(cache);
+const getFetcher = memoize(() => fetchBuilder.withCache(buildCache()));
 
 export default async function fetchPost(url: string): Promise<string> {
-  return fetch(url).then((r) => r.text());
+  return getFetcher()(url).then((r) => r.text());
 }
