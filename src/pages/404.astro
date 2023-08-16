@@ -27,7 +27,7 @@ const posts = await getPosts().then((posts: Post[]) => posts.map((p) => ({
   for (const l of links) {
     const li = document.createElement("li");
     const a = document.createElement("a");
-    a.href = l.slug;
+    a.href = `blog.beeminder.com/${l.slug}`;
     a.innerHTML = l.slug;
     li.appendChild(a);
     ul.appendChild(li);
