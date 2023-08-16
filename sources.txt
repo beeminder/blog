@@ -344,8 +344,8 @@ https://<etherpad-host>/blingily/export/txt
 https://<etherpad-host>/lichess/export/txt
 https://<etherpad-host>/datasmithing/export/txt
 https://<etherpad-host>/trydeepwork/export/txt
-https://<etherpad-host>/test-post/export/txt
-https://<etherpad-host>/reactions/export/txt
-https://<etherpad-host>/inertia/export/txt
-https://<etherpad-host>/ontologies/export/txt
-https://<etherpad-host>/athletes/export/txt
+<etherpad-host>/test-post/export/txt
+<etherpad-host>/reactions
+etherpad/inertia
+doc.bmndr.co/ontologies
+doc.beeminder.com/athletes
