@@ -1,5 +1,4 @@
 import { fetchBuilder, FileSystemCache, MemoryCache } from "node-fetch-cache";
-import canonicalizeUrl from "./canonicalizeUrl";
 
 function buildCache() {
   if (import.meta.env.RENDER || import.meta.env.FILE_SYSTEM_CACHE === "false") {
@@ -15,5 +14,5 @@ const cache = buildCache();
 const fetch = fetchBuilder.withCache(cache);
 
 export default async function fetchPost(url: string): Promise<string> {
-  return fetch(canonicalizeUrl(url)).then((r) => r.text());
+  return fetch(url).then((r) => r.text());
 }
