@@ -11,10 +11,10 @@ const posts = await getPosts().then((posts: Post[]) => posts.map((p) => ({
 })));
 ---
 
-<Layout title="Page not found">
+<Layout title="404: Page not found">
   <Shadowbox>
-    <TitleLockup Heading="h1" title="Page not found" />
-    <p>Sorry, we couldn't find the page you were looking for.</p>
+    <TitleLockup Heading="h1" title="404: Page not found" />
+    <p>Sad trombone. Here are the near misses:</p>
     <ul id="matches" />
   </Shadowbox>
 </Layout>
@@ -28,7 +28,7 @@ const posts = await getPosts().then((posts: Post[]) => posts.map((p) => ({
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.href = l.slug;
-    a.innerHTML = l.title;
+    a.innerHTML = l.slug;
     li.appendChild(a);
     ul.appendChild(li);
   }
