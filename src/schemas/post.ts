@@ -20,15 +20,16 @@ export const post = z
     const { data, content } = matter(md);
 
     return {
+      url,
       wp: legacyPost.parse(url),
       md,
       content: body.parse(content),
       fm: frontmatter.parse(data),
     };
   })
-  .refine((p) => p.wp !== undefined || p.fm.excerpt !== undefined, {
-    message: `Custom excerpts are required for new posts.`,
-  })
+  .refine((p) => p.wp !== undefined || p.fm.excerpt !== undefined, (p) => ({
+    message: `Custom excerpts are required for new posts. URL: ${p.url}`,
+  }))
   .transform(({ wp, fm, md, content }) => ({
     content,
     excerpt: fm.excerpt || wp?.excerpt || getExcerpt(content),
