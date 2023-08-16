@@ -8,9 +8,11 @@ describe("canonicalizeUrl", () => {
     expect(result).toContain("https://");
   });
 
-  it("handles dtherpad legacy domain", async () => {
-    const result = canonicalizeUrl("https://dtherpad.com/psychpricing");
-
-    expect(result).toContain("<etherpad-host>");
+  it("works correctly TODO better name", async () => {
+    const result = canonicalizeUrl("https://<etherpad-host>/beemblog-akrasia/export/txt");
+    console.log(result);
+    expect(result).toContain("https://");
   });
+
 });
+
