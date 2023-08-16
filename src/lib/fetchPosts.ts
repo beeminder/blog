@@ -3,7 +3,6 @@ import fetchPost from "./fetchPost";
 import readSources from "./readSources";
 import pLimit from "p-limit";
 
-
 async function get(url: string): Promise<PostInput> {
   return {
     url,
