@@ -6,8 +6,9 @@ import getPosts from "../lib/getPosts";
 import type { Post } from "../schemas/post";
 
 const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
-  title: p.title,
   slug: p.slug,
+  title: p.title,
+  excerpt: p.excerpt,  
 })));
 ---
 
@@ -20,16 +21,23 @@ const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
 </Layout>
 
 <script define:vars={{posts}}>
-  const links = posts.filter(p=> p.slug.startsWith(location.pathname.slice(1)));
-  //const links = matches.length > 0 ? matches : posts.slice(0, 6)
+  const sadslug = location.pathname.slice(1); // the thing that's 404ing
+  const links = posts.filter(p => p.slug.startsWith(sadslug));
   const ul = document.querySelector("#nearmisses");
-  
+
+  ul.appendChild(document.createElement('li')).innerHTML =
+    `<code>blog.beeminder.com/${sadslug}</code> &nbsp; &mdash; &nbsp; ` + 
+    `what you typed or clicked on`;
+
+  if (links.length === 0) {
+    ul.appendChild(document.createElement('li')).innerHTML =
+      "(actually we've no idea what you might've meant here, sorry)";
+  }
+
   for (const l of links) {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.href = l.slug;
-    a.innerHTML = `<kbd>blog.beeminder.com/${l.slug}</kbd>`;
-    li.appendChild(a);
-    ul.appendChild(li);
+    ul.appendChild(document.createElement('li')).innerHTML =
+      `<a href="${l.slug}" title="${l.excerpt}">` + 
+        `<code>blog.beeminder.com/${l.slug}</code>` +
+      `</a> &nbsp; &mdash; &nbsp; ${l.title}`;
   }
 </script>
