@@ -52,21 +52,22 @@ function levenshtein(a, b) {
 }
 
 const sadslug = location.pathname.slice(1); // the thing that's 404ing
-const links = posts.filter(p => p.slug.startsWith(sadslug));
+const links1 = posts.filter(p => p.slug.startsWith(sadslug));
+const links2 = posts.filter(p => p.slug.endsWith(sadslug));
 const ul = document.querySelector("#nearmisses");
 
 ul.appendChild(document.createElement('li')).innerHTML =
   `<code>blog.beeminder.com/${sadslug}</code> &nbsp; &mdash; &nbsp; ` + 
   `what you typed or clicked on`;
 
-for (const l of links) {
+for (const l of links1.concat(links2)) {
   ul.appendChild(document.createElement('li')).innerHTML =
     `<a href="${l.slug}" title="${l.excerpt}">` + 
       `<code>blog.beeminder.com/${l.slug}</code>` +
     `</a> &nbsp; &mdash; &nbsp; ${l.title}`;
 }
 
-if (links.length === 0) {
+if (links1.length === 0 && links2.length === 0) {
   // Find the post with the closest slug to the sad one that's 404'ing
   let cpost = '';
   let edist = Infinity; // minimum edit distance across all slugs in the archive
