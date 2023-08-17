@@ -5,7 +5,28 @@ import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
 import type { Post } from "../schemas/post";
 //import { get as levenshtein } from 'fast-levenshtein'; // works locally?
-import Levenshtein from 'levenshtein';
+// import Levenshtein from 'levenshtein'; // ugh, nothing works in prod :(
+
+// en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance
+function levenshtein(a, b) {
+  if (a.length === 0) return b.length; 
+  if (b.length === 0) return a.length;
+  let matrix = [], i, j;
+  for (i = 0; i <= b.length; i++) { matrix[i] = [i] }
+  for (j = 0; j <= a.length; j++) { matrix[0][j] = j }
+  for (i = 1; i <= b.length; i++) {
+    for (j = 1; j <= a.length; j++) {
+      if (b.charAt(i-1) == a.charAt(j-1)) {
+        matrix[i][j] = matrix[i-1][j-1];
+      } else {
+        matrix[i][j] = Math.min(matrix[i-1][j-1] + 1, // substitution
+                                Math.min(matrix[i][j-1] + 1, // insertion
+                                         matrix[i-1][j] + 1)); // deletion
+      }
+    }
+  }
+  return matrix[b.length][a.length];
+}
 
 const sadslug = new URL(Astro.request.url).pathname.slice(1); // what's 404'ing
 
@@ -20,7 +41,7 @@ const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
 let cpost = '';
 let mindist = Infinity;
 for (const p of posts) {
-    const dist = new Levenshtein(sadslug, p.slug).distance;
+  const dist = levenshtein(sadslug, p.slug);
   if (dist <= mindist) { mindist = dist; cpost = p } // break ties by recency
 }
 console.log(`DEBUG: closest to ${sadslug} is ${cpost.slug} (${mindist})`);
