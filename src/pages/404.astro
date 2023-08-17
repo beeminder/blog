@@ -5,8 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
 import type { Post } from "../schemas/post";
 //import { get as levenshtein } from 'fast-levenshtein'; // works locally?
-import pkg from 'fast-levenshtein';
-const levenshtein = pkg.get;
+import Levenshtein from 'levenshtein';
 
 const sadslug = new URL(Astro.request.url).pathname.slice(1); // what's 404'ing
 
@@ -21,7 +20,7 @@ const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
 let cpost = '';
 let mindist = Infinity;
 for (const p of posts) {
-  const dist = levenshtein(sadslug, p.slug);
+    const dist = new Levenshtein(sadslug, p.slug).distance;
   if (dist <= mindist) { mindist = dist; cpost = p } // break ties by recency
 }
 console.log(`DEBUG: closest to ${sadslug} is ${cpost.slug} (${mindist})`);
