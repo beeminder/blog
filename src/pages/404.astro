@@ -4,12 +4,25 @@ import TitleLockup from "../components/TitleLockup.astro";
 import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
 import type { Post } from "../schemas/post";
+import { get as levenshtein } from 'fast-levenshtein';
 
+const sadslug = new URL(Astro.request.url).pathname.slice(1); // what's 404'ing
+
+// Fetch the full list of posts
 const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
   slug: p.slug,
   title: p.title,
   excerpt: p.excerpt,  
 })));
+
+// Find the post with the closest slug to the sad one that's 404'ing
+let cpost = '';
+let mindist = Infinity;
+for (const p of posts) {
+  const dist = levenshtein(sadslug, p.slug);
+  if (dist < mindist) { mindist = dist; cpost = p }
+}
+console.log(`DEBUG: closest to ${sadslug} is ${cpost.slug} (${mindist})`);
 ---
 
 <Layout title="404: Page not found">
@@ -20,24 +33,35 @@ const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
   </Shadowbox>
 </Layout>
 
-<script define:vars={{posts}}>
-  const sadslug = location.pathname.slice(1); // the thing that's 404ing
-  const links = posts.filter(p => p.slug.startsWith(sadslug));
-  const ul = document.querySelector("#nearmisses");
+<script define:vars={{posts, cpost}}>
 
+const sadslug = location.pathname.slice(1); // the thing that's 404ing
+const links = posts.filter(p => p.slug.startsWith(sadslug));
+const ul = document.querySelector("#nearmisses");
+
+ul.appendChild(document.createElement('li')).innerHTML =
+  `<code>blog.beeminder.com/${sadslug}</code> &nbsp; &mdash; &nbsp; ` + 
+  `what you typed or clicked on`;
+
+// Don't want this now cuz we always show at least the closest levenshtein hit:
+//if (links.length === 0) {
+//}
+
+for (const l of links) {
   ul.appendChild(document.createElement('li')).innerHTML =
-    `<code>blog.beeminder.com/${sadslug}</code> &nbsp; &mdash; &nbsp; ` + 
-    `what you typed or clicked on`;
+    `<a href="${l.slug}" title="${l.excerpt}">` + 
+      `<code>blog.beeminder.com/${l.slug}</code>` +
+    `</a> &nbsp; &mdash; &nbsp; ${l.title}`;
+}
 
-  if (links.length === 0) {
-    ul.appendChild(document.createElement('li')).innerHTML =
-      "(actually we've no idea what you might've meant here, sorry)";
-  }
+if (links.length === 0) {
+  ul.appendChild(document.createElement('li')).innerHTML =
+    `<a href="${cpost.slug}" title="${cpost.excerpt}">` + 
+      `<code>blog.beeminder.com/${cpost.slug}</code>` +
+    `</a> &nbsp; &mdash; &nbsp; ${cpost.title}`;
+  // Or maybe if cpost is too far away, do this instead:
+  // ul.appendChild(document.createElement('li')).innerHTML =
+  //   "(actually we've no idea what you might've meant here, sorry)";
+}
 
-  for (const l of links) {
-    ul.appendChild(document.createElement('li')).innerHTML =
-      `<a href="${l.slug}" title="${l.excerpt}">` + 
-        `<code>blog.beeminder.com/${l.slug}</code>` +
-      `</a> &nbsp; &mdash; &nbsp; ${l.title}`;
-  }
 </script>
