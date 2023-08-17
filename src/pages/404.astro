@@ -39,12 +39,11 @@ const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
 
 // Find the post with the closest slug to the sad one that's 404'ing
 let cpost = '';
-let mindist = Infinity;
+let edist = Infinity;  // minimum edit distance across all slugs in the archive
 for (const p of posts) {
   const dist = levenshtein(sadslug, p.slug);
-  if (dist <= mindist) { mindist = dist; cpost = p } // break ties by recency
+  if (dist <= edist) { edist = dist; cpost = p } // break ties by recency
 }
-console.log(`DEBUG: closest to ${sadslug} is ${cpost.slug} (${mindist})`);
 ---
 
 <Layout title="404 Not Found!">
@@ -58,7 +57,7 @@ https://www.beeminder.com/assets/sadbee-e89491e7c1ea7c8568c8cdf0d19ff41acc079cc1
   </Shadowbox>
 </Layout>
 
-<script define:vars={{posts, cpost}}>
+<script define:vars={{posts, cpost, edist}}>
 
 const sadslug = location.pathname.slice(1); // the thing that's 404ing
 const links = posts.filter(p => p.slug.startsWith(sadslug));
@@ -81,7 +80,10 @@ for (const l of links) {
 
 if (links.length === 0) {
   ul.appendChild(document.createElement('li')).innerHTML =
-    `<a href="${cpost.slug}" title="${cpost.excerpt}">` + 
+    `<a href="${cpost.slug}" title="We're suggesting this because ` +
+    `“${cpost.slug}” has a Levenshtein edit distance of ${edist} from ` +
+    `“${sadslug}” -- the smallest in the archives. ` + 
+    `Excerpt: ${cpost.excerpt}">` + 
       `<code>blog.beeminder.com/${cpost.slug}</code>` +
     `</a> &nbsp; &mdash; &nbsp; ${cpost.title}`;
   // Or maybe if cpost is too far away, do this instead:
