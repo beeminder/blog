@@ -41,7 +41,7 @@ const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
 let cpost = '';
 let edist = Infinity;  // minimum edit distance across all slugs in the archive
 for (const p of posts) {
-  const dist = 0 // levenshtein(sadslug, p.slug);
+  const dist = levenshtein(sadslug, p.slug);
   if (dist <= edist) { edist = dist; cpost = p } // break ties by recency
 }
 ---
@@ -57,9 +57,9 @@ https://www.beeminder.com/assets/sadbee-e89491e7c1ea7c8568c8cdf0d19ff41acc079cc1
   </Shadowbox>
 </Layout>
 
-<script define:vars={{posts, cpost, edist}}>
+<script define:vars={{sadslug, posts, cpost, edist}}>
 
-const sadslug = location.pathname.slice(1); // the thing that's 404ing
+// const sadslug = location.pathname.slice(1); // the thing that's 404ing
 const links = posts.filter(p => p.slug.startsWith(sadslug));
 const ul = document.querySelector("#nearmisses");
 
