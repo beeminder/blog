@@ -41,7 +41,7 @@ const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
 let cpost = '';
 let edist = Infinity;  // minimum edit distance across all slugs in the archive
 for (const p of posts) {
-  const dist = levenshtein(sadslug, p.slug);
+  const dist = 0 // levenshtein(sadslug, p.slug);
   if (dist <= edist) { edist = dist; cpost = p } // break ties by recency
 }
 ---
