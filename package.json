@@ -26,6 +26,7 @@
     "@fontsource-variable/lora": "^5.0.9",
     "@fontsource/source-sans-pro": "^5.0.8",
     "astro": "^2.10.7",
+    "fast-levenshtein": "^3.0.0",
     "feather-icons": "^4.29.0",
     "gray-matter": "^4.0.3",
     "happy-dom": "^10.9.0",
