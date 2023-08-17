@@ -22,7 +22,7 @@ let cpost = '';
 let mindist = Infinity;
 for (const p of posts) {
   const dist = levenshtein(sadslug, p.slug);
-  if (dist < mindist) { mindist = dist; cpost = p }
+  if (dist <= mindist) { mindist = dist; cpost = p } // break ties by recency
 }
 console.log(`DEBUG: closest to ${sadslug} is ${cpost.slug} (${mindist})`);
 ---
