@@ -5,30 +5,30 @@ import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
 import type { Post } from "../schemas/post";
 
-const posts = await getPosts().then((posts: Post[]) => posts.map((p) => ({
+const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
   title: p.title,
-  slug: p.slug
+  slug: p.slug,
 })));
 ---
 
 <Layout title="404: Page not found">
   <Shadowbox>
-    <TitleLockup Heading="h1" title="404: Page not found" />
-    <p>Sad trombone. Here are the near misses:</p>
-    <ul id="matches" />
+    <TitleLockup Heading="h1" title="404: Not found" />
+    <p>Sad trombone. Here are things you might've meant:</p>
+    <ul id="nearmisses" />
   </Shadowbox>
 </Layout>
 
 <script define:vars={{posts}}>
-  const matches = posts.filter((p) => p.slug.startsWith(location.pathname.slice(1)));
-  const links = matches.length > 0 ? matches : posts.slice(0, 6)
-  const ul = document.querySelector("#matches");
+  const links = posts.filter(p=> p.slug.startsWith(location.pathname.slice(1)));
+  //const links = matches.length > 0 ? matches : posts.slice(0, 6)
+  const ul = document.querySelector("#nearmisses");
   
   for (const l of links) {
     const li = document.createElement("li");
     const a = document.createElement("a");
-    a.href = `blog.beeminder.com/${l.slug}`;
-    a.innerHTML = l.slug;
+    a.href = l.slug;
+    a.innerHTML = `<kbd>blog.beeminder.com/${l.slug}</kbd>`;
     li.appendChild(a);
     ul.appendChild(li);
   }
