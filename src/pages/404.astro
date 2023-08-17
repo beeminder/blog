@@ -4,8 +4,31 @@ import TitleLockup from "../components/TitleLockup.astro";
 import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
 import type { Post } from "../schemas/post";
-//import { get as levenshtein } from 'fast-levenshtein'; // works locally?
-// import Levenshtein from 'levenshtein'; // ugh, nothing works in prod :(
+
+// ugh, this works in dev but not in prod, which always gives "404/" for this:
+//const sadslug = new URL(Astro.request.url).pathname.slice(1);
+// I finally gave up and am doing everything in the client-side script instead.
+
+// Fetch the full list of posts
+const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
+  slug: p.slug,
+  title: p.title,
+  excerpt: p.excerpt,  
+})));
+---
+
+<Layout title="404 Not Found!">
+  <Shadowbox>
+    <TitleLockup Heading="h1" title="404 Not Found!" />
+<!-- embarrassed bee image from beeminder.com but maybe not canonical link:
+https://www.beeminder.com/assets/sadbee-e89491e7c1ea7c8568c8cdf0d19ff41acc079cc17f15277bed6fcf0b0928255d.png
+-->
+    <p>Sad trombone. Here are things you might've meant:</p>
+    <ul id="nearmisses" />
+  </Shadowbox>
+</Layout>
+
+<script define:vars={{posts}}>
 
 // en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance
 function levenshtein(a, b) {
@@ -28,48 +51,13 @@ function levenshtein(a, b) {
   return matrix[b.length][a.length];
 }
 
-const sadslug = new URL(Astro.request.url).pathname.slice(1); // what's 404'ing
-
-// Fetch the full list of posts
-const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
-  slug: p.slug,
-  title: p.title,
-  excerpt: p.excerpt,  
-})));
-
-// Find the post with the closest slug to the sad one that's 404'ing
-let cpost = '';
-let edist = Infinity;  // minimum edit distance across all slugs in the archive
-for (const p of posts) {
-  const dist = levenshtein(sadslug, p.slug);
-  if (dist <= edist) { edist = dist; cpost = p } // break ties by recency
-}
----
-
-<Layout title="404 Not Found!">
-  <Shadowbox>
-    <TitleLockup Heading="h1" title="404 Not Found!" />
-<!-- embarrassed bee image from beeminder.com but maybe not canonical link:
-https://www.beeminder.com/assets/sadbee-e89491e7c1ea7c8568c8cdf0d19ff41acc079cc17f15277bed6fcf0b0928255d.png
--->
-    <p>Sad trombone. Here are things you might've meant:</p>
-    <ul id="nearmisses" />
-  </Shadowbox>
-</Layout>
-
-<script define:vars={{sadslug, posts, cpost, edist}}>
-
-// const sadslug = location.pathname.slice(1); // the thing that's 404ing
+const sadslug = location.pathname.slice(1); // the thing that's 404ing
 const links = posts.filter(p => p.slug.startsWith(sadslug));
 const ul = document.querySelector("#nearmisses");
 
 ul.appendChild(document.createElement('li')).innerHTML =
   `<code>blog.beeminder.com/${sadslug}</code> &nbsp; &mdash; &nbsp; ` + 
   `what you typed or clicked on`;
-
-// Don't want this now cuz we always show at least the closest levenshtein hit:
-//if (links.length === 0) {
-//}
 
 for (const l of links) {
   ul.appendChild(document.createElement('li')).innerHTML =
@@ -79,6 +67,14 @@ for (const l of links) {
 }
 
 if (links.length === 0) {
+  // Find the post with the closest slug to the sad one that's 404'ing
+  let cpost = '';
+  let edist = Infinity; // minimum edit distance across all slugs in the archive
+  for (const p of posts) {
+    const dist = levenshtein(sadslug, p.slug);
+    if (dist <= edist) { edist = dist; cpost = p } // break ties by recency
+  }
+
   ul.appendChild(document.createElement('li')).innerHTML =
     `<a href="${cpost.slug}" title="We're suggesting this because ` +
     `“${cpost.slug}” has a Levenshtein edit distance of ${edist} from ` +
