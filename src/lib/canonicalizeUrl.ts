@@ -1,7 +1,7 @@
 export default function canonicalizeUrl(url: string): string {
   // Start with basic cleanup canonicalization applicable to all URLs...
   url = url.trim(); // trim whitespace
-  if (!url.match(/^https?:\/\//i)) url = "https://" + url // add protocol
+  if (!url.match(/^https?:\/\//i)) url = "https://" + url; // add protocol
   url = url.replace(/\/+$/, ""); // kill trailing slashes
   // TODO: fail loudly if the URL is mangled somehow
 
@@ -20,6 +20,6 @@ export default function canonicalizeUrl(url: string): string {
   url = url.replace(/^(https?:\/\/padm\.us)$/, "$1/public/export/txt");
   // And finally the key transformation: append /export/txt for etherpad:
   url = url.replace(/^(https?:\/\/padm\.us)\/([^/]+)$/, "$1/$2/export/txt");
-  
+
   return url;
 }
