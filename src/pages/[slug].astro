@@ -57,11 +57,11 @@ const { extracted, ...imageProps } = image || {};
   image={image?.src}
   next={newer && {
     title: newer.title,
-    url: newer.slug,
+    url: `/${newer.slug}`,
   }}
   previous={older && {
     title: older.title,
-    url: older.slug,
+    url: `/${older.slug}`,
   }}
 >
   <Shadowbox padding={2} class={className}>
