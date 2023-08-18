@@ -1,6 +1,13 @@
 import { Window } from "happy-dom";
 import memoize from "./memoize";
 
+const { error } = console;
+
+console.error = (...args: unknown[]) => {
+  if (String(args[0]).includes("Failed to load external script")) return;
+  error(...args);
+};
+
 const getDom = memoize((html: string) => {
   const window = new Window({
     settings: {

@@ -14,5 +14,8 @@ function buildCache() {
 const getFetcher = memoize(() => fetchBuilder.withCache(buildCache()));
 
 export default async function fetchPost(url: string): Promise<string> {
-  return getFetcher()(url).then((r) => r.text());
+  return getFetcher()(url).then((r) => {
+    if (!r.ok) throw new Error(`Failed to fetch ${url}`);
+    return r.text();
+  });
 }
