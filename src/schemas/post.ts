@@ -33,15 +33,33 @@ export const post = z
       message: `Custom excerpts are required for new posts. URL: ${p.url}`,
     }),
   )
+  .refine(
+    (p) => p.wp !== undefined || p.fm.disqusID !== undefined,
+    (p) => ({
+      message: `Custom disqus ids are required for new posts. URL: ${p.url}`,
+    }),
+  )
   .transform(({ wp, fm, md, content }) => ({
     content,
     excerpt: fm.excerpt || wp?.excerpt || getExcerpt(content),
-    slug: z.string().parse(fm.slug || wp?.slug),
+    slug: z
+      .string({
+        required_error: "`slug` is required",
+      })
+      .parse(fm.slug || wp?.slug),
     image: image.optional().parse(extractImage(content)),
     title: fm.title || wp?.title?.toString() || parseTitle(md),
     tags: [...(fm.tags || []), ...(wp?.tags || [])],
-    date: z.date().parse(fm.date || wp?.date),
-    author: z.string().parse(fm.author || wp?.author),
+    date: z
+      .date({
+        required_error: "`date` is required",
+      })
+      .parse(fm.date || wp?.date),
+    author: z
+      .string({
+        required_error: "`author` is required",
+      })
+      .parse(fm.author || wp?.author),
     status: status.default("draft").parse(fm.status || wp?.status),
     _wpId: wp?.id,
   }))
