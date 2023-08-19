@@ -25,19 +25,19 @@
     "@astrojs/rss": "^2.4.4",
     "@fontsource-variable/lora": "^5.0.9",
     "@fontsource/source-sans-pro": "^5.0.8",
-    "astro": "^2.10.7",
+    "astro": "^2.10.12",
     "feather-icons": "^4.29.0",
     "gray-matter": "^4.0.3",
-    "happy-dom": "^10.9.0",
+    "happy-dom": "^10.10.4",
     "levenshtein": "^1.0.5",
-    "marked": "^7.0.2",
-    "marked-smartypants": "^1.0.5",
+    "marked": "^7.0.3",
+    "marked-smartypants": "^1.1.0",
     "memize": "^2.1.0",
     "node-fetch-cache": "^3.1.3",
     "p-limit": "^4.0.0",
     "strip-bom": "^5.0.0",
     "striptags": "^3.2.0",
-    "zod": "^3.21.4"
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@anatine/zod-mock": "^3.13.2",
@@ -46,12 +46,12 @@
     "@types/feather-icons": "^4.29.1",
     "@types/marked": "^5.0.1",
     "@types/node-fetch-cache": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.3.0",
-    "@typescript-eslint/parser": "^6.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
     "eslint": "^8.47.0",
-    "prettier": "3.0.1",
+    "prettier": "3.0.2",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
-    "vitest": "^0.34.1"
+    "vitest": "^0.34.2"
   }
 }
