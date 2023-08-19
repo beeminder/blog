@@ -14,17 +14,24 @@ export async function getStaticPaths() {
     includeUnpublished: true,
     sort: true
   });
+
   
-  return posts.map((post: Post, i: number) => ({
+  
+  return posts.map((post: Post, i: number) => {
+    const published = (p: Post) => p.status === "publish"
+    const newer = posts.slice(0, i).reverse().find(published);
+    const older = posts.slice(i + 1).find(published);
+    return {
     params: {
       slug: post.slug,
     },
     props: {
       post,
-      newer: posts[i - 1],
-      older: posts[i + 1],
+      newer,
+      older,
     },
-  }));
+  }
+  });
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
