@@ -17,6 +17,7 @@ marked.use(
     config: "1",
   }),
 );
+
 marked.use({
   hooks: {
     postprocess: applyIdsToElements,
