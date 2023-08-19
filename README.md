@@ -23,6 +23,7 @@ date: 2021-01-01
 author: dreeves
 tags: [tag1, tag2]
 status: publish # publish or draft or pending
+disqusID: any-unique-string
 excerpt: >
   The excerpt is used for the post preview on the blog index page.
   It can be multiple lines long.

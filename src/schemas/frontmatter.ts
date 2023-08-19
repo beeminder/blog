@@ -9,6 +9,7 @@ export const frontmatter = z
     slug: z.string(),
     author: z.string(),
     tags: z.array(z.string()),
+    disqusID: z.string(),
     status,
   })
   .partial();
