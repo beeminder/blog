@@ -37,12 +37,12 @@ export const legacyPost = z
         date: wp.Date ? new Date(wp.Date) : undefined,
         tags: wp.Tags ? String(wp.Tags).split("|").filter(Boolean) : [],
         source: wp.expost_source_url,
-        disqus_id: `${wp.dsq_thread_id} https://blog.beeminder.com/?p=${wp.dsq_thread_id}`,
+        disqus_id: `${wp.ID} https://blog.beeminder.com/?p=${wp.ID}`,
         author: wp.user?.display_name,
         slug: wp.Slug,
-        commentStatus: wp["Comment Status"],
-        pingStatus: wp["Ping Status"],
-        dateModified: wp["Post Modified Date"]
+        comment_status: wp["Comment Status"],
+        ping_status: wp["Ping Status"],
+        date_modified: wp["Post Modified Date"]
           ? new Date(wp["Post Modified Date"])
           : undefined,
         status: wp.Status,
