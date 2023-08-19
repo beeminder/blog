@@ -15,6 +15,7 @@ describe("getPosts", () => {
         Date: "2021-09-01",
         Status: "publish",
         Excerpt: undefined,
+        dsq_thread_id: "14",
       },
     ]);
   });
@@ -107,14 +108,7 @@ describe("getPosts", () => {
     const posts = await getPosts();
     const result = posts.find((p) => p.slug === "psychpricing");
 
-    expect(result?.disqus.id).toBe("14 https://blog.beeminder.com/?p=14");
-  });
-
-  it("sets disqus url", async () => {
-    const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
-
-    expect(result?.disqus.url).toBe("https://blog.beeminder.com/psychpricing/");
+    expect(result?.disqus_id).toBe("14 https://blog.beeminder.com/?p=14");
   });
 
   it("includes date_string", async () => {
