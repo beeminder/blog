@@ -37,7 +37,7 @@ export const legacyPost = z
         date: wp.Date ? new Date(wp.Date) : undefined,
         tags: wp.Tags ? String(wp.Tags).split("|").filter(Boolean) : [],
         source: wp.expost_source_url,
-        disqus_id: Number(wp.dsq_thread_id),
+        disqus_id: `${wp.dsq_thread_id} https://blog.beeminder.com/?p=${wp.dsq_thread_id}`,
         author: wp.user?.display_name,
         slug: wp.Slug,
         commentStatus: wp["Comment Status"],
