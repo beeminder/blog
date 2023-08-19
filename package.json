@@ -18,7 +18,8 @@
     "check": "astro check",
     "check:ts": "tsc --noEmit",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@astrojs/prefetch": "^0.3.0",
