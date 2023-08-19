@@ -348,3 +348,4 @@ doc.bmndr.co/reactions
 doc.bmndr.co/inertia
 doc.bmndr.co/ontologies
 doc.bmndr.co/athletes
+doc.bmndr.co/blogmorphosis
