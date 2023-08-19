@@ -344,7 +344,6 @@ doc.bmndr.co/blingily
 doc.bmndr.co/lichess
 doc.bmndr.co/datasmithing
 doc.bmndr.co/trydeepwork
-etherpad/test-post
 doc.bmndr.co/reactions
 doc.bmndr.co/inertia
 doc.bmndr.co/ontologies

@@ -18,42 +18,35 @@ export const post = z
   })
   .transform(({ url, md }) => {
     const { data, content } = matter(md);
+    const meta = {
+      ...legacyPost.parse(url),
+      ...frontmatter.parse(data),
+    };
 
     return {
-      url,
-      wp: legacyPost.parse(url),
-      md,
-      content: body.parse(content),
-      fm: frontmatter.parse(data),
+      ...meta,
+      excerpt: meta.excerpt || getExcerpt(content),
+      image: extractImage(content),
+      title: meta.title || parseTitle(md),
+      date_string: dateString.parse(meta.date),
+      content,
     };
   })
-  .refine(
-    (p) => p.wp !== undefined || p.fm.excerpt !== undefined,
-    (p) => ({
-      message: `Custom excerpts are required for new posts. URL: ${p.url}`,
+  .pipe(
+    z.object({
+      content: body,
+      excerpt: z.string(),
+      slug: z.string(),
+      image: image.optional(),
+      title: z.string(),
+      tags: z.array(z.string()).default([]),
+      date: z.date(),
+      date_string: z.string(),
+      author: z.string(),
+      status: status.default("draft"),
+      disqus_id: z.string(),
     }),
-  )
-  .transform(({ wp, fm, md, content }) => ({
-    content,
-    excerpt: fm.excerpt || wp?.excerpt || getExcerpt(content),
-    slug: z.string().parse(fm.slug || wp?.slug),
-    image: image.optional().parse(extractImage(content)),
-    title: fm.title || wp?.title?.toString() || parseTitle(md),
-    tags: [...(fm.tags || []), ...(wp?.tags || [])],
-    date: z.date().parse(fm.date || wp?.date),
-    author: z.string().parse(fm.author || wp?.author),
-    status: status.default("draft").parse(fm.status || wp?.status),
-    _wpId: wp?.id,
-  }))
-  .transform((post) => ({
-    ...post,
-    date_string: dateString.parse(post.date),
-    disqus: {
-      id: `${post._wpId} https://blog.beeminder.com/?p=${post._wpId}`,
-      url: `https://blog.beeminder.com/${post.slug}/`,
-    },
-    _wpId: undefined,
-  }));
+  );
 
 export type Post = z.infer<typeof post>;
 export type PostInput = z.input<typeof post>;
