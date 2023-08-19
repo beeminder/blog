@@ -12,7 +12,11 @@ const MARKED_OPTIONS = {
   headerIds: false,
 } as const;
 
-marked.use(markedSmartypants());
+marked.use(
+  markedSmartypants({
+    config: "1",
+  }),
+);
 marked.use({
   hooks: {
     postprocess: applyIdsToElements,
