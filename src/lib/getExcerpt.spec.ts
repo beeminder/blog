@@ -36,4 +36,12 @@ describe("getExcerpt", () => {
 
     expect(result).toBe("foo bar...");
   });
+
+  it("does not include private notes", () => {
+    const result = getExcerpt(`private notes
+BEGIN_MAGIC
+content`);
+
+    expect(result).not.toContain("private notes");
+  });
 });
