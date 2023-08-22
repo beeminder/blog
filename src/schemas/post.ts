@@ -22,19 +22,20 @@ export const post = z
       ...legacyPost.parse(url),
       ...frontmatter.parse(data),
     };
+    const c = body.parse(content);
 
     return {
       ...meta,
-      excerpt: meta.excerpt || getExcerpt(content),
-      image: extractImage(content),
+      excerpt: meta.excerpt || getExcerpt(c),
+      image: extractImage(c),
       title: meta.title || parseTitle(md),
       date_string: dateString.parse(meta.date),
-      content,
+      content: c,
     };
   })
   .pipe(
     z.object({
-      content: body,
+      content: z.string(),
       excerpt: z.string(),
       slug: z.string(),
       image: image.optional(),

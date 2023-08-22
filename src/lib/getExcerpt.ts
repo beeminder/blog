@@ -1,12 +1,11 @@
 import getDom from "./getDom";
+import trimContent from "./trimContent";
 
 const EXCERPT_LENGTH = 300;
 
 export default function getExcerpt(html: string): string {
-  const { document } = getDom(html);
-
-  document.body.innerHTML = html;
-
+  const trimmed = trimContent(html);
+  const { document } = getDom(trimmed);
   const footnotes = Array.from(document.querySelectorAll("a.footnote"));
 
   footnotes.forEach((el) => el.remove());
