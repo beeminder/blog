@@ -1,0 +1,15 @@
+[files]
+extend-exclude = ["*.json", "*.js", "*.png"]
+
+[default.extend-identifiers]
+HashiCorp = "HashiCorp"
+
+
+[default.extend-words]
+# Don't correct the surname "Teh"
+aks = "aks"
+prev = "prev"
+Goes = "Goes"
+
+[default]
+locale = "en-us"
