@@ -7,11 +7,11 @@ services:
     pullRequestPreviewsEnabled: true
     routes:
       - type: redirect
-        from: /feed
-        to: /feed.xml
+        source: /feed
+        destination: /feed.xml
       - type: redirect
-        from: /rss
-        to: /feed.xml
+        source: /rss
+        destination: /feed.xml
       - type: redirect
-        from: /rss.xml
-        to: /feed.xml
+        source: /rss.xml
+        destination: /feed.xml
