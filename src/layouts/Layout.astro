@@ -25,8 +25,9 @@ export interface Props {
     | undefined;
 }
 
-const { title, description, image, previous, next } = Astro.props;
-
+const defaultImage = new URL('/wp-content/uploads/2022/04/small_logo_bee_256.png', Astro.site);
+const defaultDescription = 'Beeminder is goal-tracking with teeth. We plot your progress on a graph with a Bright Red Line (formerly Yellow Brick Road). If your datapoints cross that line, we take your money. The Beeminder blog is a hodgepodge of productivity nerdery and behavioral economics written by the founders and various friends.';
+const { title, description = defaultDescription, image = defaultImage, previous, next } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -63,16 +64,14 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <title set:html={`${title} | Beeminder Blog`} />
 
     <link rel="canonical" href={canonicalUrl} />
-    {description && <meta name="description" content={description} />}
+    <meta name="description" content={description} />
 
-    <link rel="alternate" type="application/rss+xml" 
-  title="RSS" 
-  href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
 
     <meta property="og:title" content={title} />
     <meta property="og:url" content={canonicalUrl} />
-    {description && <meta property="og:description" content={description} />}
-    {image && <meta property="og:image" content={image} />}
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
 
     <script
       type="text/javascript"
