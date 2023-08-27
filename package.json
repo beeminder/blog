@@ -26,7 +26,7 @@
     "@astrojs/rss": "^2.4.4",
     "@fontsource-variable/lora": "^5.0.9",
     "@fontsource/source-sans-pro": "^5.0.8",
-    "astro": "^2.10.14",
+    "astro": "^2.10.12",
     "feather-icons": "^4.29.1",
     "gray-matter": "^4.0.3",
     "happy-dom": "^10.11.0",
