@@ -1,5 +1,5 @@
 import { z } from "zod";
-import addBlankLines from "../lib/addBlankLines";
+// import addBlankLines from "../lib/addBlankLines";
 import trimContent from "../lib/trimContent";
 import linkFootnotes from "../lib/linkFootnotes";
 import expandRefs from "../lib/expandRefs";
@@ -28,7 +28,7 @@ marked.use({
 
 export const body = z
   .string()
-  .transform(addBlankLines)
+  // .transform(addBlankLines)
   .transform(trimContent)
   .transform(linkFootnotes)
   .transform(expandRefs)
