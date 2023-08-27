@@ -1,5 +1,5 @@
 import memoize from "./memoize";
-import { Post, post } from "../schemas/post";
+import { type Post, post } from "../schemas/post";
 import fetchPosts from "./fetchPosts";
 
 const makePosts = memoize((): Promise<Post>[] =>
