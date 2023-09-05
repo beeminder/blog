@@ -245,6 +245,7 @@ doc.bmndr.co/defail
 doc.bmndr.co/commitstew
 doc.bmndr.co/bugreports
 doc.bmndr.co/dogeatdog
+doc.bmndr.co/pareto
 doc.bmndr.co/pdp
 doc.bmndr.co/paretocaps
 doc.bmndr.co/lockmyphone
@@ -322,6 +323,7 @@ doc.bmndr.co/bothsidesnow
 doc.bmndr.co/blockchain
 doc.bmndr.co/toothbrush
 doc.bmndr.co/blackmail
+doc.bmndr.co/bkopenhagen
 doc.bmndr.co/backup
 doc.bmndr.co/storygraph
 doc.bmndr.co/orange
