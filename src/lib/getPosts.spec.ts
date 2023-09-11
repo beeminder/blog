@@ -41,12 +41,14 @@ describe("getPosts", () => {
 
     loadLegacyData([
       {
+        ID: "1",
         expost_source_url: "https://dtherpad.com/old",
         Slug: "old",
         Date: "2020-01-01",
         Status: "publish",
       },
       {
+        ID: "2",
         expost_source_url: "https://dtherpad.com/new",
         Slug: "new",
         Date: "2020-01-02",
@@ -390,6 +392,7 @@ BEGIN_MAGIC
 
     expect(excerpt).toEqual("wp excerpt");
   });
+
   it("strips html from wp excerpts", async () => {
     vi.mocked(readSources).mockReturnValue(["dtherpad.com/psychpricing"]);
 
@@ -408,5 +411,47 @@ BEGIN_MAGIC
     const { excerpt } = posts.find((p) => p.slug === "psychpricing") || {};
 
     expect(excerpt).toEqual("wp excerpt");
+  });
+
+  it("throws on duplicate slugs", async () => {
+    vi.mocked(readSources).mockReturnValue(["padm.us/a", "padm.us/b"]);
+
+    vi.mocked(fetchPost).mockResolvedValue(`---
+slug: the_slug
+date: 2023-01-01
+author: the_author
+disqus_id: the_disqus_id
+---
+
+# content
+`);
+
+    await expect(getPosts()).rejects.toThrow(/Duplicate slug/);
+  });
+
+  it("throws on duplicate disqus IDs", async () => {
+    vi.mocked(readSources).mockReturnValue(["padm.us/a", "padm.us/b"]);
+
+    vi.mocked(fetchPost).mockResolvedValueOnce(`---
+slug: the_slug_a
+date: 2023-01-01
+author: the_author
+disqus_id: the_disqus_id
+---
+
+# content
+`);
+
+    vi.mocked(fetchPost).mockResolvedValueOnce(`---
+slug: the_slug_b
+date: 2023-01-01
+author: the_author
+disqus_id: the_disqus_id
+---
+
+# content
+`);
+
+    await expect(getPosts()).rejects.toThrow(/Duplicate disqus/);
   });
 });

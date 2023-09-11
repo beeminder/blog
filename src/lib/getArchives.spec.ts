@@ -43,14 +43,16 @@ describe("getArchives", () => {
 
     loadLegacyData([
       {
+        ID: "1",
         Date: "2013-02-22",
         Slug: "psychpricing",
         expost_source_url: "https://padm.us/psychpricing",
         Status: "publish",
       },
       {
+        ID: "2",
         Date: "2015-02-22",
-        Slug: "psychpricing",
+        Slug: "second",
         expost_source_url: "https://padm.us/second",
         Status: "publish",
       },
