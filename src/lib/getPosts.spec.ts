@@ -3,6 +3,7 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 import fetchPost from "./fetchPost";
 import loadLegacyData from "./test/loadLegacyData";
 import readSources from "./readSources";
+import padm from "./test/padm";
 
 describe("getPosts", () => {
   beforeEach(() => {
@@ -62,7 +63,11 @@ describe("getPosts", () => {
   });
 
   it("includes excerpts", async () => {
-    vi.mocked(fetchPost).mockResolvedValue("word");
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        content: "word",
+      }),
+    );
 
     const posts = await getPosts();
 
@@ -122,7 +127,9 @@ describe("getPosts", () => {
 
   it("extracts image url", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      '<img src="https://example.com/image.png" />',
+      padm({
+        content: '<img src="https://example.com/image.png" />',
+      }),
     );
 
     const posts = await getPosts();
@@ -132,7 +139,13 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter title", async () => {
-    vi.mocked(fetchPost).mockResolvedValue("---\ntitle: Hello\n---\n\n# World");
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        frontmatter: {
+          title: "Hello",
+        },
+      }),
+    );
 
     const posts = await getPosts();
     const result = posts.find((p) => p.slug === "psychpricing");
@@ -142,7 +155,11 @@ describe("getPosts", () => {
 
   it("uses frontmatter author", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\nauthor: Alice\n---\n\n# World",
+      padm({
+        frontmatter: {
+          author: "Alice",
+        },
+      }),
     );
 
     const posts = await getPosts();
@@ -153,7 +170,11 @@ describe("getPosts", () => {
 
   it("uses frontmatter excerpt", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\nexcerpt: Hello\n---\n\n# World",
+      padm({
+        frontmatter: {
+          excerpt: "Hello",
+        },
+      }),
     );
 
     const posts = await getPosts();
@@ -164,7 +185,11 @@ describe("getPosts", () => {
 
   it("uses frontmatter tags", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\ntags:\n- a\n- b\n- c\n---\n\n# World",
+      padm({
+        frontmatter: {
+          tags: ["a", "b", "c"],
+        },
+      }),
     );
 
     const posts = await getPosts();
@@ -175,7 +200,11 @@ describe("getPosts", () => {
 
   it("uses frontmatter date", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\ndate: 2021-09-02\n---\n\n# World",
+      padm({
+        frontmatter: {
+          date: new Date("2021-09-02"),
+        },
+      }),
     );
 
     const posts = await getPosts();
@@ -185,7 +214,13 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter slug", async () => {
-    vi.mocked(fetchPost).mockResolvedValue("---\nslug: hello\n---\n\n# World");
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        frontmatter: {
+          slug: "hello",
+        },
+      }),
+    );
 
     const posts = await getPosts();
     const result = posts.find((p) => p.slug === "hello");
@@ -202,7 +237,11 @@ describe("getPosts", () => {
 
   it("uses frontmatter status", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\nstatus: publish\n---\n\n# World",
+      padm({
+        frontmatter: {
+          status: "publish",
+        },
+      }),
     );
 
     const posts = await getPosts();
@@ -223,7 +262,11 @@ describe("getPosts", () => {
       },
     ]);
 
-    vi.mocked(fetchPost).mockResolvedValue("BEGIN_MAGIC[magic_title]");
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        title: "magic_title",
+      }),
+    );
 
     const posts = await getPosts();
     const result = posts.find((p) => p.slug === "psychpricing");
@@ -244,7 +287,11 @@ describe("getPosts", () => {
     ]);
 
     vi.mocked(fetchPost).mockResolvedValue(
-      "---\ntitle: frontmatter_title\n---\n\n# World",
+      padm({
+        frontmatter: {
+          title: "frontmatter_title",
+        },
+      }),
     );
 
     const posts = await getPosts();
@@ -254,7 +301,11 @@ describe("getPosts", () => {
   });
 
   it("returns html", async () => {
-    vi.mocked(fetchPost).mockResolvedValue("hello world");
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        content: "hello world",
+      }),
+    );
 
     const posts = await getPosts();
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
@@ -263,7 +314,11 @@ describe("getPosts", () => {
   });
 
   it("uses smartypants", async () => {
-    vi.mocked(fetchPost).mockResolvedValue('"hello world"');
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        content: '"hello world"',
+      }),
+    );
 
     const posts = await getPosts();
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
@@ -272,10 +327,14 @@ describe("getPosts", () => {
   });
 
   it("does not require new line after html element", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(`
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        content: `
 <h1>heading</h1>
 paragraph
-`);
+`,
+      }),
+    );
 
     const posts = await getPosts();
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
@@ -284,7 +343,11 @@ paragraph
   });
 
   it("allows for PHP Markdown Extra-style IDs", async () => {
-    vi.mocked(fetchPost).mockResolvedValue("# heading {#id}");
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        content: "# heading {#id}",
+      }),
+    );
 
     const posts = await getPosts();
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
@@ -294,7 +357,9 @@ paragraph
 
   it("handles id properly", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      "## More Real-World Commitment Devices  {#AUG}",
+      padm({
+        content: "## More Real-World Commitment Devices  {#AUG}",
+      }),
     );
 
     const posts = await getPosts();
@@ -304,11 +369,15 @@ paragraph
   });
 
   it("handles multiple IDs", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(`
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        content: `
 ## What Commitment Devices Have You Used on Yourself? {#POL}
 
 ## More Real-World Commitment Devices  {#AUG}
-`);
+`,
+      }),
+    );
 
     const posts = await getPosts();
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
@@ -318,12 +387,16 @@ paragraph
   });
 
   it("supports link nonsense", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(`
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        content: `
 [paying is not punishment](
-  https://blog.beeminder.com/depunish
-  "Our paying-is-not-punishment post is also a prequel to our announcement of No-Excuses Mode"
+https://blog.beeminder.com/depunish
+"Our paying-is-not-punishment post is also a prequel to our announcement of No-Excuses Mode"
 ) because
-`);
+      `,
+      }),
+    );
 
     const posts = await getPosts();
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
@@ -332,7 +405,11 @@ paragraph
   });
 
   it("links footnotes", async () => {
-    vi.mocked(fetchPost).mockResolvedValue("$FN[foo] $FN[foo]");
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        content: "$FN[foo] $FN[foo]",
+      }),
+    );
 
     const posts = await getPosts();
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
@@ -343,7 +420,11 @@ paragraph
   });
 
   it("expands refs", async () => {
-    vi.mocked(fetchPost).mockResolvedValue("$REF[foo] $REF[bar]");
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        content: "$REF[foo] $REF[bar]",
+      }),
+    );
 
     const posts = await getPosts();
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
@@ -352,20 +433,13 @@ paragraph
   });
 
   it("parses frontmatter", async () => {
-    vi.mocked(fetchPost).mockResolvedValue("---\nslug: val\n---");
-
-    const posts = await getPosts();
-    const { slug } = posts.find((p) => p.slug === "val") || {};
-
-    expect(slug).toEqual("val");
-  });
-
-  it("parses frontmatter with magic present", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(`---
-slug: val
----
-BEGIN_MAGIC
-`);
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        frontmatter: {
+          slug: "val",
+        },
+      }),
+    );
 
     const posts = await getPosts();
     const { slug } = posts.find((p) => p.slug === "val") || {};
@@ -423,7 +497,9 @@ author: the_author
 disqus_id: the_disqus_id
 ---
 
+BEGIN_MAGIC
 # content
+END_MAGIC
 `);
 
     await expect(getPosts()).rejects.toThrow(/Duplicate slug/);
@@ -439,7 +515,9 @@ author: the_author
 disqus_id: the_disqus_id
 ---
 
+BEGIN_MAGIC
 # content
+END_MAGIC
 `);
 
     vi.mocked(fetchPost).mockResolvedValueOnce(`---
@@ -449,7 +527,9 @@ author: the_author
 disqus_id: the_disqus_id
 ---
 
+BEGIN_MAGIC
 # content
+END_MAGIC
 `);
 
     await expect(getPosts()).rejects.toThrow(/Duplicate disqus/);
