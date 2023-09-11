@@ -20,19 +20,19 @@ describe("getArchives", () => {
   it("gets archives", async () => {
     const result = await getArchives();
 
-    expect(result[2011]).toBeDefined();
+    expect(result[0]).toBeDefined();
   });
 
   it("batches by month", async () => {
     const result = await getArchives();
 
-    expect(result[2011]?.months[0]?.posts).toHaveLength(1);
+    expect(result[0]?.months[0]?.posts).toHaveLength(1);
   });
 
   it("sets month label", async () => {
     const result = await getArchives();
 
-    expect(result[2011]?.months[0]?.label).toEqual("January");
+    expect(result[0]?.months[0]?.label).toEqual("January");
   });
 
   it("properly batches by year", async () => {
@@ -60,6 +60,6 @@ describe("getArchives", () => {
 
     const result = await getArchives();
 
-    expect(result[2013]?.months[1]?.posts).toHaveLength(1);
+    expect(result[0]?.months[1]?.posts).toHaveLength(1);
   });
 });
