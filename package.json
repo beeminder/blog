@@ -30,7 +30,6 @@
     "feather-icons": "^4.29.1",
     "gray-matter": "^4.0.3",
     "happy-dom": "^10.11.0",
-    "levenshtein": "^1.0.5",
     "marked": "^7.0.5",
     "marked-smartypants": "^1.1.0",
     "memize": "^2.1.0",
