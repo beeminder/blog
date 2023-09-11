@@ -22,15 +22,22 @@ export const post = z
       ...legacyPost.parse(url),
       ...frontmatter.parse(data),
     };
-    const c = body.parse(content);
+    const c = body.safeParse(content);
+
+    if (!c.success) {
+      throw new Error(
+        `Failed to parse post ${url}: ${c.error.message}`,
+        c.error,
+      );
+    }
 
     return {
       ...meta,
-      excerpt: meta.excerpt || getExcerpt(c),
-      image: extractImage(c),
+      excerpt: meta.excerpt || getExcerpt(c.data),
+      image: extractImage(c.data),
       title: meta.title || parseTitle(md),
       date_string: dateString.parse(meta.date),
-      content: c,
+      content: c.data,
     };
   })
   .pipe(

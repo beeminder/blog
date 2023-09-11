@@ -18,5 +18,5 @@ export default function getExcerpt(html: string): string {
     return acc ? `${acc} ${word}` : word;
   }, "");
 
-  return `${excerpt}...`;
+  return `${excerpt.trim()}...`;
 }
