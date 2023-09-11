@@ -29,9 +29,6 @@ dependencies:
   happy-dom:
     specifier: ^10.11.0
     version: 10.11.0
-  levenshtein:
-    specifier: ^1.0.5
-    version: 1.0.5
   marked:
     specifier: ^7.0.5
     version: 7.0.5
@@ -2793,11 +2790,6 @@ packages:
   /kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
-    dev: false
-
-  /levenshtein@1.0.5:
-    resolution: {integrity: sha512-UQf1nnmxjl7O0+snDXj2YF2r74Gkya8ZpnegrUBYN9tikh2dtxV/ey8e07BO5wwo0i76yjOvbDhFHdcPEiH9aA==}
-    engines: {'0': node >=0.2.0}
     dev: false
 
   /levn@0.4.1:
