@@ -7,6 +7,9 @@ import sourcesanspro700 from "@fontsource/source-sans-pro/files/source-sans-pro-
 import sourcesanspro900 from "@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff2";
 import lora from "@fontsource-variable/lora/files/lora-latin-wght-normal.woff2";
 
+import "../styles/global.css";
+import "../styles/slideshow.css";
+
 export interface Props {
   title: string;
   description?: string | undefined;
@@ -78,6 +81,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <script src="../scripts/slideshow.ts"></script>
   </head>
   <body>
     <Header />
@@ -139,175 +144,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         .content > *:last-child {
           padding-left: 0;
         }
-      }
-    </style>
-
-    <style is:global>
-      /*
-      WORKAROUND:
-      @fount-source's CSS custom property for font-display doesn't currently work,
-      so we have to redeclare the font-face rules here in order to set font-display
-      to block.
-      https://github.com/fontsource/fontsource/issues/726
-      https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
-      */
-
-      @font-face {
-        font-family: "Source Sans Pro";
-        font-style: normal;
-        font-display: block;
-        font-weight: 700;
-        src: url(@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff2)
-            format("woff2"),
-          url(@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff)
-            format("woff");
-      }
-
-      @font-face {
-        font-family: "Source Sans Pro";
-        font-style: normal;
-        font-display: block;
-        font-weight: 900;
-        src: url(@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff2)
-            format("woff2"),
-          url(@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff)
-            format("woff");
-      }
-
-      @font-face {
-        font-family: "Lora Variable";
-        font-style: normal;
-        font-display: block;
-        font-weight: 400 700;
-        src: url(@fontsource-variable/lora/files/lora-latin-wght-normal.woff2)
-          format("woff2-variations");
-      }
-
-      @font-face {
-        font-family: "Lora Variable";
-        font-style: italic;
-        font-display: block;
-        font-weight: 50 100 200 300 500;
-        src: url(@fontsource-variable/lora/files/lora-latin-wght-italic.woff2)
-          format("woff2-variations");
-      }
-
-      :root {
-        --primary: #cc0000;
-        --secondary: #ffcb06;
-        --black: #3b3b3b;
-
-        --gap: 1rem;
-
-        --gap-0-5: calc(var(--gap) * 0.5);
-        --gap-1: calc(var(--gap) * 1);
-        --gap-1-5: calc(var(--gap) * 1.5);
-        --gap-2: calc(var(--gap) * 2);
-        --gap-3: calc(var(--gap) * 3);
-
-        --line-height: 1.27em;
-        --line-height-headings: 1.2em;
-
-        --font-family: "Lora Variable", serif;
-
-        --content-width: 1200px;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      *:not(h1, h2, h3, h4, h5) {
-        line-height: var(--line-height);
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h1 > *,
-      h2 > *,
-      h3 > *,
-      h4 > *,
-      h5 > * {
-        line-height: var(--line-height-headings);
-        font-family: "Source Sans Pro", sans-serif;
-        font-weight: 700;
-      }
-      html {
-        background-color: #eee;
-        font-family: sans-serif;
-        color: var(--black);
-        overflow-x: hidden;
-      }
-      body {
-        margin: 0;
-      }
-      a {
-        color: var(--primary);
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      img {
-        max-width: 100%;
-      }
-      code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-      p,
-      .pullquote,
-      blockquote,
-      ul,
-      ol {
-        font-family: var(--font-family);
-      }
-      .pullquote {
-        float: right;
-        width: 50%;
-        max-width: 30rem;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-        font-weight: 300;
-        font-style: italic;
-        font-size: 2em;
-        line-height: var(--line-height);
-        padding: var(--gap-1);
-        margin: var(--gap-0-5) 0 var(--gap-0-5) var(--gap-1-5);
-        text-align: center;
-      }
-      .beelist {
-        list-style: none;
-        padding-inline-start: 1rem;
-      }
-      .beelist li {
-        position: relative;
-        padding-left: 30px;
-        margin-bottom: 10px;
-      }
-      .beelist li:before {
-        content: '';
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        background-image: url(https://s.w.org/images/core/emoji/14.0.0/svg/1f41d.svg);
-        background-size: contain;
-        background-position: center;
-        left: 0;
-      }
-      @media (max-width: 40rem) {
-        .pullquote {
-          float: none;
-          width: auto;
-          max-width: none;
-          margin-left: 0;
-          margin-right: 0;
-        }
-      }
-      .aligncenter {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
       }
     </style>
   </body>
