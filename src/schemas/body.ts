@@ -28,6 +28,12 @@ marked.use({
 
 export const body = z
   .string()
+  .refine((content) => content.includes("BEGIN_MAGIC"), {
+    message: "No BEGIN_MAGIC found",
+  })
+  .refine((content) => content.includes("END_MAGIC"), {
+    message: "No END_MAGIC found",
+  })
   .transform(addBlankLines)
   .transform(trimContent)
   .transform(linkFootnotes)
