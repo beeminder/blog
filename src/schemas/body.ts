@@ -7,11 +7,6 @@ import { marked } from "marked";
 import { markedSmartypants } from "marked-smartypants";
 import applyIdsToElements from "../lib/applyIdsToElements";
 
-const MARKED_OPTIONS = {
-  mangle: false,
-  headerIds: false,
-} as const;
-
 marked.use(
   markedSmartypants({
     config: "1",
@@ -38,6 +33,6 @@ export const body = z
   .transform(trimContent)
   .transform(linkFootnotes)
   .transform(expandRefs)
-  .transform((md) => marked.parse(md, MARKED_OPTIONS));
+  .transform((md) => marked.parse(md));
 
 export type Body = z.infer<typeof body>;
