@@ -87,12 +87,12 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
   <body>
     <Header />
 
-    <Pagination class="nav" previous={previous} next={next} />
-
+    <div class="nav"><Pagination previous={previous} next={next} /></div>
+    
     <div class="content">
       <div>
         <slot />
-        <Pagination class="nav" previous={previous} next={next} />
+        <div class="nav"><Pagination previous={previous} next={next} /></div>
       </div>
       <div><Sidebar /></div>
     </div>
