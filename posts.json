@@ -28,11 +28,7 @@
     "slug": "easyhard",
     "date": "2011-02-02",
     "author": "melza",
-    "tags": [
-      "food",
-      "tips",
-      "weight loss"
-    ],
+    "tags": ["food", "tips", "weight loss"],
     "status": "publish",
     "disqus_id": "130 https://blog.beeminder.com/?p=130",
     "excerpt": ""
@@ -44,11 +40,7 @@
     "slug": "preeat",
     "date": "2011-02-20",
     "author": "dreeves",
-    "tags": [
-      "food",
-      "tips",
-      "weight loss"
-    ],
+    "tags": ["food", "tips", "weight loss"],
     "status": "publish",
     "disqus_id": "165 https://blog.beeminder.com/?p=165",
     "excerpt": ""
@@ -60,13 +52,7 @@
     "slug": "foodhabits",
     "date": "2011-03-01",
     "author": "Kevin McGowan",
-    "tags": [
-      "food",
-      "guest posts",
-      "science",
-      "tips",
-      "weight loss"
-    ],
+    "tags": ["food", "guest posts", "science", "tips", "weight loss"],
     "status": "publish",
     "disqus_id": "166 https://blog.beeminder.com/?p=166",
     "excerpt": ""
@@ -78,13 +64,7 @@
     "slug": "lildeb",
     "date": "2011-03-10",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "dog food",
-      "junk food",
-      "pica"
-    ],
+    "tags": ["akrasia", "bee-all", "dog food", "junk food", "pica"],
     "status": "publish",
     "disqus_id": "170 https://blog.beeminder.com/?p=170",
     "excerpt": ""
@@ -96,13 +76,7 @@
     "slug": "gym",
     "date": "2011-03-22",
     "author": "Jill Renaud",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "fitness",
-      "guest posts",
-      "self-binding"
-    ],
+    "tags": ["akrasia", "bee-all", "fitness", "guest posts", "self-binding"],
     "status": "publish",
     "disqus_id": "174 https://blog.beeminder.com/?p=174",
     "excerpt": ""
@@ -135,12 +109,7 @@
     "slug": "martin",
     "date": "2011-04-10",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "case studies",
-      "self-binding"
-    ],
+    "tags": ["akrasia", "bee-all", "case studies", "self-binding"],
     "status": "publish",
     "disqus_id": "180 https://blog.beeminder.com/?p=180",
     "excerpt": ""
@@ -232,13 +201,7 @@
     "slug": "timecarrot",
     "date": "2011-06-10",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "competition",
-      "self-binding",
-      "tagtime"
-    ],
+    "tags": ["akrasia", "bee-all", "competition", "self-binding", "tagtime"],
     "status": "publish",
     "disqus_id": "197 https://blog.beeminder.com/?p=197",
     "excerpt": ""
@@ -269,10 +232,7 @@
     "slug": "solstice",
     "date": "2011-06-28",
     "author": "dreeves",
-    "tags": [
-      "PSA",
-      "tips"
-    ],
+    "tags": ["PSA", "tips"],
     "status": "publish",
     "disqus_id": "205 https://blog.beeminder.com/?p=205",
     "excerpt": ""
@@ -308,9 +268,7 @@
     "slug": "roadwidth",
     "date": "2011-07-10",
     "author": "dreeves",
-    "tags": [
-      "navel-gazing"
-    ],
+    "tags": ["navel-gazing"],
     "status": "publish",
     "disqus_id": "209 https://blog.beeminder.com/?p=209",
     "excerpt": ""
@@ -385,12 +343,7 @@
     "slug": "textbot",
     "date": "2011-09-22",
     "author": "guest",
-    "tags": [
-      "bot",
-      "new features",
-      "sms",
-      "text"
-    ],
+    "tags": ["bot", "new features", "sms", "text"],
     "status": "publish",
     "disqus_id": "224 https://blog.beeminder.com/?p=224",
     "excerpt": ""
@@ -402,12 +355,7 @@
     "slug": "launch",
     "date": "2011-10-13",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "beta",
-      "launch",
-      "navel-gazing"
-    ],
+    "tags": ["bee-all", "beta", "launch", "navel-gazing"],
     "status": "publish",
     "disqus_id": "227 https://blog.beeminder.com/?p=227",
     "excerpt": ""
@@ -504,12 +452,7 @@
     "slug": "widget",
     "date": "2011-12-01",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "dashboard widget",
-      "mac",
-      "new features"
-    ],
+    "tags": ["bee-all", "dashboard widget", "mac", "new features"],
     "status": "publish",
     "disqus_id": "244 https://blog.beeminder.com/?p=244",
     "excerpt": ""
@@ -676,12 +619,7 @@
     "slug": "beehive",
     "date": "2012-03-06",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "navel-gazing",
-      "portland",
-      "portland seed fund"
-    ],
+    "tags": ["bee-all", "navel-gazing", "portland", "portland seed fund"],
     "status": "publish",
     "disqus_id": "283 https://blog.beeminder.com/?p=283",
     "excerpt": "Beeminder headquarters is now officially in Portland, Oregon! We’re proud and excited to announce that we’ve been accepted into the Portland Seed Fund’s newest class of startups. We’re in the esteemed company of"
@@ -804,11 +742,7 @@
     "slug": "tuit",
     "date": "2012-05-17",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "rationality"
-    ],
+    "tags": ["akrasia", "bee-all", "rationality"],
     "status": "publish",
     "disqus_id": "311 https://blog.beeminder.com/?p=311",
     "excerpt": "If it's important to you to [exercise / practice an instrument / eat better / you name it] but you find that you never get around to it (a 'round tuit', get it?), well, we have an app for that. Think of Beeminder as your Round Tuit dispenser."
@@ -845,13 +779,7 @@
     "slug": "chirpify",
     "date": "2012-06-03",
     "author": "dreeves",
-    "tags": [
-      "chirpify",
-      "new features",
-      "startups",
-      "twitter",
-      "upstart labs"
-    ],
+    "tags": ["chirpify", "new features", "startups", "twitter", "upstart labs"],
     "status": "publish",
     "disqus_id": "322 https://blog.beeminder.com/?p=322",
     "excerpt": ""
@@ -988,14 +916,7 @@
     "slug": "weusethat",
     "date": "2012-08-09",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "FAQ",
-      "meta",
-      "navel-gazing",
-      "startups",
-      "tech"
-    ],
+    "tags": ["bee-all", "FAQ", "meta", "navel-gazing", "startups", "tech"],
     "status": "publish",
     "disqus_id": "381 https://blog.beeminder.com/?p=381",
     "excerpt": "We were interviewed by WeUseThat today. Here&#8217;s what we said! We are Daniel Reeves and Bethany Soule, co-founders of Beeminder. We make people more awesome via the threat of taking their money. Specifically, we plot"
@@ -1166,12 +1087,7 @@
     "slug": "one",
     "date": "2012-10-13",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "lifecoaching",
-      "navel-gazing",
-      "rationality"
-    ],
+    "tags": ["bee-all", "lifecoaching", "navel-gazing", "rationality"],
     "status": "publish",
     "disqus_id": "420 https://blog.beeminder.com/?p=420",
     "excerpt": ""
@@ -1204,14 +1120,7 @@
     "slug": "apps",
     "date": "2012-10-25",
     "author": "Andy Brett",
-    "tags": [
-      "android",
-      "api",
-      "apple",
-      "apps",
-      "bee-all",
-      "mobile"
-    ],
+    "tags": ["android", "api", "apple", "apps", "bee-all", "mobile"],
     "status": "publish",
     "disqus_id": "432 https://blog.beeminder.com/?p=432",
     "excerpt": ""
@@ -1245,12 +1154,7 @@
     "slug": "nanowrimo",
     "date": "2012-11-01",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "nanowrimo",
-      "new features",
-      "writing"
-    ],
+    "tags": ["bee-all", "nanowrimo", "new features", "writing"],
     "status": "publish",
     "disqus_id": "441 https://blog.beeminder.com/?p=441",
     "excerpt": ""
@@ -1344,14 +1248,7 @@
     "slug": "southwest",
     "date": "2013-01-09",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "buzz",
-      "meta",
-      "navel-gazing",
-      "press",
-      "resolutions"
-    ],
+    "tags": ["bee-all", "buzz", "meta", "navel-gazing", "press", "resolutions"],
     "status": "publish",
     "disqus_id": "466 https://blog.beeminder.com/?p=466",
     "excerpt": "We’re so proud of our full-page feature in the Southwest Airlines inflight magazine this month that we’re reproducing it here (with permission): ... This new online tool forces you to shape up — or pay up. Here’s how Beeminder co-founder Bethany Soule describes the Web-based, incentivized task tracker:"
@@ -1559,12 +1456,7 @@
     "slug": "wsj",
     "date": "2013-04-24",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "buzz",
-      "navel-gazing",
-      "press"
-    ],
+    "tags": ["bee-all", "buzz", "navel-gazing", "press"],
     "status": "publish",
     "disqus_id": "513 https://blog.beeminder.com/?p=513",
     "excerpt": ""
@@ -1682,14 +1574,7 @@
     "slug": "zeno",
     "date": "2013-06-24",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "best-of",
-      "bugs",
-      "FAQ",
-      "new features",
-      "zeno"
-    ],
+    "tags": ["bee-all", "best-of", "bugs", "FAQ", "new features", "zeno"],
     "status": "publish",
     "disqus_id": "540 https://blog.beeminder.com/?p=540",
     "excerpt": ""
@@ -1833,13 +1718,7 @@
     "slug": "runkeeper",
     "date": "2013-09-03",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "FAQ",
-      "fitness",
-      "integrations",
-      "new features"
-    ],
+    "tags": ["bee-all", "FAQ", "fitness", "integrations", "new features"],
     "status": "publish",
     "disqus_id": "578 https://blog.beeminder.com/?p=578",
     "excerpt": ""
@@ -1851,13 +1730,7 @@
     "slug": "breaks",
     "date": "2013-09-13",
     "author": "bsoule",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "FAQ",
-      "new features",
-      "yellow brick road"
-    ],
+    "tags": ["akrasia", "bee-all", "FAQ", "new features", "yellow brick road"],
     "status": "publish",
     "disqus_id": "587 https://blog.beeminder.com/?p=587",
     "excerpt": ""
@@ -1869,13 +1742,7 @@
     "slug": "less",
     "date": "2013-09-23",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "FAQ",
-      "new features",
-      "yellow brick road"
-    ],
+    "tags": ["akrasia", "bee-all", "FAQ", "new features", "yellow brick road"],
     "status": "publish",
     "disqus_id": "590 https://blog.beeminder.com/?p=590",
     "excerpt": ""
@@ -1952,12 +1819,7 @@
     "slug": "draft",
     "date": "2013-11-01",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "FAQ",
-      "integrations",
-      "new features"
-    ],
+    "tags": ["bee-all", "FAQ", "integrations", "new features"],
     "status": "publish",
     "disqus_id": "610 https://blog.beeminder.com/?p=610",
     "excerpt": "Tomorrow is the beginning of November, which kicks off National Novel Writing Month. Last year we put together some tools for NaNoWriMo and blogged about it: Beemind Your NaNoWriMo Progress. This year we have some new tools to support beeminding writers. The biggie that we’re really excited about is"
@@ -2165,11 +2027,7 @@
     "slug": "runnersworld",
     "date": "2014-02-02",
     "author": "Erica Edelman",
-    "tags": [
-      "buzz",
-      "navel-gazing",
-      "press"
-    ],
+    "tags": ["buzz", "navel-gazing", "press"],
     "status": "publish",
     "disqus_id": "675 https://blog.beeminder.com/?p=675",
     "excerpt": ""
@@ -2215,12 +2073,7 @@
     "slug": "vegetables",
     "date": "2014-03-15",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "food",
-      "tips",
-      "weight loss"
-    ],
+    "tags": ["bee-all", "food", "tips", "weight loss"],
     "status": "publish",
     "disqus_id": "716 https://blog.beeminder.com/?p=716",
     "excerpt": "With the Fat Cyclist weight loss competition underway, we're thinking about weight loss a lot. We've got some useful posts planned. In the meantime, we have Bethany hating on"
@@ -2280,13 +2133,7 @@
     "slug": "heartbleed",
     "date": "2014-04-14",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "bugs",
-      "meta",
-      "navel-gazing",
-      "nerdery"
-    ],
+    "tags": ["bee-all", "bugs", "meta", "navel-gazing", "nerdery"],
     "status": "publish",
     "disqus_id": "731 https://blog.beeminder.com/?p=731",
     "excerpt": ""
@@ -2298,12 +2145,7 @@
     "slug": "bothsides",
     "date": "2014-04-24",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "FAQ",
-      "navel-gazing",
-      "yellow brick road"
-    ],
+    "tags": ["bee-all", "FAQ", "navel-gazing", "yellow brick road"],
     "status": "publish",
     "disqus_id": "733 https://blog.beeminder.com/?p=733",
     "excerpt": ""
@@ -2421,9 +2263,7 @@
     "slug": "exproad",
     "date": "2014-06-28",
     "author": "dreeves",
-    "tags": [
-      "navel-gazing"
-    ],
+    "tags": ["navel-gazing"],
     "status": "publish",
     "disqus_id": "770 https://blog.beeminder.com/?p=770",
     "excerpt": ""
@@ -2497,13 +2337,7 @@
     "slug": "twitter",
     "date": "2014-08-05",
     "author": "Chris Goodman",
-    "tags": [
-      "api",
-      "bee-all",
-      "integrations",
-      "new features",
-      "twitter"
-    ],
+    "tags": ["api", "bee-all", "integrations", "new features", "twitter"],
     "status": "publish",
     "disqus_id": "781 https://blog.beeminder.com/?p=781",
     "excerpt": ""
@@ -2578,13 +2412,7 @@
     "slug": "pledgecaps",
     "date": "2014-09-24",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "FAQ",
-      "money",
-      "new features"
-    ],
+    "tags": ["akrasia", "bee-all", "FAQ", "money", "new features"],
     "status": "publish",
     "disqus_id": "805 https://blog.beeminder.com/?p=805",
     "excerpt": ""
@@ -3120,12 +2948,7 @@
     "slug": "qs15",
     "date": "2015-06-18",
     "author": "dreeves",
-    "tags": [
-      "meetup",
-      "navel-gazing",
-      "PSA",
-      "quantified self"
-    ],
+    "tags": ["meetup", "navel-gazing", "PSA", "quantified self"],
     "status": "publish",
     "disqus_id": "930 https://blog.beeminder.com/?p=930",
     "excerpt": ""
@@ -3304,14 +3127,7 @@
     "slug": "reminders",
     "date": "2015-10-01",
     "author": "bsoule",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "dog food",
-      "FAQ",
-      "meta",
-      "new features"
-    ],
+    "tags": ["akrasia", "bee-all", "dog food", "FAQ", "meta", "new features"],
     "status": "publish",
     "disqus_id": "976 https://blog.beeminder.com/?p=976",
     "excerpt": ""
@@ -3425,12 +3241,7 @@
     "slug": "cybermonday",
     "date": "2015-12-01",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "money",
-      "navel-gazing",
-      "snark"
-    ],
+    "tags": ["bee-all", "money", "navel-gazing", "snark"],
     "status": "publish",
     "disqus_id": "1040 https://blog.beeminder.com/?p=1040",
     "excerpt": ""
@@ -3463,13 +3274,7 @@
     "slug": "buzz7",
     "date": "2015-12-22",
     "author": "bsoule",
-    "tags": [
-      "buzz",
-      "meta",
-      "navel-gazing",
-      "press",
-      "rationality"
-    ],
+    "tags": ["buzz", "meta", "navel-gazing", "press", "rationality"],
     "status": "publish",
     "disqus_id": "1049 https://blog.beeminder.com/?p=1049",
     "excerpt": ""
@@ -3562,13 +3367,7 @@
     "slug": "mongoid",
     "date": "2016-02-25",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "bugs",
-      "dog food",
-      "navel-gazing",
-      "nerdery"
-    ],
+    "tags": ["bee-all", "bugs", "dog food", "navel-gazing", "nerdery"],
     "status": "publish",
     "disqus_id": "1078 https://blog.beeminder.com/?p=1078",
     "excerpt": ""
@@ -3686,14 +3485,7 @@
     "slug": "creditcard",
     "date": "2016-05-09",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "best-of",
-      "FAQ",
-      "money",
-      "navel-gazing",
-      "newbees"
-    ],
+    "tags": ["bee-all", "best-of", "FAQ", "money", "navel-gazing", "newbees"],
     "status": "publish",
     "disqus_id": "1112 https://blog.beeminder.com/?p=1112",
     "excerpt": ""
@@ -3724,13 +3516,7 @@
     "slug": "weekends",
     "date": "2016-05-28",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "FAQ",
-      "new features",
-      "scheduling",
-      "time"
-    ],
+    "tags": ["bee-all", "FAQ", "new features", "scheduling", "time"],
     "status": "publish",
     "disqus_id": "1121 https://blog.beeminder.com/?p=1121",
     "excerpt": ""
@@ -3824,13 +3610,7 @@
     "slug": "infinibee",
     "date": "2016-08-09",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "meta",
-      "navel-gazing",
-      "new features",
-      "premium"
-    ],
+    "tags": ["bee-all", "meta", "navel-gazing", "new features", "premium"],
     "status": "publish",
     "disqus_id": "1164 https://blog.beeminder.com/?p=1164",
     "excerpt": ""
@@ -3867,13 +3647,7 @@
     "slug": "derail",
     "date": "2016-09-10",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "best-of",
-      "FAQ",
-      "newbees",
-      "yellow brick road"
-    ],
+    "tags": ["bee-all", "best-of", "FAQ", "newbees", "yellow brick road"],
     "status": "publish",
     "disqus_id": "1179 https://blog.beeminder.com/?p=1179",
     "excerpt": ""
@@ -3922,13 +3696,7 @@
     "slug": "urlminder",
     "date": "2016-11-02",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "FAQ",
-      "integrations",
-      "new features",
-      "PSA"
-    ],
+    "tags": ["bee-all", "FAQ", "integrations", "new features", "PSA"],
     "status": "publish",
     "disqus_id": "1193 https://blog.beeminder.com/?p=1193",
     "excerpt": ""
@@ -3940,13 +3708,7 @@
     "slug": "josh",
     "date": "2016-11-09",
     "author": "Josh Pitzalis",
-    "tags": [
-      "bee-all",
-      "design",
-      "guest posts",
-      "meta",
-      "navel-gazing"
-    ],
+    "tags": ["bee-all", "design", "guest posts", "meta", "navel-gazing"],
     "status": "publish",
     "disqus_id": "1197 https://blog.beeminder.com/?p=1197",
     "excerpt": ""
@@ -4039,12 +3801,7 @@
     "slug": "buzz10",
     "date": "2017-01-25",
     "author": "Lillian Karabaic",
-    "tags": [
-      "bee-all",
-      "buzz",
-      "case studies",
-      "navel-gazing"
-    ],
+    "tags": ["bee-all", "buzz", "case studies", "navel-gazing"],
     "status": "publish",
     "disqus_id": "1290 https://blog.beeminder.com/?p=1290",
     "excerpt": ""
@@ -4056,12 +3813,7 @@
     "slug": "support",
     "date": "2017-02-10",
     "author": "Chelsea Miller",
-    "tags": [
-      "bee-all",
-      "FAQ",
-      "newbees",
-      "tips"
-    ],
+    "tags": ["bee-all", "FAQ", "newbees", "tips"],
     "status": "publish",
     "disqus_id": "1294 https://blog.beeminder.com/?p=1294",
     "excerpt": ""
@@ -4093,13 +3845,7 @@
     "slug": "language",
     "date": "2017-03-16",
     "author": "Alex Strick van Linschoten",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "case studies",
-      "guest posts",
-      "language"
-    ],
+    "tags": ["akrasia", "bee-all", "case studies", "guest posts", "language"],
     "status": "publish",
     "disqus_id": "1336 https://blog.beeminder.com/?p=1336",
     "excerpt": ""
@@ -4131,13 +3877,7 @@
     "slug": "autofetch",
     "date": "2017-04-20",
     "author": "bsoule",
-    "tags": [
-      "bee-all",
-      "integrations",
-      "nerdery",
-      "new features",
-      "startups"
-    ],
+    "tags": ["bee-all", "integrations", "nerdery", "new features", "startups"],
     "status": "publish",
     "disqus_id": "1358 https://blog.beeminder.com/?p=1358",
     "excerpt": ""
@@ -4168,13 +3908,7 @@
     "slug": "apple",
     "date": "2017-05-23",
     "author": "Andy Brett",
-    "tags": [
-      "bee-all",
-      "fitness",
-      "integrations",
-      "productivity porn",
-      "PSA"
-    ],
+    "tags": ["bee-all", "fitness", "integrations", "productivity porn", "PSA"],
     "status": "publish",
     "disqus_id": "1367 https://blog.beeminder.com/?p=1367",
     "excerpt": ""
@@ -4186,12 +3920,7 @@
     "slug": "amsterdam",
     "date": "2017-06-10",
     "author": "bsoule",
-    "tags": [
-      "meetup",
-      "navel-gazing",
-      "PSA",
-      "quantified self"
-    ],
+    "tags": ["meetup", "navel-gazing", "PSA", "quantified self"],
     "status": "publish",
     "disqus_id": "1374 https://blog.beeminder.com/?p=1374",
     "excerpt": ""
@@ -4203,11 +3932,7 @@
     "slug": "paypal",
     "date": "2017-07-06",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "FAQ",
-      "new features"
-    ],
+    "tags": ["bee-all", "FAQ", "new features"],
     "status": "publish",
     "disqus_id": "1378 https://blog.beeminder.com/?p=1378",
     "excerpt": ""
@@ -4263,13 +3988,7 @@
     "slug": "buzz11",
     "date": "2017-08-25",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "buzz",
-      "case studies",
-      "navel-gazing"
-    ],
+    "tags": ["akrasia", "bee-all", "buzz", "case studies", "navel-gazing"],
     "status": "publish",
     "disqus_id": "1389 https://blog.beeminder.com/?p=1389",
     "excerpt": ""
@@ -4383,12 +4102,7 @@
     "slug": "kara",
     "date": "2017-12-08",
     "author": "Kara Timmins",
-    "tags": [
-      "bee-all",
-      "case studies",
-      "guest posts",
-      "writing"
-    ],
+    "tags": ["bee-all", "case studies", "guest posts", "writing"],
     "status": "publish",
     "disqus_id": "1421 https://blog.beeminder.com/?p=1421",
     "excerpt": ""
@@ -4600,12 +4314,7 @@
     "slug": "wsj2",
     "date": "2018-06-14",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "buzz",
-      "case studies",
-      "navel-gazing"
-    ],
+    "tags": ["bee-all", "buzz", "case studies", "navel-gazing"],
     "status": "publish",
     "disqus_id": "1475 https://blog.beeminder.com/?p=1475",
     "excerpt": ""
@@ -4658,12 +4367,7 @@
     "slug": "scholar",
     "date": "2018-08-04",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "meta",
-      "money",
-      "quantified self"
-    ],
+    "tags": ["bee-all", "meta", "money", "quantified self"],
     "status": "publish",
     "disqus_id": "1486 https://blog.beeminder.com/?p=1486",
     "excerpt": ""
@@ -4714,13 +4418,7 @@
     "slug": "swifts",
     "date": "2018-09-21",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "meetup",
-      "portland",
-      "PSA",
-      "quantified self"
-    ],
+    "tags": ["bee-all", "meetup", "portland", "PSA", "quantified self"],
     "status": "publish",
     "disqus_id": "1500 https://blog.beeminder.com/?p=1500",
     "excerpt": ""
@@ -4752,12 +4450,7 @@
     "slug": "shanaqui",
     "date": "2018-10-30",
     "author": "shanaqui",
-    "tags": [
-      "bee-all",
-      "best-of",
-      "case studies",
-      "nerdery"
-    ],
+    "tags": ["bee-all", "best-of", "case studies", "nerdery"],
     "status": "publish",
     "disqus_id": "1511 https://blog.beeminder.com/?p=1511",
     "excerpt": ""
@@ -4847,12 +4540,7 @@
     "slug": "buzz13",
     "date": "2019-01-31",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "buzz",
-      "case studies",
-      "navel-gazing"
-    ],
+    "tags": ["bee-all", "buzz", "case studies", "navel-gazing"],
     "status": "publish",
     "disqus_id": "1539 https://blog.beeminder.com/?p=1539",
     "excerpt": ""
@@ -4987,12 +4675,7 @@
     "slug": "pareto",
     "date": "2019-06-21",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "economics",
-      "nerdery",
-      "rationality"
-    ],
+    "tags": ["bee-all", "economics", "nerdery", "rationality"],
     "status": "publish",
     "disqus_id": "1583 https://blog.beeminder.com/?p=1583",
     "excerpt": ""
@@ -5024,13 +4707,7 @@
     "slug": "paretocaps",
     "date": "2019-08-09",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "design",
-      "navel-gazing",
-      "nerdery",
-      "startups"
-    ],
+    "tags": ["bee-all", "design", "navel-gazing", "nerdery", "startups"],
     "status": "publish",
     "disqus_id": "1590 https://blog.beeminder.com/?p=1590",
     "excerpt": ""
@@ -5063,12 +4740,7 @@
     "slug": "motivationtypes",
     "date": "2019-09-11",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "navel-gazing",
-      "psychology",
-      "rationality"
-    ],
+    "tags": ["bee-all", "navel-gazing", "psychology", "rationality"],
     "status": "publish",
     "disqus_id": "1601 https://blog.beeminder.com/?p=1601",
     "excerpt": ""
@@ -5185,11 +4857,7 @@
     "slug": "integers",
     "date": "2019-11-27",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "FAQ",
-      "new features"
-    ],
+    "tags": ["bee-all", "FAQ", "new features"],
     "status": "publish",
     "disqus_id": "1621 https://blog.beeminder.com/?p=1621",
     "excerpt": ""
@@ -5201,12 +4869,7 @@
     "slug": "gmailzerolabels",
     "date": "2019-12-18",
     "author": "Adam Wolf",
-    "tags": [
-      "bee-all",
-      "email",
-      "integrations",
-      "new features"
-    ],
+    "tags": ["bee-all", "email", "integrations", "new features"],
     "status": "publish",
     "disqus_id": "1630 https://blog.beeminder.com/?p=1630",
     "excerpt": ""
@@ -5218,12 +4881,7 @@
     "slug": "buzz2019",
     "date": "2020-01-08",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "buzz",
-      "case studies",
-      "navel-gazing"
-    ],
+    "tags": ["bee-all", "buzz", "case studies", "navel-gazing"],
     "status": "publish",
     "disqus_id": "1637 https://blog.beeminder.com/?p=1637",
     "excerpt": ""
@@ -5396,13 +5054,7 @@
     "slug": "lanes",
     "date": "2020-05-01",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "new features",
-      "PSA",
-      "yellow brick road"
-    ],
+    "tags": ["akrasia", "bee-all", "new features", "PSA", "yellow brick road"],
     "status": "publish",
     "disqus_id": "1668 https://blog.beeminder.com/?p=1668",
     "excerpt": ""
@@ -5582,13 +5234,7 @@
     "slug": "docdriven",
     "date": "2020-08-24",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "meta",
-      "navel-gazing",
-      "rationality",
-      "startups"
-    ],
+    "tags": ["bee-all", "meta", "navel-gazing", "rationality", "startups"],
     "status": "publish",
     "disqus_id": "1725 https://blog.beeminder.com/?p=1725",
     "excerpt": ""
@@ -5639,13 +5285,7 @@
     "slug": "marshmallow",
     "date": "2020-10-03",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "psychology",
-      "rationality",
-      "science"
-    ],
+    "tags": ["akrasia", "bee-all", "psychology", "rationality", "science"],
     "status": "publish",
     "disqus_id": "1743 https://blog.beeminder.com/?p=1743",
     "excerpt": ""
@@ -5679,12 +5319,7 @@
     "slug": "bookcase",
     "date": "2020-10-27",
     "author": "shanaqui",
-    "tags": [
-      "bee-all",
-      "case studies",
-      "rationality",
-      "tips"
-    ],
+    "tags": ["bee-all", "case studies", "rationality", "tips"],
     "status": "publish",
     "disqus_id": "1776 https://blog.beeminder.com/?p=1776",
     "excerpt": ""
@@ -5988,13 +5623,7 @@
     "slug": "codecombat",
     "date": "2021-07-26",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "integrations",
-      "PSA",
-      "rationality",
-      "startups"
-    ],
+    "tags": ["bee-all", "integrations", "PSA", "rationality", "startups"],
     "status": "publish",
     "disqus_id": "1837 https://blog.beeminder.com/?p=1837",
     "excerpt": ""
@@ -6006,14 +5635,7 @@
     "slug": "goalnames",
     "date": "2021-05-04",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "meta",
-      "navel-gazing",
-      "PSA",
-      "tips"
-    ],
+    "tags": ["akrasia", "bee-all", "meta", "navel-gazing", "PSA", "tips"],
     "status": "publish",
     "disqus_id": "1839 https://blog.beeminder.com/?p=1839",
     "excerpt": ""
@@ -6063,13 +5685,7 @@
     "slug": "pocket",
     "date": "2021-07-05",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "integrations",
-      "PSA",
-      "rationality",
-      "startups"
-    ],
+    "tags": ["bee-all", "integrations", "PSA", "rationality", "startups"],
     "status": "publish",
     "disqus_id": "1851 https://blog.beeminder.com/?p=1851",
     "excerpt": ""
@@ -6140,14 +5756,7 @@
     "slug": "nicky",
     "date": "2021-09-08",
     "author": "shanaqui",
-    "tags": [
-      "bee-all",
-      "dog food",
-      "meta",
-      "navel-gazing",
-      "startups",
-      "tips"
-    ],
+    "tags": ["bee-all", "dog food", "meta", "navel-gazing", "startups", "tips"],
     "status": "publish",
     "disqus_id": "1884 https://blog.beeminder.com/?p=1884",
     "excerpt": ""
@@ -6230,14 +5839,7 @@
     "slug": "calendial",
     "date": "2021-12-02",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "best-of",
-      "meta",
-      "PSA",
-      "rationality",
-      "tips"
-    ],
+    "tags": ["bee-all", "best-of", "meta", "PSA", "rationality", "tips"],
     "status": "publish",
     "disqus_id": "1913 https://blog.beeminder.com/?p=1913",
     "excerpt": ""
@@ -6415,13 +6017,7 @@
     "slug": "freecodecamp",
     "date": "2022-04-28",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "integrations",
-      "PSA",
-      "rationality"
-    ],
+    "tags": ["akrasia", "bee-all", "integrations", "PSA", "rationality"],
     "status": "publish",
     "disqus_id": "1950 https://blog.beeminder.com/?p=1950",
     "excerpt": ""
@@ -6454,13 +6050,7 @@
     "slug": "bothsidesnow",
     "date": "2022-05-12",
     "author": "shanaqui",
-    "tags": [
-      "bee-all",
-      "case studies",
-      "dog food",
-      "meta",
-      "quantified self"
-    ],
+    "tags": ["bee-all", "case studies", "dog food", "meta", "quantified self"],
     "status": "publish",
     "disqus_id": "1978 https://blog.beeminder.com/?p=1978",
     "excerpt": ""
@@ -6472,14 +6062,7 @@
     "slug": "blockchain",
     "date": "2022-05-26",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "FAQ",
-      "money",
-      "rationality",
-      "startups"
-    ],
+    "tags": ["akrasia", "bee-all", "FAQ", "money", "rationality", "startups"],
     "status": "publish",
     "disqus_id": "1980 https://blog.beeminder.com/?p=1980",
     "excerpt": ""
@@ -6491,13 +6074,7 @@
     "slug": "toothbrush",
     "date": "2022-06-09",
     "author": "shanaqui",
-    "tags": [
-      "bee-all",
-      "case studies",
-      "psychology",
-      "self-binding",
-      "tips"
-    ],
+    "tags": ["bee-all", "case studies", "psychology", "self-binding", "tips"],
     "status": "publish",
     "disqus_id": "1986 https://blog.beeminder.com/?p=1986",
     "excerpt": ""
@@ -6530,9 +6107,7 @@
     "slug": "copenhagen",
     "date": "2022-07-07",
     "author": "bsoule",
-    "tags": [
-      "PSA"
-    ],
+    "tags": ["PSA"],
     "status": "publish",
     "disqus_id": "1999 https://blog.beeminder.com/?p=1999",
     "excerpt": ""
@@ -6659,12 +6234,7 @@
     "slug": "stress",
     "date": "2022-10-13",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "FAQ",
-      "rationality"
-    ],
+    "tags": ["akrasia", "bee-all", "FAQ", "rationality"],
     "status": "publish",
     "disqus_id": "2036 https://blog.beeminder.com/?p=2036",
     "excerpt": ""
@@ -6676,13 +6246,7 @@
     "slug": "fail",
     "date": "2022-10-27",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "navel-gazing",
-      "rationality",
-      "tips"
-    ],
+    "tags": ["akrasia", "bee-all", "navel-gazing", "rationality", "tips"],
     "status": "publish",
     "disqus_id": "2043 https://blog.beeminder.com/?p=2043",
     "excerpt": ""
@@ -6887,12 +6451,7 @@
     "slug": "stingily",
     "date": "2023-04-13",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "FAQ",
-      "new features"
-    ],
+    "tags": ["akrasia", "bee-all", "FAQ", "new features"],
     "status": "publish",
     "disqus_id": "2129 https://blog.beeminder.com/?p=2129",
     "excerpt": ""
@@ -6965,13 +6524,7 @@
     "slug": "reactions",
     "date": "2023-06-08",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "FAQ",
-      "navel-gazing",
-      "rationality"
-    ],
+    "tags": ["akrasia", "bee-all", "FAQ", "navel-gazing", "rationality"],
     "status": "publish",
     "disqus_id": "2154 https://blog.beeminder.com/?p=2154",
     "excerpt": "Did you just hear about Beeminder (“get charged money if you go off track on your goals, what?”) and have one of the Four Canonical Dismissive Reactions, prompting the person you heard about Beeminder from to point you to this post? Great! Pick your reaction and let’s dive in. 1. “That’s (evil) genius, I would"
@@ -7003,13 +6556,7 @@
     "slug": "ontologies",
     "date": "2023-07-27",
     "author": "dreeves",
-    "tags": [
-      "bee-all",
-      "navel-gazing",
-      "nerdery",
-      "rationality",
-      "tips"
-    ],
+    "tags": ["bee-all", "navel-gazing", "nerdery", "rationality", "tips"],
     "status": "publish",
     "disqus_id": "2161 https://blog.beeminder.com/?p=2161",
     "excerpt": "There are a lot of things in the category of “nerd tendencies I’ve had to unlearn”. I often turn them into capital-P Principles as a way to drill them into my head. Eventually I intend to collect them all into a meta post but here are a few random examples in the meantime: the Anti-Magic Principle, the Anti-Settings Principle, the Shirk-n-Turk Principle, and the Anti-Robustness"
@@ -7021,13 +6568,7 @@
     "slug": "athletes",
     "date": "2023-08-10",
     "author": "dreeves",
-    "tags": [
-      "akrasia",
-      "bee-all",
-      "FAQ",
-      "rationality",
-      "tips"
-    ],
+    "tags": ["akrasia", "bee-all", "FAQ", "rationality", "tips"],
     "status": "publish",
     "disqus_id": "2163 https://blog.beeminder.com/?p=2163",
     "excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes"
