@@ -7,7 +7,6 @@ import extractImage from "../lib/extractImage";
 import matter from "gray-matter";
 
 import { frontmatter } from "./frontmatter";
-import { legacyPost } from "./legacyPost";
 import { body } from "./body";
 import { dateString } from "./dateString";
 import striptags from "striptags";
@@ -30,7 +29,6 @@ export const post = z
     const { data, content } = matter(md);
     const meta = {
       ...rest,
-      ...legacyPost.parse(url),
       ...frontmatter.parse(data),
     };
     const c = body.safeParse(content);
