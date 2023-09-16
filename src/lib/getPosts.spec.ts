@@ -29,7 +29,7 @@ describe("getPosts", () => {
   it("fetches post content", async () => {
     await getPosts();
 
-    expect(fetchPost).toBeCalledWith("https://padm.us/psychpricing/export/txt");
+    expect(fetchPost).toBeCalledWith("https://padm.us/psychpricing");
   });
 
   it("sorts post by date descending", async () => {
