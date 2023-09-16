@@ -4,8 +4,6 @@ import getDom from "./getDom";
 export default function extractImage(html: string): Image | undefined {
   const { document } = getDom(html);
 
-  document.body.innerHTML = html;
-
   const img = document.querySelector("img") as unknown as HTMLImageElement;
 
   return img
