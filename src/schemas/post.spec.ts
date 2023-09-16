@@ -37,7 +37,7 @@ describe("post", () => {
     });
 
     const p = post.parse({
-      url: "the_url",
+      source: "the_url",
       md,
     });
 
@@ -59,7 +59,7 @@ describe("post", () => {
     });
 
     const p = post.parse({
-      url: "the_url",
+      source: "the_url",
       md,
     });
 
@@ -80,7 +80,7 @@ describe("post", () => {
     });
 
     const p = post.parse({
-      url: "the_url",
+      source: "the_url",
       md,
     });
 
@@ -102,7 +102,7 @@ describe("post", () => {
     });
 
     const p = post.parse({
-      url: "the_url",
+      source: "the_url",
       md,
     });
 
