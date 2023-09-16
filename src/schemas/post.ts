@@ -10,15 +10,26 @@ import { frontmatter } from "./frontmatter";
 import { legacyPost } from "./legacyPost";
 import { body } from "./body";
 import { dateString } from "./dateString";
+import striptags from "striptags";
 
 export const post = z
   .object({
-    url: z.string(),
+    source: z.string(),
+    id: z.string().optional(),
+    title: z.string().optional(),
+    slug: z.string().optional(),
+    date: z.string().optional(),
+    author: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+    status: z.string().optional(),
+    disqus_id: z.string().optional(),
+    excerpt: z.string().optional(),
     md: z.string(),
   })
-  .transform(({ url, md }) => {
+  .transform(({ source: url, md, ...rest }) => {
     const { data, content } = matter(md);
     const meta = {
+      ...rest,
       ...legacyPost.parse(url),
       ...frontmatter.parse(data),
     };
@@ -31,12 +42,16 @@ export const post = z
       );
     }
 
+    const date = meta.date && new Date(meta.date);
+
     return {
       ...meta,
-      excerpt: meta.excerpt || getExcerpt(c.data),
+      tags: meta.tags?.filter(Boolean) || [],
+      excerpt: meta.excerpt ? striptags(meta.excerpt) : getExcerpt(c.data),
       image: extractImage(c.data),
       title: meta.title || parseTitle(md),
-      date_string: dateString.parse(meta.date),
+      date,
+      date_string: dateString.parse(date),
       content: c.data,
     };
   })

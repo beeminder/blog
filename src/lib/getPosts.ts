@@ -16,7 +16,7 @@ const makePosts = memoize((): Promise<Post>[] =>
       const result = post.safeParse(d);
       if (result.success) return result.data;
       throw new Error(
-        `Failed to parse post ${d.url}: ${result.error.message}`,
+        `Failed to parse post ${d.source}: ${result.error.message}`,
         result.error,
       );
     }),
