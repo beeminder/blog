@@ -79,6 +79,9 @@ devDependencies:
   '@typescript-eslint/parser':
     specifier: ^6.7.0
     version: 6.7.0(eslint@8.49.0)(typescript@5.2.2)
+  csv-parse:
+    specifier: ^5.5.0
+    version: 5.5.0
   eslint:
     specifier: ^8.49.0
     version: 8.49.0
@@ -1779,6 +1782,10 @@ packages:
 
   /css.escape@1.5.1:
     resolution: {integrity: sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg==}
+
+  /csv-parse@5.5.0:
+    resolution: {integrity: sha512-RxruSK3M4XgzcD7Trm2wEN+SJ26ChIb903+IWxNOcB5q4jT2Cs+hFr6QP39J05EohshRFEvyzEBoZ/466S2sbw==}
+    dev: true
 
   /d3-dsv@2.0.0:
     resolution: {integrity: sha512-E+Pn8UJYx9mViuIUkoc93gJGGYut6mSDKy2+XaPwccwkRGlR+LO97L2VCCRjQivTwLHkSnAJG7yo00BWY6QM+w==}
