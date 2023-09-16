@@ -1,22 +1,20 @@
 import getPosts from "./getPosts";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import fetchPost from "./fetchPost";
-import loadLegacyData from "./test/loadLegacyData";
 import readSources from "./readSources";
 import padm from "./test/padm";
 
 describe("getPosts", () => {
   beforeEach(() => {
-    vi.mocked(readSources).mockReturnValue(["https://padm.us/psychpricing"]);
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        expost_source_url: "https://padm.us/psychpricing",
-        ID: "14",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "publish",
-        Excerpt: undefined,
-        dsq_thread_id: "14",
+        source: "https://padm.us/psychpricing",
+        id: "14",
+        slug: "psychpricing",
+        date: "2021-09-01",
+        status: "publish",
+        disqus_id: "14 https://blog.beeminder.com/?p=14",
+        author: "the_author",
       },
     ]);
   });
@@ -36,24 +34,23 @@ describe("getPosts", () => {
 
   it("sorts post by date descending", async () => {
     vi.mocked(readSources).mockReturnValue([
-      "https://dtherpad.com/old",
-      "https://dtherpad.com/new",
-    ]);
-
-    loadLegacyData([
       {
-        ID: "1",
-        expost_source_url: "https://dtherpad.com/old",
-        Slug: "old",
-        Date: "2020-01-01",
-        Status: "publish",
+        source: "https://dtherpad.com/old",
+        id: "1",
+        slug: "old",
+        date: "2020-01-01",
+        status: "publish",
+        author: "the_author",
+        disqus_id: "1 https://blog.beeminder.com/?p=1",
       },
       {
-        ID: "2",
-        expost_source_url: "https://dtherpad.com/new",
-        Slug: "new",
-        Date: "2020-01-02",
-        Status: "publish",
+        source: "https://dtherpad.com/new",
+        id: "2",
+        slug: "new",
+        date: "2020-01-02",
+        status: "publish",
+        author: "the_author",
+        disqus_id: "2 https://blog.beeminder.com/?p=2",
       },
     ]);
 
@@ -75,12 +72,15 @@ describe("getPosts", () => {
   });
 
   it("excludes unpublished posts by default", async () => {
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        expost_source_url: "https://padm.us/psychpricing",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "draft",
+        source: "https://padm.us/psychpricing",
+        id: "14",
+        slug: "psychpricing",
+        date: "2021-09-01",
+        status: "draft",
+        disqus_id: "14 https://blog.beeminder.com/?p=14",
+        author: "the_author",
       },
     ]);
 
@@ -90,12 +90,15 @@ describe("getPosts", () => {
   });
 
   it("includes unpublished posts when requested", async () => {
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        expost_source_url: "https://padm.us/psychpricing",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "draft",
+        source: "https://padm.us/psychpricing",
+        id: "14",
+        slug: "psychpricing",
+        date: "2021-09-01",
+        status: "draft",
+        disqus_id: "14 https://blog.beeminder.com/?p=14",
+        author: "the_author",
       },
     ]);
 
@@ -251,14 +254,16 @@ describe("getPosts", () => {
   });
 
   it("uses wp title over magic title", async () => {
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        expost_source_url: "https://padm.us/psychpricing",
-        ID: "14",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "publish",
-        Title: "wp_title",
+        source: "https://padm.us/psychpricing",
+        id: "14",
+        slug: "psychpricing",
+        date: "2021-09-01",
+        status: "publish",
+        disqus_id: "14 https://blog.beeminder.com/?p=14",
+        title: "wp_title",
+        author: "the_author",
       },
     ]);
 
@@ -275,14 +280,16 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter title over wp title", async () => {
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        expost_source_url: "https://padm.us/psychpricing",
-        ID: "14",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "publish",
-        Title: "wp_title",
+        source: "https://padm.us/psychpricing",
+        id: "14",
+        slug: "psychpricing",
+        date: "2021-09-01",
+        status: "publish",
+        disqus_id: "14 https://blog.beeminder.com/?p=14",
+        title: "wp_title",
+        author: "the_author",
       },
     ]);
 
@@ -448,15 +455,15 @@ https://blog.beeminder.com/depunish
   });
 
   it("uses wordpress excerpt", async () => {
-    vi.mocked(readSources).mockReturnValue(["dtherpad.com/psychpricing"]);
-
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        expost_source_url: "dtherpad.com/psychpricing",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "publish",
-        Excerpt: "wp excerpt",
+        source: "dtherpad.com/psychpricing",
+        slug: "psychpricing",
+        date: "2021-09-01",
+        status: "publish",
+        excerpt: "wp excerpt",
+        author: "the_author",
+        disqus_id: "the_disqus_id",
       },
     ]);
 
@@ -468,15 +475,15 @@ https://blog.beeminder.com/depunish
   });
 
   it("strips html from wp excerpts", async () => {
-    vi.mocked(readSources).mockReturnValue(["dtherpad.com/psychpricing"]);
-
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        expost_source_url: "dtherpad.com/psychpricing",
-        Slug: "psychpricing",
-        Date: "2021-09-01",
-        Status: "publish",
-        Excerpt: "<strong>wp excerpt</strong>",
+        source: "dtherpad.com/psychpricing",
+        slug: "psychpricing",
+        date: "2021-09-01",
+        status: "publish",
+        excerpt: "<strong>wp excerpt</strong>",
+        author: "the_author",
+        disqus_id: "the_disqus_id",
       },
     ]);
 
@@ -488,7 +495,10 @@ https://blog.beeminder.com/depunish
   });
 
   it("throws on duplicate slugs", async () => {
-    vi.mocked(readSources).mockReturnValue(["padm.us/a", "padm.us/b"]);
+    vi.mocked(readSources).mockReturnValue([
+      { source: "padm.us/a" },
+      { source: "padm.us/b" },
+    ]);
 
     vi.mocked(fetchPost).mockResolvedValue(`---
 slug: the_slug
@@ -506,7 +516,10 @@ END_MAGIC
   });
 
   it("throws on duplicate disqus IDs", async () => {
-    vi.mocked(readSources).mockReturnValue(["padm.us/a", "padm.us/b"]);
+    vi.mocked(readSources).mockReturnValue([
+      { source: "padm.us/a" },
+      { source: "padm.us/b" },
+    ]);
 
     vi.mocked(fetchPost).mockResolvedValueOnce(`---
 slug: the_slug_a
