@@ -1,5 +1,6 @@
 ---
 import type { Post } from "../schemas/post";
+import Img from "./Img.astro";
 import PostMeta from "./PostMeta.astro";
 import Shadowbox from "./Shadowbox.astro";
 import Typography from "./Typography.astro";
@@ -20,8 +21,10 @@ const { posts } = Astro.props;
             <Typography small sans>
                 {p.image && (
                   <a class="thumbnail" href={`/${p.slug}`}>
-                    <img
-                      {...p.image}
+                    <Img
+                      src={p.image.src}
+                      alt={p.image.alt}
+                      title={p.image.title}
                       width="200"
                       height="200"
                     />

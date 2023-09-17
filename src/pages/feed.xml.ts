@@ -21,6 +21,9 @@ export async function GET(context: APIContext) {
       pubDate: p.date,
       description: p.excerpt,
       content: p.content,
+      categories: p.tags,
+      author: p.author,
+      commentsUrl: `${context.site}${p.slug}#disqus_thread`,
     })),
   });
 }
