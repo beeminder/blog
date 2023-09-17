@@ -43,8 +43,7 @@ function getMonthLabel(m: number): string {
 
 async function makeArchives(): Promise<Archives> {
   const posts = await getPosts();
-
-  return posts.reduce<Archives>((acc, post) => {
+  const years = posts.reduce<Archives>((acc, post) => {
     const yyyy = post.date.getFullYear();
     const mm = post.date.getMonth();
     const monthLabel = getMonthLabel(mm);
@@ -85,6 +84,8 @@ async function makeArchives(): Promise<Archives> {
 
     return acc;
   }, []);
+
+  return years.filter((y) => y !== undefined);
 }
 
 const getArchives = memoize(makeArchives);

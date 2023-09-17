@@ -5,3 +5,13 @@ services:
     buildCommand: pnpm run build
     staticPublishPath: ./dist
     pullRequestPreviewsEnabled: true
+    routes:
+      - type: redirect
+        source: /feed
+        destination: /feed.xml
+      - type: redirect
+        source: /rss
+        destination: /feed.xml
+      - type: redirect
+        source: /rss.xml
+        destination: /feed.xml

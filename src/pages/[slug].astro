@@ -14,15 +14,17 @@ export async function getStaticPaths() {
     includeUnpublished: true,
     sort: true
   });
-  
+
+  const published = (p: Post) => p.status === "publish"
+
   return posts.map((post: Post, i: number) => ({
     params: {
       slug: post.slug,
     },
     props: {
       post,
-      newer: posts[i - 1],
-      older: posts[i + 1],
+      newer: posts.slice(0, i).reverse().find(published),
+      older: posts.slice(i + 1).find(published),
     },
   }));
 }
