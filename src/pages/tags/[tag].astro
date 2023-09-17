@@ -23,6 +23,6 @@ const title = `Tag: ${name}`;
 ---
 
 <Layout title={title}>
-  <TitleLockup Heading="h1" title={title}>{count} posts</TitleLockup>
+  <TitleLockup slot="before-content" Heading="h1" title={title}>{count} posts</TitleLockup>
   <Posts posts={posts} />
 </Layout>
