@@ -2,7 +2,7 @@ import rss from "@astrojs/rss";
 import type { APIContext } from "astro";
 import getPosts from "../lib/getPosts";
 
-export async function get(context: APIContext) {
+export async function GET(context: APIContext) {
   if (!context.site) {
     throw new Error("Missing site metadata");
   }
