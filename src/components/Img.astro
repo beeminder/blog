@@ -1,0 +1,13 @@
+---
+import { Image, type LocalImageProps, type RemoteImageProps } from 'astro:assets';
+
+type Props = LocalImageProps | RemoteImageProps;
+
+const { src, ...props } = Astro.props;
+
+// WORKAROUND: Rewrite absolute paths to relative paths when
+// possible to reduce network requests during builds.
+const _src = typeof src === 'string' ? src.replace(/^https:\/\/blog\.beeminder\.com/, "") : src;
+---
+
+<Image src={_src} {...props as any} />
