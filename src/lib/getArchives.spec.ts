@@ -1,18 +1,17 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getArchives from "./getArchives";
-import loadLegacyData from "./test/loadLegacyData";
 import readSources from "./readSources";
 
 describe("getArchives", () => {
   beforeEach(() => {
-    vi.mocked(readSources).mockReturnValue(["https://padm.us/psychpricing"]);
-
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        Date: "2011-01-24",
-        Slug: "psychpricing",
-        expost_source_url: "https://padm.us/psychpricing",
-        Status: "publish",
+        source: "https://padm.us/psychpricing",
+        date: "2011-01-24",
+        slug: "psychpricing",
+        status: "publish",
+        author: "author",
+        disqus_id: "abc",
       },
     ]);
   });
@@ -20,44 +19,43 @@ describe("getArchives", () => {
   it("gets archives", async () => {
     const result = await getArchives();
 
-    expect(result[2011]).toBeDefined();
+    expect(result[0]).toBeDefined();
   });
 
   it("batches by month", async () => {
     const result = await getArchives();
 
-    expect(result[2011]?.months[0]?.posts).toHaveLength(1);
+    expect(result[0]?.months[0]?.posts).toHaveLength(1);
   });
 
   it("sets month label", async () => {
     const result = await getArchives();
 
-    expect(result[2011]?.months[0]?.label).toEqual("January");
+    expect(result[0]?.months[0]?.label).toEqual("January");
   });
 
   it("properly batches by year", async () => {
     vi.mocked(readSources).mockReturnValue([
-      "https://padm.us/psychpricing",
-      "https://padm.us/second",
-    ]);
-
-    loadLegacyData([
       {
-        Date: "2013-02-22",
-        Slug: "psychpricing",
-        expost_source_url: "https://padm.us/psychpricing",
-        Status: "publish",
+        source: "https://padm.us/psychpricing",
+        date: "2013-02-22",
+        slug: "psychpricing",
+        status: "publish",
+        author: "author",
+        disqus_id: "abc",
       },
       {
-        Date: "2015-02-22",
-        Slug: "psychpricing",
-        expost_source_url: "https://padm.us/second",
-        Status: "publish",
+        source: "https://padm.us/second",
+        date: "2015-02-22",
+        slug: "second",
+        status: "publish",
+        author: "author",
+        disqus_id: "def",
       },
     ]);
 
     const result = await getArchives();
 
-    expect(result[2013]?.months[1]?.posts).toHaveLength(1);
+    expect(result[0]?.months[1]?.posts).toHaveLength(1);
   });
 });

@@ -1,19 +1,18 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getTags from "./getTags";
-import loadLegacyData from "./test/loadLegacyData";
 import readSources from "./readSources";
 
 describe("getTags", () => {
   beforeEach(() => {
-    vi.mocked(readSources).mockReturnValue(["https://padm.us/psychpricing"]);
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        expost_source_url: "https://padm.us/psychpricing",
-        Slug: "psychpricing",
-        Tags: "the_tag",
-        Date: "2021-09-01",
-        Status: "publish",
-        dsq_thread_id: "abc",
+        source: "https://padm.us/psychpricing",
+        slug: "psychpricing",
+        tags: ["the_tag"],
+        date: "2021-09-01",
+        status: "publish",
+        disqus_id: "abc",
+        author: "author",
       },
     ]);
   });
@@ -43,13 +42,15 @@ describe("getTags", () => {
   });
 
   it("does not include blank tags", async () => {
-    loadLegacyData([
+    vi.mocked(readSources).mockReturnValue([
       {
-        expost_source_url: "https://padm.us/psychpricing",
-        Slug: "psychpricing",
-        Tags: "",
-        Date: "2021-09-01",
-        dsq_thread_id: "abc",
+        source: "https://padm.us/psychpricing",
+        slug: "psychpricing",
+        tags: [""],
+        date: "2021-09-01",
+        status: "publish",
+        disqus_id: "abc",
+        author: "author",
       },
     ]);
 

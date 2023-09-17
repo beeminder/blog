@@ -1,4 +1,4 @@
-import memize, { MemizeMemoizedFunction } from "memize";
+import memize, { type MemizeMemoizedFunction } from "memize";
 
 const fns: MemizeMemoizedFunction[] = [];
 

@@ -101,3 +101,12 @@ jobs:
         run: pnpm install
       - name: Check formatting
         run: pnpm prettier --check .
+  spellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Spelling checker
+        uses: crate-ci/typos@master
+        with:
+          files: "."
+          config: ./.typos.toml
+
