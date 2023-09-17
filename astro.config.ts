@@ -14,9 +14,6 @@ const redirects = posts.reduce<Record<string, string>>((acc, post) => {
 // https://astro.build/config
 export default defineConfig({
   site: "https://blog.beeminder.com",
-  experimental: {
-    assets: true,
-  },
   image: {
     service: sharpImageService(),
     domains: ["blog.beeminder.com", "user-images.githubusercontent.com"],
