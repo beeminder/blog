@@ -23,6 +23,7 @@ export const post = z
     status: z.string().optional(),
     disqus_id: z.string().optional(),
     excerpt: z.string().optional(),
+    redirects: z.array(z.string()).optional(),
     md: z.string(),
   })
   .transform(({ source: url, md, ...rest }) => {
@@ -61,6 +62,7 @@ export const post = z
       image: image.optional(),
       title: z.string(),
       tags: z.array(z.string()).default([]),
+      redirects: z.array(z.string()).default([]),
       date: z.date(),
       date_string: z.string(),
       author: z.string(),
