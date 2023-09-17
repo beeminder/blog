@@ -1,7 +1,6 @@
 ---
 import Sidebar from "../components/Sidebar.astro";
 import Header from "../components/Header.astro";
-import Pagination from "../components/Pagination.astro";
 
 import sourcesanspro700 from "@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff2";
 import sourcesanspro900 from "@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff2";
@@ -14,23 +13,25 @@ export interface Props {
   title: string;
   description?: string | undefined;
   image?: string | undefined;
-  previous?:
-    | {
-        title: string;
-        url: string;
-      }
-    | undefined;
-  next?:
-    | {
-        title: string;
-        url: string;
-      }
-    | undefined;
+  // before?: unknown;
+  // after?: unknown;
+  // previous?:
+  //   | {
+  //       title: string;
+  //       url: string;
+  //     }
+  //   | undefined;
+  // next?:
+  //   | {
+  //       title: string;
+  //       url: string;
+  //     }
+  //   | undefined;
 }
 
 const defaultImage = new URL('/wp-content/uploads/2022/04/small_logo_bee_256.png', Astro.site);
 const defaultDescription = 'Beeminder is goal-tracking with teeth. We plot your progress on a graph with a Bright Red Line (formerly Yellow Brick Road). If your datapoints cross that line, we take your money. The Beeminder blog is a hodgepodge of productivity nerdery and behavioral economics written by the founders and various friends.';
-const { title, description = defaultDescription, image = defaultImage, previous, next } = Astro.props;
+const { title, description = defaultDescription, image = defaultImage } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -87,18 +88,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
   <body>
     <Header />
 
-    <div class="nav"><Pagination previous={previous} next={next} /></div>
+    <div class="cap"><slot name="before-content" /></div>
     
     <div class="content">
       <div>
         <slot />
-        <div class="nav"><Pagination previous={previous} next={next} /></div>
+        <div class="cap"><slot name="after-content" /></div>
       </div>
       <div><Sidebar /></div>
     </div>
 
     <style>
-      .nav {
+      .cap {
         max-width: var(--content-width);
         margin: 0 auto;
         padding: var(--gap-1) var(--gap-2) 0 var(--gap-2);
@@ -119,7 +120,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         flex: 1 0 500px;
         max-width: calc(100% - var(--sidebar-width));
       }
-      .content .nav {
+      .content .cap {
         padding: 0 0 var(--gap-1) 0;
       }
       .content > *:last-child {
@@ -128,8 +129,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       }
 
       @media (max-width: 900px) {
-        .nav,
-        .content .nav {
+        .cap,
+        .content .cap {
           padding-left: var(--gap-1);
           padding-right: var(--gap-1);
         }
