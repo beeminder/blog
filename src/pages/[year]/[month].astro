@@ -30,6 +30,6 @@ const title = `${month} ${year}`;
 ---
 
 <Layout title={title}>
-  <TitleLockup Heading="h1" title={title}>{posts.length} posts</TitleLockup>
+  <TitleLockup slot="before-content" Heading="h1" title={title}>{posts.length} posts</TitleLockup>
   <Posts posts={posts} />
 </Layout>
