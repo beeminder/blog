@@ -3,7 +3,7 @@ import PostMeta from "../components/PostMeta.astro";
 import Posts from "../components/Posts.astro";
 import Shadowbox from "../components/Shadowbox.astro";
 import Typography from "../components/Typography.astro";
-import Layout from "../layouts/Layout.astro";
+import Paginated from "../layouts/Paginated.astro";
 import getPosts from "../lib/getPosts";
 
 const posts = await getPosts({
@@ -12,7 +12,7 @@ const posts = await getPosts({
 const featured = posts[0];
 ---
 
-<Layout
+<Paginated
   title="Beeminder blog"
   previous={{
     url: "/page/2",
@@ -40,7 +40,7 @@ const featured = posts[0];
     )
   }
   <Posts posts={posts.slice(1, 10)} />
-</Layout>
+</P>
 
 <style>
   .thumbnail {

@@ -24,15 +24,33 @@ const { months, post_count } = Astro.props as Props;
 ---
 
 <Layout title={year}>
-  <TitleLockup Heading="h1" title={year}>{post_count} posts</TitleLockup>
+  <Fragment slot="before-content">
+    <TitleLockup Heading="h1" title={year}>{post_count} posts</TitleLockup>
+    {months[0] ? <h2 class="first">
+      <a href={`/${year}/${months[0].label}`}>{months[0].label}</a>
+    </h2> : null}
+  </Fragment>
   {
-    months.map((m) => (
+    months.map((m, i) => (
       <>
-        <h2>
+        {i > 0 ? <h2>
           <a href={`/${year}/${m.label}`}>{m.label}</a>
-        </h2>
+        </h2> : null}
         <Posts posts={m.posts} />
       </>
     ))
   }
 </Layout>
+
+<style>
+  .first {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 900px) {
+    h2:not(.first) {
+      padding-left: var(--gap-1);
+      padding-right: var(--gap-1);
+    }
+  }
+</style>

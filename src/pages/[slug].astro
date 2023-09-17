@@ -1,6 +1,5 @@
 ---
 import type {  InferGetStaticPropsType } from "astro";
-import Layout from "../layouts/Layout.astro";
 import Tags from "../components/Tags.astro";
 import getPosts from "../lib/getPosts";
 import Shadowbox from "../components/Shadowbox.astro";
@@ -8,6 +7,7 @@ import PostMeta from "../components/PostMeta.astro";
 import Typography from "../components/Typography.astro";
 import Comments from "../components/Comments.astro";
 import type { Post } from "../schemas/post";
+import Paginated from "../layouts/Paginated.astro";
 
 export async function getStaticPaths() {
   const posts = await getPosts({
@@ -54,7 +54,7 @@ const title = isDraft ? `DRAFT: ${rawTitle}` : rawTitle;
 const { extracted, ...imageProps } = image || {};
 ---
 
-<Layout
+<Paginated
   title={title}
   description={excerpt}
   image={image?.src}
@@ -85,7 +85,7 @@ const { extracted, ...imageProps } = image || {};
   <Shadowbox padding={2}>
     <Comments id={disqus_id} url={`https://blog.beeminder.com/${slug}/`} />
   </Shadowbox>
-</Layout>
+</Paginated>
 
 <style>
   .draft {
