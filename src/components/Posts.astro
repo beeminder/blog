@@ -30,7 +30,7 @@ const { posts } = Astro.props;
                     />
                   </a>
                 )}
-                <PostMeta post={p} />
+                <div class="post-meta"><PostMeta post={p} /></div>
             </Typography>
           </Shadowbox>
         </li>
@@ -51,6 +51,15 @@ const { posts } = Astro.props;
     display: block;
   }
 
+  img {
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    object-position: left;
+    margin-bottom: 0;
+    display: block;
+  }
+
   .post-meta {
     overflow: hidden;
   }
@@ -64,11 +73,7 @@ const { posts } = Astro.props;
 
     img {
       width: 130px;
-      height: auto;
-      max-height: 200px;
-      object-fit: contain;
-      margin-bottom: 0;
-      display: block;
+      object-position: center;
     }
   }
 </style>

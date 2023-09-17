@@ -7,11 +7,6 @@ import { marked } from "marked";
 import { markedSmartypants } from "marked-smartypants";
 import applyIdsToElements from "../lib/applyIdsToElements";
 
-const MARKED_OPTIONS = {
-  mangle: false,
-  headerIds: false,
-} as const;
-
 marked.use(
   markedSmartypants({
     config: "1",
@@ -28,10 +23,16 @@ marked.use({
 
 export const body = z
   .string()
+  .refine((content) => content.includes("BEGIN_MAGIC"), {
+    message: "No BEGIN_MAGIC found",
+  })
+  .refine((content) => content.includes("END_MAGIC"), {
+    message: "No END_MAGIC found",
+  })
   .transform(addBlankLines)
   .transform(trimContent)
   .transform(linkFootnotes)
   .transform(expandRefs)
-  .transform((md) => marked.parse(md, MARKED_OPTIONS));
+  .transform((md) => marked.parse(md));
 
 export type Body = z.infer<typeof body>;

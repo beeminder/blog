@@ -25,4 +25,12 @@ describe("addBlankLines", () => {
 
     expect(result).toEqual("<div><span>hello</span></div>\n\nparagraph");
   });
+
+  it("does not add blank lines after anchor elements", () => {
+    const markdown = '<a href="#">hello</a>\nparagraph';
+
+    const result = addBlankLines(markdown);
+
+    expect(result).toEqual('<a href="#">hello</a>\nparagraph');
+  });
 });

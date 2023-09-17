@@ -1,7 +1,15 @@
 import { defineConfig, sharpImageService } from "astro/config";
 import prefetch from "@astrojs/prefetch";
-import dsv from "@rollup/plugin-dsv";
-import stripBom from "strip-bom";
+import getPosts from "./src/lib/getPosts";
+
+const posts = await getPosts();
+const redirects = posts.reduce<Record<string, string>>((acc, post) => {
+  if (!post.redirects.length) return acc;
+  post.redirects.forEach((r) => {
+    acc[`/${r}`] = `/${post.slug}`;
+  });
+  return acc;
+}, {});
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,20 +21,10 @@ export default defineConfig({
     service: sharpImageService(),
     domains: ["blog.beeminder.com", "user-images.githubusercontent.com"],
   },
+  redirects,
   integrations: [
     prefetch({
       selector: "a",
     }),
   ],
-  vite: {
-    plugins: [
-      dsv({
-        processRow: (row) => {
-          const entries = Object.entries(row);
-          const stripped = entries.map(([k, v]) => [stripBom(k), v]);
-          return Object.fromEntries(stripped);
-        },
-      }),
-    ],
-  },
 });
