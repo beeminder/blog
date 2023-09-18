@@ -6560,7 +6560,7 @@
     "status": "publish",
     "disqus_id": "2161 https://blog.beeminder.com/?p=2161",
     "excerpt": "There are a lot of things in the category of “nerd tendencies I’ve had to unlearn”. I often turn them into capital-P Principles as a way to drill them into my head. Eventually I intend to collect them all into a meta post but here are a few random examples in the meantime: the Anti-Magic Principle, the Anti-Settings Principle, the Shirk-n-Turk Principle, and the Anti-Robustness"
-}, { // ------------------------------------------------------------------------
+}, {
     "source": "doc.bmndr.co/athletes",
     "id": "2163",
     "title": "What Should Elite Athletes Beemind?",
@@ -6571,8 +6571,8 @@
     "status": "publish",
     "disqus_id": "2163 https://blog.beeminder.com/?p=2163",
     "excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes"
-}, { // ------------------------------------------------------------------------
-"source": "doc.bmndr.co/blogmorphosis"
-}, { // ------------------------------------------------------------------------
+}, {
+"source": "doc.bmndr.co/blogmorphosis",
+}, {
 "slug": "astroblogTMP", "source": "doc.bmndr.co/astroblog"
 }]
