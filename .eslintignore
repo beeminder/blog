@@ -4,3 +4,4 @@
 /.node_modules
 /public
 /pnpm-lock.yaml
+/posts.json
