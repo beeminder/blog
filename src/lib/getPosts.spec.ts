@@ -35,7 +35,7 @@ describe("getPosts", () => {
   it("sorts post by date descending", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
-        source: "https://dtherpad.com/old",
+        source: "https://padm.us/old",
         id: "1",
         slug: "old",
         date: "2020-01-01",
@@ -44,7 +44,7 @@ describe("getPosts", () => {
         disqus_id: "1 https://blog.beeminder.com/?p=1",
       },
       {
-        source: "https://dtherpad.com/new",
+        source: "https://padm.us/new",
         id: "2",
         slug: "new",
         date: "2020-01-02",
@@ -457,7 +457,7 @@ https://blog.beeminder.com/depunish
   it("uses wordpress excerpt", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
-        source: "dtherpad.com/psychpricing",
+        source: "padm.us/psychpricing",
         slug: "psychpricing",
         date: "2021-09-01",
         status: "publish",
@@ -477,7 +477,7 @@ https://blog.beeminder.com/depunish
   it("strips html from wp excerpts", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
-        source: "dtherpad.com/psychpricing",
+        source: "padm.us/psychpricing",
         slug: "psychpricing",
         date: "2021-09-01",
         status: "publish",
