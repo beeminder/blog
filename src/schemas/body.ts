@@ -6,6 +6,7 @@ import expandRefs from "../lib/expandRefs";
 import { marked } from "marked";
 import { markedSmartypants } from "marked-smartypants";
 import applyIdsToElements from "../lib/applyIdsToElements";
+import inlineParagraphs from "../lib/inlineParagraphs";
 
 marked.use(
   markedSmartypants({
@@ -29,8 +30,9 @@ export const body = z
   .refine((content) => content.includes("END_MAGIC"), {
     message: "No END_MAGIC found",
   })
-  .transform(addBlankLines)
   .transform(trimContent)
+  .transform(addBlankLines)
+  .transform(inlineParagraphs)
   .transform(linkFootnotes)
   .transform(expandRefs)
   .transform((md) => marked.parse(md));
