@@ -6,7 +6,7 @@ import expandRefs from "../lib/expandRefs";
 import { marked } from "marked";
 import { markedSmartypants } from "marked-smartypants";
 import applyIdsToElements from "../lib/applyIdsToElements";
-import inlineParagraphs from "../lib/inlineParagraphs";
+// import inlineParagraphs from "../lib/inlineParagraphs";
 
 marked.use(
   markedSmartypants({
@@ -32,7 +32,8 @@ export const body = z
   })
   .transform(trimContent)
   .transform(addBlankLines)
-  .transform(inlineParagraphs)
+  // TODO: find a fix for mid-paragraph html comments that doesn't break markdown lists
+  // .transform(inlineParagraphs)
   .transform(linkFootnotes)
   .transform(expandRefs)
   .transform((md) => marked.parse(md));
