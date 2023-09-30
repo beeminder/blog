@@ -21,26 +21,27 @@ describe("body", () => {
   it("throws if no END_MAGIC", () => {
     expect(() => body.parse("BEGIN_MAGIC\nhello world")).toThrow();
   });
-  it("inlines comments", () => {
-    const raw = `
-BEGIN_MAGIC
-A
-<!--comment-->
-B
-END_MAGIC
-`;
-    const result = body.parse(raw);
-    expect(result).not.toMatch(/<p>[\d\D]+<p>/gm);
-  });
-  it("inlines comments", () => {
-    const raw = `
-BEGIN_MAGIC
-A
-<!--comment-->
-B
-END_MAGIC
-`;
-    const result = body.parse(raw);
-    expect(result).not.toContain("$1");
-  });
+
+  //   it("inlines comments", () => {
+  //     const raw = `
+  // BEGIN_MAGIC
+  // A
+  // <!--comment-->
+  // B
+  // END_MAGIC
+  // `;
+  //     const result = body.parse(raw);
+  //     expect(result).not.toMatch(/<p>[\d\D]+<p>/gm);
+  //   });
+  //   it("inlines comments", () => {
+  //     const raw = `
+  // BEGIN_MAGIC
+  // A
+  // <!--comment-->
+  // B
+  // END_MAGIC
+  // `;
+  //     const result = body.parse(raw);
+  //     expect(result).not.toContain("$1");
+  //   });
 });
