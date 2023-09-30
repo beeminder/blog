@@ -64,6 +64,12 @@ checking that a change doesn't break any posts in the blog's
 large backlog would be impractical to do with unit tests. So
 we do so with snapshot tests.
 
+Also note that you may need to run `pnpm run cache:clear` to sync
+your local cache with any upstream raw source changes. If you
+fail to do so and push to GitHub, one or more snapshot tests may
+fail as obsolete in GitHub Actions, since each test is identified
+by a hash of its source.
+
 ## Production
 
 Commits merged to `master` are automatically deployed via Render.com.
