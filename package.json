@@ -14,6 +14,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest",
+    "test:snapshot": "vitest --config ./vitest.snapshot.config.ts",
+    "test:snapshot:update": "vitest --config ./vitest.snapshot.config.ts --update",
     "cache:clear": "rm -rf .cache",
     "check": "astro check",
     "check:ts": "tsc --noEmit",
