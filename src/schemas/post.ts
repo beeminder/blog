@@ -52,6 +52,7 @@ export const post = z
       date,
       date_string: dateString.parse(date),
       content: c.data,
+      md,
     };
   })
   .pipe(
@@ -68,6 +69,7 @@ export const post = z
       author: z.string(),
       status: status.default("draft"),
       disqus_id: z.string(),
+      md: z.string(),
     }),
   );
 

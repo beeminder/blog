@@ -42,12 +42,33 @@ In addition, all Markdown extended features documented at [doc.bmndr.co][2] are 
 nvm use
 pnpm install
 pnpm run dev
-pnpm run test
 ```
 
 Fetch requests are cached to the `.cache` directory during local development.
 To clear the cache, run `pnpm run cache:clear`. To disable this behavior, add
 `FILE_SYSTEM_CACHE="false"` to a `.env` file in the project root.
+
+### Testing
+
+```bash
+pnpm run test
+pnpm run test:snapshots
+# Once you've verified any snapshot changes are correct, update them with:
+pnpm run test:snapshots:update
+```
+
+Always err on the side of writing unit tests rather than snapshot
+tests. Snapshot tests are unweildy, slow, and brittle. They should
+only be used for things that are hard to unit test, For example,
+checking that a change doesn't break any posts in the blog's
+large backlog would be impractical to do with unit tests. So
+we do so with snapshot tests.
+
+Also note that you may need to run `pnpm run cache:clear` to sync
+your local cache with any upstream raw source changes. If you
+fail to do so and push to GitHub, one or more snapshot tests may
+fail as obsolete in GitHub Actions, since each test is identified
+by a hash of its source.
 
 ## Production
 
