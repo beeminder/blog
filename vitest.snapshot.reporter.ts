@@ -1,35 +1,30 @@
 import type { Reporter } from "vitest/reporters";
 import type { Task, File } from "vitest";
 
-// SOURCE: https://stackoverflow.com/a/41407246/937377
+// SOURCES:
+// https://stackoverflow.com/a/41407246/937377
+// https://blog.logrocket.com/using-console-colors-node-js/
 const RED = "\x1b[31m";
 const GREEN = "\x1b[32m";
+const RESET = "\x1b[0m";
 
-function logSomthing(thing: Task) {
-  const { type } = thing;
-  switch (type) {
+function logTask(task: Task) {
+  switch (task.type) {
     case "test": {
-      const state = thing.result?.state || "undefined";
-      const message = `${state.toUpperCase()}: ${thing.name}`;
+      const state = task.result?.state ?? "undefined";
       const color = state === "fail" ? RED : GREEN;
-      // return state === "fail" ? console.error(message) : console.log(message);
-      return console.log(color, message);
+      return console.log(color, `${state.toUpperCase()}:`, RESET, task.name);
     }
     case "suite":
-      return thing.tasks.forEach(logSomthing);
-    case "custom":
-      return console.log("custom");
+      return task.tasks.forEach(logTask);
     default:
-      throw new Error("unreachable");
+      throw new Error("unhandled");
   }
 }
 
 export default class CustomReporter implements Reporter {
-  onFinished(files: File[] | undefined, errors: unknown[] | undefined) {
-    // throw new Error("test");
-    files?.forEach(logSomthing);
-    const hasErrors = errors && errors.length;
-
-    console.log(`${hasErrors ? errors.length : "No"} errors`);
+  onFinished(files: File[] = [], errors: unknown[] = []) {
+    files.forEach(logTask);
+    console.log(`${errors.length} errors`);
   }
 }
