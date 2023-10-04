@@ -39,7 +39,7 @@ const {
 
 const {
   content,
-  title: rawTitle,
+  title,
   tags,
   disqus_id,
   excerpt,
@@ -50,7 +50,6 @@ const {
 
 const isDraft = status === "draft";
 const className = isDraft ? "draft" : undefined;
-const title = isDraft ? `DRAFT: ${rawTitle}` : rawTitle;
 const { extracted, ...imageProps } = image || {};
 ---
 
