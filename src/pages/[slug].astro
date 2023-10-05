@@ -66,6 +66,7 @@ const { extracted, ...imageProps } = image || {};
     url: `/${older.slug}`,
   }}
 >
+<div class="post">
   <Shadowbox padding={2} class={className}>
     <PostMeta
       post={{
@@ -82,12 +83,15 @@ const { extracted, ...imageProps } = image || {};
   </Shadowbox>
 
   <Shadowbox padding={2}>
-    <Comments id={disqus_id} url={`https://blog.beeminder.com/${slug}/`} />
+    {isDraft ? <p>Comments are disabled on DRAFT pages.</p> : <Comments id={disqus_id} url={`https://blog.beeminder.com/${slug}/`} />}
   </Shadowbox>
+</div>
 </Paginated>
 
+
 <style>
-  .draft {
+  .post :global(.draft) {
     border: 1rem solid #ff700a;
   }
 </style>
+
