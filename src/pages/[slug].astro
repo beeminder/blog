@@ -83,7 +83,7 @@ const { extracted, ...imageProps } = image || {};
   </Shadowbox>
 
   <Shadowbox padding={2}>
-    {isDraft ? <p>its a darft</p> : <Comments id={disqus_id} url={`https://blog.beeminder.com/${slug}/`} />}
+    {isDraft ? <p>Comments are disabled on DRAFT pages.</p> : <Comments id={disqus_id} url={`https://blog.beeminder.com/${slug}/`} />}
   </Shadowbox>
 </div>
 </Paginated>
