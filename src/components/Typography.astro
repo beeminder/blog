@@ -37,6 +37,12 @@ const { sans = false, small = false, class: className } = Astro.props;
   .inner :global(h5) {
     font-size: 1.1em;
   }
+  .inner :global(p) {
+    line-height: 1.5em;
+  }
+  .inner :global(li) {
+    line-height: 1.5em;
+  }
 
   @container (min-width: 500px) {
     .inner {
