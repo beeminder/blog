@@ -6,9 +6,10 @@ interface Props {
 }
 
 const { sans = false, small = false, class: className } = Astro.props;
+const lineHeight = sans ? "1.3em" : "1.5em";
 ---
 
-<div class="typography" class:list={[{ sans, small }, className]}>
+<div class="typography" class:list={[{ sans, small }, className]} style={{"--line-height": lineHeight}}>
   <div class="inner"><slot /></div>
 </div>
 
@@ -38,10 +39,10 @@ const { sans = false, small = false, class: className } = Astro.props;
     font-size: 1.1em;
   }
   .inner :global(p) {
-    line-height: 1.5em;
-  }
+    line-height: var(--line-height);
+  } 
   .inner :global(li) {
-    line-height: 1.5em;
+    line-height: var(--line-height);
   }
 
   @container (min-width: 500px) {
