@@ -11,6 +11,7 @@ export const frontmatter = z
     tags: z.array(z.string()),
     disqus_id: z.string(),
     status,
+    redirects: z.array(z.string()),
   })
   .partial();
 
