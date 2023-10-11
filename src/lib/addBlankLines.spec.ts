@@ -33,4 +33,12 @@ describe("addBlankLines", () => {
 
     expect(result).toEqual('<a href="#">hello</a>\nparagraph');
   });
+
+  it("adds blank lines after html with a space at end", () => {
+    const markdown = "<h4>title</h4> \nparagraph";
+
+    const result = addBlankLines(markdown);
+
+    expect(result).toEqual("<h4>title</h4>\n\nparagraph");
+  });
 });
