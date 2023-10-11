@@ -3708,7 +3708,7 @@ christine: super excited about the iOS update
 }
 `;
 
-exports[`body > post apps hash 53196784bdd228cdf4fc76b99f98f4bd 1`] = `
+exports[`body > post apps hash de5618422da8bb3e1686f14981a0c611 1`] = `
 {
   "author": "Andy Brett",
   "content": "<p><img class=\\"aligncenter\\"
@@ -3723,14 +3723,18 @@ Get them here:</p>
 <li><a href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder\\">Beeminder Android app on Google Play</a></li>
 </ul>
 <p>Or click/touch one of these screenshots:</p>
+<div style=\\"overflow: hidden;\\">
+
 <p><a href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder\\" style=\\"float:left;padding-bottom:30px;\\"><img
   alt=\\"screenshot from the android app\\"
   title=\\"Screenshot from Bethany's phone (Android)\\"
-  src=\\"http://blog.beeminder.com/wp-content/uploads/2012/10/android.jpg\\"/></a></p>
-<p><a href=\\"https://itunes.apple.com/us/app/beeminder/id551869729\\" style=\\"float:right;margin-bottom:65px;\\"><img
+  src=\\"http://blog.beeminder.com/wp-content/uploads/2012/10/android.jpg\\"/></a>
+<a href=\\"https://itunes.apple.com/us/app/beeminder/id551869729\\" style=\\"float:right;margin-bottom:65px;\\"><img
   alt=\\"screenshot from the ios app\\"
   title=\\"Screenshot from the Andy's phone (iPhone)\\"
   src=\\"http://blog.beeminder.com/wp-content/uploads/2012/10/mzl.oyoiuslf.320x480-75.jpeg\\"/></a></p>
+</div>
+
 <p>Here&#8217;s what these apps let you do:</p>
 <ul>
 <li>Create new goals</li>
@@ -3828,15 +3832,16 @@ Get them here:
 
 Or click/touch one of these screenshots:
 
+<div style=\\"overflow: hidden;\\">
 <a href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder\\" style=\\"float:left;padding-bottom:30px;\\"><img
   alt=\\"screenshot from the android app\\"
   title=\\"Screenshot from Bethany's phone (Android)\\"
   src=\\"http://blog.beeminder.com/wp-content/uploads/2012/10/android.jpg\\"/></a>
-
 <a href=\\"https://itunes.apple.com/us/app/beeminder/id551869729\\" style=\\"float:right;margin-bottom:65px;\\"><img
   alt=\\"screenshot from the ios app\\"
   title=\\"Screenshot from the Andy's phone (iPhone)\\"
   src=\\"http://blog.beeminder.com/wp-content/uploads/2012/10/mzl.oyoiuslf.320x480-75.jpeg\\"/></a>
+</div>
 
 Here's what these apps let you do:
 
@@ -6542,7 +6547,7 @@ $BMSIG
 }
 `;
 
-exports[`body > post backfiring hash 715f68cbfe0ae5866219b828256c6ba0 1`] = `
+exports[`body > post backfiring hash 77131ff2d5cb95fe725db5226c28175f 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img class=\\"aligncenter\\"
@@ -6559,10 +6564,6 @@ exports[`body > post backfiring hash 715f68cbfe0ae5866219b828256c6ba0 1`] = `
 Your body is storing glucose &#8212; quick energy &#8212; and glucose carries a lot of water.
 Why does your body do this?
 It&#8217;s responding to the workout by storing extra energy in the muscles, both for repair and to be more prepared for future hard work.</p>
-</blockquote>
-<br>
-
-<blockquote>
 <p>Glucose, energy, calories &#8212; it&#8217;s all the same thing and the more you store in your muscles the less you&#8217;ll store as fat.</p>
 </blockquote>
 <p>Of course, a hard workout is one of many things that can cause your weight to fluctuate, seemingly randomly (or truly randomly).
@@ -6586,7 +6587,9 @@ We have something better in mind; stay tuned!)</p>
     "src": "http://blog.beeminder.com/wp-content/uploads/2011/07/backfire.gif",
     "title": "Literal backfiring",
   },
-  "md": "BEGIN_MAGIC[Backfiring Workouts]
+  "md": "Published on the Beeminder blog
+
+BEGIN_MAGIC[Backfiring Workouts]
 
 <img class=\\"aligncenter\\"
   title=\\"Literal backfiring\\" 
@@ -6603,9 +6606,7 @@ Melanie, Beeminder's resident fitness expert, has an answer:
 > Your body is storing glucose -- quick energy -- and glucose carries a lot of water.
 > Why does your body do this?
 > It's responding to the workout by storing extra energy in the muscles, both for repair and to be more prepared for future hard work.
-
-<br>
-
+> 
 > Glucose, energy, calories -- it's all the same thing and the more you store in your muscles the less you'll store as fat.
 
 Of course, a hard workout is one of many things that can cause your weight to fluctuate, seemingly randomly (or truly randomly).
@@ -23060,7 +23061,7 @@ We can capture an email address for everyone who doesn't make it over the commit
 }
 `;
 
-exports[`body > post competitors hash 59d4f789008c86720d2623bbb9c2ae3e 1`] = `
+exports[`body > post competitors hash 8266bb8bc5e565959a472be1e31d1edb 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img class=\\"aligncenter\\" title=\\"The One bee shall rule them all... (this blog post predates Beeminder's fancy infinibee logo but we continue to keep it up to date!)\\" alt=\\"Collage of Beeminder and its competitors, circa 2011/2012\\" src=\\"http://blog.beeminder.com/wp-content/uploads/2012/01/logomania_031.png\\"></p>
@@ -23309,7 +23310,8 @@ I guess it will show up on <a href=\\"http://facebook.com/dreev\\">my facebook p
 See the \\"on the horizon\\" section for new entries.
 Staging for the \\"on the horizon\\" section:
 
-
+Budgey:
+https://docs.google.com/forms/d/e/1FAIpQLSeVUaDBlYDWQ6IZlkXkhgFCII9CU7ZRWwloRuZf6htbxCm8jA/viewform
 
 https://apps.apple.com/us/app/carrot-to-do/id591840203
 
@@ -27500,7 +27502,7 @@ X 1516236701 GLF pjh/exprd exprd: true -> false
 }
 `;
 
-exports[`body > post deathtofreebees hash 2ceb505ae9c9f5a32055802edc1409bc 1`] = `
+exports[`body > post deathtofreebees hash 81783fcab1c42f2448862def7056c35c 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img class=\\"aligncenter\\"
@@ -27519,7 +27521,9 @@ for that.)</p>
 <p>This whole Freebees thing is a remarkable example of the phenomenon of painfully, circuitously getting to something that in hindsight is obvious and simple. </p>
 <p>In the very beginning we implemented something ridiculous we called ephemeral goals where you chose up front to make a goal a temporary test goal meaning it would self-destruct and screw you, user, if you forgot you had said that.
 That was no good at all, even if we&#8217;d come up with a good enough way to warn and remind you about the imminent self-destruction.
-In any case we needed some way for you to try Beeminder before actually adding a credit card.</p>
+In any case we needed some way for you to try Beeminder before actually adding a credit card.
+(UPDATE from the far future: 
+<a href=\\"https://blog.beeminder.com/commitwall\\" title=\\"Commitwall: No More Beeminding Without A Way To Be Charged Money\\">no we didn&#8217;t</a>.)</p>
 <p>I dug up some ancient notes detailing endless agonizing over different schemes for accomplishing this.
 For posterity, the top contenders (yes, they all had adorable code names):</p>
 <ol>
@@ -27627,6 +27631,10 @@ This whole Freebees thing is a remarkable example of the phenomenon of painfully
 In the very beginning we implemented something ridiculous we called ephemeral goals where you chose up front to make a goal a temporary test goal meaning it would self-destruct and screw you, user, if you forgot you had said that.
 That was no good at all, even if we'd come up with a good enough way to warn and remind you about the imminent self-destruction.
 In any case we needed some way for you to try Beeminder before actually adding a credit card.
+(UPDATE from the far future: 
+[no we didn't](
+  https://blog.beeminder.com/commitwall
+  \\"Commitwall: No More Beeminding Without A Way To Be Charged Money\\").)
 
 I dug up some ancient notes detailing endless agonizing over different schemes for accomplishing this.
 For posterity, the top contenders (yes, they all had adorable code names):
@@ -61029,31 +61037,57 @@ END_MAGIC
 }
 `;
 
-exports[`body > post mustdo hash ef2bd01de67f50f5f3e48471488266c6 1`] = `
+exports[`body > post mustdo hash 528c6af9294d90655dcf97bbba78b100 1`] = `
 {
   "author": "alys",
   "content": "<p><img class=\\"aligncenter\\"
   alt=\\"A calendar with gold stars on it, seinfeld-hack style\\"
   title=\\"Stars upon thars\\"
   src=\\"http://blog.beeminder.com/wp-content/uploads/2012/10/mustdo.png\\"/></p>
+<!-- it doesn't work to put all this in italics by putting an asterisk at the beginning and end anymore
+> *This is a guest post by 
+[Alice Harris](http://oldgods.net/alys/ \\"Alys's homepage\\").
+It is crossposted on 
+[Mark Forster's Get Everything Done blog](http://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html \\"UPDATE 2015: We (the Beeminder founders) continue to get more and more into Mark Forster's productivity systems\\") 
+which we're 
+[long time fans of](http://blog.beeminder.com/ged \\"First post on the Beeminder blog about Mark Forster\\").
+<br>&nbsp;<br>
+> UPDATE 2020: This post has aged amazingly but if you're here for a quick refresher, maybe you'll like this handy quick start reference:
+<br>&nbsp;<br>
+1. Add an initial datapoint of 0 with your first mustdo for tomorrow (suggestion: \\"show off this goal to 2 friends to help keep me accountable\\")<br>
+2. The next day, add a datapoint of 1 if you did the mustdo from yesterday and with a comment of the new mustdo for the next day<br>
+3. If you didn't do it then enter a 0 and still also enter tomorrow's mustdo as the comment<br>
+4. Repeat forever and ever!<br>
+5. (But feel free give yourself a break and pick something like \\"read a chapter of Harry Potter\\" as your mustdo once in a while)*
+-->
+
 <blockquote>
-<p>*This is a guest post by 
+
+<i>
+This is a guest post by 
 <a href=\\"http://oldgods.net/alys/\\" title=\\"Alys&#39;s homepage\\">Alice Harris</a>.
 It is crossposted on 
-<a href=\\"http://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html\\" title=\\"UPDATE 2015: We (the Beeminder founders) continue to get more and more into Mark Forster&#39;s productivity systems\\">Mark Forster&#8217;s Get Everything Done blog</a> 
+<a href=\\"http://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html\\" 
+title=\\"UPDATE 2015: We (the Beeminder founders) continue to get more and more into Mark Forster&#39;s productivity systems\\">Mark Forster&#8217;s Get Everything Done blog</a> 
 which we&#8217;re 
 <a href=\\"http://blog.beeminder.com/ged\\" title=\\"First post on the Beeminder blog about Mark Forster\\">long time fans of</a>.
 <br>&nbsp;<br>
 UPDATE 2020: This post has aged amazingly but if you&#8217;re here for a quick refresher, maybe you&#8217;ll like this handy quick start reference:
-<br>&nbsp;<br></p>
 <ol>
+
 <li>Add an initial datapoint of 0 with your first mustdo for tomorrow (suggestion: &#8220;show off this goal to 2 friends to help keep me accountable&#8221;)<br></li>
+
 <li>The next day, add a datapoint of 1 if you did the mustdo from yesterday and with a comment of the new mustdo for the next day<br></li>
+
 <li>If you didn&#8217;t do it then enter a 0 and still also enter tomorrow&#8217;s mustdo as the comment<br></li>
-<li>Repeat forever and ever!<br></li>
-<li>(But feel free give yourself a break and pick something like &#8220;read a chapter of Harry Potter&#8221; as your mustdo once in a while)*</li>
+
+<li>Repeat forever and ever!<br></li><li>(But feel free give yourself a break and pick something like &#8220;read a chapter of Harry Potter&#8221; as your mustdo once in a while)*</li>
+
 </ol>
+
+</i>
 </blockquote>
+
 <p><a href=\\"http://beeminder.com\\" title=\\"Beeminder: the me-binder\\">Beeminder</a>&#8217;s 
 brilliant for encouraging yourself to Do Important Stuff. 
 It&#8217;s turned me from the person who every week would remorsefully discard a fridge full of perished vegetables, into the person who has consistently eaten an average of 7 servings of fruit and vegetables a day for 
@@ -61144,34 +61178,59 @@ to comment.</p>
   "date": 2012-10-03T00:00:00.000Z,
   "date_string": "2012-10-03",
   "disqus_id": "410 https://blog.beeminder.com/?p=410",
-  "excerpt": "*This is a guest post by  Alice Harris. It is crossposted on  Mark Forster’s Get Everything Done blog  which we’re  long time fans of.   UPDATE 2020: This post has aged amazingly but if you’re here for a quick refresher, maybe you’ll like this handy quick start reference:   Add an initial datapoint of...",
+  "excerpt": "*This is a guest post by  [Alice Harris](http://oldgods.net/alys/ \\"Alys's homepage\\"). It is crossposted on  [Mark Forster's Get Everything Done blog](http://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html \\"UPDATE 2015: We (the Beeminder founders) continue to get more and...",
   "image": {
     "alt": "A calendar with gold stars on it, seinfeld-hack style",
     "extracted": true,
     "src": "http://blog.beeminder.com/wp-content/uploads/2012/10/mustdo.png",
     "title": "Stars upon thars",
   },
-  "md": "BEGIN_MAGIC[The One Must-Do Task Each Day]
+  "md": "Published on the Beeminder blog
+
+BEGIN_MAGIC[The One Must-Do Task Each Day]
 
 <img class=\\"aligncenter\\"
   alt=\\"A calendar with gold stars on it, seinfeld-hack style\\"
   title=\\"Stars upon thars\\"
   src=\\"http://blog.beeminder.com/wp-content/uploads/2012/10/mustdo.png\\"/>
 
+<!-- it doesn't work to put all this in italics by putting an asterisk at the beginning and end anymore
 > *This is a guest post by 
-> [Alice Harris](http://oldgods.net/alys/ \\"Alys's homepage\\").
-> It is crossposted on 
-> [Mark Forster's Get Everything Done blog](http://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html \\"UPDATE 2015: We (the Beeminder founders) continue to get more and more into Mark Forster's productivity systems\\") 
-> which we're 
-> [long time fans of](http://blog.beeminder.com/ged \\"First post on the Beeminder blog about Mark Forster\\").
+[Alice Harris](http://oldgods.net/alys/ \\"Alys's homepage\\").
+It is crossposted on 
+[Mark Forster's Get Everything Done blog](http://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html \\"UPDATE 2015: We (the Beeminder founders) continue to get more and more into Mark Forster's productivity systems\\") 
+which we're 
+[long time fans of](http://blog.beeminder.com/ged \\"First post on the Beeminder blog about Mark Forster\\").
 <br>&nbsp;<br>
 > UPDATE 2020: This post has aged amazingly but if you're here for a quick refresher, maybe you'll like this handy quick start reference:
 <br>&nbsp;<br>
-> 1. Add an initial datapoint of 0 with your first mustdo for tomorrow (suggestion: \\"show off this goal to 2 friends to help keep me accountable\\")<br>
-> 2. The next day, add a datapoint of 1 if you did the mustdo from yesterday and with a comment of the new mustdo for the next day<br>
-> 3. If you didn't do it then enter a 0 and still also enter tomorrow's mustdo as the comment<br>
-> 4. Repeat forever and ever!<br>
-> 5. (But feel free give yourself a break and pick something like \\"read a chapter of Harry Potter\\" as your mustdo once in a while)*
+1. Add an initial datapoint of 0 with your first mustdo for tomorrow (suggestion: \\"show off this goal to 2 friends to help keep me accountable\\")<br>
+2. The next day, add a datapoint of 1 if you did the mustdo from yesterday and with a comment of the new mustdo for the next day<br>
+3. If you didn't do it then enter a 0 and still also enter tomorrow's mustdo as the comment<br>
+4. Repeat forever and ever!<br>
+5. (But feel free give yourself a break and pick something like \\"read a chapter of Harry Potter\\" as your mustdo once in a while)*
+-->
+
+<blockquote>
+<i>
+This is a guest post by 
+<a href=\\"http://oldgods.net/alys/\\" title=\\"Alys&#39;s homepage\\">Alice Harris</a>.
+It is crossposted on 
+<a href=\\"http://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html\\" 
+title=\\"UPDATE 2015: We (the Beeminder founders) continue to get more and more into Mark Forster&#39;s productivity systems\\">Mark Forster&#8217;s Get Everything Done blog</a> 
+which we&#8217;re 
+<a href=\\"http://blog.beeminder.com/ged\\" title=\\"First post on the Beeminder blog about Mark Forster\\">long time fans of</a>.
+<br>&nbsp;<br>
+UPDATE 2020: This post has aged amazingly but if you&#8217;re here for a quick refresher, maybe you&#8217;ll like this handy quick start reference:
+<ol>
+<li>Add an initial datapoint of 0 with your first mustdo for tomorrow (suggestion: &#8220;show off this goal to 2 friends to help keep me accountable&#8221;)<br></li>
+<li>The next day, add a datapoint of 1 if you did the mustdo from yesterday and with a comment of the new mustdo for the next day<br></li>
+<li>If you didn&#8217;t do it then enter a 0 and still also enter tomorrow&#8217;s mustdo as the comment<br></li>
+<li>Repeat forever and ever!<br></li><li>(But feel free give yourself a break and pick something like &#8220;read a chapter of Harry Potter&#8221; as your mustdo once in a while)*</li>
+</ol>
+</i>
+</blockquote>
+
 
 [Beeminder](http://beeminder.com \\"Beeminder: the me-binder\\")'s 
 brilliant for encouraging yourself to Do Important Stuff. 
@@ -61639,7 +61698,7 @@ As we bloom and transform, in life's infinite grace.
 }
 `;
 
-exports[`body > post nanowrimo hash 49d6c8076d8d7cabff35bd9371eee60c 1`] = `
+exports[`body > post nanowrimo hash 554b03655a9c7ad76ddf004d1247248c 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img class=\\"aligncenter\\"
@@ -61743,7 +61802,7 @@ UPDATE 2020+: We don't actually have an update for 2020, other than to assure ev
 
 END_MAGIC
 
-tkl 2023.10.01
+tkl 2024.10.01
 
 ",
   "redirects": [],
@@ -65955,7 +66014,7 @@ definitely means getting melanie on the case. can she call you?
 }
 `;
 
-exports[`body > post ontologies hash 7cbaaae356c50f5c071bf9e26925ccce 1`] = `
+exports[`body > post ontologies hash 88edbd5f5b6f5b538575df21578602e4 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img class=\\"aligncenter\\"
@@ -65974,7 +66033,7 @@ Eventually I intend to collect them all into a meta post but here are a few rand
 <p>Today I have one that&#8217;s a variant of the classic Knuth-ism <a class=\\"footnote\\" id=\\"HOARE1\\" href=\\"#HOARE\\">[1]</a> that premature optimization is the root of all evil.</p>
 <h4 class=\\"pullquote\\">&#8220;Don&#8217;t create premature ontologies&#8221;</h4>
 
-<p>Knuth was saying that programmers tend to spend too much time fussing with their code to make it more efficient.
+<p>Knuth was saying that programmers tend to spend too much time fussing with their code, making it more efficient.
 You should profile your code to find the actual bottlenecks and only optimize the code that&#8217;s actually slowing your application down.</p>
 <p>I claim that people (well, a certain kind of nerd, including past-me) make a similar mistake with ontologies.
 They&#8217;ll start a Discord server and create an elaborate set of channels for all the topics they anticipate people wanting to discuss.
@@ -66050,7 +66109,7 @@ Eventually I intend to collect them all into a meta post but here are a few rand
 Today I have one that's a variant of the classic Knuth-ism $HOARE that premature optimization is the root of all evil.
 
 <h4 class=\\"pullquote\\">\\"Don't create premature ontologies\\"</h4>
-Knuth was saying that programmers tend to spend too much time fussing with their code to make it more efficient.
+Knuth was saying that programmers tend to spend too much time fussing with their code, making it more efficient.
 You should profile your code to find the actual bottlenecks and only optimize the code that's actually slowing your application down.
 
 I claim that people (well, a certain kind of nerd, including past-me) make a similar mistake with ontologies.
@@ -87546,7 +87605,7 @@ tkl 2024.04.30
 }
 `;
 
-exports[`body > post systems hash dc005fc28ddb07167c8fa3f636cc42a5 1`] = `
+exports[`body > post systems hash 3063a7b9b76c8a0a12abc439b9d0a784 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img class=\\"aligncenter\\"
@@ -87697,7 +87756,7 @@ http://www.theguardian.com/lifeandstyle/2014/nov/07/systems-better-than--goals-o
 drtall:
 Hah yes. I take the article's use of \\"goal\\" to mean milestone-based goals like \\"publish my thesis\\" as opposed to Beeminder goals like \\"write one page of my thesis\\". Beeminder is my system!
 
-tkl 2023.10.05 (egyptian bee images, maybe notes above)
+tkl 2024.10.05 (egyptian bee images, maybe notes above)
 ",
   "redirects": [],
   "slug": "systems",
@@ -96050,7 +96109,7 @@ $FN[WORTHIT]
 }
 `;
 
-exports[`body > post weasels hash 98b5f3e6df909c9ae851284d82015257 1`] = `
+exports[`body > post weasels hash 75b3a845b5cee56f6e81fa1c3d0650a0 1`] = `
 {
   "author": "Philip Hellyer",
   "content": "<p><img class=\\"aligncenter\\"
@@ -96071,14 +96130,14 @@ My lucid (or stressed) self can change the difficulty, but only starting some wa
 It&#8217;s like committing in advance to put aside a portion of bonuses and salary increases.
 Future sacrifice sounds cheap, especially if it&#8217;s a slice of a bigger pie.</p>
 <h4 class=\\"pullquote\\">&#8220;Re-committing to a goal should be a joyous and positive step; it means that the goal is valuable even if the path to it is hard.&#8221;</h4> 
-Where Beeminder can&#8217;t help (yet!) is when I don&#8217;t just fall off the wagon, but send it careening off the yellow brick road and into the ditch of despair.
+
+<p>Where Beeminder can&#8217;t help (yet!) is when I don&#8217;t just fall off the wagon, but send it careening off the yellow brick road and into the ditch of despair.
 My trouble is that the self who drives off the road might not be in a lucid enough state to commit to trying again.
 And if I don&#8217;t re-commit promptly, I&#8217;m in danger of failing to do it at all. Ever.
 The longer I avoid restarting work on my goal, the easier it becomes to keep avoiding it.
 The spectre of formally admitting failure grows rather than shrinks.
 Eventually I&#8217;ll ignore not just that one goal, but the whole pile of them that Beeminder tracks.
-And that would be a disaster for my &#8220;substantially different future&#8221;.
-
+And that would be a disaster for my &#8220;substantially different future&#8221;.</p>
 <p>Here&#8217;s the nub of it:  </p>
 <ul>
 <li>Driving off the road is just a blip.</li>
@@ -96297,6 +96356,7 @@ It's like committing in advance to put aside a portion of bonuses and salary inc
 Future sacrifice sounds cheap, especially if it's a slice of a bigger pie.
 
 <h4 class=\\"pullquote\\">\\"Re-committing to a goal should be a joyous and positive step; it means that the goal is valuable even if the path to it is hard.\\"</h4> 
+
 Where Beeminder can't help (yet!) is when I don't just fall off the wagon, but send it careening off the yellow brick road and into the ditch of despair.
 My trouble is that the self who drives off the road might not be in a lucid enough state to commit to trying again.
 And if I don't re-commit promptly, I'm in danger of failing to do it at all. Ever.
