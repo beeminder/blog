@@ -12,6 +12,7 @@ export default function padm({
   content?: string;
   after?: string;
   title?: string;
+  redirects?: string[];
 } = {}): string {
   return matter.stringify(
     `
