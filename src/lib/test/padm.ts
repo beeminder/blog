@@ -6,7 +6,6 @@ export default function padm({
   content = "",
   after = "",
   title,
-  redirects = [],
 }: {
   frontmatter?: Record<string, unknown>;
   before?: string;
