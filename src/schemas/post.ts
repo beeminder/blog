@@ -42,15 +42,16 @@ export const post = z
     }
 
     const date = meta.date && new Date(meta.date);
+    const dateStringResult = dateString.safeParse(date);
 
     return {
       ...meta,
-      tags: meta.tags?.filter(Boolean) || [],
+      tags: meta.tags?.filter(Boolean),
       excerpt: meta.excerpt ? striptags(meta.excerpt) : getExcerpt(c.data),
       image: extractImage(c.data),
       title: meta.title || parseTitle(md),
       date,
-      date_string: dateString.parse(date),
+      date_string: dateStringResult.success && dateStringResult.data,
       content: c.data,
       md,
     };
@@ -62,12 +63,12 @@ export const post = z
       slug: z.string(),
       image: image.optional(),
       title: z.string(),
-      tags: z.array(z.string()).default([]),
-      redirects: z.array(z.string()).default([]),
+      tags: z.array(z.string()),
+      redirects: z.array(z.string()),
       date: z.date(),
       date_string: z.string(),
       author: z.string(),
-      status: status.default("draft"),
+      status: status,
       disqus_id: z.string(),
       md: z.string(),
     }),

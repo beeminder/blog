@@ -19,7 +19,8 @@
     ],
     "status": "publish",
     "disqus_id": "14 https://blog.beeminder.com/?p=14",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beemblog-easyhard",
@@ -28,10 +29,15 @@
     "slug": "easyhard",
     "date": "2011-02-02",
     "author": "melza",
-    "tags": ["food", "tips", "weight loss"],
+    "tags": [
+      "food",
+      "tips",
+      "weight loss"
+    ],
     "status": "publish",
     "disqus_id": "130 https://blog.beeminder.com/?p=130",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beemblog-preeat",
@@ -40,10 +46,15 @@
     "slug": "preeat",
     "date": "2011-02-20",
     "author": "dreeves",
-    "tags": ["food", "tips", "weight loss"],
+    "tags": [
+      "food",
+      "tips",
+      "weight loss"
+    ],
     "status": "publish",
     "disqus_id": "165 https://blog.beeminder.com/?p=165",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/foodrules",
@@ -52,10 +63,17 @@
     "slug": "foodhabits",
     "date": "2011-03-01",
     "author": "Kevin McGowan",
-    "tags": ["food", "guest posts", "science", "tips", "weight loss"],
+    "tags": [
+      "food",
+      "guest posts",
+      "science",
+      "tips",
+      "weight loss"
+    ],
     "status": "publish",
     "disqus_id": "166 https://blog.beeminder.com/?p=166",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/lildeb",
@@ -64,10 +82,17 @@
     "slug": "lildeb",
     "date": "2011-03-10",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "dog food", "junk food", "pica"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "dog food",
+      "junk food",
+      "pica"
+    ],
     "status": "publish",
     "disqus_id": "170 https://blog.beeminder.com/?p=170",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gym",
@@ -76,10 +101,17 @@
     "slug": "gym",
     "date": "2011-03-22",
     "author": "Jill Renaud",
-    "tags": ["akrasia", "bee-all", "fitness", "guest posts", "self-binding"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "fitness",
+      "guest posts",
+      "self-binding"
+    ],
     "status": "publish",
     "disqus_id": "174 https://blog.beeminder.com/?p=174",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/sediment",
@@ -100,7 +132,8 @@
     ],
     "status": "publish",
     "disqus_id": "177 https://blog.beeminder.com/?p=177",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/martin",
@@ -109,10 +142,16 @@
     "slug": "martin",
     "date": "2011-04-10",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "case studies", "self-binding"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "case studies",
+      "self-binding"
+    ],
     "status": "publish",
     "disqus_id": "180 https://blog.beeminder.com/?p=180",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beemblog-michelle",
@@ -132,7 +171,8 @@
     ],
     "status": "publish",
     "disqus_id": "184 https://blog.beeminder.com/?p=184",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beemblog-rails",
@@ -152,7 +192,8 @@
     ],
     "status": "publish",
     "disqus_id": "188 https://blog.beeminder.com/?p=188",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/unintended",
@@ -172,7 +213,8 @@
     ],
     "status": "publish",
     "disqus_id": "192 https://blog.beeminder.com/?p=192",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/akranon",
@@ -192,7 +234,8 @@
     ],
     "status": "publish",
     "disqus_id": "195 https://blog.beeminder.com/?p=195",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/timecarrot",
@@ -201,10 +244,17 @@
     "slug": "timecarrot",
     "date": "2011-06-10",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "competition", "self-binding", "tagtime"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "competition",
+      "self-binding",
+      "tagtime"
+    ],
     "status": "publish",
     "disqus_id": "197 https://blog.beeminder.com/?p=197",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/joshstickk",
@@ -223,7 +273,8 @@
     ],
     "status": "publish",
     "disqus_id": "200 https://blog.beeminder.com/?p=200",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/solstice",
@@ -232,10 +283,14 @@
     "slug": "solstice",
     "date": "2011-06-28",
     "author": "dreeves",
-    "tags": ["PSA", "tips"],
+    "tags": [
+      "PSA",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "205 https://blog.beeminder.com/?p=205",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/sos",
@@ -259,7 +314,8 @@
     ],
     "status": "publish",
     "disqus_id": "207 https://blog.beeminder.com/?p=207",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/roadwidth",
@@ -268,10 +324,13 @@
     "slug": "roadwidth",
     "date": "2011-07-10",
     "author": "dreeves",
-    "tags": ["navel-gazing"],
+    "tags": [
+      "navel-gazing"
+    ],
     "status": "publish",
     "disqus_id": "209 https://blog.beeminder.com/?p=209",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/backfiring",
@@ -289,7 +348,8 @@
     ],
     "status": "publish",
     "disqus_id": "212 https://blog.beeminder.com/?p=212",
-    "excerpt": "Here’s a question from a user: “Sometimes it seems like a hard workout makes me gain weight. My question is: WTF?” Melanie, Beeminder’s resident fitness expert, has an answer: Temporary weight gain for a day or two after a hard workout is common. Your body is storing glucose — quick energy"
+    "excerpt": "Here’s a question from a user: “Sometimes it seems like a hard workout makes me gain weight. My question is: WTF?” Melanie, Beeminder’s resident fitness expert, has an answer: Temporary weight gain for a day or two after a hard workout is common. Your body is storing glucose — quick energy",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/ahorizon",
@@ -313,7 +373,8 @@
     ],
     "status": "publish",
     "disqus_id": "218 https://blog.beeminder.com/?p=218",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beenamer",
@@ -334,7 +395,8 @@
     ],
     "status": "publish",
     "disqus_id": "222 https://blog.beeminder.com/?p=222",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/textbot",
@@ -343,10 +405,16 @@
     "slug": "textbot",
     "date": "2011-09-22",
     "author": "guest",
-    "tags": ["bot", "new features", "sms", "text"],
+    "tags": [
+      "bot",
+      "new features",
+      "sms",
+      "text"
+    ],
     "status": "publish",
     "disqus_id": "224 https://blog.beeminder.com/?p=224",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/blaunch",
@@ -355,10 +423,16 @@
     "slug": "launch",
     "date": "2011-10-13",
     "author": "bsoule",
-    "tags": ["bee-all", "beta", "launch", "navel-gazing"],
+    "tags": [
+      "bee-all",
+      "beta",
+      "launch",
+      "navel-gazing"
+    ],
     "status": "publish",
     "disqus_id": "227 https://blog.beeminder.com/?p=227",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/wantcanwill",
@@ -378,7 +452,8 @@
     ],
     "status": "publish",
     "disqus_id": "230 https://blog.beeminder.com/?p=230",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/chunky",
@@ -398,7 +473,8 @@
     ],
     "status": "publish",
     "disqus_id": "236 https://blog.beeminder.com/?p=236",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/blogdog",
@@ -425,7 +501,8 @@
     ],
     "status": "publish",
     "disqus_id": "239 https://blog.beeminder.com/?p=239",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/tgbee",
@@ -443,7 +520,8 @@
     ],
     "status": "publish",
     "disqus_id": "241 https://blog.beeminder.com/?p=241",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bwidget",
@@ -452,10 +530,16 @@
     "slug": "widget",
     "date": "2011-12-01",
     "author": "dreeves",
-    "tags": ["bee-all", "dashboard widget", "mac", "new features"],
+    "tags": [
+      "bee-all",
+      "dashboard widget",
+      "mac",
+      "new features"
+    ],
     "status": "publish",
     "disqus_id": "244 https://blog.beeminder.com/?p=244",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/trackhack",
@@ -477,7 +561,8 @@
     ],
     "status": "publish",
     "disqus_id": "251 https://blog.beeminder.com/?p=251",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/qs",
@@ -497,7 +582,8 @@
     ],
     "status": "publish",
     "disqus_id": "254 https://blog.beeminder.com/?p=254",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/competitors",
@@ -520,7 +606,8 @@
     ],
     "status": "publish",
     "disqus_id": "261 https://blog.beeminder.com/?p=261",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/j2jenkins",
@@ -541,7 +628,8 @@
     ],
     "status": "publish",
     "disqus_id": "266 https://blog.beeminder.com/?p=266",
-    "excerpt": "[This is a guest post by Beeminder superfan — and self-quantifier — Jake Jenkins who tells us the story of how Beeminder made all his dreams come true. Well, one particular dream, which will have come true in another year or so of hard work.] When I was 9 years old I went to a beach party. As the sun set and the bonfire was lit a guy broke out his guitar and started playing familiar songs. People gathered close to the fire, but closer to him, and broke into song as the music moved them. At that moment I realized that I wanted to learn how to play guitar."
+    "excerpt": "[This is a guest post by Beeminder superfan — and self-quantifier — Jake Jenkins who tells us the story of how Beeminder made all his dreams come true. Well, one particular dream, which will have come true in another year or so of hard work.] When I was 9 years old I went to a beach party. As the sun set and the bonfire was lit a guy broke out his guitar and started playing familiar songs. People gathered close to the fire, but closer to him, and broke into song as the music moved them. At that moment I realized that I wanted to learn how to play guitar.",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/ged",
@@ -563,7 +651,8 @@
     ],
     "status": "publish",
     "disqus_id": "271 https://blog.beeminder.com/?p=271",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/layaways",
@@ -586,7 +675,8 @@
     ],
     "status": "publish",
     "disqus_id": "276 https://blog.beeminder.com/?p=276",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gandalf",
@@ -610,7 +700,8 @@
     ],
     "status": "publish",
     "disqus_id": "280 https://blog.beeminder.com/?p=280",
-    "excerpt": "[This is a guest post by Gandalf Saxe.] Having been a university student for some years now, I've come to appreciate just how important it is to spread out your studying over the whole semester. It's the single most important aspect of good study technique. I'll even go so far as to advocate the opposite extreme of the typical student's modus operandi"
+    "excerpt": "[This is a guest post by Gandalf Saxe.] Having been a university student for some years now, I've come to appreciate just how important it is to spread out your studying over the whole semester. It's the single most important aspect of good study technique. I'll even go so far as to advocate the opposite extreme of the typical student's modus operandi",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bp",
@@ -619,10 +710,16 @@
     "slug": "beehive",
     "date": "2012-03-06",
     "author": "bsoule",
-    "tags": ["bee-all", "navel-gazing", "portland", "portland seed fund"],
+    "tags": [
+      "bee-all",
+      "navel-gazing",
+      "portland",
+      "portland seed fund"
+    ],
     "status": "publish",
     "disqus_id": "283 https://blog.beeminder.com/?p=283",
-    "excerpt": "Beeminder headquarters is now officially in Portland, Oregon! We’re proud and excited to announce that we’ve been accepted into the Portland Seed Fund’s newest class of startups. We’re in the esteemed company of"
+    "excerpt": "Beeminder headquarters is now officially in Portland, Oregon! We’re proud and excited to announce that we’ve been accepted into the Portland Seed Fund’s newest class of startups. We’re in the esteemed company of",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/weighly",
@@ -644,7 +741,8 @@
     ],
     "status": "publish",
     "disqus_id": "288 https://blog.beeminder.com/?p=288",
-    "excerpt": "If you’re fitness savvy you know that you should be gaining muscle as you lose fat. So isn’t focusing on body weight silly, since muscle is denser than fat and ultimately we all want to be svelte and strong and lean, like a jungle cat? Maybe you have a fancy scale that tells you what really matters"
+    "excerpt": "If you’re fitness savvy you know that you should be gaining muscle as you lose fat. So isn’t focusing on body weight silly, since muscle is denser than fat and ultimately we all want to be svelte and strong and lean, like a jungle cat? Maybe you have a fancy scale that tells you what really matters",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bbah",
@@ -669,7 +767,8 @@
     ],
     "status": "publish",
     "disqus_id": "290 https://blog.beeminder.com/?p=290",
-    "excerpt": "The problem of self-control may be a ridiculous first world problem but it's the granddaddy of first world problems and I want to solve it. We live amidst a deluge of opportunities for instant gratification, especially in the form of food and entertainment, and most of us don't handle it well. The general problem, known as akrasia, is this:"
+    "excerpt": "The problem of self-control may be a ridiculous first world problem but it's the granddaddy of first world problems and I want to solve it. We live amidst a deluge of opportunities for instant gratification, especially in the form of food and entertainment, and most of us don't handle it well. The general problem, known as akrasia, is this:",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/pdxqs",
@@ -690,7 +789,8 @@
     ],
     "status": "publish",
     "disqus_id": "294 https://blog.beeminder.com/?p=294",
-    "excerpt": "[The Beeminder founders, Bethany Soule and Daniel Reeves, presented at the Portland Quantified Self Meetup on April 10. This is what they said.] We’re excited to be here! We used to go to Quantified Self meetups in New York and we just moved here, to pursue the Portlandian Dream of working a couple hours a week in a coffee shop and going to clown school. [They hate it when you say that.]"
+    "excerpt": "[The Beeminder founders, Bethany Soule and Daniel Reeves, presented at the Portland Quantified Self Meetup on April 10. This is what they said.] We’re excited to be here! We used to go to Quantified Self meetups in New York and we just moved here, to pursue the Portlandian Dream of working a couple hours a week in a coffee shop and going to clown school. [They hate it when you say that.]",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/lee",
@@ -711,7 +811,8 @@
     ],
     "status": "publish",
     "disqus_id": "301 https://blog.beeminder.com/?p=301",
-    "excerpt": "Our bodies and minds have evolved to enjoy life right here and now because it could be gone tomorrow. We crave fatty foods because they gave us extra padding in case we couldn’t eat next week. We crave sweets because they gave us energy to keep ourselves alive. Then came all the conveniences of the modern world. "
+    "excerpt": "Our bodies and minds have evolved to enjoy life right here and now because it could be gone tomorrow. We crave fatty foods because they gave us extra padding in case we couldn’t eat next week. We crave sweets because they gave us energy to keep ourselves alive. Then came all the conveniences of the modern world. ",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/innocentive",
@@ -733,7 +834,8 @@
     ],
     "status": "publish",
     "disqus_id": "303 https://blog.beeminder.com/?p=303",
-    "excerpt": "I recently won $1000 (sharing a $10k prize) for the following essay on how to solve what people in healthcare call the adherence problem, which costs the healthcare system \"billions of dollars in unnecessary hospitalizations and nursing home and rehab costs\". My prize-winning essay in its entirety follows. (I gave the actual money to"
+    "excerpt": "I recently won $1000 (sharing a $10k prize) for the following essay on how to solve what people in healthcare call the adherence problem, which costs the healthcare system \"billions of dollars in unnecessary hospitalizations and nursing home and rehab costs\". My prize-winning essay in its entirety follows. (I gave the actual money to",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/tuit",
@@ -742,10 +844,15 @@
     "slug": "tuit",
     "date": "2012-05-17",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "rationality"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "rationality"
+    ],
     "status": "publish",
     "disqus_id": "311 https://blog.beeminder.com/?p=311",
-    "excerpt": "If it's important to you to [exercise / practice an instrument / eat better / you name it] but you find that you never get around to it (a 'round tuit', get it?), well, we have an app for that. Think of Beeminder as your Round Tuit dispenser."
+    "excerpt": "If it's important to you to [exercise / practice an instrument / eat better / you name it] but you find that you never get around to it (a 'round tuit', get it?), well, we have an app for that. Think of Beeminder as your Round Tuit dispenser.",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/weasels",
@@ -770,7 +877,8 @@
     ],
     "status": "publish",
     "disqus_id": "314 https://blog.beeminder.com/?p=314",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/chirpify",
@@ -779,10 +887,17 @@
     "slug": "chirpify",
     "date": "2012-06-03",
     "author": "dreeves",
-    "tags": ["chirpify", "new features", "startups", "twitter", "upstart labs"],
+    "tags": [
+      "chirpify",
+      "new features",
+      "startups",
+      "twitter",
+      "upstart labs"
+    ],
     "status": "publish",
     "disqus_id": "322 https://blog.beeminder.com/?p=322",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/psfdd",
@@ -801,7 +916,8 @@
     ],
     "status": "publish",
     "disqus_id": "324 https://blog.beeminder.com/?p=324",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/masochism",
@@ -824,7 +940,8 @@
     ],
     "status": "publish",
     "disqus_id": "344 https://blog.beeminder.com/?p=344",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/mindingpress",
@@ -844,7 +961,8 @@
     ],
     "status": "publish",
     "disqus_id": "348 https://blog.beeminder.com/?p=348",
-    "excerpt": "In the beginning of the year we covered our coverage on Quantified Self and Mark Forster&#8217;s Getting Things Done blog.\r\nThere&#8217;s been a lot more since then. Here are the highlights"
+    "excerpt": "In the beginning of the year we covered our coverage on Quantified Self and Mark Forster&#8217;s Getting Things Done blog.\r\nThere&#8217;s been a lot more since then. Here are the highlights",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/tri",
@@ -863,7 +981,8 @@
     ],
     "status": "publish",
     "disqus_id": "353 https://blog.beeminder.com/?p=353",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/synonyms",
@@ -888,7 +1007,8 @@
     ],
     "status": "publish",
     "disqus_id": "368 https://blog.beeminder.com/?p=368",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gympact",
@@ -907,7 +1027,8 @@
     ],
     "status": "publish",
     "disqus_id": "377 https://blog.beeminder.com/?p=377",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/weusethat",
@@ -916,10 +1037,18 @@
     "slug": "weusethat",
     "date": "2012-08-09",
     "author": "bsoule",
-    "tags": ["bee-all", "FAQ", "meta", "navel-gazing", "startups", "tech"],
+    "tags": [
+      "bee-all",
+      "FAQ",
+      "meta",
+      "navel-gazing",
+      "startups",
+      "tech"
+    ],
     "status": "publish",
     "disqus_id": "381 https://blog.beeminder.com/?p=381",
-    "excerpt": "We were interviewed by WeUseThat today. Here&#8217;s what we said! We are Daniel Reeves and Bethany Soule, co-founders of Beeminder. We make people more awesome via the threat of taking their money. Specifically, we plot"
+    "excerpt": "We were interviewed by WeUseThat today. Here&#8217;s what we said! We are Daniel Reeves and Bethany Soule, co-founders of Beeminder. We make people more awesome via the threat of taking their money. Specifically, we plot",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/perverse",
@@ -944,7 +1073,8 @@
     ],
     "status": "publish",
     "disqus_id": "388 https://blog.beeminder.com/?p=388",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/smart",
@@ -971,7 +1101,8 @@
     ],
     "status": "publish",
     "disqus_id": "394 https://blog.beeminder.com/?p=394",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/blogapi",
@@ -991,7 +1122,8 @@
     ],
     "status": "publish",
     "disqus_id": "397 https://blog.beeminder.com/?p=397",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/pjf-anki",
@@ -1012,7 +1144,8 @@
     ],
     "status": "publish",
     "disqus_id": "403 https://blog.beeminder.com/?p=403",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gmailzero",
@@ -1031,7 +1164,8 @@
     ],
     "status": "publish",
     "disqus_id": "407 https://blog.beeminder.com/?p=407",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/mustdo",
@@ -1058,7 +1192,8 @@
     ],
     "status": "publish",
     "disqus_id": "410 https://blog.beeminder.com/?p=410",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/mongosad",
@@ -1078,7 +1213,8 @@
     ],
     "status": "publish",
     "disqus_id": "414 https://blog.beeminder.com/?p=414",
-    "excerpt": "Bethany and I woke up at 7am on March 7th to a text message from Jill that some graphs seemed to be fubar. Panic ensued as we hacked away nonstop till 5pm or so, never getting dressed or leaving the house. What was the problem? The night before we had run a seemingly innocuous"
+    "excerpt": "Bethany and I woke up at 7am on March 7th to a text message from Jill that some graphs seemed to be fubar. Panic ensued as we hacked away nonstop till 5pm or so, never getting dressed or leaving the house. What was the problem? The night before we had run a seemingly innocuous",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/810",
@@ -1087,10 +1223,16 @@
     "slug": "one",
     "date": "2012-10-13",
     "author": "dreeves",
-    "tags": ["bee-all", "lifecoaching", "navel-gazing", "rationality"],
+    "tags": [
+      "bee-all",
+      "lifecoaching",
+      "navel-gazing",
+      "rationality"
+    ],
     "status": "publish",
     "disqus_id": "420 https://blog.beeminder.com/?p=420",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/tv",
@@ -1111,7 +1253,8 @@
     ],
     "status": "publish",
     "disqus_id": "428 https://blog.beeminder.com/?p=428",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beedroid",
@@ -1120,10 +1263,18 @@
     "slug": "apps",
     "date": "2012-10-25",
     "author": "Andy Brett",
-    "tags": ["android", "api", "apple", "apps", "bee-all", "mobile"],
+    "tags": [
+      "android",
+      "api",
+      "apple",
+      "apps",
+      "bee-all",
+      "mobile"
+    ],
     "status": "publish",
     "disqus_id": "432 https://blog.beeminder.com/?p=432",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/trello",
@@ -1145,7 +1296,8 @@
     ],
     "status": "publish",
     "disqus_id": "437 https://blog.beeminder.com/?p=437",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/nanowrimo",
@@ -1154,10 +1306,16 @@
     "slug": "nanowrimo",
     "date": "2012-11-01",
     "author": "dreeves",
-    "tags": ["bee-all", "nanowrimo", "new features", "writing"],
+    "tags": [
+      "bee-all",
+      "nanowrimo",
+      "new features",
+      "writing"
+    ],
     "status": "publish",
     "disqus_id": "441 https://blog.beeminder.com/?p=441",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/fitbit",
@@ -1177,7 +1335,8 @@
     ],
     "status": "publish",
     "disqus_id": "446 https://blog.beeminder.com/?p=446",
-    "excerpt": "By popular demand, we&#8217;ve now added Fitbit to our growing list of integrations. We&#8217;ve had a lot of people ask for this integration, and even a few who have already started automatically sending their Fitbit data to Beeminder with our API"
+    "excerpt": "By popular demand, we&#8217;ve now added Fitbit to our growing list of integrations. We&#8217;ve had a lot of people ask for this integration, and even a few who have already started automatically sending their Fitbit data to Beeminder with our API",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/rescuetime",
@@ -1198,7 +1357,8 @@
     ],
     "status": "publish",
     "disqus_id": "452 https://blog.beeminder.com/?p=452",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/scpd",
@@ -1219,7 +1379,8 @@
     ],
     "status": "publish",
     "disqus_id": "459 https://blog.beeminder.com/?p=459",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/resjump",
@@ -1239,7 +1400,8 @@
     ],
     "status": "publish",
     "disqus_id": "462 https://blog.beeminder.com/?p=462",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzz",
@@ -1248,10 +1410,18 @@
     "slug": "southwest",
     "date": "2013-01-09",
     "author": "dreeves",
-    "tags": ["bee-all", "buzz", "meta", "navel-gazing", "press", "resolutions"],
+    "tags": [
+      "bee-all",
+      "buzz",
+      "meta",
+      "navel-gazing",
+      "press",
+      "resolutions"
+    ],
     "status": "publish",
     "disqus_id": "466 https://blog.beeminder.com/?p=466",
-    "excerpt": "We’re so proud of our full-page feature in the Southwest Airlines inflight magazine this month that we’re reproducing it here (with permission): ... This new online tool forces you to shape up — or pay up. Here’s how Beeminder co-founder Bethany Soule describes the Web-based, incentivized task tracker:"
+    "excerpt": "We’re so proud of our full-page feature in the Southwest Airlines inflight magazine this month that we’re reproducing it here (with permission): ... This new online tool forces you to shape up — or pay up. Here’s how Beeminder co-founder Bethany Soule describes the Web-based, incentivized task tracker:",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gratitude",
@@ -1272,7 +1442,8 @@
     ],
     "status": "publish",
     "disqus_id": "470 https://blog.beeminder.com/?p=470",
-    "excerpt": "My first reaction to the idea of gratitude journaling &#8212; which I didn&#8217;t realize was a thing, until people started beeminding it &#8212; was, well, I&#8217;ll spare you my snark. Then I tried to articulate my knee-jerkery and came up with this: It seems to have a protesteth-too-much vibe. I mean, what&#8217;s <b>not</b> to be grateful for? Everything is amazing! Even the "
+    "excerpt": "My first reaction to the idea of gratitude journaling &#8212; which I didn&#8217;t realize was a thing, until people started beeminding it &#8212; was, well, I&#8217;ll spare you my snark. Then I tried to articulate my knee-jerkery and came up with this: It seems to have a protesteth-too-much vibe. I mean, what&#8217;s <b>not</b> to be grateful for? Everything is amazing! Even the ",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/ineptitude",
@@ -1293,7 +1464,8 @@
     ],
     "status": "publish",
     "disqus_id": "472 https://blog.beeminder.com/?p=472",
-    "excerpt": "Earlier this month some dozens of you got a delightful little email from us like this: this is super embarrassing but there’s a chance you were affected by a bug where we thought we canceled a charge but then it went through anyway. partly as self-punishment we’re just refunding all the charges where that could possibly have happened. so either you’re rightfully getting a refund or you’re getting a random reprieve on a past derailment! either way a refund of $"
+    "excerpt": "Earlier this month some dozens of you got a delightful little email from us like this: this is super embarrassing but there’s a chance you were affected by a bug where we thought we canceled a charge but then it went through anyway. partly as self-punishment we’re just refunding all the charges where that could possibly have happened. so either you’re rightfully getting a refund or you’re getting a random reprieve on a past derailment! either way a refund of $",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/pcrc",
@@ -1317,7 +1489,8 @@
     ],
     "status": "publish",
     "disqus_id": "478 https://blog.beeminder.com/?p=478",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gitminder",
@@ -1337,7 +1510,8 @@
     ],
     "status": "publish",
     "disqus_id": "484 https://blog.beeminder.com/?p=484",
-    "excerpt": "At the risk of launching a thousand rants from the old neckbeard guard, it&#8217;s hard to imagine what writing code was like before git and GitHub came along. GitHub has made it really easy for people to collaborate on projects, and gives you some nifty stats to boot. For some people, those shiny graphs are enough (and if that&#8217;s you, by all means, try out tenXer). But if you&#8217;re reading this, there&#8217;s a good chance that"
+    "excerpt": "At the risk of launching a thousand rants from the old neckbeard guard, it&#8217;s hard to imagine what writing code was like before git and GitHub came along. GitHub has made it really easy for people to collaborate on projects, and gives you some nifty stats to boot. For some people, those shiny graphs are enough (and if that&#8217;s you, by all means, try out tenXer). But if you&#8217;re reading this, there&#8217;s a good chance that",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/sociallyefficient",
@@ -1359,7 +1533,8 @@
     ],
     "status": "publish",
     "disqus_id": "488 https://blog.beeminder.com/?p=488",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beebox",
@@ -1382,7 +1557,8 @@
     ],
     "status": "publish",
     "disqus_id": "494 https://blog.beeminder.com/?p=494",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/exponential",
@@ -1405,7 +1581,8 @@
     ],
     "status": "publish",
     "disqus_id": "498 https://blog.beeminder.com/?p=498",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beemium",
@@ -1425,7 +1602,8 @@
     ],
     "status": "publish",
     "disqus_id": "501 https://blog.beeminder.com/?p=501",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/legit",
@@ -1447,7 +1625,8 @@
     ],
     "status": "publish",
     "disqus_id": "504 https://blog.beeminder.com/?p=504",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/wsj",
@@ -1456,10 +1635,16 @@
     "slug": "wsj",
     "date": "2013-04-24",
     "author": "bsoule",
-    "tags": ["bee-all", "buzz", "navel-gazing", "press"],
+    "tags": [
+      "bee-all",
+      "buzz",
+      "navel-gazing",
+      "press"
+    ],
     "status": "publish",
     "disqus_id": "513 https://blog.beeminder.com/?p=513",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/duo",
@@ -1478,7 +1663,8 @@
     ],
     "status": "publish",
     "disqus_id": "519 https://blog.beeminder.com/?p=519",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/autocancel",
@@ -1499,7 +1685,8 @@
     ],
     "status": "publish",
     "disqus_id": "523 https://blog.beeminder.com/?p=523",
-    "excerpt": "&#8220;Well I&#8217;ve already paid for Netflix this month, so I might as well watch another episode of &#8216;Say Yes To The Dress&#8217;. I&#8217;ll get around to canceling later. You know, when I&#8217;m less busy.&#8221; &#8212; A slightly caricatured version of me. When you sign up for some subscription services they make"
+    "excerpt": "&#8220;Well I&#8217;ve already paid for Netflix this month, so I might as well watch another episode of &#8216;Say Yes To The Dress&#8217;. I&#8217;ll get around to canceling later. You know, when I&#8217;m less busy.&#8221; &#8212; A slightly caricatured version of me. When you sign up for some subscription services they make",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/fair",
@@ -1523,7 +1710,8 @@
     ],
     "status": "publish",
     "disqus_id": "525 https://blog.beeminder.com/?p=525",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/routine",
@@ -1542,7 +1730,8 @@
     ],
     "status": "publish",
     "disqus_id": "529 https://blog.beeminder.com/?p=529",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/leniency",
@@ -1565,7 +1754,8 @@
     ],
     "status": "publish",
     "disqus_id": "535 https://blog.beeminder.com/?p=535",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/zeno",
@@ -1574,10 +1764,18 @@
     "slug": "zeno",
     "date": "2013-06-24",
     "author": "dreeves",
-    "tags": ["bee-all", "best-of", "bugs", "FAQ", "new features", "zeno"],
+    "tags": [
+      "bee-all",
+      "best-of",
+      "bugs",
+      "FAQ",
+      "new features",
+      "zeno"
+    ],
     "status": "publish",
     "disqus_id": "540 https://blog.beeminder.com/?p=540",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/sin",
@@ -1603,7 +1801,8 @@
     ],
     "status": "publish",
     "disqus_id": "543 https://blog.beeminder.com/?p=543",
-    "excerpt": "For a long time I found that I was spending too much time on certain unproductive things and struggled with getting myself to do what I actually wanted to do with my time. The big break came one morning when I noticed that there was a very tight correlation between the things I wanted to stop doing and the traditional Christian concept of"
+    "excerpt": "For a long time I found that I was spending too much time on certain unproductive things and struggled with getting myself to do what I actually wanted to do with my time. The big break came one morning when I noticed that there was a very tight correlation between the things I wanted to stop doing and the traditional Christian concept of",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/jargon",
@@ -1624,7 +1823,8 @@
     ],
     "status": "publish",
     "disqus_id": "546 https://blog.beeminder.com/?p=546",
-    "excerpt": "By popular demand, we&#8217;ve created a jargon file! We don&#8217;t expect this to be the permanent home of this glossary (maybe it belongs with our FAQ) but it&#8217;s on the internet now so from now on you can google things like &#8220;beeminder flatlining&#8221; and hopefully be sent here to learn what we&#8217;re"
+    "excerpt": "By popular demand, we&#8217;ve created a jargon file! We don&#8217;t expect this to be the permanent home of this glossary (maybe it belongs with our FAQ) but it&#8217;s on the internet now so from now on you can google things like &#8220;beeminder flatlining&#8221; and hopefully be sent here to learn what we&#8217;re",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/nick",
@@ -1648,7 +1848,8 @@
     ],
     "status": "publish",
     "disqus_id": "553 https://blog.beeminder.com/?p=553",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/curtain",
@@ -1667,7 +1868,8 @@
     ],
     "status": "publish",
     "disqus_id": "561 https://blog.beeminder.com/?p=561",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/nwo",
@@ -1688,7 +1890,8 @@
     ],
     "status": "publish",
     "disqus_id": "567 https://blog.beeminder.com/?p=567",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/cheating",
@@ -1709,7 +1912,8 @@
     ],
     "status": "publish",
     "disqus_id": "572 https://blog.beeminder.com/?p=572",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/runkeeper",
@@ -1718,10 +1922,17 @@
     "slug": "runkeeper",
     "date": "2013-09-03",
     "author": "bsoule",
-    "tags": ["bee-all", "FAQ", "fitness", "integrations", "new features"],
+    "tags": [
+      "bee-all",
+      "FAQ",
+      "fitness",
+      "integrations",
+      "new features"
+    ],
     "status": "publish",
     "disqus_id": "578 https://blog.beeminder.com/?p=578",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/breaks",
@@ -1730,10 +1941,17 @@
     "slug": "breaks",
     "date": "2013-09-13",
     "author": "bsoule",
-    "tags": ["akrasia", "bee-all", "FAQ", "new features", "yellow brick road"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "FAQ",
+      "new features",
+      "yellow brick road"
+    ],
     "status": "publish",
     "disqus_id": "587 https://blog.beeminder.com/?p=587",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/doless",
@@ -1742,10 +1960,17 @@
     "slug": "less",
     "date": "2013-09-23",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "FAQ", "new features", "yellow brick road"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "FAQ",
+      "new features",
+      "yellow brick road"
+    ],
     "status": "publish",
     "disqus_id": "590 https://blog.beeminder.com/?p=590",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/moreless",
@@ -1769,7 +1994,8 @@
     ],
     "status": "publish",
     "disqus_id": "597 https://blog.beeminder.com/?p=597",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/two",
@@ -1789,7 +2015,8 @@
     ],
     "status": "publish",
     "disqus_id": "601 https://blog.beeminder.com/?p=601",
-    "excerpt": "Yo-yo-yo! We’re two! So perhaps we should say yo-yo? Remember two years ago when we launched? You almost surely don't! (If you do, let us know because we have"
+    "excerpt": "Yo-yo-yo! We’re two! So perhaps we should say yo-yo? Remember two years ago when we launched? You almost surely don't! (If you do, let us know because we have",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beemup",
@@ -1810,7 +2037,8 @@
     ],
     "status": "publish",
     "disqus_id": "607 https://blog.beeminder.com/?p=607",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/draft",
@@ -1819,10 +2047,16 @@
     "slug": "draft",
     "date": "2013-11-01",
     "author": "dreeves",
-    "tags": ["bee-all", "FAQ", "integrations", "new features"],
+    "tags": [
+      "bee-all",
+      "FAQ",
+      "integrations",
+      "new features"
+    ],
     "status": "publish",
     "disqus_id": "610 https://blog.beeminder.com/?p=610",
-    "excerpt": "Tomorrow is the beginning of November, which kicks off National Novel Writing Month. Last year we put together some tools for NaNoWriMo and blogged about it: Beemind Your NaNoWriMo Progress. This year we have some new tools to support beeminding writers. The biggie that we’re really excited about is"
+    "excerpt": "Tomorrow is the beginning of November, which kicks off National Novel Writing Month. Last year we put together some tools for NaNoWriMo and blogged about it: Beemind Your NaNoWriMo Progress. This year we have some new tools to support beeminding writers. The biggie that we’re really excited about is",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beemyou",
@@ -1844,7 +2078,8 @@
     ],
     "status": "publish",
     "disqus_id": "615 https://blog.beeminder.com/?p=615",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/uvi1000",
@@ -1873,7 +2108,8 @@
     ],
     "status": "publish",
     "disqus_id": "622 https://blog.beeminder.com/?p=622",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beedroid2",
@@ -1893,7 +2129,8 @@
     ],
     "status": "publish",
     "disqus_id": "637 https://blog.beeminder.com/?p=637",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/wist",
@@ -1913,7 +2150,8 @@
     ],
     "status": "publish",
     "disqus_id": "642 https://blog.beeminder.com/?p=642",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/nyr2013",
@@ -1931,7 +2169,8 @@
     ],
     "status": "publish",
     "disqus_id": "650 https://blog.beeminder.com/?p=650",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/erica",
@@ -1951,7 +2190,8 @@
     ],
     "status": "publish",
     "disqus_id": "652 https://blog.beeminder.com/?p=652",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beenice",
@@ -1972,7 +2212,8 @@
     ],
     "status": "publish",
     "disqus_id": "660 https://blog.beeminder.com/?p=660",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/qs2013",
@@ -1997,7 +2238,8 @@
     ],
     "status": "publish",
     "disqus_id": "661 https://blog.beeminder.com/?p=661",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/codeschool",
@@ -2018,7 +2260,8 @@
     ],
     "status": "publish",
     "disqus_id": "667 https://blog.beeminder.com/?p=667",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/runnersworld",
@@ -2027,10 +2270,15 @@
     "slug": "runnersworld",
     "date": "2014-02-02",
     "author": "Erica Edelman",
-    "tags": ["buzz", "navel-gazing", "press"],
+    "tags": [
+      "buzz",
+      "navel-gazing",
+      "press"
+    ],
     "status": "publish",
     "disqus_id": "675 https://blog.beeminder.com/?p=675",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/newbees",
@@ -2052,7 +2300,8 @@
     ],
     "status": "publish",
     "disqus_id": "700 https://blog.beeminder.com/?p=700",
-    "excerpt": "How Beeminder works is you tell us your goal and we map out a Yellow Brick Road for you to stay on. As long as you stay on the road you're safe, but if you fall off we'll charge you money! We give you seven goals to play around with at the beginning. These start at $0, so if you fall off once "
+    "excerpt": "How Beeminder works is you tell us your goal and we map out a Yellow Brick Road for you to stay on. As long as you stay on the road you're safe, but if you fall off we'll charge you money! We give you seven goals to play around with at the beginning. These start at $0, so if you fall off once ",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/fatty",
@@ -2064,7 +2313,8 @@
     "tags": [],
     "status": "publish",
     "disqus_id": "708 https://blog.beeminder.com/?p=708",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/vegetables",
@@ -2073,10 +2323,16 @@
     "slug": "vegetables",
     "date": "2014-03-15",
     "author": "bsoule",
-    "tags": ["bee-all", "food", "tips", "weight loss"],
+    "tags": [
+      "bee-all",
+      "food",
+      "tips",
+      "weight loss"
+    ],
     "status": "publish",
     "disqus_id": "716 https://blog.beeminder.com/?p=716",
-    "excerpt": "With the Fat Cyclist weight loss competition underway, we're thinking about weight loss a lot. We've got some useful posts planned. In the meantime, we have Bethany hating on"
+    "excerpt": "With the Fat Cyclist weight loss competition underway, we're thinking about weight loss a lot. We've got some useful posts planned. In the meantime, we have Bethany hating on",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bweight",
@@ -2096,7 +2352,8 @@
     ],
     "status": "publish",
     "disqus_id": "720 https://blog.beeminder.com/?p=720",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gtbee",
@@ -2124,7 +2381,8 @@
     ],
     "status": "publish",
     "disqus_id": "726 https://blog.beeminder.com/?p=726",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/heartbleed",
@@ -2133,10 +2391,17 @@
     "slug": "heartbleed",
     "date": "2014-04-14",
     "author": "dreeves",
-    "tags": ["bee-all", "bugs", "meta", "navel-gazing", "nerdery"],
+    "tags": [
+      "bee-all",
+      "bugs",
+      "meta",
+      "navel-gazing",
+      "nerdery"
+    ],
     "status": "publish",
     "disqus_id": "731 https://blog.beeminder.com/?p=731",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bothsides",
@@ -2145,10 +2410,16 @@
     "slug": "bothsides",
     "date": "2014-04-24",
     "author": "dreeves",
-    "tags": ["bee-all", "FAQ", "navel-gazing", "yellow brick road"],
+    "tags": [
+      "bee-all",
+      "FAQ",
+      "navel-gazing",
+      "yellow brick road"
+    ],
     "status": "publish",
     "disqus_id": "733 https://blog.beeminder.com/?p=733",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/refereeminder",
@@ -2169,7 +2440,8 @@
     ],
     "status": "publish",
     "disqus_id": "739 https://blog.beeminder.com/?p=739",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/jess",
@@ -2191,7 +2463,8 @@
     ],
     "status": "publish",
     "disqus_id": "743 https://blog.beeminder.com/?p=743",
-    "excerpt": "Recently, I’ve been trying to get myself out of my comfort zone more often. I’ve been finding it… uncomfortable. One thing I’ve been trying to do is talk to strangers more frequently. I genuinely want to get better at this. I think it will make me more comfortable socially as well as being a valuable skill generally. But every time I"
+    "excerpt": "Recently, I’ve been trying to get myself out of my comfort zone more often. I’ve been finding it… uncomfortable. One thing I’ve been trying to do is talk to strangers more frequently. I genuinely want to get better at this. I think it will make me more comfortable socially as well as being a valuable skill generally. But every time I",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/ericegyptian",
@@ -2210,7 +2483,8 @@
     ],
     "status": "publish",
     "disqus_id": "746 https://blog.beeminder.com/?p=746",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/burnout",
@@ -2231,7 +2505,8 @@
     ],
     "status": "publish",
     "disqus_id": "755 https://blog.beeminder.com/?p=755",
-    "excerpt": "Here&#8217;s a perennial topic on Akratics Anonymous: How do you keep from feeling overwhelmed by all the myriad things things you&#8217;re beeminding? I'm going to repeat my advice buried in a previous blog post, which is actually to"
+    "excerpt": "Here&#8217;s a perennial topic on Akratics Anonymous: How do you keep from feeling overwhelmed by all the myriad things things you&#8217;re beeminding? I'm going to repeat my advice buried in a previous blog post, which is actually to",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/maniac",
@@ -2254,7 +2529,8 @@
     ],
     "status": "publish",
     "disqus_id": "762 https://blog.beeminder.com/?p=762",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/exproad",
@@ -2263,10 +2539,13 @@
     "slug": "exproad",
     "date": "2014-06-28",
     "author": "dreeves",
-    "tags": ["navel-gazing"],
+    "tags": [
+      "navel-gazing"
+    ],
     "status": "publish",
     "disqus_id": "770 https://blog.beeminder.com/?p=770",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/fatcyclist",
@@ -2285,7 +2564,8 @@
     ],
     "status": "publish",
     "disqus_id": "773 https://blog.beeminder.com/?p=773",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/howeyeuse",
@@ -2307,7 +2587,8 @@
     ],
     "status": "publish",
     "disqus_id": "775 https://blog.beeminder.com/?p=775",
-    "excerpt": "When I first introduce people to Beeminder, they either recoil in horror or they want to dive right in. But the easiest way to defeat a new system is to overload it [1], so if you read this blog post and then immediately create a bunch of goals, I’ve probably failed. There are two obvious ways to overload a system: volume and intensity. In Beeminder terms, volume is creating more goals than you’re able to keep current, and intensity is setting too aggressive a slope. You might <i>want</i> to lose"
+    "excerpt": "When I first introduce people to Beeminder, they either recoil in horror or they want to dive right in. But the easiest way to defeat a new system is to overload it [1], so if you read this blog post and then immediately create a bunch of goals, I’ve probably failed. There are two obvious ways to overload a system: volume and intensity. In Beeminder terms, volume is creating more goals than you’re able to keep current, and intensity is setting too aggressive a slope. You might <i>want</i> to lose",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/typebee",
@@ -2328,7 +2609,8 @@
     ],
     "status": "publish",
     "disqus_id": "779 https://blog.beeminder.com/?p=779",
-    "excerpt": "People often ask, sometimes incredulously, what kind of person uses Beeminder. We’ve found that the following personality traits are required: 1. Akratic (obviously), 2. Ambitious/motivated (ironically), 3. Self-aware (knowing the limits of one’s motivation), 4. High-integrity (to not spoil the whole point by"
+    "excerpt": "People often ask, sometimes incredulously, what kind of person uses Beeminder. We’ve found that the following personality traits are required: 1. Akratic (obviously), 2. Ambitious/motivated (ironically), 3. Self-aware (knowing the limits of one’s motivation), 4. High-integrity (to not spoil the whole point by",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/twitter",
@@ -2337,10 +2619,17 @@
     "slug": "twitter",
     "date": "2014-08-05",
     "author": "Chris Goodman",
-    "tags": ["api", "bee-all", "integrations", "new features", "twitter"],
+    "tags": [
+      "api",
+      "bee-all",
+      "integrations",
+      "new features",
+      "twitter"
+    ],
     "status": "publish",
     "disqus_id": "781 https://blog.beeminder.com/?p=781",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/smarmbot",
@@ -2360,7 +2649,8 @@
     ],
     "status": "publish",
     "disqus_id": "787 https://blog.beeminder.com/?p=787",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzz5",
@@ -2379,7 +2669,8 @@
     ],
     "status": "publish",
     "disqus_id": "789 https://blog.beeminder.com/?p=789",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/whattomind",
@@ -2403,7 +2694,8 @@
     ],
     "status": "publish",
     "disqus_id": "795 https://blog.beeminder.com/?p=795",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/pledgecaps",
@@ -2412,10 +2704,17 @@
     "slug": "pledgecaps",
     "date": "2014-09-24",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "FAQ", "money", "new features"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "FAQ",
+      "money",
+      "new features"
+    ],
     "status": "publish",
     "disqus_id": "805 https://blog.beeminder.com/?p=805",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/freebees",
@@ -2434,7 +2733,8 @@
     ],
     "status": "publish",
     "disqus_id": "810 https://blog.beeminder.com/?p=810",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/discourse",
@@ -2457,7 +2757,8 @@
     ],
     "status": "publish",
     "disqus_id": "811 https://blog.beeminder.com/?p=811",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/habitrpg",
@@ -2478,7 +2779,8 @@
     ],
     "status": "publish",
     "disqus_id": "814 https://blog.beeminder.com/?p=814",
-    "excerpt": "HabitRPG and Beeminder have a remarkably similar history and remarkably similar users. We consider this a match made in heaven. In fact, we and the HabitRPG folks have been talking about this for literally years now, so we&#8217;re very excited to finally be shipping it, thanks to the hacking skills of our own Alice Monday, and with assistance from Alice Harris. As a welcome to HabitRPG users new to Beeminder, we&#8217;re starting with a"
+    "excerpt": "HabitRPG and Beeminder have a remarkably similar history and remarkably similar users. We consider this a match made in heaven. In fact, we and the HabitRPG folks have been talking about this for literally years now, so we&#8217;re very excited to finally be shipping it, thanks to the hacking skills of our own Alice Monday, and with assistance from Alice Harris. As a welcome to HabitRPG users new to Beeminder, we&#8217;re starting with a",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/arbdead",
@@ -2500,7 +2802,8 @@
     ],
     "status": "publish",
     "disqus_id": "816 https://blog.beeminder.com/?p=816",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/three",
@@ -2522,7 +2825,8 @@
     ],
     "status": "publish",
     "disqus_id": "818 https://blog.beeminder.com/?p=818",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/rosary",
@@ -2542,7 +2846,8 @@
     ],
     "status": "publish",
     "disqus_id": "829 https://blog.beeminder.com/?p=829",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/zapier",
@@ -2564,7 +2869,8 @@
     ],
     "status": "publish",
     "disqus_id": "830 https://blog.beeminder.com/?p=830",
-    "excerpt": "We&#8217;re beaming with pride at being the latest official Zapier integration. See also Zapier&#8217;s announcement. This is arguably our biggest announcement since the Beeminder API two years ago. In case you don&#8217;t already know about Zapier, it&#8217;s a more"
+    "excerpt": "We&#8217;re beaming with pride at being the latest official Zapier integration. See also Zapier&#8217;s announcement. This is arguably our biggest announcement since the Beeminder API two years ago. In case you don&#8217;t already know about Zapier, it&#8217;s a more",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/veggieminding",
@@ -2585,7 +2891,8 @@
     ],
     "status": "publish",
     "disqus_id": "837 https://blog.beeminder.com/?p=837",
-    "excerpt": "Do you have trouble eating an appropriate amount of vegetables? Do you repeatedly buy them, then watch them wither and decay, feeling guilty about the waste of money and the impact on your health? Do you find healthy eating to be overwhelmingly complicated? I was like that for years. But for exactly one thousand days today, I have"
+    "excerpt": "Do you have trouble eating an appropriate amount of vegetables? Do you repeatedly buy them, then watch them wither and decay, feeling guilty about the waste of money and the impact on your health? Do you find healthy eating to be overwhelmingly complicated? I was like that for years. But for exactly one thousand days today, I have",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/rituals",
@@ -2605,7 +2912,8 @@
     ],
     "status": "publish",
     "disqus_id": "842 https://blog.beeminder.com/?p=842",
-    "excerpt": "There’s something a little weird for me, intuitively, about beeminding parts of my spiritual life. After all, in Romans 12:19, it is written “Vengeance <i>is</i> mine; I will repay, saith the Lord.” So, if I turn to Beeminder to"
+    "excerpt": "There’s something a little weird for me, intuitively, about beeminding parts of my spiritual life. After all, in Romans 12:19, it is written “Vengeance <i>is</i> mine; I will repay, saith the Lord.” So, if I turn to Beeminder to",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/sleep",
@@ -2627,7 +2935,8 @@
     ],
     "status": "publish",
     "disqus_id": "848 https://blog.beeminder.com/?p=848",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/tock",
@@ -2650,7 +2959,8 @@
     ],
     "status": "publish",
     "disqus_id": "860 https://blog.beeminder.com/?p=860",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/pomopoker",
@@ -2672,7 +2982,8 @@
     ],
     "status": "publish",
     "disqus_id": "863 https://blog.beeminder.com/?p=863",
-    "excerpt": "Last week Bee talked about Tocks. That&#8217;s our neologism for 45-minute pomodoros, as well as our characteristically over-engineered system for minding them. She listed some gamification-y tips for effective tocking and assured everyone that all our other ideas involved money. That of course included beeminding tocks, as discussed last time, and certainly includes"
+    "excerpt": "Last week Bee talked about Tocks. That&#8217;s our neologism for 45-minute pomodoros, as well as our characteristically over-engineered system for minding them. She listed some gamification-y tips for effective tocking and assured everyone that all our other ideas involved money. That of course included beeminding tocks, as discussed last time, and certainly includes",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bucketminding",
@@ -2691,7 +3002,8 @@
     ],
     "status": "publish",
     "disqus_id": "866 https://blog.beeminder.com/?p=866",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/epson",
@@ -2709,7 +3021,8 @@
     ],
     "status": "publish",
     "disqus_id": "870 https://blog.beeminder.com/?p=870",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/triangle",
@@ -2733,7 +3046,8 @@
     ],
     "status": "publish",
     "disqus_id": "876 https://blog.beeminder.com/?p=876",
-    "excerpt": "One of my vices is that I drink a bit too much. Not to the level where I have a problem, but it would be strictly better if I cut out about 2 or 3 of the drinks I have in a typical week. This seems like an obvious use case for Beeminder. I’ve previously beeminded units of alcohol consumption and concluded that, measured as a total number of units per week, I’m completely"
+    "excerpt": "One of my vices is that I drink a bit too much. Not to the level where I have a problem, but it would be strictly better if I cut out about 2 or 3 of the drinks I have in a typical week. This seems like an obvious use case for Beeminder. I’ve previously beeminded units of alcohol consumption and concluded that, measured as a total number of units per week, I’m completely",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/garmin",
@@ -2753,7 +3067,8 @@
     ],
     "status": "publish",
     "disqus_id": "879 https://blog.beeminder.com/?p=879",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beeyond",
@@ -2772,7 +3087,8 @@
     ],
     "status": "publish",
     "disqus_id": "884 https://blog.beeminder.com/?p=884",
-    "excerpt": "Hello, I’m Tadeusz — tkadlubo on Beeminder and elsewhere. I’m a fairly regular middle class nerd. Early 30s. An engineering job in some corporate niche. A family. By many metrics I’m doing well: I’m basically healthy, I make a good living, I’m lucky enough to live in politically stable times (by Central European standards), and I face no immediate crises in my life. You can say all is well — or, depending on your perspective, that I’m coasting, and I’m ready to"
+    "excerpt": "Hello, I’m Tadeusz — tkadlubo on Beeminder and elsewhere. I’m a fairly regular middle class nerd. Early 30s. An engineering job in some corporate niche. A family. By many metrics I’m doing well: I’m basically healthy, I make a good living, I’m lucky enough to live in politically stable times (by Central European standards), and I face no immediate crises in my life. You can say all is well — or, depending on your perspective, that I’m coasting, and I’m ready to",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/movingav",
@@ -2795,7 +3111,8 @@
     ],
     "status": "publish",
     "disqus_id": "886 https://blog.beeminder.com/?p=886",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/essy",
@@ -2815,7 +3132,8 @@
     ],
     "status": "publish",
     "disqus_id": "890 https://blog.beeminder.com/?p=890",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/aftermath",
@@ -2836,7 +3154,8 @@
     ],
     "status": "publish",
     "disqus_id": "898 https://blog.beeminder.com/?p=898",
-    "excerpt": "I recently had a highly disruptive event in my life. Overnight my priorities rapidly changed, and not all of my Beeminder goals made sense anymore. This is the story of how I dealt with my commitments during a period of stress. When real life changes suddenly, you deal with it. Your beemergency days are no longer relevant. When the first derailment happened, I"
+    "excerpt": "I recently had a highly disruptive event in my life. Overnight my priorities rapidly changed, and not all of my Beeminder goals made sense anymore. This is the story of how I dealt with my commitments during a period of stress. When real life changes suddenly, you deal with it. Your beemergency days are no longer relevant. When the first derailment happened, I",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/ifttt",
@@ -2858,7 +3177,8 @@
     ],
     "status": "publish",
     "disqus_id": "904 https://blog.beeminder.com/?p=904",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gmailzero2",
@@ -2878,7 +3198,8 @@
     ],
     "status": "publish",
     "disqus_id": "909 https://blog.beeminder.com/?p=909",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/smoking",
@@ -2902,7 +3223,8 @@
     ],
     "status": "publish",
     "disqus_id": "918 https://blog.beeminder.com/?p=918",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/misfit",
@@ -2920,7 +3242,8 @@
     ],
     "status": "publish",
     "disqus_id": "920 https://blog.beeminder.com/?p=920",
-    "excerpt": "Another official integration: Misfit! Look at us, all featured in their gallery  and everything! This is an especially exciting integration for us personally -- our esteemed CEO has been wearing his Misfit Shine literally 24/7 for a year and a half now.  As a welcome to Misfit users new to Beeminder, we'll start with a recap of what Beeminder is all about.  For the full story, start at the very beginning. If you're just eager"
+    "excerpt": "Another official integration: Misfit! Look at us, all featured in their gallery  and everything! This is an especially exciting integration for us personally -- our esteemed CEO has been wearing his Misfit Shine literally 24/7 for a year and a half now.  As a welcome to Misfit users new to Beeminder, we'll start with a recap of what Beeminder is all about.  For the full story, start at the very beginning. If you're just eager",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/skritter",
@@ -2939,7 +3262,8 @@
     ],
     "status": "publish",
     "disqus_id": "924 https://blog.beeminder.com/?p=924",
-    "excerpt": "Another integration, hot off the presses:  Skritter! There is a funny back story with this one. Last winter our charmingly optimistic CEO, imagining we could have this integration done &#8220;like in a month&#8221;, got slightly telephone-gamed into committing to launch it in January. When we noticed what we&#8217;d gotten ourselves into we offered a"
+    "excerpt": "Another integration, hot off the presses:  Skritter! There is a funny back story with this one. Last winter our charmingly optimistic CEO, imagining we could have this integration done &#8220;like in a month&#8221;, got slightly telephone-gamed into committing to launch it in January. When we noticed what we&#8217;d gotten ourselves into we offered a",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/meetup",
@@ -2948,10 +3272,16 @@
     "slug": "qs15",
     "date": "2015-06-18",
     "author": "dreeves",
-    "tags": ["meetup", "navel-gazing", "PSA", "quantified self"],
+    "tags": [
+      "meetup",
+      "navel-gazing",
+      "PSA",
+      "quantified self"
+    ],
     "status": "publish",
     "disqus_id": "930 https://blog.beeminder.com/?p=930",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/seinfeld",
@@ -2976,7 +3306,8 @@
     ],
     "status": "publish",
     "disqus_id": "937 https://blog.beeminder.com/?p=937",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/nudge",
@@ -2998,7 +3329,8 @@
     ],
     "status": "publish",
     "disqus_id": "941 https://blog.beeminder.com/?p=941",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/chelsea",
@@ -3019,7 +3351,8 @@
     ],
     "status": "publish",
     "disqus_id": "946 https://blog.beeminder.com/?p=946",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/mirabai",
@@ -3040,7 +3373,8 @@
     ],
     "status": "publish",
     "disqus_id": "950 https://blog.beeminder.com/?p=950",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/trust",
@@ -3059,7 +3393,8 @@
     ],
     "status": "publish",
     "disqus_id": "953 https://blog.beeminder.com/?p=953",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/should",
@@ -3078,7 +3413,8 @@
     ],
     "status": "publish",
     "disqus_id": "957 https://blog.beeminder.com/?p=957",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/QSGlobal2015",
@@ -3099,7 +3435,8 @@
     ],
     "status": "publish",
     "disqus_id": "968 https://blog.beeminder.com/?p=968",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzzyear",
@@ -3118,7 +3455,8 @@
     ],
     "status": "publish",
     "disqus_id": "972 https://blog.beeminder.com/?p=972",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/remrev",
@@ -3127,10 +3465,18 @@
     "slug": "reminders",
     "date": "2015-10-01",
     "author": "bsoule",
-    "tags": ["akrasia", "bee-all", "dog food", "FAQ", "meta", "new features"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "dog food",
+      "FAQ",
+      "meta",
+      "new features"
+    ],
     "status": "publish",
     "disqus_id": "976 https://blog.beeminder.com/?p=976",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/waterfalls",
@@ -3151,7 +3497,8 @@
     ],
     "status": "publish",
     "disqus_id": "980 https://blog.beeminder.com/?p=980",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/hardsoon",
@@ -3170,7 +3517,8 @@
     ],
     "status": "publish",
     "disqus_id": "983 https://blog.beeminder.com/?p=983",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/four",
@@ -3190,7 +3538,8 @@
     ],
     "status": "publish",
     "disqus_id": "990 https://blog.beeminder.com/?p=990",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/complice",
@@ -3213,7 +3562,8 @@
     ],
     "status": "publish",
     "disqus_id": "995 https://blog.beeminder.com/?p=995",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/faireminder",
@@ -3232,7 +3582,8 @@
     ],
     "status": "publish",
     "disqus_id": "1016 https://blog.beeminder.com/?p=1016",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/cybermonday",
@@ -3241,10 +3592,16 @@
     "slug": "cybermonday",
     "date": "2015-12-01",
     "author": "dreeves",
-    "tags": ["bee-all", "money", "navel-gazing", "snark"],
+    "tags": [
+      "bee-all",
+      "money",
+      "navel-gazing",
+      "snark"
+    ],
     "status": "publish",
     "disqus_id": "1040 https://blog.beeminder.com/?p=1040",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/systems",
@@ -3265,7 +3622,8 @@
     ],
     "status": "publish",
     "disqus_id": "1045 https://blog.beeminder.com/?p=1045",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzz7",
@@ -3274,10 +3632,17 @@
     "slug": "buzz7",
     "date": "2015-12-22",
     "author": "bsoule",
-    "tags": ["buzz", "meta", "navel-gazing", "press", "rationality"],
+    "tags": [
+      "buzz",
+      "meta",
+      "navel-gazing",
+      "press",
+      "rationality"
+    ],
     "status": "publish",
     "disqus_id": "1049 https://blog.beeminder.com/?p=1049",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/habitica",
@@ -3299,7 +3664,8 @@
     ],
     "status": "publish",
     "disqus_id": "1059 https://blog.beeminder.com/?p=1059",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/frictionless",
@@ -3318,7 +3684,8 @@
     ],
     "status": "publish",
     "disqus_id": "1065 https://blog.beeminder.com/?p=1065",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzz8",
@@ -3337,7 +3704,8 @@
     ],
     "status": "publish",
     "disqus_id": "1069 https://blog.beeminder.com/?p=1069",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/revealedprefs",
@@ -3358,7 +3726,8 @@
     ],
     "status": "publish",
     "disqus_id": "1073 https://blog.beeminder.com/?p=1073",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/mongoid",
@@ -3367,10 +3736,17 @@
     "slug": "mongoid",
     "date": "2016-02-25",
     "author": "dreeves",
-    "tags": ["bee-all", "bugs", "dog food", "navel-gazing", "nerdery"],
+    "tags": [
+      "bee-all",
+      "bugs",
+      "dog food",
+      "navel-gazing",
+      "nerdery"
+    ],
     "status": "publish",
     "disqus_id": "1078 https://blog.beeminder.com/?p=1078",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/egodepletion",
@@ -3393,7 +3769,8 @@
     ],
     "status": "publish",
     "disqus_id": "1082 https://blog.beeminder.com/?p=1082",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/willpower",
@@ -3414,7 +3791,8 @@
     ],
     "status": "publish",
     "disqus_id": "1090 https://blog.beeminder.com/?p=1090",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/deathtofreebees",
@@ -3434,7 +3812,8 @@
     ],
     "status": "publish",
     "disqus_id": "1092 https://blog.beeminder.com/?p=1092",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/custard",
@@ -3455,7 +3834,8 @@
     ],
     "status": "publish",
     "disqus_id": "1099 https://blog.beeminder.com/?p=1099",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/obscure",
@@ -3476,7 +3856,8 @@
     ],
     "status": "publish",
     "disqus_id": "1106 https://blog.beeminder.com/?p=1106",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/safe",
@@ -3485,10 +3866,18 @@
     "slug": "creditcard",
     "date": "2016-05-09",
     "author": "dreeves",
-    "tags": ["bee-all", "best-of", "FAQ", "money", "navel-gazing", "newbees"],
+    "tags": [
+      "bee-all",
+      "best-of",
+      "FAQ",
+      "money",
+      "navel-gazing",
+      "newbees"
+    ],
     "status": "publish",
     "disqus_id": "1112 https://blog.beeminder.com/?p=1112",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzz9",
@@ -3507,7 +3896,8 @@
     ],
     "status": "publish",
     "disqus_id": "1115 https://blog.beeminder.com/?p=1115",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/weekendsoff",
@@ -3516,10 +3906,17 @@
     "slug": "weekends",
     "date": "2016-05-28",
     "author": "bsoule",
-    "tags": ["bee-all", "FAQ", "new features", "scheduling", "time"],
+    "tags": [
+      "bee-all",
+      "FAQ",
+      "new features",
+      "scheduling",
+      "time"
+    ],
     "status": "publish",
     "disqus_id": "1121 https://blog.beeminder.com/?p=1121",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/road",
@@ -3539,7 +3936,8 @@
     ],
     "status": "publish",
     "disqus_id": "1127 https://blog.beeminder.com/?p=1127",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beemplice",
@@ -3559,7 +3957,8 @@
     ],
     "status": "publish",
     "disqus_id": "1133 https://blog.beeminder.com/?p=1133",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beemarb",
@@ -3581,7 +3980,8 @@
     ],
     "status": "publish",
     "disqus_id": "1145 https://blog.beeminder.com/?p=1145",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/cockroach",
@@ -3601,7 +4001,8 @@
     ],
     "status": "publish",
     "disqus_id": "1162 https://blog.beeminder.com/?p=1162",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/kibeemium",
@@ -3610,10 +4011,17 @@
     "slug": "infinibee",
     "date": "2016-08-09",
     "author": "dreeves",
-    "tags": ["bee-all", "meta", "navel-gazing", "new features", "premium"],
+    "tags": [
+      "bee-all",
+      "meta",
+      "navel-gazing",
+      "new features",
+      "premium"
+    ],
     "status": "publish",
     "disqus_id": "1164 https://blog.beeminder.com/?p=1164",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/modal-beeminder",
@@ -3638,7 +4046,8 @@
     ],
     "status": "publish",
     "disqus_id": "1171 https://blog.beeminder.com/?p=1171",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/derail",
@@ -3647,10 +4056,17 @@
     "slug": "derail",
     "date": "2016-09-10",
     "author": "bsoule",
-    "tags": ["bee-all", "best-of", "FAQ", "newbees", "yellow brick road"],
+    "tags": [
+      "bee-all",
+      "best-of",
+      "FAQ",
+      "newbees",
+      "yellow brick road"
+    ],
     "status": "publish",
     "disqus_id": "1179 https://blog.beeminder.com/?p=1179",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/anomalily",
@@ -3668,7 +4084,8 @@
     ],
     "status": "publish",
     "disqus_id": "1180 https://blog.beeminder.com/?p=1180",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/beeta",
@@ -3687,7 +4104,8 @@
     ],
     "status": "publish",
     "disqus_id": "1188 https://blog.beeminder.com/?p=1188",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/urlminder",
@@ -3696,10 +4114,17 @@
     "slug": "urlminder",
     "date": "2016-11-02",
     "author": "bsoule",
-    "tags": ["bee-all", "FAQ", "integrations", "new features", "PSA"],
+    "tags": [
+      "bee-all",
+      "FAQ",
+      "integrations",
+      "new features",
+      "PSA"
+    ],
     "status": "publish",
     "disqus_id": "1193 https://blog.beeminder.com/?p=1193",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/josh",
@@ -3708,10 +4133,17 @@
     "slug": "josh",
     "date": "2016-11-09",
     "author": "Josh Pitzalis",
-    "tags": ["bee-all", "design", "guest posts", "meta", "navel-gazing"],
+    "tags": [
+      "bee-all",
+      "design",
+      "guest posts",
+      "meta",
+      "navel-gazing"
+    ],
     "status": "publish",
     "disqus_id": "1197 https://blog.beeminder.com/?p=1197",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/five",
@@ -3731,7 +4163,8 @@
     ],
     "status": "publish",
     "disqus_id": "1225 https://blog.beeminder.com/?p=1225",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/shirknturk",
@@ -3753,7 +4186,8 @@
     ],
     "status": "publish",
     "disqus_id": "1229 https://blog.beeminder.com/?p=1229",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/hardthings",
@@ -3774,7 +4208,8 @@
     ],
     "status": "publish",
     "disqus_id": "1233 https://blog.beeminder.com/?p=1233",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/todoist",
@@ -3792,7 +4227,8 @@
     ],
     "status": "publish",
     "disqus_id": "1284 https://blog.beeminder.com/?p=1284",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzz10",
@@ -3801,10 +4237,16 @@
     "slug": "buzz10",
     "date": "2017-01-25",
     "author": "Lillian Karabaic",
-    "tags": ["bee-all", "buzz", "case studies", "navel-gazing"],
+    "tags": [
+      "bee-all",
+      "buzz",
+      "case studies",
+      "navel-gazing"
+    ],
     "status": "publish",
     "disqus_id": "1290 https://blog.beeminder.com/?p=1290",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/support",
@@ -3813,10 +4255,16 @@
     "slug": "support",
     "date": "2017-02-10",
     "author": "Chelsea Miller",
-    "tags": ["bee-all", "FAQ", "newbees", "tips"],
+    "tags": [
+      "bee-all",
+      "FAQ",
+      "newbees",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "1294 https://blog.beeminder.com/?p=1294",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buglabels",
@@ -3836,7 +4284,8 @@
     ],
     "status": "publish",
     "disqus_id": "1313 https://blog.beeminder.com/?p=1313",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/arabic",
@@ -3845,10 +4294,17 @@
     "slug": "language",
     "date": "2017-03-16",
     "author": "Alex Strick van Linschoten",
-    "tags": ["akrasia", "bee-all", "case studies", "guest posts", "language"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "case studies",
+      "guest posts",
+      "language"
+    ],
     "status": "publish",
     "disqus_id": "1336 https://blog.beeminder.com/?p=1336",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/write",
@@ -3868,7 +4324,8 @@
     ],
     "status": "publish",
     "disqus_id": "1356 https://blog.beeminder.com/?p=1356",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/autofetch",
@@ -3877,10 +4334,17 @@
     "slug": "autofetch",
     "date": "2017-04-20",
     "author": "bsoule",
-    "tags": ["bee-all", "integrations", "nerdery", "new features", "startups"],
+    "tags": [
+      "bee-all",
+      "integrations",
+      "nerdery",
+      "new features",
+      "startups"
+    ],
     "status": "publish",
     "disqus_id": "1358 https://blog.beeminder.com/?p=1358",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/mayhem",
@@ -3899,7 +4363,8 @@
     ],
     "status": "publish",
     "disqus_id": "1365 https://blog.beeminder.com/?p=1365",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/applehealth",
@@ -3908,10 +4373,17 @@
     "slug": "apple",
     "date": "2017-05-23",
     "author": "Andy Brett",
-    "tags": ["bee-all", "fitness", "integrations", "productivity porn", "PSA"],
+    "tags": [
+      "bee-all",
+      "fitness",
+      "integrations",
+      "productivity porn",
+      "PSA"
+    ],
     "status": "publish",
     "disqus_id": "1367 https://blog.beeminder.com/?p=1367",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bamsterdam",
@@ -3920,10 +4392,16 @@
     "slug": "amsterdam",
     "date": "2017-06-10",
     "author": "bsoule",
-    "tags": ["meetup", "navel-gazing", "PSA", "quantified self"],
+    "tags": [
+      "meetup",
+      "navel-gazing",
+      "PSA",
+      "quantified self"
+    ],
     "status": "publish",
     "disqus_id": "1374 https://blog.beeminder.com/?p=1374",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/paypal",
@@ -3932,10 +4410,15 @@
     "slug": "paypal",
     "date": "2017-07-06",
     "author": "dreeves",
-    "tags": ["bee-all", "FAQ", "new features"],
+    "tags": [
+      "bee-all",
+      "FAQ",
+      "new features"
+    ],
     "status": "publish",
     "disqus_id": "1378 https://blog.beeminder.com/?p=1378",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/pact",
@@ -3953,7 +4436,8 @@
     ],
     "status": "publish",
     "disqus_id": "1382 https://blog.beeminder.com/?p=1382",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/will",
@@ -3979,7 +4463,8 @@
     ],
     "status": "publish",
     "disqus_id": "1386 https://blog.beeminder.com/?p=1386",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzz11",
@@ -3988,10 +4473,17 @@
     "slug": "buzz11",
     "date": "2017-08-25",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "buzz", "case studies", "navel-gazing"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "buzz",
+      "case studies",
+      "navel-gazing"
+    ],
     "status": "publish",
     "disqus_id": "1389 https://blog.beeminder.com/?p=1389",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/tao",
@@ -4012,7 +4504,8 @@
     ],
     "status": "publish",
     "disqus_id": "1391 https://blog.beeminder.com/?p=1391",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/tao2",
@@ -4031,7 +4524,8 @@
     ],
     "status": "publish",
     "disqus_id": "1400 https://blog.beeminder.com/?p=1400",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/psych",
@@ -4051,7 +4545,8 @@
     ],
     "status": "publish",
     "disqus_id": "1403 https://blog.beeminder.com/?p=1403",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/six",
@@ -4071,7 +4566,8 @@
     ],
     "status": "publish",
     "disqus_id": "1409 https://blog.beeminder.com/?p=1409",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bites",
@@ -4093,7 +4589,8 @@
     ],
     "status": "publish",
     "disqus_id": "1413 https://blog.beeminder.com/?p=1413",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/kara",
@@ -4102,10 +4599,16 @@
     "slug": "kara",
     "date": "2017-12-08",
     "author": "Kara Timmins",
-    "tags": ["bee-all", "case studies", "guest posts", "writing"],
+    "tags": [
+      "bee-all",
+      "case studies",
+      "guest posts",
+      "writing"
+    ],
     "status": "publish",
     "disqus_id": "1421 https://blog.beeminder.com/?p=1421",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/schelling",
@@ -4126,7 +4629,8 @@
     ],
     "status": "publish",
     "disqus_id": "1428 https://blog.beeminder.com/?p=1428",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/psych2",
@@ -4145,7 +4649,8 @@
     ],
     "status": "publish",
     "disqus_id": "1430 https://blog.beeminder.com/?p=1430",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/deathtoexp",
@@ -4163,7 +4668,8 @@
     ],
     "status": "publish",
     "disqus_id": "1441 https://blog.beeminder.com/?p=1441",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/waisted",
@@ -4182,7 +4688,8 @@
     ],
     "status": "publish",
     "disqus_id": "1443 https://blog.beeminder.com/?p=1443",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/fifty",
@@ -4203,7 +4710,8 @@
     ],
     "status": "publish",
     "disqus_id": "1447 https://blog.beeminder.com/?p=1447",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/barfingcats",
@@ -4223,7 +4731,8 @@
     ],
     "status": "publish",
     "disqus_id": "1450 https://blog.beeminder.com/?p=1450",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/ivana",
@@ -4244,7 +4753,8 @@
     ],
     "status": "publish",
     "disqus_id": "1455 https://blog.beeminder.com/?p=1455",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/kim",
@@ -4265,7 +4775,8 @@
     ],
     "status": "publish",
     "disqus_id": "1460 https://blog.beeminder.com/?p=1460",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/mbork",
@@ -4284,7 +4795,8 @@
     ],
     "status": "publish",
     "disqus_id": "1462 https://blog.beeminder.com/?p=1462",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/fifty2",
@@ -4305,7 +4817,8 @@
     ],
     "status": "publish",
     "disqus_id": "1467 https://blog.beeminder.com/?p=1467",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/wsj2",
@@ -4314,10 +4827,16 @@
     "slug": "wsj2",
     "date": "2018-06-14",
     "author": "dreeves",
-    "tags": ["bee-all", "buzz", "case studies", "navel-gazing"],
+    "tags": [
+      "bee-all",
+      "buzz",
+      "case studies",
+      "navel-gazing"
+    ],
     "status": "publish",
     "disqus_id": "1475 https://blog.beeminder.com/?p=1475",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/meditation",
@@ -4336,7 +4855,8 @@
     ],
     "status": "publish",
     "disqus_id": "1478 https://blog.beeminder.com/?p=1478",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/slytherin404",
@@ -4358,7 +4878,8 @@
     ],
     "status": "publish",
     "disqus_id": "1482 https://blog.beeminder.com/?p=1482",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/scholar",
@@ -4367,10 +4888,16 @@
     "slug": "scholar",
     "date": "2018-08-04",
     "author": "dreeves",
-    "tags": ["bee-all", "meta", "money", "quantified self"],
+    "tags": [
+      "bee-all",
+      "meta",
+      "money",
+      "quantified self"
+    ],
     "status": "publish",
     "disqus_id": "1486 https://blog.beeminder.com/?p=1486",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/mercy",
@@ -4389,7 +4916,8 @@
     ],
     "status": "publish",
     "disqus_id": "1491 https://blog.beeminder.com/?p=1491",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/toggl",
@@ -4409,7 +4937,8 @@
     ],
     "status": "publish",
     "disqus_id": "1495 https://blog.beeminder.com/?p=1495",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/swifts",
@@ -4418,10 +4947,17 @@
     "slug": "swifts",
     "date": "2018-09-21",
     "author": "dreeves",
-    "tags": ["bee-all", "meetup", "portland", "PSA", "quantified self"],
+    "tags": [
+      "bee-all",
+      "meetup",
+      "portland",
+      "PSA",
+      "quantified self"
+    ],
     "status": "publish",
     "disqus_id": "1500 https://blog.beeminder.com/?p=1500",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/strava",
@@ -4441,7 +4977,8 @@
     ],
     "status": "publish",
     "disqus_id": "1503 https://blog.beeminder.com/?p=1503",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/shanaqui",
@@ -4450,10 +4987,16 @@
     "slug": "shanaqui",
     "date": "2018-10-30",
     "author": "shanaqui",
-    "tags": ["bee-all", "best-of", "case studies", "nerdery"],
+    "tags": [
+      "bee-all",
+      "best-of",
+      "case studies",
+      "nerdery"
+    ],
     "status": "publish",
     "disqus_id": "1511 https://blog.beeminder.com/?p=1511",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/flic",
@@ -4474,7 +5017,8 @@
     ],
     "status": "publish",
     "disqus_id": "1517 https://blog.beeminder.com/?p=1517",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/clozemaster",
@@ -4494,7 +5038,8 @@
     ],
     "status": "publish",
     "disqus_id": "1532 https://blog.beeminder.com/?p=1532",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/NY2019",
@@ -4512,7 +5057,8 @@
     ],
     "status": "publish",
     "disqus_id": "1534 https://blog.beeminder.com/?p=1534",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/accountability",
@@ -4531,7 +5077,8 @@
     ],
     "status": "publish",
     "disqus_id": "1536 https://blog.beeminder.com/?p=1536",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzz13",
@@ -4540,10 +5087,16 @@
     "slug": "buzz13",
     "date": "2019-01-31",
     "author": "dreeves",
-    "tags": ["bee-all", "buzz", "case studies", "navel-gazing"],
+    "tags": [
+      "bee-all",
+      "buzz",
+      "case studies",
+      "navel-gazing"
+    ],
     "status": "publish",
     "disqus_id": "1539 https://blog.beeminder.com/?p=1539",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/textbooks",
@@ -4562,7 +5115,8 @@
     ],
     "status": "publish",
     "disqus_id": "1541 https://blog.beeminder.com/?p=1541",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/commitwall",
@@ -4581,7 +5135,8 @@
     ],
     "status": "publish",
     "disqus_id": "1543 https://blog.beeminder.com/?p=1543",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/defail",
@@ -4600,7 +5155,8 @@
     ],
     "status": "publish",
     "disqus_id": "1548 https://blog.beeminder.com/?p=1548",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/commitstew",
@@ -4626,7 +5182,8 @@
     ],
     "status": "publish",
     "disqus_id": "1560 https://blog.beeminder.com/?p=1560",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bugreports",
@@ -4646,7 +5203,8 @@
     ],
     "status": "publish",
     "disqus_id": "1574 https://blog.beeminder.com/?p=1574",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/dogeatdog",
@@ -4666,7 +5224,8 @@
     ],
     "status": "publish",
     "disqus_id": "1579 https://blog.beeminder.com/?p=1579",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/pareto",
@@ -4675,10 +5234,16 @@
     "slug": "pareto",
     "date": "2019-06-21",
     "author": "dreeves",
-    "tags": ["bee-all", "economics", "nerdery", "rationality"],
+    "tags": [
+      "bee-all",
+      "economics",
+      "nerdery",
+      "rationality"
+    ],
     "status": "publish",
     "disqus_id": "1583 https://blog.beeminder.com/?p=1583",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/pdp",
@@ -4698,7 +5263,8 @@
     ],
     "status": "publish",
     "disqus_id": "1586 https://blog.beeminder.com/?p=1586",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/paretocaps",
@@ -4707,10 +5273,17 @@
     "slug": "paretocaps",
     "date": "2019-08-09",
     "author": "dreeves",
-    "tags": ["bee-all", "design", "navel-gazing", "nerdery", "startups"],
+    "tags": [
+      "bee-all",
+      "design",
+      "navel-gazing",
+      "nerdery",
+      "startups"
+    ],
     "status": "publish",
     "disqus_id": "1590 https://blog.beeminder.com/?p=1590",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/lockmyphone",
@@ -4731,7 +5304,8 @@
     ],
     "status": "publish",
     "disqus_id": "1595 https://blog.beeminder.com/?p=1595",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/motivationtypes",
@@ -4740,10 +5314,16 @@
     "slug": "motivationtypes",
     "date": "2019-09-11",
     "author": "dreeves",
-    "tags": ["bee-all", "navel-gazing", "psychology", "rationality"],
+    "tags": [
+      "bee-all",
+      "navel-gazing",
+      "psychology",
+      "rationality"
+    ],
     "status": "publish",
     "disqus_id": "1601 https://blog.beeminder.com/?p=1601",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/vegdays",
@@ -4766,7 +5346,8 @@
     ],
     "status": "publish",
     "disqus_id": "1604 https://blog.beeminder.com/?p=1604",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/dogfood",
@@ -4785,7 +5366,8 @@
     ],
     "status": "publish",
     "disqus_id": "1606 https://blog.beeminder.com/?p=1606",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/redqueen",
@@ -4807,7 +5389,8 @@
     ],
     "status": "publish",
     "disqus_id": "1610 https://blog.beeminder.com/?p=1610",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/euler",
@@ -4827,7 +5410,8 @@
     ],
     "status": "publish",
     "disqus_id": "1614 https://blog.beeminder.com/?p=1614",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/zipit",
@@ -4848,7 +5432,8 @@
     ],
     "status": "publish",
     "disqus_id": "1620 https://blog.beeminder.com/?p=1620",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/integers",
@@ -4857,10 +5442,15 @@
     "slug": "integers",
     "date": "2019-11-27",
     "author": "dreeves",
-    "tags": ["bee-all", "FAQ", "new features"],
+    "tags": [
+      "bee-all",
+      "FAQ",
+      "new features"
+    ],
     "status": "publish",
     "disqus_id": "1621 https://blog.beeminder.com/?p=1621",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gmailzerolabels",
@@ -4869,10 +5459,16 @@
     "slug": "gmailzerolabels",
     "date": "2019-12-18",
     "author": "Adam Wolf",
-    "tags": ["bee-all", "email", "integrations", "new features"],
+    "tags": [
+      "bee-all",
+      "email",
+      "integrations",
+      "new features"
+    ],
     "status": "publish",
     "disqus_id": "1630 https://blog.beeminder.com/?p=1630",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buzz2019",
@@ -4881,10 +5477,16 @@
     "slug": "buzz2019",
     "date": "2020-01-08",
     "author": "dreeves",
-    "tags": ["bee-all", "buzz", "case studies", "navel-gazing"],
+    "tags": [
+      "bee-all",
+      "buzz",
+      "case studies",
+      "navel-gazing"
+    ],
     "status": "publish",
     "disqus_id": "1637 https://blog.beeminder.com/?p=1637",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/manwide",
@@ -4903,7 +5505,8 @@
     ],
     "status": "publish",
     "disqus_id": "1639 https://blog.beeminder.com/?p=1639",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/manwide2",
@@ -4923,7 +5526,8 @@
     ],
     "status": "publish",
     "disqus_id": "1642 https://blog.beeminder.com/?p=1642",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/eggbasket",
@@ -4944,7 +5548,8 @@
     ],
     "status": "publish",
     "disqus_id": "1644 https://blog.beeminder.com/?p=1644",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/specs",
@@ -4965,7 +5570,8 @@
     ],
     "status": "publish",
     "disqus_id": "1650 https://blog.beeminder.com/?p=1650",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/isolate",
@@ -4984,7 +5590,8 @@
     ],
     "status": "publish",
     "disqus_id": "1653 https://blog.beeminder.com/?p=1653",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/isonikki",
@@ -5004,7 +5611,8 @@
     ],
     "status": "publish",
     "disqus_id": "1655 https://blog.beeminder.com/?p=1655",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/megabreak",
@@ -5025,7 +5633,8 @@
     ],
     "status": "publish",
     "disqus_id": "1661 https://blog.beeminder.com/?p=1661",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/cry",
@@ -5045,7 +5654,8 @@
     ],
     "status": "draft",
     "disqus_id": "1662 https://blog.beeminder.com/?p=1662",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/lanes",
@@ -5054,10 +5664,17 @@
     "slug": "lanes",
     "date": "2020-05-01",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "new features", "PSA", "yellow brick road"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "new features",
+      "PSA",
+      "yellow brick road"
+    ],
     "status": "publish",
     "disqus_id": "1668 https://blog.beeminder.com/?p=1668",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/isolines",
@@ -5079,7 +5696,8 @@
     ],
     "status": "publish",
     "disqus_id": "1673 https://blog.beeminder.com/?p=1673",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/antimagic",
@@ -5103,7 +5721,8 @@
     ],
     "status": "publish",
     "disqus_id": "1679 https://blog.beeminder.com/?p=1679",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/ybhp",
@@ -5124,7 +5743,8 @@
     ],
     "status": "publish",
     "disqus_id": "1684 https://blog.beeminder.com/?p=1684",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/taskratchet",
@@ -5149,7 +5769,8 @@
     ],
     "status": "publish",
     "disqus_id": "1694 https://blog.beeminder.com/?p=1694",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buns",
@@ -5161,7 +5782,8 @@
     "tags": [],
     "status": "publish",
     "disqus_id": "1709 https://blog.beeminder.com/?p=1709",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/postel",
@@ -5181,7 +5803,8 @@
     ],
     "status": "publish",
     "disqus_id": "1714 https://blog.beeminder.com/?p=1714",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/choices",
@@ -5202,7 +5825,8 @@
     ],
     "status": "publish",
     "disqus_id": "1717 https://blog.beeminder.com/?p=1717",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/baas",
@@ -5225,7 +5849,8 @@
     ],
     "status": "publish",
     "disqus_id": "1721 https://blog.beeminder.com/?p=1721",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/docdriven",
@@ -5234,10 +5859,17 @@
     "slug": "docdriven",
     "date": "2020-08-24",
     "author": "dreeves",
-    "tags": ["bee-all", "meta", "navel-gazing", "rationality", "startups"],
+    "tags": [
+      "bee-all",
+      "meta",
+      "navel-gazing",
+      "rationality",
+      "startups"
+    ],
     "status": "publish",
     "disqus_id": "1725 https://blog.beeminder.com/?p=1725",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/speclist",
@@ -5257,7 +5889,8 @@
     ],
     "status": "publish",
     "disqus_id": "1732 https://blog.beeminder.com/?p=1732",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/metablog",
@@ -5276,7 +5909,8 @@
     ],
     "status": "publish",
     "disqus_id": "1739 https://blog.beeminder.com/?p=1739",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/marshmallow",
@@ -5285,10 +5919,17 @@
     "slug": "marshmallow",
     "date": "2020-10-03",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "psychology", "rationality", "science"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "psychology",
+      "rationality",
+      "science"
+    ],
     "status": "publish",
     "disqus_id": "1743 https://blog.beeminder.com/?p=1743",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/ratchet",
@@ -5310,7 +5951,8 @@
     ],
     "status": "publish",
     "disqus_id": "1759 https://blog.beeminder.com/?p=1759",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bookcase",
@@ -5319,10 +5961,16 @@
     "slug": "bookcase",
     "date": "2020-10-27",
     "author": "shanaqui",
-    "tags": ["bee-all", "case studies", "rationality", "tips"],
+    "tags": [
+      "bee-all",
+      "case studies",
+      "rationality",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "1776 https://blog.beeminder.com/?p=1776",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/nerds",
@@ -5343,7 +5991,8 @@
     ],
     "status": "publish",
     "disqus_id": "1781 https://blog.beeminder.com/?p=1781",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/upsidedown",
@@ -5362,7 +6011,8 @@
     ],
     "status": "publish",
     "disqus_id": "1783 https://blog.beeminder.com/?p=1783",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/icecream",
@@ -5384,7 +6034,8 @@
     ],
     "status": "publish",
     "disqus_id": "1786 https://blog.beeminder.com/?p=1786",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/achilles",
@@ -5405,7 +6056,8 @@
     ],
     "status": "publish",
     "disqus_id": "1790 https://blog.beeminder.com/?p=1790",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/nebulous",
@@ -5425,7 +6077,8 @@
     ],
     "status": "publish",
     "disqus_id": "1794 https://blog.beeminder.com/?p=1794",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/deathtolife",
@@ -5445,7 +6098,8 @@
     ],
     "status": "publish",
     "disqus_id": "1796 https://blog.beeminder.com/?p=1796",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/focus",
@@ -5465,7 +6119,8 @@
     ],
     "status": "publish",
     "disqus_id": "1802 https://blog.beeminder.com/?p=1802",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/burgle",
@@ -5485,7 +6140,8 @@
     ],
     "status": "publish",
     "disqus_id": "1807 https://blog.beeminder.com/?p=1807",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/dozero",
@@ -5509,7 +6165,8 @@
     ],
     "status": "publish",
     "disqus_id": "1816 https://blog.beeminder.com/?p=1816",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/dontmind",
@@ -5532,7 +6189,8 @@
     ],
     "status": "publish",
     "disqus_id": "1819 https://blog.beeminder.com/?p=1819",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/buyminder",
@@ -5553,7 +6211,8 @@
     ],
     "status": "publish",
     "disqus_id": "1823 https://blog.beeminder.com/?p=1823",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/contrapositive",
@@ -5574,7 +6233,8 @@
     ],
     "status": "publish",
     "disqus_id": "1827 https://blog.beeminder.com/?p=1827",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bayesianwill",
@@ -5594,7 +6254,8 @@
     ],
     "status": "publish",
     "disqus_id": "1830 https://blog.beeminder.com/?p=1830",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/crutch",
@@ -5614,7 +6275,8 @@
     ],
     "status": "publish",
     "disqus_id": "1833 https://blog.beeminder.com/?p=1833",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/codecombat",
@@ -5623,10 +6285,17 @@
     "slug": "codecombat",
     "date": "2021-07-26",
     "author": "dreeves",
-    "tags": ["bee-all", "integrations", "PSA", "rationality", "startups"],
+    "tags": [
+      "bee-all",
+      "integrations",
+      "PSA",
+      "rationality",
+      "startups"
+    ],
     "status": "publish",
     "disqus_id": "1837 https://blog.beeminder.com/?p=1837",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/goalnames",
@@ -5635,10 +6304,18 @@
     "slug": "goalnames",
     "date": "2021-05-04",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "meta", "navel-gazing", "PSA", "tips"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "meta",
+      "navel-gazing",
+      "PSA",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "1839 https://blog.beeminder.com/?p=1839",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/incentalign",
@@ -5657,7 +6334,8 @@
     ],
     "status": "publish",
     "disqus_id": "1846 https://blog.beeminder.com/?p=1846",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/brl",
@@ -5676,7 +6354,8 @@
     ],
     "status": "publish",
     "disqus_id": "1848 https://blog.beeminder.com/?p=1848",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/pocket",
@@ -5685,10 +6364,17 @@
     "slug": "pocket",
     "date": "2021-07-05",
     "author": "dreeves",
-    "tags": ["bee-all", "integrations", "PSA", "rationality", "startups"],
+    "tags": [
+      "bee-all",
+      "integrations",
+      "PSA",
+      "rationality",
+      "startups"
+    ],
     "status": "publish",
     "disqus_id": "1851 https://blog.beeminder.com/?p=1851",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/fake",
@@ -5708,7 +6394,8 @@
     ],
     "status": "publish",
     "disqus_id": "1857 https://blog.beeminder.com/?p=1857",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/frac",
@@ -5727,7 +6414,8 @@
     ],
     "status": "publish",
     "disqus_id": "1864 https://blog.beeminder.com/?p=1864",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/forget",
@@ -5747,7 +6435,8 @@
     ],
     "status": "publish",
     "disqus_id": "1877 https://blog.beeminder.com/?p=1877",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/nicky",
@@ -5756,10 +6445,18 @@
     "slug": "nicky",
     "date": "2021-09-08",
     "author": "shanaqui",
-    "tags": ["bee-all", "dog food", "meta", "navel-gazing", "startups", "tips"],
+    "tags": [
+      "bee-all",
+      "dog food",
+      "meta",
+      "navel-gazing",
+      "startups",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "1884 https://blog.beeminder.com/?p=1884",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/microcommitments",
@@ -5771,7 +6468,8 @@
     "tags": [],
     "status": "publish",
     "disqus_id": "1887 https://blog.beeminder.com/?p=1887",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/loss",
@@ -5790,7 +6488,8 @@
     ],
     "status": "publish",
     "disqus_id": "1895 https://blog.beeminder.com/?p=1895",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/aversion",
@@ -5810,7 +6509,8 @@
     ],
     "status": "publish",
     "disqus_id": "1900 https://blog.beeminder.com/?p=1900",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/study",
@@ -5830,7 +6530,8 @@
     ],
     "status": "publish",
     "disqus_id": "1904 https://blog.beeminder.com/?p=1904",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/calendial",
@@ -5839,10 +6540,18 @@
     "slug": "calendial",
     "date": "2021-12-02",
     "author": "dreeves",
-    "tags": ["bee-all", "best-of", "meta", "PSA", "rationality", "tips"],
+    "tags": [
+      "bee-all",
+      "best-of",
+      "meta",
+      "PSA",
+      "rationality",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "1913 https://blog.beeminder.com/?p=1913",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/milkman",
@@ -5869,7 +6578,8 @@
     ],
     "status": "publish",
     "disqus_id": "1916 https://blog.beeminder.com/?p=1916",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/focusmate",
@@ -5889,7 +6599,8 @@
     ],
     "status": "publish",
     "disqus_id": "1918 https://blog.beeminder.com/?p=1918",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/cb",
@@ -5910,7 +6621,8 @@
     ],
     "status": "publish",
     "disqus_id": "1926 https://blog.beeminder.com/?p=1926",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/punish",
@@ -5929,7 +6641,8 @@
     ],
     "status": "publish",
     "disqus_id": "1929 https://blog.beeminder.com/?p=1929",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/noexcuses",
@@ -5948,7 +6661,8 @@
     ],
     "status": "publish",
     "disqus_id": "1935 https://blog.beeminder.com/?p=1935",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/control",
@@ -5968,7 +6682,8 @@
     ],
     "status": "publish",
     "disqus_id": "1938 https://blog.beeminder.com/?p=1938",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/freshen",
@@ -5989,7 +6704,8 @@
     ],
     "status": "publish",
     "disqus_id": "1942 https://blog.beeminder.com/?p=1942",
-    "excerpt": "Last time we talked about the control systems approach to backlogs. Quick recap: make a manual do-more goal where you add a +1 for completing something and keep adjusting the slope of the bright red line such that the backlog keeps steadily shrinking. This works not just for clearing a backlog but for winning the red queen race &mdash; dispatching things at roughly the rate they're coming in at and preventing another backlog from accumulating."
+    "excerpt": "Last time we talked about the control systems approach to backlogs. Quick recap: make a manual do-more goal where you add a +1 for completing something and keep adjusting the slope of the bright red line such that the backlog keeps steadily shrinking. This works not just for clearing a backlog but for winning the red queen race &mdash; dispatching things at roughly the rate they're coming in at and preventing another backlog from accumulating.",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/freshenicky",
@@ -6008,7 +6724,8 @@
     ],
     "status": "publish",
     "disqus_id": "1948 https://blog.beeminder.com/?p=1948",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/freecodecamp",
@@ -6017,10 +6734,17 @@
     "slug": "freecodecamp",
     "date": "2022-04-28",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "integrations", "PSA", "rationality"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "integrations",
+      "PSA",
+      "rationality"
+    ],
     "status": "publish",
     "disqus_id": "1950 https://blog.beeminder.com/?p=1950",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/allitimentation",
@@ -6041,7 +6765,8 @@
     ],
     "status": "publish",
     "disqus_id": "1959 https://blog.beeminder.com/?p=1959",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bothsidesnow",
@@ -6050,10 +6775,17 @@
     "slug": "bothsidesnow",
     "date": "2022-05-12",
     "author": "shanaqui",
-    "tags": ["bee-all", "case studies", "dog food", "meta", "quantified self"],
+    "tags": [
+      "bee-all",
+      "case studies",
+      "dog food",
+      "meta",
+      "quantified self"
+    ],
     "status": "publish",
     "disqus_id": "1978 https://blog.beeminder.com/?p=1978",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/blockchain",
@@ -6062,10 +6794,18 @@
     "slug": "blockchain",
     "date": "2022-05-26",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "FAQ", "money", "rationality", "startups"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "FAQ",
+      "money",
+      "rationality",
+      "startups"
+    ],
     "status": "publish",
     "disqus_id": "1980 https://blog.beeminder.com/?p=1980",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/toothbrush",
@@ -6074,10 +6814,17 @@
     "slug": "toothbrush",
     "date": "2022-06-09",
     "author": "shanaqui",
-    "tags": ["bee-all", "case studies", "psychology", "self-binding", "tips"],
+    "tags": [
+      "bee-all",
+      "case studies",
+      "psychology",
+      "self-binding",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "1986 https://blog.beeminder.com/?p=1986",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/blackmail",
@@ -6098,7 +6845,8 @@
     ],
     "status": "publish",
     "disqus_id": "1990 https://blog.beeminder.com/?p=1990",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/bkopenhagen",
@@ -6107,10 +6855,13 @@
     "slug": "copenhagen",
     "date": "2022-07-07",
     "author": "bsoule",
-    "tags": ["PSA"],
+    "tags": [
+      "PSA"
+    ],
     "status": "publish",
     "disqus_id": "1999 https://blog.beeminder.com/?p=1999",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/backup",
@@ -6129,7 +6880,8 @@
     ],
     "status": "publish",
     "disqus_id": "2005 https://blog.beeminder.com/?p=2005",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/storygraph",
@@ -6148,7 +6900,8 @@
     ],
     "status": "publish",
     "disqus_id": "2015 https://blog.beeminder.com/?p=2015",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/orange",
@@ -6167,7 +6920,8 @@
     ],
     "status": "publish",
     "disqus_id": "2018 https://blog.beeminder.com/?p=2018",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/donotgain",
@@ -6186,7 +6940,8 @@
     ],
     "status": "publish",
     "disqus_id": "2023 https://blog.beeminder.com/?p=2023",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/cbt",
@@ -6206,7 +6961,8 @@
     ],
     "status": "publish",
     "disqus_id": "2026 https://blog.beeminder.com/?p=2026",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/psychpricing",
@@ -6225,7 +6981,8 @@
     ],
     "status": "publish",
     "disqus_id": "2032 https://blog.beeminder.com/?p=2032",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/stress",
@@ -6234,10 +6991,16 @@
     "slug": "stress",
     "date": "2022-10-13",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "FAQ", "rationality"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "FAQ",
+      "rationality"
+    ],
     "status": "publish",
     "disqus_id": "2036 https://blog.beeminder.com/?p=2036",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/fail",
@@ -6246,10 +7009,17 @@
     "slug": "fail",
     "date": "2022-10-27",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "navel-gazing", "rationality", "tips"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "navel-gazing",
+      "rationality",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "2043 https://blog.beeminder.com/?p=2043",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/rssminder",
@@ -6268,7 +7038,8 @@
     ],
     "status": "publish",
     "disqus_id": "2049 https://blog.beeminder.com/?p=2049",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/smoove",
@@ -6287,7 +7058,8 @@
     ],
     "status": "publish",
     "disqus_id": "2053 https://blog.beeminder.com/?p=2053",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/toxin",
@@ -6305,7 +7077,8 @@
     ],
     "status": "publish",
     "disqus_id": "2055 https://blog.beeminder.com/?p=2055",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/metamindblog",
@@ -6325,7 +7098,8 @@
     ],
     "status": "publish",
     "disqus_id": "2060 https://blog.beeminder.com/?p=2060",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/copyright",
@@ -6344,7 +7118,8 @@
     ],
     "status": "publish",
     "disqus_id": "2093 https://blog.beeminder.com/?p=2093",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/indulge",
@@ -6364,7 +7139,8 @@
     ],
     "status": "publish",
     "disqus_id": "2104 https://blog.beeminder.com/?p=2104",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/stripe",
@@ -6383,7 +7159,8 @@
     ],
     "status": "publish",
     "disqus_id": "2110 https://blog.beeminder.com/?p=2110",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/world",
@@ -6402,7 +7179,8 @@
     ],
     "status": "publish",
     "disqus_id": "2115 https://blog.beeminder.com/?p=2115",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/gatewaydrug",
@@ -6423,7 +7201,8 @@
     ],
     "status": "publish",
     "disqus_id": "2121 https://blog.beeminder.com/?p=2121",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/nailingit",
@@ -6442,7 +7221,8 @@
     ],
     "status": "publish",
     "disqus_id": "2124 https://blog.beeminder.com/?p=2124",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/blingily",
@@ -6451,10 +7231,16 @@
     "slug": "stingily",
     "date": "2023-04-13",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "FAQ", "new features"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "FAQ",
+      "new features"
+    ],
     "status": "publish",
     "disqus_id": "2129 https://blog.beeminder.com/?p=2129",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/lichess",
@@ -6473,7 +7259,8 @@
     ],
     "status": "publish",
     "disqus_id": "2134 https://blog.beeminder.com/?p=2134",
-    "excerpt": ""
+    "excerpt": "",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/datasmithing",
@@ -6495,7 +7282,8 @@
     ],
     "status": "publish",
     "disqus_id": "2141 https://blog.beeminder.com/?p=2141",
-    "excerpt": "This is a guest post by Melissa Smith of Datasmithing! If you like Beeminder and other Beeminder-adjacent things like BaaS or Complice, but want more troubleshooting and guidance, you might like Datasmithing. (You might also like her blog which includes such gems as the graph paper"
+    "excerpt": "This is a guest post by Melissa Smith of Datasmithing! If you like Beeminder and other Beeminder-adjacent things like BaaS or Complice, but want more troubleshooting and guidance, you might like Datasmithing. (You might also like her blog which includes such gems as the graph paper",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/trydeepwork",
@@ -6515,7 +7303,8 @@
     ],
     "status": "publish",
     "disqus_id": "2149 https://blog.beeminder.com/?p=2149",
-    "excerpt": "We’re excited to announce our official integration with trydeepwork.com! See also the announcement on the trydeepwork blog which is also a pretty brilliant introduction to Beeminder’s philosophy. Cal Newport’s classic book Deep Work is quite popular with Beeminder users [1], so we predict a lot of you will"
+    "excerpt": "We’re excited to announce our official integration with trydeepwork.com! See also the announcement on the trydeepwork blog which is also a pretty brilliant introduction to Beeminder’s philosophy. Cal Newport’s classic book Deep Work is quite popular with Beeminder users [1], so we predict a lot of you will",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/reactions",
@@ -6524,10 +7313,17 @@
     "slug": "reactions",
     "date": "2023-06-08",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "FAQ", "navel-gazing", "rationality"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "FAQ",
+      "navel-gazing",
+      "rationality"
+    ],
     "status": "publish",
     "disqus_id": "2154 https://blog.beeminder.com/?p=2154",
-    "excerpt": "Did you just hear about Beeminder (“get charged money if you go off track on your goals, what?”) and have one of the Four Canonical Dismissive Reactions, prompting the person you heard about Beeminder from to point you to this post? Great! Pick your reaction and let’s dive in. 1. “That’s (evil) genius, I would"
+    "excerpt": "Did you just hear about Beeminder (“get charged money if you go off track on your goals, what?”) and have one of the Four Canonical Dismissive Reactions, prompting the person you heard about Beeminder from to point you to this post? Great! Pick your reaction and let’s dive in. 1. “That’s (evil) genius, I would",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/inertia",
@@ -6547,7 +7343,8 @@
     ],
     "status": "publish",
     "disqus_id": "2157 https://blog.beeminder.com/?p=2157",
-    "excerpt": "Here are two handy wisdom nuggets: (1) Adam Wolf’s trick of committing now to start doing something in 30 days (i.e., create a goal with a 30-day initial buffer) to overcome the mental friction of getting yourself on the hook. (2) Tim Harford’s heuristic of only"
+    "excerpt": "Here are two handy wisdom nuggets: (1) Adam Wolf’s trick of committing now to start doing something in 30 days (i.e., create a goal with a 30-day initial buffer) to overcome the mental friction of getting yourself on the hook. (2) Tim Harford’s heuristic of only",
+    "redirects": []
   },
   {
     "source": "doc.bmndr.co/ontologies",
@@ -6556,27 +7353,54 @@
     "slug": "ontologies",
     "date": "2023-07-27",
     "author": "dreeves",
-    "tags": ["bee-all", "navel-gazing", "nerdery", "rationality", "tips"],
+    "tags": [
+      "bee-all",
+      "navel-gazing",
+      "nerdery",
+      "rationality",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "2161 https://blog.beeminder.com/?p=2161",
-    "excerpt": "There are a lot of things in the category of “nerd tendencies I’ve had to unlearn”. I often turn them into capital-P Principles as a way to drill them into my head. Eventually I intend to collect them all into a meta post but here are a few random examples in the meantime: the Anti-Magic Principle, the Anti-Settings Principle, the Shirk-n-Turk Principle, and the Anti-Robustness"
-}, {
+    "excerpt": "There are a lot of things in the category of “nerd tendencies I’ve had to unlearn”. I often turn them into capital-P Principles as a way to drill them into my head. Eventually I intend to collect them all into a meta post but here are a few random examples in the meantime: the Anti-Magic Principle, the Anti-Settings Principle, the Shirk-n-Turk Principle, and the Anti-Robustness",
+    "redirects": []
+  },
+  {
     "source": "doc.bmndr.co/athletes",
     "id": "2163",
     "title": "What Should Elite Athletes Beemind?",
     "slug": "athletes",
     "date": "2023-08-10",
     "author": "dreeves",
-    "tags": ["akrasia", "bee-all", "FAQ", "rationality", "tips"],
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "FAQ",
+      "rationality",
+      "tips"
+    ],
     "status": "publish",
     "disqus_id": "2163 https://blog.beeminder.com/?p=2163",
-    "excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes"
-}, {
-"source": "doc.bmndr.co/blogmorphosis"
-}, {
-"slug": "astroblog", "source": "doc.bmndr.co/astroblog"
-}, {
-"slug": "predict", "source": "doc.bmndr.co/predict"
-}, {
-"slug": "readwise", "source": "doc.bmndr.co/readwise"
-}]
+    "excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes",
+    "redirects": []
+  },
+  {
+    "source": "doc.bmndr.co/blogmorphosis",
+    "redirects": []
+  },
+  {
+    "slug": "astroblog",
+    "source": "doc.bmndr.co/astroblog",
+    "redirects": []
+  },
+  {
+    "slug": "predict",
+    "source": "doc.bmndr.co/predict",
+    "redirects": []
+  },
+  {
+    "slug": "readwise",
+    "source": "doc.bmndr.co/readwise",
+    "redirects": []
+  }
+]
