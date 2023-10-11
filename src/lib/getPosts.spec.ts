@@ -8,6 +8,7 @@ describe("getPosts", () => {
   beforeEach(() => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "https://padm.us/psychpricing",
         id: "14",
         slug: "psychpricing",
@@ -15,6 +16,8 @@ describe("getPosts", () => {
         status: "publish",
         disqus_id: "14 https://blog.beeminder.com/?p=14",
         author: "the_author",
+        redirects: [],
+        tags: [],
       },
     ]);
   });
@@ -35,6 +38,7 @@ describe("getPosts", () => {
   it("sorts post by date descending", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "https://padm.us/old",
         id: "1",
         slug: "old",
@@ -42,8 +46,11 @@ describe("getPosts", () => {
         status: "publish",
         author: "the_author",
         disqus_id: "1 https://blog.beeminder.com/?p=1",
+        redirects: [],
+        tags: [],
       },
       {
+        title: "Test Post",
         source: "https://padm.us/new",
         id: "2",
         slug: "new",
@@ -51,6 +58,8 @@ describe("getPosts", () => {
         status: "publish",
         author: "the_author",
         disqus_id: "2 https://blog.beeminder.com/?p=2",
+        redirects: [],
+        tags: [],
       },
     ]);
 
@@ -74,6 +83,7 @@ describe("getPosts", () => {
   it("excludes unpublished posts by default", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "https://padm.us/psychpricing",
         id: "14",
         slug: "psychpricing",
@@ -81,6 +91,8 @@ describe("getPosts", () => {
         status: "draft",
         disqus_id: "14 https://blog.beeminder.com/?p=14",
         author: "the_author",
+        redirects: [],
+        tags: [],
       },
     ]);
 
@@ -92,6 +104,7 @@ describe("getPosts", () => {
   it("includes unpublished posts when requested", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "https://padm.us/psychpricing",
         id: "14",
         slug: "psychpricing",
@@ -99,6 +112,8 @@ describe("getPosts", () => {
         status: "draft",
         disqus_id: "14 https://blog.beeminder.com/?p=14",
         author: "the_author",
+        redirects: [],
+        tags: [],
       },
     ]);
 
@@ -264,6 +279,8 @@ describe("getPosts", () => {
         disqus_id: "14 https://blog.beeminder.com/?p=14",
         title: "wp_title",
         author: "the_author",
+        redirects: [],
+        tags: [],
       },
     ]);
 
@@ -290,6 +307,8 @@ describe("getPosts", () => {
         disqus_id: "14 https://blog.beeminder.com/?p=14",
         title: "wp_title",
         author: "the_author",
+        redirects: [],
+        tags: [],
       },
     ]);
 
@@ -457,6 +476,7 @@ https://blog.beeminder.com/depunish
   it("uses wordpress excerpt", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "padm.us/psychpricing",
         slug: "psychpricing",
         date: "2021-09-01",
@@ -464,6 +484,8 @@ https://blog.beeminder.com/depunish
         excerpt: "wp excerpt",
         author: "the_author",
         disqus_id: "the_disqus_id",
+        redirects: [],
+        tags: [],
       },
     ]);
 
@@ -477,6 +499,7 @@ https://blog.beeminder.com/depunish
   it("strips html from wp excerpts", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "padm.us/psychpricing",
         slug: "psychpricing",
         date: "2021-09-01",
@@ -484,6 +507,8 @@ https://blog.beeminder.com/depunish
         excerpt: "<strong>wp excerpt</strong>",
         author: "the_author",
         disqus_id: "the_disqus_id",
+        redirects: [],
+        tags: [],
       },
     ]);
 
@@ -501,10 +526,14 @@ https://blog.beeminder.com/depunish
     ]);
 
     vi.mocked(fetchPost).mockResolvedValue(`---
+title: the_title
 slug: the_slug
 date: 2023-01-01
 author: the_author
 disqus_id: the_disqus_id
+redirects: []
+tags: []
+status: publish
 ---
 
 BEGIN_MAGIC
@@ -522,10 +551,14 @@ END_MAGIC
     ]);
 
     vi.mocked(fetchPost).mockResolvedValueOnce(`---
+title: the_title_a
 slug: the_slug_a
 date: 2023-01-01
 author: the_author
 disqus_id: the_disqus_id
+redirects: []
+tags: []
+status: publish
 ---
 
 BEGIN_MAGIC
@@ -534,10 +567,14 @@ END_MAGIC
 `);
 
     vi.mocked(fetchPost).mockResolvedValueOnce(`---
+title: the_title_b
 slug: the_slug_b
 date: 2023-01-01
 author: the_author
 disqus_id: the_disqus_id
+redirects: []
+tags: []
+status: publish
 ---
 
 BEGIN_MAGIC

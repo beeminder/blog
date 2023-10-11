@@ -6,12 +6,14 @@ export default function padm({
   content = "",
   after = "",
   title,
+  redirects = [],
 }: {
   frontmatter?: Record<string, unknown>;
   before?: string;
   content?: string;
   after?: string;
   title?: string;
+  redirects?: string[];
 } = {}): string {
   return matter.stringify(
     `
