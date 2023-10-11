@@ -68048,10 +68048,10 @@ Not to mention from his
 </blockquote>
 <p>When I first introduce people to Beeminder, they either recoil in horror or they want to dive right in.
 But the easiest way to defeat a new system is to overload it <a class=\\"footnote\\" id=\\"ALAN1\\" href=\\"#ALAN\\">[1]</a>, so if you read this blog post and then immediately create a bunch of goals, I&#8217;ve probably failed.</p>
-<h4 class=\\"pullquote\\">&#8220;The easiest way to defeat a new system is to overload it&#8221;</h4> 
-There are two obvious ways to overload a system: **volume** and **intensity**.
-In Beeminder terms, volume is creating more goals than you&#8217;re able to keep current, and intensity is setting too aggressive a slope.
+<h4 class=\\"pullquote\\">&#8220;The easiest way to defeat a new system is to overload it&#8221;</h4>
 
+<p>There are two obvious ways to overload a system: <strong>volume</strong> and <strong>intensity</strong>.
+In Beeminder terms, volume is creating more goals than you&#8217;re able to keep current, and intensity is setting too aggressive a slope.</p>
 <p>You might <em>want</em> to lose 20 pounds by next month, but the behaviour change would almost certainly be too extreme to sustain over time.
 You&#8217;ll be better off creating easier goals, things that help get you moving in the right direction.
 There will be plenty of time and techniques for making your goals more aggressive.</p>
@@ -68071,15 +68071,15 @@ It&#8217;s one of the most powerful tools in my productivity arsenal, and it&#82
 <a href=\\"http://blog.beeminder.com/cheating\\" title=\\"Beeminder blog post about combatting cheating\\">sabotaging</a> 
 it.</p>
 <h2>Outcomes vs Activities</h2>
-<h4 class=\\"pullquote\\">&#8220;Weight is an outcome &#8212; it&#8217;s the result of eating better and exercising more&#8221;</h4> 
-Beeminder goals naturally tend to be activities: things you can actively do, or not do. <a class=\\"footnote\\" id=\\"NW1\\" href=\\"#NW\\">[3]</a>
+<h4 class=\\"pullquote\\">&#8220;Weight is an outcome &#8212; it&#8217;s the result of eating better and exercising more&#8221;</h4>
+
+<p>Beeminder goals naturally tend to be activities: things you can actively do, or not do. <a class=\\"footnote\\" id=\\"NW1\\" href=\\"#NW\\">[3]</a>
 They&#8217;re easy to count, and sometimes we can automate the data collection.
 If you&#8217;ve used our 
-[Fitbit](http://blog.beeminder.com/fitbit &#8220;Beeminder blog post announcing our Fitbit integration&#8221;)
+<a href=\\"http://blog.beeminder.com/fitbit\\" title=\\"Beeminder blog post announcing our Fitbit integration\\">Fitbit</a>
 or 
-[RunKeeper](http://blog.beeminder.com/runkeeper &#8220;Beeminder blog post announcing our RunKeeper integration&#8221;)
-integrations, you know what I mean &#8212; just go for a walk or a run and the graphs take care of themselves.
-
+<a href=\\"http://blog.beeminder.com/runkeeper\\" title=\\"Beeminder blog post announcing our RunKeeper integration\\">RunKeeper</a>
+integrations, you know what I mean &#8212; just go for a walk or a run and the graphs take care of themselves.</p>
 <p>A couple of months ago there was a weight loss discussion on 
 <a href=\\"http://blog.beeminder.com/akratics\\" title=\\"Beeminder blog post introducing our super nerdy discussion list for discussion of Beeminder and other anti-akrasia ideas\\">Akratics Anonymous</a> 
 that completely changed my thinking. 
@@ -68165,10 +68165,10 @@ Those 4 updates per day are enough to keep 27 goals ticking over.</p>
 <p>The other way that I cope with volume is by reducing the slope of my roads.
 Because I can&#8217;t handle non-stop beemergency days, and because priorities change. </p>
 <h2>Do More Doing More</h2>
-<h4 class=\\"pullquote\\">&#8220;Whenever I have a safety buffer, I fall off the road when the safe days run out&#8221;</h4> 
-The biggest problem with beeminding something leniently is that it&#8217;s easy to build up a huge safety buffer.
-Any time that I have too much of a buffer, I inevitably fall off the road when the safe days run out. <a class=\\"footnote\\" id=\\"BUFFER1\\" href=\\"#BUFFER\\">[10]</a>
+<h4 class=\\"pullquote\\">&#8220;Whenever I have a safety buffer, I fall off the road when the safe days run out&#8221;</h4>
 
+<p>The biggest problem with beeminding something leniently is that it&#8217;s easy to build up a huge safety buffer.
+Any time that I have too much of a buffer, I inevitably fall off the road when the safe days run out. <a class=\\"footnote\\" id=\\"BUFFER1\\" href=\\"#BUFFER\\">[10]</a></p>
 <p>So I need a way of making sure that I make some progress every now and again, even on roads with fairly flat slopes.
 Everyone has access to the 
 <a href=\\"http://blog.beeminder.com/glossary#retroratchet\\" title=\\"Retroratcheting is Beeminder&#39;s term for removing safety buffer you&#39;ve built up by outperforming your Yellow Brick Road\\">Retroratchet</a> 
@@ -96129,7 +96129,7 @@ The self that books a personal trainer for 6am isn&#8217;t the same self that dr
 My lucid (or stressed) self can change the difficulty, but only starting some way into the future.
 It&#8217;s like committing in advance to put aside a portion of bonuses and salary increases.
 Future sacrifice sounds cheap, especially if it&#8217;s a slice of a bigger pie.</p>
-<h4 class=\\"pullquote\\">&#8220;Re-committing to a goal should be a joyous and positive step; it means that the goal is valuable even if the path to it is hard.&#8221;</h4> 
+<h4 class=\\"pullquote\\">&#8220;Re-committing to a goal should be a joyous and positive step; it means that the goal is valuable even if the path to it is hard.&#8221;</h4>
 
 <p>Where Beeminder can&#8217;t help (yet!) is when I don&#8217;t just fall off the wagon, but send it careening off the yellow brick road and into the ditch of despair.
 My trouble is that the self who drives off the road might not be in a lucid enough state to commit to trying again.
