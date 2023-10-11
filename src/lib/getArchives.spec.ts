@@ -6,12 +6,16 @@ describe("getArchives", () => {
   beforeEach(() => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "https://padm.us/psychpricing",
         date: "2011-01-24",
         slug: "psychpricing",
         status: "publish",
         author: "author",
+        excerpt: "excerpt",
         disqus_id: "abc",
+        redirects: [],
+        tags: [],
       },
     ]);
   });
@@ -37,20 +41,26 @@ describe("getArchives", () => {
   it("properly batches by year", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "https://padm.us/psychpricing",
         date: "2013-02-22",
         slug: "psychpricing",
         status: "publish",
         author: "author",
         disqus_id: "abc",
+        redirects: [],
+        tags: [],
       },
       {
+        title: "Second Post",
         source: "https://padm.us/second",
         date: "2015-02-22",
         slug: "second",
         status: "publish",
         author: "author",
         disqus_id: "def",
+        redirects: [],
+        tags: [],
       },
     ]);
 

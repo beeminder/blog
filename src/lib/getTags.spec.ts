@@ -6,6 +6,7 @@ describe("getTags", () => {
   beforeEach(() => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "https://padm.us/psychpricing",
         slug: "psychpricing",
         tags: ["the_tag"],
@@ -13,6 +14,7 @@ describe("getTags", () => {
         status: "publish",
         disqus_id: "abc",
         author: "author",
+        redirects: [],
       },
     ]);
   });
@@ -44,6 +46,7 @@ describe("getTags", () => {
   it("does not include blank tags", async () => {
     vi.mocked(readSources).mockReturnValue([
       {
+        title: "Test Post",
         source: "https://padm.us/psychpricing",
         slug: "psychpricing",
         tags: [""],
@@ -51,6 +54,7 @@ describe("getTags", () => {
         status: "publish",
         disqus_id: "abc",
         author: "author",
+        redirects: [],
       },
     ]);
 
