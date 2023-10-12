@@ -29,63 +29,7 @@ https://www.beeminder.com/assets/sadbee-e89491e7c1ea7c8568c8cdf0d19ff41acc079cc1
 </Layout>
 
 <script define:vars={{posts}}>
-
-// en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance
-function levenshtein(a, b) {
-  if (a.length === 0) return b.length; 
-  if (b.length === 0) return a.length;
-  let matrix = [], i, j;
-  for (i = 0; i <= b.length; i++) { matrix[i] = [i] }
-  for (j = 0; j <= a.length; j++) { matrix[0][j] = j }
-  for (i = 1; i <= b.length; i++) {
-    for (j = 1; j <= a.length; j++) {
-      if (b.charAt(i-1) == a.charAt(j-1)) {
-        matrix[i][j] = matrix[i-1][j-1];
-      } else {
-        matrix[i][j] = Math.min(matrix[i-1][j-1] + 1, // substitution
-                                Math.min(matrix[i][j-1] + 1, // insertion
-                                         matrix[i-1][j] + 1)); // deletion
-      }
-    }
-  }
-  return matrix[b.length][a.length];
-}
-
-const sadslug = location.pathname.slice(1); // the thing that's 404ing
-const links1 = posts.filter(p => p.slug.startsWith(sadslug));
-const links2 = posts.filter(p => p.slug.endsWith(sadslug));
-const ul = document.querySelector("#nearmisses");
-
-ul.appendChild(document.createElement('li')).innerHTML =
-  `<code>blog.beeminder.com/${sadslug}</code> &nbsp; &mdash; &nbsp; ` + 
-  `what you typed or clicked on`;
-
-for (const l of links1.concat(links2)) {
-  ul.appendChild(document.createElement('li')).innerHTML =
-    `<a href="${l.slug}" title="${l.excerpt}">` + 
-      `<code>blog.beeminder.com/${l.slug}</code>` +
-    `</a> &nbsp; &mdash; &nbsp; ${l.title}`;
-}
-
-if (links1.length === 0 && links2.length === 0) {
-  // Find the post with the closest slug to the sad one that's 404'ing
-  let cpost = '';
-  let edist = Infinity; // minimum edit distance across all slugs in the archive
-  for (const p of posts) {
-    const dist = levenshtein(sadslug, p.slug);
-    if (dist <= edist) { edist = dist; cpost = p } // break ties by recency
-  }
-
-  ul.appendChild(document.createElement('li')).innerHTML =
-    `<a href="${cpost.slug}" title="We're suggesting this because ` +
-    `“${cpost.slug}” has a Levenshtein edit distance of ${edist} from ` +
-    `“${sadslug}” -- the smallest in the archives. ` + 
-    `Excerpt: ${cpost.excerpt}">` + 
-      `<code>blog.beeminder.com/${cpost.slug}</code>` +
-    `</a> &nbsp; &mdash; &nbsp; ${cpost.title}`;
-  // Or maybe if cpost is too far away, do this instead:
-  // ul.appendChild(document.createElement('li')).innerHTML =
-  //   "(actually we've no idea what you might've meant here, sorry)";
-}
-
+  window.posts = posts;
 </script>
+
+<script  src="../scripts/404.ts"></script>
