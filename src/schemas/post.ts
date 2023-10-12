@@ -14,7 +14,6 @@ import striptags from "striptags";
 export const post = z
   .object({
     source: z.string(),
-    id: z.string().optional(),
     title: z.string().optional(),
     slug: z.string().optional(),
     date: z.string().optional(),
