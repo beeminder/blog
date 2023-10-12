@@ -39370,7 +39370,7 @@ TODO: Use another image at the top and have the swiss cake rolls in the middle o
 }
 `;
 
-exports[`body > post forget hash 1dc3b80d4295f7deb1d4b50b61e047f3 1`] = `
+exports[`body > post forget hash 3cfa0a356df00e3edba5747029b366d3 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img class=\\"aligncenter\\"
@@ -39388,14 +39388,11 @@ We have a whole list of ideas for this.</p>
 </li>
 <li><p>Just having the term &#8220;plan-to-forget&#8221; helps you notice instances of delusionally planning to remember.
 It&#8217;s a 
-[concept handle](
-  <a href=\\"https://slatestarcodex.com/2016/02/20/writing-advice/\\">https://slatestarcodex.com/2016/02/20/writing-advice/</a> 
-  &#8220;#9&#8221;</p>
-</li>
-</ol>
-<p>) for a 
+<a href=\\"https://slatestarcodex.com/2016/02/20/writing-advice/\\" title=\\"See item 9\\">concept handle</a> for a 
 Trigger-Action Plan <a class=\\"footnote\\" id=\\"TAP1\\" href=\\"#TAP\\">[1]</a> 
 template we&#8217;ve been finding really useful in our family.</p>
+</li>
+</ol>
 <p>Our son 
 <a href=\\"http://blog.beeminder.com/vegdays\\" title=\\"Previous Beeminder blog post featuring Cantor\\">Cantor</a> and I were proud to come up with this after too many failed instances of &#8220;remind me to do XYZ&#8221;.
 The original instance of putting it into practice was Cantor saying, as we were leaving the house,
@@ -39493,8 +39490,8 @@ We have a whole list of ideas for this.
 2. Just having the term \\"plan-to-forget\\" helps you notice instances of delusionally planning to remember.
 It's a 
 [concept handle](
-  https://slatestarcodex.com/2016/02/20/writing-advice/ 
-  \\"#9\\"
+  https://slatestarcodex.com/2016/02/20/writing-advice/
+  \\"See item 9\\"
 ) for a 
 Trigger-Action Plan $TAP 
 template we've been finding really useful in our family.
