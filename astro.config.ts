@@ -9,7 +9,10 @@ export default defineConfig({
     service: sharpImageService(),
     domains: ["blog.beeminder.com", "user-images.githubusercontent.com"],
   },
-  redirects: await getRedirects(),
+  redirects: await getRedirects().catch((e) => {
+    console.error(e);
+    throw e;
+  }),
   integrations: [
     prefetch({
       selector: "a",
