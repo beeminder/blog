@@ -296,4 +296,57 @@ describe("post", () => {
 
     expect(result.success).toEqual(false);
   });
+
+  it("requires new line preceeding HTML comments", async () => {
+    const md = padm({
+      frontmatter: {
+        title: "Test Post",
+        date: new Date("2021-01-01"),
+        author: "dreeves",
+        slug: "test-post",
+        disqus_id: "test-post",
+        redirects: [],
+        tags: [],
+        status: "publish",
+      },
+      content: `This is the paragraph in question
+<!-- comment --> More text`,
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.success).toEqual(false);
+  });
+
+  it("specifies error reason", async () => {
+    const md = padm({
+      frontmatter: {
+        title: "Test Post",
+        date: new Date("2021-01-01"),
+        author: "dreeves",
+        slug: "test-post",
+        disqus_id: "test-post",
+        redirects: [],
+        tags: [],
+        status: "publish",
+      },
+      content: `This is the paragraph in question
+<!-- comment --> More text`,
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      md,
+    });
+
+    if (result.success) {
+      throw new Error("Expected error");
+    }
+    expect(JSON.stringify(result.error)).toEqual(
+      expect.stringMatching(/comment syntax error/),
+    );
+  });
 });
