@@ -29,6 +29,9 @@ dependencies:
   happy-dom:
     specifier: ^12.0.1
     version: 12.0.1
+  levenshtein:
+    specifier: ^1.0.5
+    version: 1.0.5
   marked:
     specifier: ^9.0.2
     version: 9.0.2
@@ -64,6 +67,9 @@ devDependencies:
   '@types/feather-icons':
     specifier: ^4.29.2
     version: 4.29.2
+  '@types/levenshtein':
+    specifier: ^1.0.2
+    version: 1.0.2
   '@types/marked':
     specifier: ^5.0.1
     version: 5.0.1
@@ -1002,6 +1008,10 @@ packages:
   /@types/json5@0.0.30:
     resolution: {integrity: sha512-sqm9g7mHlPY/43fcSNrCYfOeX9zkTTK+euO5E6+CVijSMm5tTjkVdwdqRkY3ljjIAf8679vps5jKUoJBCLsMDA==}
     dev: false
+
+  /@types/levenshtein@1.0.2:
+    resolution: {integrity: sha512-VX3+9s5ZAbLEK9543tjBYaMmoDutrYH21ec7ksZ98fFQ92xf6pySfzJUD2t/Q85TKlp7ceCn6YkCGZS4cTm1TA==}
+    dev: true
 
   /@types/marked@5.0.1:
     resolution: {integrity: sha512-Y3pAUzHKh605fN6fvASsz5FDSWbZcs/65Q6xYRmnIP9ZIYz27T4IOmXfH9gWJV1dpi7f1e7z7nBGUTx/a0ptpA==}
@@ -2668,6 +2678,11 @@ packages:
   /kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
+    dev: false
+
+  /levenshtein@1.0.5:
+    resolution: {integrity: sha512-UQf1nnmxjl7O0+snDXj2YF2r74Gkya8ZpnegrUBYN9tikh2dtxV/ey8e07BO5wwo0i76yjOvbDhFHdcPEiH9aA==}
+    engines: {'0': node >=0.2.0}
     dev: false
 
   /levn@0.4.1:
