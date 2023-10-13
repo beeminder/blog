@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { ZodIssueCode, z } from "zod";
 import { status } from "./status";
 import parseTitle from "../lib/parseTitle";
 import getExcerpt from "../lib/getExcerpt";
@@ -25,7 +25,7 @@ export const post = z
     redirects: z.array(z.string()).optional(),
     md: z.string(),
   })
-  .transform(({ source: url, md, ...rest }) => {
+  .transform(({ source: url, md, ...rest }, ctx) => {
     const { data, content } = matter(md);
     const meta = {
       ...rest,
@@ -34,10 +34,15 @@ export const post = z
     const c = body.safeParse(content);
 
     if (!c.success) {
-      throw new Error(
-        `Failed to parse post ${url}: ${c.error.message}`,
-        c.error,
-      );
+      ctx.addIssue({
+        path: ["md"],
+        message: `Failed to parse post ${url}`,
+        code: ZodIssueCode.custom,
+        params: {
+          error: c.error,
+        },
+      });
+      return z.NEVER;
     }
 
     const date = meta.date && new Date(meta.date);
