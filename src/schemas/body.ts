@@ -6,7 +6,6 @@ import expandRefs from "../lib/expandRefs";
 import { marked } from "marked";
 import { markedSmartypants } from "marked-smartypants";
 import applyIdsToElements from "../lib/applyIdsToElements";
-// import inlineParagraphs from "../lib/inlineParagraphs";
 
 marked.use(
   markedSmartypants({
@@ -30,10 +29,12 @@ export const body = z
   .refine((content) => content.includes("END_MAGIC"), {
     message: "No END_MAGIC found",
   })
+  .refine((content) => !/(?<!\n)\n<!--/gm.test(content), {
+    message:
+      "Failed due to comment syntax error in post. Please make sure all HTML comments are preceeded by a new line.",
+  })
   .transform(trimContent)
   .transform(addBlankLines)
-  // TODO: find a fix for mid-paragraph html comments that doesn't break markdown lists
-  // .transform(inlineParagraphs)
   .transform(linkFootnotes)
   .transform(expandRefs)
   .transform((md) => marked.parse(md));
