@@ -2,9 +2,14 @@ import { fetchBuilder, FileSystemCache, MemoryCache } from "node-fetch-cache";
 import memoize from "./memoize";
 import canonicalizeUrl from "./canonicalizeUrl";
 
-const IS_RENDER = !!import.meta.env.RENDER;
-const IS_FILE_SYSTEM_CACHE_DISABLED =
-  import.meta.env.FILE_SYSTEM_CACHE === "false";
+// WORKAROUND: `import.meta.env` is not available during Astro config evaluation.
+// https://docs.astro.build/en/guides/configuring-astro/#environment-variables
+const RENDER = import.meta.env.RENDER || process.env.RENDER;
+const FILE_SYSTEM_CACHE =
+  import.meta.env.FILE_SYSTEM_CACHE || process.env.FILE_SYSTEM_CACHE;
+
+const IS_RENDER = !!RENDER;
+const IS_FILE_SYSTEM_CACHE_DISABLED = FILE_SYSTEM_CACHE === "false";
 
 function buildCache() {
   if (IS_RENDER || IS_FILE_SYSTEM_CACHE_DISABLED) {
