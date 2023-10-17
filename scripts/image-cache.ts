@@ -14,7 +14,14 @@ if (!nodeModules) {
 
 const folderPath = new URL(`${nodeModules}/.astro/assets`, import.meta.url)
   .pathname;
-const files = readdirSync(folderPath, "utf8");
+
+let files: string[] = [];
+
+try {
+  files = readdirSync(folderPath, "utf8");
+} catch (e) {
+  console.warn(e);
+}
 
 files.forEach((file) => {
   const path = new URL(
