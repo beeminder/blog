@@ -48,7 +48,7 @@ if (links1.length === 0 && links2.length === 0) {
   }
 
   ul.appendChild(document.createElement("li")).innerHTML =
-    `<a href="${cpost.slug}" title="We're suggesting this because ` +
+    `<a href="/${cpost.slug}" title="We're suggesting this because ` +
     `“${cpost.slug}” has a Levenshtein edit distance of ${edist} from ` +
     `“${sadslug}” -- the smallest in the archives. ` +
     `Excerpt: ${cpost.excerpt}">` +
