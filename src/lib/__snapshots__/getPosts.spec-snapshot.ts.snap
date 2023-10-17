@@ -653,7 +653,7 @@ END_MAGIC
 }
 `;
 
-exports[`body > post akrasia hash 357d1f02f18fbae747e8bb93cd838dcc 1`] = `
+exports[`body > post akrasia hash cbf9434215ef54b64c8707018fe15950 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img src=\\"http://blog.beeminder.com/wp-content/uploads/2011/01/sketch2.png\\" alt=\\"Mmmphhle glrrg? What bag of chocolate the size of my ass?\\" title=\\"Mmmphhle glrrg? What bag of chocolate the size of my ass?\\" width=\\"418\\" height=\\"304\\" class=\\"aligncenter size-full\\"></p>
@@ -1180,6 +1180,7 @@ And then, critically, add a commitment device so you can force yourself to stick
 In other words, you transform the long-term consequences into near-term consequences (\\"I'll forfeit this money if I'm not on the road in the morning!\\").
 
 ## Bright Lines
+
  <!-- Cash phobia, leniency philia, and bright lines -->
 
 Many people who agree with the above in principle react viscerally to the idea of involving money.
