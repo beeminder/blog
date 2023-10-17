@@ -10,13 +10,13 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "tsx ./scripts/image-cache.ts && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest",
     "test:snapshot": "vitest --config ./vitest.snapshot.config.ts",
     "test:snapshot:update": "vitest --config ./vitest.snapshot.config.ts --update",
-    "cache:clear": "rm -rf .cache",
+    "cache:clear": "rm -rf .cache && rm -rf node_modules/.astro",
     "check": "astro check",
     "check:ts": "tsc --noEmit",
     "lint": "eslint .",
@@ -40,6 +40,7 @@
     "p-limit": "^4.0.0",
     "sharp": "^0.32.5",
     "striptags": "^3.2.0",
+    "tsx": "^3.13.0",
     "zod": "^3.22.2"
   },
   "devDependencies": {
