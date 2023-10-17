@@ -2,10 +2,17 @@
 // pnpm dlx tsx ./scripts/image-cache.ts
 
 import { readFileSync, readdirSync, writeFileSync } from "fs";
+import findup from "findup-sync";
 
 const ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
 
-const folderPath = new URL("../node_modules/.astro/assets", import.meta.url)
+const nodeModules = findup("node_modules");
+
+if (!nodeModules) {
+  throw new Error("Could not find node_modules folder");
+}
+
+const folderPath = new URL(`${nodeModules}/.astro/assets`, import.meta.url)
   .pathname;
 const files = readdirSync(folderPath, "utf8");
 
