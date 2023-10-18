@@ -349,4 +349,50 @@ describe("post", () => {
       expect.stringMatching(/comment syntax error/),
     );
   });
+
+  it("requires excerpt", async () => {
+    const md = padm({
+      frontmatter: {
+        title: "Test Post",
+        date: new Date("2021-01-01"),
+        author: "dreeves",
+        slug: "test-post",
+        disqus_id: "test-post",
+        redirects: [],
+        tags: [],
+        status: "publish",
+      },
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.success).toEqual(false);
+  });
+
+  it("expects excerpt from MAGIC_AUTO_EXTRACT to be Generated", async () => {
+    const md = padm({
+      content: "words",
+      frontmatter: {
+        title: "Test Post",
+        date: new Date("2021-01-01"),
+        author: "dreeves",
+        slug: "test-post",
+        disqus_id: "test-post",
+        redirects: [],
+        tags: [],
+        status: "publish",
+        excerpt: "MAGIC_AUTO_EXTRACT",
+      },
+    });
+
+    const result = post.parse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.excerpt).toContain("word");
+  });
 });
