@@ -18,6 +18,7 @@ describe("getPosts", () => {
         author: "the_author",
         redirects: [],
         tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
     ]);
   });
@@ -48,6 +49,7 @@ describe("getPosts", () => {
         disqus_id: "1 https://blog.beeminder.com/?p=1",
         redirects: [],
         tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
       {
         title: "Test Post",
@@ -60,6 +62,7 @@ describe("getPosts", () => {
         disqus_id: "2 https://blog.beeminder.com/?p=2",
         redirects: [],
         tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
     ]);
 
@@ -72,6 +75,9 @@ describe("getPosts", () => {
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         content: "word",
+        frontmatter: {
+          excerpt: "MAGIC_AUTO_EXTRACT",
+        },
       }),
     );
 
@@ -93,6 +99,7 @@ describe("getPosts", () => {
         author: "the_author",
         redirects: [],
         tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
     ]);
 
@@ -114,6 +121,7 @@ describe("getPosts", () => {
         author: "the_author",
         redirects: [],
         tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
     ]);
 
@@ -281,6 +289,7 @@ describe("getPosts", () => {
         author: "the_author",
         redirects: [],
         tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
     ]);
 
@@ -309,6 +318,7 @@ describe("getPosts", () => {
         author: "the_author",
         redirects: [],
         tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
     ]);
 
@@ -534,6 +544,7 @@ disqus_id: the_disqus_id
 redirects: []
 tags: []
 status: publish
+excerpt: MAGIC_AUTO_EXTRACT
 ---
 
 BEGIN_MAGIC
@@ -559,6 +570,7 @@ disqus_id: the_disqus_id
 redirects: []
 tags: []
 status: publish
+excerpt: MAGIC_AUTO_EXTRACT
 ---
 
 BEGIN_MAGIC
@@ -575,6 +587,7 @@ disqus_id: the_disqus_id
 redirects: []
 tags: []
 status: publish
+excerpt: MAGIC_AUTO_EXTRACT
 ---
 
 BEGIN_MAGIC

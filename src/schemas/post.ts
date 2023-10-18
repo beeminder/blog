@@ -45,13 +45,37 @@ export const post = z
       return z.NEVER;
     }
 
+    // let theExcerpt: unknown;
+
+    // if (meta.excerpt === "MAGIC_AUTO_EXTRACT") {
+    //   theExcerpt = getExcerpt(c.data);
+    // } else if (meta.excerpt === undefined) {
+    //   theExcerpt = undefined;
+    // } else {
+    //   theExcerpt = striptags(meta.excerpt);
+    // }
+
+    let theExcerpt: unknown;
+
+    switch (meta.excerpt) {
+      case "MAGIC_AUTO_EXTRACT":
+        theExcerpt = getExcerpt(c.data);
+        break;
+      case undefined:
+        theExcerpt = undefined;
+        break;
+      default:
+        theExcerpt = striptags(meta.excerpt);
+        break;
+    }
+
     const date = meta.date && new Date(meta.date);
     const dateStringResult = dateString.safeParse(date);
 
     return {
       ...meta,
       tags: meta.tags?.filter(Boolean),
-      excerpt: meta.excerpt ? striptags(meta.excerpt) : getExcerpt(c.data),
+      excerpt: theExcerpt,
       image: extractImage(c.data),
       title: meta.title || parseTitle(md),
       date,
