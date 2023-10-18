@@ -50,6 +50,7 @@ describe("getArchives", () => {
         disqus_id: "abc",
         redirects: [],
         tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
       {
         title: "Second Post",
@@ -61,6 +62,7 @@ describe("getArchives", () => {
         disqus_id: "def",
         redirects: [],
         tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
     ]);
 
