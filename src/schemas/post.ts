@@ -45,16 +45,6 @@ export const post = z
       return z.NEVER;
     }
 
-    // let theExcerpt: unknown;
-
-    // if (meta.excerpt === "MAGIC_AUTO_EXTRACT") {
-    //   theExcerpt = getExcerpt(c.data);
-    // } else if (meta.excerpt === undefined) {
-    //   theExcerpt = undefined;
-    // } else {
-    //   theExcerpt = striptags(meta.excerpt);
-    // }
-
     let theExcerpt: unknown;
 
     switch (meta.excerpt) {
