@@ -70035,7 +70035,7 @@ END_MAGIC
 }
 `;
 
-exports[`body > post predict hash fd3564810b4c9e964b0e951b81a026c8 1`] = `
+exports[`body > post predict hash 5dda96837663d9325b0b67d5c60bc481 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img class=\\"aligncenter\\"
@@ -70180,7 +70180,7 @@ See also
   "date": 2023-09-20T00:00:00.000Z,
   "date_string": "2023-09-20",
   "disqus_id": "predict",
-  "excerpt": "A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability...",
+  "excerpt": "A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd",
   "image": {
     "alt": "Bee riding the Manifold.markets logo",
     "extracted": true,
@@ -70194,7 +70194,7 @@ author: dreeves
 status: publish
 tags: [bee-all, rationality, prediction markets, nerdery, history of beeminder, startups, commitment contracts]
 disqus_id: predict
-excerpt: \\"\\"
+excerpt: \\"A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd\\"
 ---
 
 See also: prediction, mana, predict pads
@@ -75009,7 +75009,7 @@ END_MAGIC
 }
 `;
 
-exports[`body > post readwise hash e85fc9fd904ce34476efe70a3771d93f 1`] = `
+exports[`body > post readwise hash cfc7dd19133c9cf22f76789324c48ebf 1`] = `
 {
   "author": "Adam Wolf",
   "content": "<p><img class=\\"aligncenter\\"
@@ -75058,7 +75058,7 @@ Beemind your read-it-latering with Readwise Reader!
   "date": 2023-09-27T00:00:00.000Z,
   "date_string": "2023-09-27",
   "disqus_id": "readwise",
-  "excerpt": "Readwise Reader is a powerful tool for “power readers”.  It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags.  Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads,...",
+  "excerpt": "Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an",
   "image": {
     "alt": "A robotic bee in a sea of books",
     "extracted": true,
@@ -75066,13 +75066,12 @@ Beemind your read-it-latering with Readwise Reader!
     "title": "Readwise and Beeminder sittin' in a tree, I-N-T-E-G-R-A-T-I-N-G",
   },
   "md": "---
-title: Beeminder &hearts; Readwise Reader
 date: 2023-09-27
 author: Adam Wolf
 status: publish
 tags: [akrasia, bee-all, get everything done, integrations, PSA, rationality, startups, reading]
 disqus_id: readwise
-excerpt: \\"\\"
+excerpt: \\"Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an\\"
 ---
 
 BEGIN_MAGIC[Beeminder &hearts; Readwise Reader]
@@ -77741,7 +77740,7 @@ those were 2-3 week trips instead of 1).  yay beeminder contract!
 }
 `;
 
-exports[`body > post rosary hash 0c3c8246154b0309ac1f0519d1015d23 1`] = `
+exports[`body > post rosary hash 24e84c774565ba8cf9f44904ddaa7cf4 1`] = `
 {
   "author": "Pedro Paulo Oliveira Jr.",
   "content": "<p><img class=\\"aligncenter\\" alt=\\"Assumption of Mary; Asunción de la Virgen (c 1670), Juan Martín Cabezalero, Museo del Prado\\" title=\\"Integrating Beeminder on iOS? Step 1: Pray. [Image: Assumption of Mary; Asunción de la Virgen (c 1670), Juan Martín Cabezalero (1634-1673) formerly (although the dispute is not settled yet) attributed to Mateo Cerezo (1626-1666), Museo del Prado, Madrid]\\" src=\\"http://blog.beeminder.com/wp-content/uploads/2014/12/rosary-assumption.jpg\\" width=\\"400px\\"></p>
@@ -77865,40 +77864,31 @@ covers the first step of registering your app.</p>
 <h3>Authentication</h3>
 <p>To get the user’s goals and to add a datapoint to a particular goal you must first authenticate using OAuth2.
 In the iOS SDK it&#8217;s easy to do that without any external library:</p>
-<font size=\\"-1\\">
-<pre lang=\\"objc\\">
-
-<p>static NSString * BackendBaseURL = @\\"<a href=\\"https://www.beeminder.com/\\">https://www.beeminder.com/</a>\\";
+<pre><code>static NSString * BackendBaseURL = @\\"https://www.beeminder.com/\\";
 static NSString * OAuth2Path     = @\\"apps/authorize\\";
 static NSString * ClientId       = @\\"client_id=mysupersecretwithbeeminder\\";
 static NSString * RedirectURI    = @\\"redirect_uri=iterco://beeminder-callback\\";
-static NSString * ResponseType   = @\\"response_type=token\\";</p>
-<ul>
-<li>(void) beginOAuth
-{
-if([[NSUserDefaults standardUserDefaults]
-stringForKey:@\\"beeminder_token\\"] == nil)
-{
-  NSString * auth = [BackendBaseURL stringByAppendingFormat: @\\"%@?%@&%@&%@\\",
-                                                         OAuth2Path,
-                                                         ClientId,
-                                                         RedirectURI,
-                                                         ResponseType];
-  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:auth]];
-}
-}
-</li>
-</ul>
+static NSString * ResponseType   = @\\"response_type=token\\";
 
- 
+- (void) beginOAuth
+{
+  if([[NSUserDefaults standardUserDefaults]
+      stringForKey:@\\"beeminder_token\\"] == nil)
+  {
+    NSString * auth = [BackendBaseURL stringByAppendingFormat: @\\"%@?%@&%@&%@\\",
+                                                               OAuth2Path,
+                                                               ClientId,
+                                                               RedirectURI,
+                                                               ResponseType];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:auth]];
+  }
+}
+</code></pre>
 <p>It will redirect you to Safari where the user will authorize Beeminder to let your app have access to your account. 
 No login credentials are entered in your app.</p>
 <p>The <code>redirect_uri</code> you should set at <code>CFBundleURLSchemes</code> in the <strong>Info.plist</strong> of your project.</p>
 <p>Safari will redirect you back to your app and you’ll listen for it in your App Delegate and store the <code>access_token</code> to access Beeminder on behalf of the user:</p>
-<font size=\\"-1\\">
-<pre lang=\\"objc\\">
-
-<p>-(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url
+<pre><code>-(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
   NSLog(@\\"%@\\",url);
   if([url.host isEqualToString:@\\"beeminder-callback\\"]) {
@@ -77917,79 +77907,59 @@ No login credentials are entered in your app.</p>
           [[NSUserDefaults standardUserDefaults] synchronize]; 
         }
       }
-    }<br>  }
+    }       
+  }
   return YES;
 }
-</p>
-
-
+</code></pre>
 <h3>Requesting the Goals</h3>
-<p>Since Beeminder's API is pure JSON I suggest a library like 
+<p>Since Beeminder&#8217;s API is pure JSON I suggest a library like 
 <a href=\\"https://github.com/AFNetworking/AFNetworking\\" title=\\"AFNetworking is a delightful networking library for iOS and Mac OSX\\">AFNetworking</a> 
 to make things easier.</p>
-<font size=\\"-1\\">
-<pre lang=\\"objc\\">
-
-<ul>
-<li>(void) refreshGoalsWithCompletion: (void (^)(BOOL, NSInteger))completion
+<pre><code>- (void) refreshGoalsWithCompletion: (void (^)(BOOL, NSInteger))completion
 {
-id success = ^(AFHTTPRequestOperation * operation, id JSON) {
-  NSMutableArray *l_goals = [NSMutableArray arrayWithCapacity:[JSON count]];
-  for(NSDictionary * goal in JSON) { [l_goals addObject:goal]; }
-  _goals = [l_goals copy];
-  completion(YES, 200);
-};
-id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
-  completion(NO, [operation.response statusCode]);
-};
-NSDictionary *params = @{ @\\"access_token\\" : [self getToken] };
-[_client getPath:@\\"/api/v1/users/me/goals.json\\"
-     parameters:params success:success failure:failure];</li>
-</ul>
-<p>}
-</p>
-
-
+  id success = ^(AFHTTPRequestOperation * operation, id JSON) {
+    NSMutableArray *l_goals = [NSMutableArray arrayWithCapacity:[JSON count]];
+    for(NSDictionary * goal in JSON) { [l_goals addObject:goal]; }
+    _goals = [l_goals copy];
+    completion(YES, 200);
+  };
+  id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
+    completion(NO, [operation.response statusCode]);
+  };
+  NSDictionary *params = @{ @\\"access_token\\" : [self getToken] };
+  [_client getPath:@\\"/api/v1/users/me/goals.json\\"
+           parameters:params success:success failure:failure];
+}
+</code></pre>
 <p>In the above function <code>_client</code> is a variable of our helper class initialized as:</p>
-<font size=\\"-1\\">
-<pre lang=\\"objc\\">
-
-<p>_client = [AFHTTPClient clientWithBaseURL:
-    [NSURL URLWithString:@\\"<a href=\\"https://www.beeminder.com/%22%5D%5D\\">https://www.beeminder.com/\\"]]</a>;
+<pre><code>_client = [AFHTTPClient clientWithBaseURL:
+    [NSURL URLWithString:@\\"https://www.beeminder.com/\\"]];
 [_client registerHTTPOperationClass:[AFJSONRequestOperation class]];
 [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
-</p>
-
-
+</code></pre>
 <h3>Adding Datapoints</h3>
 <p>The last step after the user selects which goal will be updated when he prayed the rosary is to add a datapoint.</p>
-<font size=\\"-1\\">
-<pre lang=\\"objc\\">
-
-<ul>
-<li><p>(void) addOneUnitToGoal:(void (^)(BOOL, NSInteger))completion
+<pre><code>- (void) addOneUnitToGoal:(void (^)(BOOL, NSInteger))completion
 {
-id success = ^(AFHTTPRequestOperation * operation, id JSON) {
-  completion(YES, 200);
-};
-id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
-  completion(NO, [operation.response statusCode]);
-};
-NSDictionary *params = @{
-  @\\"access_token\\": [self getToken],
-  @\\"comment\\": @\\"Added by Electronic Rosary by Netfilter\\",
-  @\\"value\\": @\\"1\\"
-};</p>
-<p>NSString * path = [NSString stringWithFormat:
-               @\\"/api/v1/users/me/goals/%@/datapoints.json\\",
-               [self getSelectedGoal]];
-[_client postPath:path parameters:params success:success failure:failure];</p>
-</li>
-</ul>
-<p>}
-</p>
+  id success = ^(AFHTTPRequestOperation * operation, id JSON) {
+    completion(YES, 200);
+  };
+  id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
+    completion(NO, [operation.response statusCode]);
+  };
+  NSDictionary *params = @{
+    @\\"access_token\\": [self getToken],
+    @\\"comment\\": @\\"Added by Electronic Rosary by Netfilter\\",
+    @\\"value\\": @\\"1\\"
+  };
 
-
+  NSString * path = [NSString stringWithFormat:
+                     @\\"/api/v1/users/me/goals/%@/datapoints.json\\",
+                     [self getSelectedGoal]];
+  [_client postPath:path parameters:params success:success failure:failure];
+}
+</code></pre>
 <p>We’ll be releasing in the next few weeks the full code of the helper class to integrate Beeminder in your iOS app 
 (we need to refactor the code decouple it from our libraries, although a 
 <a href=\\"https://github.com/ppaulojr/NFBeeminderHelper\\" title=\\"You can fork it on GitHub\\">work in progress is already available</a>).</p>
@@ -78007,7 +77977,7 @@ Maybe you can use it to pray for me once in a while. :)</p>
 He also graduated, years later, with a PhD in Medicine from USP. 
 He spends most of his time at 
 <a href=\\"http://www.netfilter.com.br\\" title=\\"Thanks to Netfilter for okaying the 5 free days of Electronic Rosary\\">Netfilter</a>
-but some days he teaches, advises students, and does medical research (Alzheimer's and Autism) at the hospital. 
+but some days he teaches, advises students, and does medical research (Alzheimer&#8217;s and Autism) at the hospital. 
 In his spare time he reads, plays soccer, and organizes
 <a href=\\"https://www.youtube.com/watch?v=ZxK8I9gjU98\\" title=\\"Amajari,RR, Brazil, 2008\\">volunteer work</a>
 sometimes involving
@@ -78023,7 +77993,7 @@ and
 as well, but they are far less polished than the 
 <a href=\\"https://itunes.apple.com/us/app/iterco/id489906277?mt=8\\" title=\\"Electronic Rosary offers recordings in English, Portuguese, Spanish, French, Italian, German, Polish, Russian, Esperanto, and Latin. You can record your own rosary and share it.\\">iOS version</a>.</p>
 <p><br> <br></p>
-</pre></font></pre></font></pre></font></pre></font></pre></font>",
+",
   "date": 2014-12-11T00:00:00.000Z,
   "date_string": "2014-12-11",
   "disqus_id": "829 https://blog.beeminder.com/?p=829",
@@ -78193,8 +78163,7 @@ covers the first step of registering your app.
 To get the user’s goals and to add a datapoint to a particular goal you must first authenticate using OAuth2.
 In the iOS SDK it's easy to do that without any external library:
  
-<font size=\\"-1\\">
-<pre lang=objc>
+\`\`\`
 static NSString * BackendBaseURL = @\\"https://www.beeminder.com/\\";
 static NSString * OAuth2Path     = @\\"apps/authorize\\";
 static NSString * ClientId       = @\\"client_id=mysupersecretwithbeeminder\\";
@@ -78214,8 +78183,7 @@ static NSString * ResponseType   = @\\"response_type=token\\";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:auth]];
   }
 }
-</pre>
-</font>
+\`\`\`
  
 It will redirect you to Safari where the user will authorize Beeminder to let your app have access to your account. 
 No login credentials are entered in your app.
@@ -78224,8 +78192,7 @@ The \`redirect_uri\` you should set at \`CFBundleURLSchemes\` in the **Info.plis
  
 Safari will redirect you back to your app and you’ll listen for it in your App Delegate and store the \`access_token\` to access Beeminder on behalf of the user:
  
-<font size=\\"-1\\">
-<pre lang=objc>
+\`\`\`
 -(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
   NSLog(@\\"%@\\",url);
@@ -78249,8 +78216,7 @@ Safari will redirect you back to your app and you’ll listen for it in your App
   }
   return YES;
 }
-</pre>
-</font>
+\`\`\`
 
 ### Requesting the Goals
 
@@ -78258,8 +78224,7 @@ Since Beeminder's API is pure JSON I suggest a library like
 [AFNetworking](https://github.com/AFNetworking/AFNetworking \\"AFNetworking is a delightful networking library for iOS and Mac OSX\\") 
 to make things easier.
 
-<font size=\\"-1\\">
-<pre lang=objc>
+\`\`\`
 - (void) refreshGoalsWithCompletion: (void (^)(BOOL, NSInteger))completion
 {
   id success = ^(AFHTTPRequestOperation * operation, id JSON) {
@@ -78275,26 +78240,22 @@ to make things easier.
   [_client getPath:@\\"/api/v1/users/me/goals.json\\"
            parameters:params success:success failure:failure];
 }
-</pre>
-</font>
+\`\`\`
 
 In the above function \`_client\` is a variable of our helper class initialized as:
 
-<font size=\\"-1\\">
-<pre lang=objc>
+\`\`\`
 _client = [AFHTTPClient clientWithBaseURL:
 	[NSURL URLWithString:@\\"https://www.beeminder.com/\\"]];
 [_client registerHTTPOperationClass:[AFJSONRequestOperation class]];
 [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
-</pre>
-</font>
+\`\`\`
 
 ### Adding Datapoints
 
 The last step after the user selects which goal will be updated when he prayed the rosary is to add a datapoint.
 
-<font size=\\"-1\\">
-<pre lang=objc>
+\`\`\`
 - (void) addOneUnitToGoal:(void (^)(BOOL, NSInteger))completion
 {
   id success = ^(AFHTTPRequestOperation * operation, id JSON) {
@@ -78314,8 +78275,7 @@ The last step after the user selects which goal will be updated when he prayed t
                      [self getSelectedGoal]];
   [_client postPath:path parameters:params success:success failure:failure];
 }
-</pre>
-</font>
+\`\`\`
 
 We’ll be releasing in the next few weeks the full code of the helper class to integrate Beeminder in your iOS app 
 (we need to refactor the code decouple it from our libraries, although a 
