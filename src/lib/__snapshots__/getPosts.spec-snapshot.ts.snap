@@ -70035,6 +70035,571 @@ END_MAGIC
 }
 `;
 
+exports[`body > post predict hash 5dda96837663d9325b0b67d5c60bc481 1`] = `
+{
+  "author": "dreeves",
+  "content": "<p><img class=\\"aligncenter\\"
+alt=\\"Bee riding the Manifold.markets logo\\"
+title=\\"Wheeeee. It's a bird, and a bee. But not like that, geez.\\"
+width=\\"450px\\"
+src=\\"https://blog.beeminder.com/wp-content/uploads/2022/05/faire-manifold-bee-logo.jpeg\\"/></p>
+<p>A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction.
+&#8220;I&#8217;m 75% likely to maintain my Duolingo streak all year, but now that I&#8217;ve said so I&#8217;m actually 90% likely, but now that I&#8217;ve said <em>that</em>, &#8230;&#8221;
+Or what happens when the probability starts very low but you add a wager?
+It&#8217;s like this self-describing xkcd:</p>
+<p><img
+alt=\\"xkcd #688, Self-Description\\"
+title=\\"The contents of any one panel are dependent on the contents of every panel including itself. The graph of panel dependencies is complete and bidirectional, and each node has a loop. The mouseover text has two hundred and forty-two characters.\\"
+src=\\"https://imgs.xkcd.com/comics/self_description.png\\"/></p>
+<p>Or like the sentence, &#8220;This sentence consists of exactly fifty-seven characters.&#8221; <a class=\\"footnote\\" id=\\"CODE1\\" href=\\"#CODE\\">[1]</a></p>
+<p>(This, incidentally, is part of what&#8217;s hard about predicting whether superhuman AI will accidentally destroy everything humans value in the universe.
+If we actually had consensus on the probability being high, we&#8217;d be galvanized to change course.
+It&#8217;s like if you knew you had a high chance of accidentally taking a fatal dose of medicine, you&#8217;d double check the dosage and make the probability low again.
+Not that I&#8217;m arguing against sounding alarm bells.)</p>
+<p>Anyway, a fun fact about Beeminder, from way back in the 
+<a href=\\"https://blog.beeminder.com/beenamer\\" title=\\"The story of Beeminder&#39;s past and current name\\">Kibotzer</a> days, is that it started as essentially a prediction market.</p>
+<p>You can hear 
+<a href=\\"https://vimeo.com/groups/17842/videos/14980876\\" title=\\"New York 2010\\">Bethany tell the story</a> in an ancient Quantified Self talk from when Beeminder was a side project.
+Back then, instead of automatically paying Beeminder when you went off track, Beeminder just showed you a graph of your progress and your commitment.
+The commitment contracts themselves were arranged separately.
+The inaugural commitment contracts were Bethany and me staking $2,000 each on a gallery of personal fitness and productivity goals during the summer of 2010:</p>
+<ul>
+<li>Steps</li>
+<li>Weight</li>
+<li>Work hours on our day jobs</li>
+<li>Time spent with our kids (still babies back then! and, weirdly, this was a do-less goal for me)</li>
+<li>Time spent building our fun new self-tracking commitment device app</li>
+<li>Pushups</li>
+<li>Desserts</li>
+<li>Reading fiction</li>
+</ul>
+<p>So what did &#8220;staking $2,000&#8221; mean?
+We were each promising to pay some friend or family member that $2k if we didn&#8217;t stay on track on all of those goals.
+Which friend or family member was determined by auction, coordinated manually by email at first.
+We started the bidding at $10, it quickly went to $50, and then we sold them for $65 each the next day.</p>
+<p>That meant that our friends were paying $65 for the chance to win $2k.
+Which implies market odds of 96.8% that we&#8217;d succeed at our goals that summer.
+Which we did, phew.
+Obviously the probability would not have been nearly so high without the money at stake.</p>
+<p>Emboldened by that trial, we set up a slightly more formal auction interface for other people to use:</p>
+<p><img class=\\"aligncenter\\"
+  alt=\\"Screenshot of the auction results for Melanie's weight loss commitment contract\\"
+title=\\"Screenshot of the auction results for Melanie's weight loss commitment contract\\"
+src=\\"https://user-images.githubusercontent.com/9928/268165487-c0b52d3f-7b0e-4ca4-91c2-a8b9d8732fbd.png\\"/></p>
+<p>That one turns the game theory up to eleven.
+The commitment contract there was my sister Melanie&#8217;s weight loss goal, with $600 of her money at stake.
+The bidders specify in the first row of that table the most they&#8217;d pay to be the beneficiary of the commitment contract.
+The auction mechanism then does a bunch of math <a class=\\"footnote\\" id=\\"MATH1\\" href=\\"#MATH\\">[2]</a>
+to decide how much people actually pay (second row) and to divvy the potential booty (third row).
+As it turned out Laurie, our mother, got half the contract &#8212; half of Melanie&#8217;s $600 should she have failed at her goal. 
+<a href=\\"https://ece.illinois.edu/alumni/awards/yaaa/19-Yang\\" title=\\"David&#39;s also a Beeminder advisor and helped us a ton in the early days\\">David Yang</a> got 25%, and 
+<a href=\\"https://en.wikipedia.org/wiki/Daniel_Goldstein\\" title=\\"Obviously Dan is a big deal. Our kids were particularly impressed when we were watching a popular TV show called Brain Games and Dan showed up as one of the experts\\">Dan Goldstein</a>
+got the remaining 25%.
+<a href=\\"http://www.davidreiley.com/\\" title=\\"David is our close friend and has featured on the blog before, in particular in a post on Unintended Consequences\\">David Reiley</a>, 
+<a href=\\"https://bsoule.com/\\" title=\\"Everyone else is getting a link so Bee&#39;s getting one too this time!\\">Bethany</a>, and I didn&#8217;t bid enough to get anything.
+And then, once again, 
+<a href=\\"https://melzafit.com\\" title=\\"Melanie&#39;s was Beeminder&#39;s original Resident Fitness Expert and now has her own personal fitness business which you should check out!\\">Melanie</a> did in fact stay on track so those shares didn&#8217;t end up paying out.
+Each person&#8217;s bid implies the odds they assign to Melanie actually staying on track on her weight goal.
+The bottom right number &#8212; 2.5% &#8212; is the aggregated market odds.</p>
+<p>Today, Beeminder only offers infinitely bad odds.
+You pay for going off track, but don&#8217;t get paid for staying on track.
+You could think of that as perfectly fair odds if using Beeminder meant a 100% chance of always staying on track.
+It doesn&#8217;t but these days we view this all very differently, largely because staying on vs going off track is not actually a binary outcome.
+You&#8217;ll inevitably go off track <em>sometimes</em> and that&#8217;s fine &#8212; you&#8217;re really just paying for the motivation Beeminder is providing the rest of the time.
+We have a whole series of blog posts about this:
+<a href=\\"https://blog.beeminder.com/defail\\" title=\\"AKA Beeminder Revenue Proportional To User Awesomeness\\">Derailing Is Not Failing</a>, 
+<a href=\\"https://blog.beeminder.com/depunish\\" title=\\"This one&#39;s more controversial -- many users really like to treat payments to Beeminder as punishment, which makes sense, but this is a helpful framing for some\\">Paying Is Not Punishment</a>, and 
+<a href=\\"https://blog.beeminder.com/nailingit\\" title=\\"A positive spin on Derailing Is Not Failing\\">Derailing It Is Nailing It</a>.</p>
+<p>Probably if you&#8217;re reading to the end of Beeminder blog posts you&#8217;re already on board with all that. <a class=\\"footnote\\" id=\\"DEFAIL1\\" href=\\"#DEFAIL\\">[3]</a>
+But if you&#8217;re a prediction market person, we&#8217;d actually love to convince you to try predicting your own behavior via 
+<a href=\\"https://manifold.markets\\" title=\\"They just call themselves Manifold now but markets (as in prediction markets) are the main thing you&#39;ll find there\\">Manifold markets</a>.
+(Disclosure: I&#8217;m an investor in Manifold.)
+Here are some examples of people (including us) doing so:</p>
+<ul>
+<li><a href=\\"https://en.wikipedia.org/wiki/Danny_O%27Brien_(journalist)\\" title=\\"Fun fact: he coined the term &#39;life hack&#39; in 2004\\">Danny O&#8217;Brien</a> (also a Beeminder fan!)
+wants to 
+<a href=\\"https://manifold.markets/DannyOBrien/will-i-danny-obrien-reach-my-target\\" title=\\"Will I, Danny O&#39;Brien, reach my target weight of 185 lbs by December 1, 2023?\\">lose weight</a> and 
+<a href=\\"https://manifold.markets/DannyOBrien/will-i-danny-obrien-launch-a-public\\" title=\\"I guess he prefers to call it a journal. Wikipedia does call him a journalist.\\">launch a blog</a></li>
+<li>I wanted 
+<a href=\\"https://manifold.markets/dreev/will-beeminders-next-blog-post-be-a\\" title=\\"Will Beeminder&#39;s next blog post be about prediction markets as commitment devices?\\">to publish this blog post months ago</a> (sheepish-emoji)</li>
+<li>Bethany wanted to 
+<a href=\\"https://manifold.markets/bethanysoule/will-bee-deploy-code-that-uses-stri\\" title=\\"Will Bee deploy code that uses Stripe&#39;s PaymentIntents API by Sunday?\\">get an infrastructure upgrade deployed</a></li>
+<li>(See myriad other examples by browsing markets tagged 
+<a href=\\"https://manifold.markets/questions?topic=commitment-devices&f=all&s=random\\" title=\\"There was also a meta market on whether 50 markets would end up with this tag, which they did\\">Commitment Devices</a> or 
+<a href=\\"https://manifold.markets/questions?topic=personal-goals&f=all&s=random\\" title=\\"Some of these might be embarrassing or NSFW but they&#39;re all public, so\\">Personal Goals</a>)</li>
+</ul>
+<p>Last but not least, I want to 
+<a href=\\"https://manifold.markets/dreev/will-it-be-possible-to-transfer-man\\" title=\\"Will it be possible to transfer mana to honey money and vice versa at Beeminder&#39;s booth at Manifest?\\">launch a new feature</a> to allow Manifold users to transfer mana (that&#8217;s Manifold&#8217;s play-money currency) to honey money (Beeminder&#8217;s currency, aka store credit on Beeminder) and vice versa in time to talk about it and use it at 
+<a href=\\"https://www.manifestconference.net/\\" title=\\"Manifold&#39;s inaugural forecasting conference\\">Manifest</a>!</p>
+<p><br>&nbsp;<br></p>
+<h2>Footnotes</h2>
+<p><a class=\\"footnote\\" id=\\"CODE\\" href=\\"#CODE1\\">[1]</a>
+If you&#8217;re wondering how I made that sentence come out right, I just let Mathematica brute-force it:</p>
+<pre><code>For[i = 2, i &lt; 1000, i++,
+ s = &quot;This sentence consists of exactly &quot;&lt;&gt;
+     IntegerName[i]&lt;&gt;&quot; characters.&quot;;
+ If[StringLength[s] == i, Print[i, &quot;: &quot;, s]]]
+</code></pre>
+<p>I then thought to let GPT-4&#8217;s Code Interpreter 
+<a href=\\"https://chat.openai.com/share/89181be9-4a7a-4926-a9f8-555c65448f8e\\" title=\\"It&#39;s writing and executing Python code on the fly to answer purely natural-language questions.\\">have a shot at it</a>.
+It gets there, with minimal coaxing.
+As of 2023, this feels utterly gobsmacking.</p>
+<p><a class=\\"footnote\\" id=\\"MATH\\" href=\\"#MATH1\\">[2]</a>
+If you really want to know, we have an 
+<a href=\\"https://doc.beeminder.com/bidder\\" title=\\"The First Auctioned-off Beeminder Commitment Contract\\">ancient document</a> about it.
+If I had to justify it, it started with the idea to let everyone buy in at any amount of money they chose.
+Call that the pot.
+Then you divvy up shares of the contract 
+(the money you win if the person auctioning off the commitment contract doesn&#8217;t do what they committed to)
+by just giving each person a fraction of the contract equal to the fraction they contributed to the pot.
+The more you put in, the more of the payout you get (if the contract pays out).
+It&#8217;s like a parimutuel market.</p>
+<p>But then!
+This is where the wild game theory comes in.
+Deciding how much to pay into the pot is a tricky strategic problem that depends pretty delicately on what other people are paying in.</p>
+<p>Say two other bidders have put in $100 each on a $1000 contract.
+And let&#8217;s say the person creating this commitment contract is doomed, as in, you&#8217;re 100% certain they&#8217;ll be paying that $1000.
+So those other bidders are currently getting $500 each by spending $100.
+If you put in $100 as well then the three of you will get $333 each.
+This is still profitable and you want to put more into the pot, but at about $222 you start losing money.
+Each person putting $222.22 into the pot turns out to be the Nash equilibrium of this game.</p>
+<p>So the idea of this mechanism is to compute those equilibrium bids for everyone.
+You just say how much you think the whole contract is worth, and the mechanism plays the Nash equilibrium for you, under the maybe-false assumption that everyone has said their true value for the whole contract.
+Bidders don&#8217;t have to understand any of that.
+They can just keep bumping up their bids as long as the mechanism is giving them a price and a fraction of the contract that feels fair.</p>
+<p>It&#8217;s all preposterous amounts of overkill/overcomplication but it did seem to work.</p>
+<p><a class=\\"footnote\\" id=\\"DEFAIL\\" href=\\"#DEFAIL1\\">[3]</a>
+To recap the argument, if you view Beeminder’s stings as punishment, that can 
+(a) encourage an excuse-making mindset over a results-oriented mindset, and maybe more importantly, 
+(b) encourage you to make your goals less ambitious. 
+If you accept that some derailments are inevitable &#8212; part of the cost of the service, just nudges or rumble strips keeping you on track &#8212; you can dial in a sweet spot where you’re being pushed to do as much as possible (or whatever maximizes the motivational value you get from Beeminder) at minimal cost.
+See also 
+<a href=\\"https://ymeskhout.substack.com/\\" title=\\"Yassine is funny and cool. Probably read his Substack.\\">Yassine Meskhout</a>&#8217;s notion of 
+<a href=\\"https://forum.beeminder.com/t/yassine-meskhouts-taxing-vs-punitive-commitment-contracts/9262\\" title=\\"Apparently he&#39;s never published this but he gave us permission to quote him in the Beeminder forum\\">taxing vs punitive commitment contracts</a>.</p>
+",
+  "date": 2023-09-20T00:00:00.000Z,
+  "date_string": "2023-09-20",
+  "disqus_id": "predict",
+  "excerpt": "A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd",
+  "image": {
+    "alt": "Bee riding the Manifold.markets logo",
+    "extracted": true,
+    "src": "https://blog.beeminder.com/wp-content/uploads/2022/05/faire-manifold-bee-logo.jpeg",
+    "title": "Wheeeee. It's a bird, and a bee. But not like that, geez.",
+  },
+  "md": "---
+title: \\"The Theory And Practice Of Predicting One's Own Behavior: Prediction Markets as Commitment Devices\\"
+date: 2023-09-20
+author: dreeves
+status: publish
+tags: [bee-all, rationality, prediction markets, nerdery, history of beeminder, startups, commitment contracts]
+disqus_id: predict
+excerpt: \\"A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd\\"
+---
+
+See also: prediction, mana, predict pads
+
+BEGIN_MAGIC[The Theory And Practice Of Predicting One's Own Behavior: Prediction Markets as Commitment Devices]
+
+<img class=\\"aligncenter\\"
+alt=\\"Bee riding the Manifold.markets logo\\"
+title=\\"Wheeeee. It's a bird, and a bee. But not like that, geez.\\"
+width=\\"450px\\"
+src=\\"https://blog.beeminder.com/wp-content/uploads/2022/05/faire-manifold-bee-logo.jpeg\\"/>
+
+A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction.
+\\"I'm 75% likely to maintain my Duolingo streak all year, but now that I've said so I'm actually 90% likely, but now that I've said _that_, ...\\"
+Or what happens when the probability starts very low but you add a wager?
+It's like this self-describing xkcd:
+
+<img
+alt=\\"xkcd #688, Self-Description\\"
+title=\\"The contents of any one panel are dependent on the contents of every panel including itself. The graph of panel dependencies is complete and bidirectional, and each node has a loop. The mouseover text has two hundred and forty-two characters.\\"
+src=\\"https://imgs.xkcd.com/comics/self_description.png\\"/>
+
+Or like the sentence, \\"This sentence consists of exactly fifty-seven characters.\\" $CODE
+
+(This, incidentally, is part of what's hard about predicting whether superhuman AI will accidentally destroy everything humans value in the universe.
+If we actually had consensus on the probability being high, we'd be galvanized to change course.
+It's like if you knew you had a high chance of accidentally taking a fatal dose of medicine, you'd double check the dosage and make the probability low again.
+Not that I'm arguing against sounding alarm bells.)
+
+Anyway, a fun fact about Beeminder, from way back in the 
+[Kibotzer](
+  https://blog.beeminder.com/beenamer
+  \\"The story of Beeminder's past and current name\\"
+) days, is that it started as essentially a prediction market.
+
+You can hear 
+[Bethany tell the story](
+  https://vimeo.com/groups/17842/videos/14980876
+  \\"New York 2010\\"
+) in an ancient Quantified Self talk from when Beeminder was a side project.
+Back then, instead of automatically paying Beeminder when you went off track, Beeminder just showed you a graph of your progress and your commitment.
+The commitment contracts themselves were arranged separately.
+The inaugural commitment contracts were Bethany and me staking $2,000 each on a gallery of personal fitness and productivity goals during the summer of 2010:
+
+* Steps
+* Weight
+* Work hours on our day jobs
+* Time spent with our kids (still babies back then! and, weirdly, this was a do-less goal for me)
+* Time spent building our fun new self-tracking commitment device app
+* Pushups
+* Desserts
+* Reading fiction
+
+So what did \\"staking $2,000\\" mean?
+We were each promising to pay some friend or family member that $2k if we didn't stay on track on all of those goals.
+Which friend or family member was determined by auction, coordinated manually by email at first.
+We started the bidding at $10, it quickly went to $50, and then we sold them for $65 each the next day.
+
+That meant that our friends were paying $65 for the chance to win $2k.
+Which implies market odds of 96.8% that we'd succeed at our goals that summer.
+Which we did, phew.
+Obviously the probability would not have been nearly so high without the money at stake.
+
+Emboldened by that trial, we set up a slightly more formal auction interface for other people to use:
+
+<img class=\\"aligncenter\\"
+  alt=\\"Screenshot of the auction results for Melanie's weight loss commitment contract\\"
+title=\\"Screenshot of the auction results for Melanie's weight loss commitment contract\\"
+src=\\"https://user-images.githubusercontent.com/9928/268165487-c0b52d3f-7b0e-4ca4-91c2-a8b9d8732fbd.png\\"/>
+
+That one turns the game theory up to eleven.
+The commitment contract there was my sister Melanie's weight loss goal, with $600 of her money at stake.
+The bidders specify in the first row of that table the most they'd pay to be the beneficiary of the commitment contract.
+The auction mechanism then does a bunch of math $MATH
+to decide how much people actually pay (second row) and to divvy the potential booty (third row).
+As it turned out Laurie, our mother, got half the contract -- half of Melanie's $600 should she have failed at her goal. 
+[David Yang](
+  https://ece.illinois.edu/alumni/awards/yaaa/19-Yang
+  \\"David's also a Beeminder advisor and helped us a ton in the early days\\"
+) got 25%, and 
+[Dan Goldstein](
+  https://en.wikipedia.org/wiki/Daniel_Goldstein
+  \\"Obviously Dan is a big deal. Our kids were particularly impressed when we were watching a popular TV show called Brain Games and Dan showed up as one of the experts\\"
+)
+got the remaining 25%.
+[David Reiley](
+  http://www.davidreiley.com/
+  \\"David is our close friend and has featured on the blog before, in particular in a post on Unintended Consequences\\"
+), 
+[Bethany](
+  https://bsoule.com/
+  \\"Everyone else is getting a link so Bee's getting one too this time!\\"
+), and I didn't bid enough to get anything.
+And then, once again, 
+[Melanie](
+  https://melzafit.com
+  \\"Melanie's was Beeminder's original Resident Fitness Expert and now has her own personal fitness business which you should check out!\\"
+) did in fact stay on track so those shares didn't end up paying out.
+Each person's bid implies the odds they assign to Melanie actually staying on track on her weight goal.
+The bottom right number -- 2.5% -- is the aggregated market odds.
+
+Today, Beeminder only offers infinitely bad odds.
+You pay for going off track, but don't get paid for staying on track.
+You could think of that as perfectly fair odds if using Beeminder meant a 100% chance of always staying on track.
+It doesn't but these days we view this all very differently, largely because staying on vs going off track is not actually a binary outcome.
+You'll inevitably go off track _sometimes_ and that's fine -- you're really just paying for the motivation Beeminder is providing the rest of the time.
+We have a whole series of blog posts about this:
+[Derailing Is Not Failing](
+  https://blog.beeminder.com/defail 
+  \\"AKA Beeminder Revenue Proportional To User Awesomeness\\"
+), 
+[Paying Is Not Punishment](
+  https://blog.beeminder.com/depunish 
+  \\"This one's more controversial -- many users really like to treat payments to Beeminder as punishment, which makes sense, but this is a helpful framing for some\\"
+), and 
+[Derailing It Is Nailing It](
+  https://blog.beeminder.com/nailingit 
+  \\"A positive spin on Derailing Is Not Failing\\"
+).
+
+Probably if you're reading to the end of Beeminder blog posts you're already on board with all that. $DEFAIL
+But if you're a prediction market person, we'd actually love to convince you to try predicting your own behavior via 
+[Manifold markets](
+  https://manifold.markets
+  \\"They just call themselves Manifold now but markets (as in prediction markets) are the main thing you'll find there\\"
+).
+(Disclosure: I'm an investor in Manifold.)
+Here are some examples of people (including us) doing so:
+
+* [Danny O'Brien](
+  https://en.wikipedia.org/wiki/Danny_O%27Brien_(journalist)
+  \\"Fun fact: he coined the term 'life hack' in 2004\\"
+) (also a Beeminder fan!)
+wants to 
+[lose weight](
+  https://manifold.markets/DannyOBrien/will-i-danny-obrien-reach-my-target
+  \\"Will I, Danny O'Brien, reach my target weight of 185 lbs by December 1, 2023?\\"
+) and 
+[launch a blog](
+  https://manifold.markets/DannyOBrien/will-i-danny-obrien-launch-a-public
+  \\"I guess he prefers to call it a journal. Wikipedia does call him a journalist.\\"
+)
+* I wanted 
+[to publish this blog post months ago](
+  https://manifold.markets/dreev/will-beeminders-next-blog-post-be-a
+  \\"Will Beeminder's next blog post be about prediction markets as commitment devices?\\"
+) (sheepish-emoji)
+* Bethany wanted to 
+[get an infrastructure upgrade deployed](
+  https://manifold.markets/bethanysoule/will-bee-deploy-code-that-uses-stri
+  \\"Will Bee deploy code that uses Stripe's PaymentIntents API by Sunday?\\"
+)
+* (See myriad other examples by browsing markets tagged 
+[Commitment Devices](
+  https://manifold.markets/questions?topic=commitment-devices&f=all&s=random
+  \\"There was also a meta market on whether 50 markets would end up with this tag, which they did\\"
+) or 
+[Personal Goals](
+  https://manifold.markets/questions?topic=personal-goals&f=all&s=random
+  \\"Some of these might be embarrassing or NSFW but they're all public, so\\"
+))
+
+Last but not least, I want to 
+[launch a new feature](
+  https://manifold.markets/dreev/will-it-be-possible-to-transfer-man
+  \\"Will it be possible to transfer mana to honey money and vice versa at Beeminder's booth at Manifest?\\"
+) to allow Manifold users to transfer mana (that's Manifold's play-money currency) to honey money (Beeminder's currency, aka store credit on Beeminder) and vice versa in time to talk about it and use it at 
+[Manifest](
+  https://www.manifestconference.net/
+  \\"Manifold's inaugural forecasting conference\\"
+)!
+
+
+<br>&nbsp;<br>
+
+## Footnotes
+
+$FN[CODE]
+If you're wondering how I made that sentence come out right, I just let Mathematica brute-force it:
+\`\`\`
+For[i = 2, i < 1000, i++,
+ s = \\"This sentence consists of exactly \\"<>
+     IntegerName[i]<>\\" characters.\\";
+ If[StringLength[s] == i, Print[i, \\": \\", s]]]
+\`\`\`
+I then thought to let GPT-4's Code Interpreter 
+[have a shot at it](
+  https://chat.openai.com/share/89181be9-4a7a-4926-a9f8-555c65448f8e
+  \\"It's writing and executing Python code on the fly to answer purely natural-language questions.\\"
+).
+It gets there, with minimal coaxing.
+As of 2023, this feels utterly gobsmacking.
+
+$FN[MATH]
+If you really want to know, we have an 
+[ancient document](
+  https://doc.beeminder.com/bidder
+  \\"The First Auctioned-off Beeminder Commitment Contract\\"
+) about it.
+If I had to justify it, it started with the idea to let everyone buy in at any amount of money they chose.
+Call that the pot.
+Then you divvy up shares of the contract 
+(the money you win if the person auctioning off the commitment contract doesn't do what they committed to)
+by just giving each person a fraction of the contract equal to the fraction they contributed to the pot.
+The more you put in, the more of the payout you get (if the contract pays out).
+It's like a parimutuel market.
+
+But then!
+This is where the wild game theory comes in.
+Deciding how much to pay into the pot is a tricky strategic problem that depends pretty delicately on what other people are paying in.
+
+Say two other bidders have put in $100 each on a $1000 contract.
+And let's say the person creating this commitment contract is doomed, as in, you're 100% certain they'll be paying that $1000.
+So those other bidders are currently getting $500 each by spending $100.
+If you put in $100 as well then the three of you will get $333 each.
+This is still profitable and you want to put more into the pot, but at about $222 you start losing money.
+Each person putting $222.22 into the pot turns out to be the Nash equilibrium of this game.
+
+So the idea of this mechanism is to compute those equilibrium bids for everyone.
+You just say how much you think the whole contract is worth, and the mechanism plays the Nash equilibrium for you, under the maybe-false assumption that everyone has said their true value for the whole contract.
+Bidders don't have to understand any of that.
+They can just keep bumping up their bids as long as the mechanism is giving them a price and a fraction of the contract that feels fair.
+
+It's all preposterous amounts of overkill/overcomplication but it did seem to work.
+
+
+$FN[DEFAIL]
+To recap the argument, if you view Beeminder’s stings as punishment, that can 
+(a) encourage an excuse-making mindset over a results-oriented mindset, and maybe more importantly, 
+(b) encourage you to make your goals less ambitious. 
+If you accept that some derailments are inevitable -- part of the cost of the service, just nudges or rumble strips keeping you on track -- you can dial in a sweet spot where you’re being pushed to do as much as possible (or whatever maximizes the motivational value you get from Beeminder) at minimal cost.
+See also 
+[Yassine Meskhout](
+  https://ymeskhout.substack.com/
+  \\"Yassine is funny and cool. Probably read his Substack.\\"
+)'s notion of 
+[taxing vs punitive commitment contracts](
+  https://forum.beeminder.com/t/yassine-meskhouts-taxing-vs-punitive-commitment-contracts/9262
+  \\"Apparently he's never published this but he gave us permission to quote him in the Beeminder forum\\"
+).
+
+END_MAGIC
+
+more examples of commitment markets:
+* <https://manifold.markets/NcyRocks/will-the-commitments-community-have>
+
+
+TODO: extract more from N.C. Young's forum post
+
+* A [gem from Nathan Young in the Beeminder forum](
+  https://forum.beeminder.com/t/prediction-markets-as-commitment-devices/10202
+  \\"I’ve been fiddling around with Manifold Markets lately and wondering about the possibility of using prediction markets as commitment devices. I haven’t actually done this yet but I’d like to give it a go.\\"
+).
+
+* The 
+[Beeminder group on Manifold](
+  https://manifold.markets/group/beeminder
+  \\"It has its own leaderboard with 50 top traders\\"
+).
+
+
+
+* One of the Manifold founders making a market about 
+[whether Manifold would natively support commitment contracts](
+  https://manifold.markets/Austin/will-manifold-natively-support-comm
+  \\"“Will Manifold natively support 'committing to actions' within 6 months?” (the answer was sadly no)\\"
+).
+
+* We had a crude betting tool at kibotzer.com/bidder, though that link is broken now.
+We've quasi-resurrected at it 
+[yootl.es/bidder](
+  http://yootl.es/bidder
+  \\"Hilariously crude but highly general interface. Also lots of fun math in the auction mechanism.\\"
+) but only works in Firefox.
+
+
+* This excerpt from an enthusiastic new user:
+
+> I love prediction markets like Manifold Markets, Metaculus, et al, and always wished I could make predictions and get better calibrated at *predicting my own behavior*. 
+Ideally with \\"skin in the game\\". 
+So when I saw that I could *decide* to interpret Beeminder goals and \\"stings\\" any way I wanted, the betting thing came naturally. 
+\\"Is this going to happen in the future?\\" is a lot more objective to me, and it was also a great match to the concept mentioned in _The Motivation Hacker_ of doing \\"success spirals\\" starting with things so small that you just *know* you're going to do. 
+If you're so sure, why not bet on it? ;) 
+Then stings are me *buying new information*, the purchase of a \\"Bayesian update\\".
+
+
+
+
+* The story of the original Beeminder (nee Kibotzer) contracts that we auctioned off. 
+Discussed in an 
+
+* <https://manifold.markets/dreev/will-beeminder-have-a-private-manif>
+
+
+Original message from user:
+
+I just wanted to reply that Beeminder has been absolutely amazing to use so far (especially with RescueTime and Intend integrations). 
+I've known about it for a *very* long time, but I've always immediately dismissed it as one of those \\"self-punishment\\" things I wanted no business with 
+(alas, I clearly hadn't read enough of the docs and blog posts that address this extensively).
+
+A few things made me change my mind and give it enough \\"benefit of the doubt\\" to try:
+
+1. desperation (let's be honest)
+2. reading Motivation Hacker by Nick Winter, which has Beeminder as a key tool highly spoken of throughout
+3. thinking of the goals as \\"self-bets\\" for *personal predictions*
+
+I love prediction markets like Manifold Markets, Metaculus, et al, and always wished I could make predictions and get better calibrated at *predicting my own behavior*. 
+Ideally with \\"skin in the game\\". 
+So when I saw that I could *decide* to interpret Beeminder goals and \\"stings\\" any way I wanted, the betting thing came naturally. 
+\\"Is this going to happen in the future?\\" is a lot more objective to me, and it was also a great match to the concept mentioned in _The Motivation Hacker_ of doing \\"success spirals\\" starting with things so small that you just *know* you're going to do. 
+If you're so sure, why not bet on it? ;) 
+Then stings are me *buying new information*, the purchase of a \\"Bayesian update\\".
+
+Also, keeping \\"Expectancy\\" high, which I interpret as both confidence in the *ability* to do the thing, and getting back to *believing/trusting* my own promises, was the key point that resonated with me in the book, so I've been starting goals with the mindset of never ever \\"derailing\\" them no matter what, even if that means making them comically tiny (<3 BJ Fogg). 
+Not the Beeminder definition of \\"using it right\\", which *encourages* derailing, but it's been working well for me, and I've upgraded to get more goals instead :)
+
+Last thing, just an idea, in the \\"personal prediction market\\" frame, one thing that would be cool is to have some kind of \\"upside\\" on winning a bet, maybe with \\"deposit contracts\\" (saw in a book about group facilitation that having people pay like 100 dollars upfront for 10 meetups, then \\"paying\\" participants back 10 dollars each time they show up *drastically* increases adherence), maybe with a way to share the link so other people can bet whether you'll do it or not 
+(some are using Manifold Markets for this already but with play money).
+
+Anyway, very excited so far, finding it tremendously helpful, and cautiously hoping that I'll stick to it for the long run. 
+Thanks again and sorry for the braindump!
+
+
+OLD PREDICTION LOG
+
+Example:
+2009-05-06: it will rain tomorrow (p=.5)[1]
+  (The \\"[1]\\" or \\"[0]\\" immediately after the probability indicates the outcome.)
+
+Sharad:
+2009-05-07: AMT (filtered by quiz) crowd gives >80% chance of unemployment over 7% (p=.7)[0]
+2009-05-07: predpolls Science submission not desk-rejected (p=.7)
+2009-05-07: google appropriately splits words (e.g., \\"sportsinsanjose\\") (p=.8)[1]
+2009-05-07: yahoo can split words for stlawrencehighschool (p=.1)[0]
+2009-05-07: median answer for current unemployment in [7.5-10.5] (p=.5)[1]
+2009-05-07: calibrated weather forecasts 10 days out (p=.90)
+2009-05-08: seats available at star trek (p=.7)
+
+Cong:
+2009-05-07: yahoo can split words (p=.5)[0]
+
+Dreeves:
+2009-05-07: yahoo can split words (p=.65)[0]
+2009-05-07: median answer for current unemployment in [7.5-10.5] (p=.7)[1]
+2009-05-08: bethany can unlock broken lock in 10 minutes (p=.15)[0]
+2009-05-21: engineering or legal resources as hack day prizes w/in 1 year (p=.2)
+2009-05-23: aptigi.com will be down in one year (p=.8)
+2009-06-11: b calls inefficient housing today (p=.6)[1]
+
+Notes on predict/resolve IM interface and API:
+
+/pred[ict] STUFF [TAG X]: register a prediction with a probability (or generalize to an expectation on any RV)
+  interface to http://yootles.com/predict?text=blah+blah&tag=TAG&prob=X&user=USER (add other optional fields)
+/resolve TAG Y: give the actual outcome to resolve the prediction
+  interface to http://yootles.com/resolve?tag=TAG&outcome=Y&user=USER
+
+Notes from IM conversation:
+
+let's also hack a prediction-declarer (need better name) into the NIMS plugin
+a generalization of 10occ: finish this proof (p=.8) ... success.
+basically, some slash command -- maybe /4c (for foresee) -- to make a prediction with a probability
+or /progno
+or just /predict
+  /predict TAG: STATEMENT (p=X)
+and then /resolve TAG 1  or /resolve TAG yes
+and it would just collect the data and send it off somewhere and then you could see if you were calibrated or other stats
+and of course a useful motivational tool -- any time you publicly predict something about your own behavior it affects the probability a lot
+
+really old one I started decades ago (~2000) that i just came across:
+
+# The idea is to estimate the probabilities of events and see how well we
+# do.  Every line in this file except for the
+# Probabililty,Whether-it-Happened pairs should start with a '#'.
+
+# DANIEL ##################################################
+
+# max streak for 20 flips is between 3 and 8
+.9 True
+
+
+# RACHEL ##################################################
+
+# max streak for 20 flips is between 2.5 and 6
+.9 True
+
+# we got a parking ticket outside Rackham
+.5 False
+
+",
+  "redirects": [],
+  "slug": "predict",
+  "status": "publish",
+  "tags": [
+    "bee-all",
+    "rationality",
+    "prediction markets",
+    "nerdery",
+    "history of beeminder",
+    "startups",
+    "commitment contracts",
+  ],
+  "title": "The Theory And Practice Of Predicting One's Own Behavior: Prediction Markets as Commitment Devices",
+}
+`;
+
 exports[`body > post predict hash b3be13e49f32e765515c4a4505d4e1e4 1`] = `
 {
   "author": "dreeves",
@@ -75073,6 +75638,154 @@ status: publish
 tags: [akrasia, bee-all, get everything done, integrations, PSA, rationality, startups, reading]
 disqus_id: readwise
 excerpt: \\"MAGIC_AUTO_EXTRACT\\"
+---
+
+BEGIN_MAGIC[Beeminder &hearts; Readwise Reader]
+
+<img class=\\"aligncenter\\"
+width=\\"450px\\"
+alt=\\"A robotic bee in a sea of books\\"
+title=\\"Readwise and Beeminder sittin' in a tree, I-N-T-E-G-R-A-T-I-N-G\\"
+src=\\"https://user-images.githubusercontent.com/46881/271141213-610ee865-d1c3-49d4-aab0-611d8df01109.png\\"/>
+
+[Readwise Reader](
+  https://readwise.io/read
+  \\"Note: Readwise and Readwise Reader are distinct things\\"
+) is a powerful tool for \\"power readers\\". 
+It's like a supercharged read-it-later app, with first-class support for notes and highlights and tags. 
+Now, you can keep track of your Readwise Reader items using Beeminder.
+
+You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an email newsletter. 
+It collects them all and makes them easy to read on their own. 
+Web pages show just the juicy content you're looking for. 
+YouTube videos are shown alongside their transcript, for example, and the transcript highlights as the words are spoken in the video. 
+You can click on a line in the transcript to jump right to it. 
+Of course, it wouldn't be a good read-it-later app if it didn't save your progress in the video (or anything else you use Readwise Reader for).
+
+As awesome as Readwise Reader is, it's no surprise that some folks go into a \\"read-it-later\\" frenzy. 
+The save rate tends to be higher than the read rate, and that pile accumulates... 
+I'd show you some good quotes about this problem, but they're somewhere in my later pile. 
+We recently got a note from the Readwise Reader folks that they added some API endpoints for fetching items that are already in your account. 
+Readwise Reader has been sitting near the top of the candidate autodata integration list for a while -- and folks have loved our 
+[Pocket integration](
+  https://blog.beeminder.com/pocket
+  \\"Beeminder blog post announcing our Pocket integration\\"
+) for a while, and Adam's Readwise Reader had gotten a little overwhelming...
+
+## How does it work?
+
+You set a limit for a Readwise Reader location, like Inbox, Later, or Shortlist. 
+If you're already under the limit, great! 
+You'll have to stay under the limit each day or pay a penalty. 
+If you're currently over that limit, Beeminder will set up a goal to get you down to that limit, and then stay under it.
+
+If you want to adjust how long it'll take to get to your limit, you can do that once the goal is created.
+
+## Wait, I’m a Readwise Reader user new to Beeminder!
+
+Welcome aboard! 
+You might want to check out our 
+[getting started guide](
+  https://help.beeminder.com/category/5-quick-start-overview
+  \\"A collection of 15 newbee-oriented articles starting witih &quot;What is Beeminder?&quot;\\"
+) in our Help Docs, and then get yourself signed up. 
+Assuming you’re on board with the commitment device, paying-money-if-you-go-off-track bit, the beauty of an autodata integration is that you don’t normally need to interact with Beeminder once you’ve gone through the process above of setting up your commitment. 
+Just work through your items, either deleting them, archiving them, or otherwise moving them out of the location (your Inbox or Later or Shortlist) when Beeminder yells at you and you’re good.
+
+Ready to dive in?
+
+<center>
+<a href=\\"https://www.beeminder.com/readwisereader\\">
+<span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+Beemind your read-it-latering with Readwise Reader!
+</span>
+</a>
+</center>
+
+<br>&nbsp;<br>
+
+END_MAGIC
+",
+  "redirects": [],
+  "slug": "readwise",
+  "status": "publish",
+  "tags": [
+    "akrasia",
+    "bee-all",
+    "get everything done",
+    "integrations",
+    "PSA",
+    "rationality",
+    "startups",
+    "reading",
+  ],
+  "title": "Beeminder &hearts; Readwise Reader",
+}
+`;
+
+exports[`body > post readwise hash cfc7dd19133c9cf22f76789324c48ebf 1`] = `
+{
+  "author": "Adam Wolf",
+  "content": "<p><img class=\\"aligncenter\\"
+width=\\"450px\\"
+alt=\\"A robotic bee in a sea of books\\"
+title=\\"Readwise and Beeminder sittin' in a tree, I-N-T-E-G-R-A-T-I-N-G\\"
+src=\\"https://user-images.githubusercontent.com/46881/271141213-610ee865-d1c3-49d4-aab0-611d8df01109.png\\"/></p>
+<p><a href=\\"https://readwise.io/read\\" title=\\"Note: Readwise and Readwise Reader are distinct things\\">Readwise Reader</a> is a powerful tool for &#8220;power readers&#8221;. 
+It&#8217;s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. 
+Now, you can keep track of your Readwise Reader items using Beeminder.</p>
+<p>You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an email newsletter. 
+It collects them all and makes them easy to read on their own. 
+Web pages show just the juicy content you&#8217;re looking for. 
+YouTube videos are shown alongside their transcript, for example, and the transcript highlights as the words are spoken in the video. 
+You can click on a line in the transcript to jump right to it. 
+Of course, it wouldn&#8217;t be a good read-it-later app if it didn&#8217;t save your progress in the video (or anything else you use Readwise Reader for).</p>
+<p>As awesome as Readwise Reader is, it&#8217;s no surprise that some folks go into a &#8220;read-it-later&#8221; frenzy. 
+The save rate tends to be higher than the read rate, and that pile accumulates&#8230; 
+I&#8217;d show you some good quotes about this problem, but they&#8217;re somewhere in my later pile. 
+We recently got a note from the Readwise Reader folks that they added some API endpoints for fetching items that are already in your account. 
+Readwise Reader has been sitting near the top of the candidate autodata integration list for a while &#8212; and folks have loved our 
+<a href=\\"https://blog.beeminder.com/pocket\\" title=\\"Beeminder blog post announcing our Pocket integration\\">Pocket integration</a> for a while, and Adam&#8217;s Readwise Reader had gotten a little overwhelming&#8230;</p>
+<h2>How does it work?</h2>
+<p>You set a limit for a Readwise Reader location, like Inbox, Later, or Shortlist. 
+If you&#8217;re already under the limit, great! 
+You&#8217;ll have to stay under the limit each day or pay a penalty. 
+If you&#8217;re currently over that limit, Beeminder will set up a goal to get you down to that limit, and then stay under it.</p>
+<p>If you want to adjust how long it&#8217;ll take to get to your limit, you can do that once the goal is created.</p>
+<h2>Wait, I’m a Readwise Reader user new to Beeminder!</h2>
+<p>Welcome aboard! 
+You might want to check out our 
+<a href=\\"https://help.beeminder.com/category/5-quick-start-overview\\" title=\\"A collection of 15 newbee-oriented articles starting witih &quot;What is Beeminder?&quot;\\">getting started guide</a> in our Help Docs, and then get yourself signed up. 
+Assuming you’re on board with the commitment device, paying-money-if-you-go-off-track bit, the beauty of an autodata integration is that you don’t normally need to interact with Beeminder once you’ve gone through the process above of setting up your commitment. 
+Just work through your items, either deleting them, archiving them, or otherwise moving them out of the location (your Inbox or Later or Shortlist) when Beeminder yells at you and you’re good.</p>
+<p>Ready to dive in?</p>
+<center>
+<a href=\\"https://www.beeminder.com/readwisereader\\">
+<span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+Beemind your read-it-latering with Readwise Reader!
+</span>
+</a>
+</center>
+
+<p><br>&nbsp;<br></p>
+",
+  "date": 2023-09-27T00:00:00.000Z,
+  "date_string": "2023-09-27",
+  "disqus_id": "readwise",
+  "excerpt": "Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an",
+  "image": {
+    "alt": "A robotic bee in a sea of books",
+    "extracted": true,
+    "src": "https://user-images.githubusercontent.com/46881/271141213-610ee865-d1c3-49d4-aab0-611d8df01109.png",
+    "title": "Readwise and Beeminder sittin' in a tree, I-N-T-E-G-R-A-T-I-N-G",
+  },
+  "md": "---
+date: 2023-09-27
+author: Adam Wolf
+status: publish
+tags: [akrasia, bee-all, get everything done, integrations, PSA, rationality, startups, reading]
+disqus_id: readwise
+excerpt: \\"Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an\\"
 ---
 
 BEGIN_MAGIC[Beeminder &hearts; Readwise Reader]
