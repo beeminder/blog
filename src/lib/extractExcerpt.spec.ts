@@ -1,19 +1,19 @@
-import getExcerpt from "./getExcerpt";
+import extractExcerpt from "./extractExcerpt";
 import { describe, it, expect } from "vitest";
 import padm from "./test/padm";
 
 const lorem =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
-describe("getExcerpt", () => {
+describe("extractExcerpt", () => {
   it("appends ellipsis to excerpt", () => {
-    const result = getExcerpt(padm());
+    const result = extractExcerpt(padm());
 
     expect(result).toBe("...");
   });
 
   it("does not include images in excerpt", () => {
-    const result = getExcerpt(
+    const result = extractExcerpt(
       padm({
         content: '<img src="https://example.com/image.png" />',
       }),
@@ -23,7 +23,7 @@ describe("getExcerpt", () => {
   });
 
   it("limits length fuzzily", () => {
-    const result = getExcerpt(
+    const result = extractExcerpt(
       padm({
         content: lorem,
       }),
@@ -35,7 +35,7 @@ describe("getExcerpt", () => {
   });
 
   it("strips footnotes", () => {
-    const result = getExcerpt(
+    const result = extractExcerpt(
       padm({
         content: '<a class="footnote" id="fn1" href="#1">1</a>',
       }),
@@ -45,7 +45,7 @@ describe("getExcerpt", () => {
   });
 
   it("strips newlines", () => {
-    const result = getExcerpt(
+    const result = extractExcerpt(
       padm({
         content: "foo\nbar",
       }),
@@ -55,7 +55,7 @@ describe("getExcerpt", () => {
   });
 
   it("does not include private notes", () => {
-    const result = getExcerpt(
+    const result = extractExcerpt(
       padm({
         before: "private notes",
       }),
