@@ -395,4 +395,28 @@ describe("post", () => {
 
     expect(result.excerpt).toContain("word");
   });
+
+  it("expects custom excerpt to return unchanged", async () => {
+    const md = padm({
+      content: "words",
+      frontmatter: {
+        title: "Test Post",
+        date: new Date("2021-01-01"),
+        author: "dreeves",
+        slug: "test-post",
+        disqus_id: "test-post",
+        redirects: [],
+        tags: [],
+        status: "publish",
+        excerpt: "the excerpt",
+      },
+    });
+
+    const result = post.parse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.excerpt).toMatch("the excerpt");
+  });
 });
