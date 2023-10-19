@@ -15,6 +15,7 @@ describe("getTags", () => {
         disqus_id: "abc",
         author: "author",
         redirects: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
     ]);
   });
@@ -55,6 +56,7 @@ describe("getTags", () => {
         disqus_id: "abc",
         author: "author",
         redirects: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
       },
     ]);
 
