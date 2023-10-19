@@ -7031,24 +7031,29 @@
     "disqus_id": "2163 https://blog.beeminder.com/?p=2163",
     "excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes",
     "redirects": []
-  },
-  {
-    "source": "doc.bmndr.co/blogmorphosis",
-    "redirects": []
-  },
-  {
-    "slug": "astroblog",
-    "source": "doc.bmndr.co/astroblog",
-    "redirects": []
-  },
-  {
-    "slug": "predict",
-    "source": "doc.bmndr.co/predict",
-    "redirects": []
-  },
-  {
-    "slug": "readwise",
-    "source": "doc.bmndr.co/readwise",
-    "redirects": []
-  }
+},{
+"source": "doc.bmndr.co/blogmorphosis",
+"redirects": []
+},{
+"slug": "astroblog",
+"source": "doc.bmndr.co/astroblog",
+"redirects": []
+},{
+"slug": "predict",
+"source": "doc.bmndr.co/predict",
+"redirects": []
+},{
+"slug": "readwise",
+"source": "doc.bmndr.co/readwise",
+"redirects": []
+},{
+"slug": "college",
+"source": "doc.bmndr.co"/college",
+"redirects": []
+"date": "2023-10-18",
+"author": "shanaqui",
+"status": "draft",
+"tags": ["akrasia", "bee-all", "get everything done", "studying", "case studies", "students", "rationality", "tips"],
+"disqus_id": "college",
+"excerpt": "MAGIC_AUTO_EXTRACT"
 ]
