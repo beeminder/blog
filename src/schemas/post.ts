@@ -5,11 +5,9 @@ import getExcerpt from "../lib/getExcerpt";
 import { image } from "./image";
 import extractImage from "../lib/extractImage";
 import matter from "gray-matter";
-
 import { frontmatter } from "./frontmatter";
 import { body } from "./body";
 import { dateString } from "./dateString";
-import striptags from "striptags";
 
 export const post = z
   .object({
@@ -45,27 +43,13 @@ export const post = z
       return z.NEVER;
     }
 
-    let theExcerpt: unknown;
-
-    switch (meta.excerpt) {
-      case "MAGIC_AUTO_EXTRACT":
-        theExcerpt = getExcerpt(c.data);
-        break;
-      case undefined:
-        theExcerpt = undefined;
-        break;
-      default:
-        theExcerpt = striptags(meta.excerpt);
-        break;
-    }
-
     const date = meta.date && new Date(meta.date);
     const dateStringResult = dateString.safeParse(date);
 
     return {
       ...meta,
       tags: meta.tags?.filter(Boolean),
-      excerpt: theExcerpt,
+      excerpt: getExcerpt(meta.excerpt, c.data),
       image: extractImage(c.data),
       title: meta.title || parseTitle(md),
       date,
