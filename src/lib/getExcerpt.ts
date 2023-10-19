@@ -1,22 +1,16 @@
-import getDom from "./getDom";
-import trimContent from "./trimContent";
+import extractExcerpt from "./extractExcerpt";
+import striptags from "striptags";
 
-const EXCERPT_LENGTH = 300;
-
-export default function getExcerpt(html: string): string {
-  const trimmed = trimContent(html);
-  const { document } = getDom(trimmed);
-  const footnotes = Array.from(document.querySelectorAll("a.footnote"));
-
-  footnotes.forEach((el) => el.remove());
-
-  const text = document.body.textContent || "";
-  const noNewlines = text.replace(/[\n\r]+/g, " ");
-  const words = noNewlines.split(" ");
-  const excerpt = words.reduce((acc, word) => {
-    if (acc.length > EXCERPT_LENGTH) return acc;
-    return acc ? `${acc} ${word}` : word;
-  }, "");
-
-  return `${excerpt.trim()}...`;
+export default function getExcerpt(
+  excerpt: string | undefined,
+  content: string,
+) {
+  switch (excerpt) {
+    case "MAGIC_AUTO_EXTRACT":
+      return extractExcerpt(content);
+    case undefined:
+      return undefined;
+    default:
+      return striptags(excerpt);
+  }
 }
