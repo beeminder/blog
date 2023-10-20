@@ -331,7 +331,7 @@ And it&#8217;s in that acknowledgement that you&#8217;re behind, stuck, or unsur
 <p>
   <em>
     If you&#8217;re thinking you&#8217;d love to have a partner for some sort of pact, I and the rest of the Complice team are running a series of
-    <a href=\\"https://complice.co/event/plan2019?utm_source=beeminder&utm_campaign=blogacc\\">
+    <a href=\\"https://complice.co/event/plan2019?utm_source=beeminder&amp;utm_campaign=blogacc\\">
       online New Year&#8217;s goal-setting workshops
     </a>
     January 5th, 6th, and 12th, and one of the components of that is matching you up with potential accountability partners. 
@@ -393,7 +393,7 @@ Lock yourself in, but in a way that you don&#8217;t have to actually do anything
 You know, &#8220;when you&#8217;ll be less busy&#8221;.
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h2 id=\\"math\\">
     <center>
       Auto-Dialer Foreshadowing
@@ -866,7 +866,7 @@ Continuing with weight loss as an example, here&#8217;s how it works:
   </li>
   <img
     src=\\"http://beeminder.com/data/example.png\\"
-    style=\\"vertical-align: middle;\\"
+    style=\\"vertical-align:middle\\"
     height=\\"303\\"
     alt=\\"beeminder example graph\\"
     width=\\"464\\"
@@ -1184,7 +1184,7 @@ The ability to delay gratification at age four is highly predictive of future li
     .
   </li>
   <li>
-    <a href=\\"http://www.smbc-comics.com/index.php?db=comics&id=2054\\">
+    <a href=\\"http://www.smbc-comics.com/index.php?db=comics&amp;id=2054\\">
       Time inconsistency illustrated in a comic
     </a>
     .  [Thanks to
@@ -1763,11 +1763,11 @@ In fact, you can join it right here:
 </p>
 <table
   border=\\"0\\"
-  style=\\"background-color: #fff; padding: 5px;\\"
+  style=\\"background-color:#fff;padding:5px\\"
   cellspacing=\\"0\\"
 >
   <tr>
-    <td style=\\"padding-left: 5px\\">
+    <td style=\\"padding-left:5px\\">
       <b>
         Subscribe to
         <a href=\\"https://groups.google.com/group/akratics\\">
@@ -1778,7 +1778,7 @@ In fact, you can join it right here:
   </tr>
   <form action=\\"https://groups.google.com/group/akratics/boxsubscribe\\">
     <tr>
-      <td style=\\"padding-left: 5px;\\">
+      <td style=\\"padding-left:5px\\">
         Email:
         <input
           type=\\"text\\"
@@ -1957,7 +1957,7 @@ But without (yet) further ado, here are my weirdo rules:
 <p>
   <img
     src=\\"https://blog.beeminder.com/wp-content/uploads/2022/04/allitimentation-moo.jpeg\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     width=\\"120px\\"
     class=\\"aligncenter\\"
     alt=\\"Bee with a monocle\\"
@@ -1976,7 +1976,7 @@ My first calorie of the day starts an hour countdown till my last calorie of the
 <p>
   <img
     src=\\"https://blog.beeminder.com/wp-content/uploads/2022/04/allitimentation-tum.jpeg\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     width=\\"120px\\"
     class=\\"aligncenter\\"
     alt=\\"Bee with treats\\"
@@ -1995,7 +1995,7 @@ Eating whatever the heck you feel like
 <p>
   <img
     src=\\"https://blog.beeminder.com/wp-content/uploads/2022/04/allitimentation-way.jpeg\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     width=\\"60px\\"
     class=\\"aligncenter\\"
     alt=\\"Bee wasting away\\"
@@ -2011,7 +2011,7 @@ So this is typically a 36-hour fast.
 <p>
   <img
     src=\\"https://blog.beeminder.com/wp-content/uploads/2022/04/allitimentation-fit.jpeg\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     width=\\"120px\\"
     class=\\"aligncenter\\"
     alt=\\"Bee wearing skates and sweatbands\\"
@@ -2028,7 +2028,7 @@ To keep myself from sliding down slippery slopes, I have the personal rule that 
 <p>
   <img
     src=\\"https://blog.beeminder.com/wp-content/uploads/2022/04/allitimentation-slu.jpeg\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     width=\\"120px\\"
     class=\\"aligncenter\\"
     alt=\\"Bee with vegetables\\"
@@ -2044,7 +2044,7 @@ For me that&#8217;s
 <p>
   <img
     src=\\"https://blog.beeminder.com/wp-content/uploads/2022/04/allitimentation-soc.jpeg\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     width=\\"120px\\"
     class=\\"aligncenter\\"
     alt=\\"Bee eating with another bee\\"
@@ -2812,7 +2812,7 @@ It is going to be a really interesting weekend, and we&#8217;re looking forward 
   <img
     src=\\"http://blog.beeminder.com/wp-content/uploads/2017/06/windmills-tulips.jpg\\"
     width=\\"120px\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     class=\\"aligncenter\\"
     alt=\\"Tulips and a windmill\\"
     title=\\"In case anyone forgot what country we'll be in\\"
@@ -2962,14 +2962,8 @@ Somehow, my friend
   </a>
   knew that Beeminder might be the perfect match for my personality, as recorded in this Twitter exchange shortly after I began:
 </p>
-<blockquote
-  class=\\"twitter-tweet\\"
-  data-lang=\\"en\\"
->
-  <p
-    lang=\\"en\\"
-    dir=\\"ltr\\"
-  >
+<blockquote class=\\"twitter-tweet\\">
+  <p>
     <a href=\\"https://twitter.com/anomalily\\">
       @anomalily
     </a>
@@ -2983,12 +2977,7 @@ Somehow, my friend
     July 9, 2014
   </a>
 </blockquote>
-<script
-  async
-  src=\\"//platform.twitter.com/widgets.js\\"
-  charset=\\"utf-8\\"
->
-</script>
+&lt;script&gt;&lt;/script&gt;
 <p>
   I started down the path of optimizing everything in my life by using Beeminder &#8212; from packing my lunch to sleep to flossing. 
 I even went as far as to create a
@@ -3888,7 +3877,7 @@ And you can always force a fetch of the latest data just by opening the Beeminde
 <p>
   <img
     src=\\"http://blog.beeminder.com/wp-content/uploads/2017/09/kim-apple-watch.jpg\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     class=\\"aligncenter\\"
     width=\\"150px\\"
     alt=\\"Apple Watch showing a Beeminder alert\\"
@@ -4053,11 +4042,11 @@ Get them here:
 <p>
   Or click/touch one of these screenshots:
 </p>
-<div style=\\"overflow: hidden;\\">
+<div style=\\"overflow:hidden\\">
   <p>
     <a
       href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder\\"
-      style=\\"float:left;padding-bottom:30px;\\"
+      style=\\"float:left;padding-bottom:30px\\"
     >
       <img
         alt=\\"screenshot from the android app\\"
@@ -4067,7 +4056,7 @@ Get them here:
     </a>
     <a
       href=\\"https://itunes.apple.com/us/app/beeminder/id551869729\\"
-      style=\\"float:right;margin-bottom:65px;\\"
+      style=\\"float:right;margin-bottom:65px\\"
     >
       <img
         alt=\\"screenshot from the ios app\\"
@@ -4387,7 +4376,7 @@ Much more detail
   </a>
   or on
   <a
-    href=\\"https://complice.co/?utm_source=beeminder&utm_medium=link&utm_campaign=arbeetrary_aside\\"
+    href=\\"https://complice.co/?utm_source=beeminder&amp;utm_medium=link&amp;utm_campaign=arbeetrary_aside\\"
     title=\\"Fun fact: Complice was so named because it&#39;s like an accomplice for getting your most important stuff done\\"
   >
     complice.co
@@ -4582,11 +4571,11 @@ As with the Numbers mode, decimal values work too.
 So maybe you get +5 points for every 10 minutes before your alarm you get out of bed, and -5 points for each time you hit the snooze button, and a point for each serving of vegetables, and -10 points for each cigarette you smoke.
 </p>
 <p>
-  You can then make a Complice task called &#8220;&) track points:&#8221; and then by the end of the day it might look like:
+  You can then make a Complice task called &#8220;&amp;) track points:&#8221; and then by the end of the day it might look like:
 </p>
 <p>
   <strong>
-    &) track points: +15 got up early, -10 smoke, +3 veg, +1 stairs, +2 veg
+    &amp;) track points: +15 got up early, -10 smoke, +3 veg, +1 stairs, +2 veg
   </strong>
 </p>
 <p>
@@ -4748,7 +4737,7 @@ And it might eventually pay off even just money-wise, who knows?)
   </em>
 </p>
 <h3>
-  Objectives & Requirements
+  Objectives &amp; Requirements
 </h3>
 <p>
   Alright, enough why, let&#8217;s run through the what and how!
@@ -4857,8 +4846,9 @@ And it has an RSS plugin which made setting up our feed quite simple.
 <p>
   Additionally Astro proved beneficial in several other ways that we didn&#8217;t think to look for. 
 It has built-in link prefetching. 
-It includes experimental support for image optimization (still working on setting that up!) and static redirects.
-  And it has a hot-reloading local dev server.
+It includes experimental support for image optimization (still working on setting that up!) and static redirects. 
+ 
+And it has a hot-reloading local dev server.
 </p>
 <h3>
   Choosing a Host
@@ -5648,7 +5638,7 @@ risk more money or even
 We&#8217;re now recanting that.
 </p>
 <p>
-  This might sound like Ben & Jerry&#8217;s disavowing ice cream.
+  This might sound like Ben &amp; Jerry&#8217;s disavowing ice cream.
 Isn&#8217;t &#8220;stay on track or LOSE MONEY&#8221; our whole shtick?
 Isn&#8217;t being averse to the &#8220;LOSE MONEY&#8221; part the entire basis of that threat being motivating?
 </p>
@@ -6320,7 +6310,6 @@ exports[`body > post barfingcats hash 9deb4d27044542063101c50c6a23714d 1`] = `
   <img
     class=\\"aligncenter\\"
     alt=\\"A barfing cat\\"
-    title
     src=\\"https://blog.beeminder.com/wp-content/uploads/2018/03/barfing-cat.jpg\\"
   >
 </p>
@@ -6681,7 +6670,7 @@ exports[`body > post beedroid hash f51fd795fc9fc079d5ee26908e271bf2 1`] = `
 <p>
   We released a
   <a
-    href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder&hl=en\\"
+    href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder&amp;hl=en\\"
     title=\\"Free on Google Play! Though with Beeminder we always have to put &#39;free&#39; in scare quotes.\\"
   >
     2.x version of the Android App
@@ -7428,7 +7417,7 @@ The one-month option might also be a great idea for new users who just want a li
 </h2>
 <img
   src=\\"http://beeminder.com/images/bios/erica_100.png\\"
-  style=\\"float: right; padding: 0 0 0 15px;\\"
+  style=\\"float:right;padding:0 0 0 15px\\"
   title=\\"and she's a looker!\\"
 >
 That&#8217;s right folks! Beeminder hired a whole brand sparkling new employee specifically for this program. 
@@ -8523,7 +8512,7 @@ I knew what I&#8217;d do with the money even before I posted my comment on the B
 </h2>
 <img
   class=\\"alignright\\"
-  style=\\"float:right; padding:0 0 0 15px;\\"
+  style=\\"float:right;padding:0 0 0 15px\\"
   src=\\"http://blog.beeminder.com/wp-content/uploads/2013/12/small-five-fatty.jpeg\\"
   alt=\\"a fundraiser giveaway from FatCyclist.com\\"
   title=\\"FatCyclist's charity bash giveaway\\"
@@ -11204,7 +11193,7 @@ But it has gradually felt more and more anachronistic and we finally decided to 
   <img
     src=\\"https://blog.beeminder.com/wp-content/uploads/2020/06/do-more-after.png\\"
     width=\\"300px\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     class=\\"aligncenter\\"
     alt=\\"Graph with a bright red line\\"
     title=\\"The Yellow Brick Road lives on (for now) as a shaded stripe next to the Bright Red Line -- but it's only the latter that matters\\"
@@ -11242,7 +11231,7 @@ But it has gradually felt more and more anachronistic and we finally decided to 
 &#8220;make sure you don&#8217;t cross the bright red line that you&#8217;ve set for yourself&#8221;.
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h3 id=\\"math\\">
     <center>
       Runners Up for &#8220;Yellow Brick Road&#8221; Replacements
@@ -11256,110 +11245,112 @@ But it has gradually felt more and more anachronistic and we finally decided to 
   <p>
   </p>
   <p>
-    <ul>
-      <li>
-        <i>
-          Beeline
-        </i>
-      </li>
-      <li>
-        <i>
-          Sting Line
-        </i>
-      </li>
-      <li>
-        <i>
-          Rail
-        </i>
-      </li>
-      <li>
-        <i>
-          Fence
-        </i>
-      </li>
-      <li>
-        <i>
-          Due-by Line
-        </i>
-      </li>
-      <li>
-        <i>
-          Derailment Line
-        </i>
-      </li>
-      <li>
-        <i>
-          Commitment Line
-        </i>
-      </li>
-      <li>
-        <i>
-          Razor&#8217;s Edge
-        </i>
-        (
-        <i>
-          Razor
-        </i>
-        for short)
-      </li>
-      <li>
-        <i>
-          Borderline
-        </i>
-      </li>
-      <li>
-        <i>
-          Bright Line
-        </i>
-      </li>
-      <li>
-        <i>
-          Border
-        </i>
-      </li>
-      <li>
-        <i>
-          Line of Doom
-        </i>
-      </li>
-      <li>
-        <i>
-          B-line
-        </i>
-        (evocative of bright line / border line as well as Beeminder line)
-      </li>
-      <li>
-        <i>
-          Bee Lane
-        </i>
-      </li>
-      <li>
-        <i>
-          Red Rail
-        </i>
-      </li>
-      <li>
-        <i>
-          Money Line
-        </i>
-      </li>
-      <li>
-        <i>
-          Cliff
-        </i>
-      </li>
-      <li>
-        <i>
-          Skate Line
-        </i>
-      </li>
-      <li>
-        <i>
-          y(t)
-        </i>
-        (pronounced &#8220;y of t&#8221;)
-      </li>
-    </ul>
+  </p>
+  <ul>
+    <li>
+      <i>
+        Beeline
+      </i>
+    </li>
+    <li>
+      <i>
+        Sting Line
+      </i>
+    </li>
+    <li>
+      <i>
+        Rail
+      </i>
+    </li>
+    <li>
+      <i>
+        Fence
+      </i>
+    </li>
+    <li>
+      <i>
+        Due-by Line
+      </i>
+    </li>
+    <li>
+      <i>
+        Derailment Line
+      </i>
+    </li>
+    <li>
+      <i>
+        Commitment Line
+      </i>
+    </li>
+    <li>
+      <i>
+        Razor&#8217;s Edge
+      </i>
+      (
+      <i>
+        Razor
+      </i>
+      for short)
+    </li>
+    <li>
+      <i>
+        Borderline
+      </i>
+    </li>
+    <li>
+      <i>
+        Bright Line
+      </i>
+    </li>
+    <li>
+      <i>
+        Border
+      </i>
+    </li>
+    <li>
+      <i>
+        Line of Doom
+      </i>
+    </li>
+    <li>
+      <i>
+        B-line
+      </i>
+      (evocative of bright line / border line as well as Beeminder line)
+    </li>
+    <li>
+      <i>
+        Bee Lane
+      </i>
+    </li>
+    <li>
+      <i>
+        Red Rail
+      </i>
+    </li>
+    <li>
+      <i>
+        Money Line
+      </i>
+    </li>
+    <li>
+      <i>
+        Cliff
+      </i>
+    </li>
+    <li>
+      <i>
+        Skate Line
+      </i>
+    </li>
+    <li>
+      <i>
+        y(t)
+      </i>
+      (pronounced &#8220;y of t&#8221;)
+    </li>
+  </ul>
+  <p>
   </p>
 </div>
 <br>
@@ -11764,7 +11755,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #e99695; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#e99695;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"BUGs are red\\"
       >
         BUG
@@ -11779,7 +11770,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #FFAB4A; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#FFAB4A;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"RFEs are orange\\"
       >
         RFE
@@ -11794,7 +11785,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #F2D600; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#F2D600;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"UVIs are yellow, for Beeminder\\"
       >
         UVI
@@ -11815,7 +11806,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #d4c5f9; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#d4c5f9;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"STYs are purple\\"
       >
         STY
@@ -11836,7 +11827,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #FF80CE; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#FF80CE;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"MENdozas are bright pink because they're even more important than BUGs\\"
       >
         MEN
@@ -11857,7 +11848,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #c2e0c6; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#c2e0c6;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"PEAs are green\\"
       >
         PEA
@@ -11872,7 +11863,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #c5def5; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#c5def5;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"SKY-pies are sky-blue\\"
       >
         SKY
@@ -11887,7 +11878,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #f2d8a4; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#f2d8a4;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"ABCs are parchment-colored\\"
       >
         ABC
@@ -11902,7 +11893,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #cccccc; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#cccccc;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"ADOs are gray because they're a gray area\\"
       >
         ADO
@@ -11917,7 +11908,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #39ff14; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#39ff14;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"OMGs are neon for PAY ATTENTION TO MEEEEE\\"
       >
         OMG
@@ -11933,7 +11924,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #5319e7; color: #FFF; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#5319e7;color:#FFF;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"zaps are royal purple\\"
       >
         zap
@@ -11948,7 +11939,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #000000; color: #FFF; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#000000;color:#FFF;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"nixes are black\\"
       >
         nix
@@ -11963,7 +11954,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #000000; color: #FFF; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#000000;color:#FFF;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"zzz's are also black, because realistically they may not be distinguishable from nixes\\"
       >
         zzz
@@ -11978,7 +11969,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #1d76db; color: #FFF; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#1d76db;color:#FFF;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"cnr's are baby-blue I guess\\"
       >
         cnr
@@ -12000,7 +11991,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #666; color: #FFF; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#666;color:#FFF;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"dups are dark gray\\"
       >
         dup
@@ -12015,7 +12006,7 @@ Eight are descriptive and six are the ones Joel Spolsky proposed around the turn
   <tr>
     <td>
       <span
-        style=\\"background-color: #0e8a16; color: #FFF; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#0e8a16;color:#FFF;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"aok's are dark green\\"
       >
         aok
@@ -12171,7 +12162,7 @@ Another manifestation of this is the
     href=\\"http://blog.beeminder.com/shirknturk\\"
     title=\\"Beeminder blog post about how, when writing a new app or website or feature, you should implement as little of it as you can get away with and manually fake the rest behind the scenes\\"
   >
-    Shirk & Turk Principle
+    Shirk &amp; Turk Principle
   </a>
   .
 </p>
@@ -12234,7 +12225,7 @@ Here&#8217;s how they map to our own labels:
   <tr>
     <td>
       <span
-        style=\\"background-color: #d73a4a; color: #FFF; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#d73a4a;color:#FFF;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"GitHub's description: Something isn't working\\"
       >
         bug
@@ -12247,7 +12238,7 @@ Here&#8217;s how they map to our own labels:
     </td>
     <td>
       <span
-        style=\\"background-color: #e99695; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#e99695;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"BUGs are red\\"
       >
         BUG
@@ -12261,7 +12252,7 @@ Here&#8217;s how they map to our own labels:
   <tr>
     <td>
       <span
-        style=\\"background-color: #cfd3d7; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#cfd3d7;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"GitHub's description: This issue or pull request already exists\\"
       >
         duplicate
@@ -12274,7 +12265,7 @@ Here&#8217;s how they map to our own labels:
     </td>
     <td>
       <span
-        style=\\"background-color: #666; color: #FFF; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#666;color:#FFF;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"dups are dark gray\\"
       >
         dup
@@ -12288,7 +12279,7 @@ Here&#8217;s how they map to our own labels:
   <tr>
     <td>
       <span
-        style=\\"background-color: #a2eeef; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#a2eeef;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"GitHub's description: New feature or request\\"
       >
         enhancement
@@ -12301,7 +12292,7 @@ Here&#8217;s how they map to our own labels:
     </td>
     <td>
       <span
-        style=\\"background-color: #FFAB4A; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#FFAB4A;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"RFEs are orange\\"
       >
         RFE
@@ -12314,7 +12305,7 @@ Here&#8217;s how they map to our own labels:
   <tr>
     <td>
       <span
-        style=\\"background-color: #d876e3; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#d876e3;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"GitHub's description: Further information is requested\\"
       >
         question
@@ -12327,7 +12318,7 @@ Here&#8217;s how they map to our own labels:
     </td>
     <td>
       <span
-        style=\\"background-color: #cccccc; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#cccccc;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"ADOs are gray because they're a gray area\\"
       >
         ADO
@@ -12340,33 +12331,27 @@ Here&#8217;s how they map to our own labels:
   <tr>
     <td>
       <span
-        style=\\"background-color: #ffffff; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#ffffff;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"GitHub's description: This will not be worked on\\"
       >
         wontfix
       </span>
     </td>
-    <td rowspan=\\"3\\">
-      <math>
-        <mfenced
-          open
-          close=\\"}\\"
-        >
-          <mtable>
-            <mrow>
-            </mrow>
-            <mrow>
-            </mrow>
-            <mrow>
-            </mrow>
-          </mtable>
-        </mfenced>
-      </math>
+    <td>
+      &lt;math&gt;
+&lt;mfenced&gt;
+&lt;mtable&gt;
+&lt;mrow&gt;&lt;/mrow&gt;
+&lt;mrow&gt;&lt;/mrow&gt;
+&lt;mrow&gt;&lt;/mrow&gt;
+&lt;/mtable&gt;
+&lt;/mfenced&gt;
+&lt;/math&gt;
     </td>
-    <td rowspan=\\"3\\">
+    <td>
       &nbsp;
       <span
-        style=\\"background-color: #000000; color: #FFF; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#000000;color:#FFF;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"nixes are black\\"
       >
         nix
@@ -12380,7 +12365,7 @@ Here&#8217;s how they map to our own labels:
   <tr>
     <td>
       <span
-        style=\\"background-color: #e4e669; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#e4e669;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"GitHub's description: This doesn't seem right [sic]\\"
       >
         invalid
@@ -12393,27 +12378,20 @@ Here&#8217;s how they map to our own labels:
     <td>
       <br>
       <span
-        style=\\"background-color: #c089ff; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#c089ff;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"GitHub's description: Good for newcomers\\"
       >
         good first issue
       </span>
     </td>
-    <td rowspan=\\"3\\">
-      <math>
-        <mfenced
-          open
-          close=\\"}\\"
-        >
-          <mspace height=\\"58px\\">
-          </mspace>
-        </mfenced>
-      </math>
+    <td>
+      &lt;math&gt;
+&lt;mfenced&gt;
+&lt;mspace&gt;
+&lt;/mfenced&gt;
+&lt;/math&gt;
     </td>
-    <td
-      rowspan=\\"3\\"
-      colspan=\\"2\\"
-    >
+    <td>
       We use these labels as is because GitHub helps potential
       <br>
       first-time contributors discover issues with these labels
@@ -12424,7 +12402,7 @@ Here&#8217;s how they map to our own labels:
   <tr>
     <td>
       <span
-        style=\\"background-color: #f9bddc; color: #000; padding: 0 8px; font-size: 16px; font-weight: 600; line-height: 2; border-radius: 3px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\"
+        style=\\"background-color:#f9bddc;color:#000;padding:0 8px;font-size:16px;font-weight:600;line-height:2;border-radius:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\"
         title=\\"GitHub's description: Extra attention is needed\\"
       >
         help wanted
@@ -12516,7 +12494,7 @@ We&#8217;re over at
 <p>
   Ok, at severe risk of making the perfect the enemy of the good, we shall now tell you about Proper Bug Reports, which are like so:
 </p>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h2>
     <center>
       Defectus Demonstrandum
@@ -14708,7 +14686,7 @@ We&#8217;re happy to see this kind of journalism bringing the
     href=\\"http://www.sourcesandmethods.com/podcast/2015/12/2/sources-and-methods-23-beeminder\\"
     title=\\"We even sound surprisingly articulate, given that it is extemporaneous.\\"
   >
-    Sources & Methods
+    Sources &amp; Methods
   </a>
   .
 Even if you&#8217;re not realistically going to listen to a podcast, the detailed show notes and links are worth perusing.
@@ -14961,7 +14939,7 @@ from Books Are Time Machines
       href=\\"http://www.alexstrick.com/blog/2015/12/the-best-books-i-read-in-2015\\"
       title=\\"Spoiler: He read 150 books. Don&#39;t worry, there&#39;s a beeminder graph.\\"
     >
-      Reading stats & recommendations
+      Reading stats &amp; recommendations
     </a>
     from Alex Strick van Linschoten
   </li>
@@ -15367,7 +15345,7 @@ And a small mention in this
     href=\\"http://www.sourcesandmethods.com/podcast/2015/12/2/sources-and-methods-23-beeminder\\"
     title=\\"we also discussed this in a previous blog post\\"
   >
-    Sources & Methods podcast
+    Sources &amp; Methods podcast
   </a>
   disappearing in Iran and ending up in an Iranian prison
   <a
@@ -16299,7 +16277,7 @@ We lassoed all the mentions and compiled them here for your persusing pleasure &
     </a>
   </li>
   <li>
-    A personal reflection on disability & accessibility around using
+    A personal reflection on disability &amp; accessibility around using
     <a
       href=\\"https://www.harihareswara.net/sumana/2016/08/13/0\\"
       title=\\"Excerpt: I can see that it helps me to use Beeminder and LeechBlock, to exercise, to pray, to make people laugh, to see live music.\\"
@@ -16628,7 +16606,7 @@ We lassoed all the mentions and compiled them here for your persusing pleasure &
     <strong>
       The
       <a
-        href=\\"https://www.youtube.com/channel/UCjsouh0X7X74CmEpgh4fdtA/videos?sort=dd&view=0&shelf_id=0\\"
+        href=\\"https://www.youtube.com/channel/UCjsouh0X7X74CmEpgh4fdtA/videos?sort=dd&amp;view=0&amp;shelf_id=0\\"
         title=\\"The videos also sometimes feature an adorable baby\\"
       >
         LYFE System Youtube channel
@@ -17027,7 +17005,7 @@ Of victories and stings.
   <li>
     Nice example of using a Beeminder graph to publicly commit to something: xkcd forum user Madge&#8217;s posts all include a
     <a
-      href=\\"http://forums.xkcd.com/viewtopic.php?t=120290&p=4139034#p4111785\\"
+      href=\\"http://forums.xkcd.com/viewtopic.php?t=120290&amp;p=4139034#p4111785\\"
       title=\\"They call it their accountability link\\"
     >
       signature with pointer to a Beeminder graph of their novel-writing progress
@@ -17164,7 +17142,7 @@ Of victories and stings.
   <li>
     Another example of
     <a
-      href=\\"http://lifein19x19.com/viewtopic.php?t=13928&p=216512\\"
+      href=\\"http://lifein19x19.com/viewtopic.php?t=13928&amp;p=216512\\"
       title=\\"I&#39;ll do my best to review and post one of those up here as proof, and I&#39;ll be using Beeminder [link to person&#39;s graph] to self-motivate those tsumego.\\"
     >
       pointing to a Beeminder graph to publicly commit to something
@@ -17402,7 +17380,7 @@ which is a somewhat ambiguous way to put that
         href=\\"https://medium.com/@brennanbrown/planning-better-e0d60edbe271\\"
         title=\\"Excerpt: Beeminder helps in a unique and powerful way. What makes it different? (1) Keeping track of systems as opposed to goals. (2) Using integrations to enter updates automatically. (3) Visually attractive and auto-generating graphs. (4) Constant, yet helpful, reminders.\\"
       >
-        How to Create & Plan Better (Using the Internet and Bees)
+        How to Create &amp; Plan Better (Using the Internet and Bees)
       </a>
     </strong>
   </li>
@@ -18073,7 +18051,7 @@ There&#8217;s a big drop-off
       before
     </em>
     getting charged the first time, and especially before getting serious enough to actually create a goal. 
-But >90% of people stick around after getting charged the first time!)
+But &gt;90% of people stick around after getting charged the first time!)
   </li>
   <li>
     Thomas Frank has a pretty amazing Beeminder testimonial in his video
@@ -18304,7 +18282,7 @@ has been an avid Beeminder user for many years and
       </a>
     </li>
     <li>
-      <a href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder&reviewId=gp%3AAOqpTOGUeV9enYdyol6SmU3k_PFav-Dj69uFuprjTGzyMAIvBirdjH5wemuEza_G6nK_SxAwJtAWucL6xyAeGg\\">
+      <a href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder&amp;reviewId=gp%3AAOqpTOGUeV9enYdyol6SmU3k_PFav-Dj69uFuprjTGzyMAIvBirdjH5wemuEza_G6nK_SxAwJtAWucL6xyAeGg\\">
         Aaron Gertler posted an nice review of his experience with Beeminder in Google Play
       </a>
     </li>
@@ -18989,7 +18967,7 @@ Haters rejoice!)
         href=\\"https://www.oico.com/oi-blog/lablife/2019/01/goal-setting-achievement-getting-there-from-here\\"
         title=\\"2019-jan-23\\"
       >
-        Goal Setting & Achievement
+        Goal Setting &amp; Achievement
       </a>
     </p>
   </li>
@@ -20285,7 +20263,7 @@ I intended to shame ourselves, i.e.,
   <li>
     Old but awesome
     <a
-      href=\\"http://how-to-learn-any-language.com/forum/forum_posts.asp?TID=37672&PN=1\\"
+      href=\\"http://how-to-learn-any-language.com/forum/forum_posts.asp?TID=37672&amp;PN=1\\"
       title=\\"Don&#39;t think we covered it in previous press roundups\\"
     >
       thread on the how-to-learn-any-language.com forum
@@ -20743,7 +20721,7 @@ I intended to shame ourselves, i.e.,
   <li>
     Lots of Beeminder love in the comments of this
     <a
-      href=\\"https://www.goodreads.com/book/show/17788725-the-motivation-hacker?from_search=true&search_version=service\\"
+      href=\\"https://www.goodreads.com/book/show/17788725-the-motivation-hacker?from_search=true&amp;search_version=service\\"
       title=\\"Read the book too!\\"
     >
       GoodReads review of Nick Winter&#8217;s &#8220;The Motivation Hacker&#8221;
@@ -20773,7 +20751,7 @@ I intended to shame ourselves, i.e.,
       href=\\"http://imimpact.com/habits/\\"
       title=\\"but again, proof that we&#39;re one of the Big Three (Beeminder, StickK, Pact)\\"
     >
-      Habits to transform your business & life
+      Habits to transform your business &amp; life
     </a>
   </li>
   <li>
@@ -20945,98 +20923,100 @@ For some people a recurring calendar entry could suffice.
 If that&#8217;s you, ignore everything but step 7 in the instructions in the sidebar here.
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h3 id=\\"math\\">
     <center>
       Instructions for Newbees
     </center>
   </h3>
   <p>
-    <ol>
-      <li>
-        Create a
-        <a
-          href=\\"https://www.beeminder.com/new\\"
-          title=\\"Link to create a new goal, assuming you're logged in to Beeminder. Short version: bmndr.co/new\\"
-        >
-          new
-        </a>
-        do-more goal.
-      </li>
-      <li>
-        Name it
-        <i>
-          calendial
-        </i>
-        or
-        <i>
-          dial
-        </i>
-        or
-        <i>
-          beetune
-        </i>
-        or something
-        <a
-          href=\\"https://blog.beeminder.com/goalnames\\"
-          title=\\"Beeminder blog post on picking good goalnames\\"
-        >
-          cute
-        </a>
-        .
-      </li>
-      <li>
-        Dial the rate to 1 per week.
-      </li>
-      <li>
-        Check the box for &#8220;start this goal with extra leeway (safety buffer)&#8221; and say zero if you&#8217;re ready to do your first calendialing today.
+  </p>
+  <ol>
+    <li>
+      Create a
+      <a
+        href=\\"https://www.beeminder.com/new\\"
+        title=\\"Link to create a new goal, assuming you're logged in to Beeminder. Short version: bmndr.co/new\\"
+      >
+        new
+      </a>
+      do-more goal.
+    </li>
+    <li>
+      Name it
+      <i>
+        calendial
+      </i>
+      or
+      <i>
+        dial
+      </i>
+      or
+      <i>
+        beetune
+      </i>
+      or something
+      <a
+        href=\\"https://blog.beeminder.com/goalnames\\"
+        title=\\"Beeminder blog post on picking good goalnames\\"
+      >
+        cute
+      </a>
+      .
+    </li>
+    <li>
+      Dial the rate to 1 per week.
+    </li>
+    <li>
+      Check the box for &#8220;start this goal with extra leeway (safety buffer)&#8221; and say zero if you&#8217;re ready to do your first calendialing today.
 If you want to do this, say, every Friday, put however many days it is until Friday.
-      </li>
-      <li>
-        For units, go with something like &#8220;dialings&#8221;.
-      </li>
-      <li>
-        Optionally describe the goal. Mine is &#8220;Adjust graphs for upcoming 2 weeks of calendared events&#8221;.
-      </li>
-      <li>
-        Whenever the goal is in the red (or your calendar tells you to do this):
-        <ul>
-          <li>
-            (a) Go to
-            <a
-              href=\\"https://www.beeminder.com/breaks\\"
-              title=\\"Megabreak: interface for setting breaks on all your goals in one place. Handy easter-eggy bonus feature: add something like &start=2021-12-24&finish=2022-01-01 to pre-fill the default dates of the breaks\\"
-            >
-              beeminder.com/breaks
-            </a>
-            , sort your goals by how much safety buffer they have (most urgent on top) and start going down the list.
-          </li>
-          <li>
-            (b) For each goal, consider your calendar from 1 week from now to 2 weeks from now. 
+    </li>
+    <li>
+      For units, go with something like &#8220;dialings&#8221;.
+    </li>
+    <li>
+      Optionally describe the goal. Mine is &#8220;Adjust graphs for upcoming 2 weeks of calendared events&#8221;.
+    </li>
+    <li>
+      Whenever the goal is in the red (or your calendar tells you to do this):
+      <ul>
+        <li>
+          (a) Go to
+          <a
+            href=\\"https://www.beeminder.com/breaks\\"
+            title=\\"Megabreak: interface for setting breaks on all your goals in one place. Handy easter-eggy bonus feature: add something like &amp;start=2021-12-24&amp;finish=2022-01-01 to pre-fill the default dates of the breaks\\"
+          >
+            beeminder.com/breaks
+          </a>
+          , sort your goals by how much safety buffer they have (most urgent on top) and start going down the list.
+        </li>
+        <li>
+          (b) For each goal, consider your calendar from 1 week from now to 2 weeks from now. 
 Is it ok to be on the hook on that goal throughout that week?
 If so, great.
 If not,
-            <a
-              href=\\"https://blog.beeminder.com/megabreak\\"
-              title=\\"Blog post introducing the breaks page\\"
-            >
-              schedule whatever break
-            </a>
-            makes sense.
-          </li>
-          <li>
-            (c) Continue down your list of goals. 
+          <a
+            href=\\"https://blog.beeminder.com/megabreak\\"
+            title=\\"Blog post introducing the breaks page\\"
+          >
+            schedule whatever break
+          </a>
+          makes sense.
+        </li>
+        <li>
+          (c) Continue down your list of goals. 
 If you get to one with more than 14 days of safety buffer, stop.
-          </li>
-          <li>
-            (d) Enter a +1 on your calendialing goal, earning you exactly one more week of safety buffer.
-          </li>
-        </ul>
-      </li>
-      <li>
-        That&#8217;s it! Go to step 7 in a week!
-      </li>
-    </ol>
+        </li>
+        <li>
+          (d) Enter a +1 on your calendialing goal, earning you exactly one more week of safety buffer.
+        </li>
+      </ul>
+    </li>
+    <li>
+      That&#8217;s it! Go to step 7 in a week!
+    </li>
+  </ol>
+  <p>
   </p>
 </div>
 <br>
@@ -21339,8 +21319,9 @@ So, without further ado&#8230;
   >
     his article on depression
   </a>
-  .)
-  To explain it, let&#8217;s start with a crude
+  .) 
+ 
+To explain it, let&#8217;s start with a crude
   <a
     href=\\"https://www.therapistaid.com/therapy-guide/cbt-psychoeducation\\"
     title=\\"A summary of CBT, including the cognitive model\\"
@@ -21397,8 +21378,8 @@ CBT states that our thoughts, emotions, and behaviors are tightly interconnected
 Notice that our behavior has a direct impact on our thoughts and feelings. 
 &#8220;Fake it &#8216;til you make it&#8221; contains a grain of truth.
 </p>
-<style>
-  .ctable {
+&lt;style&gt;
+.ctable {
     padding: 20px 0;
     font-size: .85em;
 }
@@ -21413,7 +21394,7 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
 .ctable .na {
     color: grey;
 }
-</style>
+&lt;/style&gt;
 <div class=\\"ctable\\">
   <center>
     <table>
@@ -21579,8 +21560,9 @@ A simple do-more Beeminder goal fixed this by regularly prompting me to watch fo
 <p>
   Both! 
 The point is, CBT and Beeminder aren&#8217;t in competition at all.
-Using Beeminder alongside CBT can produce better results than either alone.
-  If you&#8217;re seeing a CBT therapist, Beeminder can help you implement the therapy.
+Using Beeminder alongside CBT can produce better results than either alone. 
+ 
+If you&#8217;re seeing a CBT therapist, Beeminder can help you implement the therapy.
 If you&#8217;re not, it&#8217;s still worth using CBT&#8217;s ideas.
 Beeminder-driven behavior change can bootstrap deeper changes in cognition, emotion, and identity.
 </p>
@@ -22201,7 +22183,7 @@ As a couple of computer nerds
 </p>
 <a
   href=\\"http://chirpify.com\\"
-  style=\\"float:right; padding:15px;\\"
+  style=\\"float:right;padding:15px\\"
 >
   <img
     class=\\"alignright\\"
@@ -22572,7 +22554,7 @@ Since I love extremes I&#8217;ve totally taken it there.
     href=\\"https://blog.beeminder.com/shirknturk/\\"
     title=\\"Beeminder blog post from 2016. This is sometimes called a Wizard of Oz MVP, i.e., you have a proverbial man behind the curtain manually implementing what appears automatic.\\"
   >
-    The Shirk & Turk Principle
+    The Shirk &amp; Turk Principle
   </a>
   says that you shouldn&#8217;t write any code at all until after you already have users using the thing you haven&#8217;t built yet.
 </p>
@@ -22815,7 +22797,7 @@ You&#8217;ll bee fluent in no time.
 </p>
 <center>
   <a href=\\"http://beeminder.com/clozemaster\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Create a Clozemaster goal!
     </span>
   </a>
@@ -23135,7 +23117,7 @@ Just go earn more CodeCombat XP when Beeminder yells at you!
 </p>
 <center>
   <a href=\\"https://beeminder.com/codecombat\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Beemind your combative coding!
     </span>
   </a>
@@ -23492,7 +23474,7 @@ exports[`body > post college hash 73c77c02fc49cc3c3c8a74ad490dcf7f 1`] = `
 </p>
 <p>
   We&#8217;re slightly behind for the traditional September start date, but it&#8217;s not too late!
-The semester at the London School of Hygiene & Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already.
+The semester at the London School of Hygiene &amp; Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already.
 </p>
 <p>
   I don&#8217;t know about any of you, but whenever the new school year starts it feels like a good time to make some resolutions. 
@@ -24158,8 +24140,6 @@ And years is like, better late than never, but barely (1%).
   <img
     class=\\"aligncenter\\"
     width=\\"100%\\"
-    alt
-    title
     src=\\"https://camo.githubusercontent.com/c1e7b00b2a3fcaefd296533eead35359141c0f23/68747470733a2f2f63646e2e676c697463682e636f6d2f66663937346432642d653231322d343730652d383538372d6630363532303533353064302532466c6174652d70656e616c74792e706e67\\"
   >
 </p>
@@ -24238,26 +24218,18 @@ Clicking that link logs the commitment which I can then edit or later mark fulfi
 </p>
 <p>
   <img
-    2019
     class=\\"aligncenter\\"
     width=\\"100%\\"
-    alt=\\"My Reliability: 96.879%  </p>
-<ul>
-<li>Based on 391 commitments  </li>
-<li>+7 that are still pending (due in the future)  </li>
-<li>And including 11 (gulp) that are currently overdue [1]<br>(footnote: [1] including, as I type this, my promise to send these slides to the QS folks&#8221;
-title=&#8221;My Reliability: 96.879%  </li>
-<li>Based on 391 commitments  </li>
-<li>+7 that are still pending (due in the future)  </li>
-<li>And including 11 (gulp) that are currently overdue [1]<br>(footnote: [1] including, as I type this, my promise to send these slides to the QS folks&#8221;
-src=&#8221;<a href=\\"
-    https:
-    blog.beeminder.com
-    wp-content
-    uploads
-    04
-    screenshot2307.png%22
-    %3e\\"
+    alt=\\"My Reliability: 96.879%  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Based on 391 commitments  &lt;/li&gt;
+&lt;li&gt;+7 that are still pending (due in the future)  &lt;/li&gt;
+&lt;li&gt;And including 11 (gulp) that are currently overdue [1]&lt;br&gt;(footnote: [1] including, as I type this, my promise to send these slides to the QS folks&#8221;
+title=&#8221;My Reliability: 96.879%  &lt;/li&gt;
+&lt;li&gt;Based on 391 commitments  &lt;/li&gt;
+&lt;li&gt;+7 that are still pending (due in the future)  &lt;/li&gt;
+&lt;li&gt;And including 11 (gulp) that are currently overdue [1]&lt;br&gt;(footnote: [1] including, as I type this, my promise to send these slides to the QS folks&#8221;
+src=&#8221;&lt;a href=\\"
   >
   https://blog.beeminder.com/wp-content/uploads/2019/04/screenshot2307.png&quot;/&gt;
 </p>
@@ -24272,26 +24244,18 @@ And we’ve been working on this for exactly a year now.
 </p>
 <p>
   <img
-    2019
     class=\\"aligncenter\\"
     width=\\"100%\\"
-    alt=\\"Numbers:  </p>
-<ul>
-<li>About 10 active beta users  </li>
-<li>1157 commitments in the database  </li>
-<li>365 days of very gradual development [1]<br>(footnote: [1] Yes, today (2018-09-22) is the 1st anniversary of the initial Git commit]&#8221;
-title=&#8221;Numbers:  </li>
-<li>About 10 active beta users  </li>
-<li>1157 commitments in the database  </li>
-<li>365 days of very gradual development [1]<br>(footnote: [1] Yes, today (2018-09-22) is the 1st anniversary of the initial Git commit]&#8221;
-src=&#8221;<a href=\\"
-    https:
-    blog.beeminder.com
-    wp-content
-    uploads
-    04
-    screenshot2317.png%22
-    %3e\\"
+    alt=\\"Numbers:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;About 10 active beta users  &lt;/li&gt;
+&lt;li&gt;1157 commitments in the database  &lt;/li&gt;
+&lt;li&gt;365 days of very gradual development [1]&lt;br&gt;(footnote: [1] Yes, today (2018-09-22) is the 1st anniversary of the initial Git commit]&#8221;
+title=&#8221;Numbers:  &lt;/li&gt;
+&lt;li&gt;About 10 active beta users  &lt;/li&gt;
+&lt;li&gt;1157 commitments in the database  &lt;/li&gt;
+&lt;li&gt;365 days of very gradual development [1]&lt;br&gt;(footnote: [1] Yes, today (2018-09-22) is the 1st anniversary of the initial Git commit]&#8221;
+src=&#8221;&lt;a href=\\"
   >
   https://blog.beeminder.com/wp-content/uploads/2019/04/screenshot2317.png&quot;/&gt;
 </p>
@@ -24532,8 +24496,8 @@ But the
 <p>
   Before this, if you didn&#8217;t hit the commitwall by derailing, you&#8217;d hit it by trying to create your 2nd or 3rd goal.
 Whether it was your 2nd or 3rd goal was determined randomly.
-(Known as bucket testing, split testing, A/B testing, or a randomized controlled trial.)
-  If you think that having more time to try Beeminder helps turn users into customers then you&#8217;d predict that being commitwalled after 2 goals is better than after 1. 
+(Known as bucket testing, split testing, A/B testing, or a randomized controlled trial.) 
+If you think that having more time to try Beeminder helps turn users into customers then you&#8217;d predict that being commitwalled after 2 goals is better than after 1. 
 This turned out to not be the case.
 The probability you&#8217;ll create a 2nd goal naturally goes down (but only slightly, from 34% to 31%) if we commitwall you after 1 goal. 
 But revenue doesn&#8217;t go down detectably at all. 
@@ -25464,7 +25428,8 @@ All these startups are helping each other get the public exposed to commitment d
 <p>
   It&#8217;s like my brother who [had] a 
 sushi restaurant
-  in central Illinois with one primary competitor in town.
+ 
+in central Illinois with one primary competitor in town.
 Since most people in town haven&#8217;t even tried sushi, most of the marketing that my brother&#8217;s competitor does is just creating new sushi eaters, some of whom will then presumably eat at my brother&#8217;s restaurant.
 Anecdotally, that effect dwarfs any actual customer stealing that the competitor may do.
 </p>
@@ -25636,7 +25601,7 @@ It has daily email reminders and accountability!
 <p>
   <img
     src=\\"http://blog.beeminder.com/wp-content/uploads/2015/11/synergy-gears.gif\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     alt=\\"Synergy!\\"
     title=\\"We thought it would be funny to add “Synergy!” in an ironic font. This is the best we came up with.\\"
   >
@@ -26492,7 +26457,7 @@ Instead you could do
   &#8212; simulating a fairly attentive human at the wheel updating the copyright 5-10 days after new year&#8217;s.
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h3>
     <center>
       Stripe.com and the primordial dialogical sea
@@ -26514,158 +26479,154 @@ is, as of this writing, 12 days after new year&#8217;s, still saying copyright 2
 So we&#8217;re hopeful that automating the copyright year has finally become uncool.
 Also, if you&#8217;re curious to see our whole dialog debating this, here you go:
   </p>
-  <details style=\\"cursor: pointer\\">
-    <summary>
-      The dialog, circa 2017
-    </summary>
-    <blockquote>
-      <p>
-        <b>
-          dreev
-        </b>
-        : boo to automatically filling in copyright! that&#8217;s how we prove we&#8217;re still at the wheel :)
-        <br>
-        <b>
-          andy
-        </b>
-        : it only proves that if it&#8217;s publicly visible how the copyright is being created
-        <br>
-        <b>
-          andy
-        </b>
-        : like if beeminder were open source. otherwise no one can tell the difference
-        <br>
-        <b>
-          dreev
-        </b>
-        : actually i think when the copyright changes at a random time in january, that&#8217;s a good signal that you&#8217;re at the wheel&#8230;
-        <br>
-        <b>
-          dreev
-        </b>
-        : if it changes at the stroke of midnight then obviously you cheated and could all be dead or on a beach somewhere
-        <br>
-        <b>
-          bee
-        </b>
-        : but everyone cheats
-        <br>
-        <b>
-          bee
-        </b>
-        : so it can only be an indicator in our absence
-        <br>
-        <b>
-          dreev
-        </b>
-        : boo to cheaters
-        <br>
-        <b>
-          adam?
-        </b>
-        : it&#8217;s the best way to score GitHub points too: open
-        <code>
-          2017
-        </code>
-        ->
-        <code>
-          2018
-        </code>
-        pull requests
-        <br>
-        <b>
-          andy
-        </b>
-        : but who is going around checking exactly when copyrights change??
-        <br>
-        <b>
-          andy
-        </b>
-        : bots, that&#8217;s who
-        <br>
-        <b>
-          andy
-        </b>
-        : okay nevermind I&#8217;m on board with this as a precaution to confuse future overlords
-        <br>
-        <b>
-          bee
-        </b>
-        : anyhow, it also makes us look stupid. like we don&#8217;t know how to use string format, and causes people to write us emails like &#8220;Umm. so your copyright is out of date. I don&#8217;t know what language you guys use, but in php it&#8217;s really easy you..&#8221;
-        <br>
-        <b>
-          andy
-        </b>
-        : maybe that&#8217;s a positive, identify users who can write code
-        <br>
-        <b>
-          andy
-        </b>
-        : &#8220;oh, thanks! here&#8217;s another nerd sniping problem. can you rewrite beebrain?&#8221;
-        <br>
-        <b>
-          dreev
-        </b>
-        : clearly the optimal solution is to set it to
-        <code>
-          year(now-random(5,10)*86400)
-        </code>
-        :)
-        <br>
-        <b>
-          dreev
-        </b>
-        : (simulates a fairly attentive human at the wheel updating the copyright 5-10 days after new years)
-        <br>
-        <b>
-          dreev
-        </b>
-        : i can&#8217;t tell what fraction serious i am about doing it manually. i guess if, counterfactually, we ever weren&#8217;t at the wheel it would be lies and that feels icky
-        <br>
-        <b>
-          dreev
-        </b>
-        : like there&#8217;s something inherently dishonest about literally being like &#8220;copyright&#8230; uh, whatever year it is when you&#8217;re reading this!&#8221;
-        <br>
-        <b>
-          bee
-        </b>
-        : ok, so part of the checklist for shuttering beeminder is &#8220;update footer copyright date&#8221;
-        <br>
-        <b>
-          bee
-        </b>
-        : you clearly didn&#8217;t understand my argument for why we&#8217;re doing this, because you seem to remain unconvinced. go read my email again and then i&#8217;m putting you in timeout so you can think about what you&#8217;ve done.
-        <br>
-        <b>
-          dreev
-        </b>
-        : [pastes this in the html source
-        <a
-          id=\\"USEMENTION1\\"
-          href=\\"#USEMENTION\\"
-        >
-          [1]
-        </a>
-        so we can show it to people in
-        <code>
-          <%=(Time.now+86400*365.25).strftime('%Y')%>
-          </%=(Time.now+86400*365.25).strftime('%Y')%>
-        </code>
-        who see &#8220;
-        <code>
-          <%=Time.now.strftime('%Y')%>
-          </%=Time.now.strftime('%Y')%>
-        </code>
-        &#8221; and think we don&#8217;t know how to insert a dynamic date]
-        <br>
-        PS: Bee&#8217;s argument in the email with the user who called us out:
-        <br>
-        I think Danny had some convoluted reasoning for why we shouldn&#8217;t just make that programmatic, like &#8220;it&#8217;s a signal that the site is still active&#8221;, but I think that&#8217;s kind of incorrect &#8212; anyone writing a website can make the copyright date be programmatically generated, so it doesn&#8217;t actually serve as any indicator of currency, it can only serve as a anti-activity signal by going out of date.
-        <br>
-      </p>
-    </blockquote>
-  </details>
+  &lt;details style=\\"cursor:pointer\\"&gt;
+&lt;summary&gt;The dialog, circa 2017&lt;/summary&gt;
+  <blockquote>
+    <p>
+      <b>
+        dreev
+      </b>
+      : boo to automatically filling in copyright! that&#8217;s how we prove we&#8217;re still at the wheel :)
+      <br>
+      <b>
+        andy
+      </b>
+      : it only proves that if it&#8217;s publicly visible how the copyright is being created
+      <br>
+      <b>
+        andy
+      </b>
+      : like if beeminder were open source. otherwise no one can tell the difference
+      <br>
+      <b>
+        dreev
+      </b>
+      : actually i think when the copyright changes at a random time in january, that&#8217;s a good signal that you&#8217;re at the wheel&#8230;
+      <br>
+      <b>
+        dreev
+      </b>
+      : if it changes at the stroke of midnight then obviously you cheated and could all be dead or on a beach somewhere
+      <br>
+      <b>
+        bee
+      </b>
+      : but everyone cheats
+      <br>
+      <b>
+        bee
+      </b>
+      : so it can only be an indicator in our absence
+      <br>
+      <b>
+        dreev
+      </b>
+      : boo to cheaters
+      <br>
+      <b>
+        adam?
+      </b>
+      : it&#8217;s the best way to score GitHub points too: open
+      <code>
+        2017
+      </code>
+      -&gt;
+      <code>
+        2018
+      </code>
+      pull requests
+      <br>
+      <b>
+        andy
+      </b>
+      : but who is going around checking exactly when copyrights change??
+      <br>
+      <b>
+        andy
+      </b>
+      : bots, that&#8217;s who
+      <br>
+      <b>
+        andy
+      </b>
+      : okay nevermind I&#8217;m on board with this as a precaution to confuse future overlords
+      <br>
+      <b>
+        bee
+      </b>
+      : anyhow, it also makes us look stupid. like we don&#8217;t know how to use string format, and causes people to write us emails like &#8220;Umm. so your copyright is out of date. I don&#8217;t know what language you guys use, but in php it&#8217;s really easy you..&#8221;
+      <br>
+      <b>
+        andy
+      </b>
+      : maybe that&#8217;s a positive, identify users who can write code
+      <br>
+      <b>
+        andy
+      </b>
+      : &#8220;oh, thanks! here&#8217;s another nerd sniping problem. can you rewrite beebrain?&#8221;
+      <br>
+      <b>
+        dreev
+      </b>
+      : clearly the optimal solution is to set it to
+      <code>
+        year(now-random(5,10)*86400)
+      </code>
+      :)
+      <br>
+      <b>
+        dreev
+      </b>
+      : (simulates a fairly attentive human at the wheel updating the copyright 5-10 days after new years)
+      <br>
+      <b>
+        dreev
+      </b>
+      : i can&#8217;t tell what fraction serious i am about doing it manually. i guess if, counterfactually, we ever weren&#8217;t at the wheel it would be lies and that feels icky
+      <br>
+      <b>
+        dreev
+      </b>
+      : like there&#8217;s something inherently dishonest about literally being like &#8220;copyright&#8230; uh, whatever year it is when you&#8217;re reading this!&#8221;
+      <br>
+      <b>
+        bee
+      </b>
+      : ok, so part of the checklist for shuttering beeminder is &#8220;update footer copyright date&#8221;
+      <br>
+      <b>
+        bee
+      </b>
+      : you clearly didn&#8217;t understand my argument for why we&#8217;re doing this, because you seem to remain unconvinced. go read my email again and then i&#8217;m putting you in timeout so you can think about what you&#8217;ve done.
+      <br>
+      <b>
+        dreev
+      </b>
+      : [pastes this in the html source
+      <a
+        id=\\"USEMENTION1\\"
+        href=\\"#USEMENTION\\"
+      >
+        [1]
+      </a>
+      so we can show it to people in
+      <code>
+        &lt;%=(Time.now+86400*365.25).strftime('%Y')%&gt;
+      </code>
+      who see &#8220;
+      <code>
+        &lt;%=Time.now.strftime('%Y')%&gt;
+      </code>
+      &#8221; and think we don&#8217;t know how to insert a dynamic date]
+      <br>
+      PS: Bee&#8217;s argument in the email with the user who called us out:
+      <br>
+      I think Danny had some convoluted reasoning for why we shouldn&#8217;t just make that programmatic, like &#8220;it&#8217;s a signal that the site is still active&#8221;, but I think that&#8217;s kind of incorrect &#8212; anyone writing a website can make the copyright date be programmatically generated, so it doesn&#8217;t actually serve as any indicator of currency, it can only serve as a anti-activity signal by going out of date.
+      <br>
+    </p>
+  </blockquote>
+  &lt;/details&gt;
   <p>
   </p>
 </div>
@@ -27552,7 +27513,7 @@ It also helps get replies out quicker, once you&#8217;re used to it.
 This is all standing the test of time beautifully but one thing we&#8217;ve noticed is that just because something sounds sweet and friendly in your head doesn&#8217;t mean there aren&#8217;t
   <a
     href=\\"https://www.youtube.com/watch?v=naleynXS7yo\\"
-    title=\\"Key & Peele video: Text Message Confusion\\"
+    title=\\"Key &amp; Peele video: Text Message Confusion\\"
   >
     other ways to read it
   </a>
@@ -27721,7 +27682,8 @@ First question: What is this goal actually measuring?
     that sh
   </strike>
   it.
-  You could use
+ 
+You could use
   <a
     href=\\"http://blog.beeminder.com/gmailzero\\"
     title=\\"Beeminder's Gmail integration for beeminding your inbox\\"
@@ -27856,7 +27818,6 @@ I found that there were ways to hack my mind and think differently, and that rel
   height=\\"315\\"
   src=\\"https://www.youtube.com/embed/bM06o26PCDQ\\"
   frameborder=\\"0\\"
-  allowfullscreen
 >
 </iframe>
 <p>
@@ -27883,7 +27844,7 @@ I hope it has been helpful, entertaining &#8212; or ideally, both.
 </p>
 <p>
   <em>
-    Neil Hughes is the author of &#8216;Walking on Custard & the Meaning of Life: A Guide for Anxious Humans&#8217;. 
+    Neil Hughes is the author of &#8216;Walking on Custard &amp; the Meaning of Life: A Guide for Anxious Humans&#8217;. 
 You can find him at
     <a
       href=\\"http://www.walkingoncustard.com\\"
@@ -28480,7 +28441,7 @@ And of course there are many night owls who want to define their day to end at, 
 <p>
   <a href=\\"http://xkcd.com/1425\\">
     <img
-      style=\\"float: right; padding: 0 0 0 15px;\\"
+      style=\\"float:right;padding:0 0 0 15px\\"
       alt=\\"xkcd #1425\\"
       title=\\"In the 60s, Marvin Minsky assigned a couple of undergrads to spend the summer programming a computer to use a camera to identify objects in a scene. He figured they'd have the problem solved by the end of the summer. Half a century later, we're still working on it.\\"
       src=\\"http://imgs.xkcd.com/comics/tasks.png\\"
@@ -29135,7 +29096,7 @@ It mostly serves to illustrate there there isn&#8217;t a very realistic undo.
 We offer it as a cautionary tale!
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <p>
     <center>
       ⌇&nbsp;&nbsp;
@@ -29185,36 +29146,40 @@ We offer it as a cautionary tale!
   <p>
   </p>
   <p>
-    <ol>
-      <li>
-        We convert your lifetime premium plan to a literal million dollars of premium credit which is
-        <i>
-          almost
-        </i>
-        the same thing but not quite. 
+  </p>
+  <ol>
+    <li>
+      We convert your lifetime premium plan to a literal million dollars of premium credit which is
+      <i>
+        almost
+      </i>
+      the same thing but not quite. 
 The &#8220;not quite&#8221; part
-        <i>
-          isn&#8217;t
-        </i>
-        that you might use up a literal million dollars of credit &#8212; and in the event of hyperinflation or curing death or whatever, we could and would just make it a billion or a trillion. 
+      <i>
+        isn&#8217;t
+      </i>
+      that you might use up a literal million dollars of credit &#8212; and in the event of hyperinflation or curing death or whatever, we could and would just make it a billion or a trillion. 
 Rather the &#8220;not quite&#8221; is that, the way we&#8217;ve implemented premium credit, it still charges $1 every month or year. 
 We do that to have a better paper trail and also to just confirm that your payment method still works. 
 We add the dollar back to your premium credit (and even pay interest on that balance!) so it&#8217;s all exquisitely fair. 
 Except with an essentially infinite amount of credit it&#8217;s not fair because you won&#8217;t ever get those $1 charges back. 
 So this offer would be to literally pay you a lump sum now that more than makes up for that perpetuity of $1 charges.
-      </li>
-    </ol>
-  </p>
+      <p>
+      </p>
+    </li>
+  </ol>
   <p>
-    <ol start=\\"2\\">
-      <li>
-        We give you a lump sum of money to fully buy back your lifetime plan. 
+  </p>
+  <ol start=\\"2\\">
+    <li>
+      We give you a lump sum of money to fully buy back your lifetime plan. 
 Please do not feel pressured to take this option! 
 And if you do, please only agree to a lump sum that feels genuinely fair. 
 After us buying back your lifetime plan you&#8217;d go back to paying monthly or yearly like normal.
-      </li>
-    </ol>
-  </p>
+      <p>
+      </p>
+    </li>
+  </ol>
   <p>
   </p>
   <p>
@@ -31620,7 +31585,7 @@ exports[`body > post dogfood hash 1009594f5c4045f855467c743f180f54 1`] = `
   >
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h3 id=\\"math\\">
     <center style=\\"color:red\\">
       UPDATE 2021:
@@ -31653,92 +31618,90 @@ In fact, when we were paying those pledges as dogfood bounties to users it was k
     PS: We floated this among Beeminder superfans and they nearly universally thought it sounded totally fine.
     <br>
   </p>
-  <details style=\\"cursor: pointer\\">
-    <summary>
-      Excerpts from the debate with the dissenters
-    </summary>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-      <b>
-        ZM
-      </b>
-      : 
+  &lt;details style=\\"cursor:pointer\\"&gt;
+&lt;summary&gt;Excerpts from the debate with the dissenters&lt;/summary&gt;
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    <b>
+      ZM
+    </b>
+    : 
 The bounties keep you honest! 
 They have value emotionally and in terms of optics.
 This feels like one of those beautiful unique Beeminder scrupulous charms lost to the juggernaut of corporatization.
 Also there&#8217;s a huge difference between &#8220;this pledge goes to someone else&#8221; and &#8220;this pledge goes to my own company&#8221;.
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-      <b>
-        DR
-      </b>
-      : 
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    <b>
+      DR
+    </b>
+    : 
 First of all, I don&#8217;t feel like honesty/dishonesty comes into play. 
 We&#8217;re at least striving to be 100% transparent about it all.
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-      As for that huge difference, it&#8217;s a fair point but note the surprisingly high fraction of a payment that gets lost to fees and taxes in the process of coming back to us as dividends. 
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    As for that huge difference, it&#8217;s a fair point but note the surprisingly high fraction of a payment that gets lost to fees and taxes in the process of coming back to us as dividends. 
 Even if we 100% identify with the company &#8212; like every dollar of benefit to the company brings us the same happiness as a dollar to ourselves &#8212; we lose a lot of money on derailments paid to Beeminder.
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-      Finally, I don&#8217;t feel like there&#8217;s much of a slippery slope here or that we&#8217;re remotely selling out or anything. 
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    Finally, I don&#8217;t feel like there&#8217;s much of a slippery slope here or that we&#8217;re remotely selling out or anything. 
 I mean, strictly speaking, we&#8217;re holding ourselves to the exact same standards, using Beeminder literally exactly the way users do. 
 Just that going beyond that to try to replicate the feeling of where the money ends up &#8212; that&#8217;s just more work than it&#8217;s worth. 
 It&#8217;s not ideal, but not exactly damaging to not do that. 
 Some superfans feel a real compulsion to derail enough to be contributing fairly to Beeminder (&hearts;) and that&#8217;s a similar kind of sting dilution and I think the answer is that we just accept that the sting isn&#8217;t pure sting and it&#8217;s ok, it still works.
-    </p>
+  </p>
+  <p>
+  </p>
+  <h4>
+    Compromise?
+  </h4>
+  <p>
+    Madge Castle also disagrees with us on this and has the following prudent proposal:
+  </p>
+  <blockquote>
     <p>
+      What about mitigating the logistical burden by just automatically applying the bounties as premium credit for people?
     </p>
-    <h4>
-      Compromise?
-    </h4>
-    <p>
-      Madge Castle also disagrees with us on this and has the following prudent proposal:
-    </p>
-    <blockquote>
-      <p>
-        What about mitigating the logistical burden by just automatically applying the bounties as premium credit for people?
-      </p>
-    </blockquote>
-    <p>
-    </p>
-    <p>
-      That almost feels worse, since that&#8217;s a classic corporate way to pretend to be paying something when you&#8217;re not really. 
+  </blockquote>
+  <p>
+  </p>
+  <p>
+    That almost feels worse, since that&#8217;s a classic corporate way to pretend to be paying something when you&#8217;re not really. 
 Especially when premium credit is worthless to
-      <a
-        href=\\"https://blog.beeminder.com/deathtolife/\\"
-        title=\\"Death To Lifetime Plans\\"
-      >
-        lifetime folks
-      </a>
-      . 
+    <a
+      href=\\"https://blog.beeminder.com/deathtolife/\\"
+      title=\\"Death To Lifetime Plans\\"
+    >
+      lifetime folks
+    </a>
+    . 
 We could make a new kind of credit &#8212; derail credit &#8212; but that&#8217;s a can of worms.
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-      Bottom line, the whole dogfood bounty thing is so fraught and messy in so many ways that I feel pretty fine about killing it, despite the wistful little pang.
-    </p>
-    <p>
-    </p>
-  </details>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    Bottom line, the whole dogfood bounty thing is so fraught and messy in so many ways that I feel pretty fine about killing it, despite the wistful little pang.
+  </p>
+  <p>
+  </p>
+  &lt;/details&gt;
   <p>
     <br>
     PPS: But we&#8217;re keeping it for our big meta goals: User-Visible Improvements, the blog, and infrastructure improvements.
@@ -32299,7 +32262,8 @@ For writing a book, beemind the time spent writing, or the
 </h2>
 <p>
   This looks like someone creating 93 goals in the first day of signing up with Beeminder.
-  You can certainly turn Beeminder into a nannybot that tells you what to do with every hour of every day.
+ 
+You can certainly turn Beeminder into a nannybot that tells you what to do with every hour of every day.
 But there&#8217;s plenty of ways this could go wrong.
 </p>
 <p>
@@ -32844,174 +32808,172 @@ You won&#8217;t regret it, or your money back.
 </p>
 <p>
   If you were already premium, this obviously doesn&#8217;t matter so much.
-And thanks for your support, we love you!
-  <3< p>
-    <h3>
-      3) Breaks are weird
-    </h3>
-    <p>
-      I couldn&#8217;t figure out a flowing witty transition into this one, but
+And thanks for your support, we love you! &lt;3
+</p>
+<h3>
+  3) Breaks are weird
+</h3>
+<p>
+  I couldn&#8217;t figure out a flowing witty transition into this one, but
 on a do-more goal, you set the rate to zero for the time period you&#8217;ll be on vacation.
 Do-less goals don&#8217;t work like that.
 The best way to take a break on a do-less goal is to turn off the PPRs before you leave, and then&#8230; let it sit.
 When you come back,
-      <a
-        href=\\"https://blog.beeminder.com/ratchet/\\"
-        title=\\"Road Ratchet Revamp Redresses “Ratcheting Breaks Breaks” Bug -- this post, great as it is, might be a bit much if you just want to know what ratcheting is. You could consult our FAQ or our glossary for that.\\"
-      >
-        ratchet
-      </a>
-      your safety buffer away and turn the PPRs back on to get back on track.
+  <a
+    href=\\"https://blog.beeminder.com/ratchet/\\"
+    title=\\"Road Ratchet Revamp Redresses “Ratcheting Breaks Breaks” Bug -- this post, great as it is, might be a bit much if you just want to know what ratcheting is. You could consult our FAQ or our glossary for that.\\"
+  >
+    ratchet
+  </a>
+  your safety buffer away and turn the PPRs back on to get back on track.
 With a do-less zero goal, you won&#8217;t have built up any safety buffer, of course &#8212; but it might be too easy to forget about ticking that PPR box on again&#8230;
 Do-more goals, with their strictly defined (and visible!) break boundaries, don&#8217;t have this problem.
 The goal always works the same way, and you don&#8217;t have to juggle your settings twice to schedule one weekend trip.
-    </p>
-    <p>
-      <em>
-        (Another update from the future:
+</p>
+<p>
+  <em>
+    (Another update from the future:
 There&#8217;s now another approach to breaks on do-less goals if you&#8217;re willing to use the 
 road editor.
 Namely, insert a vertical segment at the start of your break, the height of which you math out to be the sum of the PPRs that will accumulate during your break.)
-      </em>
-    </p>
-    <p>
-      (end ranting)
-    </p>
-    <h2>
-      The Do-More Solution
-    </h2>
-    <p>
-      A do-never using a do-more means 7 days per week.
+  </em>
+</p>
+<p>
+  (end ranting)
+</p>
+<h2>
+  The Do-More Solution
+</h2>
+<p>
+  A do-never using a do-more means 7 days per week.
 Just create a do-more goal to
-      <em>
-        not
-      </em>
-      open the candy drawer with a rate of 7 per week.
+  <em>
+    not
+  </em>
+  open the candy drawer with a rate of 7 per week.
 Every day you don&#8217;t open the candy drawer, you enter a 1.
 Every day will be a beemergency day, and Beeminder will send you reminders at the time of your choosing.
 Set the reminders to start at 2:30pm, right about when you start getting bored and wandering over to the candy drawer!
 Everything is simpler!
-    </p>
-    <p>
-      <em>
-        (One more note from the future to remind you that picking when your reminders start is now equally simple in the do-more and do-less version, but reminders in general do still work better for do-more goals than for do-less goals.
+</p>
+<p>
+  <em>
+    (One more note from the future to remind you that picking when your reminders start is now equally simple in the do-more and do-less version, but reminders in general do still work better for do-more goals than for do-less goals.
 We&#8217;re working on that!)
-      </em>
-    </p>
-    <p>
-      You&#8217;re still not eating candy, you have to enter your data every day, everything you&#8217;re achieving is the same, but Beeminder is better at reminding you this way, and you&#8217;re more likely to achieve your candy goal.
-    </p>
-    <h2>
-      When to Do-Less
-    </h2>
-    <p>
-      As always, I caveat everything I just said
-      <a
-        class=\\"footnote\\"
-        id=\\"CAVEAT1\\"
-        href=\\"#CAVEAT\\"
-      >
-        [5]
-      </a>
-      by reminding you this is all my opinion, heavily biased by undoing many derailments and explaining this (in fewer words) many times over the years. 
+  </em>
+</p>
+<p>
+  You&#8217;re still not eating candy, you have to enter your data every day, everything you&#8217;re achieving is the same, but Beeminder is better at reminding you this way, and you&#8217;re more likely to achieve your candy goal.
+</p>
+<h2>
+  When to Do-Less
+</h2>
+<p>
+  As always, I caveat everything I just said
+  <a
+    class=\\"footnote\\"
+    id=\\"CAVEAT1\\"
+    href=\\"#CAVEAT\\"
+  >
+    [5]
+  </a>
+  by reminding you this is all my opinion, heavily biased by undoing many derailments and explaining this (in fewer words) many times over the years. 
 I fully admit that I wrote this post so that I could send it to people in support replies and stop reinventing the wheel.
-    </p>
-    <p>
-      Do-less goals aren&#8217;t all bad &#8212; it&#8217;s just this
-      <em>
-        one
-      </em>
-      particular use case that Beeminder does not handle as smartly as the rest.
+</p>
+<p>
+  Do-less goals aren&#8217;t all bad &#8212; it&#8217;s just this
+  <em>
+    one
+  </em>
+  particular use case that Beeminder does not handle as smartly as the rest.
 Do-less goals are great when you actually want to do
-      <em>
-        less
-      </em>
-      of something: 
+  <em>
+    less
+  </em>
+  of something: 
 cutting your coffee intake from 2 cups a day to 1, 
 limiting yourself to 15 minutes a day on Twitter, 
 ensuring that you don&#8217;t spend more than $100/month on work lunches.
 If that&#8217;s your goal, do-less away!
 But if you&#8217;re really trying to do
-      <em>
-        never
-      </em>
-      , try starting a do-more instead.
-    </p>
-    <p>
-      <br>
-      &nbsp;
-      <br>
-    </p>
-    <h2>
-      Footnotes
-    </h2>
-    <p>
-      <a
-        class=\\"footnote\\"
-        id=\\"ANY\\"
-        href=\\"#ANY1\\"
-      >
-        [1]
-      </a>
-      Really, you could use any goal type to do it, if you&#8217;re a serious Beeminder junkie/hacker.
+  <em>
+    never
+  </em>
+  , try starting a do-more instead.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"ANY\\"
+    href=\\"#ANY1\\"
+  >
+    [1]
+  </a>
+  Really, you could use any goal type to do it, if you&#8217;re a serious Beeminder junkie/hacker.
 That&#8217;s why Beeminder is so fun, once you&#8217;re completely
-      <s>
-        indoctrinated
-      </s>
-      onboarded.
-    </p>
-    <p>
-      <a
-        class=\\"footnote\\"
-        id=\\"LOOPHOLE\\"
-        href=\\"#LOOPHOLE1\\"
-      >
-        [3]
-      </a>
-      You don&#8217;t have to stay subscribed forever though.
+  <s>
+    indoctrinated
+  </s>
+  onboarded.
+</p>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"LOOPHOLE\\"
+    href=\\"#LOOPHOLE1\\"
+  >
+    [3]
+  </a>
+  You don&#8217;t have to stay subscribed forever though.
 You can subscribe for one month, create all the do-less goals your heart desires, and then immediately cancel.
 Approved loophole!
-    </p>
-    <p>
-      <a
-        class=\\"footnote\\"
-        id=\\"JOKE\\"
-        href=\\"#JOKE1\\"
-      >
-        [4]
-      </a>
-      Just kidding!!! 
+</p>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"JOKE\\"
+    href=\\"#JOKE1\\"
+  >
+    [4]
+  </a>
+  Just kidding!!! 
 Because you didn&#8217;t have to pay for it!
-    </p>
-    <p>
-      <a
-        class=\\"footnote\\"
-        id=\\"CAVEAT\\"
-        href=\\"#CAVEAT1\\"
-      >
-        [5]
-      </a>
-      The number of interesting goals, configurations, and hacks people come up with to make their Beeminder goals work for them continues to astound me.
+</p>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"CAVEAT\\"
+    href=\\"#CAVEAT1\\"
+  >
+    [5]
+  </a>
+  The number of interesting goals, configurations, and hacks people come up with to make their Beeminder goals work for them continues to astound me.
 For those of you who love and rely on your do-less zero goals, keep at it!
-    </p>
-    <p>
-      <br>
-      &nbsp;
-      <br>
-    </p>
-    <p>
-      <em>
-        Image credit:
-        <a
-          href=\\"http://dreev.es/eli5\\"
-          title=\\"Faire doing a Beeminder explain-like-I&#39;m-5 with her then 5-year-old brother\\"
-        >
-          Faire Soule-Reeves
-        </a>
-        .
-      </em>
-    </p>
-  </3<>
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  <em>
+    Image credit:
+    <a
+      href=\\"http://dreev.es/eli5\\"
+      title=\\"Faire doing a Beeminder explain-like-I&#39;m-5 with her then 5-year-old brother\\"
+    >
+      Faire Soule-Reeves
+    </a>
+    .
+  </em>
 </p>
 "
 `;
@@ -33364,7 +33326,8 @@ Do anything that gets you moving because any extra calories burned will help.
 <p>
   Whatever you do, don&#8217;t feel overwhelmed by the information here!
 Take one call-to-action away with you and work on it for a while.
-  Don&#8217;t expect to change multiple habits at once.
+ 
+Don&#8217;t expect to change multiple habits at once.
 Take one tip and experiment with incorporating it into your life.
 Come back later and try another.
 Also, take it day by day, thinking about what you can do to go in the right direction today.
@@ -33529,7 +33492,6 @@ Stepping on the scale.
     <img
       src=\\"https://www.beeminder.com/chelsea/stepons.png\\"
       alt=\\"Chelsea scale-stepping goal\\"
-      ).
       title=\\"Graph of Chelsea's scale-stepping progress\\"
       class=\\"aligncenter\\"
     >
@@ -33546,7 +33508,7 @@ Stepping on the scale.
   every day I&#8217;m at home.
 I&#8217;ve got a Beeminder weight goal too, but it&#8217;s got a flat road and a $0 pledge, so I&#8217;m at no risk of paying up.
 This didn&#8217;t inspire me to lose much weight, but it did prevent a god-awful &#8220;surprise! you&#8217;ve gained 10 pounds since you last stepped on this dusty, abandoned scale 4 months ago&#8221; moment.
-A year&#8217;s history of weigh-ins automatically recorded in both Fitbit & Beeminder and not wasting a $100 scale purchase &#8212; I&#8217;m counting this as a 2016 win!
+A year&#8217;s history of weigh-ins automatically recorded in both Fitbit &amp; Beeminder and not wasting a $100 scale purchase &#8212; I&#8217;m counting this as a 2016 win!
 </p>
 <p>
   Case Study 3: 
@@ -34644,7 +34606,7 @@ Before we lose all but the hardest core math and finance nerds, just try it. The
   frameborder=\\"0\\"
   border=\\"0\\"
   cellspacing=\\"0\\"
-  style=\\"margin-left:0px;\\"
+  style=\\"margin-left:0px\\"
   scrolling=\\"auto\\"
 >
 </iframe>
@@ -34841,7 +34803,6 @@ I use Beeminder and I am here to tell you about it.
   Here is a booklet I made in first grade (I am now in third grade):
 </p>
 <div class=\\"slideshow\\">
-  <!--[slideshow id=3]-->
   <img src=\\"/wp-content/gallery/faire-booklet/faire_bbook_0.jpg\\">
   <img src=\\"/wp-content/gallery/faire-booklet/faire_bbook_00.jpg\\">
   <img src=\\"/wp-content/gallery/faire-booklet/faire_bbook_1.jpg\\">
@@ -34857,7 +34818,6 @@ I use Beeminder and I am here to tell you about it.
   height=\\"315\\"
   src=\\"https://www.youtube.com/embed/jB62AyZ6gHk\\"
   frameborder=\\"0\\"
-  allowfullscreen
 >
 </iframe>
 <p>
@@ -34878,7 +34838,7 @@ I use Beeminder and I am here to tell you about it.
   >
     <img
       src=\\"http://blog.beeminder.com/wp-content/uploads/2015/11/faire_german.png\\"
-      style=\\"float: right; padding: 0 0 0 15px;\\"
+      style=\\"float:right;padding:0 0 0 15px\\"
     >
   </a>
 </p>
@@ -34909,7 +34869,7 @@ If it weren&#8217;t for Beeminder telling me that I would derail, I would just g
   >
     <img
       src=\\"http://blog.beeminder.com/wp-content/uploads/2015/11/faire_sugar.png\\"
-      style=\\"float: right; padding: 0 0 0 15px;\\"
+      style=\\"float:right;padding:0 0 0 15px\\"
     >
   </a>
 </p>
@@ -34925,11 +34885,10 @@ Now I can just check my phone and the Beeminder app tells me how much sugar I ca
 <p>
   <a
     href=\\"http://1.bp.blogspot.com/-Fs-HJrMPOvA/T2HwNYKReeI/AAAAAAAAAzA/UqX4ZQtAZfE/s1600/tumblr_lpa0582k8T1qmqpiro1_500.jpg\\"
-    alt=\\"The full text of the poem\\"
     title=\\"Here's that poem for you if you want to re-read it.\\"
   >
     <img
-      style=\\"float: right; padding: 0 0 0 15px;\\"
+      style=\\"float:right;padding:0 0 0 15px\\"
       alt=\\"Jimmy Jet qua TV Set\\"
       title=\\"And antennae grew out of his hair.\\"
       src=\\"http://blog.beeminder.com/wp-content/uploads/2015/11/jimmyjet.jpg\\"
@@ -34976,7 +34935,7 @@ My parents have been trying to program it so you can beemind more than one game 
   >
     <img
       src=\\"http://blog.beeminder.com/wp-content/uploads/2015/11/faire_mustdo.png\\"
-      style=\\"float: right; padding: 0 0 0 15px;\\"
+      style=\\"float:right;padding:0 0 0 15px\\"
     >
   </a>
 </p>
@@ -35002,7 +34961,7 @@ Sometimes it is fun to do my must-dos, because if I have been feeling sad lately
   >
     <img
       src=\\"http://blog.beeminder.com/wp-content/uploads/2015/11/faire_pushups.png\\"
-      style=\\"float: right; padding: 0 0 0 15px;\\"
+      style=\\"float:right;padding:0 0 0 15px\\"
     >
   </a>
 </p>
@@ -35021,7 +34980,7 @@ Something interesting is that you can lay your phone on the ground and touch you
   >
     <img
       src=\\"http://blog.beeminder.com/wp-content/uploads/2015/11/faire_weight.png\\"
-      style=\\"float: right; padding: 0 0 0 15px;\\"
+      style=\\"float:right;padding:0 0 0 15px\\"
     >
   </a>
 </p>
@@ -35046,7 +35005,7 @@ When I step on it and all the data is collected, then it will automatically ente
   >
     <img
       src=\\"http://blog.beeminder.com/wp-content/uploads/2015/11/faire_reading.png\\"
-      style=\\"float: right; padding: 0 0 0 15px;\\"
+      style=\\"float:right;padding:0 0 0 15px\\"
     >
   </a>
 </p>
@@ -35185,7 +35144,8 @@ Especially funny is that instead we&#8217;re doing the diametric opposite and bl
 </p>
 <p>
   Our goal here is to explain what we were thinking there and convince you
-  that the mere idea of fake data is almost literally horrifying.
+ 
+that the mere idea of fake data is almost literally horrifying.
 We have a particular set of community norms to cultivate.
 In particular we&#8217;re aiming for a norm where fake data is so gross that it goes without saying that no one would even consider it.
 </p>
@@ -36427,7 +36387,7 @@ also from the Beeminder folks.
   </a>
   (counted automatically using the
   <a
-    href=\\"https://play.google.com/store/apps/details?id=net.phlam.android.clockworktomato&hl=en_US\\"
+    href=\\"https://play.google.com/store/apps/details?id=net.phlam.android.clockworktomato&amp;hl=en_US\\"
     title=\\"Android app\\"
   >
     Clockwork Tomato
@@ -37097,7 +37057,7 @@ We&#8217;re probably overdue and in fact could cough that $1000 up many times an
 <p>
   <img
     src=\\"http://blog.beeminder.com/wp-content/uploads/2016/11/beefive.png\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     class=\\"aligncenter\\"
     alt=\\"Bee offering a high five\\"
     title=\\"Hi, five\\"
@@ -38361,7 +38321,7 @@ exports[`body > post focus hash f1aba6c72f9d665d65bf34dc0fe2bbc9 1`] = `
 <p>
   Since we like letting you all peek behind the curtain of Beeminder, let&#8217;s dive in with this internal strategy memo that our beeloved Queen Bee sent to the team last month, reproduced here verbatim:
 </p>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <p>
   </p>
   <p>
@@ -38412,27 +38372,29 @@ For now it just means that when we are considering decisions, like &#8220;how ma
   <p>
   </p>
   <p>
-    <ol>
-      <li>
-        Most people should be happy on the free plan; we shouldn&#8217;t push or guilt people into going premium. 
+  </p>
+  <ol>
+    <li>
+      Most people should be happy on the free plan; we shouldn&#8217;t push or guilt people into going premium. 
 (See section 5, bullet 2 of our 
 &#8220;
-        <a
-          href=\\"https://help.beeminder.com/article/32-what-do-i-do-first\\"
-          title=\\"Excerpt: Creating unlimited goals requires a premium plan, and so do certain goal types like odometers. But probably don't jump straight to a premium plan! Core Beeminder is very powerful. And you want to avoid Beeminder burnout.\\"
-        >
-          What to do first?
-        </a>
-        &#8221; 
+      <a
+        href=\\"https://help.beeminder.com/article/32-what-do-i-do-first\\"
+        title=\\"Excerpt: Creating unlimited goals requires a premium plan, and so do certain goal types like odometers. But probably don't jump straight to a premium plan! Core Beeminder is very powerful. And you want to avoid Beeminder burnout.\\"
+      >
+        What to do first?
+      </a>
+      &#8221; 
 help page.)
-      </li>
-      <li>
-        More free goals, more generosity to people on the free plan.
-      </li>
-      <li>
-        New features go in the free plan.
-      </li>
-    </ol>
+    </li>
+    <li>
+      More free goals, more generosity to people on the free plan.
+    </li>
+    <li>
+      New features go in the free plan.
+    </li>
+  </ol>
+  <p>
   </p>
   <p>
   </p>
@@ -38594,7 +38556,7 @@ Though if we&#8217;d gone with actual consensus, the answer would&#8217;ve been 
   <img
     src=\\"https://blog.beeminder.com/wp-content/uploads/2021/01/why-not-both.png\\"
     width=\\"200px\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     class=\\"aligncenter\\"
     alt=\\"Why not both? (the meme-y gif)\\"
     title=\\"Bi-winning, to quote Vi Hart\\"
@@ -38963,7 +38925,7 @@ We&#8217;ll handle the rest.
 </p>
 <center>
   <a href=\\"https://beeminder.com/focusmate\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Beemind your focus, mates!
     </span>
   </a>
@@ -39490,7 +39452,7 @@ This current version does do panning and zooming, but it is
   , and there is a ton of work to do on the details still, so we are far from being ready to deploy it as a replacement for the static graph images. 
 Judge for yourself:
 </p>
-<div style=\\"position:relative;clear:both;height:400px;\\">
+<div style=\\"position:relative;clear:both;height:400px\\">
   <iframe
     src=\\"https://www.beeminder.com/d3example\\"
     name=\\"Beeminder.com\\"
@@ -39499,7 +39461,7 @@ Judge for yourself:
     frameborder=\\"0\\"
     border=\\"0\\"
     cellspacing=\\"0\\"
-    style=\\"margin-left:-40px;-webkit-transform:scale(0.9);-moz-transform:scale(0.9);-o-transform:scale(0.9);transform:scale(0.9);position:absolute; top:-50px;left:-14px;\\"
+    style=\\"margin-left:-40px;-webkit-transform:scale(0.9);-moz-transform:scale(0.9);-o-transform:scale(0.9);transform:scale(0.9);position:absolute;top:-50px;left:-14px\\"
     scrolling=\\"auto\\"
   >
   </iframe>
@@ -39622,7 +39584,7 @@ You guys are the best!
 </h2>
 <p>
   <img
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     alt=\\"Beeminder revenue graph\\"
     title=\\"Beeminder revenue graph\\"
     src=\\"http://blog.beeminder.com/wp-content/uploads/2015/10/brev.png\\"
@@ -39648,11 +39610,7 @@ Ok, putting the rose-colored glasses back on, we seem to be tentatively crushing
   </a>
   :
 </p>
-<script
-  type=\\"text/javascript\\"
-  src=\\"//www.google.com/trends/embed.js?hl=en-US&q=beeminder,+stickk&date=11/2007+97m&cmpt=q&tz=Etc/GMT%2B7&tz=Etc/GMT%2B7&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=500&h=330\\"
->
-</script>
+&lt;script&gt;&lt;/script&gt;
 <p>
   We&#8217;re not being serious about crushing StickK, who continue to make much more money than us.
 In fact, we&#8217;re just delighted to be
@@ -39718,13 +39676,12 @@ You can follow all the excitement, and take our money,
   For some reason my talk about Maniac Weeks is up, but video of Danny&#8217;s talk isn&#8217;t available online yet, so as a topically appropriate consolation prize, here&#8217;s Danny&#8217;s 
 latest Maniac Week attempt from August:
 </p>
-<div style=\\"text-align:center;\\">
+<div style=\\"text-align:center\\">
   <iframe
     width=\\"420\\"
     height=\\"315\\"
     src=\\"https://www.youtube.com/embed/CylCahrKp28\\"
     frameborder=\\"0\\"
-    allowfullscreen
   >
   </iframe>
 </div>
@@ -40315,7 +40272,7 @@ Just go earn more freeCodeCamp points when Beeminder yells at you!
 </p>
 <center>
   <a href=\\"https://www.beeminder.com/freecodecamp\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Beemind your campy coding!
     </span>
   </a>
@@ -40884,15 +40841,12 @@ One I&#8217;m particularly excited about on the horizon is the
 <p>
   Ok, here&#8217;s my now slightly outdated talk!
 </p>
-<div style=\\"text-align:center;\\">
+<div style=\\"text-align:center\\">
   <iframe
     src=\\"//player.vimeo.com/video/149086548\\"
     width=\\"500\\"
     height=\\"281\\"
     frameborder=\\"0\\"
-    webkitallowfullscreen
-    mozallowfullscreen
-    allowfullscreen
   >
   </iframe>
 </div>
@@ -41372,7 +41326,8 @@ But maybe he likes screaming at people? In which case maybe the status quo is ju
   Anyway, I digress. 
 We were talking recently about doing experiments on all of you. 
 Like na[oops, no, we are being told in no uncertain terms that we cannot make this joke]!
-  In particular we were talking about the trade-off between expected value of any particular experiment and expected cost.
+ 
+In particular we were talking about the trade-off between expected value of any particular experiment and expected cost.
 If something has a small chance of having a large effect, but it&#8217;s cheap and fast to do, then why not try it out?
 </p>
 <p>
@@ -41416,70 +41371,68 @@ These are all
 But they&#8217;re all pretty high cost to implement.
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
-  <details style=\\"cursor: pointer\\">
-    <summary>
-      Sidebar on the ideal solution to people signing up for Beeminder and then failing to create a goal
-    </summary>
-    <p>
-    </p>
-    <p>
-      (Besides improvements to the goal creation process itself &#8212; also key!)
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-      We&#8217;ve internally been calling this Cantor&#8217;s Compromise: 
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
+  &lt;details style=\\"cursor:pointer\\"&gt;
+&lt;summary&gt;Sidebar on the ideal solution to people signing up for Beeminder and then failing to create a goal&lt;/summary&gt;
+  <p>
+  </p>
+  <p>
+    (Besides improvements to the goal creation process itself &#8212; also key!)
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    We&#8217;ve internally been calling this Cantor&#8217;s Compromise: 
 You have to create a goal as part of creating a Beeminder account, and if you don&#8217;t have something in mind yet then the mandated goal is a
-      <a
-        href=\\"https://blog.beeminder.com/metamind/\\"
-        title=\\"Beeminder ♥ Beeminder: Introducing the Meta Integration\\"
-      >
-        metaminder goal
-      </a>
-      to add at least one datapoint per week across your other Beeminder goals. 
+    <a
+      href=\\"https://blog.beeminder.com/metamind/\\"
+      title=\\"Beeminder ♥ Beeminder: Introducing the Meta Integration\\"
+    >
+      metaminder goal
+    </a>
+    to add at least one datapoint per week across your other Beeminder goals. 
 As with the current gateway drug commitment device, that also makes for a one-week countdown to get your first goal created.
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-      Bigger picture, we want to give people the tools to solve their real-world
-      <a
-        href=\\"https://blog.beeminder.com/incentalign/\\"
-        title=\\"Beeminder blog post on incentive alignment. We used to commonly say 'akrasia' and have lately been preferring the term 'incentive-misalignment'.\\"
-      >
-        incentive-misalignment
-      </a>
-      and if the gateway drug commitment device ends up feeling aligned (haha) with that then maybe a meta-goal can be even more aligned. 
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    Bigger picture, we want to give people the tools to solve their real-world
+    <a
+      href=\\"https://blog.beeminder.com/incentalign/\\"
+      title=\\"Beeminder blog post on incentive alignment. We used to commonly say 'akrasia' and have lately been preferring the term 'incentive-misalignment'.\\"
+    >
+      incentive-misalignment
+    </a>
+    and if the gateway drug commitment device ends up feeling aligned (haha) with that then maybe a meta-goal can be even more aligned. 
 If done right, which is a huge if, then it can serve as an immediate intro to how Beeminder works, including showing the user that they&#8217;re free to hit archive if they don&#8217;t actually want the ongoing commitment to use Beeminder itself.
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-      We don&#8217;t want to force the user to do anything they don&#8217;t want to force themself to do. 
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    We don&#8217;t want to force the user to do anything they don&#8217;t want to force themself to do. 
 We want to hold the new prospective user&#8217;s hand and make sure we harness the burst of motivation that has them creating a Beeminder account. 
 We want to make sure that indecision/procrastination/ADHD doesn&#8217;t snatch them back out of our claws. 
 If we get them set up with a long-term goal for the thing they actually care about, perfect. 
 If they&#8217;re so sold on Beeminder that they&#8217;re game to beemind their beeminding off the bat, also perfect. 
 If they&#8217;re shilly-shallying then we should&#8230; make that very uncomfortable. 
 Possibly to the point of saying you can&#8217;t actually create this Beeminder account without being on the hook in some way.
-    </p>
-    <p>
-    </p>
-    <p>
-    </p>
-    <p>
-      We don&#8217;t know yet how that will play out, just that if we end up loving the gateway drug then maybe we&#8217;ll want to implement it in an even more beeminder-y way.
-    </p>
-    <p>
-    </p>
-  </details>
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    We don&#8217;t know yet how that will play out, just that if we end up loving the gateway drug then maybe we&#8217;ll want to implement it in an even more beeminder-y way.
+  </p>
+  <p>
+  </p>
+  &lt;/details&gt;
 </div>
 <br>
 <p>
@@ -41497,59 +41450,57 @@ And if you&#8217;re not on board with that, you might not be in Beeminder&#8217;
 (In case you are wondering, this is related to the soup nazi because it intentionally turns away a subset of potential customers.)
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
-  <details style=\\"cursor: pointer\\">
-    <summary>
-      More reasons for soup-naziing signups
-    </summary>
-    <p>
-    </p>
-    <p>
-      Why in tarnation would we want to make it harder to sign up? 
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
+  &lt;details style=\\"cursor:pointer\\"&gt;
+&lt;summary&gt;More reasons for soup-naziing signups&lt;/summary&gt;
+  <p>
+  </p>
+  <p>
+    Why in tarnation would we want to make it harder to sign up? 
 Let us count the ways!
-    </p>
-    <ol>
-      <li>
-        Learningness. 
+  </p>
+  <ol>
+    <li>
+      Learningness. 
 For example, our current CAPTCHA asks what is the thing you lose when you derail 
 (hint: it rhymes with the gooey stuff bees make). 
 People commonly skim that and say &#8220;honey&#8221; and then they&#8217;re forced to read it more carefully and in the process we introduce them to a bit of Beeminder lingo and make sure they&#8217;re clear on the commitment device thing.
-      </li>
-      <li>
-        Investment. 
+    </li>
+    <li>
+      Investment. 
 Like the free-form field where we ask you what you intend to beemind. 
 See
-        <a
-          href=\\"https://forum.beeminder.com/t/opinion-goal-creation-friction-is-good/6407\\"
-          title=\\"Opinion: Goal Creation Friction Is Good\\"
-        >
-          Danny&#8217;s thoughts on this in the forum
-        </a>
-        regarding Noom, which embraces intentional signup friction to a truly ridiculous degree.
+      <a
+        href=\\"https://forum.beeminder.com/t/opinion-goal-creation-friction-is-good/6407\\"
+        title=\\"Opinion: Goal Creation Friction Is Good\\"
+      >
+        Danny&#8217;s thoughts on this in the forum
+      </a>
+      regarding Noom, which embraces intentional signup friction to a truly ridiculous degree.
 (And see the end of that thread for an experiment Duolingo did in which they concluded that it can be good to add intentional friction to signup if it makes you introspect about your goal in using Duolingo.)
-      </li>
-      <li>
-        Filtering. 
+    </li>
+    <li>
+      Filtering. 
 Customer support is better and easier and more pleasant if we filter for high-quality users. 
 This also matters for the general quality of the Beeminder community.
-      </li>
-      <li>
-        Onboarding. 
+    </li>
+    <li>
+      Onboarding. 
 It&#8217;s painfully common for a user to sign up, immediately feel overwhelmed, and never create a single goal. 
 Or create a half-assed one but delete it in the first week or make it stupidly easy or fail to think through a
-        <a
-          href=\\"https://blog.beeminder.com/whattomind\\"
-          title=\\"What To Mind: Picking a Metric (classic Beeminder blog post from 2014)\\"
-        >
-          good metric to mind
-        </a>
-        or otherwise fail to get themselves meaningfully on the hook. 
+      <a
+        href=\\"https://blog.beeminder.com/whattomind\\"
+        title=\\"What To Mind: Picking a Metric (classic Beeminder blog post from 2014)\\"
+      >
+        good metric to mind
+      </a>
+      or otherwise fail to get themselves meaningfully on the hook. 
 We&#8217;re attacking this from a few angles but one is to give the user an additional incentive to push through that overwhelm and figure it out.
-      </li>
-    </ol>
-    <p>
-    </p>
-  </details>
+    </li>
+  </ol>
+  <p>
+  </p>
+  &lt;/details&gt;
 </div>
 <br>
 <p>
@@ -41599,7 +41550,7 @@ We also added a nice little countdown to the empty gallery page et voila.
   <img
     class=\\"aligncenter\\"
     alt=\\"Start a goal in 7d 23h 52m or pay $5\\"
-    title=\\"It even changes colors as the timer counts down: green then blue (when <3 days left) then orange (<2 days) then red (final 24 hours) -- the same way Beeminder graphs do\\"
+    title=\\"It even changes colors as the timer counts down: green then blue (when &lt;3 days left) then orange (&lt;2 days) then red (final 24 hours) -- the same way Beeminder graphs do\\"
     src=\\"https://user-images.githubusercontent.com/9928/224247413-708a2793-3795-4155-b727-6de658c7f7e8.png\\"
   >
 </p>
@@ -42666,7 +42617,8 @@ A graph will also freeze if you
     archived
   </em>
   .
-  There&#8217;s also a deadman switch that will make your graph eventually freeze if you don&#8217;t enter any data for long enough.
+ 
+There&#8217;s also a deadman switch that will make your graph eventually freeze if you don&#8217;t enter any data for long enough.
 You can still add data to a frozen goal but the
   <em>
     bot
@@ -43693,8 +43645,7 @@ Another marks a batch of unread messages as read at the end of each day, putting
 <p>
   Here&#8217;s the relevant excerpt of Beeminder&#8217;s own Ruby code to count up read messages. Enjoy!
 </p>
-<script src=\\"https://gist.github.com/3765191.js?file=gmail_count.rb\\">
-</script>
+&lt;script&gt;&lt;/script&gt;
 <h2>
   Footnotes
 </h2>
@@ -44330,7 +44281,7 @@ We&#8217;re generally
   power-user-friendly but in this case, y&#8217;all are going to have to make do with our new goalname length limit of 20 characters.
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h3 id=\\"math\\">
     <center>
       The Goalname Prefix Trick
@@ -44589,8 +44540,8 @@ exports[`body > post gratitude hash f671c086594e94ac757a2aa55a9b716b 1`] = `
 <p>
   <em>
     This is a guest post by Michelle Robindell of 
-Ripple Effect Coaching
-    with a prescript by Daniel Reeves of
+Ripple Effect Coaching 
+with a prescript by Daniel Reeves of
     <a
       href=\\"http://beeminder.com\\"
       title=\\"That&#39;s us!\\"
@@ -44886,7 +44837,7 @@ Let&#8217;s return to Robert Emmons, the leading scientific expert on gratitude,
   >
     [2]
   </a>
-  Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84, 377-389.
+  Emmons, R. A. &amp; McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84, 377-389.
 </p>
 <p>
   <a
@@ -44896,7 +44847,7 @@ Let&#8217;s return to Robert Emmons, the leading scientific expert on gratitude,
   >
     [3]
   </a>
-  Emmons, R. A., & Mishra, A. (in press). &#8220;Why gratitude enhances well-being: What we know, what we need to know.&#8221; In Sheldon, K., Kashdan, T., & Steger, M.F. (Eds.) Designing the future of positive psychology: Taking stock and moving forward. New York: Oxford University Press.
+  Emmons, R. A., &amp; Mishra, A. (in press). &#8220;Why gratitude enhances well-being: What we know, what we need to know.&#8221; In Sheldon, K., Kashdan, T., &amp; Steger, M.F. (Eds.) Designing the future of positive psychology: Taking stock and moving forward. New York: Oxford University Press.
 </p>
 <p>
   <a
@@ -45301,7 +45252,7 @@ so feel free to jump in and contribute!
   . 
 Plus, we have an
   <a
-    href=\\"https://itunes.apple.com/us/app/habitica-stay-motivated-gamified/id994882113?mt=8&ign-mpt=uo%3D4\\"
+    href=\\"https://itunes.apple.com/us/app/habitica-stay-motivated-gamified/id994882113?mt=8&amp;ign-mpt=uo%3D4\\"
     title=\\"The Habitica app in the Apple app store\\"
   >
     iOS app
@@ -46491,7 +46442,7 @@ Of course, it would be ideal if I could buy a PDF of my language course and just
   This comes from a short story about a light-fingered monkey that steals a girl&#8217;s necklace.
 In English, it would read:
 </p>
-<div style=\\"padding-left: 2.5em\\">
+<div style=\\"padding-left:2.5em\\">
   <p>
     <strong>
       A difficult moment (bad moment)
@@ -47134,12 +47085,7 @@ These will trigger when your goal is on an eep day, or you can specify how close
       style=\\"max-width:100%\\"
     >
   </a>
-  <script
-    async
-    type=\\"text/javascript\\"
-    src=\\"//ifttt.com/assets/embed_recipe.js\\"
-  >
-  </script>
+  &lt;script&gt;&lt;/script&gt;
 </p>
 <h3>
   Actions
@@ -47164,12 +47110,7 @@ These will trigger when your goal is on an eep day, or you can specify how close
       style=\\"max-width:100%\\"
     >
   </a>
-  <script
-    async
-    type=\\"text/javascript\\"
-    src=\\"//ifttt.com/assets/embed_recipe.js\\"
-  >
-  </script>
+  &lt;script&gt;&lt;/script&gt;
 </p>
 <p>
   Or how about a Recipe to get you to call your mom more often?
@@ -47188,12 +47129,7 @@ These will trigger when your goal is on an eep day, or you can specify how close
       style=\\"max-width:100%\\"
     >
   </a>
-  <script
-    async
-    type=\\"text/javascript\\"
-    src=\\"//ifttt.com/assets/embed_recipe.js\\"
-  >
-  </script>
+  &lt;script&gt;&lt;/script&gt;
 </p>
 <h2>
   Get started
@@ -48865,7 +48801,7 @@ this book lays out the case for hyperbolic discounting, the basis of my claim th
     </a>
   </li>
   <li>
-    <a href=\\"http://www.smbc-comics.com/index.php?db=comics&id=2054\\">
+    <a href=\\"http://www.smbc-comics.com/index.php?db=comics&amp;id=2054\\">
       Time inconsistency illustrated in a comic
     </a>
   </li>
@@ -49630,7 +49566,7 @@ Unfortunately, this does not yield correct results for do-more goals with negati
     alt=\\"image\\"
   >
 </p>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <p>
     <strong>
       Aside!
@@ -49731,8 +49667,10 @@ I haven’t been further than the balcony in twelve days and I’m going just a 
 Waiting for the end of anything, especially something of an undetermined length, can feel pretty long. 
 Heck, I find even the feeling of anticipating something enjoyable a little aversive. 
 A master of patience, I am not. 
-As our city and province strengthen their not-quite-a-lockdown-yet guidelines, I’m starting to think about ways to keep myself feeling healthy, happy, and patient while we&#8217;re all doing our parts to practice maximal social distancing and flatten that curve.
-  Here’s what I plan on doing and why, in case it’s helpful to others.
+As our city and province strengthen their not-quite-a-lockdown-yet guidelines, I’m starting to think about ways to keep myself feeling healthy, happy, and patient while we&#8217;re all doing our parts to practice maximal social distancing and flatten that curve. 
+ 
+ 
+Here’s what I plan on doing and why, in case it’s helpful to others.
 </p>
 <p>
   I like to distract myself from thinking about an upcoming event that I’m looking forward to with something I’d prefer to have more time for. 
@@ -51543,7 +51481,7 @@ You can check out his gallery of Beeminder goals at
         href=\\"https://www.sourcesandmethods.com\\"
         title=\\"35 episodes and counting! Tagline is &#39;Interesting people doing interesting things&#39;\\"
       >
-        Sources & Methods
+        Sources &amp; Methods
       </a>
       .
 If you like this, you&#8217;ll probably like the previous Beeminder blog posts about language learning, namely our announcement of our
@@ -52325,7 +52263,7 @@ The math all checks out though.
   <img
     src=\\"https://blog.beeminder.com/wp-content/uploads/2023/04/war-games-chess.png\\"
     width=\\"250px\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     class=\\"aligncenter\\"
     alt=\\"Greetings Professor Falken. Hello. A strange game. The only winning move is not to play. How about a nice game of chess?\\"
     title=\\"It's from the movie War Games\\"
@@ -52381,7 +52319,7 @@ Just play more chess when Beeminder yells at you and you&#8217;re good.
 </p>
 <center>
   <a href=\\"https://www.beeminder.com/lichess\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Beemind your chess practice!
     </span>
   </a>
@@ -52913,11 +52851,11 @@ If you&#8217;re interested in experimenting with Automate and Beeminder, it&#821
   <em>
     Image credits:
 Title image by
-    <a href=\\"https://unsplash.com/@josenothose?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\\">
+    <a href=\\"https://unsplash.com/@josenothose?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\\">
       Jose Fontano
     </a>
     on
-    <a href=\\"https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\\">
+    <a href=\\"https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\\">
       Unsplash
     </a>
     .
@@ -52972,7 +52910,8 @@ Tune in next time for why we&#8217;re disavowing that.
 Not that valuing anything &#8212; even (especially) vague feelings &#8212; is necessarily irrational.
 It&#8217;s only irrational if you&#8217;re inconsistent.
 The most familiar example of irrational/inconsistent preferences may be addiction,
-  where you want something but you don&#8217;t
+  
+where you want something but you don&#8217;t
   <em>
     want
   </em>
@@ -53151,8 +53090,7 @@ Just that people seem to have nonsensically high gaps.
 Almost everyone (in my socio-economic circles) chooses to save the $800.
 </p>
 <p>
-  Then you get to the gate for your flight and the flight is overbooked and they&#8217;re asking for volunteers to be bumped to a flight that&#8217;s 8 hours later and they&#8217;ll pay you $800 in actual money, not those
-  scammy airline vouchers.
+  Then you get to the gate for your flight and the flight is overbooked and they&#8217;re asking for volunteers to be bumped to a flight that&#8217;s 8 hours later and they&#8217;ll pay you $800 in actual money, not those  scammy airline vouchers.
 Almost everyone chooses to stay on the flight they have (we checked!).
 </p>
 <p>
@@ -53522,13 +53460,12 @@ Nonetheless it was a massively productive work week for me compared to my averag
 Look how often I put my hand studiously on my chin! 
 (I thought it looked like I was posing for the camera, but I&#8217;ve been paying attention now and it turns out I definitely do that in real life.)
 </p>
-<div style=\\"text-align:center;\\">
+<div style=\\"text-align:center\\">
   <iframe
     width=\\"420\\"
     height=\\"315\\"
     src=\\"//www.youtube.com/embed/ODhx-CbX9lg?start=40\\"
     frameborder=\\"0\\"
-    allowfullscreen
   >
   </iframe>
 </div>
@@ -54334,7 +54271,6 @@ Sometimes these weekends have actually been Maniac Weeks, requiring as much focu
   height=\\"315\\"
   src=\\"https://www.youtube.com/embed/ODhx-CbX9lg\\"
   frameborder=\\"0\\"
-  allowfullscreen
 >
 </iframe>
 <p>
@@ -55448,43 +55384,24 @@ in our
   .
 All clear on the Four Platonic Goal Types? Great!
 So goals with 
-\\\\(\\\\mathit{dir}\\\\cdot\\\\mathit{yaw}>0\\\\) 
+\\\\(\\\\mathit{dir}\\\\cdot\\\\mathit{yaw}&gt;0\\\\) 
 (Do More, Odometer, Weight Gain, Weight Loss, Inboxer, Net Calories) 
 get x-buffer and goals with
-\\\\(\\\\mathit{dir}\\\\cdot\\\\mathit{yaw}
-  <0\\\\)
-    (do
-    less
-    and
-    rationing)
-    get
-    y-buffer.
-    but
-    also
-    so-called
-    noisy
-    goals
-    (where
-    the
-    datapoints
-    have
-    random
-    fluctuation)
-    so
-    weight
-    both
-    x-buffer
-    inboxer
-    or
-    <a
+\\\\(\\\\mathit{dir}\\\\cdot\\\\mathit{yaw}&lt;0\\\\)
+(Do Less and Rationing)
+get y-buffer.
+But also so-called noisy goals (where the datapoints have random fluctuation) get y-buffer.
+So Weight goals get both x-buffer and y-buffer.
+Inboxer or
+  <a
     href=\\"https://help.beeminder.com/article/69-whittle-down-goals\\"
     title=\\"Beeminder help article on Whittle Down aka Inboxer goals -- commonly for whittling down the number of messages in your inbox\\"
   >
     Whittle Down goals
-    are actually conceptually/structrually almost identical to Weight Loss goals but since we haven&#8217;t considered them noisy, they don&#8217;t get a y-buffer.
+  </a>
+  are actually conceptually/structrually almost identical to Weight Loss goals but since we haven&#8217;t considered them noisy, they don&#8217;t get a y-buffer.
 (As you can perhaps tell, this was all surprisingly intricate to pick apart, refactor, and put back together.
 Especially for something that initially seemed eminently straightforward &#8212; generalizing a boolean parameter to a numeric one!)
-  </0\\\\)>
 </p>
 "
 `;
@@ -55681,7 +55598,7 @@ Having your votes counted twice is your reward for getting in on the ground floo
 </p>
 <center>
   <a href=\\"https://forum.beeminder.com/t/voting-on-what-the-next-blog-post-should-be/7249\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Go vote!
     </span>
   </a>
@@ -55857,7 +55774,7 @@ Tell us your use cases!
 </p>
 <center>
   <a href=\\"https://www.beeminder.com/metaminder\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Metamind!
     </span>
   </a>
@@ -55992,7 +55909,7 @@ You can only set intentions (Complice&#8217;s take on tasks) for today (or tomor
 No arriving at a deadline two weeks in the future cursing your past self for committing to something that you&#8217;re totally out of touch with the purpose of now.
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h3 id=\\"math\\">
     <center>
       A dive into the primordial dialogical sea
@@ -56005,115 +55922,114 @@ No arriving at a deadline two weeks in the future cursing your past self for com
 I think it makes a nice case for how I ended up implementing it.
 (Danny also thought it might lend credence to his claim in the intro that there&#8217;s no contentiousness here!)
   </p>
-  <details style=\\"cursor: pointer\\">
-    <summary>
-      The dialog
-    </summary>
-    <blockquote>
-      <p>
-        <b>
-          Danny
-        </b>
-        : I love your Complice stakes feature. 
+  &lt;details style=\\"cursor:pointer\\"&gt;
+&lt;summary&gt;The dialog&lt;/summary&gt;
+  <blockquote>
+    <p>
+      <b>
+        Danny
+      </b>
+      : I love your Complice stakes feature. 
 So much so that I think you should make it opt-out. 
 Assume that any task will want some stakes and make the user drop it to $0 if they really don&#8217;t want that.
 Opinionated software, etc.
-        <br>
-        <b>
-          Malcolm
-        </b>
-        : First response to that is &#8220;oh god no&#8221;. 
+      <br>
+      <b>
+        Malcolm
+      </b>
+      : First response to that is &#8220;oh god no&#8221;. 
 Upon reflection, I can maybe see something beautiful about $-by-default. 
 Would need a ton of revamping to actually make it work, but it would sorta make the act of intending way more punchy. 
 Though lots of people (including me, half the time) use Complice in a much more open-ended way, like &#8220;here&#8217;s a menu of things I might want to do today&#8221; so this wouldn&#8217;t be a fit for them / that workflow.
-        <br>
-        <b>
-          Danny
-        </b>
-        : Maybe there&#8217;s two distinct categories: mustdos and maybewannados?
-        The meta advice could be: agonize until you&#8217;ve decided whether people ought to set stakes by default. 
+      <br>
+      <b>
+        Danny
+      </b>
+      : Maybe there&#8217;s two distinct categories: mustdos and maybewannados? 
+ 
+The meta advice could be: agonize until you&#8217;ve decided whether people ought to set stakes by default. 
 If so, push it hard. 
 If not, don&#8217;t clutter things up by making it an option. 
 Kinda related to the
-        <a
-          href=\\"http://blog.beeminder.com/choices\\"
-          title=\\"Beeminder blog post about why choices are bad\\"
-        >
-          Anti-Settings Principle
-        </a>
-        .
-        <br>
-        <b>
-          Malcolm
-        </b>
-        : Definitely not. Some things are worth putting money on, others aren&#8217;t. Seems pretty obvious to me.
-        <br>
-        <b>
-          Danny
-        </b>
-        : That&#8217;s persuasive.
-        <br>
-        <b>
-          Malcolm
-        </b>
-        : Too many hard constraints means inflexibility. 
+      <a
+        href=\\"http://blog.beeminder.com/choices\\"
+        title=\\"Beeminder blog post about why choices are bad\\"
+      >
+        Anti-Settings Principle
+      </a>
+      .
+      <br>
+      <b>
+        Malcolm
+      </b>
+      : Definitely not. Some things are worth putting money on, others aren&#8217;t. Seems pretty obvious to me.
+      <br>
+      <b>
+        Danny
+      </b>
+      : That&#8217;s persuasive.
+      <br>
+      <b>
+        Malcolm
+      </b>
+      : Too many hard constraints means inflexibility. 
 Also it would be forcing way
-        <i>
-          too many
-        </i>
-        choices. 
+      <i>
+        too many
+      </i>
+      choices. 
 Since the current UI has it so you have to pick the time of day it&#8217;s due and that seems correct; 10 tasks due at midnight is a shitshow.
-        <br>
-        <b>
-          Danny
-        </b>
-        : Ooh, yeah, making stakes part of picking a specific deadline maybe is the best of both worlds?
-        <br>
-        <b>
-          Malcolm
-        </b>
-        : Exactly. If you want something due at a particular time of day, make it real. 
+      <br>
+      <b>
+        Danny
+      </b>
+      : Ooh, yeah, making stakes part of picking a specific deadline maybe is the best of both worlds?
+      <br>
+      <b>
+        Malcolm
+      </b>
+      : Exactly. If you want something due at a particular time of day, make it real. 
 Gotta have a real consequence, otherwise the deadline isn&#8217;t a deadline it&#8217;s just uhhh a &#8220;time at which we ping you and you feel guilty or something&#8221;.
-        <br>
-        <b>
-          Danny
-        </b>
-        : Like that&#8217;s the dichotomy. 
+      <br>
+      <b>
+        Danny
+      </b>
+      : Like that&#8217;s the dichotomy. 
 It&#8217;s either just a maybewannado or it has a deadline+stakes.
 And that can be where you can set the stakes to $0 if you want but it defaults to something positive.
 Or get more opinionated and say if there are no stakes then there&#8217;s no deadline.
-        <br>
-        <b>
-          Malcolm
-        </b>
-        : I am opinionated about that &#8212; no stakes, no deadline. 
+      <br>
+      <b>
+        Malcolm
+      </b>
+      : I am opinionated about that &#8212; no stakes, no deadline. 
 Currently $1-100 range.
-        <br>
-        <b>
-          Danny
-        </b>
-        : Love it. 
+      <br>
+      <b>
+        Danny
+      </b>
+      : Love it. 
 You definitely convinced me this is a good design; I retract my initial objections.
-        <br>
-        <b>
-          Malcolm
-        </b>
-        : The $100 max was partially because the feature is new, but on reflection I think it&#8217;s also just maybe correct, in the sense that this is only for things on the scale of a day, and mostly those shouldn&#8217;t be &#8220;worth&#8221; more than $100. 
+      <br>
+      <b>
+        Malcolm
+      </b>
+      : The $100 max was partially because the feature is new, but on reflection I think it&#8217;s also just maybe correct, in the sense that this is only for things on the scale of a day, and mostly those shouldn&#8217;t be &#8220;worth&#8221; more than $100. 
 And if they are, then the answer is to break it down into a few steps and put $100 on each step and force earlier steps to be due slightly sooner. 
 Yeah, that seems right &#8212; just thought that through live right now.
-        <br>
-        <b>
-          Danny
-        </b>
-        : Smart. No objections there.
-        <br>
-        <b>
-          Malcolm
-        </b>
-        : Baha I just realized the &#8220;break it into smaller steps and stake them each hour&#8221; is literally the Beeminder principle but applied on the scale of hours rather than days/weeks/months.
-      </p>
-    </blockquote>
-  </details>
+      <br>
+      <b>
+        Danny
+      </b>
+      : Smart. No objections there.
+      <br>
+      <b>
+        Malcolm
+      </b>
+      : Baha I just realized the &#8220;break it into smaller steps and stake them each hour&#8221; is literally the Beeminder principle but applied on the scale of hours rather than days/weeks/months.
+    </p>
+  </blockquote>
+  &lt;/details&gt;
   <p>
   </p>
 </div>
@@ -56945,7 +56861,8 @@ It feels almost dishonest to blithely cite all these studies to back up your cla
     I will say, I&#8217;ve sort of been at the center in some ways of watching the replication crisis unfold. 
 I&#8217;m in a department at Wharton with 
 [Simmons and Simonsohn, studying p-hacking, etc].
-    I think it&#8217;s so important &#8212; I&#8217;m so glad that we&#8217;re getting things cleaned up. I guess I will say, I think there are plenty of things that aren&#8217;t true. But, there&#8217;s also lots of things that do replicate and are really robust.
+ 
+I think it&#8217;s so important &#8212; I&#8217;m so glad that we&#8217;re getting things cleaned up. I guess I will say, I think there are plenty of things that aren&#8217;t true. But, there&#8217;s also lots of things that do replicate and are really robust.
     <br>
     &nbsp;
     <br>
@@ -57451,7 +57368,7 @@ Until the fateful text from Jill, which triggered a frantic scramble to piece ev
   First, fire up the Rails console on your production machine and write a little query to find the objects you want:
 </p>
 <pre>
-  Datapoints.where(:conditions=>blahblah)
+  Datapoints.where(:conditions=&gt;blahblah)
 </pre>
 <p>
   Inspect your results. 
@@ -57463,7 +57380,7 @@ I feel totally confident (well, maybe slightly anxious, let&#8217;s be honest no
   Then:
 </p>
 <pre>
-  Datapoints.where(:conditions=>blahblah).destroy_all
+  Datapoints.where(:conditions=&gt;blahblah).destroy_all
 </pre>
 <p>
   Our datapoints query was scoped within the domain of a single Goal instance (some meta goal), and it still went through destroying ALL the datapoints. 
@@ -57654,14 +57571,8 @@ Here&#8217;s a sampling of the
   as we stayed up all night fixing things 
 (mostly Bethany, while Alys and I staffed the support inbox and the Twitters and whatnot):
 </p>
-<blockquote
-  class=\\"twitter-tweet\\"
-  data-lang=\\"en\\"
->
-  <p
-    lang=\\"en\\"
-    dir=\\"ltr\\"
-  >
+<blockquote class=\\"twitter-tweet\\">
+  <p>
     We’ve avoided literal downtime so far but the database upgrade is causing other woes: Might’ve temporarily lost everyone’s deadline settings
   </p>
   &mdash; Beeminder Status (@beemstat)
@@ -57669,24 +57580,13 @@ Here&#8217;s a sampling of the
     February 23, 2016
   </a>
 </blockquote>
-<script
-  async
-  src=\\"//platform.twitter.com/widgets.js\\"
-  charset=\\"utf-8\\"
->
-</script>
+&lt;script&gt;&lt;/script&gt;
 <p>
   &#8230;followed by the tedious process of reconstructing clobbered settings on hundreds of people&#8217;s graphs.
 At some point we debated reverting everything so we could sleep but decided we were past the point of no return&#8230;
 </p>
-<blockquote
-  class=\\"twitter-tweet\\"
-  data-lang=\\"en\\"
->
-  <p
-    lang=\\"en\\"
-    dir=\\"ltr\\"
-  >
+<blockquote class=\\"twitter-tweet\\">
+  <p>
     Aand the DB server went down again for unknown reasons. We may need to revert everything to old server and try again after sleeping :(
   </p>
   &mdash; Beeminder Status (@beemstat)
@@ -57694,23 +57594,12 @@ At some point we debated reverting everything so we could sleep but decided we w
     February 23, 2016
   </a>
 </blockquote>
-<script
-  async
-  src=\\"//platform.twitter.com/widgets.js\\"
-  charset=\\"utf-8\\"
->
-</script>
+&lt;script&gt;&lt;/script&gt;
 <p>
   And the dramatic conclusion (or at least when there were few enough fires and explosions that we stopped tweeting about it):
 </p>
-<blockquote
-  class=\\"twitter-tweet\\"
-  data-lang=\\"en\\"
->
-  <p
-    lang=\\"en\\"
-    dir=\\"ltr\\"
-  >
+<blockquote class=\\"twitter-tweet\\">
+  <p>
     Hallelujah! Signing in w/ Google’s fixed. Some remaining cleanup &amp; babysitting but no news = good news at this point. Thx so mch 4 patience!
   </p>
   &mdash; Beeminder Status (@beemstat)
@@ -57718,12 +57607,7 @@ At some point we debated reverting everything so we could sleep but decided we w
     February 23, 2016
   </a>
 </blockquote>
-<script
-  async
-  src=\\"//platform.twitter.com/widgets.js\\"
-  charset=\\"utf-8\\"
->
-</script>
+&lt;script&gt;&lt;/script&gt;
 <p>
   It was another 24 hours before we cleaned up the rest of the messes.
 Frustratingly, the one issue we haven&#8217;t resolved yet is that the whole site seems to be slower now.
@@ -57891,7 +57775,8 @@ People didn&#8217;t have modern conveniences like Starbucks and McDonald&#8217;s
 If you wanted food, you worked for it.
 If your clothing fell into disrepair, you fixed it.
 If you needed to go somewhere, you walked or rode a horse.
-  We haven&#8217;t evolved much since the times of our great great grandparents.
+ 
+We haven&#8217;t evolved much since the times of our great great grandparents.
 But we are living much longer and have to be much more thoughtful.
 </p>
 <h4 class=\\"pullquote\\">
@@ -58061,7 +57946,7 @@ Normally we use the
     <p>
       Huge progress on the
       <a
-        href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder&hl=en\\"
+        href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder&amp;hl=en\\"
         title=\\"Part of &#39;The Beehive Collective of Obtuse Nerdtastic Tools&#39; but is in fact becoming gradually non-obtuse\\"
       >
         Android app
@@ -58251,7 +58136,7 @@ Much later, while talking to
 </p>
 <center>
   <a href=\\"https://forum.beeminder.com/t/motivational-archetypes/5758\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Play our reindeer games!
     </span>
   </a>
@@ -58390,11 +58275,7 @@ Beeminding the moving average you&#8217;d need to lose a full kilogram.
   </i>
 </center>
 <h4 class=\\"pullquote\\">
-  &#8220;You need to lose many times that to actually bring the
-  <emph>
-    average
-  </emph>
-  down enough&#8221;
+  &#8220;You need to lose many times that to actually bring the &lt;emph&gt;average&lt;/emph&gt; down enough&#8221;
 </h4>
 <p>
   In general, being
@@ -59246,7 +59127,7 @@ exports[`body > post nerds hash 3538e54df2ea91cce619c1162158a053 1`] = `
   <img
     class=\\"aligncenter\\"
     alt=\\"Beeminder logo wearing nerd glasses and a pocket protector\\"
-    title=\\"I've got a pocket-protector-protector-protector. I broke my glasses on purpose so I could tape em together. (It's from a Rhett & Link video.)\\"
+    title=\\"I've got a pocket-protector-protector-protector. I broke my glasses on purpose so I could tape em together. (It's from a Rhett &amp; Link video.)\\"
     width=\\"450px\\"
     src=\\"https://blog.beeminder.com/wp-content/uploads/2020/11/faire-nerd-bee.jpeg\\"
   >
@@ -59451,8 +59332,12 @@ Regardless of the degree to which we want to double down on nerds, there&#8217;s
 Things like
 lifecycle emails, 
 smoothing onboarding friction, 
-getting confusing advanced shıt out of sight of newbees,
-  fixing the miasma of brokenness with scheduled breaks / ratchets / weekends-off / restarts, 
+getting confusing advanced shıt out of sight of newbees, 
+ 
+ 
+ 
+ 
+fixing the miasma of brokenness with scheduled breaks / ratchets / weekends-off / restarts, 
 interactive graphs and
   <a
     href=\\"https://graph.beeminder.com/tutorial\\"
@@ -59583,7 +59468,7 @@ After all, we seem to be doing it.
 (Also no one thinks to mention to us that we&#8217;re smart to have an API or to have smartphone apps or to, I don&#8217;t know, label the axes on our graphs.
 Also
   <a
-    href=\\"https://www.amazon.com/dp/B00556G7RY/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1\\"
+    href=\\"https://www.amazon.com/dp/B00556G7RY/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1\\"
     title=\\"Book by Duncan Watts\\"
   >
     everything is obvious once you know the answer
@@ -61734,7 +61619,7 @@ Even by beeminding them &#8212; it doesn&#8217;t pass the
   </a>
   .
 We still get a ton of
-  <a href=\\"http://beeminder.uservoice.com/search?filter=merged&query=integrate\\">
+  <a href=\\"http://beeminder.uservoice.com/search?filter=merged&amp;query=integrate\\">
     requests for integrations
   </a>
   though, for everything from Codecademy to Mint to Google Glass. 
@@ -62372,7 +62257,7 @@ It helps me to devote more time and attention to the fewer goals that are really
 And it helps give me the courage to pursue riskier, more challenging goals, because I have a better idea of what I&#8217;m willing to put at stake.
 </p>
 <h2>
-  Black & Yellow: Two Paths for Beeminder Success
+  Black &amp; Yellow: Two Paths for Beeminder Success
 </h2>
 <p>
   Despite all that I&#8217;ve said, the prospect of, say, giving up $30 when I could instead take
@@ -64265,52 +64150,7 @@ Of course, we track
   :
 </p>
 <div class=\\"prezi-player\\">
-  <style
-    type=\\"text/css\\"
-    media=\\"screen\\"
-  >
-    .prezi-player { width: 550px; } .prezi-player-links { text-align: center; }
-  </style>
-  <object
-    id=\\"prezi_isvkslpbi2dk\\"
-    name=\\"prezi_isvkslpbi2dk\\"
-    classid=\\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\\"
-    width=\\"550\\"
-    height=\\"400\\"
-  >
-    <param
-      name=\\"movie\\"
-      value=\\"http://prezi.com/bin/preziloader.swf\\"
-    >
-    <param
-      name=\\"allowfullscreen\\"
-      value=\\"true\\"
-    >
-    <param
-      name=\\"allowscriptaccess\\"
-      value=\\"always\\"
-    >
-    <param
-      name=\\"bgcolor\\"
-      value=\\"#ffffff\\"
-    >
-    <param
-      name=\\"flashvars\\"
-      value=\\"prezi_id=isvkslpbi2dk&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0\\"
-    >
-    <embed
-      id=\\"preziEmbed_isvkslpbi2dk\\"
-      name=\\"preziEmbed_isvkslpbi2dk\\"
-      src=\\"http://prezi.com/bin/preziloader.swf\\"
-      type=\\"application/x-shockwave-flash\\"
-      allowfullscreen=\\"true\\"
-      allowscriptaccess=\\"always\\"
-      width=\\"550\\"
-      height=\\"400\\"
-      bgcolor=\\"#ffffff\\"
-      flashvars=\\"prezi_id=isvkslpbi2dk&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0\\"
-    >
-  </object>
+  &lt;style&gt;.prezi-player { width: 550px; } .prezi-player-links { text-align: center; }&lt;/style&gt;&lt;object id=\\"prezi_isvkslpbi2dk\\"&gt;&lt;param&gt;&lt;param&gt;&lt;param&gt;&lt;param&gt;&lt;param&gt;&lt;embed id=\\"preziEmbed_isvkslpbi2dk\\"&gt;&lt;/object&gt;
 </div>
 <p>
   <br>
@@ -65522,7 +65362,7 @@ You
 </p>
 <center>
   <a href=\\"https://beeminder.com/pocket\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Beemind your Pocket!
     </span>
   </a>
@@ -65700,7 +65540,8 @@ I also hope this isn&#8217;t all too obvious for actual programmers but I predic
 <p>
   The Robustness Principle, also known as Postel&#8217;s Law, says to be conservative in what you send and liberal in what you accept. 
 I don&#8217;t think I&#8217;m alone in opining that that principle makes web development a Lovecraftian nightmare.
-  The misguided, myopic monition from Postel
+ 
+The misguided, myopic monition from Postel
   <a
     class=\\"footnote\\"
     id=\\"POSTEL1\\"
@@ -65755,7 +65596,7 @@ Exemplify every obnoxious nerd stereotype:
 Make your code overly literal and punctilious and pedantic.
 Even obtuse, in the sense of making zero assumptions, as the listener, about what the speaker intended.
 </p>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h2>
     <center>
       Prof. Yorgey&#8217;s Anecdote
@@ -66526,14 +66367,14 @@ wants to
   <li>
     (See myriad other examples by browsing markets tagged
     <a
-      href=\\"https://manifold.markets/questions?topic=commitment-devices&f=all&s=random\\"
+      href=\\"https://manifold.markets/questions?topic=commitment-devices&amp;f=all&amp;s=random\\"
       title=\\"There was also a meta market on whether 50 markets would end up with this tag, which they did\\"
     >
       Commitment Devices
     </a>
     or
     <a
-      href=\\"https://manifold.markets/questions?topic=personal-goals&f=all&s=random\\"
+      href=\\"https://manifold.markets/questions?topic=personal-goals&amp;f=all&amp;s=random\\"
       title=\\"Some of these might be embarrassing or NSFW but they&#39;re all public, so\\"
     >
       Personal Goals
@@ -67157,7 +66998,7 @@ The short version is that if you stop using Beeminder, we automatically stop cha
   frameborder=\\"0\\"
   border=\\"0\\"
   cellspacing=\\"0\\"
-  style=\\"margin-left:-40px;\\"
+  style=\\"margin-left:-40px\\"
   scrolling=\\"auto\\"
 >
 </iframe>
@@ -67266,7 +67107,7 @@ Or in my case, gloat about how jaw-droppingly elegant Mathematica code can be.
 </p>
 <center>
   <a href=\\"https://www.beeminder.com/projecteuler\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Create a Project Euler goal!
     </span>
   </a>
@@ -67316,7 +67157,7 @@ What&#8217;s not to like?
 </p>
 <center>
   <a href=\\"https://www.beeminder.com/projecteuler\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Create a Project Euler goal!
     </span>
   </a>
@@ -68634,15 +68475,12 @@ See also our previous
     .
   </em>
 </p>
-<div style=\\"text-align:center;\\">
+<div style=\\"text-align:center\\">
   <iframe
     src=\\"//player.vimeo.com/video/82754631\\"
     width=\\"500\\"
     height=\\"281\\"
     frameborder=\\"0\\"
-    webkitallowfullscreen
-    mozallowfullscreen
-    allowfullscreen
   >
   </iframe>
 </div>
@@ -68860,13 +68698,10 @@ I totally still procrastinate.
 But I have a tool that lets me parameterize how much.
 </p>
 <iframe
-  src=\\"https://docs.google.com/presentation/d/1Opomsxe4GJzuE0DMha6_ORUVSdt4M3_8fqO6OepvAj0/embed?start=false&loop=false&delayms=15000\\"
+  src=\\"https://docs.google.com/presentation/d/1Opomsxe4GJzuE0DMha6_ORUVSdt4M3_8fqO6OepvAj0/embed?start=false&amp;loop=false&amp;delayms=15000\\"
   frameborder=\\"0\\"
   width=\\"480\\"
   height=\\"389\\"
-  allowfullscreen=\\"true\\"
-  mozallowfullscreen=\\"true\\"
-  webkitallowfullscreen=\\"true\\"
 >
 </iframe>
 <p>
@@ -68943,15 +68778,12 @@ with $2000 contracts that we auctioned off to our friends.
     </em>
   </p>
 </blockquote>
-<div style=\\"text-align:center;\\">
+<div style=\\"text-align:center\\">
   <iframe
     src=\\"//player.vimeo.com/video/133234247\\"
     width=\\"500\\"
     height=\\"281\\"
     frameborder=\\"0\\"
-    webkitallowfullscreen
-    mozallowfullscreen
-    allowfullscreen
   >
   </iframe>
 </div>
@@ -69234,13 +69066,10 @@ Come on by to talk about extreme pomodoros.
 Or even join us for it if you&#8217;re in Portland.]
 </p>
 <iframe
-  src=\\"https://docs.google.com/presentation/d/1_-U-fKweYmLgljInHL7h5RmTr42l2WmIjRtUqNnCjso/embed?start=false&loop=false&delayms=15000\\"
+  src=\\"https://docs.google.com/presentation/d/1_-U-fKweYmLgljInHL7h5RmTr42l2WmIjRtUqNnCjso/embed?start=false&amp;loop=false&amp;delayms=15000\\"
   frameborder=\\"0\\"
   width=\\"480\\"
   height=\\"389\\"
-  allowfullscreen=\\"true\\"
-  mozallowfullscreen=\\"true\\"
-  webkitallowfullscreen=\\"true\\"
 >
 </iframe>
 "
@@ -69540,7 +69369,7 @@ If you try to ratchet to five or six, the road just returns seven days of buffer
   A nice side-effect of treating flat spots like you truly meant them is that capping your safety buffer (AKA auto-ratchet) now works fine with weekends-off and vacations without having to turn auto-ratchet off during your vacation and then restore the cap when you come back.
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h2 id=\\"math\\">
     <center>
       Mathematical Interlude
@@ -69682,7 +69511,7 @@ It&#8217;s not a built-in / automatic part of the ratchet algorithm, but actuall
 We changed the form to alert you that something is different, and to be very explicit that what you are doing at this point is shortening a scheduled break.
 </p>
 <br>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h2>
     <center>
       Programming Philosophy Interlude
@@ -70313,7 +70142,7 @@ Just work through your items, either deleting them, archiving them, or otherwise
 </p>
 <center>
   <a href=\\"https://www.beeminder.com/readwisereader\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Beemind your read-it-latering with Readwise Reader!
     </span>
   </a>
@@ -70765,14 +70594,8 @@ We&#8217;ve hard-committed to average one
   ) 
 and have been doing so for 2060 days now!
 </p>
-<blockquote
-  class=\\"twitter-tweet\\"
-  data-lang=\\"en\\"
->
-  <p
-    lang=\\"en\\"
-    dir=\\"ltr\\"
-  >
+<blockquote class=\\"twitter-tweet\\">
+  <p>
     Bee-yootiful new redesign! Massive number of UVIs in this. Here begins a tweetstorm of the most noteworthy! (1/26)
   </p>
   &mdash; Beeminder Dogfood (@beemuvi)
@@ -70780,12 +70603,7 @@ and have been doing so for 2060 days now!
     October 14, 2016
   </a>
 </blockquote>
-<script
-  async
-  src=\\"//platform.twitter.com/widgets.js\\"
-  charset=\\"utf-8\\"
->
-</script>
+&lt;script&gt;&lt;/script&gt;
 <h3>
   Lost Features
 </h3>
@@ -70852,7 +70670,7 @@ He&#8217;s also circumnavigated the globe and circumambulated Mont Blanc since J
     [2]
   </a>
   Note for non-programmers: That means he got rid of a bunch of things in addition to adding and changing a bunch of things, which is great news for the codebase. 
-That&#8217;s why typically a better metric of progress is to sum up additions & deletions, and get the gross line changes, not the net.
+That&#8217;s why typically a better metric of progress is to sum up additions &amp; deletions, and get the gross line changes, not the net.
 That was over 16,000 lines of code in 453 files.
 </p>
 "
@@ -70904,7 +70722,7 @@ Let me state the email version of it:
 Consider the subset of incoming emails that you truly must deal with.
 If those urgent/important emails enter your inbox at an average rate higher than the average rate you deal with them, then you are super screwed.
 </p>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h2>
     <center>
       What does &#8220;truly must deal with&#8221; mean?
@@ -73221,7 +73039,7 @@ static NSString * ResponseType   = @\\"response_type=token\\";
   if([[NSUserDefaults standardUserDefaults]
       stringForKey:@\\"beeminder_token\\"] == nil)
   {
-    NSString * auth = [BackendBaseURL stringByAppendingFormat: @\\"%@?%@&%@&%@\\",
+    NSString * auth = [BackendBaseURL stringByAppendingFormat: @\\"%@?%@&amp;%@&amp;%@\\",
                                                                OAuth2Path,
                                                                ClientId,
                                                                RedirectURI,
@@ -73263,7 +73081,7 @@ No login credentials are entered in your app.
 {
   NSLog(@\\"%@\\",url);
   if([url.host isEqualToString:@\\"beeminder-callback\\"]) {
-    NSArray * comp = [url.query componentsSeparatedByString:@\\"&\\"];
+    NSArray * comp = [url.query componentsSeparatedByString:@\\"&amp;\\"];
     for(NSString * st in comp) {
       NSArray * twoComp = [st componentsSeparatedByString:@\\"=\\"];
       if(twoComp.count == 2) {
@@ -73646,8 +73464,6 @@ exports[`body > post rssminder hash c6dd4884840ecfbef4f92d105d2abcb7 1`] = `
 <p>
   <img
     class=\\"aligncenter\\"
-    alt
-    title
     width=\\"450px\\"
     src=\\"https://blog.beeminder.com/wp-content/uploads/2022/11/rssminder.png\\"
   >
@@ -73763,7 +73579,7 @@ We&#8217;re excited to see what else people come up with!
 </p>
 <center>
   <a href=\\"https://www.beeminder.com/rssminder\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Feed the Bee!
     </span>
   </a>
@@ -73852,7 +73668,7 @@ You could beemind mileage (or kilometrage) running and you&#8217;d like it.
 </p>
 <p>
   You can track the distance, duration, or frequency of your running, walking, cycling, any subset of those activities, or of the union of all your RunKeeper fitness activities.
-You can also turn this on for an existing Beeminder goal in the settings &#8212; just first authorize us to pull your RunKeeper data in Your Account >>
+You can also turn this on for an existing Beeminder goal in the settings &#8212; just first authorize us to pull your RunKeeper data in Your Account &gt;&gt;
   <a href=\\"https://www.beeminder.com/services\\">
     Services
   </a>
@@ -74134,7 +73950,7 @@ And of course, we can&#8217;t stop talking about ourselves either, like in this
 <p>
   We absolutely loved this
   <a
-    href=\\"http://how-to-learn-any-language.com/forum/forum_posts.asp?TID=37672&PN=1\\"
+    href=\\"http://how-to-learn-any-language.com/forum/forum_posts.asp?TID=37672&amp;PN=1\\"
     title=\\"On a user forum about teaching yourself languages\\"
   >
     detailed and insightful synopsis of what Beeminder&#8217;s all about
@@ -74866,8 +74682,6 @@ telling us what you track, any possible projects you might like to present, and 
     height=\\"315\\"
     src=\\"https://www.youtube.com/embed/rASJ1Xq8qxc\\"
     frameborder=\\"0\\"
-    allow=\\"autoplay; encrypted-media\\"
-    allowfullscreen
   >
   </iframe>
 </center>
@@ -75157,7 +74971,7 @@ Once you do break the chain, all the motivation it provided bursts like a bubble
 <p>
   <img
     src=\\"http://blog.beeminder.com/wp-content/uploads/2015/06/jerry-seinfeld-george-150.jpeg\\"
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     alt=\\"Jerry and George\\"
     title=\\"That's also its fatal flaw!\\"
   >
@@ -75680,7 +75494,7 @@ It would be a little frightening to be solving users&#8217; problems in a way th
   </p>
 </blockquote>
 <p>
-  Generalizing that slightly, here&#8217;s what I call the Shirk & Turk Principle:
+  Generalizing that slightly, here&#8217;s what I call the Shirk &amp; Turk Principle:
 When writing any new app or website or feature, implement as little of it as you can get away with and manually fake the rest behind the scenes.
 Don&#8217;t write code in anticipation of its usefulness, write code when you have to.
 </p>
@@ -75759,7 +75573,7 @@ Beeminder is proud to be one of the first users of what is now Stripe and the fo
   Another Beeminder example:
 When Beeminder is about to charge you money for going off track on your goal, we (automatically) send an email asking if there was any technicality or confusion or anything that would render the derailment not legit.
 The user can reply to the email to say whether it was or not.
-Our original intention was to automate that process in some way but we figured we&#8217;d start with shirking & turking it.
+Our original intention was to automate that process in some way but we figured we&#8217;d start with shirking &amp; turking it.
 We&#8217;d just manually read the replies and cancel charges as necessary.
 </p>
 <p>
@@ -75797,7 +75611,7 @@ And with users other than yourself it only gets worse.
     <br>
     Also writing code is work.
     <br>
-    Simply shirk & turk!
+    Simply shirk &amp; turk!
   </p>
 </blockquote>
 <p>
@@ -75881,7 +75695,7 @@ And I&#8217;m sure it comes up in other fields as well.
   .
 Instead of building a product that&#8217;s web-first or mobile-first or tablet-first, think about whether you can get away with building one that&#8217;s email-first.
 Like where the entire interface is via email.
-This also makes it especially easy to apply the Shirk & Turk Principle!
+This also makes it especially easy to apply the Shirk &amp; Turk Principle!
 </p>
 "
 `;
@@ -75999,11 +75813,11 @@ We&#8217;re now announcing what we hope is a way to have the best of both worlds
         &#8220;Short circuiting the pledge schedule means you actually pay the current pledge! We hope you&#8217;ll view that as a fair fee for the service but of course if you haven&#8217;t been using Beeminder long enough then you&#8217;ll probably want to stay at the $5 pledge for now and not pay anything yet.&#8221;
         <br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href>
+        <a>
           Cancel
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href>
+        <a>
           Charge me $5 and change my pledge to $10
         </a>
       </p>
@@ -76351,7 +76165,7 @@ Maybe I&#8217;ll figure these out soon.
   The nice thing about traditional concepts like Sin is that they come bundled with some guarantees of relative completeness for very little cognitive investment on my part.
 Someone has tested and developed this thing very extensively; even if it&#8217;s not perfect, all I have to do is use it. 
 Further, concepts like Sin come with a rich aesthetic heritage that lends them some emotional weight and solidness that fresh concepts just don&#8217;t have. 
-A culture that&#8217;s been going for >1500 years will leave behind some impressive artifacts. 
+A culture that&#8217;s been going for &gt;1500 years will leave behind some impressive artifacts. 
 We would be fools not to take advantage of them.
 </p>
 <p>
@@ -76783,7 +76597,7 @@ exports[`body > post skritter hash 3707216ff313ff1df89020d0f2085e21 1`] = `
 <p>
   <img
     class=\\"aligncenter\\"
-    alt=\\"Skritter & Beeminder logos\\"
+    alt=\\"Skritter &amp; Beeminder logos\\"
     title=\\"Skritter's Professor wins the adorable mascot contest on this integration. Hands down.\\"
     src=\\"http://blog.beeminder.com/wp-content/uploads/2015/06/skritter-just-bolds.png\\"
   >
@@ -77869,7 +77683,7 @@ Apparently 10% of people hate money.
 Because the pure reward group was actually two groups: 
 One was really no-strings-attached $800 for quitting smoking and 95% of those offered that accepted it.
     <img
-      style=\\"float: right; padding: 15px 0 0 15px;\\"
+      style=\\"float:right;padding:15px 0 0 15px\\"
       alt=\\"Grumpy cat: The problem with some people... is that they exist\\"
       title=\\"Also a good approximation of our reaction to suggestions that we add more social features to Beeminder\\"
       src=\\"http://blog.beeminder.com/wp-content/uploads/2015/05/grumpy-cat.jpg\\"
@@ -78549,7 +78363,7 @@ So, yeah, we hate to tip off
   </li>
   <li>
     Our own Daniel Reeves spoke on a panel with StickK CEO Jordan Goldberg and Run Or Else founder Fred Trotter at a
-    <a href=\\"http://worldcongress.com/common/agenda.cfm?level=inside&confCode=HL12010&agendaID=944&subAgendaID=2272#part1\\">
+    <a href=\\"http://worldcongress.com/common/agenda.cfm?level=inside&amp;confCode=HL12010&amp;agendaID=944&amp;subAgendaID=2272#part1\\">
       World Congress on Healthcare IT
     </a>
   </li>
@@ -79904,7 +79718,7 @@ Let us know about what you dream of tracking, and we&#8217;ll see what we can do
 </p>
 <center>
   <a href=\\"https://www.beeminder.com/storygraph\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Beemind your StoryGraphing!
     </span>
   </a>
@@ -80005,7 +79819,7 @@ If you&#8217;re excited too, dive in:
 </p>
 <center>
   <a href=\\"http://beeminder.com/strava\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Create a Strava goal!
     </span>
   </a>
@@ -80558,7 +80372,8 @@ And now, the latest thoughts of our
 </p>
 <p>
   I&#8217;ve been using Beeminder-like methods for studying since megalodon swam the seas.
-  When I was a teenager, I was notorious for procrastination, but managed to set up a bet with my sister that I couldn&#8217;t finish my homework. 
+ 
+When I was a teenager, I was notorious for procrastination, but managed to set up a bet with my sister that I couldn&#8217;t finish my homework. 
 Obviously, I won. 
 Sorry, Simone.
 </p>
@@ -80838,7 +80653,7 @@ Here&#8217;s a brief overview of what we actually do in order to reply to the 50
 <p>
   Just about everyone replies to some support emails.
 Mostly Bee, Chelsea, and Alys, with others chiming in with their expertise/interest where necessary.
-Chelsea (US central time) & Alys (Australia eastern time) go through the more routine requests and questions a few times a day.
+Chelsea (US central time) &amp; Alys (Australia eastern time) go through the more routine requests and questions a few times a day.
 Bee (US pacific time) jumps in
   <a
     href=\\"https://www.beeminder.com/b/sptzero\\"
@@ -81051,7 +80866,7 @@ Or click &#8220;contact&#8221; at the bottom of Beeminder.com or any of your own
     [1]
   </a>
   <a
-    href=\\"https://www.youtube.com/watch?v=yEQV2OJVBx4&feature=youtu.be&t=46s\\"
+    href=\\"https://www.youtube.com/watch?v=yEQV2OJVBx4&amp;feature=youtu.be&amp;t=46s\\"
     title=\\"It&#39;s from Mean Girls\\"
   >
     ;)
@@ -82228,7 +82043,7 @@ exports[`body > post systems hash 3063a7b9b76c8a0a12abc439b9d0a784 1`] = `
     href=\\"http://www.sourcesandmethods.com/podcast/2015/12/2/sources-and-methods-23-beeminder\\"
     title=\\"Thanks Alex Strick van Linschoten\\"
   >
-    latest Sources & Methods podcast
+    latest Sources &amp; Methods podcast
   </a>
   .
 One of many things we talk about in that episode is Dilbert creator Scott Adams&#8217;s claim that goals are for losers.
@@ -82354,7 +82169,7 @@ He achieved this coveted status (haha, but it does involve us mailing you sticke
         href=\\"https://medium.com/@brennanbrown/planning-better-e0d60edbe271\\"
         title=\\"TODO\\"
       >
-        How to Create & Plan Better (Using the Internet and Bees)
+        How to Create &amp; Plan Better (Using the Internet and Bees)
       </a>
       and
       <a
@@ -82633,14 +82448,13 @@ I simply write out one thing a day that I’m grateful for, and go through every
 A great benefit from having this be manual input is that it doubles as a daily check-in for me to other Beeminder goals.
   </li>
 </ul>
-<p align=\\"center\\">
+<p>
   <iframe
-    src=\\"https://www.beeminder.com/widget?slug=gratitude&username=brennanbrown&countdown=true\\"
+    src=\\"https://www.beeminder.com/widget?slug=gratitude&amp;username=brennanbrown&amp;countdown=true\\"
     title=\\"Real-time graph of my progress, with countdown showing how long until I go off track if I do nothing\\"
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
-    display:block
   >
   </iframe>
 </p>
@@ -82654,9 +82468,9 @@ Another manual input, this being the amount of words I write per day, with each 
 Usually either just daily journal writing or blog posts.
   </li>
 </ul>
-<p align=\\"center\\">
+<p>
   <iframe
-    src=\\"https://www.beeminder.com/widget?slug=writing&username=brennanbrown&countdown=true\\"
+    src=\\"https://www.beeminder.com/widget?slug=writing&amp;username=brennanbrown&amp;countdown=true\\"
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
@@ -82674,9 +82488,9 @@ Unlike other activities, I retroactively added all older posts from Medium.
 Having that data in front of me really showed me how I needed to start publishing more.
   </li>
 </ul>
-<p align=\\"center\\">
+<p>
   <iframe
-    src=\\"https://www.beeminder.com/widget?slug=blogging&username=brennanbrown&countdown=true\\"
+    src=\\"https://www.beeminder.com/widget?slug=blogging&amp;username=brennanbrown&amp;countdown=true\\"
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
@@ -82705,9 +82519,9 @@ I try to get a certain amount of productive work done each day, whether it’s w
 I also try to limit the amount of time I waste on mindless and fruitless activities.
   </li>
 </ul>
-<p align=\\"center\\">
+<p>
   <iframe
-    src=\\"https://www.beeminder.com/widget?slug=productivity&username=brennanbrown&countdown=true\\"
+    src=\\"https://www.beeminder.com/widget?slug=productivity&amp;username=brennanbrown&amp;countdown=true\\"
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
@@ -82725,9 +82539,9 @@ I’m using Runkeeper to track this, no fancy wearable.
 It doesn’t count all of my travelling, only when I specifically log an activity, which also gives me a GPS map of the route so I can see where I’ve gone that day.
   </li>
 </ul>
-<p align=\\"center\\">
+<p>
   <iframe
-    src=\\"https://www.beeminder.com/widget?slug=fitness&username=brennanbrown&countdown=true\\"
+    src=\\"https://www.beeminder.com/widget?slug=fitness&amp;username=brennanbrown&amp;countdown=true\\"
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
@@ -82751,9 +82565,9 @@ Automatically tracks the number of commits I push to GitHub (and other contribut
 I admit this isn’t the best thing to track, as code shouldn’t be committed until it’s reached a point where it’s suitable to be deployed, but I’m currently working on a lot of small projects, which is pretty cool.
   </li>
 </ul>
-<p align=\\"center\\">
+<p>
   <iframe
-    src=\\"https://www.beeminder.com/widget?slug=github&username=brennanbrown&countdown=true\\"
+    src=\\"https://www.beeminder.com/widget?slug=github&amp;username=brennanbrown&amp;countdown=true\\"
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
@@ -82771,9 +82585,9 @@ But by tracking the photos I upload and the tweets I write, I’m encouraged to 
 Both of these are tracked automatically by Twitter and Instagram&#8217;s API, respectively.
   </li>
 </ul>
-<p align=\\"center\\">
+<p>
   <iframe
-    src=\\"https://www.beeminder.com/widget?slug=tweets&username=brennanbrown&countdown=true\\"
+    src=\\"https://www.beeminder.com/widget?slug=tweets&amp;username=brennanbrown&amp;countdown=true\\"
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
@@ -82797,9 +82611,9 @@ Tracks the amount of XP I earn on
 I’ve been trying to learn French for the past few years on my own, and it’s hard, but practicing a little bit each day has helped my retention far more than just occasional cram sessions.
   </li>
 </ul>
-<p align=\\"center\\">
+<p>
   <iframe
-    src=\\"https://www.beeminder.com/widget?slug=french&username=brennanbrown&countdown=true\\"
+    src=\\"https://www.beeminder.com/widget?slug=french&amp;username=brennanbrown&amp;countdown=true\\"
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
@@ -83540,7 +83354,7 @@ So join today, and let&#8217;s build this together!
 </p>
 <center>
   <a href=\\"https://taskratchet.com/\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Join Now!
     </span>
   </a>
@@ -84493,7 +84307,7 @@ we&#8217;re not holding anything back!
 </p>
 <p>
   <img
-    style=\\"float: right; padding: 0 0 0 15px;\\"
+    style=\\"float:right;padding:0 0 0 15px\\"
     alt=\\"Beeminder revenue graph\\"
     title=\\"Beeminder revenue graph\\"
     src=\\"http://blog.beeminder.com/wp-content/uploads/2014/10/brev.png\\"
@@ -84536,7 +84350,7 @@ Distractions are fatal and we feel like we dodged a bullet there.
     </a>
     of
     <a
-      href=\\"https://complice.co/?utm_source=beeminder&utm_medium=link&utm_campaign=3rdanniv\\"
+      href=\\"https://complice.co/?utm_source=beeminder&amp;utm_medium=link&amp;utm_campaign=3rdanniv\\"
       title=\\"Malcolm&#39;s own startup\\"
     >
       Complice
@@ -85156,7 +84970,7 @@ exports[`body > post todoist hash 435dba8b0f2d1bdbdff5438f24b22eae 1`] = `
 </p>
 <p>
   Picking the right way to organize your to-do&#8217;s is a big decision. 
-Paper & pencil, smartphone app, calendar,
+Paper &amp; pencil, smartphone app, calendar,
   <a
     href=\\"http://forum.beeminder.com/t/not-gamifying-productivity-and-not-a-to-do-list-by-david-r-maciver/2783/3\\"
     title=\\"Forum post on randomizing task selection with blank playing cards\\"
@@ -85223,7 +85037,6 @@ By combining the magic of Todoist and the force of Beeminder, you can create a l
   <img
     class=\\"aligncenter\\"
     alt=\\"button\\"
-    title
     width=\\"215px\\"
     src=\\"http://blog.beeminder.com/wp-content/uploads/2017/01/todoist-button__2.png\\"
   >
@@ -85388,7 +85201,7 @@ Beeminder breaks you out of that pattern and gives you an immediate incentive to
 </p>
 <center>
   <a href=\\"http://beeminder.com/toggl\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Create a Toggl goal!
     </span>
   </a>
@@ -86241,29 +86054,28 @@ exports[`body > post tri hash 970461ddfcd5ce467a09906ae62c13ff 1`] = `
 Danny was hilariously lopsided.
 There were only a few people in his division slower than him in the swim (he doesn&#8217;t swim so much as tread water in a vaguely forward direction) and only a handful faster in the bike.
 (Full results for Team Beeminder:
-  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&entry_id=4462:1341886308989\\">
+  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&amp;entry_id=4462:1341886308989\\">
     Jake
   </a>
   ,
-  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&entry_id=3350:1341886328150\\">
+  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&amp;entry_id=3350:1341886328150\\">
     Mike
   </a>
   ,
-  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&entry_id=3960:1341873047986\\">
+  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&amp;entry_id=3960:1341873047986\\">
     Danny
   </a>
   ,
-  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&entry_id=1685:1341873169331\\">
+  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&amp;entry_id=1685:1341873169331\\">
     Bethany
   </a>
   ,
-  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&entry_id=3680:1341886354266\\">
+  <a href=\\"http://edge.raceresults360.com/rr360/race/HmofxA/#/person:&amp;entry_id=3680:1341886354266\\">
     Sharad
   </a>
   .)
 </p>
 <div class=\\"slideshow aligncenter\\">
-  <!--[slideshow id=1]-->
   <img
     src=\\"/wp-content/gallery/nyctri2012/tridbik.png\\"
     width=\\"247\\"
@@ -87294,7 +87106,7 @@ Then you pick whether you want to track total sessions or total hours of work, a
 </p>
 <center>
   <a href=\\"https://www.beeminder.com/trydeepwork\\">
-    <span style=\\"background-color: #1d76db; color: #FFF; padding: 0 16px; font-size: 16px; font-weight: 600; line-height: 3; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; display: inline-block !important;\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
       Try (beeminding your) deep work (dot com)!
     </span>
   </a>
@@ -88735,8 +88547,9 @@ So here&#8217;s an example:
 It would help us a lot to understand better how that can go wrong for people. 
 In your case was it 
 (a) not knowing how to put in breaks or 
-(b) not knowing you needed to do it in advance?
-    I&#8217;ve gone ahead and put in the break for you since it&#8217;s too late for you to add it yourself, but definitely let us know what tripped you up! 
+(b) not knowing you needed to do it in advance? 
+ 
+I&#8217;ve gone ahead and put in the break for you since it&#8217;s too late for you to add it yourself, but definitely let us know what tripped you up! 
 It really helps us figure out how to improve the interface and the documentation.
   </p>
 </blockquote>
@@ -89108,10 +88921,10 @@ We tweet ours to a special Twitter account &#8212;
 <blockquote>
   <p>
     &#8220;
-    <a href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder&hl=en\\">
+    <a href=\\"https://play.google.com/store/apps/details?id=com.beeminder.beeminder&amp;hl=en\\">
       Android App v2.0!
     </a>
-    Vastly faster & includes a built in timer app for beeminding how much time you spend on things&#8230;&#8221;
+    Vastly faster &amp; includes a built in timer app for beeminding how much time you spend on things&#8230;&#8221;
   </p>
 </blockquote>
 <p>
@@ -89526,7 +89339,7 @@ So far so fair, right?
 And if you eat no meat during spring, autumn, and most of summer, can you round yourself up to &#8220;vegetarian&#8221;?
 Probably not really, but that&#8217;s the technicality I&#8217;m angling for.
 </p>
-<div style=\\"border-style: solid; border-width: 1px; padding: 10px 70px 20px\\">
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
   <h2>
     <center>
       Personal Interlude
@@ -90670,7 +90483,6 @@ exports[`body > post weekends hash ae37edc533e54382b9241cd11462decb 1`] = `
     src=\\"http://blog.beeminder.com/wp-content/uploads/2016/05/honeybeeweekend.gif\\"
     class=\\"aligncenter\\"
     alt=\\"cute honey bee tells you to enjoy the weekend\\"
-    title
   >
 </p>
 <p>
@@ -90817,8 +90629,8 @@ You&#8217;re more photogenic when you&#8217;re laughing, for example, or sometim
 How would you react if you saw 149 on the scale and then a week later 150, even though you went to the gym more than usual?
 Would you throw your hands up, eat all the junk food in the house, and gear up for a better plan starting Monday?
 No!
-Maybe dinner the night before was a little larger than normal, or you drank a lot of water,
-  or maybe you just haven&#8217;t emptied your bowels recently enough! 
+Maybe dinner the night before was a little larger than normal, or you drank a lot of water, 
+or maybe you just haven&#8217;t emptied your bowels recently enough! 
 In fact, one of our beeminders (UPDATE: it was
   <a href=\\"http://robfelty.com\\">
     Rob Felty
@@ -90933,7 +90745,7 @@ Weighing daily with the feedback of a Beeminder graph is a great way to shift ou
 You&#8217;ll find you still have to fight to change your thinking in the beginning.
 With the actual number staring you in the face from the scale, you have a choice to make.
 You can let yourself believe that you&#8217;ve gained weight and therefore failed and need to start over with a new and better plan.
-  Or, you can go look at your weight graph, see that you&#8217;re still on the road and take on the new day with the motivation to still be on track tomorrow.
+Or, you can go look at your weight graph, see that you&#8217;re still on the road and take on the new day with the motivation to still be on track tomorrow.
 Work out a little harder, be a little more conscious of your food intake, get plenty of sleep (a great metabolism boost), and remind yourself repeatedly that you&#8217;re on track to your goal.
 You&#8217;re in the process of losing weight and what you do today matters because you have a yellow brick road to be on tomorrow.
 Drilling those positive thoughts into your head will keep you from dissolving into past habits, or dwelling on frustration or defeat.
@@ -91341,7 +91153,7 @@ exports[`body > post weusethat hash f9748392a35a40fa6e225d0a38cd8f95 1`] = `
     class=\\"aligncenter\\"
     alt=\\"Beeminder logo\\"
     title=\\"The 'that' that we use is, of course, Beeminder itself (one of them, anyway)\\"
-    style=\\"border: 1px solid #aaaaaa;\\"
+    style=\\"border:1px solid #aaaaaa\\"
     src=\\"http://blog.beeminder.com/wp-content/uploads/2012/08/turtle_logo_03.png\\"
   >
 </p>
@@ -91385,7 +91197,7 @@ We&#8217;re over 5,000 registered users now, with 11% paying, making us just bar
     class=\\"alignright\\"
     alt=\\"turtle upon turtle\\"
     title=\\"Why howdy, Brer Terrapin\\"
-    style=\\"float: right; margin: 20px 0 0 15px; width: 250px;\\"
+    style=\\"float:right;margin:20px 0 0 15px;width:250px\\"
     src=\\"http://blog.beeminder.com/wp-content/uploads/2012/08/River_terrapin.jpeg\\"
   >
 </p>
@@ -91981,7 +91793,7 @@ a separate Google calendar for &#8220;I will&#8221; commitments that&#8217;s int
     href=\\"http://blog.beeminder.com/shirknturk\\"
     title=\\"Excessively short version: don&#39;t automate things until you have to\\"
   >
-    Shirk & Turk principle
+    Shirk &amp; Turk principle
   </a>
   ,
 I&#8217;ve started with something I can do manually. 
@@ -94614,11 +94426,7 @@ For all but the most extreme procrastinators it already is!
   So, dive in, and let us know what zaps you create!
 Here are a few you can start with:
 </p>
-<script
-  type=\\"text/javascript\\"
-  src=\\"https://zapier.com/zapbook/embed/widget.js?iframe=true&guided_zaps=301,302,336\\"
->
-</script>
+&lt;script&gt;&lt;/script&gt;
 <p>
   <br>
   &nbsp;
