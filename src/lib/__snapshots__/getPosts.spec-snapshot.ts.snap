@@ -66258,7 +66258,7 @@ But don&#8217;t listen to me, see what a true
 "
 `;
 
-exports[`body > post predict hash fd3564810b4c9e964b0e951b81a026c8 1`] = `
+exports[`body > post predict hash 5dda96837663d9325b0b67d5c60bc481 1`] = `
 "
 <p>
   <img
@@ -70236,7 +70236,7 @@ See especially the case of Pact, whose scheme of paying successful users we&#821
 "
 `;
 
-exports[`body > post readwise hash e85fc9fd904ce34476efe70a3771d93f 1`] = `
+exports[`body > post readwise hash cfc7dd19133c9cf22f76789324c48ebf 1`] = `
 "
 <p>
   <img
@@ -72823,7 +72823,7 @@ You don&#8217;t actually have to have any idea how to choose what safety buffer 
 "
 `;
 
-exports[`body > post rosary hash 0c3c8246154b0309ac1f0519d1015d23 1`] = `
+exports[`body > post rosary hash 24e84c774565ba8cf9f44904ddaa7cf4 1`] = `
 "
 <p>
   <img
@@ -73208,66 +73208,58 @@ your Beeminder goal and you&#8217;ll see a popup confirmation.
   To get the user’s goals and to add a datapoint to a particular goal you must first authenticate using OAuth2.
 In the iOS SDK it&#8217;s easy to do that without any external library:
 </p>
-<font size=\\"-1\\">
-  <pre lang=\\"objc\\">
-    <p>
-      static NSString * BackendBaseURL = @\\"
-      <a href=\\"https://www.beeminder.com/\\">
-        https://www.beeminder.com/
-      </a>
-      \\";
+<pre>
+  <code>
+    static NSString * BackendBaseURL = @\\"https://www.beeminder.com/\\";
 static NSString * OAuth2Path     = @\\"apps/authorize\\";
 static NSString * ClientId       = @\\"client_id=mysupersecretwithbeeminder\\";
 static NSString * RedirectURI    = @\\"redirect_uri=iterco://beeminder-callback\\";
 static NSString * ResponseType   = @\\"response_type=token\\";
-    </p>
-    <ul>
-      <li>
-        (void) beginOAuth
+
+- (void) beginOAuth
 {
-if([[NSUserDefaults standardUserDefaults]
-stringForKey:@\\"beeminder_token\\"] == nil)
-{
-  NSString * auth = [BackendBaseURL stringByAppendingFormat: @\\"%@?%@&%@&%@\\",
-                                                         OAuth2Path,
-                                                         ClientId,
-                                                         RedirectURI,
-                                                         ResponseType];
-  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:auth]];
+  if([[NSUserDefaults standardUserDefaults]
+      stringForKey:@\\"beeminder_token\\"] == nil)
+  {
+    NSString * auth = [BackendBaseURL stringByAppendingFormat: @\\"%@?%@&%@&%@\\",
+                                                               OAuth2Path,
+                                                               ClientId,
+                                                               RedirectURI,
+                                                               ResponseType];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:auth]];
+  }
 }
-}
-      </li>
-    </ul>
-    <p>
-      It will redirect you to Safari where the user will authorize Beeminder to let your app have access to your account. 
+  </code>
+</pre>
+<p>
+  It will redirect you to Safari where the user will authorize Beeminder to let your app have access to your account. 
 No login credentials are entered in your app.
-    </p>
-    <p>
-      The
-      <code>
-        redirect_uri
-      </code>
-      you should set at
-      <code>
-        CFBundleURLSchemes
-      </code>
-      in the
-      <strong>
-        Info.plist
-      </strong>
-      of your project.
-    </p>
-    <p>
-      Safari will redirect you back to your app and you’ll listen for it in your App Delegate and store the
-      <code>
-        access_token
-      </code>
-      to access Beeminder on behalf of the user:
-    </p>
-    <font size=\\"-1\\">
-      <pre lang=\\"objc\\">
-        <p>
-          -(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url
+</p>
+<p>
+  The
+  <code>
+    redirect_uri
+  </code>
+  you should set at
+  <code>
+    CFBundleURLSchemes
+  </code>
+  in the
+  <strong>
+    Info.plist
+  </strong>
+  of your project.
+</p>
+<p>
+  Safari will redirect you back to your app and you’ll listen for it in your App Delegate and store the
+  <code>
+    access_token
+  </code>
+  to access Beeminder on behalf of the user:
+</p>
+<pre>
+  <code>
+    -(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
   NSLog(@\\"%@\\",url);
   if([url.host isEqualToString:@\\"beeminder-callback\\"]) {
@@ -73286,248 +73278,223 @@ No login credentials are entered in your app.
           [[NSUserDefaults standardUserDefaults] synchronize]; 
         }
       }
-    }
-          <br>
-          }
+    }       
+  }
   return YES;
 }
-        </p>
-        <h3>
-          Requesting the Goals
-        </h3>
-        <p>
-          Since Beeminder's API is pure JSON I suggest a library like
-          <a
-            href=\\"https://github.com/AFNetworking/AFNetworking\\"
-            title=\\"AFNetworking is a delightful networking library for iOS and Mac OSX\\"
-          >
-            AFNetworking
-          </a>
-          to make things easier.
-        </p>
-        <font size=\\"-1\\">
-          <pre lang=\\"objc\\">
-            <ul>
-              <li>
-                (void) refreshGoalsWithCompletion: (void (^)(BOOL, NSInteger))completion
+  </code>
+</pre>
+<h3>
+  Requesting the Goals
+</h3>
+<p>
+  Since Beeminder&#8217;s API is pure JSON I suggest a library like
+  <a
+    href=\\"https://github.com/AFNetworking/AFNetworking\\"
+    title=\\"AFNetworking is a delightful networking library for iOS and Mac OSX\\"
+  >
+    AFNetworking
+  </a>
+  to make things easier.
+</p>
+<pre>
+  <code>
+    - (void) refreshGoalsWithCompletion: (void (^)(BOOL, NSInteger))completion
 {
-id success = ^(AFHTTPRequestOperation * operation, id JSON) {
-  NSMutableArray *l_goals = [NSMutableArray arrayWithCapacity:[JSON count]];
-  for(NSDictionary * goal in JSON) { [l_goals addObject:goal]; }
-  _goals = [l_goals copy];
-  completion(YES, 200);
-};
-id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
-  completion(NO, [operation.response statusCode]);
-};
-NSDictionary *params = @{ @\\"access_token\\" : [self getToken] };
-[_client getPath:@\\"/api/v1/users/me/goals.json\\"
-     parameters:params success:success failure:failure];
-              </li>
-            </ul>
-            <p>
-              }
-            </p>
-            <p>
-              In the above function
-              <code>
-                _client
-              </code>
-              is a variable of our helper class initialized as:
-            </p>
-            <font size=\\"-1\\">
-              <pre lang=\\"objc\\">
-                <p>
-                  _client = [AFHTTPClient clientWithBaseURL:
-    [NSURL URLWithString:@\\"
-                  <a href=\\"https://www.beeminder.com/%22%5D%5D\\">
-                    https://www.beeminder.com/\\"]]
-                  </a>
-                  ;
+  id success = ^(AFHTTPRequestOperation * operation, id JSON) {
+    NSMutableArray *l_goals = [NSMutableArray arrayWithCapacity:[JSON count]];
+    for(NSDictionary * goal in JSON) { [l_goals addObject:goal]; }
+    _goals = [l_goals copy];
+    completion(YES, 200);
+  };
+  id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
+    completion(NO, [operation.response statusCode]);
+  };
+  NSDictionary *params = @{ @\\"access_token\\" : [self getToken] };
+  [_client getPath:@\\"/api/v1/users/me/goals.json\\"
+           parameters:params success:success failure:failure];
+}
+  </code>
+</pre>
+<p>
+  In the above function
+  <code>
+    _client
+  </code>
+  is a variable of our helper class initialized as:
+</p>
+<pre>
+  <code>
+    _client = [AFHTTPClient clientWithBaseURL:
+    [NSURL URLWithString:@\\"https://www.beeminder.com/\\"]];
 [_client registerHTTPOperationClass:[AFJSONRequestOperation class]];
 [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
-                </p>
-                <h3>
-                  Adding Datapoints
-                </h3>
-                <p>
-                  The last step after the user selects which goal will be updated when he prayed the rosary is to add a datapoint.
-                </p>
-                <font size=\\"-1\\">
-                  <pre lang=\\"objc\\">
-                    <ul>
-                      <li>
-                        <p>
-                          (void) addOneUnitToGoal:(void (^)(BOOL, NSInteger))completion
+  </code>
+</pre>
+<h3>
+  Adding Datapoints
+</h3>
+<p>
+  The last step after the user selects which goal will be updated when he prayed the rosary is to add a datapoint.
+</p>
+<pre>
+  <code>
+    - (void) addOneUnitToGoal:(void (^)(BOOL, NSInteger))completion
 {
-id success = ^(AFHTTPRequestOperation * operation, id JSON) {
-  completion(YES, 200);
-};
-id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
-  completion(NO, [operation.response statusCode]);
-};
-NSDictionary *params = @{
-  @\\"access_token\\": [self getToken],
-  @\\"comment\\": @\\"Added by Electronic Rosary by Netfilter\\",
-  @\\"value\\": @\\"1\\"
-};
-                        </p>
-                        <p>
-                          NSString * path = [NSString stringWithFormat:
-               @\\"/api/v1/users/me/goals/%@/datapoints.json\\",
-               [self getSelectedGoal]];
-[_client postPath:path parameters:params success:success failure:failure];
-                        </p>
-                      </li>
-                    </ul>
-                    <p>
-                      }
-                    </p>
-                    <p>
-                      We’ll be releasing in the next few weeks the full code of the helper class to integrate Beeminder in your iOS app 
+  id success = ^(AFHTTPRequestOperation * operation, id JSON) {
+    completion(YES, 200);
+  };
+  id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
+    completion(NO, [operation.response statusCode]);
+  };
+  NSDictionary *params = @{
+    @\\"access_token\\": [self getToken],
+    @\\"comment\\": @\\"Added by Electronic Rosary by Netfilter\\",
+    @\\"value\\": @\\"1\\"
+  };
+
+  NSString * path = [NSString stringWithFormat:
+                     @\\"/api/v1/users/me/goals/%@/datapoints.json\\",
+                     [self getSelectedGoal]];
+  [_client postPath:path parameters:params success:success failure:failure];
+}
+  </code>
+</pre>
+<p>
+  We’ll be releasing in the next few weeks the full code of the helper class to integrate Beeminder in your iOS app 
 (we need to refactor the code decouple it from our libraries, although a
-                      <a
-                        href=\\"https://github.com/ppaulojr/NFBeeminderHelper\\"
-                        title=\\"You can fork it on GitHub\\"
-                      >
-                        work in progress is already available
-                      </a>
-                      ).
-                    </p>
-                    <p>
-                      <br>
-                       
-                      <br>
-                    </p>
-                    <h2 id=\\"thanks\\">
-                      Thank You, Leah and Beeminder!
-                    </h2>
-                    <p>
-                      To thank both Beeminder and Leah Libresco, I’ll be making
-                      <a
-                        href=\\"https://itunes.apple.com/us/app/iterco/id489906277?mt=8\\"
-                        title=\\"Electronic Rosary offers recordings in English, Portuguese, Spanish, French, Italian, German, Polish, Russian, Esperanto, and Latin. You can record your own rosary and share it.\\"
-                      >
-                        Electronic Rosary
-                      </a>
-                      <a
-                        class=\\"footnote\\"
-                        id=\\"WANDROID1\\"
-                        href=\\"#WANDROID\\"
-                      >
-                        [2]
-                      </a>
-                      free for download for the next five days. 
+  <a
+    href=\\"https://github.com/ppaulojr/NFBeeminderHelper\\"
+    title=\\"You can fork it on GitHub\\"
+  >
+    work in progress is already available
+  </a>
+  ).
+</p>
+<p>
+  <br>
+   
+  <br>
+</p>
+<h2 id=\\"thanks\\">
+  Thank You, Leah and Beeminder!
+</h2>
+<p>
+  To thank both Beeminder and Leah Libresco, I’ll be making
+  <a
+    href=\\"https://itunes.apple.com/us/app/iterco/id489906277?mt=8\\"
+    title=\\"Electronic Rosary offers recordings in English, Portuguese, Spanish, French, Italian, German, Polish, Russian, Esperanto, and Latin. You can record your own rosary and share it.\\"
+  >
+    Electronic Rosary
+  </a>
+  <a
+    class=\\"footnote\\"
+    id=\\"WANDROID1\\"
+    href=\\"#WANDROID\\"
+  >
+    [2]
+  </a>
+  free for download for the next five days. 
 Maybe you can use it to pray for me once in a while. :)
-                    </p>
-                    <p>
-                      <a href=\\"https://itunes.apple.com/us/app/iterco/id489906277?mt=8\\">
-                        <img
-                          class=\\"aligncenter\\"
-                          alt=\\"Electronic Rosary logo\\"
-                          title=\\"Electronic Rosary offers recordings in English, Portuguese, Spanish, French, Italian, German, Polish, Russian, Esperanto, and Latin. You can record your own rosary and share it.\\"
-                          src=\\"http://blog.beeminder.com/wp-content/uploads/2014/11/rosary-logo.png\\"
-                        >
-                      </a>
-                    </p>
-                    <p>
-                      <br>
-                       
-                      <br>
-                    </p>
-                    <h2>
-                      Footnotes
-                    </h2>
-                    <p>
-                      <a
-                        class=\\"footnote\\"
-                        id=\\"BIO\\"
-                        href=\\"#BIO1\\"
-                      >
-                        [1]
-                      </a>
-                      <em>
-                        Pedro Paulo graduated with a degree in Computer Engineering from PUC-Rio. 
+</p>
+<p>
+  <a href=\\"https://itunes.apple.com/us/app/iterco/id489906277?mt=8\\">
+    <img
+      class=\\"aligncenter\\"
+      alt=\\"Electronic Rosary logo\\"
+      title=\\"Electronic Rosary offers recordings in English, Portuguese, Spanish, French, Italian, German, Polish, Russian, Esperanto, and Latin. You can record your own rosary and share it.\\"
+      src=\\"http://blog.beeminder.com/wp-content/uploads/2014/11/rosary-logo.png\\"
+    >
+  </a>
+</p>
+<p>
+  <br>
+   
+  <br>
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"BIO\\"
+    href=\\"#BIO1\\"
+  >
+    [1]
+  </a>
+  <em>
+    Pedro Paulo graduated with a degree in Computer Engineering from PUC-Rio. 
 He also graduated, years later, with a PhD in Medicine from USP. 
 He spends most of his time at
-                        <a
-                          href=\\"http://www.netfilter.com.br\\"
-                          title=\\"Thanks to Netfilter for okaying the 5 free days of Electronic Rosary\\"
-                        >
-                          Netfilter
-                        </a>
-                        but some days he teaches, advises students, and does medical research (Alzheimer's and Autism) at the hospital. 
+    <a
+      href=\\"http://www.netfilter.com.br\\"
+      title=\\"Thanks to Netfilter for okaying the 5 free days of Electronic Rosary\\"
+    >
+      Netfilter
+    </a>
+    but some days he teaches, advises students, and does medical research (Alzheimer&#8217;s and Autism) at the hospital. 
 In his spare time he reads, plays soccer, and organizes
-                        <a
-                          href=\\"https://www.youtube.com/watch?v=ZxK8I9gjU98\\"
-                          title=\\"Amajari,RR, Brazil, 2008\\"
-                        >
-                          volunteer work
-                        </a>
-                        sometimes involving
-                        <a
-                          href=\\"http://nobodyreadit.wordpress.com/2014/09/10/improvised-medicine-personal-recollections/\\"
-                          title=\\"PPJ's placeholder blog\\"
-                        >
-                          improvised medicine
-                        </a>
-                        .
+    <a
+      href=\\"https://www.youtube.com/watch?v=ZxK8I9gjU98\\"
+      title=\\"Amajari,RR, Brazil, 2008\\"
+    >
+      volunteer work
+    </a>
+    sometimes involving
+    <a
+      href=\\"http://nobodyreadit.wordpress.com/2014/09/10/improvised-medicine-personal-recollections/\\"
+      title=\\"PPJ's placeholder blog\\"
+    >
+      improvised medicine
+    </a>
+    .
 And fun fact: he was one of the first
-                        <a
-                          href=\\"http://en.wikipedia.org/wiki/Lua_%28programming_language%29\\"
-                          title=\\"Pedro Paulo is our kind of nerd\\"
-                        >
-                          Lua
-                        </a>
-                        programmers.
-                      </em>
-                    </p>
-                    <p>
-                      <a
-                        class=\\"footnote\\"
-                        id=\\"WANDROID\\"
-                        href=\\"#WANDROID1\\"
-                      >
-                        [2]
-                      </a>
-                      There are versions of Electronic Rosary for
-                      <a
-                        href=\\"http://www.windowsphone.com/en-us/store/app/iterco/915820fa-c6eb-4aa7-8380-47a0081975e1\\"
-                        title=\\"Electonic Rosary in the Microsoft Marketplace\\"
-                      >
-                        Windows Phone
-                      </a>
-                      and
-                      <a
-                        href=\\"https://play.google.com/store/apps/details?id=br.com.netfilter.iterco\\"
-                        title=\\"Electronic Rosary in the Google Play Store\\"
-                      >
-                        Android
-                      </a>
-                      as well, but they are far less polished than the
-                      <a
-                        href=\\"https://itunes.apple.com/us/app/iterco/id489906277?mt=8\\"
-                        title=\\"Electronic Rosary offers recordings in English, Portuguese, Spanish, French, Italian, German, Polish, Russian, Esperanto, and Latin. You can record your own rosary and share it.\\"
-                      >
-                        iOS version
-                      </a>
-                      .
-                    </p>
-                    <p>
-                      <br>
-                       
-                      <br>
-                    </p>
-                  </pre>
-                </font>
-              </pre>
-            </font>
-          </pre>
-        </font>
-      </pre>
-    </font>
-  </pre>
-</font>
+    <a
+      href=\\"http://en.wikipedia.org/wiki/Lua_%28programming_language%29\\"
+      title=\\"Pedro Paulo is our kind of nerd\\"
+    >
+      Lua
+    </a>
+    programmers.
+  </em>
+</p>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"WANDROID\\"
+    href=\\"#WANDROID1\\"
+  >
+    [2]
+  </a>
+  There are versions of Electronic Rosary for
+  <a
+    href=\\"http://www.windowsphone.com/en-us/store/app/iterco/915820fa-c6eb-4aa7-8380-47a0081975e1\\"
+    title=\\"Electonic Rosary in the Microsoft Marketplace\\"
+  >
+    Windows Phone
+  </a>
+  and
+  <a
+    href=\\"https://play.google.com/store/apps/details?id=br.com.netfilter.iterco\\"
+    title=\\"Electronic Rosary in the Google Play Store\\"
+  >
+    Android
+  </a>
+  as well, but they are far less polished than the
+  <a
+    href=\\"https://itunes.apple.com/us/app/iterco/id489906277?mt=8\\"
+    title=\\"Electronic Rosary offers recordings in English, Portuguese, Spanish, French, Italian, German, Polish, Russian, Esperanto, and Latin. You can record your own rosary and share it.\\"
+  >
+    iOS version
+  </a>
+  .
+</p>
+<p>
+  <br>
+   
+  <br>
+</p>
 "
 `;
 
