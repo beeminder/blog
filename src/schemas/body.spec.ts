@@ -11,7 +11,7 @@ describe("body", () => {
     );
 
     // https://www.codetable.net/name/em-dash
-    expect(r).toContain("—");
+    expect(r).toContain("&#8212;");
   });
 
   it("throws if no BEGIN_MAGIC", () => {
