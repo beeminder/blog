@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import getPosts from "./getPosts";
 import { createHash } from "crypto";
 import toDiffableHtml from "diffable-html";
-import { Post } from "../schemas/post";
+import type { Post } from "../schemas/post";
 
 console.time("Retrieving posts");
 const posts = await getPosts();
