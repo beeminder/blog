@@ -44,8 +44,18 @@ export const body = z
   .transform((html) =>
     sanitizeHtml(html, {
       allowedAttributes: {
-        "*": ["id", "href", "title", "class", "style"],
-        a: ["href", "name", "target"],
+        "*": [
+          "id",
+          "href",
+          "title",
+          "class",
+          "style",
+          "data-lang",
+          "lang",
+          "align",
+          "dir",
+        ],
+        a: ["name", "target"],
         font: ["size", "color"],
         form: ["action"],
         iframe: [
@@ -57,6 +67,10 @@ export const body = z
           "border",
           "cellspacing",
           "scrolling",
+          "allow",
+          "allowfullscreen",
+          "webkitallowfullscreen",
+          "mozallowfullscreen",
         ],
         img: ["src", "alt", "width", "height", "caption", "cite"],
         input: ["type", "name", "value"],
@@ -90,6 +104,7 @@ export const body = z
         "section",
         "blockquote",
         "dd",
+        "details",
         "div",
         "dl",
         "dt",
@@ -131,6 +146,7 @@ export const body = z
         "strike",
         "strong",
         "sub",
+        "summary",
         "sup",
         "time",
         "u",
