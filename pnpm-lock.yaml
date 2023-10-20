@@ -70,6 +70,9 @@ devDependencies:
   '@faker-js/faker':
     specifier: ^8.0.2
     version: 8.0.2
+  '@types/diffable-html':
+    specifier: ^5.0.1
+    version: 5.0.1
   '@types/feather-icons':
     specifier: ^4.29.2
     version: 4.29.2
@@ -1002,6 +1005,10 @@ packages:
     dependencies:
       '@types/ms': 0.7.31
     dev: false
+
+  /@types/diffable-html@5.0.1:
+    resolution: {integrity: sha512-gzN9mo6NkY5qeVmjGEg1uJwljz7LIJak6WqUQQhaP49Ig5gBUlo4sXqJNEeZ0K38Ehxe0Wr7fHxYEW+YybOWyQ==}
+    dev: true
 
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
