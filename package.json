@@ -47,6 +47,7 @@
   "devDependencies": {
     "@anatine/zod-mock": "^3.13.2",
     "@faker-js/faker": "^8.0.2",
+    "@types/diffable-html": "^5.0.1",
     "@types/feather-icons": "^4.29.2",
     "@types/findup-sync": "^4.0.2",
     "@types/levenshtein": "^1.0.2",
@@ -55,6 +56,7 @@
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
     "csv-parse": "^5.5.0",
+    "diffable-html": "^5.0.0",
     "eslint": "^8.49.0",
     "prettier": "3.0.3",
     "typescript": "^5.2.2",
