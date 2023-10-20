@@ -22036,6 +22036,335 @@ And stay on the Yellow Brick Road.
 }
 `;
 
+exports[`body > post college hash 73c77c02fc49cc3c3c8a74ad490dcf7f 1`] = `
+{
+  "author": "shanaqui",
+  "content": "<p><img class=\\"aligncenter\\"
+alt=\\"A slightly disheveled college student surrounded by books and study materials\\"
+title=\\"Not Nicky, but maybe spiritually kind of Nicky? PS: Brainstorming list of other potential &quot;The X Beeminder Goals I Wish I'd Had When Y&quot; posts: Moving House, Writing A Thesis, Becoming Self-Employed, ...\\"
+width=\\"450px\\"
+src=\\"https://user-images.githubusercontent.com/46881/261724657-41d0688f-016b-4c6e-9bee-c08a13e4f344.png\\"/></p>
+<p>We&#8217;re slightly behind for the traditional September start date, but it&#8217;s not too late!
+The semester at the London School of Hygiene & Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already.</p>
+<p>I don&#8217;t know about any of you, but whenever the new school year starts it feels like a good time to make some resolutions. 
+My life has run from academic year to academic year almost without pause since I was five years old (and now I&#8217;m 34!), so maybe it&#8217;s only natural that in some ways it&#8217;s more of a &#8220;New Year&#8221; moment than the day the calendar rolls over.</p>
+<p>Which got me thinking about the Beeminder goals I wish I&#8217;d had back when I first attended university in person (shoutout to any other alumni of Cardiff University).<br>The stuff that might&#8217;ve helped me make the most of it. 
+The stuff that might&#8217;ve cemented me in some good habits forever, but also the stuff that would&#8217;ve helped me just&#8230; enjoy the heck out of my time there. </p>
+<p>So without further ado, here are the fruits of that thinking: the five goals I wish I&#8217;d had at university.</p>
+<h2>A studying goal</h2>
+<p>I know, we&#8217;re really starting with the obvious here. 
+(And I actually have a whole blog post on just 
+this &#8212; <a href=\\"https://blog.beeminder.com/study/\\" title=\\"Now two years old but we stand by it!\\">Nicky&#8217;s Secret To Beeminding Studying: It&#8217;s About Time</a>!)
+But I&#8217;m serious! </p>
+<p>I barely knew how to study by the time I landed at university, and I definitely wasn&#8217;t managing my time well.
+When they told me I should be spending X hours a week on the reading and X hours a week on extra research, it went in one ear and out the other. 
+If I&#8217;d had a Beeminder goal&#8230; </p>
+<p>I think if I were to go back and set one up for myself aged nineteen, I&#8217;d pick a simple time-based one, linked with 
+<a href=\\"https://blog.beeminder.com/toggl\\" title=\\"Blog post introducing our Toggl autodata integration\\">Toggl</a> (if that had existed yet). 
+The nice thing about a time-based goal is that <em>how</em> you fill the time is flexible: 
+I could&#8217;ve spent it doing the reading, 
+I could&#8217;ve included the time I spent talking to my personal tutor, 
+the time in lectures, 
+and the time spent doing extra research. 
+I&#8217;d have had a clear idea of my progress and the effort I was managing to put in. 
+Maybe it&#8217;d have been a wake-up call when it became obvious I wasn&#8217;t putting in enough time! </p>
+<p>I think it&#8217;s important with studying to think about what your needs are exactly: 
+these days I use both a time-based goal and a goal that gets a +1 whenever I finish a section.
+That one flat-lines most of the week and then jumps up at the end of the week to ensure I finish sections by certain deadlines. 
+That&#8217;s important now because my study is self-directed, but maybe not so useful back then. 
+Roll with what you actually need, and be ready to change if it&#8217;s not working out.</p>
+<p><a href=\\"https://www.beeminder.com/shanaqui/lshtm_bacterial\\" 
+title=\\"One of Nicky's goals for studying bacterial infections\\">
+<img 
+class=\\"aligncenter\\" 
+width=\\"450\\" 
+alt=\\"Screenshot of a Beeminder goal page\\"
+src=\\"https://github.com/beeminder/blog/assets/46881/b5b8067e-9579-404d-83c5-5231d3f7949f\\">
+</a></p>
+<h2>A budgeting goal</h2>
+<p>I went to university with big plans about how I was going to manage my money. 
+I didn&#8217;t stick to <em>any</em> of them&#8230;</p>
+<p>I don&#8217;t think it needs to be fancy, but if I could go back in time, I&#8217;d hook myself up with You Need A Budget (YNAB) sooner, plus a goal to reconcile all my transactions every day. 
+Even without YNAB, I think a goal that pushes you to really <em>look</em> at what you&#8217;re spending, and plan out what you&#8217;re saving for and what ready money you have around in case of need, is completely invaluable. 
+University would&#8217;ve been a great time to learn that skill, especially since it was a time of big temptations &#8212; white hot chocolate at Shot in the Dark every night, anyone? 
+Though that café is gone now. 
+Boo! </p>
+<h2>A goal for keeping in touch with people back home</h2>
+<p>Sure, independence is lovely. 
+And I wish I&#8217;d taken even more full of advantage of it, rather than mostly just realising I could read <em>all day</em> and no one could stop me. 
+(Not that I regret that realisation either.) 
+All the same, it&#8217;s easy to lose touch with people from pre-college life on a university campus.
+I made a Beeminder goal during the pandemic to contact &#8212; five times a week &#8212; any of a set of people I wasn&#8217;t already regularly speaking to before the goal&#8217;s creation. 
+I&#8217;ve had some great conversations because of it, rekindled a friendship, and generally just made my life quite a lot better. 
+All from one Beeminder goal that doesn&#8217;t even take that much time to complete! </p>
+<p>If I&#8217;d had that back when I was at university, I&#8217;d have kept in touch with the people I grew up with a bit better, and maybe I&#8217;d have felt a bit more grounded and supported when things went wrong, too. 
+Among all the new stuff, it can help to remember that the people back home have your back.</p>
+<p><a href=\\"https://www.beeminder.com/shanaqui/reachout\\" 
+title=\\"Nicky's goal for reaching out to people\\">
+<img class=\\"aligncenter\\" 
+width=\\"450\\" 
+alt=\\"Screenshot of a Beeminder goal page\\" 
+src=\\"https://github.com/beeminder/blog/assets/46881/b1965646-b32d-4124-a1f3-6575cdcefb88\\">
+</a></p>
+<h2>A goal for trying new things</h2>
+<p>University is a great time to just figure out who the heck you are and what you like. 
+I was living away from my parents for the first time, 
+setting my own schedule, 
+choosing my own food, 
+all of that. 
+I wish that I&#8217;d pushed myself to be a bit more adventurous then, and say yes to a few more outings, done a few more silly things, joined one of the clubs&#8230; 
+I don&#8217;t regret much about my life, and I had fun reading books in my room, but I&#8217;m sure there are people and experiences I missed out on. 
+(Why oh why did I never sign up for the choir?!)</p>
+<p>Plus, it&#8217;d have been a great time to learn to cook with no one around to scrutinise my mistakes or fix it for me if things went wrong. 
+If I&#8217;d just tried one new recipe a week, that would&#8217;ve been a great outcome.</p>
+<p>Depending on your temperament, maybe this goal would be better phrased as a goal for doing something brave &#8212; goodness knows it&#8217;d have taken all the courage I had to audition for the choir!</p>
+<h2>A goal for making healthy choices</h2>
+<p>It&#8217;s never too late for this one; 
+I created one a few months ago and it&#8217;s going great so far!</p>
+<p>Just imagine the cumulative effect of changing your mind and picking a healthy option instead of a greasy takeout, 
+and taking a walk instead of watching TV all night, 
+and going to bed an hour earlier rather than sitting around not doing much. 
+That&#8217;s what my new goal is for:
+to instill a habit of at least <em>reflecting</em> before I make a choice, at least once a day. </p>
+<p>Here&#8217;s the note I&#8217;ve set for myself on that goal: </p>
+<blockquote>
+<p>&#8220;Healthier choices can mean all kinds of things, but for the purposes of this goal we&#8217;re talking about physical health. 
+So I would be making a healthier choice when I choose to eat yoghurt or nuts instead of a bag of potato crisps; 
+I&#8217;d be making a healthier choice by choosing to go for a walk over lunch instead of playing FFXIV the entire time. 
+Healthy choices can be small, barely impactful in the short-term &#8212; but cumulatively, if I&#8217;m making at least one healthier choice per day, that&#8217;s a lot more healthier choices.
+However, it&#8217;s not a healthier choice if I was going to do it anyway. 
+If I&#8217;m heading to the kitchen specifically to grab a yoghurt for breakfast, that&#8217;s not a healthier choice, that&#8217;s the choice I was making anyway.&#8221;</p>
+</blockquote>
+<p>I&#8217;ve set the rate to 1/day &#8212; but I&#8217;m using Nathan Arthur&#8217;s 
+<a href=\\"https://autodial.taskratchet.com/\\" title=\\"Hosted on TaskRatchet, which you should also check out!\\">autodialer</a> to put my feet to the fire.</p>
+<p>Man, if I&#8217;d set that up back in university&#8230; </p>
+<p><a href=\\"https://www.beeminder.com/shanaqui/healthierchoice\\" 
+title=\\"The one for making healthier choices\\">
+<img class=\\"aligncenter\\"
+width=\\"450\\" 
+alt=\\"Screenshot of a Beeminder goal page\\" 
+src=\\"https://github.com/beeminder/blog/assets/46881/845e6963-4dd0-475e-8d66-c2507edc6158\\">
+</a></p>
+<h2>How about you?</h2>
+<p>I&#8217;m sure these aren&#8217;t the only goals that would&#8217;ve been useful to me back in university. 
+I could definitely have used Beeminder back when I was training for a 5k charity run, for example! 
+But these <em>specific</em> five goals are ones I really wish I&#8217;d set back then, because I think they&#8217;d have helped me make the most of it. 
+Not that I want you to think I did badly, or that I didn&#8217;t love university &#8212; Cardiff University was a great place to be, I had great friends, and a great time. 
+(And I won&#8217;t be falsely modest: I got great grades, too.)</p>
+<p>But maybe I could&#8217;ve made even more of it, with a little push.</p>
+<p>What about you? 
+Are there goals you wish you could go back in time and set up for yourself at college? 
+Or maybe you <em>are</em> at college, and you have indispensable Beeminder goals that already get you through your day? 
+We&#8217;re eager to hear, and maybe I&#8217;ll be stealing your ideas&#8230;</p>
+",
+  "date": 2023-10-18T00:00:00.000Z,
+  "date_string": "2023-10-18",
+  "disqus_id": "college",
+  "excerpt": "We’re slightly behind for the traditional September start date, but it’s not too late! The semester at the London School of Hygiene & Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already. I don’t know about any of you, but whenever the new school year starts it feels like",
+  "image": {
+    "alt": "A slightly disheveled college student surrounded by books and study materials",
+    "extracted": true,
+    "src": "https://user-images.githubusercontent.com/46881/261724657-41d0688f-016b-4c6e-9bee-c08a13e4f344.png",
+    "title": "Not Nicky, but maybe spiritually kind of Nicky? PS: Brainstorming list of other potential \\"The X Beeminder Goals I Wish I'd Had When Y\\" posts: Moving House, Writing A Thesis, Becoming Self-Employed, ...",
+  },
+  "md": "https://github.com/beeminder/blog/issues/286
+
+BEGIN_MAGIC[The Five Beeminder Goals I Wish I'd Had In College]
+
+<img class=\\"aligncenter\\"
+alt=\\"A slightly disheveled college student surrounded by books and study materials\\"
+title=\\"Not Nicky, but maybe spiritually kind of Nicky? PS: Brainstorming list of other potential &quot;The X Beeminder Goals I Wish I'd Had When Y&quot; posts: Moving House, Writing A Thesis, Becoming Self-Employed, ...\\"
+width=\\"450px\\"
+src=\\"https://user-images.githubusercontent.com/46881/261724657-41d0688f-016b-4c6e-9bee-c08a13e4f344.png\\"/>
+
+We're slightly behind for the traditional September start date, but it's not too late!
+The semester at the London School of Hygiene & Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already.
+
+I don't know about any of you, but whenever the new school year starts it feels like a good time to make some resolutions. 
+My life has run from academic year to academic year almost without pause since I was five years old (and now I'm 34!), so maybe it's only natural that in some ways it's more of a \\"New Year\\" moment than the day the calendar rolls over.
+
+Which got me thinking about the Beeminder goals I wish I'd had back when I first attended university in person (shoutout to any other alumni of Cardiff University).  
+The stuff that might've helped me make the most of it. 
+The stuff that might've cemented me in some good habits forever, but also the stuff that would've helped me just... enjoy the heck out of my time there. 
+
+So without further ado, here are the fruits of that thinking: the five goals I wish I'd had at university.
+
+## A studying goal
+
+I know, we're really starting with the obvious here. 
+(And I actually have a whole blog post on just 
+this -- [Nicky's Secret To Beeminding Studying: It's About Time](
+  https://blog.beeminder.com/study/
+  \\"Now two years old but we stand by it!\\"
+)!)
+But I'm serious! 
+
+I barely knew how to study by the time I landed at university, and I definitely wasn't managing my time well.
+When they told me I should be spending X hours a week on the reading and X hours a week on extra research, it went in one ear and out the other. 
+If I'd had a Beeminder goal... 
+
+I think if I were to go back and set one up for myself aged nineteen, I'd pick a simple time-based one, linked with 
+[Toggl](
+  https://blog.beeminder.com/toggl
+  \\"Blog post introducing our Toggl autodata integration\\"
+) (if that had existed yet). 
+The nice thing about a time-based goal is that *how* you fill the time is flexible: 
+I could've spent it doing the reading, 
+I could've included the time I spent talking to my personal tutor, 
+the time in lectures, 
+and the time spent doing extra research. 
+I'd have had a clear idea of my progress and the effort I was managing to put in. 
+Maybe it'd have been a wake-up call when it became obvious I wasn't putting in enough time! 
+
+I think it's important with studying to think about what your needs are exactly: 
+these days I use both a time-based goal and a goal that gets a +1 whenever I finish a section.
+That one flat-lines most of the week and then jumps up at the end of the week to ensure I finish sections by certain deadlines. 
+That's important now because my study is self-directed, but maybe not so useful back then. 
+Roll with what you actually need, and be ready to change if it's not working out.
+
+<a href=\\"https://www.beeminder.com/shanaqui/lshtm_bacterial\\" 
+title=\\"One of Nicky's goals for studying bacterial infections\\">
+<img 
+class=\\"aligncenter\\" 
+width=\\"450\\" 
+alt=\\"Screenshot of a Beeminder goal page\\"
+src=\\"https://github.com/beeminder/blog/assets/46881/b5b8067e-9579-404d-83c5-5231d3f7949f\\">
+</a>
+
+## A budgeting goal
+
+I went to university with big plans about how I was going to manage my money. 
+I didn't stick to *any* of them...
+
+I don't think it needs to be fancy, but if I could go back in time, I'd hook myself up with You Need A Budget (YNAB) sooner, plus a goal to reconcile all my transactions every day. 
+Even without YNAB, I think a goal that pushes you to really *look* at what you're spending, and plan out what you're saving for and what ready money you have around in case of need, is completely invaluable. 
+University would've been a great time to learn that skill, especially since it was a time of big temptations -- white hot chocolate at Shot in the Dark every night, anyone? 
+Though that café is gone now. 
+Boo! 
+
+## A goal for keeping in touch with people back home
+
+Sure, independence is lovely. 
+And I wish I'd taken even more full of advantage of it, rather than mostly just realising I could read *all day* and no one could stop me. 
+(Not that I regret that realisation either.) 
+All the same, it's easy to lose touch with people from pre-college life on a university campus.
+I made a Beeminder goal during the pandemic to contact -- five times a week -- any of a set of people I wasn't already regularly speaking to before the goal's creation. 
+I've had some great conversations because of it, rekindled a friendship, and generally just made my life quite a lot better. 
+All from one Beeminder goal that doesn't even take that much time to complete! 
+
+If I'd had that back when I was at university, I'd have kept in touch with the people I grew up with a bit better, and maybe I'd have felt a bit more grounded and supported when things went wrong, too. 
+Among all the new stuff, it can help to remember that the people back home have your back.
+
+<a href=\\"https://www.beeminder.com/shanaqui/reachout\\" 
+title=\\"Nicky's goal for reaching out to people\\">
+<img class=\\"aligncenter\\" 
+width=\\"450\\" 
+alt=\\"Screenshot of a Beeminder goal page\\" 
+src=\\"https://github.com/beeminder/blog/assets/46881/b1965646-b32d-4124-a1f3-6575cdcefb88\\">
+</a>
+
+## A goal for trying new things
+
+University is a great time to just figure out who the heck you are and what you like. 
+I was living away from my parents for the first time, 
+setting my own schedule, 
+choosing my own food, 
+all of that. 
+I wish that I'd pushed myself to be a bit more adventurous then, and say yes to a few more outings, done a few more silly things, joined one of the clubs... 
+I don't regret much about my life, and I had fun reading books in my room, but I'm sure there are people and experiences I missed out on. 
+(Why oh why did I never sign up for the choir?!)
+
+Plus, it'd have been a great time to learn to cook with no one around to scrutinise my mistakes or fix it for me if things went wrong. 
+If I'd just tried one new recipe a week, that would've been a great outcome.
+
+Depending on your temperament, maybe this goal would be better phrased as a goal for doing something brave -- goodness knows it'd have taken all the courage I had to audition for the choir!
+
+## A goal for making healthy choices
+
+It's never too late for this one; 
+I created one a few months ago and it's going great so far!
+
+Just imagine the cumulative effect of changing your mind and picking a healthy option instead of a greasy takeout, 
+and taking a walk instead of watching TV all night, 
+and going to bed an hour earlier rather than sitting around not doing much. 
+That's what my new goal is for:
+to instill a habit of at least *reflecting* before I make a choice, at least once a day. 
+
+Here's the note I've set for myself on that goal: 
+
+> \\"Healthier choices can mean all kinds of things, but for the purposes of this goal we're talking about physical health. 
+So I would be making a healthier choice when I choose to eat yoghurt or nuts instead of a bag of potato crisps; 
+I'd be making a healthier choice by choosing to go for a walk over lunch instead of playing FFXIV the entire time. 
+Healthy choices can be small, barely impactful in the short-term -- but cumulatively, if I'm making at least one healthier choice per day, that's a lot more healthier choices.
+However, it's not a healthier choice if I was going to do it anyway. 
+If I'm heading to the kitchen specifically to grab a yoghurt for breakfast, that's not a healthier choice, that's the choice I was making anyway.\\"
+
+I've set the rate to 1/day -- but I'm using Nathan Arthur's 
+[autodialer](
+  https://autodial.taskratchet.com/
+  \\"Hosted on TaskRatchet, which you should also check out!\\"
+) to put my feet to the fire.
+
+Man, if I'd set that up back in university... 
+
+<a href=\\"https://www.beeminder.com/shanaqui/healthierchoice\\" 
+title=\\"The one for making healthier choices\\">
+<img class=\\"aligncenter\\"
+width=\\"450\\" 
+alt=\\"Screenshot of a Beeminder goal page\\" 
+src=\\"https://github.com/beeminder/blog/assets/46881/845e6963-4dd0-475e-8d66-c2507edc6158\\">
+</a>
+
+## How about you?
+
+I'm sure these aren't the only goals that would've been useful to me back in university. 
+I could definitely have used Beeminder back when I was training for a 5k charity run, for example! 
+But these *specific* five goals are ones I really wish I'd set back then, because I think they'd have helped me make the most of it. 
+Not that I want you to think I did badly, or that I didn't love university -- Cardiff University was a great place to be, I had great friends, and a great time. 
+(And I won't be falsely modest: I got great grades, too.)
+
+But maybe I could've made even more of it, with a little push.
+
+What about you? 
+Are there goals you wish you could go back in time and set up for yourself at college? 
+Or maybe you *are* at college, and you have indispensable Beeminder goals that already get you through your day? 
+We're eager to hear, and maybe I'll be stealing your ideas...
+
+END_MAGIC
+
+Cutting room floor:
+
+It's that time of year, depending on where you live: 
+the time when people have started back at college (or as we'd say in the UK, \\"uni\\"), 
+or are just learning to navigate it all for the first time. 
+
+, though I've been taking it easy for the first few weeks until the official start of term.
+
+that was dying for lack of oxygen
+
+when you're moving away from home or even just spending a lot of your time on a university campus doing things that are different from your family/friends and the pre-college life, 
+
+I've actually just created one now! 
+
+Each choice is relatively small in the moment, but then you get to set up this 
+",
+  "redirects": [],
+  "slug": "college",
+  "status": "publish",
+  "tags": [
+    "akrasia",
+    "bee-all",
+    "get everything done",
+    "studying",
+    "case studies",
+    "students",
+    "rationality",
+    "tips",
+  ],
+  "title": "The Five Beeminder Goals I Wish I'd Had In College",
+}
+`;
+
 exports[`body > post comfortzone hash 42f2a065f68abbf6418fcced6f525938 1`] = `
 {
   "author": "Jess Whittlestone",
@@ -70035,7 +70364,7 @@ END_MAGIC
 }
 `;
 
-exports[`body > post predict hash 5dda96837663d9325b0b67d5c60bc481 1`] = `
+exports[`body > post predict hash fd3564810b4c9e964b0e951b81a026c8 1`] = `
 {
   "author": "dreeves",
   "content": "<p><img class=\\"aligncenter\\"
@@ -70180,7 +70509,7 @@ See also
   "date": 2023-09-20T00:00:00.000Z,
   "date_string": "2023-09-20",
   "disqus_id": "predict",
-  "excerpt": "A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd",
+  "excerpt": "",
   "image": {
     "alt": "Bee riding the Manifold.markets logo",
     "extracted": true,
@@ -70194,7 +70523,7 @@ author: dreeves
 status: publish
 tags: [bee-all, rationality, prediction markets, nerdery, history of beeminder, startups, commitment contracts]
 disqus_id: predict
-excerpt: \\"A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd\\"
+excerpt: \\"\\"
 ---
 
 See also: prediction, mana, predict pads
@@ -75009,7 +75338,7 @@ END_MAGIC
 }
 `;
 
-exports[`body > post readwise hash cfc7dd19133c9cf22f76789324c48ebf 1`] = `
+exports[`body > post readwise hash e85fc9fd904ce34476efe70a3771d93f 1`] = `
 {
   "author": "Adam Wolf",
   "content": "<p><img class=\\"aligncenter\\"
@@ -75058,7 +75387,7 @@ Beemind your read-it-latering with Readwise Reader!
   "date": 2023-09-27T00:00:00.000Z,
   "date_string": "2023-09-27",
   "disqus_id": "readwise",
-  "excerpt": "Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an",
+  "excerpt": "",
   "image": {
     "alt": "A robotic bee in a sea of books",
     "extracted": true,
@@ -75066,12 +75395,13 @@ Beemind your read-it-latering with Readwise Reader!
     "title": "Readwise and Beeminder sittin' in a tree, I-N-T-E-G-R-A-T-I-N-G",
   },
   "md": "---
+title: Beeminder &hearts; Readwise Reader
 date: 2023-09-27
 author: Adam Wolf
 status: publish
 tags: [akrasia, bee-all, get everything done, integrations, PSA, rationality, startups, reading]
 disqus_id: readwise
-excerpt: \\"Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an\\"
+excerpt: \\"\\"
 ---
 
 BEGIN_MAGIC[Beeminder &hearts; Readwise Reader]
@@ -77740,7 +78070,7 @@ those were 2-3 week trips instead of 1).  yay beeminder contract!
 }
 `;
 
-exports[`body > post rosary hash 24e84c774565ba8cf9f44904ddaa7cf4 1`] = `
+exports[`body > post rosary hash 0c3c8246154b0309ac1f0519d1015d23 1`] = `
 {
   "author": "Pedro Paulo Oliveira Jr.",
   "content": "<p><img class=\\"aligncenter\\" alt=\\"Assumption of Mary; Asunción de la Virgen (c 1670), Juan Martín Cabezalero, Museo del Prado\\" title=\\"Integrating Beeminder on iOS? Step 1: Pray. [Image: Assumption of Mary; Asunción de la Virgen (c 1670), Juan Martín Cabezalero (1634-1673) formerly (although the dispute is not settled yet) attributed to Mateo Cerezo (1626-1666), Museo del Prado, Madrid]\\" src=\\"http://blog.beeminder.com/wp-content/uploads/2014/12/rosary-assumption.jpg\\" width=\\"400px\\"></p>
@@ -77864,31 +78194,40 @@ covers the first step of registering your app.</p>
 <h3>Authentication</h3>
 <p>To get the user’s goals and to add a datapoint to a particular goal you must first authenticate using OAuth2.
 In the iOS SDK it&#8217;s easy to do that without any external library:</p>
-<pre><code>static NSString * BackendBaseURL = @\\"https://www.beeminder.com/\\";
+<font size=\\"-1\\">
+<pre lang=\\"objc\\">
+
+<p>static NSString * BackendBaseURL = @\\"<a href=\\"https://www.beeminder.com/\\">https://www.beeminder.com/</a>\\";
 static NSString * OAuth2Path     = @\\"apps/authorize\\";
 static NSString * ClientId       = @\\"client_id=mysupersecretwithbeeminder\\";
 static NSString * RedirectURI    = @\\"redirect_uri=iterco://beeminder-callback\\";
-static NSString * ResponseType   = @\\"response_type=token\\";
-
-- (void) beginOAuth
+static NSString * ResponseType   = @\\"response_type=token\\";</p>
+<ul>
+<li>(void) beginOAuth
 {
-  if([[NSUserDefaults standardUserDefaults]
-      stringForKey:@\\"beeminder_token\\"] == nil)
-  {
-    NSString * auth = [BackendBaseURL stringByAppendingFormat: @\\"%@?%@&%@&%@\\",
-                                                               OAuth2Path,
-                                                               ClientId,
-                                                               RedirectURI,
-                                                               ResponseType];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:auth]];
-  }
+if([[NSUserDefaults standardUserDefaults]
+stringForKey:@\\"beeminder_token\\"] == nil)
+{
+  NSString * auth = [BackendBaseURL stringByAppendingFormat: @\\"%@?%@&%@&%@\\",
+                                                         OAuth2Path,
+                                                         ClientId,
+                                                         RedirectURI,
+                                                         ResponseType];
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:auth]];
 }
-</code></pre>
+}
+</li>
+</ul>
+
+ 
 <p>It will redirect you to Safari where the user will authorize Beeminder to let your app have access to your account. 
 No login credentials are entered in your app.</p>
 <p>The <code>redirect_uri</code> you should set at <code>CFBundleURLSchemes</code> in the <strong>Info.plist</strong> of your project.</p>
 <p>Safari will redirect you back to your app and you’ll listen for it in your App Delegate and store the <code>access_token</code> to access Beeminder on behalf of the user:</p>
-<pre><code>-(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url
+<font size=\\"-1\\">
+<pre lang=\\"objc\\">
+
+<p>-(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
   NSLog(@\\"%@\\",url);
   if([url.host isEqualToString:@\\"beeminder-callback\\"]) {
@@ -77907,59 +78246,79 @@ No login credentials are entered in your app.</p>
           [[NSUserDefaults standardUserDefaults] synchronize]; 
         }
       }
-    }       
-  }
+    }<br>  }
   return YES;
 }
-</code></pre>
+</p>
+
+
 <h3>Requesting the Goals</h3>
-<p>Since Beeminder&#8217;s API is pure JSON I suggest a library like 
+<p>Since Beeminder's API is pure JSON I suggest a library like 
 <a href=\\"https://github.com/AFNetworking/AFNetworking\\" title=\\"AFNetworking is a delightful networking library for iOS and Mac OSX\\">AFNetworking</a> 
 to make things easier.</p>
-<pre><code>- (void) refreshGoalsWithCompletion: (void (^)(BOOL, NSInteger))completion
+<font size=\\"-1\\">
+<pre lang=\\"objc\\">
+
+<ul>
+<li>(void) refreshGoalsWithCompletion: (void (^)(BOOL, NSInteger))completion
 {
-  id success = ^(AFHTTPRequestOperation * operation, id JSON) {
-    NSMutableArray *l_goals = [NSMutableArray arrayWithCapacity:[JSON count]];
-    for(NSDictionary * goal in JSON) { [l_goals addObject:goal]; }
-    _goals = [l_goals copy];
-    completion(YES, 200);
-  };
-  id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
-    completion(NO, [operation.response statusCode]);
-  };
-  NSDictionary *params = @{ @\\"access_token\\" : [self getToken] };
-  [_client getPath:@\\"/api/v1/users/me/goals.json\\"
-           parameters:params success:success failure:failure];
-}
-</code></pre>
+id success = ^(AFHTTPRequestOperation * operation, id JSON) {
+  NSMutableArray *l_goals = [NSMutableArray arrayWithCapacity:[JSON count]];
+  for(NSDictionary * goal in JSON) { [l_goals addObject:goal]; }
+  _goals = [l_goals copy];
+  completion(YES, 200);
+};
+id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
+  completion(NO, [operation.response statusCode]);
+};
+NSDictionary *params = @{ @\\"access_token\\" : [self getToken] };
+[_client getPath:@\\"/api/v1/users/me/goals.json\\"
+     parameters:params success:success failure:failure];</li>
+</ul>
+<p>}
+</p>
+
+
 <p>In the above function <code>_client</code> is a variable of our helper class initialized as:</p>
-<pre><code>_client = [AFHTTPClient clientWithBaseURL:
-    [NSURL URLWithString:@\\"https://www.beeminder.com/\\"]];
+<font size=\\"-1\\">
+<pre lang=\\"objc\\">
+
+<p>_client = [AFHTTPClient clientWithBaseURL:
+    [NSURL URLWithString:@\\"<a href=\\"https://www.beeminder.com/%22%5D%5D\\">https://www.beeminder.com/\\"]]</a>;
 [_client registerHTTPOperationClass:[AFJSONRequestOperation class]];
 [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
-</code></pre>
+</p>
+
+
 <h3>Adding Datapoints</h3>
 <p>The last step after the user selects which goal will be updated when he prayed the rosary is to add a datapoint.</p>
-<pre><code>- (void) addOneUnitToGoal:(void (^)(BOOL, NSInteger))completion
-{
-  id success = ^(AFHTTPRequestOperation * operation, id JSON) {
-    completion(YES, 200);
-  };
-  id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
-    completion(NO, [operation.response statusCode]);
-  };
-  NSDictionary *params = @{
-    @\\"access_token\\": [self getToken],
-    @\\"comment\\": @\\"Added by Electronic Rosary by Netfilter\\",
-    @\\"value\\": @\\"1\\"
-  };
+<font size=\\"-1\\">
+<pre lang=\\"objc\\">
 
-  NSString * path = [NSString stringWithFormat:
-                     @\\"/api/v1/users/me/goals/%@/datapoints.json\\",
-                     [self getSelectedGoal]];
-  [_client postPath:path parameters:params success:success failure:failure];
-}
-</code></pre>
+<ul>
+<li><p>(void) addOneUnitToGoal:(void (^)(BOOL, NSInteger))completion
+{
+id success = ^(AFHTTPRequestOperation * operation, id JSON) {
+  completion(YES, 200);
+};
+id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
+  completion(NO, [operation.response statusCode]);
+};
+NSDictionary *params = @{
+  @\\"access_token\\": [self getToken],
+  @\\"comment\\": @\\"Added by Electronic Rosary by Netfilter\\",
+  @\\"value\\": @\\"1\\"
+};</p>
+<p>NSString * path = [NSString stringWithFormat:
+               @\\"/api/v1/users/me/goals/%@/datapoints.json\\",
+               [self getSelectedGoal]];
+[_client postPath:path parameters:params success:success failure:failure];</p>
+</li>
+</ul>
+<p>}
+</p>
+
+
 <p>We’ll be releasing in the next few weeks the full code of the helper class to integrate Beeminder in your iOS app 
 (we need to refactor the code decouple it from our libraries, although a 
 <a href=\\"https://github.com/ppaulojr/NFBeeminderHelper\\" title=\\"You can fork it on GitHub\\">work in progress is already available</a>).</p>
@@ -77977,7 +78336,7 @@ Maybe you can use it to pray for me once in a while. :)</p>
 He also graduated, years later, with a PhD in Medicine from USP. 
 He spends most of his time at 
 <a href=\\"http://www.netfilter.com.br\\" title=\\"Thanks to Netfilter for okaying the 5 free days of Electronic Rosary\\">Netfilter</a>
-but some days he teaches, advises students, and does medical research (Alzheimer&#8217;s and Autism) at the hospital. 
+but some days he teaches, advises students, and does medical research (Alzheimer's and Autism) at the hospital. 
 In his spare time he reads, plays soccer, and organizes
 <a href=\\"https://www.youtube.com/watch?v=ZxK8I9gjU98\\" title=\\"Amajari,RR, Brazil, 2008\\">volunteer work</a>
 sometimes involving
@@ -77993,7 +78352,7 @@ and
 as well, but they are far less polished than the 
 <a href=\\"https://itunes.apple.com/us/app/iterco/id489906277?mt=8\\" title=\\"Electronic Rosary offers recordings in English, Portuguese, Spanish, French, Italian, German, Polish, Russian, Esperanto, and Latin. You can record your own rosary and share it.\\">iOS version</a>.</p>
 <p><br> <br></p>
-",
+</pre></font></pre></font></pre></font></pre></font></pre></font>",
   "date": 2014-12-11T00:00:00.000Z,
   "date_string": "2014-12-11",
   "disqus_id": "829 https://blog.beeminder.com/?p=829",
@@ -78163,7 +78522,8 @@ covers the first step of registering your app.
 To get the user’s goals and to add a datapoint to a particular goal you must first authenticate using OAuth2.
 In the iOS SDK it's easy to do that without any external library:
  
-\`\`\`
+<font size=\\"-1\\">
+<pre lang=objc>
 static NSString * BackendBaseURL = @\\"https://www.beeminder.com/\\";
 static NSString * OAuth2Path     = @\\"apps/authorize\\";
 static NSString * ClientId       = @\\"client_id=mysupersecretwithbeeminder\\";
@@ -78183,7 +78543,8 @@ static NSString * ResponseType   = @\\"response_type=token\\";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:auth]];
   }
 }
-\`\`\`
+</pre>
+</font>
  
 It will redirect you to Safari where the user will authorize Beeminder to let your app have access to your account. 
 No login credentials are entered in your app.
@@ -78192,7 +78553,8 @@ The \`redirect_uri\` you should set at \`CFBundleURLSchemes\` in the **Info.plis
  
 Safari will redirect you back to your app and you’ll listen for it in your App Delegate and store the \`access_token\` to access Beeminder on behalf of the user:
  
-\`\`\`
+<font size=\\"-1\\">
+<pre lang=objc>
 -(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
   NSLog(@\\"%@\\",url);
@@ -78216,7 +78578,8 @@ Safari will redirect you back to your app and you’ll listen for it in your App
   }
   return YES;
 }
-\`\`\`
+</pre>
+</font>
 
 ### Requesting the Goals
 
@@ -78224,7 +78587,8 @@ Since Beeminder's API is pure JSON I suggest a library like
 [AFNetworking](https://github.com/AFNetworking/AFNetworking \\"AFNetworking is a delightful networking library for iOS and Mac OSX\\") 
 to make things easier.
 
-\`\`\`
+<font size=\\"-1\\">
+<pre lang=objc>
 - (void) refreshGoalsWithCompletion: (void (^)(BOOL, NSInteger))completion
 {
   id success = ^(AFHTTPRequestOperation * operation, id JSON) {
@@ -78240,22 +78604,26 @@ to make things easier.
   [_client getPath:@\\"/api/v1/users/me/goals.json\\"
            parameters:params success:success failure:failure];
 }
-\`\`\`
+</pre>
+</font>
 
 In the above function \`_client\` is a variable of our helper class initialized as:
 
-\`\`\`
+<font size=\\"-1\\">
+<pre lang=objc>
 _client = [AFHTTPClient clientWithBaseURL:
 	[NSURL URLWithString:@\\"https://www.beeminder.com/\\"]];
 [_client registerHTTPOperationClass:[AFJSONRequestOperation class]];
 [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
-\`\`\`
+</pre>
+</font>
 
 ### Adding Datapoints
 
 The last step after the user selects which goal will be updated when he prayed the rosary is to add a datapoint.
 
-\`\`\`
+<font size=\\"-1\\">
+<pre lang=objc>
 - (void) addOneUnitToGoal:(void (^)(BOOL, NSInteger))completion
 {
   id success = ^(AFHTTPRequestOperation * operation, id JSON) {
@@ -78275,7 +78643,8 @@ The last step after the user selects which goal will be updated when he prayed t
                      [self getSelectedGoal]];
   [_client postPath:path parameters:params success:success failure:failure];
 }
-\`\`\`
+</pre>
+</font>
 
 We’ll be releasing in the next few weeks the full code of the helper class to integrate Beeminder in your iOS app 
 (we need to refactor the code decouple it from our libraries, although a 
