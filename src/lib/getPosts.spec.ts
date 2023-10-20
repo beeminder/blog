@@ -359,7 +359,7 @@ describe("getPosts", () => {
     const posts = await getPosts();
     const { content } = posts.find((p) => p.slug === "psychpricing") || {};
 
-    expect(content).toContain("“hello world”");
+    expect(content).toContain("&#8220;hello world&#8221;");
   });
 
   it("does not require new line after html element", async () => {
