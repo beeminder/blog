@@ -68,6 +68,84 @@ describe("getArchives", () => {
 
     const result = await getArchives();
 
-    expect(result[0]?.months[1]?.posts).toHaveLength(1);
+    expect(result[0]?.months[0]?.posts).toHaveLength(1);
+  });
+
+  it("handles three posts in one month", async () => {
+    vi.mocked(readSources).mockReturnValue([
+      {
+        title: "A",
+        source: "https://padm.us/a",
+        date: "2013-02-22",
+        slug: "a",
+        status: "publish",
+        author: "author",
+        disqus_id: "a",
+        redirects: [],
+        tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
+      },
+      {
+        title: "B",
+        source: "https://padm.us/b",
+        date: "2013-02-22",
+        slug: "b",
+        status: "publish",
+        author: "author",
+        disqus_id: "b",
+        redirects: [],
+        tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
+      },
+      {
+        title: "C",
+        source: "https://padm.us/c",
+        date: "2013-02-22",
+        slug: "c",
+        status: "publish",
+        author: "author",
+        disqus_id: "c",
+        redirects: [],
+        tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
+      },
+    ]);
+
+    const result = await getArchives();
+
+    expect(result[0]?.months[0]?.posts).toHaveLength(3);
+  });
+
+  it("sorts posts by date", async () => {
+    vi.mocked(readSources).mockReturnValue([
+      {
+        title: "A",
+        source: "https://padm.us/a",
+        date: "2013-02-22",
+        slug: "a",
+        status: "publish",
+        author: "author",
+        disqus_id: "a",
+        redirects: [],
+        tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
+      },
+      {
+        title: "B",
+        source: "https://padm.us/b",
+        date: "2013-02-21",
+        slug: "b",
+        status: "publish",
+        author: "author",
+        disqus_id: "b",
+        redirects: [],
+        tags: [],
+        excerpt: "MAGIC_AUTO_EXTRACT",
+      },
+    ]);
+
+    const result = await getArchives();
+
+    expect(result[0]?.months[0]?.posts[0]?.title).toEqual("B");
   });
 });

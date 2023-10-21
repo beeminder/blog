@@ -43,49 +43,57 @@ function getMonthLabel(m: number): string {
 
 async function makeArchives(): Promise<Archives> {
   const posts = await getPosts();
-  const years = posts.reduce<Archives>((acc, post) => {
-    const yyyy = post.date.getFullYear();
-    const mm = post.date.getMonth();
-    const monthLabel = getMonthLabel(mm);
-    const year = acc[yyyy];
 
-    if (year) {
-      const month = year.months[mm];
+  posts.sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
 
-      if (month) {
-        month.posts[mm] = post;
-        month.post_count++;
-      } else {
-        year.months[mm] = {
-          label: monthLabel,
-          posts: [post],
-          post_count: 1,
-        };
+    if (dateA > dateB) return 1;
+    if (dateA < dateB) return -1;
+
+    return 0;
+  });
+
+  const yearMonths = posts.reduce<Record<number, Record<number, Post[]>>>(
+    (acc, post) => {
+      const date = new Date(post.date);
+      const year = date.getFullYear();
+      const month = date.getMonth();
+
+      if (!acc[year]) {
+        acc[year] = {};
       }
 
-      year.post_count++;
-    } else {
-      acc[yyyy] = {
-        label: yyyy,
-        post_count: 1,
-        months: [],
+      if (!acc[year]![month]) {
+        acc[year]![month] = [];
+      }
+
+      acc[year]![month]!.push(post);
+
+      return acc;
+    },
+    {},
+  );
+
+  const years = Object.entries(yearMonths).map(([year, months]) => {
+    const monthsArray = Object.entries(months).map(([month, posts]) => {
+      return {
+        label: getMonthLabel(Number(month)),
+        posts,
+        post_count: posts.length,
       };
+    });
 
-      const y = acc[yyyy];
+    return {
+      label: Number(year),
+      months: monthsArray,
+      post_count: monthsArray.reduce((acc, month) => {
+        return acc + month.post_count;
+      }, 0),
+    };
+  });
 
-      if (!y) throw new Error("Year not found");
-
-      y.months[mm] = {
-        label: monthLabel,
-        posts: [post],
-        post_count: 1,
-      };
-    }
-
-    return acc;
-  }, []);
-
-  return years.filter((y) => y !== undefined);
+  return years;
 }
 
 const getArchives = memoize(makeArchives);
