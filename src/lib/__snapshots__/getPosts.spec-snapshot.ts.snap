@@ -58288,7 +58288,7 @@ Like by making sure you have at least one goal in each category or focusing on t
 "
 `;
 
-exports[`body > post movingav hash 82d7e88d4557af82f0001473bf4c26a2 1`] = `
+exports[`body > post movingav hash c49abd6bd941449fc7bf02f994c0e153 1`] = `
 "
 <p>
   <img
@@ -58391,9 +58391,9 @@ Beeminding the moving average you&#8217;d need to lose a full kilogram.
 </center>
 <h4 class=\\"pullquote\\">
   &#8220;You need to lose many times that to actually bring the
-  <emph>
+  <em>
     average
-  </emph>
+  </em>
   down enough&#8221;
 </h4>
 <p>
@@ -64066,7 +64066,7 @@ and zedmango for helping formulate the fine print on this.
 "
 `;
 
-exports[`body > post pdxqs hash 8fc84cb5dd10b2de6a7b77d601b56367 1`] = `
+exports[`body > post pdxqs hash 67b48fd0187936a0264bf3598cb302fa 1`] = `
 "
 <p>
   <img
@@ -64264,54 +64264,18 @@ Of course, we track
   </a>
   :
 </p>
-<div class=\\"prezi-player\\">
-  <style
-    type=\\"text/css\\"
-    media=\\"screen\\"
-  >
-    .prezi-player { width: 550px; } .prezi-player-links { text-align: center; }
-  </style>
-  <object
-    id=\\"prezi_isvkslpbi2dk\\"
-    name=\\"prezi_isvkslpbi2dk\\"
-    classid=\\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\\"
-    width=\\"550\\"
-    height=\\"400\\"
-  >
-    <param
-      name=\\"movie\\"
-      value=\\"http://prezi.com/bin/preziloader.swf\\"
-    >
-    <param
-      name=\\"allowfullscreen\\"
-      value=\\"true\\"
-    >
-    <param
-      name=\\"allowscriptaccess\\"
-      value=\\"always\\"
-    >
-    <param
-      name=\\"bgcolor\\"
-      value=\\"#ffffff\\"
-    >
-    <param
-      name=\\"flashvars\\"
-      value=\\"prezi_id=isvkslpbi2dk&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0\\"
-    >
-    <embed
-      id=\\"preziEmbed_isvkslpbi2dk\\"
-      name=\\"preziEmbed_isvkslpbi2dk\\"
-      src=\\"http://prezi.com/bin/preziloader.swf\\"
-      type=\\"application/x-shockwave-flash\\"
-      allowfullscreen=\\"true\\"
-      allowscriptaccess=\\"always\\"
-      width=\\"550\\"
-      height=\\"400\\"
-      bgcolor=\\"#ffffff\\"
-      flashvars=\\"prezi_id=isvkslpbi2dk&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0\\"
-    >
-  </object>
-</div>
+<iframe
+  src=\\"https://prezi.com/p/embed/isvkslpbi2dk/\\"
+  id=\\"iframe_container\\"
+  frameborder=\\"0\\"
+  webkitallowfullscreen
+  mozallowfullscreen
+  allowfullscreen
+  allow=\\"autoplay; fullscreen\\"
+  height=\\"315\\"
+  width=\\"560\\"
+>
+</iframe>
 <p>
   <br>
   &nbsp;
@@ -82328,7 +82292,7 @@ Which I should confess I haven&#8217;t actually read but I did read Scott Adams&
 "
 `;
 
-exports[`body > post tao hash 805f2056ca17b8325c367c4d3fe63c2c 1`] = `
+exports[`body > post tao hash 595861e3858da62b095a112d42f900e7 1`] = `
 "
 <p>
   <img
@@ -82640,7 +82604,7 @@ A great benefit from having this be manual input is that it doubles as a daily c
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
-    display:block
+    style=\\"display:block\\"
   >
   </iframe>
 </p>
