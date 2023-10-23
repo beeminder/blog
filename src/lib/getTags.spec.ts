@@ -1,22 +1,14 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getTags from "./getTags";
 import readSources from "./readSources";
+import meta from "./test/meta";
 
 describe("getTags", () => {
   beforeEach(() => {
     vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "https://padm.us/psychpricing",
-        slug: "psychpricing",
+      meta({
         tags: ["the_tag"],
-        date: "2021-09-01",
-        status: "publish",
-        disqus_id: "abc",
-        author: "author",
-        redirects: [],
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      },
+      }),
     ]);
   });
 
@@ -46,18 +38,9 @@ describe("getTags", () => {
 
   it("does not include blank tags", async () => {
     vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "https://padm.us/psychpricing",
-        slug: "psychpricing",
+      meta({
         tags: [""],
-        date: "2021-09-01",
-        status: "publish",
-        disqus_id: "abc",
-        author: "author",
-        redirects: [],
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      },
+      }),
     ]);
 
     const result = await getTags();
