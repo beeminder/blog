@@ -3,24 +3,11 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 import fetchPost from "./fetchPost";
 import readSources from "./readSources";
 import padm from "./test/padm";
+import meta from "./test/meta";
 
 describe("getPosts", () => {
   beforeEach(() => {
-    vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "https://padm.us/psychpricing",
-        id: "14",
-        slug: "psychpricing",
-        date: "2021-09-01",
-        status: "publish",
-        disqus_id: "14 https://blog.beeminder.com/?p=14",
-        author: "the_author",
-        redirects: [],
-        tags: [],
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      },
-    ]);
+    vi.mocked(readSources).mockReturnValue([meta()]);
   });
 
   it("only loads sources once", async () => {
@@ -33,37 +20,13 @@ describe("getPosts", () => {
   it("fetches post content", async () => {
     await getPosts();
 
-    expect(fetchPost).toBeCalledWith("https://padm.us/psychpricing");
+    expect(fetchPost).toBeCalledWith(expect.stringContaining("the_source"));
   });
 
   it("sorts post by date descending", async () => {
     vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "https://padm.us/old",
-        id: "1",
-        slug: "old",
-        date: "2020-01-01",
-        status: "publish",
-        author: "the_author",
-        disqus_id: "1 https://blog.beeminder.com/?p=1",
-        redirects: [],
-        tags: [],
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      },
-      {
-        title: "Test Post",
-        source: "https://padm.us/new",
-        id: "2",
-        slug: "new",
-        date: "2020-01-02",
-        status: "publish",
-        author: "the_author",
-        disqus_id: "2 https://blog.beeminder.com/?p=2",
-        redirects: [],
-        tags: [],
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      },
+      meta({ source: "new", date: "2013-02-22" }),
+      meta({ source: "old", date: "2013-02-21" }),
     ]);
 
     await getPosts();
@@ -87,21 +50,7 @@ describe("getPosts", () => {
   });
 
   it("excludes unpublished posts by default", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "https://padm.us/psychpricing",
-        id: "14",
-        slug: "psychpricing",
-        date: "2021-09-01",
-        status: "draft",
-        disqus_id: "14 https://blog.beeminder.com/?p=14",
-        author: "the_author",
-        redirects: [],
-        tags: [],
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      },
-    ]);
+    vi.mocked(readSources).mockReturnValue([meta({ status: "draft" })]);
 
     const posts = await getPosts();
 
@@ -109,21 +58,7 @@ describe("getPosts", () => {
   });
 
   it("includes unpublished posts when requested", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "https://padm.us/psychpricing",
-        id: "14",
-        slug: "psychpricing",
-        date: "2021-09-01",
-        status: "draft",
-        disqus_id: "14 https://blog.beeminder.com/?p=14",
-        author: "the_author",
-        redirects: [],
-        tags: [],
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      },
-    ]);
+    vi.mocked(readSources).mockReturnValue([meta({ status: "draft" })]);
 
     const posts = await getPosts({ includeUnpublished: true });
 
@@ -139,16 +74,16 @@ describe("getPosts", () => {
 
   it("sets disqus id", async () => {
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
-    expect(result?.disqus_id).toBe("14 https://blog.beeminder.com/?p=14");
+    expect(result?.disqus_id).toContain("the_disqus_id");
   });
 
   it("includes date_string", async () => {
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
-    expect(result?.date_string).toEqual("2021-09-01");
+    expect(result?.date_string).toEqual("2011-01-24");
   });
 
   it("extracts image url", async () => {
@@ -159,7 +94,7 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.image?.src).toEqual("https://example.com/image.png");
   });
@@ -174,7 +109,7 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.title).toEqual("Hello");
   });
@@ -189,7 +124,7 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.author).toEqual("Alice");
   });
@@ -204,7 +139,7 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.excerpt).toEqual("Hello");
   });
@@ -219,7 +154,7 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.tags).toEqual(expect.arrayContaining(["a", "b", "c"]));
   });
@@ -234,7 +169,7 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.date_string).toEqual("2021-09-02");
   });
@@ -256,7 +191,7 @@ describe("getPosts", () => {
 
   it("uses legacy status", async () => {
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.status).toEqual("publish");
   });
@@ -271,27 +206,13 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.status).toEqual("publish");
   });
 
   it("uses wp title over magic title", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      {
-        source: "https://padm.us/psychpricing",
-        id: "14",
-        slug: "psychpricing",
-        date: "2021-09-01",
-        status: "publish",
-        disqus_id: "14 https://blog.beeminder.com/?p=14",
-        title: "wp_title",
-        author: "the_author",
-        redirects: [],
-        tags: [],
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      },
-    ]);
+    vi.mocked(readSources).mockReturnValue([meta({ title: "wp_title" })]);
 
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
@@ -300,27 +221,13 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.title).toEqual("wp_title");
   });
 
   it("uses frontmatter title over wp title", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      {
-        source: "https://padm.us/psychpricing",
-        id: "14",
-        slug: "psychpricing",
-        date: "2021-09-01",
-        status: "publish",
-        disqus_id: "14 https://blog.beeminder.com/?p=14",
-        title: "wp_title",
-        author: "the_author",
-        redirects: [],
-        tags: [],
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      },
-    ]);
+    vi.mocked(readSources).mockReturnValue([meta({ title: "wp_title" })]);
 
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
@@ -331,7 +238,7 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "psychpricing");
+    const result = posts[0];
 
     expect(result?.title).toEqual("frontmatter_title");
   });
@@ -344,7 +251,7 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const { content } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { content } = posts[0] || {};
 
     expect(content).toBe("<p>hello world</p>\n");
   });
@@ -357,7 +264,7 @@ describe("getPosts", () => {
     );
 
     const posts = await getPosts();
-    const { content } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { content } = posts[0] || {};
 
     expect(content).toContain("&#8220;hello world&#8221;");
   });
@@ -373,7 +280,7 @@ paragraph
     );
 
     const posts = await getPosts();
-    const { content } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { content } = posts[0] || {};
 
     expect(content).toContain("<p>");
   });
@@ -386,7 +293,7 @@ paragraph
     );
 
     const posts = await getPosts();
-    const { content } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { content } = posts[0] || {};
 
     expect(content).toContain('<h1 id="id">heading</h1>');
   });
@@ -399,7 +306,7 @@ paragraph
     );
 
     const posts = await getPosts();
-    const { content } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { content } = posts[0] || {};
 
     expect(content).toContain('id="AUG"');
   });
@@ -416,7 +323,7 @@ paragraph
     );
 
     const posts = await getPosts();
-    const { content } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { content } = posts[0] || {};
 
     expect(content).toContain('id="POL"');
     expect(content).toContain('id="AUG"');
@@ -435,7 +342,7 @@ https://blog.beeminder.com/depunish
     );
 
     const posts = await getPosts();
-    const { content } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { content } = posts[0] || {};
 
     expect(content).toContain('href="https://blog.beeminder.com/depunish"');
   });
@@ -448,7 +355,7 @@ https://blog.beeminder.com/depunish
     );
 
     const posts = await getPosts();
-    const { content } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { content } = posts[0] || {};
 
     expect(content).toContain(
       '<a class="footnote" id="foo1" href="#foo">[1]</a>',
@@ -463,7 +370,7 @@ https://blog.beeminder.com/depunish
     );
 
     const posts = await getPosts();
-    const { content } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { content } = posts[0] || {};
 
     expect(content).toContain("2");
   });
@@ -484,47 +391,23 @@ https://blog.beeminder.com/depunish
   });
 
   it("uses wordpress excerpt", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "padm.us/psychpricing",
-        slug: "psychpricing",
-        date: "2021-09-01",
-        status: "publish",
-        excerpt: "wp excerpt",
-        author: "the_author",
-        disqus_id: "the_disqus_id",
-        redirects: [],
-        tags: [],
-      },
-    ]);
+    vi.mocked(readSources).mockReturnValue([meta({ excerpt: "wp excerpt" })]);
 
     const posts = await getPosts();
 
-    const { excerpt } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { excerpt } = posts[0] || {};
 
     expect(excerpt).toEqual("wp excerpt");
   });
 
   it("strips html from wp excerpts", async () => {
     vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "padm.us/psychpricing",
-        slug: "psychpricing",
-        date: "2021-09-01",
-        status: "publish",
-        excerpt: "<strong>wp excerpt</strong>",
-        author: "the_author",
-        disqus_id: "the_disqus_id",
-        redirects: [],
-        tags: [],
-      },
+      meta({ excerpt: "<strong>wp excerpt</strong>" }),
     ]);
 
     const posts = await getPosts();
 
-    const { excerpt } = posts.find((p) => p.slug === "psychpricing") || {};
+    const { excerpt } = posts[0] || {};
 
     expect(excerpt).toEqual("wp excerpt");
   });
@@ -535,22 +418,14 @@ https://blog.beeminder.com/depunish
       { source: "padm.us/b" },
     ]);
 
-    vi.mocked(fetchPost).mockResolvedValue(`---
-title: the_title
-slug: the_slug
-date: 2023-01-01
-author: the_author
-disqus_id: the_disqus_id
-redirects: []
-tags: []
-status: publish
-excerpt: MAGIC_AUTO_EXTRACT
----
-
-BEGIN_MAGIC
-# content
-END_MAGIC
-`);
+    vi.mocked(fetchPost).mockResolvedValue(
+      padm({
+        frontmatter: meta({
+          slug: "the_slug",
+          date: new Date(),
+        }),
+      }),
+    );
 
     await expect(getPosts()).rejects.toThrow(/Duplicate slug/);
   });
@@ -561,39 +436,23 @@ END_MAGIC
       { source: "padm.us/b" },
     ]);
 
-    vi.mocked(fetchPost).mockResolvedValueOnce(`---
-title: the_title_a
-slug: the_slug_a
-date: 2023-01-01
-author: the_author
-disqus_id: the_disqus_id
-redirects: []
-tags: []
-status: publish
-excerpt: MAGIC_AUTO_EXTRACT
----
+    vi.mocked(fetchPost).mockResolvedValueOnce(
+      padm({
+        frontmatter: meta({
+          disqus_id: "the_disqus_id",
+          date: new Date(),
+        }),
+      }),
+    );
 
-BEGIN_MAGIC
-# content
-END_MAGIC
-`);
-
-    vi.mocked(fetchPost).mockResolvedValueOnce(`---
-title: the_title_b
-slug: the_slug_b
-date: 2023-01-01
-author: the_author
-disqus_id: the_disqus_id
-redirects: []
-tags: []
-status: publish
-excerpt: MAGIC_AUTO_EXTRACT
----
-
-BEGIN_MAGIC
-# content
-END_MAGIC
-`);
+    vi.mocked(fetchPost).mockResolvedValueOnce(
+      padm({
+        frontmatter: meta({
+          disqus_id: "the_disqus_id",
+          date: new Date(),
+        }),
+      }),
+    );
 
     await expect(getPosts()).rejects.toThrow(/Duplicate disqus/);
   });
