@@ -1,5 +1,4 @@
 import fs from "fs";
-import path from "path";
 
 export default function createReport() {
   const shotsDir = new URL("../../../shots", import.meta.url);
