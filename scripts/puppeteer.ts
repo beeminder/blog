@@ -13,15 +13,16 @@ import readScreenshot from "../src/lib/test/readScreenshot";
 import resizeImage from "../src/lib/test/resizeImage";
 import puppeteer, { Browser } from "puppeteer";
 import createReport from "../src/lib/test/createReport";
+import url from "url";
 
 const port = 4321;
 const base = `https://blog.beeminder.com`;
 const compare = `http://localhost:${port}`;
-const outPath = new URL("../shots", import.meta.url).pathname;
+const outPath = new URL("../shots", import.meta.url);
 
 function makeOutPath(url: string, suffix: string): string {
   const p = new URL(url).pathname.replaceAll("/", "_");
-  const out = path.join(outPath, `${p}.${suffix}.png`);
+  const out = path.join(outPath.pathname, `${p}.${suffix}.png`);
   return out;
 }
 
@@ -73,9 +74,9 @@ async function handleUrl(browser: Browser, url: string) {
 }
 
 async function takeScreenshots() {
-  const root = new URL("..", import.meta.url).pathname;
+  const root = new URL("..", import.meta.url);
   const server = await preview({
-    root,
+    root: url.fileURLToPath(root),
     server: {
       port,
     },
@@ -84,6 +85,7 @@ async function takeScreenshots() {
     headless: "new",
   });
   const urls = await getSitemap();
+  console.log(urls);
 
   console.time("Capturing screenshots");
   for (const url of urls) {
@@ -113,7 +115,9 @@ export async function run(argv: string[] = []) {
 
   createReport();
 }
-
-if (import.meta.url === `file://${process.argv[1]}`) {
+const a = new URL(import.meta.url).pathname;
+const b = new URL(`file://${process.argv[1]}`).pathname;
+if (a === b) {
+  console.log("Running puppeteer script");
   await run(process.argv);
 }
