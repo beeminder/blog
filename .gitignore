@@ -1,6 +1,10 @@
 .temp*
 .vscode/
 
+# visual regression testing
+/shots/
+/report.html
+
 # build output
 dist/
 .cache/
