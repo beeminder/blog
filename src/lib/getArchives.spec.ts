@@ -1,29 +1,11 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getArchives from "./getArchives";
 import readSources from "./readSources";
+import meta from "./test/meta";
 
 describe("getArchives", () => {
   beforeEach(() => {
-    vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "https://padm.us/psychpricing",
-        date: "2011-01-24",
-        slug: "psychpricing",
-        status: "publish",
-        author: "author",
-        excerpt: "excerpt",
-        disqus_id: "abc",
-        redirects: [],
-        tags: [],
-      },
-    ]);
-  });
-
-  it("gets archives", async () => {
-    const result = await getArchives();
-
-    expect(result[0]).toBeDefined();
+    vi.mocked(readSources).mockReturnValue([meta()]);
   });
 
   it("batches by month", async () => {
@@ -40,32 +22,31 @@ describe("getArchives", () => {
 
   it("properly batches by year", async () => {
     vi.mocked(readSources).mockReturnValue([
-      {
-        title: "Test Post",
-        source: "https://padm.us/psychpricing",
-        date: "2013-02-22",
-        slug: "psychpricing",
-        status: "publish",
-        author: "author",
-        disqus_id: "abc",
-        redirects: [],
-        tags: [],
-      },
-      {
-        title: "Second Post",
-        source: "https://padm.us/second",
-        date: "2015-02-22",
-        slug: "second",
-        status: "publish",
-        author: "author",
-        disqus_id: "def",
-        redirects: [],
-        tags: [],
-      },
+      meta({ date: "2013-02-22" }),
+      meta({ date: "2015-02-22" }),
     ]);
 
     const result = await getArchives();
 
-    expect(result[0]?.months[1]?.posts).toHaveLength(1);
+    expect(result[0]?.months[0]?.posts).toHaveLength(1);
+  });
+
+  it("handles three posts in one month", async () => {
+    vi.mocked(readSources).mockReturnValue([meta(), meta(), meta()]);
+
+    const result = await getArchives();
+
+    expect(result[0]?.months[0]?.posts).toHaveLength(3);
+  });
+
+  it("sorts posts by date", async () => {
+    vi.mocked(readSources).mockReturnValue([
+      meta({ title: "A", date: "2013-02-22" }),
+      meta({ title: "B", date: "2013-02-21" }),
+    ]);
+
+    const result = await getArchives();
+
+    expect(result[0]?.months[0]?.posts[0]?.title).toEqual("B");
   });
 });
