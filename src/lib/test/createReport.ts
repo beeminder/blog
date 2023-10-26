@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 export default function createReport() {
-  const shotsDir = new URL("../../../shots", import.meta.url).pathname;
+  const shotsDir = new URL("../../../shots", import.meta.url);
   const files = fs.readdirSync(shotsDir);
   const sets = files.reduce(
     (acc, file) => {
@@ -71,7 +71,8 @@ export default function createReport() {
         </html>
     `;
 
-  const reportPath = path.join(shotsDir, "..", "report.html");
+  // const reportPath = path.join(shotsDir.pathname, "..", "report.html");
+  const reportPath = new URL("../report.html", shotsDir);
 
   fs.writeFileSync(reportPath, html);
 
