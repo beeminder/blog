@@ -1,4 +1,6 @@
 import { Browser } from "puppeteer";
+import _url from "url";
+import _path from "path";
 
 type Options = {
   url: string;
@@ -17,7 +19,7 @@ export default async function takeScreenshot({
   await page.goto(url, { waitUntil: "networkidle0" });
 
   await page.screenshot({
-    path,
+    path: _path.resolve(path),
     fullPage: true,
   });
 
