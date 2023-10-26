@@ -3,7 +3,6 @@
 // pnpm puppeteer
 
 import fs from "fs";
-import path from "path";
 import { preview } from "astro";
 import pixelmatch from "pixelmatch";
 import { PNG } from "pngjs";
