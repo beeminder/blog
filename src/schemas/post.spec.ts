@@ -1,17 +1,15 @@
 import { describe, it, expect } from "vitest";
 import { post } from "./post";
 import padm from "../lib/test/padm";
+import meta from "../lib/test/meta";
 
 describe("post", () => {
   it("requires disqus id", () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        excerpt: "This is a test post",
-        slug: "test-post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-      },
+      frontmatter: meta({
+        disqus_id: "",
+        date: new Date(),
+      }),
       content: "body",
     });
 
@@ -25,15 +23,10 @@ describe("post", () => {
 
   it("uses disqus id", () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        excerpt: "This is a test post",
-        slug: "test-post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
+      frontmatter: meta({
         disqus_id: "test-post",
-        status: "publish",
-      },
+        date: new Date(),
+      }),
       content: "body",
     });
 
@@ -49,15 +42,9 @@ describe("post", () => {
 
   it("does not include private notes in excerpts", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        excerpt: "This is a test post",
-        slug: "test-post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        disqus_id: "test-post",
-        status: "publish",
-      },
+      frontmatter: meta({
+        date: new Date(),
+      }),
       before: "private notes",
       content: "content",
     });
@@ -74,15 +61,10 @@ describe("post", () => {
 
   it("does not include raw markdown in excerpts", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        excerpt: "This is a test post",
-        slug: "test-post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        disqus_id: "test-post",
-        status: "publish",
-      },
+      frontmatter: meta({
+        date: new Date(),
+        excerpt: "MAGIC_AUTO_EXTRACT",
+      }),
       content: "[link](#)",
     });
 
@@ -98,15 +80,9 @@ describe("post", () => {
 
   it("does not use image from private notes", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        excerpt: "This is a test post",
-        slug: "test-post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        disqus_id: "test-post",
-        status: "publish",
-      },
+      frontmatter: meta({
+        date: new Date(),
+      }),
       before: "<img src='/private' />",
       content: "content",
     });
@@ -123,13 +99,10 @@ describe("post", () => {
 
   it("requires title", async () => {
     const md = padm({
-      frontmatter: {
-        excerpt: "This is a test post",
-        slug: "test-post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        disqus_id: "test-post",
-      },
+      frontmatter: meta({
+        title: "",
+        date: new Date(),
+      }),
     });
 
     const result = post.safeParse({
@@ -142,13 +115,10 @@ describe("post", () => {
 
   it("requires slug", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        excerpt: "This is a test post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        disqus_id: "test-post",
-      },
+      frontmatter: meta({
+        slug: "",
+        date: new Date(),
+      }),
     });
 
     const result = post.safeParse({
@@ -161,13 +131,10 @@ describe("post", () => {
 
   it("requires author", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        excerpt: "This is a test post",
-        date: new Date("2021-01-01"),
-        slug: "test-post",
-        disqus_id: "test-post",
-      },
+      frontmatter: meta({
+        author: "",
+        date: new Date(),
+      }),
     });
 
     const result = post.safeParse({
@@ -180,13 +147,10 @@ describe("post", () => {
 
   it("requires disqus_id", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        excerpt: "This is a test post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        slug: "test-post",
-      },
+      frontmatter: meta({
+        disqus_id: "",
+        date: new Date(),
+      }),
     });
 
     const result = post.safeParse({
@@ -199,13 +163,10 @@ describe("post", () => {
 
   it("requires redirects", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        slug: "test-post",
-        disqus_id: "test-post",
-      },
+      frontmatter: meta({
+        redirects: undefined,
+        date: new Date(),
+      }),
     });
 
     const result = post.safeParse({
@@ -218,13 +179,9 @@ describe("post", () => {
 
   it("requires date", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        author: "dreeves",
-        slug: "test-post",
-        disqus_id: "test-post",
-        redirects: [],
-      },
+      frontmatter: meta({
+        date: undefined,
+      }),
     });
 
     const result = post.safeParse({
@@ -237,14 +194,10 @@ describe("post", () => {
 
   it("requires tags", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        slug: "test-post",
-        disqus_id: "test-post",
-        redirects: [],
-      },
+      frontmatter: meta({
+        tags: undefined,
+        date: new Date(),
+      }),
     });
 
     const result = post.safeParse({
@@ -257,15 +210,10 @@ describe("post", () => {
 
   it("requires status", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        slug: "test-post",
-        disqus_id: "test-post",
-        redirects: [],
-        tags: [],
-      },
+      frontmatter: meta({
+        status: undefined,
+        date: new Date(),
+      }),
     });
 
     const result = post.safeParse({
@@ -278,16 +226,9 @@ describe("post", () => {
 
   it("requires source", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        slug: "test-post",
-        disqus_id: "test-post",
-        redirects: [],
-        tags: [],
-        status: "publish",
-      },
+      frontmatter: meta({
+        date: new Date(),
+      }),
     });
 
     const result = post.safeParse({
@@ -299,16 +240,9 @@ describe("post", () => {
 
   it("requires new line preceeding HTML comments", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        slug: "test-post",
-        disqus_id: "test-post",
-        redirects: [],
-        tags: [],
-        status: "publish",
-      },
+      frontmatter: meta({
+        date: new Date(),
+      }),
       content: `This is the paragraph in question
 <!-- comment --> More text`,
     });
@@ -323,16 +257,9 @@ describe("post", () => {
 
   it("specifies error reason", async () => {
     const md = padm({
-      frontmatter: {
-        title: "Test Post",
-        date: new Date("2021-01-01"),
-        author: "dreeves",
-        slug: "test-post",
-        disqus_id: "test-post",
-        redirects: [],
-        tags: [],
-        status: "publish",
-      },
+      frontmatter: meta({
+        date: new Date(),
+      }),
       content: `This is the paragraph in question
 <!-- comment --> More text`,
     });
@@ -348,5 +275,55 @@ describe("post", () => {
     expect(JSON.stringify(result.error)).toEqual(
       expect.stringMatching(/comment syntax error/),
     );
+  });
+
+  it("requires excerpt", async () => {
+    const md = padm({
+      frontmatter: meta({
+        excerpt: undefined,
+        date: new Date(),
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.success).toEqual(false);
+  });
+
+  it("expects excerpt from MAGIC_AUTO_EXTRACT to be Generated", async () => {
+    const md = padm({
+      content: "words",
+      frontmatter: meta({
+        excerpt: "MAGIC_AUTO_EXTRACT",
+        date: new Date(),
+      }),
+    });
+
+    const result = post.parse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.excerpt).toContain("word");
+  });
+
+  it("expects custom excerpt to return unchanged", async () => {
+    const md = padm({
+      content: "words",
+      frontmatter: meta({
+        excerpt: "the excerpt",
+        date: new Date(),
+      }),
+    });
+
+    const result = post.parse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.excerpt).toMatch("the excerpt");
   });
 });

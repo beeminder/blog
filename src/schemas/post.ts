@@ -5,11 +5,9 @@ import getExcerpt from "../lib/getExcerpt";
 import { image } from "./image";
 import extractImage from "../lib/extractImage";
 import matter from "gray-matter";
-
 import { frontmatter } from "./frontmatter";
 import { body } from "./body";
 import { dateString } from "./dateString";
-import striptags from "striptags";
 
 export const post = z
   .object({
@@ -51,7 +49,7 @@ export const post = z
     return {
       ...meta,
       tags: meta.tags?.filter(Boolean),
-      excerpt: meta.excerpt ? striptags(meta.excerpt) : getExcerpt(c.data),
+      excerpt: getExcerpt(meta.excerpt, c.data),
       image: extractImage(c.data),
       title: meta.title || parseTitle(md),
       date,
@@ -64,16 +62,16 @@ export const post = z
     z.object({
       content: z.string(),
       excerpt: z.string(),
-      slug: z.string(),
+      slug: z.string().min(1),
       image: image.optional(),
       title: z.string(),
       tags: z.array(z.string()),
       redirects: z.array(z.string()),
       date: z.date(),
       date_string: z.string(),
-      author: z.string(),
+      author: z.string().min(1),
       status: status,
-      disqus_id: z.string(),
+      disqus_id: z.string().min(1),
       md: z.string(),
     }),
   );
