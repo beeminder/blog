@@ -21280,7 +21280,7 @@ Bright red lines without meaningful commitments are useless for us.
 "
 `;
 
-exports[`body > post cbt hash 7f8f6a4b0f5c758568d3a183b7ae9746 1`] = `
+exports[`body > post cbt hash bc711f3925aaf3261d78958ef5dbb5a9 1`] = `
 "
 <p>
   <img
@@ -21410,9 +21410,6 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
     border: 1px solid lightgrey;
     font-family: sans-serif;
 }
-.ctable .na {
-    color: grey;
-}
 </style>
 <div class=\\"ctable\\">
   <center>
@@ -21448,7 +21445,10 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
             Thought
           </b>
         </td>
-        <td class=\\"na\\">
+        <td
+          class=\\"na\\"
+          style=\\".ctable .na {color: grey;}\\"
+        >
           <center>
             &mdash;
           </center>
@@ -21469,7 +21469,10 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
         <td>
           I feel angry, therefore I think that someone must have wronged me.
         </td>
-        <td class=\\"na\\">
+        <td
+          class=\\"na\\"
+          style=\\".ctable .na {color: grey;}\\"
+        >
           <center>
             &mdash;
           </center>
@@ -21490,7 +21493,10 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
         <td>
           I turn on my favorite song, therefore I feel energized.
         </td>
-        <td class=\\"na\\">
+        <td
+          class=\\"na\\"
+          style=\\".ctable .na {color: grey;}\\"
+        >
           <center>
             &mdash;
           </center>
@@ -28957,7 +28963,7 @@ Again, if you want to remove the commitment device aspect of a goal, we have a
 "
 `;
 
-exports[`body > post deathtolife hash 809e52dfb9f7a15de2710f6b1d82c83b 1`] = `
+exports[`body > post deathtolife hash 68b9741728d5717a5e142826f91dc69a 1`] = `
 "
 <p>
   <img
@@ -29131,7 +29137,7 @@ We have thought about how we could
     blog-post-driven development
   </a>
   &#8212; came up with the following.
-It mostly serves to illustrate there there isn&#8217;t a very realistic undo.
+It mostly serves to illustrate that there just isn&#8217;t a realistic undo.
 We offer it as a cautionary tale!
 </p>
 <br>
@@ -34620,7 +34626,7 @@ See also our classic post about
 "
 `;
 
-exports[`body > post fair hash fbc1e42647b51bf857ce169ce41a9e02 1`] = `
+exports[`body > post fair hash e9ca06ed2bf92afb33fea0d2bc867ccc 1`] = `
 "
 <p>
   <img
@@ -35442,7 +35448,7 @@ The pattern we&#8217;ve seen over and over is that as soon as you
 "
 `;
 
-exports[`body > post fatty hash 9f55ceca32bef8ebfb638fa8390c2819 1`] = `
+exports[`body > post fatty hash 587fe1d495c013d62953e7d30b8e7dc8 1`] = `
 "
 <p>
   <img
@@ -35461,11 +35467,13 @@ exports[`body > post fatty hash 9f55ceca32bef8ebfb638fa8390c2819 1`] = `
     the Fat Cyclist
   </a>
   and, if you&#8217;ve been following along closely, you might recognize him from the aftermath of our
-[1000th UVI](
-  <a href=\\"http://blog.beeminder.com/bikes\\">
-    http://blog.beeminder.com/bikes
+  <a
+    href=\\"http://blog.beeminder.com/bikes\\"
+    title=\\"How Beeminder Paid for 14 Bikes\\"
+  >
+    1000th UVI
   </a>
-  &#8220;&#8221;How Beeminder Paid for 14 Bikes&#8221;&#8220;), when
+  , when
   <a
     href=\\"http://runbikeco.de/\\"
     title=\\"What is it with hackers and bikes?\\"
@@ -87948,7 +87956,7 @@ And I&#8217;m so excited for another year of relentless awesomeness together!
 "
 `;
 
-exports[`body > post typebee hash 13aaeddee4a4e7fc2643b26672c235a2 1`] = `
+exports[`body > post typebee hash bd5049e7d68973f8adb5ac1520af54cb 1`] = `
 "
 <p>
   <img
