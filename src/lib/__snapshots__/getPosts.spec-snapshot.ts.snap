@@ -21280,7 +21280,7 @@ Bright red lines without meaningful commitments are useless for us.
 "
 `;
 
-exports[`body > post cbt hash 7f8f6a4b0f5c758568d3a183b7ae9746 1`] = `
+exports[`body > post cbt hash bc711f3925aaf3261d78958ef5dbb5a9 1`] = `
 "
 <p>
   <img
@@ -21410,9 +21410,6 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
     border: 1px solid lightgrey;
     font-family: sans-serif;
 }
-.ctable .na {
-    color: grey;
-}
 </style>
 <div class=\\"ctable\\">
   <center>
@@ -21448,7 +21445,10 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
             Thought
           </b>
         </td>
-        <td class=\\"na\\">
+        <td
+          class=\\"na\\"
+          style=\\".ctable .na {color: grey;}\\"
+        >
           <center>
             &mdash;
           </center>
@@ -21469,7 +21469,10 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
         <td>
           I feel angry, therefore I think that someone must have wronged me.
         </td>
-        <td class=\\"na\\">
+        <td
+          class=\\"na\\"
+          style=\\".ctable .na {color: grey;}\\"
+        >
           <center>
             &mdash;
           </center>
@@ -21490,7 +21493,10 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
         <td>
           I turn on my favorite song, therefore I feel energized.
         </td>
-        <td class=\\"na\\">
+        <td
+          class=\\"na\\"
+          style=\\".ctable .na {color: grey;}\\"
+        >
           <center>
             &mdash;
           </center>

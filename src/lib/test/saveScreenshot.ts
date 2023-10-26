@@ -1,6 +1,5 @@
 import { Browser } from "puppeteer";
 import _url from "url";
-import _path from "path";
 
 type Options = {
   url: string;
