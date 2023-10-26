@@ -21280,7 +21280,7 @@ Bright red lines without meaningful commitments are useless for us.
 "
 `;
 
-exports[`body > post cbt hash 7f8f6a4b0f5c758568d3a183b7ae9746 1`] = `
+exports[`body > post cbt hash bc711f3925aaf3261d78958ef5dbb5a9 1`] = `
 "
 <p>
   <img
@@ -21410,9 +21410,6 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
     border: 1px solid lightgrey;
     font-family: sans-serif;
 }
-.ctable .na {
-    color: grey;
-}
 </style>
 <div class=\\"ctable\\">
   <center>
@@ -21448,7 +21445,10 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
             Thought
           </b>
         </td>
-        <td class=\\"na\\">
+        <td
+          class=\\"na\\"
+          style=\\".ctable .na {color: grey;}\\"
+        >
           <center>
             &mdash;
           </center>
@@ -21469,7 +21469,10 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
         <td>
           I feel angry, therefore I think that someone must have wronged me.
         </td>
-        <td class=\\"na\\">
+        <td
+          class=\\"na\\"
+          style=\\".ctable .na {color: grey;}\\"
+        >
           <center>
             &mdash;
           </center>
@@ -21490,7 +21493,10 @@ Notice that our behavior has a direct impact on our thoughts and feelings.
         <td>
           I turn on my favorite song, therefore I feel energized.
         </td>
-        <td class=\\"na\\">
+        <td
+          class=\\"na\\"
+          style=\\".ctable .na {color: grey;}\\"
+        >
           <center>
             &mdash;
           </center>
@@ -28957,7 +28963,7 @@ Again, if you want to remove the commitment device aspect of a goal, we have a
 "
 `;
 
-exports[`body > post deathtolife hash 809e52dfb9f7a15de2710f6b1d82c83b 1`] = `
+exports[`body > post deathtolife hash 68b9741728d5717a5e142826f91dc69a 1`] = `
 "
 <p>
   <img
@@ -29131,7 +29137,7 @@ We have thought about how we could
     blog-post-driven development
   </a>
   &#8212; came up with the following.
-It mostly serves to illustrate there there isn&#8217;t a very realistic undo.
+It mostly serves to illustrate that there just isn&#8217;t a realistic undo.
 We offer it as a cautionary tale!
 </p>
 <br>
@@ -34620,7 +34626,7 @@ See also our classic post about
 "
 `;
 
-exports[`body > post fair hash fbc1e42647b51bf857ce169ce41a9e02 1`] = `
+exports[`body > post fair hash e9ca06ed2bf92afb33fea0d2bc867ccc 1`] = `
 "
 <p>
   <img
@@ -35442,7 +35448,7 @@ The pattern we&#8217;ve seen over and over is that as soon as you
 "
 `;
 
-exports[`body > post fatty hash 9f55ceca32bef8ebfb638fa8390c2819 1`] = `
+exports[`body > post fatty hash 587fe1d495c013d62953e7d30b8e7dc8 1`] = `
 "
 <p>
   <img
@@ -35461,11 +35467,13 @@ exports[`body > post fatty hash 9f55ceca32bef8ebfb638fa8390c2819 1`] = `
     the Fat Cyclist
   </a>
   and, if you&#8217;ve been following along closely, you might recognize him from the aftermath of our
-[1000th UVI](
-  <a href=\\"http://blog.beeminder.com/bikes\\">
-    http://blog.beeminder.com/bikes
+  <a
+    href=\\"http://blog.beeminder.com/bikes\\"
+    title=\\"How Beeminder Paid for 14 Bikes\\"
+  >
+    1000th UVI
   </a>
-  &#8220;&#8221;How Beeminder Paid for 14 Bikes&#8221;&#8220;), when
+  , when
   <a
     href=\\"http://runbikeco.de/\\"
     title=\\"What is it with hackers and bikes?\\"
@@ -58288,7 +58296,7 @@ Like by making sure you have at least one goal in each category or focusing on t
 "
 `;
 
-exports[`body > post movingav hash 82d7e88d4557af82f0001473bf4c26a2 1`] = `
+exports[`body > post movingav hash c49abd6bd941449fc7bf02f994c0e153 1`] = `
 "
 <p>
   <img
@@ -58391,9 +58399,9 @@ Beeminding the moving average you&#8217;d need to lose a full kilogram.
 </center>
 <h4 class=\\"pullquote\\">
   &#8220;You need to lose many times that to actually bring the
-  <emph>
+  <em>
     average
-  </emph>
+  </em>
   down enough&#8221;
 </h4>
 <p>
@@ -64066,7 +64074,7 @@ and zedmango for helping formulate the fine print on this.
 "
 `;
 
-exports[`body > post pdxqs hash 8fc84cb5dd10b2de6a7b77d601b56367 1`] = `
+exports[`body > post pdxqs hash 67b48fd0187936a0264bf3598cb302fa 1`] = `
 "
 <p>
   <img
@@ -64264,54 +64272,18 @@ Of course, we track
   </a>
   :
 </p>
-<div class=\\"prezi-player\\">
-  <style
-    type=\\"text/css\\"
-    media=\\"screen\\"
-  >
-    .prezi-player { width: 550px; } .prezi-player-links { text-align: center; }
-  </style>
-  <object
-    id=\\"prezi_isvkslpbi2dk\\"
-    name=\\"prezi_isvkslpbi2dk\\"
-    classid=\\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\\"
-    width=\\"550\\"
-    height=\\"400\\"
-  >
-    <param
-      name=\\"movie\\"
-      value=\\"http://prezi.com/bin/preziloader.swf\\"
-    >
-    <param
-      name=\\"allowfullscreen\\"
-      value=\\"true\\"
-    >
-    <param
-      name=\\"allowscriptaccess\\"
-      value=\\"always\\"
-    >
-    <param
-      name=\\"bgcolor\\"
-      value=\\"#ffffff\\"
-    >
-    <param
-      name=\\"flashvars\\"
-      value=\\"prezi_id=isvkslpbi2dk&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0\\"
-    >
-    <embed
-      id=\\"preziEmbed_isvkslpbi2dk\\"
-      name=\\"preziEmbed_isvkslpbi2dk\\"
-      src=\\"http://prezi.com/bin/preziloader.swf\\"
-      type=\\"application/x-shockwave-flash\\"
-      allowfullscreen=\\"true\\"
-      allowscriptaccess=\\"always\\"
-      width=\\"550\\"
-      height=\\"400\\"
-      bgcolor=\\"#ffffff\\"
-      flashvars=\\"prezi_id=isvkslpbi2dk&amp;lock_to_path=0&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0\\"
-    >
-  </object>
-</div>
+<iframe
+  src=\\"https://prezi.com/p/embed/isvkslpbi2dk/\\"
+  id=\\"iframe_container\\"
+  frameborder=\\"0\\"
+  webkitallowfullscreen
+  mozallowfullscreen
+  allowfullscreen
+  allow=\\"autoplay; fullscreen\\"
+  height=\\"315\\"
+  width=\\"560\\"
+>
+</iframe>
 <p>
   <br>
   &nbsp;
@@ -82328,7 +82300,7 @@ Which I should confess I haven&#8217;t actually read but I did read Scott Adams&
 "
 `;
 
-exports[`body > post tao hash 805f2056ca17b8325c367c4d3fe63c2c 1`] = `
+exports[`body > post tao hash 595861e3858da62b095a112d42f900e7 1`] = `
 "
 <p>
   <img
@@ -82640,7 +82612,7 @@ A great benefit from having this be manual input is that it doubles as a daily c
     height=\\"245px\\"
     width=\\"230px\\"
     frameborder=\\"0px\\"
-    display:block
+    style=\\"display:block\\"
   >
   </iframe>
 </p>
@@ -87984,7 +87956,7 @@ And I&#8217;m so excited for another year of relentless awesomeness together!
 "
 `;
 
-exports[`body > post typebee hash 13aaeddee4a4e7fc2643b26672c235a2 1`] = `
+exports[`body > post typebee hash bd5049e7d68973f8adb5ac1520af54cb 1`] = `
 "
 <p>
   <img

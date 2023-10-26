@@ -15,9 +15,17 @@ export interface Props {
   image?: string | undefined;
 }
 
-const defaultImage = new URL('/wp-content/uploads/2022/04/small_logo_bee_256.png', Astro.site);
-const defaultDescription = 'Beeminder is goal-tracking with teeth. We plot your progress on a graph with a Bright Red Line (formerly Yellow Brick Road). If your datapoints cross that line, we take your money. The Beeminder blog is a hodgepodge of productivity nerdery and behavioral economics written by the founders and various friends.';
-const { title, description = defaultDescription, image = defaultImage } = Astro.props;
+const defaultImage = new URL(
+  "/wp-content/uploads/2022/04/small_logo_bee_256.png",
+  Astro.site
+);
+const defaultDescription =
+  "Beeminder is goal-tracking with teeth. We plot your progress on a graph with a Bright Red Line (formerly Yellow Brick Road). If your datapoints cross that line, we take your money. The Beeminder blog is a hodgepodge of productivity nerdery and behavioral economics written by the founders and various friends.";
+const {
+  title,
+  description = defaultDescription,
+  image = defaultImage,
+} = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -56,7 +64,12 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <link rel="canonical" href={canonicalUrl} />
     <meta name="description" content={description} />
 
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="/feed.xml"
+    />
 
     <meta property="og:title" content={title} />
     <meta property="og:url" content={canonicalUrl} />
@@ -70,12 +83,14 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
     <script src="../scripts/slideshow.ts"></script>
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
     <Header />
 
     <div class="cap"><slot name="before-content" /></div>
-    
+
     <div class="content">
       <div>
         <slot />
