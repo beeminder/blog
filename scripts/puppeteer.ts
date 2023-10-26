@@ -18,12 +18,11 @@ import url from "url";
 const port = 4321;
 const base = `https://blog.beeminder.com`;
 const compare = `http://localhost:${port}`;
-const outPath = new URL("../shots", import.meta.url);
+const outPath = new URL("../shots/", import.meta.url);
 
 function makeOutPath(url: string, suffix: string): URL {
   const p = new URL(url).pathname.replaceAll("/", "_");
-  // const out = path.join(outPath.pathname, `${p}.${suffix}.png`);
-  return new URL(`${p}.${suffix}.png`, outPath);
+  return new URL(`./${p}.${suffix}.png`, outPath);
 }
 
 async function snap(
