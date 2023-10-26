@@ -20,17 +20,17 @@ const base = `https://blog.beeminder.com`;
 const compare = `http://localhost:${port}`;
 const outPath = new URL("../shots", import.meta.url);
 
-function makeOutPath(url: string, suffix: string): string {
+function makeOutPath(url: string, suffix: string): URL {
   const p = new URL(url).pathname.replaceAll("/", "_");
-  const out = path.join(outPath.pathname, `${p}.${suffix}.png`);
-  return out;
+  // const out = path.join(outPath.pathname, `${p}.${suffix}.png`);
+  return new URL(`${p}.${suffix}.png`, outPath);
 }
 
 async function snap(
   browser: Browser,
   url: string,
   suffix: string,
-): Promise<string> {
+): Promise<URL> {
   const p = makeOutPath(url, suffix);
 
   await takeScreenshot({

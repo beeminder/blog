@@ -4,7 +4,7 @@ import _path from "path";
 
 type Options = {
   url: string;
-  path: string;
+  path: URL;
   browser: Browser;
 };
 
@@ -19,7 +19,7 @@ export default async function takeScreenshot({
   await page.goto(url, { waitUntil: "networkidle0" });
 
   await page.screenshot({
-    path: _path.resolve(path),
+    path: _url.fileURLToPath(path),
     fullPage: true,
   });
 
