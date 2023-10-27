@@ -1,7 +1,7 @@
 import fs from "fs";
 
 export default function createReport() {
-  const shotsDir = new URL("../../../shots", import.meta.url);
+  const shotsDir = new URL("../../../shots/", import.meta.url);
   const files = fs.readdirSync(shotsDir);
   const sets = files.reduce(
     (acc, file) => {
@@ -21,15 +21,15 @@ export default function createReport() {
                 <div class="header">
                 <h1>${p}</h1>
                 <p>
-                    <a href="https://blog.beeminder.com${p}">base</a> |
-                    <a href="http://localhost:4321${p}">compare</a>
+                    <a href="https://blog.beeminder.com${p}" target="_blank">base</a> |
+                    <a href="http://localhost:4321${p}" target="_blank">compare</a>
                 </p>
                 </div>
                 <div class="shots">
                 ${value
                   .map(
                     (file) =>
-                      `<a class="shot" href="./shots/${file}"><img src="./shots/${file}" /></a>`,
+                      `<a class="shot" href="./shots/${file}" target="_blank"><img src="./shots/${file}" /></a>`,
                   )
                   .join("\n")}
                   </div>
