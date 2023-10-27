@@ -21602,6 +21602,268 @@ Beeminder-driven behavior change can bootstrap deeper changes in cognition, emot
 "
 `;
 
+exports[`body > post cbt hash dfa2fd49b1daa6b0e76c10de4854d004 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Beeminder vs CBT\\"
+    title=\\"Thanks to Faire Soule-Reeves for the image. DALL-E can't handle words yet so Faire's not entirely out of a job. Although DALL-E did make a very cute image of a bee sipping tea by the sea, which was our backup idea. Sea Bee Tea, get it?\\"
+    width=\\"450px\\"
+    src=\\"https://blog.beeminder.com/wp-content/uploads/2021/03/faire-beeminder-vs-cbt.jpeg\\"
+  >
+</p>
+<blockquote>
+  <p>
+    <em>
+      Nathan Arthur (aka narthur, of
+      <a
+        href=\\"https://taskratchet.com\\"
+        title=\\"Tagline: A Todo List with Consequences\\"
+      >
+        TaskRatchet
+      </a>
+      fame and who we&#8217;re now proud to also have on the Bee Team part-time) 
+had such an amazing response to some Beeminder skepticism in a
+      <a
+        href=\\"https://forum.beeminder.com/t/beeminder-vs-cbt/7624/26?u=dreev\\"
+        title=\\"Forum thread that was the impetus for this blog post\\"
+      >
+        forum thread about Beeminder vs CBT
+      </a>
+      that we asked him to blog about it.
+The backstory is that sometimes people accuse
+      <a
+        href=\\"https://blog.beeminder.com/crutch/\\"
+        title=\\"Beeminder blog post from 2021 rebutting this related accusation\\"
+      >
+        Beeminder of being a crutch
+      </a>
+      or
+      <a
+        href=\\"https://blog.beeminder.com/blackmail\\"
+        title=\\"Is Beeminder Self-Blackmail? Is Betteridge&#39;s law of headlines a sham?\\"
+      >
+        self-blackmail
+      </a>
+      or suggest that more positive approaches should be better.
+A common candidate for &#8220;more positive approaches&#8221; is Cognitive Behavorial Therapy, which Nathan is well-versed in.
+So, without further ado&#8230;
+    </em>
+  </p>
+</blockquote>
+<p>
+  Cognitive Behavioral Therapy is all the rage.
+(See, for example, Scott Alexander&#8217;s excellent primer on CBT as a part of
+  <a
+    href=\\"https://lorienpsych.com/2021/06/05/depression/\\"
+    title=\\"Scott Alexander of Astral Codex Ten fame also has a psychiatry website with articles like this one\\"
+  >
+    his article on depression
+  </a>
+  .)
+  To explain it, let&#8217;s start with a crude
+  <a
+    href=\\"https://www.therapistaid.com/therapy-guide/cbt-psychoeducation\\"
+    title=\\"A summary of CBT, including the cognitive model\\"
+  >
+    cognitive model
+  </a>
+  of human behavior: 
+our behavior is the result of our emotional state which, in turn, is created by the thoughts and beliefs we hold about our situation.
+</p>
+<p>
+  <img
+    src=\\"https://blog.beeminder.com/wp-content/uploads/2022/09/narthur-cbt-diagram-1.png\\"
+    alt=\\"Cognitive model of behavior\\"
+  >
+</p>
+<p>
+  The anti-Beeminder view takes that model and claims that the best way to change your behavior is to address your thoughts, rather than trying to change your actions directly. 
+If you leave your thoughts unchanged, you&#8217;re likely to continue dealing with the same behavioral problems. 
+If you change your thoughts, behavior modification is automatic. 
+It&#8217;s the difference between repeatedly cutting the top off of a weed and pulling it up by the roots.
+</p>
+<p>
+  This objection paints Beeminder as an inefficient and needlessly-stressful game of behavioral whack-a-mole &#8212; that it&#8217;s a superficial fix that leaves the source of the problems unaddressed.
+Wouldn&#8217;t we rather address the underlying thoughts and emotions that give rise to the behaviors rather than Beeminder&#8217;s approach of just changing the behaviors?
+</p>
+<p>
+  We could try to sidestep the objection by instead beeminding the root issues. 
+But Beeminder works best for concrete, quantifiable, controllable metrics. 
+Thoughts and emotions are none of those things.
+So instead we beemind behaviors &#8212; getting to bed on time, doing our chores, spending less time on Facebook.
+</p>
+<p>
+  And it&#8217;s worse than that, says our hypothetical Beeminder naysayer.
+Providing a superficial fix for an internal problem enables denial of the deeper issues. 
+Without Beeminder, I would be forced to address the real issues &#8212; my distorted thoughts and beliefs. 
+Therefore, I should actively avoid Beeminder and similar tools in order to ensure I do the hard work of addressing the root causes!
+</p>
+<h3>
+  What CBT Actually Says
+</h3>
+<p>
+  The error in that logic is the one-way causal connection between what one thinks and feels and the resulting behavior. 
+This isn&#8217;t what CBT teaches. 
+CBT states that our thoughts, emotions, and behaviors are tightly interconnected, each influencing the others in an open feedback loop.
+</p>
+<p>
+  <img
+    src=\\"https://blog.beeminder.com/wp-content/uploads/2022/09/narthur-cbt-diagram-2.png\\"
+    alt=\\"The CBT triangle\\"
+  >
+</p>
+<p>
+  Each node in the triangle can impact, and be impacted by, any other node. 
+Notice that our behavior has a direct impact on our thoughts and feelings. 
+&#8220;Fake it &#8216;til you make it&#8221; contains a grain of truth.
+</p>
+<div
+  class=\\"ctable\\"
+  style=\\"padding: 20px 0; font-size: .85em; text-align: center;\\"
+>
+  <pre>
+    <code>
+      &lt;table style=&quot;border-collapse: collapse; margin: 0 auto;&quot;&gt;
+
+    &lt;tr&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&lt;/td&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&lt;b&gt;Thought&lt;/b&gt;&lt;/td&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&lt;b&gt;Feeling&lt;/b&gt;&lt;/td&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&lt;b&gt;Behavior&lt;/b&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&lt;b&gt;Thought&lt;/b&gt;&lt;/td&gt;
+        &lt;td class=&quot;na&quot; style=&quot;color: grey; padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&amp;mdash;&lt;/td&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;
+            I think that there&#39;s no way I can succeed, therefore I feel sad.
+        &lt;/td&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;
+            I think that my boss will be upset if I&#39;m late for work, therefore I start getting ready to leave.
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&lt;b&gt;Feeling&lt;/b&gt;&lt;/td&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;
+            I feel angry, therefore I think that someone must have wronged me.
+        &lt;/td&gt;
+        &lt;td class=&quot;na&quot; style=&quot;color: grey; padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&amp;mdash;&lt;/td&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;
+            I feel happy, therefore I smile at someone on the street.
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&lt;b&gt;Behavior&lt;/b&gt;&lt;/td&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;
+            I do a favor for someone, therefore I think that I must like this person.
+        &lt;/td&gt;
+        &lt;td style=&quot;padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;
+            I turn on my favorite song, therefore I feel energized.
+        &lt;/td&gt;
+        &lt;td class=&quot;na&quot; style=&quot;color: grey; padding: 15px; border: 1px solid lightgrey; font-family: sans-serif;&quot;&gt;&amp;mdash;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </code>
+  </pre>
+</div>
+<h3>
+  Beeminder and Identity
+</h3>
+<p>
+  Beyond thought and emotion, tools such as Beeminder can help us to change our self-perceptions by allowing us to implement habits, which, in turn, provide evidence of our new identities. 
+James Clear, author of
+  <a
+    href=\\"https://jamesclear.com/atomic-habits\\"
+    title=\\"This book has the narthur seal of approval and is commonly recommended in Beeminder circles\\"
+  >
+    Atomic Habits
+  </a>
+  , is a
+  <a
+    href=\\"https://www.youtube.com/watch?v=UChQ9ZGGXpU\\"
+    title=\\"James Clear discusses how habits create identity\\"
+  >
+    proponent of this idea
+  </a>
+  . 
+According to Clear, behaviors, habitually repeated, form our identities.
+</p>
+<p>
+  The opposite of this effect is learned helplessness. 
+If we&#8217;ve experienced repeated failure in a certain area, that failure can become a part of our identity. 
+We have learned that we are helpless to make progress toward this goal, so we stop trying.
+</p>
+<p>
+  Learned helplessness can sneak up on us when we&#8217;re trying to reinvent ourselves. 
+If I want to become a programmer, I may decide to start spending time learning how to code. 
+For a few days I may succeed in doing that. 
+But then I start hitting more challenging topics. 
+It gets frustrating. 
+And then an unexpected event comes up and I skip a day. 
+And soon I&#8217;ve given up the goal entirely. 
+I&#8217;ll likely be hesitant to make another attempt in the future, remembering how helpless I felt the last time I tried.
+</p>
+<p>
+  Beeminder is an incredible tool for moving from learned helplessness to conscious competence. 
+Instead of relying on my
+  <a
+    href=\\"https://blog.beeminder.com/willpower\\"
+    title=\\"Old Beeminder blog post on what willpower is\\"
+  >
+    willpower
+  </a>
+  , 
+I&#8217;m able to create an external commitment that will keep me on track. 
+Each day I meet my goal, I&#8217;m creating evidence that I can become a programmer. 
+And eventually I&#8217;ll have enough evidence that I will begin to think of myself as a programmer. 
+Programming will have become a part of my identity.
+</p>
+<p>
+  And even if I derail, having a Beeminder goal guards against slipping into learned helplessness. 
+Beeminder puts my past progress front-and-center with its cumulative graphs. 
+I can visually see all the time I&#8217;ve already spent learning to program &#8212; the evidence is right there, regardless of my recent derailment. 
+And the fact that my Beeminder goal is still there, ready to get me back on track after a short break, creates the implicit assumption that I still have what it takes to get back up and keep going towards my goal. 
+It&#8217;s subtly hinting that I should view myself as a person capable of growth in the face of setbacks.
+</p>
+<h3>
+  My Experience with Beeminder and CBT
+</h3>
+<p>
+  I&#8217;ve been seeing a CBT therapist for some time now. 
+Beeminder has been key to that therapy&#8217;s effectiveness for me. 
+Anxiety, depression, and ADHD &#8212; the very problems I needed my therapist&#8217;s help to address &#8212; prevented me from implementing the interventions they recommended. 
+Beeminder bridged that gap by giving me an external system I could lean on to help me make the changes I needed to make. 
+And it helped me to stick to those changes long enough for them to start having an effect.
+</p>
+<p>
+  For example, my therapist recommended that I keep a thought journal, recording my negative thoughts and challenging them in the moment. 
+But without any salient reminder to do this between sessions, I inevitably never did. 
+A simple do-more Beeminder goal fixed this by regularly prompting me to watch for negative thoughts to address.
+</p>
+<h3>
+  And the Winner Is&#8230;
+</h3>
+<p>
+  Both! 
+The point is, CBT and Beeminder aren&#8217;t in competition at all.
+Using Beeminder alongside CBT can produce better results than either alone.
+  If you&#8217;re seeing a CBT therapist, Beeminder can help you implement the therapy.
+If you&#8217;re not, it&#8217;s still worth using CBT&#8217;s ideas.
+Beeminder-driven behavior change can bootstrap deeper changes in cognition, emotion, and identity.
+</p>
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"DALL-E image of a bumble bee in a boxing ring\\"
+    title=\\"DALL-E prompt: painting of a bumble bee in a boxing ring\\"
+    width=\\"450px\\"
+    src=\\"https://user-images.githubusercontent.com/9928/190226999-74a6b0ca-16a1-4446-a95a-e95402e31c3c.png\\"
+  >
+</p>
+"
+`;
+
 exports[`body > post cheating hash 53286a32542b43112a06497137921d21 1`] = `
 "
 <p>
