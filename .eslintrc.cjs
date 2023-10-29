@@ -6,7 +6,7 @@ module.exports = {
   root: true,
   overrides: [
     {
-      files: ["vitest.setup.ts", "src/lib/test/**/*.ts"],
+      files: ["vitest.setup.ts", "*.spec.ts", "src/lib/test/**/*.ts"],
       rules: {
         "@typescript-eslint/no-explicit-any": "off",
       },
