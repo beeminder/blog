@@ -22,13 +22,49 @@ describe("body", () => {
     expect(() => body.parse("BEGIN_MAGIC\nhello world")).toThrow();
   });
 
-  it("escapes script tags", () => {
+  it("disallows inline script tags", () => {
     expect(
-      body.parse(
+      body.safeParse(
         padm({
           content: "<script></script>",
         }),
       ),
-    ).toContain("&lt;script&gt;");
+    ).toEqual(expect.objectContaining({ success: false }));
+  });
+
+  it("disallows inline script tags with content", () => {
+    expect(
+      body.safeParse(
+        padm({
+          content: "<script>console.log('hello')</script>",
+        }),
+      ),
+    ).toEqual(expect.objectContaining({ success: false }));
+  });
+
+  it("disallows inline style tags with content", () => {
+    expect(
+      body.safeParse(
+        padm({
+          content: "<style>body {font-size: 2em;}</style>",
+        }),
+      ),
+    ).toEqual(
+      expect.objectContaining({
+        data: expect.stringContaining(
+          "&lt;style&gt;body {font-size: 2em;}&lt;/style&gt;",
+        ),
+      }),
+    );
+  });
+
+  it("parse error includes sanitizeHTML error message", () => {
+    const r = body.safeParse(
+      padm({ content: `<iframe src="https://www.example.com"></iframe>` }),
+    );
+    if (r.success) {
+      throw new Error("Expected failure");
+    }
+    expect(r.error.toString()).toContain("Iframe src not allowed");
   });
 });
