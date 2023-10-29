@@ -6,6 +6,8 @@ import expandRefs from "../lib/expandRefs";
 import { marked } from "marked";
 import { markedSmartypants } from "marked-smartypants";
 import applyIdsToElements from "../lib/applyIdsToElements";
+import sanitizeHtml from "sanitize-html";
+import { SANITIZE_HTML_OPTIONS } from "./body.options";
 
 marked.use(
   markedSmartypants({
@@ -37,6 +39,19 @@ export const body = z
   .transform(addBlankLines)
   .transform(linkFootnotes)
   .transform(expandRefs)
-  .transform((md) => marked.parse(md));
+  .transform((md) => marked.parse(md))
+  .transform((html, ctx) => {
+    try {
+      return sanitizeHtml(html, SANITIZE_HTML_OPTIONS);
+    } catch (e) {
+      const message = e instanceof Error ? e.message : JSON.stringify(e);
+      ctx.addIssue({
+        message: "failed to parse body",
+        code: z.ZodIssueCode.custom,
+        params: { error: message },
+      });
+      return z.NEVER;
+    }
+  });
 
 export type Body = z.infer<typeof body>;
