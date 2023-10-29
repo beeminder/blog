@@ -6,9 +6,8 @@ import expandRefs from "../lib/expandRefs";
 import { marked } from "marked";
 import { markedSmartypants } from "marked-smartypants";
 import applyIdsToElements from "../lib/applyIdsToElements";
-// import DOMPurify from "dompurify";
-// import getDom from "../lib/getDom";
 import sanitizeHtml from "sanitize-html";
+import { SANITIZE_HTML_OPTIONS } from "./body.options";
 
 marked.use(
   markedSmartypants({
@@ -41,141 +40,18 @@ export const body = z
   .transform(linkFootnotes)
   .transform(expandRefs)
   .transform((md) => marked.parse(md))
-  .transform((html) =>
-    sanitizeHtml(html, {
-      allowedAttributes: {
-        "*": [
-          "id",
-          "href",
-          "title",
-          "class",
-          "style",
-          "data-lang",
-          "lang",
-          "align",
-          "dir",
-        ],
-        a: ["name", "target"],
-        font: ["size", "color"],
-        form: ["action"],
-        iframe: [
-          "src",
-          "frameborder",
-          "name",
-          "height",
-          "width",
-          "border",
-          "cellspacing",
-          "scrolling",
-          "allow",
-          "allowfullscreen",
-          "webkitallowfullscreen",
-          "mozallowfullscreen",
-        ],
-        img: ["src", "alt", "width", "height", "caption", "cite"],
-        input: ["type", "name", "value"],
-        ol: ["start"],
-        table: ["border", "cellpadding", "cellspacing"],
-        tt: ["weight"],
-      },
-      disallowedTagsMode: "escape",
-      parser: {
-        decodeEntities: false,
-      },
-      allowedTags: [
-        "a",
-        "center",
-        "address",
-        "article",
-        "aside",
-        "footer",
-        "font",
-        "form",
-        "header",
-        "h1",
-        "h2",
-        "h3",
-        "h4",
-        "h5",
-        "h6",
-        "hgroup",
-        "main",
-        "nav",
-        "section",
-        "blockquote",
-        "dd",
-        "details",
-        "div",
-        "dl",
-        "dt",
-        "figcaption",
-        "figure",
-        "hr",
-        "li",
-        "main",
-        "ol",
-        "p",
-        "pre",
-        "ul",
-        "a",
-        "abbr",
-        "b",
-        "bdi",
-        "bdo",
-        "br",
-        "cite",
-        "code",
-        "data",
-        "dfn",
-        "em",
-        "i",
-        "input",
-        "iframe",
-        "kbd",
-        "mark",
-        "q",
-        "rb",
-        "rp",
-        "rt",
-        "rtc",
-        "ruby",
-        "s",
-        "samp",
-        "small",
-        "span",
-        "strike",
-        "strong",
-        "sub",
-        "summary",
-        "sup",
-        "time",
-        "u",
-        "var",
-        "wbr",
-        "caption",
-        "col",
-        "colgroup",
-        "table",
-        "tbody",
-        "td",
-        "tfoot",
-        "th",
-        "thead",
-        "tr",
-        "tt",
-        "img",
-      ],
-    }),
-  );
-
-// .transform((html) => {
-//   const window = getDom("");
-//   const purify = DOMPurify(window as any);
-//   return purify.sanitize(html);
-//  });
-
-// DOMPurify.sanitize(body.parse(""));
-// const clean = DOMPurify.sanitize("<img src=x onerror=alert(1)//>");
-// console.log(clean);
+  .transform((html, ctx) => {
+    try {
+      return sanitizeHtml(html, SANITIZE_HTML_OPTIONS);
+    } catch (e) {
+      const message = e instanceof Error ? e.message : JSON.stringify(e);
+      ctx.addIssue({
+        message: "failed to parse body",
+        code: z.ZodIssueCode.custom,
+        params: { error: message },
+      });
+      return z.NEVER;
+    }
+  });
 
 export type Body = z.infer<typeof body>;
