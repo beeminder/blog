@@ -33,8 +33,6 @@ describe("post", () => {
     const p = post.parse({
       source: "the_url",
       md,
-      redirects: [],
-      tags: [],
     });
 
     expect(p.disqus_id).toEqual("test-post");
@@ -52,8 +50,6 @@ describe("post", () => {
     const p = post.parse({
       source: "the_url",
       md,
-      redirects: [],
-      tags: [],
     });
 
     expect(p.excerpt).not.toContain("private notes");
@@ -71,8 +67,6 @@ describe("post", () => {
     const p = post.parse({
       source: "the_url",
       md,
-      redirects: [],
-      tags: [],
     });
 
     expect(p.excerpt).not.toContain("(#)");
@@ -90,8 +84,6 @@ describe("post", () => {
     const p = post.parse({
       source: "the_url",
       md,
-      redirects: [],
-      tags: [],
     });
 
     expect(p.image).toBeUndefined();
@@ -100,7 +92,7 @@ describe("post", () => {
   it("requires title", async () => {
     const md = padm({
       frontmatter: meta({
-        title: "",
+        title: undefined,
         date: new Date(),
       }),
     });
@@ -108,6 +100,42 @@ describe("post", () => {
     const result = post.safeParse({
       source: "the_url",
       md,
+    });
+
+    expect(result.success).toEqual(false);
+  });
+
+  it("requires slug be declared one time", async () => {
+    const md = padm({
+      frontmatter: meta({
+        title: "the_title",
+        slug: "the_slug",
+        date: new Date(),
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      md,
+      slug: "the_slug",
+    });
+
+    expect(result.success).toEqual(false);
+  });
+
+  it("requires status be declared one time", async () => {
+    const md = padm({
+      frontmatter: meta({
+        title: "the_title",
+        status: "publish",
+        date: new Date(),
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      md,
+      status: "publish",
     });
 
     expect(result.success).toEqual(false);
