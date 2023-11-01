@@ -9,6 +9,13 @@ import { frontmatter } from "./frontmatter";
 import { body } from "./body";
 import { dateString } from "./dateString";
 
+const intersect = (
+  o1: Record<string, unknown>,
+  o2: Record<string, unknown>,
+) => {
+  return Object.keys(o1).filter((k) => k in o2);
+};
+
 export const post = z
   .object({
     source: z.string(),
@@ -25,10 +32,20 @@ export const post = z
   })
   .transform(({ source: url, md, ...rest }, ctx) => {
     const { data, content } = matter(md);
-    const meta = {
-      ...rest,
-      ...frontmatter.parse(data),
-    };
+    const fm = frontmatter.parse(data);
+    const intersecting = intersect(fm, rest);
+
+    if (intersecting.length > 0) {
+      intersecting.forEach((key) => {
+        ctx.addIssue({
+          message: `Cannot declare ${key} in two places ${url}`,
+          code: ZodIssueCode.custom,
+        });
+      });
+      return z.NEVER;
+    }
+
+    const meta = { ...rest, ...fm };
     const c = body.safeParse(content);
 
     if (!c.success) {
