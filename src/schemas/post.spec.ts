@@ -354,4 +354,54 @@ describe("post", () => {
 
     expect(result.excerpt).toMatch("the excerpt");
   });
+
+  it("extracts image title", async () => {
+    const md = padm({
+      content: `<img src="https://blog.beeminder.com/image.png" title="the_title" />`,
+      frontmatter: meta({
+        date: new Date(),
+      }),
+    });
+
+    const result = post.parse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.image?.title).toMatch("the_title");
+  });
+
+  it("extracts image alt", async () => {
+    const md = padm({
+      content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" />`,
+      frontmatter: meta({
+        date: new Date(),
+      }),
+    });
+
+    const result = post.parse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.image?.alt).toMatch("the_alt");
+  });
+
+  it("extracts image alt and title", async () => {
+    const md = padm({
+      content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" title="the_title" />`,
+      frontmatter: meta({
+        date: new Date(),
+      }),
+    });
+
+    const result = post.parse({
+      source: "the_url",
+      md,
+    });
+
+    expect(result.image).toEqual(
+      expect.objectContaining({ title: "the_title", alt: "the_alt" }),
+    );
+  });
 });
