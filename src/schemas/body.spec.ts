@@ -67,4 +67,40 @@ describe("body", () => {
     }
     expect(r.error.toString()).toContain("Iframe src not allowed");
   });
+
+  it("does not strip title attribute", () => {
+    const r = body.parse(
+      padm({
+        content: `<img src="https://blog.beeminder.com/image.png" title="the_title" />`,
+      }),
+    );
+
+    expect(r).toContain(
+      `<img src="https://blog.beeminder.com/image.png" title="the_title" />`,
+    );
+  });
+
+  it("does not strip alt attribute", () => {
+    const r = body.parse(
+      padm({
+        content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" />`,
+      }),
+    );
+
+    expect(r).toContain(
+      `<img src="https://blog.beeminder.com/image.png" alt="the_alt" />`,
+    );
+  });
+
+  it("does not strip alt or title attribute", () => {
+    const r = body.parse(
+      padm({
+        content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" title="the_title" />`,
+      }),
+    );
+
+    expect(r).toContain(
+      `<img src="https://blog.beeminder.com/image.png" alt="the_alt" title="the_title" />`,
+    );
+  });
 });
