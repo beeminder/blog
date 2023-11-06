@@ -7043,5 +7043,15 @@
 "tags": ["akrasia", "bee-all", "get everything done", "studying", "case studies", "students", "rationality", "tips"],
 "disqus_id": "college",
 "excerpt": "We’re slightly behind for the traditional September start date, but it’s not too late! The semester at the London School of Hygiene & Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already. I don’t know about any of you, but whenever the new school year starts it feels like"
+},{
+"slug": "manifold",
+"source": "doc.bmndr.co/manifold",
+"redirects": [],
+"date": "2023-11-02",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "rationality", "prediction markets", "bee-all", "startups", "integrations"],
+"disqus_id": "manifold",
+"excerpt": "Probably no Manifold users have a gambling problem (maybe just that one guy?) but, just in case, now Manifold can say it has what casinos call a self-exclusion program. Kind of? Mostly we expect this to be useful the other way around. Maybe Scott Alexander"
 }
 ]
