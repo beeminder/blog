@@ -41772,7 +41772,7 @@ And stay on the Yellow Brick Road.
 "
 `;
 
-exports[`body > post glossary hash a44547484fa453dee54a42307f3e8c8a 1`] = `
+exports[`body > post glossary hash 7f58cd7783ab93d2bc4a2f19949eb6cd 1`] = `
 "
 <p>
   <img
@@ -41979,6 +41979,18 @@ See the sidebar of this blog, or check out our
   </a>
   .
 </p>
+Procrastination, impetuousness, failure of willpower, acting against one&#8217;s own better judgment.
+Doing something you regret even as you&#8217;re doing it.
+See the sidebar of this blog, or check out our
+<a
+  href=\\"http://blog.beeminder.com/akrasia\\"
+  title=\\"The inaugural post on the Beeminder Blog\\"
+>
+  Anti-Akrasia Manifesto
+</a>
+.
+
+&#8212;&gt;
 <h4 id=\\"ahorizon .def\\">
   Akrasia Horizon
 </h4>
