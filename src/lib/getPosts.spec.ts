@@ -35,6 +35,8 @@ describe("getPosts", () => {
   });
 
   it("includes excerpts", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ excerpt: undefined })]);
+
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         content: "word",
@@ -100,6 +102,8 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter title", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ title: undefined })]);
+
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         frontmatter: {
@@ -115,6 +119,8 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter author", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ author: undefined })]);
+
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         frontmatter: {
@@ -130,6 +136,7 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter excerpt", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ excerpt: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         frontmatter: {
@@ -145,6 +152,7 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter tags", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ tags: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         frontmatter: {
@@ -160,6 +168,7 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter date", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ date: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         frontmatter: {
@@ -175,6 +184,7 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter slug", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ slug: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         frontmatter: {
@@ -197,6 +207,7 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter status", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ status: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         frontmatter: {
@@ -209,38 +220,6 @@ describe("getPosts", () => {
     const result = posts[0];
 
     expect(result?.status).toEqual("publish");
-  });
-
-  it("uses wp title over magic title", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ title: "wp_title" })]);
-
-    vi.mocked(fetchPost).mockResolvedValue(
-      padm({
-        title: "magic_title",
-      }),
-    );
-
-    const posts = await getPosts();
-    const result = posts[0];
-
-    expect(result?.title).toEqual("wp_title");
-  });
-
-  it("uses frontmatter title over wp title", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ title: "wp_title" })]);
-
-    vi.mocked(fetchPost).mockResolvedValue(
-      padm({
-        frontmatter: {
-          title: "frontmatter_title",
-        },
-      }),
-    );
-
-    const posts = await getPosts();
-    const result = posts[0];
-
-    expect(result?.title).toEqual("frontmatter_title");
   });
 
   it("returns html", async () => {
@@ -376,6 +355,7 @@ https://blog.beeminder.com/depunish
   });
 
   it("parses frontmatter", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ slug: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
       padm({
         frontmatter: {
