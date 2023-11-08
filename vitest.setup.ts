@@ -62,5 +62,10 @@ beforeEach(() => {
     timeEnd: vi.fn(),
   });
 
+  vi.stubGlobal("process", {
+    ...process,
+    env: { ...process.env, SOURCE_DOMAIN: "the_source_domain" },
+  });
+
   __reset();
 });
