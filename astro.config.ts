@@ -3,6 +3,7 @@ import prefetch from "@astrojs/prefetch";
 import getRedirects from "./src/lib/getRedirects";
 
 import sitemap from "@astrojs/sitemap";
+import "dotenv/config";
 
 // https://astro.build/config
 export default defineConfig({
