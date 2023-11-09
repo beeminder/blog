@@ -6,6 +6,7 @@ export default defineConfig({
   test: {
     ...config.test,
     setupFiles: [],
+    globalSetup: ["./vitest.snapshot.setup.ts"],
     include: ["src/**/*.spec-snapshot.ts"],
     watch: false,
     reporters: "dot",

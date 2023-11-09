@@ -1,11 +1,11 @@
 import { describe, it, expect } from "vitest";
 import { post } from "./post";
-import padm from "../lib/test/padm";
+import markdownSourceData from "../lib/test/markdownSourceData";
 import meta from "../lib/test/meta";
 
 describe("post", () => {
   it("requires disqus id", () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         disqus_id: "",
         date: new Date(),
@@ -22,7 +22,7 @@ describe("post", () => {
   });
 
   it("uses disqus id", () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         disqus_id: "test-post",
         date: new Date(),
@@ -39,7 +39,7 @@ describe("post", () => {
   });
 
   it("does not include private notes in excerpts", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         date: new Date(),
       }),
@@ -56,7 +56,7 @@ describe("post", () => {
   });
 
   it("does not include raw markdown in excerpts", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         date: new Date(),
         excerpt: "MAGIC_AUTO_EXTRACT",
@@ -73,7 +73,7 @@ describe("post", () => {
   });
 
   it("does not use image from private notes", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         date: new Date(),
       }),
@@ -90,7 +90,7 @@ describe("post", () => {
   });
 
   it("requires title", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         title: undefined,
         date: new Date(),
@@ -106,7 +106,7 @@ describe("post", () => {
   });
 
   it("requires slug be declared one time", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         title: "the_title",
         slug: "the_slug",
@@ -124,7 +124,7 @@ describe("post", () => {
   });
 
   it("requires status be declared one time", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         title: "the_title",
         status: "publish",
@@ -142,7 +142,7 @@ describe("post", () => {
   });
 
   it("requires slug", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         slug: "",
         date: new Date(),
@@ -158,7 +158,7 @@ describe("post", () => {
   });
 
   it("requires author", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         author: "",
         date: new Date(),
@@ -174,7 +174,7 @@ describe("post", () => {
   });
 
   it("requires disqus_id", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         disqus_id: "",
         date: new Date(),
@@ -190,7 +190,7 @@ describe("post", () => {
   });
 
   it("requires redirects", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         redirects: undefined,
         date: new Date(),
@@ -206,7 +206,7 @@ describe("post", () => {
   });
 
   it("requires date", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         date: undefined,
       }),
@@ -221,7 +221,7 @@ describe("post", () => {
   });
 
   it("requires tags", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         tags: undefined,
         date: new Date(),
@@ -237,7 +237,7 @@ describe("post", () => {
   });
 
   it("requires status", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         status: undefined,
         date: new Date(),
@@ -253,7 +253,7 @@ describe("post", () => {
   });
 
   it("requires source", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         date: new Date(),
       }),
@@ -267,7 +267,7 @@ describe("post", () => {
   });
 
   it("requires new line preceeding HTML comments", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         date: new Date(),
       }),
@@ -284,7 +284,7 @@ describe("post", () => {
   });
 
   it("specifies error reason", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         date: new Date(),
       }),
@@ -306,7 +306,7 @@ describe("post", () => {
   });
 
   it("requires excerpt", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       frontmatter: meta({
         excerpt: undefined,
         date: new Date(),
@@ -322,7 +322,7 @@ describe("post", () => {
   });
 
   it("expects excerpt from MAGIC_AUTO_EXTRACT to be Generated", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       content: "words",
       frontmatter: meta({
         excerpt: "MAGIC_AUTO_EXTRACT",
@@ -339,7 +339,7 @@ describe("post", () => {
   });
 
   it("expects custom excerpt to return unchanged", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       content: "words",
       frontmatter: meta({
         excerpt: "the excerpt",
@@ -356,7 +356,7 @@ describe("post", () => {
   });
 
   it("extracts image title", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       content: `<img src="https://blog.beeminder.com/image.png" title="the_title" />`,
       frontmatter: meta({
         date: new Date(),
@@ -372,7 +372,7 @@ describe("post", () => {
   });
 
   it("extracts image alt", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" />`,
       frontmatter: meta({
         date: new Date(),
@@ -388,7 +388,7 @@ describe("post", () => {
   });
 
   it("extracts image alt and title", async () => {
-    const md = padm({
+    const md = markdownSourceData({
       content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" title="the_title" />`,
       frontmatter: meta({
         date: new Date(),

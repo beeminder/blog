@@ -2,7 +2,7 @@ import { beforeEach, vi } from "vitest";
 import fetch from "node-fetch-cache";
 import fetchPost from "./src/lib/fetchPost";
 import { __reset } from "./src/lib/memoize";
-import padm from "./src/lib/test/padm";
+import markdownSourceData from "./src/lib/test/markdownSourceData";
 import getSitemap from "./src/lib/test/getSitemap";
 import readScreenshot from "./src/lib/test/readScreenshot";
 
@@ -46,7 +46,7 @@ beforeEach(() => {
     Promise.resolve({ text: vi.fn(async () => "") } as any),
   );
 
-  vi.mocked(fetchPost).mockResolvedValue(padm());
+  vi.mocked(fetchPost).mockResolvedValue(markdownSourceData());
   vi.mocked(getSitemap).mockResolvedValue([]);
   vi.mocked(readScreenshot).mockReturnValue({
     metadata: () => ({
@@ -64,7 +64,7 @@ beforeEach(() => {
 
   vi.stubGlobal("process", {
     ...process,
-    env: { ...process.env, SOURCE_DOMAIN: "the_source_domain" },
+    env: { ...process.env, ETHERPAD_DOMAIN: "the_etherpad_domain" },
   });
 
   __reset();
