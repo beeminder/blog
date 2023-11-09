@@ -1,11 +1,11 @@
 import { describe, it, expect } from "vitest";
 import { body } from "./body";
-import markdownSourceData from "../lib/test/markdownSourceData";
+import ether from "../lib/test/ether";
 
 describe("body", () => {
   it("supports em dashes", () => {
     const r = body.parse(
-      markdownSourceData({
+      ether({
         content: "foo -- bar",
       }),
     );
@@ -25,7 +25,7 @@ describe("body", () => {
   it("disallows inline script tags", () => {
     expect(
       body.safeParse(
-        markdownSourceData({
+        ether({
           content: "<script></script>",
         }),
       ),
@@ -35,7 +35,7 @@ describe("body", () => {
   it("disallows inline script tags with content", () => {
     expect(
       body.safeParse(
-        markdownSourceData({
+        ether({
           content: "<script>console.log('hello')</script>",
         }),
       ),
@@ -45,7 +45,7 @@ describe("body", () => {
   it("disallows inline style tags with content", () => {
     expect(
       body.safeParse(
-        markdownSourceData({
+        ether({
           content: "<style>body {font-size: 2em;}</style>",
         }),
       ),
@@ -60,7 +60,7 @@ describe("body", () => {
 
   it("parse error includes sanitizeHTML error message", () => {
     const r = body.safeParse(
-      markdownSourceData({
+      ether({
         content: `<iframe src="https://www.example.com"></iframe>`,
       }),
     );
@@ -72,7 +72,7 @@ describe("body", () => {
 
   it("does not strip title attribute", () => {
     const r = body.parse(
-      markdownSourceData({
+      ether({
         content: `<img src="https://blog.beeminder.com/image.png" title="the_title" />`,
       }),
     );
@@ -84,7 +84,7 @@ describe("body", () => {
 
   it("does not strip alt attribute", () => {
     const r = body.parse(
-      markdownSourceData({
+      ether({
         content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" />`,
       }),
     );
@@ -96,7 +96,7 @@ describe("body", () => {
 
   it("does not strip alt or title attribute", () => {
     const r = body.parse(
-      markdownSourceData({
+      ether({
         content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" title="the_title" />`,
       }),
     );

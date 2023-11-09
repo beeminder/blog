@@ -2,7 +2,7 @@ import getPosts from "./getPosts";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import fetchPost from "./fetchPost";
 import readSources from "./readSources";
-import markdownSourceData from "./test/markdownSourceData";
+import ether from "./test/ether";
 import meta from "./test/meta";
 
 describe("getPosts", () => {
@@ -38,7 +38,7 @@ describe("getPosts", () => {
     vi.mocked(readSources).mockReturnValue([meta({ excerpt: undefined })]);
 
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: "word",
         frontmatter: {
           excerpt: "MAGIC_AUTO_EXTRACT",
@@ -90,7 +90,7 @@ describe("getPosts", () => {
 
   it("extracts image url", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: '<img src="https://example.com/image.png" />',
       }),
     );
@@ -105,7 +105,7 @@ describe("getPosts", () => {
     vi.mocked(readSources).mockReturnValue([meta({ title: undefined })]);
 
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         frontmatter: {
           title: "Hello",
         },
@@ -122,7 +122,7 @@ describe("getPosts", () => {
     vi.mocked(readSources).mockReturnValue([meta({ author: undefined })]);
 
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         frontmatter: {
           author: "Alice",
         },
@@ -138,7 +138,7 @@ describe("getPosts", () => {
   it("uses frontmatter excerpt", async () => {
     vi.mocked(readSources).mockReturnValue([meta({ excerpt: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         frontmatter: {
           excerpt: "Hello",
         },
@@ -154,7 +154,7 @@ describe("getPosts", () => {
   it("uses frontmatter tags", async () => {
     vi.mocked(readSources).mockReturnValue([meta({ tags: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         frontmatter: {
           tags: ["a", "b", "c"],
         },
@@ -170,7 +170,7 @@ describe("getPosts", () => {
   it("uses frontmatter date", async () => {
     vi.mocked(readSources).mockReturnValue([meta({ date: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         frontmatter: {
           date: new Date("2021-09-02"),
         },
@@ -186,7 +186,7 @@ describe("getPosts", () => {
   it("uses frontmatter slug", async () => {
     vi.mocked(readSources).mockReturnValue([meta({ slug: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         frontmatter: {
           slug: "hello",
         },
@@ -209,7 +209,7 @@ describe("getPosts", () => {
   it("uses frontmatter status", async () => {
     vi.mocked(readSources).mockReturnValue([meta({ status: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         frontmatter: {
           status: "publish",
         },
@@ -224,7 +224,7 @@ describe("getPosts", () => {
 
   it("returns html", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: "hello world",
       }),
     );
@@ -237,7 +237,7 @@ describe("getPosts", () => {
 
   it("uses smartypants", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: '"hello world"',
       }),
     );
@@ -250,7 +250,7 @@ describe("getPosts", () => {
 
   it("does not require new line after html element", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: `
 <h1>heading</h1>
 paragraph
@@ -266,7 +266,7 @@ paragraph
 
   it("allows for PHP Markdown Extra-style IDs", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: "# heading {#id}",
       }),
     );
@@ -279,7 +279,7 @@ paragraph
 
   it("handles id properly", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: "## More Real-World Commitment Devices  {#AUG}",
       }),
     );
@@ -292,7 +292,7 @@ paragraph
 
   it("handles multiple IDs", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: `
 ## What Commitment Devices Have You Used on Yourself? {#POL}
 
@@ -310,7 +310,7 @@ paragraph
 
   it("supports link nonsense", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: `
 [paying is not punishment](
 https://blog.beeminder.com/depunish
@@ -328,7 +328,7 @@ https://blog.beeminder.com/depunish
 
   it("links footnotes", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: "$FN[foo] $FN[foo]",
       }),
     );
@@ -343,7 +343,7 @@ https://blog.beeminder.com/depunish
 
   it("expands refs", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         content: "$REF[foo] $REF[bar]",
       }),
     );
@@ -357,7 +357,7 @@ https://blog.beeminder.com/depunish
   it("parses frontmatter", async () => {
     vi.mocked(readSources).mockReturnValue([meta({ slug: undefined })]);
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         frontmatter: {
           slug: "val",
         },
@@ -399,7 +399,7 @@ https://blog.beeminder.com/depunish
     ]);
 
     vi.mocked(fetchPost).mockResolvedValue(
-      markdownSourceData({
+      ether({
         frontmatter: meta({
           slug: "the_slug",
           date: new Date(),
@@ -417,7 +417,7 @@ https://blog.beeminder.com/depunish
     ]);
 
     vi.mocked(fetchPost).mockResolvedValueOnce(
-      markdownSourceData({
+      ether({
         frontmatter: meta({
           disqus_id: "the_disqus_id",
           date: new Date(),
@@ -426,7 +426,7 @@ https://blog.beeminder.com/depunish
     );
 
     vi.mocked(fetchPost).mockResolvedValueOnce(
-      markdownSourceData({
+      ether({
         frontmatter: meta({
           disqus_id: "the_disqus_id",
           date: new Date(),
