@@ -2,7 +2,7 @@ import { beforeEach, vi } from "vitest";
 import fetch from "node-fetch-cache";
 import fetchPost from "./src/lib/fetchPost";
 import { __reset } from "./src/lib/memoize";
-import markdownSourceData from "./src/lib/test/markdownSourceData";
+import ether from "./src/lib/test/ether";
 import getSitemap from "./src/lib/test/getSitemap";
 import readScreenshot from "./src/lib/test/readScreenshot";
 
@@ -46,7 +46,7 @@ beforeEach(() => {
     Promise.resolve({ text: vi.fn(async () => "") } as any),
   );
 
-  vi.mocked(fetchPost).mockResolvedValue(markdownSourceData());
+  vi.mocked(fetchPost).mockResolvedValue(ether());
   vi.mocked(getSitemap).mockResolvedValue([]);
   vi.mocked(readScreenshot).mockReturnValue({
     metadata: () => ({
