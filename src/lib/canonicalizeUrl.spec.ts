@@ -23,6 +23,8 @@ describe("canonicalizeUrl", () => {
   it("returns the correct url", async () => {
     const result = canonicalizeUrl("doc.bmndr.co/psychpricing");
 
-    expect(result).toEqual("https://the_source_domain/psychpricing/export/txt");
+    expect(result).toEqual(
+      "https://the_etherpad_domain/psychpricing/export/txt",
+    );
   });
 });
