@@ -1,7 +1,7 @@
 import env from "./env";
 
 export default function canonicalizeUrl(url: string): string {
-  const domain = env("SOURCE_DOMAIN");
+  const domain = env("ETHERPAD_DOMAIN");
   // Start with basic cleanup canonicalization applicable to all URLs...
   url = url.trim(); // trim whitespace
   if (!url.match(/^https?:\/\//i)) url = "https://" + url; // add protocol

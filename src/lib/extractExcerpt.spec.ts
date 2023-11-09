@@ -1,20 +1,20 @@
 import extractExcerpt from "./extractExcerpt";
 import { describe, it, expect } from "vitest";
-import padm from "./test/padm";
+import markdownSourceData from "./test/markdownSourceData";
 
 const lorem =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
 describe("extractExcerpt", () => {
   it("appends ellipsis to excerpt", () => {
-    const result = extractExcerpt(padm());
+    const result = extractExcerpt(markdownSourceData());
 
     expect(result).toBe("...");
   });
 
   it("does not include images in excerpt", () => {
     const result = extractExcerpt(
-      padm({
+      markdownSourceData({
         content: '<img src="https://example.com/image.png" />',
       }),
     );
@@ -24,7 +24,7 @@ describe("extractExcerpt", () => {
 
   it("limits length fuzzily", () => {
     const result = extractExcerpt(
-      padm({
+      markdownSourceData({
         content: lorem,
       }),
     );
@@ -36,7 +36,7 @@ describe("extractExcerpt", () => {
 
   it("strips footnotes", () => {
     const result = extractExcerpt(
-      padm({
+      markdownSourceData({
         content: '<a class="footnote" id="fn1" href="#1">1</a>',
       }),
     );
@@ -46,7 +46,7 @@ describe("extractExcerpt", () => {
 
   it("strips newlines", () => {
     const result = extractExcerpt(
-      padm({
+      markdownSourceData({
         content: "foo\nbar",
       }),
     );
@@ -56,7 +56,7 @@ describe("extractExcerpt", () => {
 
   it("does not include private notes", () => {
     const result = extractExcerpt(
-      padm({
+      markdownSourceData({
         before: "private notes",
       }),
     );
