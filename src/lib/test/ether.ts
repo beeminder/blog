@@ -1,6 +1,6 @@
 import matter from "gray-matter";
 
-export default function markdownSourceData({
+export default function ether({
   frontmatter = {},
   before = "",
   content = "",
