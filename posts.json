@@ -7063,5 +7063,15 @@
 "tags": ["akrasia", "rationality", "bee-all", "startups", "blogging", "meta", "navel-gazing", "nerdery"],
 "disqus_id": "antimagic404",
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "risk",
+"source": "doc.bmndr.co/risk",
+"redirects": [],
+"date": "2023-11-29",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "rationality", "bee-all", "startups", "meta", "navel-gazing", "nerdery", "finance"],
+"disqus_id": "risk",
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
