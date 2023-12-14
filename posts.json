@@ -7073,5 +7073,15 @@
 "tags": ["akrasia", "rationality", "bee-all", "startups", "meta", "navel-gazing", "nerdery", "finance"],
 "disqus_id": "risk",
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "rocks",
+"source": "doc.bmndr.co/rocks",
+"redirects": [],
+"date": "2023-12-13",
+"author": "dreeves",
+"status": "draft",
+"tags": ["akrasia", "rationality", "bee-all", "self-help"],
+"disqus_id": "rocks",
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
