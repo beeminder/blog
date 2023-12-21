@@ -76,15 +76,15 @@ Commits merged to `master` are automatically deployed via Render.com.
 
 ## Quick Links
 
-- [ZOMBIES! (:zombie: )](https://github.com/beeminder/blog/issues?q=is:open+is:issue+label:ZOM "Open gissues labeled ZOM")
+- [ZOMBIES!](https://github.com/beeminder/blog/issues?q=is:open+is:issue+label:ZOM "Open gissues labeled ZOM") :zombie:
   &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Undotted i's (:eye: )](https://github.com/beeminder/blog/issues?q=is:issue+is:closed+-label:zap+-label:nix+-label:cnr+-label:dup+-label:pub "Gissues that are closed but don't have any of the resolution labels: zap, nix, cnr, dup, or pub")
+  [Undotted i's](https://github.com/beeminder/blog/issues?q=is:issue+is:closed+-label:zap+-label:nix+-label:cnr+-label:dup+-label:pub "Gissues that are closed but don't have any of the resolution labels: zap, nix, cnr, dup, or pub") :eye:
   &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Active dev (:bug: )](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:DEV+-label:ZzZ "Open dev gissues NOT labeled ZzZ")
+  [Active dev](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:DEV+-label:ZzZ "Open dev gissues NOT labeled ZzZ") :bug:
   &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Snoozed (:zzz: )](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:ZzZ "Open gissues labeled ZzZ")
+  [Snoozed](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:ZzZ "Open gissues labeled ZzZ") :zzz:
   &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Closed dev (:heavy_check_mark: )](https://github.com/beeminder/blog/issues?q=is:issue+is:closed+label:DEV "Closed dev gissues")
+  [Closed dev](https://github.com/beeminder/blog/issues?q=is:issue+is:closed+label:DEV "Closed dev gissues") :heavy_check_mark:
 - Freshgishing ([blog post](https://blog.beeminder.com/freshen/ "Backlog Freshening")):
   &nbsp;&nbsp;
   [Bee](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ+assignee:bsoule "Open non-snoozed gissues, oldest first, assigned to Bethany")
