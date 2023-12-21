@@ -7083,5 +7083,15 @@
 "tags": ["akrasia", "rationality", "bee-all", "self-help", "get everything done"],
 "disqus_id": "rocks",
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "honeygrams",
+"source": "doc.bmndr.co/honeygrams",
+"redirects": [],
+"date": "2023-12-20",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "rationality", "bee-all", "holiday"],
+"disqus_id": "honeygrams",
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
