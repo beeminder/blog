@@ -1,4 +1,4 @@
-// http://expost.padm.us/
+// http://doc.bmndr.co/
 
 function findIdentifiers(markdown: string): string[] {
   const fns = markdown.matchAll(/\$REF\[(.*?)\]/g);
