@@ -22,6 +22,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/anomalily' 1`] = `"https
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/antimagic' 1`] = `"https://the_source_domain/antimagic/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/antimagic404' 1`] = `"https://the_source_domain/antimagic404/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/applehealth' 1`] = `"https://the_source_domain/applehealth/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/arabic' 1`] = `"https://the_source_domain/arabic/export/txt"`;
@@ -334,6 +336,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/hardthings' 1`] = `"http
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/heartbleed' 1`] = `"https://the_source_domain/heartbleed/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/honeygrams' 1`] = `"https://the_source_domain/honeygrams/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/howeyeuse' 1`] = `"https://the_source_domain/howeyeuse/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/icecream' 1`] = `"https://the_source_domain/icecream/export/txt"`;
@@ -395,6 +399,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/lockmyphone' 1`] = `"htt
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/loss' 1`] = `"https://the_source_domain/loss/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/maniac' 1`] = `"https://the_source_domain/maniac/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/manifold' 1`] = `"https://the_source_domain/manifold/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/manwide' 1`] = `"https://the_source_domain/manwide/export/txt"`;
 
@@ -534,11 +540,15 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/resjump' 1`] = `"https:/
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/revealedprefs' 1`] = `"https://the_source_domain/revealedprefs/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/risk' 1`] = `"https://the_source_domain/risk/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rituals' 1`] = `"https://the_source_domain/rituals/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/road' 1`] = `"https://the_source_domain/road/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/roadwidth' 1`] = `"https://the_source_domain/roadwidth/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rocks' 1`] = `"https://the_source_domain/rocks/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rosary' 1`] = `"https://the_source_domain/rosary/export/txt"`;
 
