@@ -1,5 +1,6 @@
 .temp*
 .vscode/
+package-lock.json
 
 # visual regression testing
 /shots/
