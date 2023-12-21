@@ -3299,6 +3299,225 @@ How damaging, or how illegal, money-burning is is quite irrelevant to the point 
 "
 `;
 
+exports[`body > post antimagic404 hash 571f393f630f817d77cfe126ca4e50f4 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Bees looking at screens with URLs on them\\"
+    title=\\"Yes, these bees are baby Unix Graybeards. Also, yes, Beeminder's name is typoed. That's why they can't find it I guess!\\"
+    width=\\"450px\\"
+    src=\\"https://user-images.githubusercontent.com/9928/283332349-1bb3a3ca-eb88-4778-b6bc-2730e865ea00.png\\"
+  >
+</p>
+<p>
+  Today I would like to pick a fight with WordPress.
+I&#8217;m still a huge fan of the company (Automattic).
+They&#8217;ve done a lot for us over the years and I have good friends who work there.
+But blog posts work better as beefs so forget all that.
+</p>
+<p>
+  Let&#8217;s talk about what a wrongy-wrongpants WordPress is with their aggressively over-clever canonical redirects feature!
+Say you write a post with URL &#8220;blog.bmndr.co/datasmithing&#8221; on your wordpress blog.
+If someone then tries to surf to &#8220;blog.bmndr.co/data&#8221; WordPress thinks to itself, 
+&#8220;Aha, I know what this user meant to do! There&#8217;s only one URL on this blog that starts with &#8216;data&#8217; so we can just silently redirect to it and the user will be so pleased!&#8221;
+Maybe whoever came up with that was misguidedly trying to adhere to the
+  <a
+    href=\\"https://en.wikipedia.org/wiki/Principle_of_least_astonishment\\"
+    title=\\"AKA least surprise. See later links to posts on the Beeminder blog about how bad this is!\\"
+  >
+    Principle of Least Astonishment
+  </a>
+  or
+  <a
+    href=\\"https://en.wikipedia.org/wiki/DWIM\\"
+    title=\\"AKA DWIM. See later links to posts on the Beeminder blog about how bad this is!\\"
+  >
+    Do What I Mean
+  </a>
+  .
+</p>
+<p>
+  And what&#8217;s so bad about that, you ask?
+If the user just forgot the final &#8220;g&#8221; in &#8220;datasmithing&#8221; is it somehow helping them to pedantically point out that they typoed the URL?
+</p>
+<p>
+  (Actually WordPress is even more egregiously magical.
+If you typo a URL in some other way, like transposing two characters, it just silently sends you to the front page of the blog.)
+</p>
+<p>
+  My answer is yes!
+Always be maximally pedantic!
+We have two other whole other blog posts about why that&#8217;s important in general &#8212;
+  <a
+    href=\\"https://blog.beeminder.com/postel\\"
+    title=\\"Anti-Postel for short. This one is for programmers.\\"
+  >
+    The Anti-Robustness Principle
+  </a>
+  and
+  <a
+    href=\\"https://blog.beeminder.com/magic\\"
+    title=\\"This one is for normal users. Still for very nerdy users, but you don&#39;t have to be a programmer to appreciate this one.\\"
+  >
+    The Anti-Magic Principle
+  </a>
+  &#8212; but in this case there&#8217;s a very specific reason.
+Suppose we later actually write a new blog post with the URL &#8220;blog.bmndr.co/data&#8221;.
+WordPress will just silently break the old link that had been reliably pointing to the &#8220;datasmithing&#8221; one!
+  <a
+    class=\\"footnote\\"
+    id=\\"DATA1\\"
+    href=\\"#DATA\\"
+  >
+    [1]
+  </a>
+  Facepalm!
+</p>
+<br>
+&nbsp;
+<br>
+<p>
+  Ok, my rant is over.
+Now let me show off the nifty thing the Beeminder blog does instead, now that we&#8217;ve
+  <a
+    href=\\"https://blog.beeminder.com/blogmorphosis\\"
+    title=\\"If you forget that URL, clever as it is, try surfing to blog.beeminder.com/blog and see what happens!\\"
+  >
+    moved off of WordPress
+  </a>
+  .
+It might only be useful for me personally but since I know the URLs of our 13 years (!) of blog posts mostly by heart
+  <a
+    class=\\"footnote\\"
+    id=\\"HEART1\\"
+    href=\\"#HEART\\"
+  >
+    [2]
+  </a>
+  and mostly type them from memory when linking to them, I&#8217;m pretty enamored with how
+  <a
+    href=\\"https://blog.beeminder.com/astroblog\\"
+    title=\\"Nathan Arthur&#39;s post with all the gory details of our blog migration\\"
+  >
+    narthur and I implemented
+  </a>
+  the blog&#8217;s 404 pages.
+To show this off with an example, it&#8217;s hard to remember that the URL for our classic post on why we hate anti-charities is &#8220;/anticharity&#8221; but the Anti-Magic Principle post is &#8220;/magic&#8221;. 
+So now check out what happens if you mix those up:
+</p>
+<ul>
+  <li>
+    <a
+      href=\\"https://blog.beeminder.com/charity\\"
+      title=\\"Yes, this intentionally 404s -- the point is to look at the suggested link on the 404 page\\"
+    >
+      blog.beeminder.com/charity
+    </a>
+  </li>
+  <li>
+    <a
+      href=\\"https://blog.beeminder.com/antimagic\\"
+      title=\\"Yes, this intentionally 404s -- the point is to look at the suggested link on the 404 page\\"
+    >
+      blog.beeminder.com/antimagic
+    </a>
+  </li>
+</ul>
+<p>
+  If you&#8217;re too lazy to click those, you&#8217;ll see something like this, for the example of trying to surf to &#8220;blog.beeminder.com/blog&#8221;:
+</p>
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Screenshot of our 404 page suggesting posts that begin or end with the URL slug 'blog'\\"
+    title=\\"Screenshot of our 404 page suggesting posts that begin or end with the URL slug 'blog'\\"
+    src=\\"https://user-images.githubusercontent.com/9928/283340052-bb023598-bde2-4ef2-b907-66129ad5e105.png\\"
+  >
+</p>
+<p>
+  I think this is within epsilon of the best of all worlds.
+At worst it&#8217;s an extra click for the case that you happened to type a strict prefix of an existing URL &#8212; no magic redirection.
+But since we&#8217;re now being nice and transparent about what happened &#8212; you&#8217;re getting a 404 error &#8212; we&#8217;re free to insert as much magic as we like into the list of suggestions, since the user can simply take or leave them.
+And we do!
+We throw in everything which has the mistyped URL as a strict prefix, as well anything that has it as a strict suffix.
+And if there aren&#8217;t any of those we get fancy and look for the URL with the closest Levenshtein distance.
+Here&#8217;s another screenshot, showing the hovertext helpfully explaining itself:
+</p>
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Another screenshot of our 404 page suggesting posts that are a close match to 'eggo'\\"
+    title=\\"Another screenshot of our 404 page suggesting posts that are a close match to 'eggo'\\"
+    src=\\"https://user-images.githubusercontent.com/9928/283345206-128b7545-75de-4b87-871c-b6b9fa8f1f49.png\\"
+  >
+</p>
+<p>
+  Is this overkill?
+Maybe! But clearly the blog is a labor of love and this makes me happy.
+So now the blog does Fancy 404s.
+You&#8217;re welcome.
+</p>
+<p>
+  PS: If you liked this, you&#8217;ll definitely like our post on
+  <a
+    href=\\"https://blog.beeminder.com/slytherin404\\"
+    title=\\"Short version: if, for privacy reasons, you can&#39;t reveal whether something exists at a particular URL, the correct, fully honest thing to do is to give a Glomar response, not falsely pretend there was nothing found at the attempted URL\\"
+  >
+    Slytherin 404s
+  </a>
+  .
+</p>
+<br>
+&nbsp;
+<br>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"DATA\\"
+    href=\\"#DATA1\\"
+  >
+    [1]
+  </a>
+  BTW, there actually
+  <em>
+    is
+  </em>
+  a
+  <a
+    href=\\"https://blog.beeminder.com/datasmithing\\"
+    title=\\"Smithing Your Habits\\"
+  >
+    Datasmithing post
+  </a>
+  &#8212; we didn&#8217;t make that up! 
+It&#8217;s a guest post from our friend Melissa Smith of Datasmithing. 
+Melissa is a habit coach, which means she&#8217;ll help you tune up your habits, i.e., help you build and troubleshoot the habits and systems that you run your life on. 
+Are you good at solving complex engineering problems, but bad at doing the dishes? She can help with that.
+</p>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"HEART\\"
+    href=\\"#HEART1\\"
+  >
+    [2]
+  </a>
+  Well, at least the 100ish
+  <a
+    href=\\"https://blog.beeminder.com/tags/best-of\\"
+    title=\\"My protocol for this is that ever so many months I go to the most recent best-of post and look at each post since then, adding the best-of tag if I remember linking to it much\\"
+  >
+    &#8220;best of&#8221; posts
+  </a>
+  that I find myself linking to the most.
+</p>
+"
+`;
+
 exports[`body > post api hash 1c25b4e3ee7a6a4f1a0de099026b26e8 1`] = `
 "
 <p>
@@ -48132,6 +48351,209 @@ Oh, and we didn&#8217;t even mention that he also helps moderate a language-lear
 "
 `;
 
+exports[`body > post honeygrams hash 1b11b5f216d8ddcb0e9d5e4120f3951b 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"A honeypot with money in it\\"
+    title=\\"This is a strictly literal honeypot. It is not a trap, we promise!\\"
+    width=\\"450px\\"
+    src=\\"https://user-images.githubusercontent.com/9928/274054398-2f1fd0ea-b21b-4ecc-8bed-d3b126730931.png\\"
+  >
+</p>
+<p>
+  Happy Solstice!
+We have a meta-gift for you:
+  <a
+    href=\\"https://www.beeminder.com/honeygram\\"
+    title=\\"Or beeminder.com/honey if that&#39;s easier to remember\\"
+  >
+    Honeygrams
+  </a>
+  !
+</p>
+<p>
+  Meta-gift?
+Yes, you can now gift your honey money (FKA premium credit), even to people who don&#8217;t yet have a Beeminder account (give the gift of Beeminder?).
+It looks like this:
+</p>
+<p>
+  <a
+    href=\\"https://www.beeminder.com/honeygram/new\\"
+    title=\\"Send a Honeygram\\"
+  >
+    <img
+      class=\\"aligncenter\\"
+      alt=\\"Screenshot of sending a Honeygram\\"
+      src=\\"https://user-images.githubusercontent.com/9928/292186899-f77e52be-0216-430b-b30d-3c2b7c4b795a.png\\"
+    >
+  </a>
+</p>
+<p>
+  If you put an email address in the &#8220;To&#8221; field instead of a Beeminder username, that person will be notified, we&#8217;ll help get them set up, and then transfer the honey to them.
+If they fail to get set up, you keep your honey.
+Or if they happen to already have a Beeminder account, the honey will transfer to them instantly.
+</p>
+<h3>
+  Wait, what&#8217;s Honey Money again?
+</h3>
+<p>
+  It&#8217;s Beeminder&#8217;s new currency and a way to pre-pay for derailments.
+It also generalizes the old premium credit feature.
+We&#8217;ve just now added a
+  <a
+    href=\\"https://help.beeminder.com/article/354-honey-money\\"
+    title=\\"How does Honey Money work?\\"
+  >
+    Honey Money FAQ
+  </a>
+  to our help docs for reference.
+</p>
+<h3>
+  Backstory
+</h3>
+<p>
+  We&#8217;ve been experimenting with this as a hidden beta feature for a while and have been slow to announce it more widely because it&#8217;s involved kind rewriting all our backend code that deals with payments and premium credit.
+There&#8217;s a lot more to say about it and we intend additional blog posts.
+For now we&#8217;ll focus on why we built this.
+</p>
+<p>
+  In the beginning there was premium premium credit&#8230;
+</p>
+<p>
+  We&#8217;ve long used premium credit for bounties or thank-yous or apologies, or occasionally as refunds.
+Also student discounts and similar. 
+You can see the
+  <a
+    href=\\"https://help.beeminder.com/article/244-premium-credit\\"
+    title=\\"How does premium credit work?\\"
+  >
+    gory details in our help doc
+  </a>
+  or the
+  <a
+    href=\\"http://doc.bmndr.co/credit\\"
+    title=\\"Spec: Premium Credit\\"
+  >
+    even gorier details
+  </a>
+  in our internal spec from which we implemented it.
+</p>
+<p>
+  Honey Money is the same thing but can also, optionally, work for derailments. 
+It&#8217;s a way to prepay for a derailment by depositing money with Beeminder before you actually derail. 
+When you derail we draw from that balance first before charging your credit card.
+</p>
+<p>
+  (Of course users shouldn&#8217;t have to care about this, if they want to just give us a payment method like usual to be charged whenever they derail.
+If someone does somehow end up with honey money they don&#8217;t want applied to derailments, we intend to keep that as an option.)
+</p>
+<p>
+  Anyway, we ended up accumulating a whole list of reasons we wanted people to at least have the option to prepay for derailments:
+</p>
+<ol>
+  <li>
+    As a signup filter, we may want to only let you sign up if you&#8217;re serious enough and
+    <a
+      href=\\"https://blog.beeminder.com/nailingit\\"
+      title=\\"Derailing It Is Nailing It\\"
+    >
+      philosophically on board
+    </a>
+    enough to be fine with prepaying $5.
+  </li>
+  <li>
+    (Also potentially it matters for anti-fraud to have a big enough initial deposit required to deter testing of stolen credit cards.)
+  </li>
+  <li>
+    Beyond signup, it can be a way to encourage the derailing-it-is-nailing-it mindset: 
+&#8220;Of course it&#8217;s fine to put in honey money up front &#8212; eventually you&#8217;ll use it. If you don&#8217;t you&#8217;re doing it wrong!&#8221;
+  </li>
+  <li>
+    To support payment methods that don&#8217;t support arbitrary future charges 
+(cf.
+    <a
+      href=\\"https://stripe.com/docs/india-recurring-payments\\"
+      title=\\"This has been a bit of a bugbear for us in support\\"
+    >
+      the situation in India
+    </a>
+    in particular).
+  </li>
+  <li>
+    To close the loophole (at least for people who want to close it for themselves) where you deauthorize Beeminder&#8217;s access to your payment method before we charge it.
+  </li>
+  <li>
+    To be able to pay bounties to users or issue refunds by adding to your honey balance. 
+Especially if premium plans go away in the future and already for the case of lifetime premium people or people who never intend to get premium.
+We&#8217;ve been doing a lot with premium credit but
+    <a
+      href=\\"https://blog.beeminder.com/focus\\"
+      title=\\"Strategy Memo: Beeminder Is Pledge-Focused\\"
+    >
+      want to keep gradually moving away from premium plans
+    </a>
+    so generalizing to derail credit helps with that.
+  </li>
+  <li>
+    To reduce the amount of refunds we do ($50k/year last we checked).
+  </li>
+  <li>
+    To keep from throwing PayPal users under the bus 
+(Stripe even
+    <a
+      href=\\"https://stripe.com/docs/payments/paypal\\"
+      title=\\"See &#39;Accept a payment&#39; and &#39;Set up future payments&#39; in the sidebar -- apparently the latter is not yet available for US businesses\\"
+    >
+      supports PayPal
+    </a>
+    now for one-off payments to US businesses).
+  </li>
+  <li>
+    As probably the easiest way to support paying for derailments via in-app purchase on iOS.
+  </li>
+  <li>
+    We could save credit card processing fees and other overhead/risk by doing bigger charges less frequently.
+Honey money (that&#8217;s allowed to go negative?) may be the most elegant implementation of this.
+  </li>
+  <li>
+    The integration with our friends at
+    <a
+      href=\\"https://manifold.markets\\"
+      title=\\"Play-money prediction market\\"
+    >
+      Manifold
+    </a>
+    where mana and honey can be exchanged!
+  </li>
+  <li>
+    We&#8217;re doing a science experiment in collaboration with the University of Virginia and needed a way for students to use Beeminder without putting in their own credit cards.
+  </li>
+</ol>
+<p>
+  Of course it&#8217;s the last one that kicked us out of maybe-someday mode.
+</p>
+<p>
+  So there you have it.
+Honey Money is now the coin of the realm.
+Go ahead, click on it:
+</p>
+<p>
+  <a
+    href=\\"https://www.beeminder.com/honeygram\\"
+    title=\\"Review: You can buy honey to pre-pay for derailments, apply it to premium plans, gift it to other people, and exchange it for Manifold's currency, mana\\"
+  >
+    <img
+      class=\\"aligncenter\\"
+      width=\\"200px\\"
+      src=\\"https://user-images.githubusercontent.com/9928/292218820-d64b4920-b107-4bb2-bc61-0033c5f7e6d1.png\\"
+    >
+  </a>
+</p>
+"
+`;
+
 exports[`body > post icecream hash 6365ef668cb7d87a77289bef2de8da56 1`] = `
 "
 <p>
@@ -55096,6 +55518,214 @@ That&#8217;s why the embedded version of the video jumps ahead past the boring p
   </a>
   ,
 is 72 to 104 hours.
+</p>
+"
+`;
+
+exports[`body > post manifold hash 70365f8f76c94c1cd86687533778ef18 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"An anime bee riding on an origami crane\\"
+    title=\\"Birds and the bees?\\"
+    width=\\"450px\\"
+    src=\\"https://user-images.githubusercontent.com/9928/279875492-2e682836-57ab-4fd8-a298-78b8d16a956f.png\\"
+  >
+</p>
+<p>
+  Probably no
+  <a
+    href=\\"https://manifold.markets\\"
+    title=\\"https://manifo\\"
+  >
+    Manifold
+  </a>
+  users have a gambling problem
+(maybe just that
+  <a
+    href=\\"https://news.manifold.markets/p/isaac-kings-whales-vs-minnows-and\\"
+    title=\\"Epic tale of the Whales vs Minnows\\"
+  >
+    one guy
+  </a>
+  ?) but, just in case, now Manifold can say it has what casinos call a self-exclusion program.
+Kind of?
+</p>
+<p>
+  Mostly we expect this to be useful the other way around.
+Maybe Scott Alexander convinced you that
+  <a
+    href=\\"https://www.astralcodexten.com/p/prediction-market-faq\\"
+    title=\\"Prediction Market FAQ on Astral Codex Ten. Extremely persuasive list of reasons why prediction markets are great.\\"
+  >
+    prediction markets are the bees&#8217; knees
+  </a>
+  .
+Maybe you even agree that making predictions is a skill worth training or just epistemically virtuous.
+But maybe after betting in a couple markets you got overwhelmed and failed to get the habit to stick?
+Maybe you built up a streak and, despite Manifold literally paying you to maintain it, you broke it and immediately fell head-first off the wagon.
+  <a
+    class=\\"footnote\\"
+    id=\\"STREAK1\\"
+    href=\\"#STREAK\\"
+  >
+    [1]
+  </a>
+</p>
+<p>
+  We&#8217;ve got your back!
+</p>
+<h2>
+  Wait, so what is Manifold?
+</h2>
+<p>
+  It&#8217;s a play-money prediction market where anyone can create a market for any question.
+We&#8217;ve
+  <a
+    href=\\"https://blog.beeminder.com/predict\\"
+    title=\\"The Theory And Practice Of Predicting One&#39;s Own Behavior: Prediction Markets as Commitment Devices\\"
+  >
+    blogged about it before
+  </a>
+  and we&#8217;ve made lots of
+  <a
+    href=\\"https://manifold.markets/browse?topic=beeminder&amp;t=&amp;f=all&amp;s=newest\\"
+    title=\\"Dozens of Manifold markets about Beeminder, not all of which were created by us\\"
+  >
+    markets about Beeminder
+  </a>
+  .
+It&#8217;s amazing and we highly recommend it!
+</p>
+<h2>
+  How the integration works
+</h2>
+<p>
+  You just head to
+  <a
+    href=\\"https://www.beeminder.com/manifold\\"
+    title=\\"Fancy landing page for the integration\\"
+  >
+    beeminder.com/manifold
+  </a>
+  or click the Manifold logo on the Beeminder front page, and then just follow the prompts.
+</p>
+<p>
+  Everything you do on Manifold is public so we don&#8217;t need any pesky authorization &#8212; just tell us your Manifold username and we&#8217;re off to the races:
+</p>
+<p>
+  <img
+    class=\\"aligncenter\\"
+    width=\\"406\\"
+    alt=\\"Enter your Manifold username\\"
+    title=\\"Step 1 of creating a Beeminder goal automatically populated from Manifold\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/8f196dc7-3562-4091-aab4-6b391feb664c\\"
+  >
+</p>
+<p>
+  Then just decide whether, when left to your own devices, you&#8217;ll do more betting or less betting than you rationally endorse:
+</p>
+<p>
+  <img
+    class=\\"aligncenter\\"
+    width=\\"374\\"
+    alt=\\"Manifold user ___ wants to make {moar bets / fewer bets} at ___ bets per day.\\"
+    title=\\"Step 2: Choosing what to commit to\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/33e20ae8-bf29-4504-85fe-7f607d3e7489\\"
+  >
+</p>
+<p>
+  That&#8217;s also where you pick the number of bets per day &#8212; depicted as a bright red line on your graph &#8212; that you&#8217;re committing to stay over or under.
+Et voila, you have a spiffy new graph:
+</p>
+<p>
+  <img
+    class=\\"aligncenter\\"
+    width=\\"800\\"
+    alt=\\"Beeminder graph with data automatically fetched from Manifold\\"
+    title=\\"Beeminder graph with data automatically fetched from Manifold\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/1834c707-86bd-44c5-97eb-dba3b40e4632\\"
+  >
+</p>
+<h2>
+  Wait, I’m a Manifold user new to Beeminder!
+</h2>
+<p>
+  Welcome aboard! 
+You might want to check out our
+  <a
+    href=\\"https://help.beeminder.com/category/5-quick-start-overview\\"
+    title=\\"A collection of 15 newbee-oriented articles starting witih &quot;What is Beeminder?&quot;\\"
+  >
+    getting started guide
+  </a>
+  in our Help Docs, and then get yourself signed up.
+Assuming you&#8217;re on board with the commitment device, paying-money-if-you-go-off-track bit, the beauty of an autodata integration is that you don’t normally need to interact with Beeminder once you’ve gone through the process above of setting up your commitment.
+Just go place some bets (or go outside or something if you made a do-less goal) when Beeminder yells at you and you&#8217;re good.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  Ok, and in case you didn&#8217;t actually read any of this and jumped down here for the punchline, just click this button and there&#8217;s a decent chance you&#8217;ll figure it out as you go:
+</p>
+<center>
+  <a href=\\"https://www.beeminder.com/manifold\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
+      Mind your Manifolding!
+    </span>
+  </a>
+</center>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<h2>
+  PS: Have some meta-markets
+</h2>
+<ul>
+  <li>
+    <a
+      href=\\"https://manifold.markets/dreev/how-many-beeminder-goals-will-peopl-6d3ad5be8763\\"
+      title=\\"See market for details\\"
+    >
+      How many Beeminder goals will people create to beemind their betting?
+    </a>
+  </li>
+  <li>
+    <a
+      href=\\"https://manifold.markets/dreev/what-fraction-of-beemindermanifold\\"
+      title=\\"See market for details\\"
+    >
+      What fraction of Beeminder/Manifold goals will be do-more?
+    </a>
+  </li>
+</ul>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"STREAK\\"
+    href=\\"#STREAK1\\"
+  >
+    [1]
+  </a>
+  We have a very old but we&#8217;ll immodestly say
+  <a
+    href=\\"https://blog.beeminder.com/seinfeld\\"
+    title=\\"AKA The Seinfeld Hack even though it has nothing to do with Seinfeld\\"
+  >
+    classic blog post
+  </a>
+  about how fragile streaks are motivation-wise.
+In short: streaks work great once you have a streak built up but (a) how do you bootstrap that? and (b) if you ever break it then all the motivational power it had bursts like a bubble.
+Beeminder is the streak concept done right.
 </p>
 "
 `;
@@ -73225,6 +73855,153 @@ and for first articulating the proof by contradiction.
 "
 `;
 
+exports[`body > post risk hash 8a4e16bb3adff3bdade9fa0657df1afd 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Bees engaged in high-risk activities\\"
+    title=\\"They're business-y bees engaged in high-risk activities\\"
+    width=\\"450px\\"
+    src=\\"https://user-images.githubusercontent.com/9928/286863288-52513c6c-b772-4d62-8c04-44de49b73c11.png\\"
+  >
+</p>
+<p>
+  Here&#8217;s an obvious principle of personal finance: 
+If you can spend $100 now to prevent spending $200 next year, definitely do that.
+</p>
+<p>
+  But in startup finance, it can totally make sense to decide to pay the $200 next year. 
+Because your business is growing exponentially and $200 next year may easily be less expensive to you than $100 now. 
+Both because you expect to be richer and because if those $100 expenses add up to enough distraction that your business stops existing then the $100 expenses were actually pure waste.
+</p>
+<p>
+  This is why you hear non-sarcastic financial advice to brand-new startups like &#8220;just put all your receipts in a shoebox and worry about it later&#8221;.
+When there&#8217;s a ton of uncertainty about getting off the ground at all then that actually makes sense.
+Put no effort into things that only matter
+  <em>
+    if
+  </em>
+  you get off the ground.
+  <a
+    href=\\"http://paulgraham.com/ds.html\\"
+    title=\\"Classic Y Combinator advice from Paul Graham\\"
+  >
+    Do things that don&#8217;t scale
+  </a>
+  .
+  <a
+    href=\\"https://en.wikiquote.org/wiki/Donald_Knuth\\"
+    title=\\"Classic Donald Knuth quote, known to all computer scientists\\"
+  >
+    Premature optimization is the root of all evil
+  </a>
+  .
+  <a
+    href=\\"https://blog.beeminder.com/shirknturk\\"
+    title=\\"Beeminder blog post about a startup principle we gave a silly name to\\"
+  >
+    Shirk &amp; Turk
+  </a>
+  .
+</p>
+<p>
+  Beeminder by  now is a lifestyle business more than a startup so it&#8217;s closer to the personal finance principle than the startup version. 
+But it&#8217;s still on the spectrum and things that would be no-brainers for personal finance are yes-brainers for us.
+</p>
+<p>
+  This is worth keeping in mind when being all prudent about your business accounting and taxes and things.
+It might be optimal to be less prudent than you&#8217;re naturally inclined to be.
+  <a
+    class=\\"footnote\\"
+    id=\\"WORRY1\\"
+    href=\\"#WORRY\\"
+  >
+    [1]
+  </a>
+  Keep much of your focus on growth even at the expense of letting accounting problems compound in their risk of future ass-biting.
+</p>
+<p>
+  Summing that up: humans, being mortal, should discount the future at maybe 5% per year (1%? 10%? let&#8217;s say single digits or at most low double digits).
+A grow-or-die startup should have a huge discount rate, way over 100%, like where anything a couple years out is totally irrelevant. 
+Other businesses should be in between.
+</p>
+<h3>
+  What does Beeminder&#8217;s growth imply about its discount rate?
+</h3>
+<p>
+  Well, we need to be growing faster than we are.
+Arguably we should quit if we don&#8217;t grow, since we&#8217;re not quite making market salaries.
+ 
+Which means spending money now to save money next year might be genuinely wasteful.
+Because next year we should either be richer or dead. 
+Wide-eyed emoji!
+</p>
+<p>
+  (Don&#8217;t worry, we have zero inclination to walk away from Beeminder.
+We previously made a grow-or-die commitment device and it worked but was scary and stressful so we&#8217;re thinking about how to force ourselves to spur growth without doing that.
+We&#8217;re quite sanguine about this.
+We&#8217;re Beeminder users after all.)
+</p>
+<p>
+  But for the outside view on how long Beeminder will be around, the answer is, as of late 2023, another 12 years, per the
+  <a
+    href=\\"https://en.wikipedia.org/wiki/Lindy_effect\\"
+    title=\\"The heuristic is: in the absence of phenomena like senescence (reasonable for non-perishable things like companies) expect future lifespan to equal lifespan so far\\"
+  >
+    Lindy effect
+  </a>
+  .
+Or another 16 years, depending how you count.
+Again, the inside view yields an estimate of infinity years!
+</p>
+<p>
+  We can even use the Lindy effect to turn all this into a concrete heuristic.
+Pick a discount rate such that things at your Lindy horizon &#8212; 
+namely, again as long into the future as you&#8217;ve existed in the past &#8212;
+matter half as much as things today.
+The formula for that is 
+log(2)/x where x
+ 
+is your Lindy horizon.
+If you&#8217;re 1 year old, use a discount rate of 69% per year.
+If you&#8217;re 8 years old, use 9% per year.
+Then just take market rates as a floor on that, implying that once you&#8217;re our age you can stop doing any extra future discounting based on your limited expected lifespan.
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"WORRY\\"
+    href=\\"#WORRY1\\"
+  >
+    [1]
+  </a>
+  This reminds us of 
+Nick Winter&#8217;s sage startup mantra:
+&#8220;
+  <a
+    href=\\"https://blog.nickwinter.net/posts/unnecessary-things\\"
+    title=\\"Nick Winter&#39;s List of Unnecessary Things. In particular the final entry: Worry\\"
+  >
+    nothing bad ever happens!
+  </a>
+  &#8221;
+Which is classic
+  <a
+    href=\\"https://slatestarcodex.com/2014/03/24/should-you-reverse-any-advice-you-hear/\\"
+    title=\\"Should You Reverse Any Advice You Hear?\\"
+  >
+    reverse-all-advice
+  </a>
+  advice. 
+Some people are way too &#8220;put out fires as they happen&#8221; and some people are way too &#8220;let&#8217;s rebuild this with fire-retardant material and then rebuild it again in case that material causes cancer&#8221;.
+</p>
+"
+`;
+
 exports[`body > post rituals hash bfd32837adf291fd4e6f8435ee47e4c7 1`] = `
 "
 <p>
@@ -74053,6 +74830,147 @@ You don&#8217;t actually have to have any idea how to choose what safety buffer 
   <br>
   &nbsp;
   <br>
+</p>
+"
+`;
+
+exports[`body > post rocks hash 6b387bd1cf59905d9f2cf73bd8d5d0cb 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Two honeypots: one full of big rocks and the other full of little pebbles\\"
+    title=\\"Warning: do not eat\\"
+    width=\\"450px\\"
+    src=\\"https://user-images.githubusercontent.com/9928/290430987-e1878b09-9d50-4faf-a204-6b9776964c36.png\\"
+  >
+</p>
+<blockquote>
+  <p>
+    <em>
+      Thanks to Stephen Covey (of &#8220;7 habits&#8221; fame) for popularizing if not inventing this metaphor / concept handle, and to 
+David Ernst
+(of
+      <a
+        href=\\"https://siv.org/\\"
+        title=\\"Pronouced SIV like in civilization\\"
+      >
+        Secure Internet Voting
+      </a>
+      fame) for pointing that out.
+Also to Scott Alexander for the
+      <span style=\\"font-style:normal\\">
+        <a
+          href=\\"https://notes.andymatuschak.org/z3b7sidNrEkNaY9qfGwZjwz\\"
+          title=\\"I really like Andy Matuschak's note on concept handles and the concept is pretty buried in Scott's excellent post on non-fiction writing advice, so we're linking to Andy's note but you can continue on to the original source linked from there\\"
+        >
+          concept handle
+        </a>
+      </span>
+      concept handle.
+    </em>
+  </p>
+</blockquote>
+<p>
+  If you&#8217;re failing to carve out time for something that&#8217;s important but never time-critical, here&#8217;s a self-helpy analogy with rocks and pebbles in a jar. 
+It&#8217;s simple and memorable.
+We refer to it often enough that we wanted something concise to point to, et voila.
+</p>
+<p>
+  So the jar is your life and the rocks and pebbles are things that fill your life &#8212; things you can spend time on. 
+The pebbles are the little things like email and errands, often time-sensitive and thus seemingly 
+urgent but not that important.
+  <a
+    class=\\"footnote\\"
+    id=\\"SAND1\\"
+    href=\\"#SAND\\"
+  >
+    [1]
+  </a>
+</p>
+<br>
+<div style=\\"border-style:solid;border-width:1px;padding:10px 70px 20px\\">
+  <h3>
+    <center>
+      Sidebar on Making the Urgent Important
+    </center>
+  </h3>
+  <p>
+  </p>
+  <p>
+    You know the
+    <a
+      href=\\"https://blog.beeminder.com/taskratchet/\\"
+      title=\\"Part of a guest post by Nathan Arthur in which he introduces TaskRatchet\\"
+    >
+      Eisenhower Matrix
+    </a>
+    ?
+Here it is again in case you forgot:
+  </p>
+  <p>
+  </p>
+  <p>
+  </p>
+  <p>
+    <img
+      class=\\"aligncenter\\"
+      alt=\\"Eisenhower Matrix\\"
+      title=\\"Eisenhower Matrix\\"
+      src=\\"https://blog.beeminder.com/wp-content/uploads/2020/06/eisenhower-matrix.png\\"
+    >
+  </p>
+  <p>
+  </p>
+  <p>
+    The point is that some things, like a crying baby or a literal fire, are both urgent and important and naturally preempt anything else.
+If something&#8217;s the opposite &#8212; filling out TPS reports, or doomscrolling &#8212; ruthlessly cull that.
+The tricky quadrants in the matrix are the urgent-but-not-important (phone calls, say) vs the important-but-not-urgent (like exercise and deep work).
+You want to use tools like 
+Beeminder (hi!)
+and
+    <a
+      href=\\"https://taskratchet.com\\"
+      title=\\"It's like Beeminder but for one-off tasks\\"
+    >
+      TaskRatchet
+    </a>
+    to help the important compete with the urgent &#8212; by creating urgency for important tasks.
+  </p>
+</div>
+<br>
+<p>
+  The rocks are the opposite: things like spending time with family, playing music, learning new skills.
+If you&#8217;re self-employed then billable hours might belong in this category.
+</p>
+<p>
+  What makes the analogy memorable is to watch what happens when you let the pebbles vs the rocks take precedence. 
+If the pebbles go in first then the whole jar ends up full of pebbles, with no room for any rocks.
+</p>
+<p>
+  But if you put the rocks in first, plenty of pebbles (the truly urgent ones) will still fit in around them.
+</p>
+<p>
+  The moral: Get those rocks in that jar!
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"SAND\\"
+    href=\\"#SAND1\\"
+  >
+    [1]
+  </a>
+  Traditionally this metaphor is taken further:
+rocks, pebbles, sand &#8212; even water.
+A jar full of rocks can still fit more pebbles.
+A jar full of rocks and pebbles can still fit sand.
+And&#8230; you get the idea.
+I&#8217;m not sure what the sand and water correspond to in terms of getting things done though. 
+Eating and breathing?
 </p>
 "
 `;
