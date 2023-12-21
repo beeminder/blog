@@ -1,0 +1,725 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/810' 1`] = `"https://the_source_domain/810/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/NY2019' 1`] = `"https://the_source_domain/NY2019/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/QSGlobal2015' 1`] = `"https://the_source_domain/QSGlobal2015/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/accountability' 1`] = `"https://the_source_domain/accountability/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/achilles' 1`] = `"https://the_source_domain/achilles/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/aftermath' 1`] = `"https://the_source_domain/aftermath/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ahorizon' 1`] = `"https://the_source_domain/ahorizon/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/akranon' 1`] = `"https://the_source_domain/akranon/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/allitimentation' 1`] = `"https://the_source_domain/allitimentation/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/anomalily' 1`] = `"https://the_source_domain/anomalily/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/antimagic' 1`] = `"https://the_source_domain/antimagic/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/antimagic404' 1`] = `"https://the_source_domain/antimagic404/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/applehealth' 1`] = `"https://the_source_domain/applehealth/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/arabic' 1`] = `"https://the_source_domain/arabic/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/arbdead' 1`] = `"https://the_source_domain/arbdead/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/astroblog' 1`] = `"https://the_source_domain/astroblog/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/athletes' 1`] = `"https://the_source_domain/athletes/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/autocancel' 1`] = `"https://the_source_domain/autocancel/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/autofetch' 1`] = `"https://the_source_domain/autofetch/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/aversion' 1`] = `"https://the_source_domain/aversion/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/baas' 1`] = `"https://the_source_domain/baas/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/backfiring' 1`] = `"https://the_source_domain/backfiring/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/backup' 1`] = `"https://the_source_domain/backup/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bamsterdam' 1`] = `"https://the_source_domain/bamsterdam/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/barfingcats' 1`] = `"https://the_source_domain/barfingcats/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bayesianwill' 1`] = `"https://the_source_domain/bayesianwill/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bbah' 1`] = `"https://the_source_domain/bbah/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beebox' 1`] = `"https://the_source_domain/beebox/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beedroid' 1`] = `"https://the_source_domain/beedroid/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beedroid2' 1`] = `"https://the_source_domain/beedroid2/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemarb' 1`] = `"https://the_source_domain/beemarb/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemblog-akrasia' 1`] = `"https://the_source_domain/beemblog-akrasia/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemblog-easyhard' 1`] = `"https://the_source_domain/beemblog-easyhard/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemblog-michelle' 1`] = `"https://the_source_domain/beemblog-michelle/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemblog-preeat' 1`] = `"https://the_source_domain/beemblog-preeat/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemblog-rails' 1`] = `"https://the_source_domain/beemblog-rails/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemium' 1`] = `"https://the_source_domain/beemium/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemplice' 1`] = `"https://the_source_domain/beemplice/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemup' 1`] = `"https://the_source_domain/beemup/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beemyou' 1`] = `"https://the_source_domain/beemyou/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beenamer' 1`] = `"https://the_source_domain/beenamer/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beenice' 1`] = `"https://the_source_domain/beenice/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beeta' 1`] = `"https://the_source_domain/beeta/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/beeyond' 1`] = `"https://the_source_domain/beeyond/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bites' 1`] = `"https://the_source_domain/bites/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bkopenhagen' 1`] = `"https://the_source_domain/bkopenhagen/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/blackmail' 1`] = `"https://the_source_domain/blackmail/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/blaunch' 1`] = `"https://the_source_domain/blaunch/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/blingily' 1`] = `"https://the_source_domain/blingily/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/blockchain' 1`] = `"https://the_source_domain/blockchain/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/blogapi' 1`] = `"https://the_source_domain/blogapi/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/blogdog' 1`] = `"https://the_source_domain/blogdog/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/blogmorphosis' 1`] = `"https://the_source_domain/blogmorphosis/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bookcase' 1`] = `"https://the_source_domain/bookcase/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bothsides' 1`] = `"https://the_source_domain/bothsides/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bothsidesnow' 1`] = `"https://the_source_domain/bothsidesnow/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bp' 1`] = `"https://the_source_domain/bp/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/breaks' 1`] = `"https://the_source_domain/breaks/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/brl' 1`] = `"https://the_source_domain/brl/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bucketminding' 1`] = `"https://the_source_domain/bucketminding/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buglabels' 1`] = `"https://the_source_domain/buglabels/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bugreports' 1`] = `"https://the_source_domain/bugreports/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buns' 1`] = `"https://the_source_domain/buns/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/burgle' 1`] = `"https://the_source_domain/burgle/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/burnout' 1`] = `"https://the_source_domain/burnout/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buyminder' 1`] = `"https://the_source_domain/buyminder/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzz' 1`] = `"https://the_source_domain/buzz/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzz5' 1`] = `"https://the_source_domain/buzz5/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzz7' 1`] = `"https://the_source_domain/buzz7/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzz8' 1`] = `"https://the_source_domain/buzz8/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzz9' 1`] = `"https://the_source_domain/buzz9/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzz10' 1`] = `"https://the_source_domain/buzz10/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzz11' 1`] = `"https://the_source_domain/buzz11/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzz13' 1`] = `"https://the_source_domain/buzz13/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzz2019' 1`] = `"https://the_source_domain/buzz2019/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buzzyear' 1`] = `"https://the_source_domain/buzzyear/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bweight' 1`] = `"https://the_source_domain/bweight/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bwidget' 1`] = `"https://the_source_domain/bwidget/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/calendial' 1`] = `"https://the_source_domain/calendial/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/cb' 1`] = `"https://the_source_domain/cb/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/cbt' 1`] = `"https://the_source_domain/cbt/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/cheating' 1`] = `"https://the_source_domain/cheating/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/chelsea' 1`] = `"https://the_source_domain/chelsea/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/chirpify' 1`] = `"https://the_source_domain/chirpify/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/choices' 1`] = `"https://the_source_domain/choices/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/chunky' 1`] = `"https://the_source_domain/chunky/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/clozemaster' 1`] = `"https://the_source_domain/clozemaster/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/cockroach' 1`] = `"https://the_source_domain/cockroach/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/codecombat' 1`] = `"https://the_source_domain/codecombat/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/codeschool' 1`] = `"https://the_source_domain/codeschool/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/college' 1`] = `"https://the_source_domain/college/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/commitstew' 1`] = `"https://the_source_domain/commitstew/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/commitwall' 1`] = `"https://the_source_domain/commitwall/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/competitors' 1`] = `"https://the_source_domain/competitors/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/complice' 1`] = `"https://the_source_domain/complice/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/contrapositive' 1`] = `"https://the_source_domain/contrapositive/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/control' 1`] = `"https://the_source_domain/control/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/copyright' 1`] = `"https://the_source_domain/copyright/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/crutch' 1`] = `"https://the_source_domain/crutch/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/cry' 1`] = `"https://the_source_domain/cry/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/curtain' 1`] = `"https://the_source_domain/curtain/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/custard' 1`] = `"https://the_source_domain/custard/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/cybermonday' 1`] = `"https://the_source_domain/cybermonday/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/datasmithing' 1`] = `"https://the_source_domain/datasmithing/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/deathtoexp' 1`] = `"https://the_source_domain/deathtoexp/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/deathtofreebees' 1`] = `"https://the_source_domain/deathtofreebees/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/deathtolife' 1`] = `"https://the_source_domain/deathtolife/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/defail' 1`] = `"https://the_source_domain/defail/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/derail' 1`] = `"https://the_source_domain/derail/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/discourse' 1`] = `"https://the_source_domain/discourse/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/docdriven' 1`] = `"https://the_source_domain/docdriven/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/dogeatdog' 1`] = `"https://the_source_domain/dogeatdog/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/dogfood' 1`] = `"https://the_source_domain/dogfood/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/doless' 1`] = `"https://the_source_domain/doless/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/donotgain' 1`] = `"https://the_source_domain/donotgain/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/dontmind' 1`] = `"https://the_source_domain/dontmind/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/dozero' 1`] = `"https://the_source_domain/dozero/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/draft' 1`] = `"https://the_source_domain/draft/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/duo' 1`] = `"https://the_source_domain/duo/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/eggbasket' 1`] = `"https://the_source_domain/eggbasket/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/egodepletion' 1`] = `"https://the_source_domain/egodepletion/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/epson' 1`] = `"https://the_source_domain/epson/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/erica' 1`] = `"https://the_source_domain/erica/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ericegyptian' 1`] = `"https://the_source_domain/ericegyptian/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/essy' 1`] = `"https://the_source_domain/essy/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/euler' 1`] = `"https://the_source_domain/euler/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/exponential' 1`] = `"https://the_source_domain/exponential/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/exproad' 1`] = `"https://the_source_domain/exproad/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/fail' 1`] = `"https://the_source_domain/fail/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/fair' 1`] = `"https://the_source_domain/fair/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/faireminder' 1`] = `"https://the_source_domain/faireminder/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/fake' 1`] = `"https://the_source_domain/fake/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/fatcyclist' 1`] = `"https://the_source_domain/fatcyclist/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/fatty' 1`] = `"https://the_source_domain/fatty/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/fifty' 1`] = `"https://the_source_domain/fifty/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/fifty2' 1`] = `"https://the_source_domain/fifty2/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/fitbit' 1`] = `"https://the_source_domain/fitbit/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/five' 1`] = `"https://the_source_domain/five/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/flic' 1`] = `"https://the_source_domain/flic/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/focus' 1`] = `"https://the_source_domain/focus/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/focusmate' 1`] = `"https://the_source_domain/focusmate/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/foodrules' 1`] = `"https://the_source_domain/foodrules/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/forget' 1`] = `"https://the_source_domain/forget/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/four' 1`] = `"https://the_source_domain/four/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/frac' 1`] = `"https://the_source_domain/frac/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/freebees' 1`] = `"https://the_source_domain/freebees/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/freecodecamp' 1`] = `"https://the_source_domain/freecodecamp/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/freshen' 1`] = `"https://the_source_domain/freshen/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/freshenicky' 1`] = `"https://the_source_domain/freshenicky/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/frictionless' 1`] = `"https://the_source_domain/frictionless/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gandalf' 1`] = `"https://the_source_domain/gandalf/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/garmin' 1`] = `"https://the_source_domain/garmin/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gatewaydrug' 1`] = `"https://the_source_domain/gatewaydrug/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ged' 1`] = `"https://the_source_domain/ged/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gitminder' 1`] = `"https://the_source_domain/gitminder/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gmailzero' 1`] = `"https://the_source_domain/gmailzero/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gmailzero2' 1`] = `"https://the_source_domain/gmailzero2/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gmailzerolabels' 1`] = `"https://the_source_domain/gmailzerolabels/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/goalnames' 1`] = `"https://the_source_domain/goalnames/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gratitude' 1`] = `"https://the_source_domain/gratitude/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gtbee' 1`] = `"https://the_source_domain/gtbee/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gym' 1`] = `"https://the_source_domain/gym/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gympact' 1`] = `"https://the_source_domain/gympact/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/habitica' 1`] = `"https://the_source_domain/habitica/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/habitrpg' 1`] = `"https://the_source_domain/habitrpg/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/hardsoon' 1`] = `"https://the_source_domain/hardsoon/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/hardthings' 1`] = `"https://the_source_domain/hardthings/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/heartbleed' 1`] = `"https://the_source_domain/heartbleed/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/honeygrams' 1`] = `"https://the_source_domain/honeygrams/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/howeyeuse' 1`] = `"https://the_source_domain/howeyeuse/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/icecream' 1`] = `"https://the_source_domain/icecream/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ifttt' 1`] = `"https://the_source_domain/ifttt/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/incentalign' 1`] = `"https://the_source_domain/incentalign/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/indulge' 1`] = `"https://the_source_domain/indulge/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ineptitude' 1`] = `"https://the_source_domain/ineptitude/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/inertia' 1`] = `"https://the_source_domain/inertia/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/innocentive' 1`] = `"https://the_source_domain/innocentive/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/integers' 1`] = `"https://the_source_domain/integers/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/isolate' 1`] = `"https://the_source_domain/isolate/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/isolines' 1`] = `"https://the_source_domain/isolines/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/isonikki' 1`] = `"https://the_source_domain/isonikki/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ivana' 1`] = `"https://the_source_domain/ivana/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/j2jenkins' 1`] = `"https://the_source_domain/j2jenkins/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/jargon' 1`] = `"https://the_source_domain/jargon/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/jess' 1`] = `"https://the_source_domain/jess/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/josh' 1`] = `"https://the_source_domain/josh/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/joshstickk' 1`] = `"https://the_source_domain/joshstickk/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/kara' 1`] = `"https://the_source_domain/kara/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/kibeemium' 1`] = `"https://the_source_domain/kibeemium/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/kim' 1`] = `"https://the_source_domain/kim/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/lanes' 1`] = `"https://the_source_domain/lanes/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/layaways' 1`] = `"https://the_source_domain/layaways/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/lee' 1`] = `"https://the_source_domain/lee/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/legit' 1`] = `"https://the_source_domain/legit/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/leniency' 1`] = `"https://the_source_domain/leniency/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/lichess' 1`] = `"https://the_source_domain/lichess/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/lildeb' 1`] = `"https://the_source_domain/lildeb/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/lockmyphone' 1`] = `"https://the_source_domain/lockmyphone/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/loss' 1`] = `"https://the_source_domain/loss/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/maniac' 1`] = `"https://the_source_domain/maniac/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/manifold' 1`] = `"https://the_source_domain/manifold/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/manwide' 1`] = `"https://the_source_domain/manwide/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/manwide2' 1`] = `"https://the_source_domain/manwide2/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/marshmallow' 1`] = `"https://the_source_domain/marshmallow/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/martin' 1`] = `"https://the_source_domain/martin/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/masochism' 1`] = `"https://the_source_domain/masochism/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mayhem' 1`] = `"https://the_source_domain/mayhem/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mbork' 1`] = `"https://the_source_domain/mbork/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/meditation' 1`] = `"https://the_source_domain/meditation/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/meetup' 1`] = `"https://the_source_domain/meetup/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/megabreak' 1`] = `"https://the_source_domain/megabreak/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mercy' 1`] = `"https://the_source_domain/mercy/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/metablog' 1`] = `"https://the_source_domain/metablog/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/metamindblog' 1`] = `"https://the_source_domain/metamindblog/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/microcommitments' 1`] = `"https://the_source_domain/microcommitments/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/milkman' 1`] = `"https://the_source_domain/milkman/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mindingpress' 1`] = `"https://the_source_domain/mindingpress/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mirabai' 1`] = `"https://the_source_domain/mirabai/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/misfit' 1`] = `"https://the_source_domain/misfit/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/modal-beeminder' 1`] = `"https://the_source_domain/modal-beeminder/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mongoid' 1`] = `"https://the_source_domain/mongoid/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mongosad' 1`] = `"https://the_source_domain/mongosad/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/moreless' 1`] = `"https://the_source_domain/moreless/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/motivationtypes' 1`] = `"https://the_source_domain/motivationtypes/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/movingav' 1`] = `"https://the_source_domain/movingav/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mustdo' 1`] = `"https://the_source_domain/mustdo/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/nailingit' 1`] = `"https://the_source_domain/nailingit/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/nanowrimo' 1`] = `"https://the_source_domain/nanowrimo/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/nebulous' 1`] = `"https://the_source_domain/nebulous/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/nerds' 1`] = `"https://the_source_domain/nerds/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/newbees' 1`] = `"https://the_source_domain/newbees/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/nick' 1`] = `"https://the_source_domain/nick/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/nicky' 1`] = `"https://the_source_domain/nicky/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/noexcuses' 1`] = `"https://the_source_domain/noexcuses/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/nudge' 1`] = `"https://the_source_domain/nudge/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/nwo' 1`] = `"https://the_source_domain/nwo/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/nyr2013' 1`] = `"https://the_source_domain/nyr2013/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/obscure' 1`] = `"https://the_source_domain/obscure/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ontologies' 1`] = `"https://the_source_domain/ontologies/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/orange' 1`] = `"https://the_source_domain/orange/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pact' 1`] = `"https://the_source_domain/pact/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pareto' 1`] = `"https://the_source_domain/pareto/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/paretocaps' 1`] = `"https://the_source_domain/paretocaps/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/paypal' 1`] = `"https://the_source_domain/paypal/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pcrc' 1`] = `"https://the_source_domain/pcrc/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pdp' 1`] = `"https://the_source_domain/pdp/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pdxqs' 1`] = `"https://the_source_domain/pdxqs/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/perverse' 1`] = `"https://the_source_domain/perverse/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pjf-anki' 1`] = `"https://the_source_domain/pjf-anki/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pledgecaps' 1`] = `"https://the_source_domain/pledgecaps/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pocket' 1`] = `"https://the_source_domain/pocket/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pomopoker' 1`] = `"https://the_source_domain/pomopoker/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/postel' 1`] = `"https://the_source_domain/postel/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/predict' 1`] = `"https://the_source_domain/predict/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/psfdd' 1`] = `"https://the_source_domain/psfdd/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/psych' 1`] = `"https://the_source_domain/psych/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/psych2' 1`] = `"https://the_source_domain/psych2/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/psychpricing' 1`] = `"https://the_source_domain/psychpricing/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/punish' 1`] = `"https://the_source_domain/punish/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/qs' 1`] = `"https://the_source_domain/qs/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/qs2013' 1`] = `"https://the_source_domain/qs2013/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ratchet' 1`] = `"https://the_source_domain/ratchet/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/reactions' 1`] = `"https://the_source_domain/reactions/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/readwise' 1`] = `"https://the_source_domain/readwise/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/redqueen' 1`] = `"https://the_source_domain/redqueen/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/refereeminder' 1`] = `"https://the_source_domain/refereeminder/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/remrev' 1`] = `"https://the_source_domain/remrev/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rescuetime' 1`] = `"https://the_source_domain/rescuetime/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/resjump' 1`] = `"https://the_source_domain/resjump/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/revealedprefs' 1`] = `"https://the_source_domain/revealedprefs/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/risk' 1`] = `"https://the_source_domain/risk/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rituals' 1`] = `"https://the_source_domain/rituals/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/road' 1`] = `"https://the_source_domain/road/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/roadwidth' 1`] = `"https://the_source_domain/roadwidth/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rocks' 1`] = `"https://the_source_domain/rocks/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rosary' 1`] = `"https://the_source_domain/rosary/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/routine' 1`] = `"https://the_source_domain/routine/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rssminder' 1`] = `"https://the_source_domain/rssminder/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/runkeeper' 1`] = `"https://the_source_domain/runkeeper/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/runnersworld' 1`] = `"https://the_source_domain/runnersworld/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/safe' 1`] = `"https://the_source_domain/safe/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/schelling' 1`] = `"https://the_source_domain/schelling/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/scholar' 1`] = `"https://the_source_domain/scholar/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/scpd' 1`] = `"https://the_source_domain/scpd/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/sediment' 1`] = `"https://the_source_domain/sediment/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/seinfeld' 1`] = `"https://the_source_domain/seinfeld/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/shanaqui' 1`] = `"https://the_source_domain/shanaqui/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/shirknturk' 1`] = `"https://the_source_domain/shirknturk/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/should' 1`] = `"https://the_source_domain/should/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/sin' 1`] = `"https://the_source_domain/sin/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/six' 1`] = `"https://the_source_domain/six/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/skritter' 1`] = `"https://the_source_domain/skritter/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/sleep' 1`] = `"https://the_source_domain/sleep/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/slytherin404' 1`] = `"https://the_source_domain/slytherin404/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/smarmbot' 1`] = `"https://the_source_domain/smarmbot/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/smart' 1`] = `"https://the_source_domain/smart/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/smoking' 1`] = `"https://the_source_domain/smoking/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/smoove' 1`] = `"https://the_source_domain/smoove/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/sociallyefficient' 1`] = `"https://the_source_domain/sociallyefficient/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/solstice' 1`] = `"https://the_source_domain/solstice/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/sos' 1`] = `"https://the_source_domain/sos/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/speclist' 1`] = `"https://the_source_domain/speclist/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/specs' 1`] = `"https://the_source_domain/specs/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/storygraph' 1`] = `"https://the_source_domain/storygraph/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/strava' 1`] = `"https://the_source_domain/strava/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/stress' 1`] = `"https://the_source_domain/stress/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/stripe' 1`] = `"https://the_source_domain/stripe/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/study' 1`] = `"https://the_source_domain/study/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/support' 1`] = `"https://the_source_domain/support/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/swifts' 1`] = `"https://the_source_domain/swifts/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/synonyms' 1`] = `"https://the_source_domain/synonyms/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/systems' 1`] = `"https://the_source_domain/systems/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/tao' 1`] = `"https://the_source_domain/tao/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/tao2' 1`] = `"https://the_source_domain/tao2/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/taskratchet' 1`] = `"https://the_source_domain/taskratchet/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/textbooks' 1`] = `"https://the_source_domain/textbooks/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/textbot' 1`] = `"https://the_source_domain/textbot/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/tgbee' 1`] = `"https://the_source_domain/tgbee/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/three' 1`] = `"https://the_source_domain/three/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/timecarrot' 1`] = `"https://the_source_domain/timecarrot/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/tock' 1`] = `"https://the_source_domain/tock/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/todoist' 1`] = `"https://the_source_domain/todoist/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/toggl' 1`] = `"https://the_source_domain/toggl/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/toothbrush' 1`] = `"https://the_source_domain/toothbrush/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/toxin' 1`] = `"https://the_source_domain/toxin/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/trackhack' 1`] = `"https://the_source_domain/trackhack/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/trello' 1`] = `"https://the_source_domain/trello/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/tri' 1`] = `"https://the_source_domain/tri/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/triangle' 1`] = `"https://the_source_domain/triangle/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/trust' 1`] = `"https://the_source_domain/trust/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/trydeepwork' 1`] = `"https://the_source_domain/trydeepwork/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/tuit' 1`] = `"https://the_source_domain/tuit/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/tv' 1`] = `"https://the_source_domain/tv/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/twitter' 1`] = `"https://the_source_domain/twitter/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/two' 1`] = `"https://the_source_domain/two/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/typebee' 1`] = `"https://the_source_domain/typebee/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/unintended' 1`] = `"https://the_source_domain/unintended/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/upsidedown' 1`] = `"https://the_source_domain/upsidedown/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/urlminder' 1`] = `"https://the_source_domain/urlminder/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/uvi1000' 1`] = `"https://the_source_domain/uvi1000/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/vegdays' 1`] = `"https://the_source_domain/vegdays/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/vegetables' 1`] = `"https://the_source_domain/vegetables/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/veggieminding' 1`] = `"https://the_source_domain/veggieminding/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/waisted' 1`] = `"https://the_source_domain/waisted/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/wantcanwill' 1`] = `"https://the_source_domain/wantcanwill/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/waterfalls' 1`] = `"https://the_source_domain/waterfalls/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/weasels' 1`] = `"https://the_source_domain/weasels/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/weekendsoff' 1`] = `"https://the_source_domain/weekendsoff/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/weighly' 1`] = `"https://the_source_domain/weighly/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/weusethat' 1`] = `"https://the_source_domain/weusethat/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/whattomind' 1`] = `"https://the_source_domain/whattomind/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/will' 1`] = `"https://the_source_domain/will/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/willpower' 1`] = `"https://the_source_domain/willpower/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/wist' 1`] = `"https://the_source_domain/wist/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/world' 1`] = `"https://the_source_domain/world/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/write' 1`] = `"https://the_source_domain/write/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/wsj' 1`] = `"https://the_source_domain/wsj/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/wsj2' 1`] = `"https://the_source_domain/wsj2/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ybhp' 1`] = `"https://the_source_domain/ybhp/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/zapier' 1`] = `"https://the_source_domain/zapier/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/zeno' 1`] = `"https://the_source_domain/zeno/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/zipit' 1`] = `"https://the_source_domain/zipit/export/txt"`;
