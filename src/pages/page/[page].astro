@@ -4,6 +4,7 @@ import getPosts from "../../lib/getPosts";
 import Posts from "../../components/Posts.astro";
 import type { Post } from "../../schemas/post";
 import Paginated from "../../layouts/Paginated.astro";
+// import hotkeys from '../../lib/hotkeys.ts';
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const posts = await getPosts({
@@ -34,6 +35,7 @@ const newer = page.url.prev
       title: "Newer Entries",
     }
   : undefined;
+
 ---
 
 <Paginated title={`Page ${page.currentPage}`} previous={older} next={newer}>
