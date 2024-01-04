@@ -7093,5 +7093,15 @@
 "tags": ["akrasia", "rationality", "bee-all", "holiday"],
 "disqus_id": "honeygrams",
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "montholutions",
+"disqus_id": "montholutions",
+"source": "doc.bmndr.co/montholutions",
+"redirects": [],
+"date": "2024-01-04",
+"author": "shanaqui",
+"status": "draft",
+"tags": ["akrasia", "bee-all", "resolutions"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
