@@ -7103,5 +7103,15 @@
 "status": "publish",
 "tags": ["akrasia", "bee-all", "resolutions", "productivity porn", "PSA"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "pigou",
+"disqus_id": "pigou",
+"source": "doc.bmndr.co/pigouminder",
+"redirects": [],
+"date": "2024-01-18",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "rationality", "philosophy", "commitment devices"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
