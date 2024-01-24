@@ -90,7 +90,7 @@ Commits merged to `master` are automatically deployed via Render.com.
   [Bee](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ+assignee:bsoule "Open non-snoozed gissues, oldest first, assigned to Bethany")
   &nbsp;&nbsp; | &nbsp;&nbsp;
   [Danny/all](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ "Open non-snoozed gissues, oldest first, assigned to anyone (what Danny uses for freshgishing)")
-- [Quickie UVIs](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:UVI+label:PEA+-label:SKY+-label:ADO "Open + UVI + PEA - SKY - ADO = open peasy non-sky-pie spec'd UVIs")
+- [Quickie UVIs](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:UVI+label:PEA+-label:SKY+-label:ADO "Open + UVI + PEA - SKY - ADO = open peasy non-sky-pie spec'd UVIs") :sweat_smile:
 
 [1]: https://quickref.me/yaml "Standard YAML quick reference"
 [2]: http://doc.bmndr.co/ "AKA ExPost"
