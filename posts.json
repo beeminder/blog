@@ -7113,5 +7113,15 @@
 "status": "publish",
 "tags": ["akrasia", "bee-all", "rationality", "philosophy", "commitment devices"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "diy",
+"disqus_id": "diy",
+"source": "doc.bmndr.co/diy",
+"redirects": [],
+"date": "2024-01-31",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
