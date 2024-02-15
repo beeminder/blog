@@ -7123,5 +7123,15 @@
 "status": "publish",
 "tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "love",
+"disqus_id": "love",
+"source": "doc.bmndr.co/love",
+"redirects": [],
+"date": "2024-02-14",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies", "romance"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
