@@ -7133,5 +7133,15 @@
 "status": "publish",
 "tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies", "romance"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "humblebundle",
+"disqus_id": "humblebundle",
+"source": "doc.bmndr.co/humbee",
+"redirects": [],
+"date": "2024-02-28",
+"author": "bsoule",
+"status": "publish",
+"tags": ["bee-all", "productivity", "navel-gazing", "productivity porn", "money", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
