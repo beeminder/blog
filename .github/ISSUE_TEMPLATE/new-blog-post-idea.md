@@ -9,7 +9,6 @@ assignees: ""
 ```[tasklist]
 ### Desiderata
 - [ ] Have someone read a draft
-- [ ] Secretpreview link
 - [ ] Keywords/tags
 - [ ] Title image
 - [ ] Link preview excerpt
