@@ -5,7 +5,7 @@ on:
 env:
   NODE_VERSION: "18"
   PNPM_VERSION: "7"
-  ETHERPAD_DOMAIN: 'https://doc.beeminder.com'
+  ETHERPAD_DOMAIN: '${{ secrets.ETHERPAD_DOMAIN }}'
 jobs:
   test:
     runs-on: ubuntu-latest
