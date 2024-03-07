@@ -7093,5 +7093,55 @@
 "tags": ["akrasia", "rationality", "bee-all", "holiday"],
 "disqus_id": "honeygrams",
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "montholutions",
+"disqus_id": "montholutions",
+"source": "doc.bmndr.co/montholutions",
+"redirects": [],
+"date": "2024-01-04",
+"author": "shanaqui",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "resolutions", "productivity porn", "PSA"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "pigou",
+"disqus_id": "pigou",
+"source": "doc.bmndr.co/pigouminder",
+"redirects": [],
+"date": "2024-01-18",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "rationality", "philosophy", "commitment devices"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "diy",
+"disqus_id": "diy",
+"source": "doc.bmndr.co/diy",
+"redirects": [],
+"date": "2024-01-31",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "love",
+"disqus_id": "love",
+"source": "doc.bmndr.co/love",
+"redirects": [],
+"date": "2024-02-14",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies", "romance"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "humblebundle",
+"disqus_id": "humblebundle",
+"source": "doc.bmndr.co/humbee",
+"redirects": [],
+"date": "2024-02-28",
+"author": "bsoule",
+"status": "publish",
+"tags": ["bee-all", "productivity", "navel-gazing", "productivity porn", "money", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
