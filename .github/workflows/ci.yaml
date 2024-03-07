@@ -5,7 +5,7 @@ on:
 env:
   NODE_VERSION: "18"
   PNPM_VERSION: "7"
-  ETHERPAD_DOMAIN: 'doc.bmndr.co'
+  ETHERPAD_DOMAIN: 'https://doc.bmndr.co'
 jobs:
   test:
     runs-on: ubuntu-latest
