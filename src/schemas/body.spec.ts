@@ -105,4 +105,14 @@ describe("body", () => {
       `<img src="https://blog.beeminder.com/image.png" alt="the_alt" title="the_title" />`,
     );
   });
+
+  it("does not deform footnote links with numbers", () => {
+    const r = body.parse(
+      ether({
+        content: `<a class="footnote" id="DC21" href="#DC2">[2]</a>`,
+      }),
+    );
+
+    expect(r).toContain('<a class="footnote" id="DC21" href="#DC2">[2]</a>');
+  });
 });

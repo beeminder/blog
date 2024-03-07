@@ -341,6 +341,41 @@ https://blog.beeminder.com/depunish
     );
   });
 
+  it("links footnotes with trailing number", async () => {
+    vi.mocked(fetchPost).mockResolvedValue(
+      ether({
+        content: `$FN[foo]
+        some text $DC2: some more text,
+        
+        $FN[DC2]
+        some more text`,
+      }),
+    );
+
+    const posts = await getPosts();
+    const { content } = posts[0] || {};
+
+    expect(content).toContain('<a class="footnote" id="DC21" href="#DC2">');
+  });
+
+  it("separately links subscring footnote ids", async () => {
+    vi.mocked(fetchPost).mockResolvedValue(
+      ether({
+        content: `$FN[DC]
+        We computer scientists call this the principle of delayed commitment $DC2: commitment is bad, all else equal.
+        Why do today what only might need to be done tomorrow?
+        
+        $FN[DC2]
+        This is a footnote about commitment.`,
+      }),
+    );
+
+    const posts = await getPosts();
+    const { content } = posts[0] || {};
+
+    expect(content).toContain('<a class="footnote" id="DC21" href="#DC2">');
+  });
+
   it("expands refs", async () => {
     vi.mocked(fetchPost).mockResolvedValue(
       ether({
