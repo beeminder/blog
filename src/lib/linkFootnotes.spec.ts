@@ -89,8 +89,6 @@ describe("linkFootnotes", () => {
   it("does not duplicate footnote references", () => {
     const result = linkFootnotes("$a $FN[a]");
 
-    console.log(result);
-
     expect(result).not.toContain("a2");
   });
 });
