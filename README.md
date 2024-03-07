@@ -7,13 +7,15 @@ Danny curates the collection via
 
 ## Adding a New Blog Post
 
-Just add the raw source URL to sources.txt in this repository and merge to master!
+Just add the raw source URL to posts.json in this repository and merge to master!
 Merging to master triggers a deploy on Render.com.
-You can also click Manual Deploy on the Render.com dashboard.
+You can also click Manual Deploy on the Render.com dashboard or hit a magic deploy URL that Render.com provides.
 
 ## Post Markdown
 
-The frontmatter aka metadata for each post is a [YAML][1] block at the very top of the file:
+All Markdown extended features documented at [doc.bmndr.co][2] are supported.
+
+The frontmatter aka metadata for each post can either be in that posts.json file or as a  [YAML][1] block at the very top of the source file:
 
 ```yaml
 --- # nothing above this line
@@ -34,7 +36,7 @@ The actual content of the post goes here.
 The usual begin/end-magic strings from etherpad apply.
 ```
 
-In addition, all Markdown extended features documented at [doc.bmndr.co][2] are supported.
+Using the YAML frontmatter is tentatively deprecated.
 
 ## Development
 
@@ -89,8 +91,8 @@ Commits merged to `master` are automatically deployed via Render.com.
   &nbsp;&nbsp;
   [Bee](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ+assignee:bsoule "Open non-snoozed gissues, oldest first, assigned to Bethany")
   &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Danny/all](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ "Open non-snoozed gissues, oldest first, assigned to anyone (what Danny uses for freshgishing)")
-- [Quickie UVIs](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:UVI+label:PEA+-label:SKY+-label:ADO "Open + UVI + PEA - SKY - ADO = open peasy non-sky-pie spec'd UVIs")
+  [Danny/all](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ "Open non-snoozed gissues, oldest first, assigned to anyone (what Danny uses for freshgishing)") &nbsp;&nbsp; :soap:
+- [Quickie UVIs](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:UVI+label:PEA+-label:SKY+-label:ADO "Open + UVI + PEA - SKY - ADO = open peasy non-sky-pie spec'd UVIs") :sweat_smile:
 
 [1]: https://quickref.me/yaml "Standard YAML quick reference"
 [2]: http://doc.bmndr.co/ "AKA ExPost"
