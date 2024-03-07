@@ -3130,7 +3130,7 @@ Feel free to email me any time at
 "
 `;
 
-exports[`body > post anticharity hash 7f9ec660dcb97443eb61a31562b69b39 1`] = `
+exports[`body > post anticharity hash 792d174569ee1f4266a48b44c28acf6e 1`] = `
 "
 <p>
   <img
@@ -3141,7 +3141,10 @@ exports[`body > post anticharity hash 7f9ec660dcb97443eb61a31562b69b39 1`] = `
   >
 </p>
 <p>
-  <a href=\\"http://stickk.com\\">
+  <a
+    href=\\"http://stickk.com\\"
+    title=\\"Original tagline: Put a contract out on yourself\\"
+  >
     StickK
   </a>
   popularized the idea of the anti-charity
@@ -3163,7 +3166,10 @@ Another [Update: former] Beeminder competitor,
   , 
 offers to publish embarrassing photos of you on Facebook to ensure you don&#8217;t fall prey to akrasia. 
 Another clever idea &#8212; proposed by Jennifer Hamon on
-  <a href=\\"http://blog.beeminder.com/akratics\\">
+  <a
+    href=\\"http://blog.beeminder.com/akratics\\"
+    title=\\"Now subsumed by the Beeminder forum\\"
+  >
     Akratics Anonymous
   </a>
   &#8212; is to set up a script to automatically delete important files if you don&#8217;t keep making progress on a writing project.
@@ -3216,12 +3222,18 @@ Burning money, in contrast, doesn&#8217;t waste anything (except some paper).
 </p>
 <p>
   So I&#8217;m fine with the hypothetical
-  <a href=\\"http://lifehacker.com/5808004/motivate-yourself-to-wake-up-with-a-diy-money+shredding-alarm-clock\\">
+  <a
+    href=\\"https://web.archive.org/web/20221206173650/https%3A//lifehacker.com/diy-money-shredding-alarm-clock-motivates-you-to-wake-u-5808004\\"
+    title=\\"Dead URL: lifehacker.com/5808004/motivate-yourself-to-wake-up-with-a-diy-money+shredding-alarm-clock\\"
+  >
     money-shredding alarm clock
   </a>
   , even though no one would ever actually use one of those. 
 (There are some
-  <a href=\\"http://blog.beeminder.com/competitors\\">
+  <a
+    href=\\"http://blog.beeminder.com/competitors\\"
+    title=\\"Evergreen list of Beeminder competitors\\"
+  >
     clever phone apps
   </a>
   that make you jump through various hoops to make the alarm turn off that might be useful though.) 
@@ -3248,12 +3260,18 @@ Just make sure that the amount of harm caused to yourself is counterbalanced by 
     [1]
   </a>
   The idea originated, as far as we know, in 1984 in John Bear&#8217;s
-  <a href=\\"http://www.amazon.com/The-Blackmail-Diet-John-Bear/dp/0898151198\\">
+  <a
+    href=\\"http://www.amazon.com/The-Blackmail-Diet-John-Bear/dp/0898151198\\"
+    title=\\"Apparently not many copies of this available\\"
+  >
     The Blackmail Diet
   </a>
   where the author describes his own commitment contract to lose 70 pounds in a year or pay $5k to the American Nazi Party.
 Thanks to Daniel Akst&#8217;s
-  <a href=\\"http://www.akst.com/Dan_Akst/We_Have_Met_the_Enemy.html\\">
+  <a
+    href=\\"http://www.akst.com/Dan_Akst/We_Have_Met_the_Enemy.html\\"
+    title=\\"Update: this got renamed to Temptation: Finding Self-Control in an Age of Excess\\"
+  >
     We Have Met the Enemy
   </a>
   where we learned that and many other fascinating things about the first world&#8217;s ironically biggest problem, self-control.
@@ -7816,7 +7834,7 @@ As a silly example
 "
 `;
 
-exports[`body > post beemplice hash 3f6a1059a64df37735d984509589f2d5 1`] = `
+exports[`body > post beemplice hash b7962a732915a16de85c18d93af0c0b8 1`] = `
 "
 <p>
   <img
@@ -7825,6 +7843,16 @@ exports[`body > post beemplice hash 3f6a1059a64df37735d984509589f2d5 1`] = `
     title=\\"The metaphor is Complice siccing bees on you, not Complice as Pac-Man munching bees\\"
     src=\\"http://blog.beeminder.com/wp-content/uploads/2016/06/complice_plus_beeminder-a5eb6d3c2019cb0db68edc51a66a316a071213a8e4bfe876d06ff75be72e348c.png\\"
   >
+</p>
+<p>
+  [UPDATE:
+  <a
+    href=\\"https://intentionality.substack.com/p/complice-is-now-intend\\"
+    title=\\"Or Intend.do, which is also its new URL\\"
+  >
+    Complice is now Intend
+  </a>
+  !]
 </p>
 <p>
   Remember back in November when we first
@@ -13637,7 +13665,7 @@ in particular
 "
 `;
 
-exports[`body > post buyminder hash 33877626512a6adb86e316f9de6fd051 1`] = `
+exports[`body > post buyminder hash 590fb7a630c674d637ed54af66302b39 1`] = `
 "
 <p>
   <img
@@ -13651,7 +13679,8 @@ exports[`body > post buyminder hash 33877626512a6adb86e316f9de6fd051 1`] = `
 <blockquote>
   <p>
     <em>
-      &#8220;It would be a good thing to buy books if one could also buy the time to read them; but one usually confuses the purchase of books with the acquisition of their contents.&#8221; &#8212; Arthur Schopenhauer, before Beeminder existed
+      &#8220;It would be a good thing to buy books if one could also buy the time to read them; 
+but one usually confuses the purchase of books with the acquisition of their contents.&#8221; &#8212; Arthur Schopenhauer, before Beeminder existed
     </em>
   </p>
 </blockquote>
@@ -13670,7 +13699,7 @@ Some things, like a video game, require rationing lest they be even worse than a
 For example, last summer our daughter Faire borrowed a guitar from her aunt and uncle that she&#8217;s now
   <a
     href=\\"https://www.beeminder.com/faire/guitar\\"
-    title=\\"Faire&#39;s guitar-playing Beeminder goal\\"
+    title=\\"Faire&#39;s guitar-playing Beeminder goal; still going strong years later (as of 2024), just at a slower rate now\\"
   >
     played hundreds of songs on
   </a>
@@ -13678,7 +13707,7 @@ For example, last summer our daughter Faire borrowed a guitar from her aunt and 
 And Bee swapped her pre-pandemic gym membership for some kettlebells, which she has
   <a
     href=\\"https://www.beeminder.com/b/swings\\"
-    title=\\"Bee&#39;s kettlebell-swinging Beeminder goal\\"
+    title=\\"Bee&#39;s kettlebell-swinging Beeminder goal; 12,000 swings before she archived it!\\"
   >
     swung around many thousands of times
   </a>
@@ -13711,16 +13740,7 @@ Thanks especially to
     >
       Cayenne Geis
     </a>
-    , 
-Luke Barone-Adesi,
-    <a
-      href=\\"http://carcinization.com\\"
-      title=\\"Thomas Powell is into crabs, ok?\\"
-    >
-      Thomas Powell
-    </a>
-    , and
-Zedmango for helping hone and generalize the rule.
+    , and several other Beeminder users for helping hone and generalize the rule.
   </em>
 </p>
 <p>
@@ -13728,7 +13748,7 @@ Zedmango for helping hone and generalize the rule.
     Image credit:
     <a
       href=\\"http://dreev.es/eli5\\"
-      title=\\"Faire doing a Beeminder explain-like-I&#39;m-5 with her then 5-year-old brother\\"
+      title=\\"Link to Faire doing a Beeminder explain-like-I&#39;m-5 with her then 5-year-old brother\\"
     >
       Faire Soule-Reeves
     </a>
@@ -21315,7 +21335,7 @@ So, pro-tip for cheapskates who don&#8217;t want to pay for that
 "
 `;
 
-exports[`body > post catchup hash c9a18c592fd2501074681406e1234f4b 1`] = `
+exports[`body > post catchup hash 06e709a3b8b4e9779d23d0f88883f8d3 1`] = `
 "
 <p>
   <img
@@ -21337,14 +21357,18 @@ Things that make staying on the yellow brick road
   </a>
   easier make reaching your overall goal harder.
 There&#8217;s no free lunch. 
-Any leniency today will get paid for down the (wait for it)
+Any leniency today will get paid for down the (wait for it) 
+Road.
+</p>
+<p>
+  (Update from the future: Our switch from
   <a
     href=\\"http://blog.beeminder.com/brl\\"
-    title=\\"UPDATE: This originally linked to an arcane post about the the mechanics of the yellow brick road (/roadwidth) but now points out blog post about switching from Yellow Brick Road to Bright Red Line\\"
+    title=\\"Originally the word &#39;Road&#39; there linked to an arcane post about the the mechanics of the yellow brick road (/roadwidth)\\"
   >
-    Road
+    &#8220;Yellow Brick Road&#8221; to &#8220;Bright Red Line&#8221;
   </a>
-  .
+  kind of ruined the joke there.)
 </p>
 <p>
   If that sounds counter-intuitive, imagine the extreme case of ultimate leniency where we&#8217;re like 
@@ -24775,7 +24799,7 @@ Both
 "
 `;
 
-exports[`body > post competitors hash 875c59ed9412b5247ebc87ef6712b2e2 1`] = `
+exports[`body > post competitors hash 8ca96ac64c1ccece94c7e6b90f640961 1`] = `
 "
 <p>
   <img
@@ -24786,7 +24810,7 @@ exports[`body > post competitors hash 875c59ed9412b5247ebc87ef6712b2e2 1`] = `
   >
 </p>
 <p>
-  [UPDATE 2023: We&#8217;re continuing to keep this list up to date (see the &#8220;On the Horizon&#8221; section for the very latest).
+  [UPDATE 2024: We&#8217;re continuing to keep this list up to date (see the &#8220;On the Horizon&#8221; section for the very latest).
 Let us know in the comments if there are any competitors we&#8217;ve missed!]
 </p>
 <p>
@@ -25077,16 +25101,6 @@ If you can vouch for any of these, let us know!
   <li>
     <strong>
       <a
-        href=\\"https://groworpay.com/\\"
-        title=\\"Found on Twitter\\"
-      >
-        GrowOrPay
-      </a>
-    </strong>
-  </li>
-  <li>
-    <strong>
-      <a
         href=\\"https://www.dip.chat/\\"
         title=\\"HT theXeffect subreddit\\"
       >
@@ -25105,17 +25119,6 @@ If you can vouch for any of these, let us know!
       </a>
     </strong>
     is only in Chinese and we don&#8217;t know much about it yet.
-  </li>
-  <li>
-    <strong>
-      <a
-        href=\\"https://ulyssescontract.com\\"
-        title=\\"I forget where we learned about this one\\"
-      >
-        Ulysses Contract
-      </a>
-    </strong>
-    (crypto)
   </li>
   <li>
     <strong>
@@ -25176,6 +25179,16 @@ If you can vouch for any of these, let us know!
         title=\\"Found on Twitter\\"
       >
         Cadoo
+      </a>
+    </strong>
+  </li>
+  <li>
+    <strong>
+      <a
+        href=\\"https://taskpact.org\\"
+        title=\\"We're a little skeptical that their blog is not written by humans\\"
+      >
+        TaskPact
       </a>
     </strong>
   </li>
@@ -25641,6 +25654,27 @@ You pledged $21 to maintain some desired action for 21 days, hopefully ingrainin
       </a>
     </strong>
     (website gone as of 2023, was only ever iPhone only)
+  </li>
+  <li>
+    <strong>
+      <a
+        href=\\"https://groworpay.com/\\"
+        title=\\"Found on Twitter\\"
+      >
+        GrowOrPay
+      </a>
+    </strong>
+  </li>
+  <li>
+    <strong>
+      <a
+        href=\\"https://ulyssescontract.com\\"
+        title=\\"I forget where we learned about this one\\"
+      >
+        Ulysses Contract
+      </a>
+    </strong>
+    (crypto)
   </li>
 </ul>
 <h3 id=\\"sushi\\">
@@ -47064,7 +47098,7 @@ Oh, and we didn&#8217;t even mention that he also helps moderate a language-lear
 "
 `;
 
-exports[`body > post honeygrams hash 1b11b5f216d8ddcb0e9d5e4120f3951b 1`] = `
+exports[`body > post honeygrams hash 21f5f8747acc366d9f411e05ea8569e5 1`] = `
 "
 <p>
   <img
@@ -53700,7 +53734,7 @@ Equivalently: You are risk-averse.
 "
 `;
 
-exports[`body > post magic hash 4beaaab9363c443faf1b426c46c03a28 1`] = `
+exports[`body > post magic hash bb858d8a81f9abd86f9ceba68bbdc50f 1`] = `
 "
 <p>
   <img
@@ -53741,9 +53775,8 @@ This can apply to big things like
   >
     the auto-widening yellow brick road
   </a>
-  . 
-(Facepalm!)
-And more commonly it applies to little things like suppressing the display of a checkbox in the UI when it&#8217;s not applicable.
+  (facepalm!)
+or more commonly to little things like suppressing the display of a checkbox in the UI when it&#8217;s not applicable.
 (When a user remembers that a checkbox used to be somewhere and now it&#8217;s not, that&#8217;s confusing and frustrating!
 Better to gray something out than to have it magically disappear.)
 </p>
@@ -56844,7 +56877,7 @@ Instead it&#8217;s purely for that last minute push to say &#8220;no really,
 "
 `;
 
-exports[`body > post milkman hash 9d1ac0b77cc9dad5912ac214e7ee1abf 1`] = `
+exports[`body > post milkman hash 7a2f85900994511fb5aa4a64a74483c4 1`] = `
 "
 <p>
   <img
@@ -57122,14 +57155,14 @@ Like Bee&#8217;s weight loss tip #3 in her
   .)
 </p>
 <p>
-  My 
-[favorite trigger-action plan](
-  <a href=\\"https://blog.beeminder.com/should/\\">
-    https://blog.beeminder.com/should/
+  My
+  <a
+    href=\\"https://blog.beeminder.com/should/\\"
+    title=\\"I Resolve Not To Resolve; Or, The Anti-Resolution Resolution\\"
+  >
+    favorite trigger-action plan
   </a>
-  &#8221;
-  &#8220;I Resolve Not To Resolve; Or, The Anti-Resolution Resolution&#8221;
-) &#8212; serving me very well for over 6 years and counting &#8212; is the following:
+  &#8212; serving me very well for over 6 years and counting &#8212; is the following:
 </p>
 <blockquote>
   <p>
@@ -75754,13 +75787,13 @@ If so, it would help us a lot for planning if you could check the appropriate ch
 "
 `;
 
-exports[`body > post sediment hash de236fb252cec3d7dbd05d24ae2aaec9 1`] = `
+exports[`body > post sediment hash b0f1000ad8b8710850731da99438c60f 1`] = `
 "
 <p>
   <img
     class=\\"aligncenter\\"
     title=\\"My sediments exactly!\\"
-    alt=\\"My sediments exactly!\\"
+    alt=\\"Nature shot of sedimentary rock\\"
     src=\\"http://blog.beeminder.com/wp-content/uploads/2011/03/sediment-e1302409009625.jpg\\"
   >
 </p>
@@ -75816,7 +75849,10 @@ Why spend definite time
 Anything that isn&#8217;t obviously garbage or obviously needs to be kept forever, I toss into a big box. 
 Now I&#8217;ve got a reverse-chronological stack of papers inside a box (instead of strewn all over my desk in varying useless attempts at order).
 If I ever need to find that receipt for
-  <a href=\\"http://blog.beeminder.com/lildeb\\">
+  <a
+    href=\\"http://blog.beeminder.com/lildeb\\"
+    title=\\"Little Debbie Does Dog Food\\"
+  >
     my bulk purchase of Little Debbie snacks
   </a>
   , it&#8217;s in there and not too tough to find. 
@@ -75881,20 +75917,20 @@ Ta-done!
   <p>
     <a
       class=\\"footnote\\"
-      id=\\"DC2\\"
-      href=\\"#DC\\"
+      id=\\"DC\\"
+      href=\\"#DC1\\"
     >
       [3]
     </a>
     We computer scientists call this the principle of delayed commitment
     <a
       class=\\"footnote\\"
-      id=\\"DC3\\"
-      href=\\"#DC\\"
+      id=\\"DC21\\"
+      href=\\"#DC2\\"
     >
-      [3]
+      [4]
     </a>
-    2]: commitment is bad, all else equal.
+    : commitment is bad, all else equal.
 Why do today what only might need to be done tomorrow?
   </p>
   <p>
@@ -75941,12 +75977,12 @@ See our
   <p>
     <a
       class=\\"footnote\\"
-      id=\\"DC\\"
-      href=\\"#DC1\\"
+      id=\\"DC2\\"
+      href=\\"#DC21\\"
     >
-      [3]
+      [4]
     </a>
-    2 The only references for the Principle of Delayed Commitment I can find are buried in academic papers. Someone should make a wikipedia page!
+    The only references for the Principle of Delayed Commitment I can find are buried in academic papers. Someone should make a wikipedia page!
 Ok, fine,
     <a
       href=\\"http://en.wikipedia.org/wiki/Delayed_Commitment\\"
@@ -75976,13 +76012,14 @@ though I won&#8217;t be surprised if the editors delete it, claiming, wrongly, t
     >
       yellow brick road
     </a>
-    in the sidebar of this page. You would not be reading this if today weren&#8217;t an &#8220;emergency blog post day&#8221;.
+    in the sidebar of this page. 
+You would not be reading this if today weren&#8217;t an &#8220;emergency blog post day&#8221;.
   </p>
 </font>
 "
 `;
 
-exports[`body > post seinfeld hash e155d78bb9301deaf6454894e90ef538 1`] = `
+exports[`body > post seinfeld hash 63ddfda121f37be84d56f0ab7dd59508 1`] = `
 "
 <p>
   <img
@@ -75997,11 +76034,12 @@ exports[`body > post seinfeld hash e155d78bb9301deaf6454894e90ef538 1`] = `
 The idea&#8217;s so simple (in a good way) that you don&#8217;t even need to follow
   <a
     href=\\"http://lifehacker.com/281626/jerry-seinfelds-productivity-secret\\"
-    title=\\"LifeHacker post, “Jerry Seinfeld&#39;s Productivity Secret”. “Secret” in pretty huge scare quotes. UPDATE: And Jerry Seinfeld has disavowed this so boo LifeHacker for spreading lies!\\"
+    title=\\"LifeHacker post, “Jerry Seinfeld&#39;s Productivity Secret”. “Secret” in pretty huge scare quotes.\\"
   >
     the link to LifeHacker
   </a>
-  where the idea originated.
+  [UPDATE: Jerry Seinfeld has disavowed this so boo LifeHacker for spreading lies!]
+where the idea originated.
 It&#8217;s merely the psychological trick of getting yourself to do something every day by looking at the chain of X&#8217;s for the days in a row you&#8217;ve done it so far.
 If you build up a nice streak then it would feel like a shame to break it.
 So you don&#8217;t.
@@ -89725,7 +89763,7 @@ Support interactions take on a collaborative tone.
 "
 `;
 
-exports[`body > post urlminder hash e9ce87fc1d597b8508abded686072b2c 1`] = `
+exports[`body > post urlminder hash 3a59aa49a53ba0d7095bd1db1da9f396 1`] = `
 "
 <p>
   <img
@@ -90365,7 +90403,7 @@ So you can adjust your goal, but you can&#8217;t change it out of laziness, unle
 "
 `;
 
-exports[`body > post vegdays hash 2095d98f44eb27270bed45c8c2b04525 1`] = `
+exports[`body > post vegdays hash 78e5ccde2507301a8c7578020bd7c074 1`] = `
 "
 <p>
   <img
@@ -90508,7 +90546,8 @@ Mine is committing me to average 3.6 [UPDATE: now 5] vegetarian days per week:
 <p>
   That way I can technically say I&#8217;m &#8220;mostly a vegetarian&#8221;.
 My fine print is that I can enter a 1 at the end of the day if I had no meat.
-If I only had fish then I can enter a 1/2.
+If I only had fish then I can enter a 1/2. 
+[UPDATE: I&#8217;m fine with fish now.]
 </p>
 <h2>
   And why?
@@ -90945,7 +90984,7 @@ As long as you&#8217;re eating better than you used to be, you&#8217;re doing ju
 "
 `;
 
-exports[`body > post waisted hash 6bca7112b7407ba1ca879e93fb59a900 1`] = `
+exports[`body > post waisted hash fd85a9ca4e47be9049a527f0a06f0f70 1`] = `
 "
 <p>
   <img
@@ -91057,7 +91096,14 @@ which you&#8217;re far less susceptible to succumbing to than the sin of inatten
 The latter happens without you even thinking about it.
 </p>
 <p>
-  Overloading your plate is what I call a loophole you can drive an ice cream truck through.
+  Overloading your plate is what I call a
+  <a
+    href=\\"https://blog.beeminder.com/icecream\\"
+    title=\\"UPDATE: A couple years later we blogged about that specifically so, voila, here&#39;s a link to it\\"
+  >
+    loophole you can drive an ice cream truck through
+  </a>
+  .
 Namely, yes, it&#8217;s a way you could utterly defeat the point of the system, but you won&#8217;t do that because you want the system to work.
 The original example of such a loophole was from the first incarnation of the
   <a
