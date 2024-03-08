@@ -31121,6 +31121,127 @@ The
 "
 `;
 
+exports[`body > post diy hash f57e89932a84f190592afa8e0a2a459f 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"DIY Beeminder, involving a lot of shoestring\\"
+    title=\\"Step 1: Acquire inordinate amounts of shoestring\\"
+    width=\\"450px\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/c84444c0-3838-487d-9d11-06e46d7ad2f5\\"
+  >
+</p>
+<p>
+  Some people don&#8217;t need Beeminder, and our hats are off to them.
+  <a
+    href=\\"https://blog.beeminder.com/typebee\\"
+    title=\\"The Type Bee Personality\\"
+  >
+    Some people
+  </a>
+  are psychologically incompatible with Beeminder, which is fine, there are
+  <a
+    href=\\"https://blog.beeminder.com/milkman\\"
+    title=\\"Book review of Katy Milkman&#39;s book _How To Change_ which has our most recent coverage of non-Beeminder behavior change strategies\\"
+  >
+    other techniques
+  </a>
+  they can use. 
+And then there are the people who create DIY Beeminders.
+</p>
+<p>
+  For example, you can share a spreadsheet with a friend and send them money when you don&#8217;t stick to what you committed to.
+It works perfectly well in theory and seems to work horribly in practice.
+(This is based on quite a pile of anecdotal evidence, though it&#8217;s all a bit biased: we and most people we talk to about this are Beeminder users.)
+</p>
+<p>
+  What goes wrong?
+Roughly speaking: entropy.
+Your friend stops paying attention and you find yourself all alone in your spreadsheet. 
+&#8220;Redundancy is your friend,&#8221; you hopefully suggest?
+No, adding more friends just yields diffusion of responsibility and it&#8217;s even worse.
+Sob-emoji.
+Even committing publicly, say on social media, and even if you have an army of followers, doesn&#8217;t seem to work.
+I mean, it helps &#8212; social accountability is great &#8212; just not enough to be sufficient on its own.
+Because entropy gradually wins.
+The threat of the shame of not following through gradually fades as you infer that everyone&#8217;s attention has moved on to your new posts about recreating the Starship Enterprise in Minecraft.
+</p>
+<p>
+  Of course, some superhuman people can set up a commitment contract with a friend and persist in sending them money even when the friend&#8217;s checked out. 
+But mere mortals suffer
+  <a
+    href=\\"https://blog.beeminder.com/recommit/\\"
+    title=\\"Ancient blog post from the early days of Beeminder which we&#39;re mostly linking for the title image in case &#39;cranial silicosis&#39; isn&#39;t clear. Also it&#39;s fun to look back on the point where we figured out the principle that ever-increasing awesomeness needs to be the path of least resistance.\\"
+  >
+    cranial silicosis
+  </a>
+  and find ourselves gradually abandoning the spreadsheet or sliding down a
+  <a
+    href=\\"https://blog.beeminder.com/schelling\\"
+    title=\\"Scott Alexander on Schelling Fences for Slippery Slopes\\"
+  >
+    slippery slope
+  </a>
+  of procrastinating indefinitely on sending the money we owe.
+</p>
+<p>
+  Beeminder solves this by automatically charging you and never flaking out on you.
+As long as the path of least resistance is to keep doing the thing you committed to and getting charged when you don&#8217;t, entropy is staved off.
+</p>
+<h3>
+  Don&#8217;t take our word for it
+</h3>
+<p>
+  We&#8217;ve been hearing stories like this forever and it all certainly matches our own personal experience.
+Here&#8217;s Beeminder superstar
+  <a
+    href=\\"https://rperce.net/\\"
+    title=\\"Robert&#39;s website was a little stale when this went to print but he says a link from the Beeminder blog may be the kick in the pants he needs to update it!\\"
+  >
+    Robert Perce
+  </a>
+  backing us up:
+</p>
+<blockquote>
+  <p>
+    I am doing a &#8220;yoga every day for January&#8221; challenge and I convinced one of my friends to do it too.
+I sent him texts every day for like a week and then he stopped responding.
+My
+    <em>
+      other
+    </em>
+    friend who I also convinced to join and I are still going strong.
+  </p>
+</blockquote>
+<p>
+  My response: Chef&#8217;s kiss.
+Unless that continues to work indefinitely with the other friend, in which case our whole point is ruined!
+</p>
+<p>
+  Robert then added, &#8220;I have been going strong because I have a Beeminder goal, obviously.&#8221;
+</p>
+<p>
+  There it is.
+</p>
+<p>
+  The punchline here is that you can make a DIY Beeminder just fine, as long as you use actual Beeminder to prevent it from petering out.
+(See also
+  <a
+    href=\\"https://blog.beeminder.com/achilles/\\"
+    title=\\"It&#39;s about what to do if you need a meta-Beeminder to get yourself to create Beeminder goals. Short version: remove the mental friction / dauntingness of creating new goals by creating them with long initial flat spots so they don&#39;t actually make you do anything till next week or next month.\\"
+  >
+    Beeminder&#8217;s Achilles Heel
+  </a>
+  .)
+</p>
+<p>
+  In a future post, I plan to talk about the general case, how all systems need anti-entropy measures and how Beeminder is an elegant and general anti-entropy tool in that sense.
+(But I might never get around to doing that, because all of us, realistically, are going to gradually forget I ever formed this intention.)
+</p>
+"
+`;
+
 exports[`body > post docdriven hash 9c3fd496f747e03130ea75f0f3d6dfda 1`] = `
 "
 <p>
@@ -47301,6 +47422,220 @@ Go ahead, click on it:
 "
 `;
 
+exports[`body > post humblebundle hash 818bb2e6a45417604557eaa6c9535e4d 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"A Bee in goggles with a bundle of gifts\\"
+    title=\\"This bundle is not particularly humble-looking\\"
+    width=\\"450px\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/026a125d-90ad-4f1c-aa58-bfe2e38f2910\\"
+  >
+</p>
+<p>
+  We&#8217;re excited to be featured in a Humble Bundle!
+</p>
+<p>
+  If you&#8217;re already familiar with Humble Bundle you might associate them pretty heavily with gaming and therefore be slightly confused right now. 
+So first off, no, we&#8217;re not pivoting into games; we&#8217;re still leaving that up to
+  <a
+    href=\\"https://www.beeminder.com/habitica\\"
+    title=\\"Beeminder&#39;s Habitica integration\\"
+  >
+    Habitica
+  </a>
+  .
+But when Humble Bundle contacted us in December, it was with the idea of putting together some kind of personal improvement bundle, thinking ahead to new years and all the annual hullabaloo around
+  <a
+    href=\\"https://blog.beeminder.com/milkman\\"
+    title=\\"AKA temporal landmarks. This is a link to our review of Katy Milkman&#39;s book _How To Change_.\\"
+  >
+    Fresh Starts
+  </a>
+  .
+</p>
+<p>
+  So while we&#8217;re normally
+  <a
+    href=\\"https://blog.beeminder.com/cybermonday\\"
+    title=\\"Ancient blog post about our reluctant past participation in Black Friday promotions which we have subsequently sworn off of\\"
+  >
+    kind of allergic
+  </a>
+  to salesiness and self-promotion, 
+anything that makes us feel like a bridal boutique associate working on commission,
+we were pretty excited to team up with Humble Bundle.
+</p>
+<p>
+  In case you don&#8217;t even need to be sold on this, click below to get the bundle:
+</p>
+<a href=\\"https://www.humblebundle.com/software/healthy-habits-toolkit-build-successful-routines-for-life-software\\">
+  <img
+    alt=\\"The Healthy Habits Toolkit: Build successful routines for life\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/4bf7a707-23e0-40e3-9ff3-3fad601e1d07\\"
+  >
+</a>
+<h3>
+  &#8220;Actually I need to be sold on this&#8221;
+</h3>
+<p>
+  Ok, the deal (foreshadowing) with Humble Bundle is that they broker deals where you buy a bundle of software (often games) for a discount, and part of what you pay goes to charity.
+It&#8217;s a good deal for us, a good deal for the partners, a good deal for Humble Bundle, a good deal for you, and a good deal for the charity. Wheeee!
+</p>
+<p>
+  This bundle features us alongside
+  <a
+    href=\\"https://www.rescuetime.com/\\"
+    title=\\"Fully automated time-tracking software. Very hardcore nerds may prefer our less polished side project, TagTime, which is semi-automated time-tracking.\\"
+  >
+    RescueTime
+  </a>
+  (which we
+  <a
+    href=\\"https://www.beeminder.com/rescuetime\\"
+    title=\\"Fun fact: RescueTime was one of our very first integrations, from when dinosaurs roamed the internet, in 2012\\"
+  >
+    integrate with
+  </a>
+  !),
+  <a
+    href=\\"https://www.roboform.com/\\"
+    title=\\"It&#39;s a password manager. You probably need one of these.\\"
+  >
+    RoboForm
+  </a>
+  , and
+  <a
+    href=\\"https://www.getmoodfit.com/\\"
+    title=\\"It&#39;s a mental health app. If you think you don&#39;t need one of these, you&#39;re crazy. (Or unusually sane?)\\"
+  >
+    MoodFit
+  </a>
+  in a bundle that benefits
+  <a
+    href=\\"https://www.activeminds.org/\\"
+    title=\\"Mental health charity. Charity Navigator says it&#39;s super legit.\\"
+  >
+    Active Minds
+  </a>
+  and the
+  <a
+    href=\\"https://www.michaeljfox.org/\\"
+    title=\\"It&#39;s trying to cure Parkinson&#39;s disease\\"
+  >
+    Michael J Fox Foundation
+  </a>
+  .
+</p>
+<p>
+  For $25 you get a discount on a premium subscription from the other three companies &#8212; 12 months of RescueTime, 90 days of MoodFit, and 12 months of RoboForm &#8212; and from Beeminder you get $10 of
+  <a
+    href=\\"https://blog.beeminder.com/honeygrams\\"
+    title=\\"Recent blog post giving the backstory on Honey Money\\"
+  >
+    Honey Money
+  </a>
+  , and as much extra honey as you want for 50% off.
+Basically it&#8217;s a BOGO deal: however much Honey Money you buy, you get again as much for free (plus the H$10 no matter what).
+The 50% off deal is a one-time offer, so if you expect to want more honey in the future, stocking up now saves a lot of money!
+</p>
+<h3>
+  &#8220;Honey what now?&#8221;
+</h3>
+<p>
+  For those just tuning in, Honey Money is basically Beeminder store credit. 
+It&#8217;s good for our premium plans and you can also pay for derailments with it (or not, if that would spoil the power of Beeminder&#8217;s sting for you). 
+Also you can gift it to other users with
+  <a
+    href=\\"https://www.beeminder.com/honeygram\\"
+    title=\\"Blog post about honeygrams that also gives the Honey Money backstory\\"
+  >
+    honeygrams
+  </a>
+  , which might be a nice way to get someone you know started with Beeminder.
+You can even exchange honey for
+  <a
+    href=\\"https://manifold.markets\\"
+    title=\\"It&#39;s a play-money (but almost real-money, especially if you value Honey Money) prediction market\\"
+  >
+    Manifold&#8217;s
+  </a>
+  play-money currency, mana, and vice versa.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  Whew. That was an awful lot of self-promotion for our tastes!
+To close out, here&#8217;s a palate cleanser in the form of twelve dumb bee puns:
+</p>
+<ol>
+  <li>
+    What is small, black and yellow, and drops things? A FUMBLEBEE
+  </li>
+  <li>
+    What type of bee can&#8217;t make up its mind? A MAYBEE
+  </li>
+  <li>
+    What do bees use to fix their hair? A HONEYCOMB
+  </li>
+  <li>
+    What do you call a bee who&#8217;s having a bad hair day? A FRISBEE
+  </li>
+  <li>
+    Where does a bee sit? ON ITS BEEHIND
+  </li>
+  <li>
+    Why did the bee go to the dermatologist? IT HAD HIVES
+  </li>
+  <li>
+    What kinds of bees can&#8217;t be understood? MUMBLEBEES
+  </li>
+  <li>
+    What kind of bees live in graveyards? ZOMBEES
+  </li>
+  <li>
+    What did the bee say to the flower? HI HONEY &lt;3
+  </li>
+  <li>
+    What do you call a wasp? A WANNABEE
+  </li>
+  <li>
+    What do you call a bee that&#8217;s always complaining? A GRUMBLEBEE
+  </li>
+  <li>
+    What do bees like to chew? BUMBLE GUM
+  </li>
+</ol>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  PS: In case you had any doubts about how serious we are about this, check out the
+  <a
+    href=\\"https://www.beeminder.com/humblebundle\\"
+    title=\\"And since you apparently like easter-eggy hovertext, be sure to check out the little lightbulb to learn what a humblebee is. Hint: It means the same thing as the old word Dumbledor.\\"
+  >
+    fancy Humble Bundle landing page
+  </a>
+  we made.
+But if you just scrolled down here impulsively, you&#8217;ll want to actually
+  <a
+    href=\\"https://www.humblebundle.com/software/healthy-habits-toolkit-build-successful-routines-for-life-software\\"
+    title=\\"Again, this gets you freebies with RescueTime, Moodfit, Roboform, and free Honey Money from Beeminder\\"
+  >
+    buy the Humble Bundle
+  </a>
+  first.
+</p>
+"
+`;
+
 exports[`body > post icecream hash 6365ef668cb7d87a77289bef2de8da56 1`] = `
 "
 <p>
@@ -53734,6 +54069,287 @@ Equivalently: You are risk-averse.
 "
 `;
 
+exports[`body > post love hash 3b23c9d3b6334a4090aa5e81a64f6bde 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Bees in love, surrounded by honey and money\\"
+    title=\\"This reminds us of our old 'For Love and/or Money' post on Danny's old blog\\"
+    width=\\"450px\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/cb21b83f-3cc6-4964-ab63-18eb8366c499\\"
+  >
+</p>
+<p>
+  It&#8217;s funny how often advice seeking takes the form, &#8220;Oh man, I don&#8217;t know how to convey XYZ,&#8221; and the person you&#8217;re asking replies, &#8220;How about literally &#8216;XYZ&#8217;?&#8221; And you&#8217;re like, &#8220;Huh. Yeah, wow, I am a genius, thanks!&#8221;
+</p>
+<p>
+  There&#8217;s probably a lesson there for relationships but I mention it because it happened to me
+  <a
+    class=\\"footnote\\"
+    id=\\"DUCK1\\"
+    href=\\"#DUCK\\"
+  >
+    [1]
+  </a>
+  when I was agonizing about what to say about an article about us on 
+DatingNews.com:
+&#8220;
+  <a
+    href=\\"https://www.datingnews.com/apps-and-sites/beeminder-helps-singles-achieve-goals/\\"
+    title=\\"I&#39;m tempted to insert jokes here that are just going to get this post marked as spam; but the point is that it&#39;s seriously a great article and is emphatically not any kind of cynical singles-in-your-area kind of thing\\"
+  >
+    The Beeminder App Keeps Singles on Track With Their Personal Goals
+  </a>
+  &#8221;.
+What I want to say is that the folks at DatingNews.com asked me a bunch of great questions and turned my answers into a really good, heartfelt article.
+Also they were super nice!
+</p>
+<p>
+  And it&#8217;s absolutely true that if you&#8217;re in the market for a life partner, Beeminder could make an especially huge difference to the whole rest of your life.
+</p>
+<p>
+  How? 
+Well, all the ways you can beemind yourself into a better catch go without saying.
+I&#8217;ll say one anyway, since we have a recent blog post about it with its own list of 15 things to consider
+  <a
+    href=\\"https://blog.beeminder.com/athletes\\"
+    title=\\"What Should Elite Athletes Beemind? It starts with a puzzle: how can it be that elite athletes burn fewer calories per mile but more calories per hour than muggles?\\"
+  >
+    beeminding for peak athleticism
+  </a>
+  .
+Athletes are attractive, we hear.
+If that&#8217;s not where you&#8217;re at, you might like some of our massive number of
+  <a
+    href=\\"https://blog.beeminder.com/tags/weight%20loss\\"
+    title=\\"29 of them, as of this writing, but many are only tangentially about to weight loss\\"
+  >
+    weight loss posts
+  </a>
+  .
+My favorite one for a general audience is probably 
+&#8220;
+  <a
+    href=\\"https://blog.beeminder.com/donotgain\\"
+    title=\\"It&#39;s a play on the Hippocratic Oath (First, Do No Harm) modified for weight loss: First, Do Not Gain\\"
+  >
+    Primum Non Amplifico
+  </a>
+  &#8221;.
+  <a
+    class=\\"footnote\\"
+    id=\\"ALLITIMENTATION1\\"
+    href=\\"#ALLITIMENTATION\\"
+  >
+    [2]
+  </a>
+  Or just beemind exciting new hobbies or reading books.
+Intelligence is even more attractive.
+</p>
+<p>
+  But all of that is about you.
+What about actually beeminding finding love?
+That is absolutely a thing as well.
+We recommend taking inspiration from one of the most amazing Beeminder users of all time who made a whole
+  <a
+    href=\\"https://forum.beeminder.com/t/dating-with-beeminder-a-journal/10066\\"
+    title=\\"The Life Category of the forum is an especially great place for things like this\\"
+  >
+    dating journal in the Beeminder Forum
+  </a>
+  .
+</p>
+<p>
+  To head off the natural question of why a nerdy woman who dates men needs a Beeminder goal &#8212; don&#8217;t men throw themselves at her? &#8212; one answer is that it works better to apply your own filters and initiate contact.
+But even if you&#8217;re happy with a more passive approach, you still have to pick from that flood of incoming messages and actually reply for a date to happen.
+It’s eminently beemindable!
+And of course a typical experience for men on dating sites is getting zero incoming messages but it’s the same story: you have to keep sending messages.
+  <a
+    href=\\"https://www.astralcodexten.com/p/theres-a-time-for-everyone\\"
+    title=\\"Title: There&#39;s A Time For Everyone\\"
+  >
+    Scott Alexander popularized the term micromarriage
+  </a>
+  for a related concept, as a motivational tool:
+</p>
+<blockquote>
+  <p>
+    If you go to a party, and you don’t meet anyone interesting there, it’s tempting to get discouraged. 
+If you try again and again, with identical results, it’s tempting to give up. 
+[&#8230;] Instead, think of yourself as getting 500 micromarriages each time (or whatever you decide the real number is, with the understanding that you should update your estimate at some rate conditional on success or failure). 
+All you need to do is go to a thousand parties and you have a 50-50 chance of meeting the right person! 
+Maybe that number would sound more encouraging if it was lower &#8212; but it took me twenty years of trying, so I couldn’t have been getting more than a few hundred micromarriages a day, and I wasn’t slacking off.
+  </p>
+</blockquote>
+<p>
+  Scott continues, after talking about recently getting married himself:
+</p>
+<blockquote>
+  <p>
+    Twenty years and exactly one million micromarriages later, I have yet to find any better advice. 
+Gather your micromarriages while ye may, for time is still a-flying. 
+Do annoying things, expect them to fail, and increment a little counter in your head each time, to prevent yourself from going insane. 
+Then do more annoying things. 
+Teach a juggling class. Join a weird transhumanist compound. 
+Go to one of Aella’s weird parties. 
+There is no royal road. 
+I’m not claiming to have super useful advice here, just to be able to say from the end of a long and very rocky path that it does eventually pay off.
+  </p>
+</blockquote>
+<p>
+  Of course our point is that you can do much better than incrementing a counter in your head.
+You can increment a counter on a Beeminder graph.
+</p>
+<p>
+  And we&#8217;d be remiss if we didn&#8217;t mention the classic example from Nick Winter&#8217;s book,
+  <a
+    href=\\"https://www.nickwinter.net/the-motivation-hacker\\"
+    title=\\"See also Nick&#39;s guest post on the Beeminder blog: Spiraling Into Control\\"
+  >
+    The Motivation Hacker
+  </a>
+  , in which he describes beeminding romantic gestures to his girlfriend.
+They&#8217;ve since gotten married and created THREE WHOLE HUMANS together.
+We are exceedingly proud.
+</p>
+<h2>
+  Honey for your honey
+</h2>
+<p>
+  Once you try Beeminder and transform your life and find True Love and all that jazz, maybe you would like to introduce your honey to your (other) partner in awesomeness? 
+(That&#8217;s us!)
+</p>
+<p>
+  You could introduce them to us by telling them about your goals. 
+Nine out of ten nerds think it&#8217;s sweet to beemind doing things for your partner. 
+You could even add them as a
+  <a
+    href=\\"https://blog.beeminder.com/supporters\\"
+    title=\\"Very old blog post introducing the Supporters feature\\"
+  >
+    supporter
+  </a>
+  on goals that are important to you, and they&#8217;ll get emailed when you derail.
+</p>
+<p>
+  For the people who like to poke all the buttons, gift them some honey to get started with and let them dive in!
+The page for sending honeygrams got all dressed up for the season of love.
+</p>
+<a href=\\"https://www.beeminder.com/honeygram\\">
+  <img
+    src=\\"https://github.com/beeminder/blog/assets/46881/9cf9d12f-628e-4881-888b-bd8aee096044\\"
+    class=\\"aligncenter\\"
+    width=\\"400px\\"
+  >
+</a>
+<p>
+  If you put an email address in the “To” field instead of a Beeminder username, that person will be notified, we’ll help get them set up, and then transfer the honey to them.
+If they fail to get set up, you keep your honey.
+Or if they happen to already have a Beeminder account, the honey will transfer to them instantly.
+</p>
+<p>
+  Honey for your honey!
+If you send them H$5, you can say &#8220;the first derail is on me&#8221;.
+</p>
+<p>
+  You can of course also gift honey to your loved ones who already use Beeminder. 
+Or any friends or siblings who seem like they need some Beeminder-like help in the dating game?
+If that&#8217;s not too forward&#8230;
+</p>
+<p>
+  If you&#8217;re not up to speed on the honey money thing, see
+  <a
+    href=\\"https://blog.beeminder.com/honeygrams\\"
+    title=\\"The winter holidays were our excuse that time and Valentine&#39;s day is our excuse this time\\"
+  >
+    our previous blog post about it
+  </a>
+  .
+(The short version is that honey money is Beeminder credit, good for premium plans and, if you choose, derailments.
+You can also exchange it with
+  <a
+    href=\\"https://manifold.markets\\"
+    title=\\"Play-money prediction market\\"
+  >
+    Manifold
+  </a>
+  &#8217;s currency, mana.)
+And if you&#8217;re ready to start spreading the love around, go ahead and click on this fancy coin:
+</p>
+<p>
+  <a
+    href=\\"https://www.beeminder.com/honeygram\\"
+    title=\\"Review: You can buy honey to pre-pay for derailments, apply it to premium plans, gift it to other people, and exchange it for Manifold's currency, mana\\"
+  >
+    <img
+      class=\\"aligncenter\\"
+      width=\\"200px\\"
+      src=\\"https://user-images.githubusercontent.com/9928/292218820-d64b4920-b107-4bb2-bc61-0033c5f7e6d1.png\\"
+    >
+  </a>
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  PS: In other Valentine&#8217;s Day news, and speaking of Aella&#8217;s weird parties, we&#8217;re proud to say Beeminder is a sponsor of the wild work of art that was
+  <a
+    href=\\"https://lu.ma/betonlove\\"
+    title=\\"Also we attended it, and met our Musical Scientist hero, Tim Blais. It was amazing.\\"
+  >
+    Bet on Love: The Prediction Market Dating Show
+  </a>
+  .
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"DUCK\\"
+    href=\\"#DUCK1\\"
+  >
+    [1]
+  </a>
+  Thanks yet again to
+  <a
+    href=\\"https://rperce.net/\\"
+    title=\\"Robert said last time that the link to his homepage spurred him to update it. Maybe this time he&#39;ll start adding more content?\\"
+  >
+    Robert Perce
+  </a>
+  for the rubber-ducking there.
+</p>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"ALLITIMENTATION\\"
+    href=\\"#ALLITIMENTATION1\\"
+  >
+    [2]
+  </a>
+  And my favorite for an utterly whack-a-doodle audience is probably 
+&#8220;
+  <a
+    href=\\"https://blog.beeminder.com/allitimentation/\\"
+    title=\\"AKA Themed eating days. Monomeal Monday + Tareable Tuesday + Waste-Away Wednesday + Themeless Thursday + Fitness Friday + Salubrious Saturday + Social Sunday\\"
+  >
+    Alliterative Alimentation
+  </a>
+  &#8221; about my convoluted diet scheme which today is the 2nd anniversary of (and which Bethany, in an immense outpouring of love, has been doing with me in solidarity the last two months).
+</p>
+"
+`;
+
 exports[`body > post magic hash bb858d8a81f9abd86f9ceba68bbdc50f 1`] = `
 "
 <p>
@@ -58656,6 +59272,303 @@ But if you stay on your yellow brick road, both selves win.
   <a href=\\"http://beeminder.com/bafilius\\">
     beeminder.com/bafilius
   </a>
+</p>
+"
+`;
+
+exports[`body > post montholutions hash c997bf6ae9298bc68e96d6a215aa6f3f 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Bee with to-do list and signs of the zodiac\\"
+    title=\\"Are you expecting anything about astrology in this post? This is pretty much the diametric opposite of astrology. Writing your horoscope, not reading it.\\"
+    width=\\"450px\\"
+    src=\\"https://user-images.githubusercontent.com/9928/294140904-8d9db8eb-fe3f-4954-99e2-511c770e5696.png\\"
+  >
+</p>
+<p>
+  Well, 
+everyone, 
+Happy New Year!
+</p>
+<p>
+  2023 is gone and 2024 is ticking, 
+and it&#8217;s the traditional time of year to be
+  <em>
+    RESOLUTE
+  </em>
+  . 
+We&#8217;ve written about the science of this stuff before.
+  <a
+    href=\\"https://blog.beeminder.com/milkman\\"
+    title=\\"Danny reviewed her book a while ago!\\"
+  >
+    Katy Milkman
+  </a>
+  calls it the Fresh Start Effect, 
+and I am absolutely not immune. 
+You can find my
+  <a
+    href=\\"https://forum.beeminder.com/t/new-years-resolutions-ride-or-die-2024/11324?u=shanaqui\\"
+    title=\\"We&#39;re picking one significant goal each to stick to throughout 2024! And there are prizes.\\"
+  >
+    New Year&#8217;s Resolution: Ride or Die
+  </a>
+  thread on our forum right now.
+</p>
+<p>
+  Plus, the more people I tell that I&#8217;m totally going to average 6 yoghurts a week in 2024, 
+the more likely I&#8217;ll succeed, 
+right?
+</p>
+<p>
+  But can we take this further?
+Why let New Year&#8217;s hog all the new-leaf-turning?
+I had so many goals in mind, 
+but it felt like starting them all at once would surely doom me to failure. 
+At the same time, 
+waiting for 2025 felt silly, 
+but I need
+  <em>
+    some
+  </em>
+  kind of push to start on these ideas.
+</p>
+<p>
+  And surely there&#8217;s another calendar division that can maybe be just as powerful a psychological marker, 
+giving me, say, 
+twelve fresh starts in a year&#8230;
+</p>
+<p>
+  &#129300;
+</p>
+<h3>
+  Lightbulb moment!
+</h3>
+<p>
+  So how about&#8230; 
+New Month&#8217;s Resolutions?
+</p>
+<p>
+  The idea is that each month of 2024, 
+I&#8217;ll try out a new goal. 
+At the start of the month, 
+I&#8217;ll create something new, 
+set the rate to something relatively ambitious, 
+and maybe even risky, 
+but set the end date to the end of the month. 
+Something that might be difficult to stick to all the way through the year seems much less daunting if I&#8217;m only going to do it for a month. 
+And this way I don&#8217;t start all my brand new shiny ideas for goals at once, 
+get
+  <a
+    href=\\"https://blog.beeminder.com/burnout\\"
+    title=\\"Old blog post on beating Beeminder burnout\\"
+  >
+    overwhelmed
+  </a>
+  , 
+and run away &#8212; 
+but I don&#8217;t have to wait for 2025.
+</p>
+<p>
+  This idea seemed good enough that I&#8217;ve created a thread for it on the forum, 
+so that
+  <em>
+    everyone
+  </em>
+  can join me in the experiment.
+  <a
+    href=\\"https://forum.beeminder.com/t/new-months-resolutions/11321?u=shanaqui\\"
+    title=\\"Check out the hall of participants to see who has already joined!\\"
+  >
+    Wanna jump aboard?
+  </a>
+</p>
+<h3>
+  Come on in, the water&#8217;s fine
+</h3>
+<p>
+  If you&#8217;re not ready yet, 
+let&#8217;s see if I can convince you of the power of this idea. 
+I think everyone has tons of things they
+  <em>
+    could
+  </em>
+  be doing that feel difficult, 
+that would need work to establish as a habit. 
+Or ideas that they&#8217;re going to get round to someday. 
+Imagine having a prompt to just dust one of those off and actually try it, 
+give it a go, 
+take a little risk, 
+not just once a year but a new one each month.
+</p>
+<p>
+  There&#8217;s not so much pressure to get it right straight away &#8212; 
+these can be experiments, 
+because even if one fails, 
+you have eleven more chances! 
+And personally I&#8217;m willing to bet that I&#8217;m going to create some goals I can stick to in the long-term, 
+or at least learn important things about how to make those goals work for me. 
+(Or not. 
+It&#8217;s fine if some of them never do!)
+</p>
+<p>
+  For me, 
+the year&#8217;s starting out with a goal I haven&#8217;t tried on Beeminder before. 
+It&#8217;s been a while since I managed to fit exercise into my schedule on a regular basis, 
+for a bunch of reasons. 
+Not all of them are akratic, 
+but honestly by now it&#8217;s at
+  <em>
+    least
+  </em>
+  half down to akrasia.
+</p>
+<p>
+  So my first goal is a way to slowly open up some time in my schedule for doing
+  <em>
+    something
+  </em>
+  : 
+each day, I have to hold a good-form plank for as long as I can, 
+working up from the very easiest baby planks on forearms and knees to&#8230; 
+whatever ends up being the most difficult plank I can manage by the end of January! 
+(And I&#8217;m already pretty sure I&#8217;d like to keep this goal in some form after January.)
+</p>
+<center>
+  <figure>
+    <p>
+      <img
+        class=\\"aligncenter\\"
+        width=\\"100%\\"
+        src=\\"https://www.beeminder.com/shanaqui/plank.png\\"
+      >
+    </p>
+    <figcaption>
+      <i>
+        Nicky&#8217;s plank goal
+      </i>
+    </figcaption>
+  </figure>
+</center>
+<p>
+  I have other ideas for goals: 
+taking a walk during my lunch break, 
+getting back to starting my day with a bit of reading, 
+setting up my treadmill again and actually using it, 
+getting a new fitness tracker and actually using it, 
+having a set time each day to read without distractions with my phone in airplane mode, 
+using up some of my postcard sets by sending more postcards on
+  <a
+    href=\\"https://www.postcrossing.com/\\"
+    title=\\"Full disclosure: I&#39;m on their support team too, and I have definitely drunk the koolaid. SO many postcard sets, folks\\"
+  >
+    Postcrossing
+  </a>
+  &#8230; 
+With eleven more opportunities coming up, 
+I get to try all kinds of things!
+</p>
+<p>
+  I&#8217;ve even created a sort of meta-goal for this, 
+so that I won&#8217;t forget to start a new goal as the new month rolls round. 
+I spent some time in the graph editor making it pretty, 
+so it steps up only at the beginning of each month, 
+but you could just have a goal set to roughly 1/30 per day, 
+add data for January now, 
+and it&#8217;ll come due again about the right time.
+</p>
+<center>
+  <figure>
+    <p>
+      <img
+        class=\\"aligncenter\\"
+        width=\\"100%\\"
+        src=\\"https://www.beeminder.com/shanaqui/newmonthresolution.png\\"
+      >
+    </p>
+    <figcaption>
+      <i>
+        Nicky&#8217;s meta-goal for New Month&#8217;s Resolutions
+      </i>
+    </figcaption>
+  </figure>
+</center>
+<h3>
+  Look, we&#8217;re all doing it!
+</h3>
+<p>
+  Other folks on the forum thread are trying things out as well:
+enbee&#8217;s trying out a
+  <a
+    href=\\"https://forum.beeminder.com/t/new-months-resolutions/11321/7\\"
+    title=\\"Check out the forum post about it!\\"
+  >
+    more extreme version of an existing goal
+  </a>
+  , 
+felixm&#8217;s trying out
+  <a
+    href=\\"https://forum.beeminder.com/t/new-months-resolutions/11321/9\\"
+    title=\\"This sounds like a really neat way of checking in with yourself...\\"
+  >
+    doing a little check-in after meditation sessions
+  </a>
+  , 
+poisson&#8217;s trying out
+  <a
+    href=\\"https://forum.beeminder.com/t/new-months-resolutions/11321/14\\"
+    title=\\"I really need one of these... or do I? Hmm\\"
+  >
+    beeminding using a waterpik to floss
+  </a>
+  &#8212; 
+beeminding what you buy is an
+  <a
+    href=\\"https://blog.beeminder.com/buyminder/\\"
+    title=\\"This blog post by Danny is a perennial reminder to me that no, the job isn&#39;t over once I acquire the shiny object\\"
+  >
+    Officially Approved Beemindery Activity
+  </a>
+  ! 
+Get anything for Christmas that you really ought to be using&#8230;?
+</p>
+<p>
+  I won&#8217;t list
+  <em>
+    everyone
+  </em>
+  &#8217;s goals here, 
+but hopefully that gives you a taste for it and sparks a few ideas of your own!
+</p>
+<p>
+  And the beauty of it is, 
+if it doesn&#8217;t work out, 
+it&#8217;s only for this month. 
+That moment of enthusiasm, 
+that feeling of a brand new start and a chance to start something new&#8230; 
+this year, that won&#8217;t be confined to January 1st. 
+In reality, 
+it never was. 
+The best time to start a new goal is now. 
+But sometimes we need a little push to be inventive, 
+to take a risk, 
+to push ourselves a little further.
+</p>
+<p>
+  Twelve little pushes sound good to me.
+  <a
+    href=\\"https://forum.beeminder.com/t/new-months-resolutions/11321\\"
+    title=\\"The forum thread awaits your signup!\\"
+  >
+    Are you in?
+  </a>
+</p>
+<p>
+  P.S. If you find this later, 
+well, 
+there&#8217;s no time like the present!
 </p>
 "
 `;
@@ -65828,6 +66741,227 @@ Their times for a full marathon would be a decent amateur time for a half marath
 Can you tell that I&#8217;m in awe?
   </p>
 </font>
+"
+`;
+
+exports[`body > post pigou hash 07b65766e0060134944539775b064752 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"A bee and a piggy bank and some tax documents\\"
+    title=\\"Pigou and pigs are not etymologically related, as far as we know\\"
+    width=\\"450px\\"
+    src=\\"https://user-images.githubusercontent.com/9928/294791619-2b91db4b-6d1d-4fc2-a8b6-b2e84e8485a5.png\\"
+  >
+</p>
+<p>
+  Do you know about Pigouvian taxes? 
+I&#8217;m sad that normal humans don&#8217;t know about this. 
+There are so many things that liberals and conservatives argue about that Pigouvian taxes just magically resolve into the best of both worlds! 
+But googling it yields a sea of impenetrable economics jargon, so let me start with my attempt to give a crude sense of the idea.
+</p>
+<p>
+  You know how a carbon tax makes sense as a way to disincentivize greenhouse gas emissions? 
+If the tax were high enough and the tax revenue were effectively spent on undoing the harm of the emissions &#8212; see
+  <a
+    href=\\"http://beeminder.com/climate\\"
+    title=\\"Beeminder donates a token fraction of its revenue to offset carbon emissions\\"
+  >
+    beeminder.com/climate
+  </a>
+  &#8212; then there&#8217;d be no need for other laws or shaming people about their carbon footprints. 
+Everything would be elegantly priced in. 
+Pigouvian taxes generalize that idea to anything: 
+congestion pricing, 
+sin taxes for drugs that may have adverse societal impacts &#8212; anything where some transaction happens between two parties but third parties are also affected.
+</p>
+<h4 class=\\"pullquote\\">
+  &#8220;It&#8217;s a tax on excess indulging. It’s ok to pay it sometimes, just not too often.&#8221;
+</h4>
+<p>
+  What does this have to do with Beeminder? 
+Well, ice cream, for example, has a cost to you beyond its immediate monetary cost. 
+You can think of your future self as that affected third party. 
+Maybe you don&#8217;t want to completely abstain from ice cream but it would be nice if you could make choices about it that factor in its true cost.
+</p>
+<p>
+  Well, Beeminder can do that! 
+You can reframe the Beeminder pledge to think of it
+  <a
+    href=\\"https://blog.beeminder.com/depunish\\"
+    title=\\"Paying Is Not Punishment\\"
+  >
+    not as a punishment
+  </a>
+  but as a tax on excess indulging. 
+It&#8217;s ok to pay it sometimes, just not too often.
+  <a
+    class=\\"footnote\\"
+    id=\\"ECON1\\"
+    href=\\"#ECON\\"
+  >
+    [1]
+  </a>
+</p>
+<p>
+  I got this idea of Beeminder as a tax from my friend
+  <a
+    href=\\"https://ymeskhout.substack.com/\\"
+    title=\\"Yassine&#39;s excellent Substack\\"
+  >
+    Yassine Meskhout
+  </a>
+  who had previously invented the concept of
+  <em>
+    taxing vs punitive commitment contracts
+  </em>
+  .
+He describes punitive regimes as generally having an escape valve to ensure you aren&#8217;t punished unjustly.
+Maybe you can&#8217;t bike to work when it&#8217;s snowing so your fine print on your Beeminder goal stakes out an exemption for that.
+</p>
+<p>
+  The problem with punitive goals, as Yassine describes them, is that the element of discretion makes them quickly lose their force.
+The fine print expands or it has fuzzy boundaries that keep tempting you to apply it to more questionable circumstances.
+</p>
+<p>
+  A taxing system, by contrast, doesn&#8217;t care about your excuses.
+Too tired? Too busy? Too sick? 
+As Yassine says, &#8220;doesn&#8217;t matter, pay up.&#8221;
+</p>
+<blockquote>
+  <p>
+    The paying up is a clear demonstration that you’d prefer eating the penalty, and is a good and honest demonstration of what your capabilities are that day.
+  </p>
+</blockquote>
+<p>
+  Even though that sounds, and sometimes is, too harsh, we&#8217;ve been gradually gravitating to the taxing side of this dichotomy over the years.
+We used to 
+rave about punishment, like in our old post, 
+&#8220;
+  <a
+    href=\\"https://blog.beeminder.com/contrapositive/\\"
+    title=\\"Aka why Beeminder is a glutton for punishment\\"
+  >
+    Contra Positive Reinforcement
+  </a>
+  &#8221;.
+We still stand by that post and many users genuinely prefer the punitive mindset. 
+I now personally prefer the taxing mindset and tend to be most impressed with users who think of Beeminder that way.
+</p>
+<p>
+  But people are different and the same person may even need different approaches for different goals.
+It’s probably worth clarifying, at least in your own head, when creating a goal, whether you want Beeminder to punish you for crossing the bright red line or just tax you for crossing it.
+And even for a single goal, whether it&#8217;s taxing or punitive may depend on the pledge amount.
+We recommend trying to settle on an amount of money at risk that is motivating but not punishing.
+This is the beauty of the
+  <a
+    href=\\"https://blog.beeminder.com/exponential/\\"
+    title=\\"Extremely old blog post but that&#39;s still the pledge schedule we&#39;re using, as of early 2024, even though we keep talking about changing it\\"
+  >
+    exponential pledge schedule
+  </a>
+  . It quickly gets you to your Motivation Point without spending
+  <em>
+    too
+  </em>
+  taxing of an amount along the way.
+  <a
+    class=\\"footnote\\"
+    id=\\"SCHEDGE1\\"
+    href=\\"#SCHEDGE\\"
+  >
+    [2]
+  </a>
+</p>
+<p>
+  To review, 
+a punishment framing can encourage an excuse-making mindset over a results-oriented mindset.
+It can also encourage you to make your goals less ambitious.
+Instead, try treating Beeminder&#8217;s stings as an elegant behavior-shaping tax and accept that some derailments are inevitable.
+You can view that tax as the cost of the service Beeminder provides: nudges or rumble strips keeping you on track.
+Finally, you can dial in a sweet spot in terms of both the steepness of the bright red line and the amount of money at risk.
+The (meta) goal is to be pushed to do as much as possible &#8212; or whatever maximizes the motivational value you get from Beeminder &#8212; at minimal cost.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  P.S. This is part of a series of posts in which we argue for a mental reframing of Beeminder&#8217;s stings, from punitive to taxing:
+</p>
+<ul>
+  <li>
+    <a
+      href=\\"https://blog.beeminder.com/beenice\\"
+      title=\\"Ten years old now! This kind of planted the seeds for the rest of this list\\"
+    >
+      Bee Nice To Yourself
+    </a>
+  </li>
+  <li>
+    <a
+      href=\\"https://blog.beeminder.com/defail\\"
+      title=\\"AKA Beminder Revenue Proportional To User-Awesomeness\\"
+    >
+      Derailing Is Not Failing
+    </a>
+  </li>
+  <li>
+    <a
+      href=\\"https://blog.beeminder.com/depunish\\"
+      title=\\"Also serves as a prelude to the subsequent announcement of No-Excuses Mode\\"
+    >
+      Paying Is Not Punishment
+    </a>
+  </li>
+  <li>
+    <a
+      href=\\"https://blog.beeminder.com/noexcuses\\"
+      title=\\"Also announces the death of a previous thing we had called weaselproofing; in the future the term weaselproofing may just end up as a synonym for no-excuses mode\\"
+    >
+      Announcing No-Excuses Mode
+    </a>
+  </li>
+  <li>
+    <a
+      href=\\"https://blog.beeminder.com/nailingit\\"
+      title=\\"Turns the concept up to eleven and gives it a positive spin\\"
+    >
+      Derailing It Is Nailing It
+    </a>
+  </li>
+</ul>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"ECON\\"
+    href=\\"#ECON1\\"
+  >
+    [1]
+  </a>
+  In case you want the econ-jargon version: 
+With Beeminder you&#8217;re internalizing the externality imposed on your future self.
+</p>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"SCHEDGE\\"
+    href=\\"#SCHEDGE1\\"
+  >
+    [2]
+  </a>
+  Specifically, the current pledge schedule is constructed so that whatever pledge level you’re at, you’ll have spent a total of exactly half that by hitting all the previous pledge levels.
+</p>
 "
 `;
 

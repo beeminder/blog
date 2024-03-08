@@ -6,6 +6,7 @@ type Tag = {
   name: string;
   posts: Post[];
   count: number;
+  redirect: string | null;
 };
 
 const getTags = memoize(makeTags);
@@ -21,6 +22,7 @@ async function makeTags(): Promise<Tag[]> {
       name: t,
       posts: matched,
       count: matched.length,
+      redirect: t.includes(" ") ? t.replace(/ /g, "+") : null,
     };
   });
 
