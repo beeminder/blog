@@ -220,6 +220,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/derail' 1`] = `"https://
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/discourse' 1`] = `"https://the_source_domain/discourse/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/diy' 1`] = `"https://the_source_domain/diy/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/docdriven' 1`] = `"https://the_source_domain/docdriven/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/dogeatdog' 1`] = `"https://the_source_domain/dogeatdog/export/txt"`;
@@ -340,6 +342,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/honeygrams' 1`] = `"http
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/howeyeuse' 1`] = `"https://the_source_domain/howeyeuse/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/humbee' 1`] = `"https://the_source_domain/humbee/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/icecream' 1`] = `"https://the_source_domain/icecream/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ifttt' 1`] = `"https://the_source_domain/ifttt/export/txt"`;
@@ -398,6 +402,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/lockmyphone' 1`] = `"htt
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/loss' 1`] = `"https://the_source_domain/loss/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/love' 1`] = `"https://the_source_domain/love/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/maniac' 1`] = `"https://the_source_domain/maniac/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/manifold' 1`] = `"https://the_source_domain/manifold/export/txt"`;
@@ -443,6 +449,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/modal-beeminder' 1`] = `
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mongoid' 1`] = `"https://the_source_domain/mongoid/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/mongosad' 1`] = `"https://the_source_domain/mongosad/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/montholutions' 1`] = `"https://the_source_domain/montholutions/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/moreless' 1`] = `"https://the_source_domain/moreless/export/txt"`;
 
@@ -495,6 +503,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pdp' 1`] = `"https://the
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pdxqs' 1`] = `"https://the_source_domain/pdxqs/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/perverse' 1`] = `"https://the_source_domain/perverse/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pigouminder' 1`] = `"https://the_source_domain/pigouminder/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pjf-anki' 1`] = `"https://the_source_domain/pjf-anki/export/txt"`;
 
