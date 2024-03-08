@@ -25,12 +25,12 @@
     "puppeteer": "tsx ./scripts/puppeteer.ts"
   },
   "dependencies": {
-    "@astrojs/prefetch": "^0.4.0",
-    "@astrojs/rss": "^3.0.0",
-    "@astrojs/sitemap": "^3.0.2",
+    "@astrojs/prefetch": "^0.4.1",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.1",
     "@fontsource-variable/lora": "^5.0.9",
     "@fontsource/source-sans-pro": "^5.0.8",
-    "astro": "^3.1.0",
+    "astro": "^4.4.15",
     "dotenv": "^16.3.1",
     "feather-icons": "^4.29.1",
     "findup-sync": "^5.0.0",
