@@ -15,7 +15,7 @@ describe("getTags", () => {
           md: ether(),
         },
       },
-    ]);
+    ] as any);
   });
 
   it("returns tags", async () => {
@@ -52,7 +52,7 @@ describe("getTags", () => {
           md: ether(),
         },
       },
-    ]);
+    ] as any);
 
     const result = await getTags();
 

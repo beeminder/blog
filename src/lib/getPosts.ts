@@ -10,15 +10,9 @@ const getDuplicates = (
   return keys.filter((key) => keys.indexOf(key) !== keys.lastIndexOf(key));
 };
 
-type CollectionItem = {
-  data: {
-    source: string;
-  };
-};
-
 const makePosts = memoize(async (): Promise<Post[]> => {
   const posts = await getCollection("posts");
-  return posts.map((p: CollectionItem) => {
+  return posts.map((p) => {
     const result = post.safeParse(p.data);
     if (result.success) {
       return result.data;

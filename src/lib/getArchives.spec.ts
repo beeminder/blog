@@ -14,7 +14,7 @@ describe("getArchives", () => {
           md: ether(),
         },
       },
-    ]);
+    ] as any);
   });
 
   it("batches by month", async () => {
@@ -60,7 +60,7 @@ describe("getArchives", () => {
           md: ether(),
         },
       },
-    ]);
+    ] as any);
 
     const result = await getArchives();
 
@@ -81,7 +81,7 @@ describe("getArchives", () => {
           md: ether(),
         },
       },
-    ]);
+    ] as any);
 
     const result = await getArchives();
 
