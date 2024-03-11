@@ -22,7 +22,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "preinstall": "npx only-allow pnpm",
-    "puppeteer": "tsx ./scripts/puppeteer.ts"
+    "puppeteer": "tsx ./scripts/puppeteer.ts",
+    "md:pull": "tsx ./scripts/pull.ts"
   },
   "dependencies": {
     "@astrojs/prefetch": "^0.4.1",

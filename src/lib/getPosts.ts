@@ -14,7 +14,9 @@ const makePosts = memoize((): Promise<Post>[] =>
   fetchPosts().map((p) =>
     p.then((d) => {
       const result = post.safeParse(d);
-      if (result.success) return result.data;
+      if (result.success) {
+        return result.data;
+      }
       throw new Error(
         `Failed to parse post ${d.source}: ${result.error.message}`,
         result.error,
