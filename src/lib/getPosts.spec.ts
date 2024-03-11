@@ -1,39 +1,45 @@
 import getPosts from "./getPosts";
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import fetchPost from "./fetchPost";
-import readSources from "./readSources";
-import ether from "./test/ether";
+import ether, { type Ether } from "./test/ether";
 import meta from "./test/meta";
 import { getCollection } from "astro:content";
 
+const entry = ({
+  meta: m = {},
+  ether: e = {},
+}: {
+  meta?: Record<string, unknown>;
+  ether?: Ether;
+} = {}) => ({
+  data: {
+    ...meta(m),
+    md: ether(e),
+  },
+});
+
+function loadEntries(entries: Record<string, unknown>[]): void {
+  vi.mocked(getCollection).mockResolvedValue(entries as any);
+}
+
 describe("getPosts", () => {
   beforeEach(() => {
-    vi.mocked(getCollection).mockResolvedValue([
-      {
-        data: {
-          ...meta(),
-          md: ether(),
-        },
-      },
-    ] as any);
+    loadEntries([entry()]);
   });
 
   it("includes excerpts", async () => {
-    vi.mocked(getCollection).mockResolvedValue([
-      {
-        data: {
-          ...meta({
-            excerpt: undefined,
-          }),
-          md: ether({
-            content: "word",
-            frontmatter: {
-              excerpt: "MAGIC_AUTO_EXTRACT",
-            },
-          }),
+    loadEntries([
+      entry({
+        meta: {
+          excerpt: undefined,
         },
-      },
-    ] as any);
+        ether: {
+          content: "word",
+          frontmatter: {
+            excerpt: "MAGIC_AUTO_EXTRACT",
+          },
+        },
+      }),
+    ]);
 
     const posts = await getPosts();
 
@@ -41,16 +47,13 @@ describe("getPosts", () => {
   });
 
   it("excludes unpublished posts by default", async () => {
-    vi.mocked(getCollection).mockResolvedValue([
-      {
-        data: {
-          ...meta({
-            status: "draft",
-          }),
-          md: ether(),
+    loadEntries([
+      entry({
+        meta: {
+          status: "draft",
         },
-      },
-    ] as any);
+      }),
+    ]);
 
     const posts = await getPosts();
 
@@ -58,16 +61,13 @@ describe("getPosts", () => {
   });
 
   it("includes unpublished posts when requested", async () => {
-    vi.mocked(getCollection).mockResolvedValue([
-      {
-        data: {
-          ...meta({
-            status: "draft",
-          }),
-          md: ether(),
+    loadEntries([
+      entry({
+        meta: {
+          status: "draft",
         },
-      },
-    ] as any);
+      }),
+    ]);
 
     const posts = await getPosts({ includeUnpublished: true });
 
@@ -89,16 +89,13 @@ describe("getPosts", () => {
   });
 
   it("extracts image url", async () => {
-    vi.mocked(getCollection).mockResolvedValue([
-      {
-        data: {
-          ...meta(),
-          md: ether({
-            content: '<img src="https://example.com/image.png" />',
-          }),
+    loadEntries([
+      entry({
+        ether: {
+          content: '<img src="https://example.com/image.png" />',
         },
-      },
-    ] as any);
+      }),
+    ]);
 
     const posts = await getPosts();
     const result = posts[0];
@@ -107,15 +104,12 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter title", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ title: undefined })]);
-
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          title: "Hello",
-        },
+    loadEntries([
+      entry({
+        meta: { title: undefined },
+        ether: { frontmatter: { title: "Hello" } },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const result = posts[0];
@@ -124,15 +118,12 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter author", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ author: undefined })]);
-
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          author: "Alice",
-        },
+    loadEntries([
+      entry({
+        meta: { author: undefined },
+        ether: { frontmatter: { author: "Alice" } },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const result = posts[0];
@@ -141,14 +132,12 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter excerpt", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ excerpt: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          excerpt: "Hello",
-        },
+    loadEntries([
+      entry({
+        meta: { excerpt: undefined },
+        ether: { frontmatter: { excerpt: "Hello" } },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const result = posts[0];
@@ -157,14 +146,12 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter tags", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ tags: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          tags: ["a", "b", "c"],
-        },
+    loadEntries([
+      entry({
+        meta: { tags: undefined },
+        ether: { frontmatter: { tags: ["a", "b", "c"] } },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const result = posts[0];
@@ -173,14 +160,12 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter date", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ date: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          date: new Date("2021-09-02"),
-        },
+    loadEntries([
+      entry({
+        meta: { date: undefined },
+        ether: { frontmatter: { date: new Date("2021-09-02") } },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const result = posts[0];
@@ -189,14 +174,12 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter slug", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ slug: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          slug: "hello",
-        },
+    loadEntries([
+      entry({
+        meta: { slug: undefined },
+        ether: { frontmatter: { slug: "hello" } },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const result = posts.find((p) => p.slug === "hello");
@@ -212,14 +195,12 @@ describe("getPosts", () => {
   });
 
   it("uses frontmatter status", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ status: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          status: "publish",
-        },
+    loadEntries([
+      entry({
+        meta: { status: undefined },
+        ether: { frontmatter: { status: "publish" } },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const result = posts[0];
@@ -228,11 +209,13 @@ describe("getPosts", () => {
   });
 
   it("returns html", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: "hello world",
+    loadEntries([
+      entry({
+        ether: {
+          content: "hello world",
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -241,11 +224,13 @@ describe("getPosts", () => {
   });
 
   it("uses smartypants", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: '"hello world"',
+    loadEntries([
+      entry({
+        ether: {
+          content: '"hello world"',
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -254,14 +239,16 @@ describe("getPosts", () => {
   });
 
   it("does not require new line after html element", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: `
+    loadEntries([
+      entry({
+        ether: {
+          content: `
 <h1>heading</h1>
 paragraph
 `,
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -270,11 +257,13 @@ paragraph
   });
 
   it("allows for PHP Markdown Extra-style IDs", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: "# heading {#id}",
+    loadEntries([
+      entry({
+        ether: {
+          content: "# heading {#id}",
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -283,11 +272,13 @@ paragraph
   });
 
   it("handles id properly", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: "## More Real-World Commitment Devices  {#AUG}",
+    loadEntries([
+      entry({
+        ether: {
+          content: "## More Real-World Commitment Devices  {#AUG}",
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -296,15 +287,17 @@ paragraph
   });
 
   it("handles multiple IDs", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: `
+    loadEntries([
+      entry({
+        ether: {
+          content: `
 ## What Commitment Devices Have You Used on Yourself? {#POL}
 
 ## More Real-World Commitment Devices  {#AUG}
 `,
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -314,16 +307,18 @@ paragraph
   });
 
   it("supports link nonsense", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: `
+    loadEntries([
+      entry({
+        ether: {
+          content: `
 [paying is not punishment](
 https://blog.beeminder.com/depunish
 "Our paying-is-not-punishment post is also a prequel to our announcement of No-Excuses Mode"
 ) because
       `,
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -332,11 +327,13 @@ https://blog.beeminder.com/depunish
   });
 
   it("links footnotes", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: "$FN[foo] $FN[foo]",
+    loadEntries([
+      entry({
+        ether: {
+          content: "$FN[foo] $FN[foo]",
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -347,15 +344,17 @@ https://blog.beeminder.com/depunish
   });
 
   it("links footnotes with trailing number", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: `$FN[foo]
-        some text $DC2: some more text,
-        
-        $FN[DC2]
-        some more text`,
+    loadEntries([
+      entry({
+        ether: {
+          content: `$FN[foo]
+          some text $DC2: some more text,
+          
+          $FN[DC2]
+          some more text`,
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -364,16 +363,18 @@ https://blog.beeminder.com/depunish
   });
 
   it("separately links subscring footnote ids", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: `$FN[DC]
-        We computer scientists call this the principle of delayed commitment $DC2: commitment is bad, all else equal.
-        Why do today what only might need to be done tomorrow?
-        
-        $FN[DC2]
-        This is a footnote about commitment.`,
+    loadEntries([
+      entry({
+        ether: {
+          content: `$FN[DC]
+          We computer scientists call this the principle of delayed commitment $DC2: commitment is bad, all else equal.
+          Why do today what only might need to be done tomorrow?
+          
+          $FN[DC2]
+          This is a footnote about commitment.`,
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -382,11 +383,13 @@ https://blog.beeminder.com/depunish
   });
 
   it("expands refs", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: "$REF[foo] $REF[bar]",
+    loadEntries([
+      entry({
+        ether: {
+          content: "$REF[foo] $REF[bar]",
+        },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { content } = posts[0] || {};
@@ -395,14 +398,18 @@ https://blog.beeminder.com/depunish
   });
 
   it("parses frontmatter", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ slug: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          slug: "val",
+    loadEntries([
+      entry({
+        meta: {
+          slug: undefined,
+        },
+        ether: {
+          frontmatter: {
+            slug: "val",
+          },
         },
       }),
-    );
+    ]);
 
     const posts = await getPosts();
     const { slug } = posts.find((p) => p.slug === "val") || {};
@@ -411,7 +418,13 @@ https://blog.beeminder.com/depunish
   });
 
   it("uses wordpress excerpt", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ excerpt: "wp excerpt" })]);
+    loadEntries([
+      entry({
+        meta: {
+          excerpt: "wp excerpt",
+        },
+      }),
+    ]);
 
     const posts = await getPosts();
 
@@ -421,8 +434,12 @@ https://blog.beeminder.com/depunish
   });
 
   it("strips html from wp excerpts", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      meta({ excerpt: "<strong>wp excerpt</strong>" }),
+    loadEntries([
+      entry({
+        meta: {
+          excerpt: "<strong>wp excerpt</strong>",
+        },
+      }),
     ]);
 
     const posts = await getPosts();
@@ -433,51 +450,54 @@ https://blog.beeminder.com/depunish
   });
 
   it("throws on duplicate slugs", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      { source: "doc.bmndr.co/a" },
-      { source: "doc.bmndr.co/b" },
-    ]);
-
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: meta({
-          slug: "the_slug",
-          date: new Date(),
-        }),
+    loadEntries([
+      entry({
+        meta: {
+          slug: undefined,
+        },
+        ether: {
+          frontmatter: {
+            slug: "the_slug",
+          },
+        },
       }),
-    );
+      entry({
+        meta: {
+          slug: undefined,
+        },
+        ether: {
+          frontmatter: {
+            slug: "the_slug",
+          },
+        },
+      }),
+    ]);
 
     await expect(getPosts()).rejects.toThrow(/Duplicate slug/);
   });
 
   it("throws on duplicate disqus IDs", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      { source: "doc.bmndr.co/a" },
-      { source: "doc.bmndr.co/b" },
+    loadEntries([
+      entry({
+        meta: {
+          disqus_id: undefined,
+        },
+        ether: { frontmatter: { disqus_id: "the_disqus_id" } },
+      }),
+      entry({
+        meta: {
+          disqus_id: undefined,
+        },
+        ether: { frontmatter: { disqus_id: "the_disqus_id" } },
+      }),
     ]);
-
-    vi.mocked(fetchPost).mockResolvedValueOnce(
-      ether({
-        frontmatter: meta({
-          disqus_id: "the_disqus_id",
-          date: new Date(),
-        }),
-      }),
-    );
-
-    vi.mocked(fetchPost).mockResolvedValueOnce(
-      ether({
-        frontmatter: meta({
-          disqus_id: "the_disqus_id",
-          date: new Date(),
-        }),
-      }),
-    );
 
     await expect(getPosts()).rejects.toThrow(/Duplicate disqus/);
   });
+
   it("gets Collection", async () => {
     await getPosts();
+
     expect(getCollection).toBeCalled();
   });
 });

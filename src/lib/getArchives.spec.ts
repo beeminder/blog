@@ -2,10 +2,19 @@ import { describe, it, expect, beforeEach, vi } from "vitest";
 import getArchives from "./getArchives";
 import readSources from "./readSources";
 import meta from "./test/meta";
+import ether from "./test/ether";
+import { getCollection } from "astro:content";
 
 describe("getArchives", () => {
   beforeEach(() => {
-    vi.mocked(readSources).mockReturnValue([meta()]);
+    vi.mocked(getCollection).mockReturnValue([
+      {
+        data: {
+          ...meta(),
+          md: ether(),
+        },
+      },
+    ]);
   });
 
   it("batches by month", async () => {
@@ -32,7 +41,26 @@ describe("getArchives", () => {
   });
 
   it("handles three posts in one month", async () => {
-    vi.mocked(readSources).mockReturnValue([meta(), meta(), meta()]);
+    vi.mocked(getCollection).mockReturnValue([
+      {
+        data: {
+          ...meta(),
+          md: ether(),
+        },
+      },
+      {
+        data: {
+          ...meta(),
+          md: ether(),
+        },
+      },
+      {
+        data: {
+          ...meta(),
+          md: ether(),
+        },
+      },
+    ]);
 
     const result = await getArchives();
 
@@ -40,9 +68,19 @@ describe("getArchives", () => {
   });
 
   it("sorts posts by date", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      meta({ title: "A", date: "2013-02-22" }),
-      meta({ title: "B", date: "2013-02-21" }),
+    vi.mocked(getCollection).mockReturnValue([
+      {
+        data: {
+          ...meta({ title: "A", date: "2013-02-22" }),
+          md: ether(),
+        },
+      },
+      {
+        data: {
+          ...meta({ title: "B", date: "2013-02-21" }),
+          md: ether(),
+        },
+      },
     ]);
 
     const result = await getArchives();
