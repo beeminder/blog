@@ -21,4 +21,7 @@ export default defineConfig({
     }),
     sitemap(),
   ],
+  experimental: {
+    contentCollectionCache: true,
+  },
 });
