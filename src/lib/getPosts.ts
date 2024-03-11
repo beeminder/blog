@@ -1,6 +1,6 @@
 import memoize from "./memoize";
 import { type Post, post } from "../schemas/post";
-import fetchPosts from "./fetchPosts";
+import { getCollection } from "astro:content";
 
 const getDuplicates = (
   arr: Array<Record<string, unknown>>,
@@ -10,20 +10,19 @@ const getDuplicates = (
   return keys.filter((key) => keys.indexOf(key) !== keys.lastIndexOf(key));
 };
 
-const makePosts = memoize((): Promise<Post>[] =>
-  fetchPosts().map((p) =>
-    p.then((d) => {
-      const result = post.safeParse(d);
-      if (result.success) {
-        return result.data;
-      }
-      throw new Error(
-        `Failed to parse post ${d.source}: ${result.error.message}`,
-        result.error,
-      );
-    }),
-  ),
-);
+const makePosts = memoize(async (): Promise<Post[]> => {
+  const posts = await getCollection("posts");
+  return posts.map((p) => {
+    const result = post.safeParse(p.data);
+    if (result.success) {
+      return result.data;
+    }
+    throw new Error(
+      `Failed to parse post ${p.data.source}: ${result.error.message}`,
+      result.error,
+    );
+  });
+});
 
 const getPosts = memoize(
   async ({
@@ -33,7 +32,7 @@ const getPosts = memoize(
     includeUnpublished?: boolean;
     sort?: boolean;
   } = {}): Promise<Post[]> => {
-    const posts = await Promise.all(makePosts());
+    const posts = await makePosts();
 
     const duplicateSlugs = getDuplicates(posts, "slug");
     if (duplicateSlugs.length > 0) {

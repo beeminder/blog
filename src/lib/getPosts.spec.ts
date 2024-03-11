@@ -4,47 +4,36 @@ import fetchPost from "./fetchPost";
 import readSources from "./readSources";
 import ether from "./test/ether";
 import meta from "./test/meta";
+import { getCollection } from "astro:content";
 
 describe("getPosts", () => {
   beforeEach(() => {
-    vi.mocked(readSources).mockReturnValue([meta()]);
-  });
-
-  it("only loads sources once", async () => {
-    await getPosts();
-    await getPosts();
-
-    expect(readSources).toHaveBeenCalledTimes(1);
-  });
-
-  it("fetches post content", async () => {
-    await getPosts();
-
-    expect(fetchPost).toBeCalledWith(expect.stringContaining("the_source"));
-  });
-
-  it("sorts post by date descending", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      meta({ source: "new", date: "2013-02-22" }),
-      meta({ source: "old", date: "2013-02-21" }),
-    ]);
-
-    await getPosts();
-
-    expect(fetchPost).toBeCalledWith(expect.stringContaining("new"));
+    vi.mocked(getCollection).mockResolvedValue([
+      {
+        data: {
+          ...meta(),
+          md: ether(),
+        },
+      },
+    ] as any);
   });
 
   it("includes excerpts", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ excerpt: undefined })]);
-
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: "word",
-        frontmatter: {
-          excerpt: "MAGIC_AUTO_EXTRACT",
+    vi.mocked(getCollection).mockResolvedValue([
+      {
+        data: {
+          ...meta({
+            excerpt: undefined,
+          }),
+          md: ether({
+            content: "word",
+            frontmatter: {
+              excerpt: "MAGIC_AUTO_EXTRACT",
+            },
+          }),
         },
-      }),
-    );
+      },
+    ] as any);
 
     const posts = await getPosts();
 
@@ -52,7 +41,16 @@ describe("getPosts", () => {
   });
 
   it("excludes unpublished posts by default", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ status: "draft" })]);
+    vi.mocked(getCollection).mockResolvedValue([
+      {
+        data: {
+          ...meta({
+            status: "draft",
+          }),
+          md: ether(),
+        },
+      },
+    ] as any);
 
     const posts = await getPosts();
 
@@ -60,18 +58,20 @@ describe("getPosts", () => {
   });
 
   it("includes unpublished posts when requested", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ status: "draft" })]);
+    vi.mocked(getCollection).mockResolvedValue([
+      {
+        data: {
+          ...meta({
+            status: "draft",
+          }),
+          md: ether(),
+        },
+      },
+    ] as any);
 
     const posts = await getPosts({ includeUnpublished: true });
 
     expect(posts).toHaveLength(1);
-  });
-
-  it('caches posts without reference to "includeUnpublished"', async () => {
-    await getPosts();
-    await getPosts({ includeUnpublished: true });
-
-    expect(fetchPost).toHaveBeenCalledTimes(1);
   });
 
   it("sets disqus id", async () => {
@@ -89,11 +89,16 @@ describe("getPosts", () => {
   });
 
   it("extracts image url", async () => {
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        content: '<img src="https://example.com/image.png" />',
-      }),
-    );
+    vi.mocked(getCollection).mockResolvedValue([
+      {
+        data: {
+          ...meta(),
+          md: ether({
+            content: '<img src="https://example.com/image.png" />',
+          }),
+        },
+      },
+    ] as any);
 
     const posts = await getPosts();
     const result = posts[0];
@@ -470,5 +475,9 @@ https://blog.beeminder.com/depunish
     );
 
     await expect(getPosts()).rejects.toThrow(/Duplicate disqus/);
+  });
+  it("gets Collection", async () => {
+    await getPosts();
+    expect(getCollection).toBeCalled();
   });
 });

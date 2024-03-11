@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import "dotenv/config";
 import fetchPosts from "../src/lib/fetchPosts";
+import sanitize from "sanitize-filename";
 
 const promises = fetchPosts();
 const dir = "./src/content/posts";
@@ -17,12 +18,9 @@ fs.mkdirSync(dir, { recursive: true });
 promises.forEach((p) => {
   p.then((post) => {
     console.log(post.slug, post.source);
-    if (!post.slug) {
-      return;
-    }
     fs.writeFileSync(
-      path.join(dir, `${String(post.slug)}.md`),
-      String(post.md),
+      path.join(dir, `${sanitize(String(post.source))}.json`),
+      JSON.stringify(post, null, 2),
     );
   });
 });
