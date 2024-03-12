@@ -7014,13 +7014,26 @@
     "excerpt": "There are a lot of things in the category of “nerd tendencies I’ve had to unlearn”. I often turn them into capital-P Principles as a way to drill them into my head. Eventually I intend to collect them all into a meta post but here are a few random examples in the meantime: the Anti-Magic Principle, the Anti-Settings Principle, the Shirk-n-Turk Principle, and the Anti-Robustness",
     "redirects": []
   },
-  {
-    "source": "doc.bmndr.co/athletes",
-    "disqus_id": "2163 https://blog.beeminder.com/?p=2163",
-    "redirects": []
-},{
-"source": "doc.bmndr.co/blogmorphosis",
+{
+"slug": "athletes",
+"date": "2023-08-09",
+"author": "dreeves",
+"tags": ["akrasia", "bee-all", "FAQ", "rationality", "tips"],
+"status": "publish",
+"excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes",
+"source": "doc.bmndr.co/athletes",
+"disqus_id": "2163 https://blog.beeminder.com/?p=2163",
 "redirects": []
+},{
+"slug": "blogmorphosis",
+"source": "doc.bmndr.co/blogmorphosis",
+"redirects": [],
+"disqus_id": "blogmorphosis",
+"date": "2023-08-23",
+"author": "dreeves",
+"tags": ["navel-gazing", "bee-all", "tech", "colophon", "meta"],
+"status": "publish",
+"excerpt": "This is our first official post on our shiny new WordPress-free blog. Confetti-emoji! For well over a decade the Beeminder blog was on WordPress, hosted by WP Engine. That was..."
 },{
 "slug": "astroblog",
 "source": "doc.bmndr.co/astroblog",
