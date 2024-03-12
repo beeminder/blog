@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "tsx ./scripts/image-cache.ts && astro build",
+    "build": " pnpm md:pull && tsx ./scripts/image-cache.ts && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest",
