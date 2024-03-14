@@ -7156,5 +7156,15 @@
 "status": "publish",
 "tags": ["bee-all", "productivity", "navel-gazing", "productivity porn", "money", "rationality"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "rainbowdash",
+"disqus_id": "rainbowdash",
+"source": "doc.bmndr.co/rainbowdash",
+"redirects": [],
+"date": "2024-03-13",
+"author": "dreeves",
+"status": "publish",
+"tags": ["bee-all", "navel-gazing", "new features"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
