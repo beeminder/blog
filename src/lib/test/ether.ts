@@ -1,19 +1,21 @@
 import matter from "gray-matter";
 
-export default function ether({
-  frontmatter = {},
-  before = "",
-  content = "",
-  after = "",
-  title,
-}: {
+export type Ether = {
   frontmatter?: Record<string, unknown>;
   before?: string;
   content?: string;
   after?: string;
   title?: string;
   redirects?: string[];
-} = {}): string {
+};
+
+export default function ether({
+  frontmatter = {},
+  before = "",
+  content = "",
+  after = "",
+  title,
+}: Ether = {}): string {
   return matter.stringify(
     `
 ${before}

@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import prefetch from "@astrojs/prefetch";
-import getRedirects from "./src/lib/getRedirects";
+// import getRedirects from "./src/lib/getRedirects";
 
 import sitemap from "@astrojs/sitemap";
 import "dotenv/config";
@@ -11,14 +11,17 @@ export default defineConfig({
   image: {
     domains: ["blog.beeminder.com", "user-images.githubusercontent.com"],
   },
-  redirects: await getRedirects().catch((e) => {
-    console.error(e);
-    throw e;
-  }),
+  // redirects: await getRedirects().catch((e) => {
+  //   console.error(e);
+  //   throw e;
+  // }),
   integrations: [
     prefetch({
       selector: "a",
     }),
     sitemap(),
   ],
+  experimental: {
+    contentCollectionCache: true,
+  },
 });

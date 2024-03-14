@@ -1,15 +1,21 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import getTags from "./getTags";
-import readSources from "./readSources";
 import meta from "./test/meta";
+import { getCollection } from "astro:content";
+import ether from "./test/ether";
 
 describe("getTags", () => {
   beforeEach(() => {
-    vi.mocked(readSources).mockReturnValue([
-      meta({
-        tags: ["the_tag"],
-      }),
-    ]);
+    vi.mocked(getCollection).mockReturnValue([
+      {
+        data: {
+          ...meta({
+            tags: ["the_tag"],
+          }),
+          md: ether(),
+        },
+      },
+    ] as any);
   });
 
   it("returns tags", async () => {
@@ -37,11 +43,16 @@ describe("getTags", () => {
   });
 
   it("does not include blank tags", async () => {
-    vi.mocked(readSources).mockReturnValue([
-      meta({
-        tags: [""],
-      }),
-    ]);
+    vi.mocked(getCollection).mockReturnValue([
+      {
+        data: {
+          ...meta({
+            tags: [""],
+          }),
+          md: ether(),
+        },
+      },
+    ] as any);
 
     const result = await getTags();
 

@@ -33,6 +33,7 @@ vi.mock("astro", () => ({
     stop: vi.fn(),
   })),
 }));
+vi.mock("astro:content");
 vi.mock("pixelmatch");
 vi.mock("pngjs");
 vi.mock("sharp");

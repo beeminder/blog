@@ -9,6 +9,7 @@ package-lock.json
 # build output
 dist/
 .cache/
+src/content/posts/
 
 # generated types
 .astro/
