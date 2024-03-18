@@ -1,7 +1,4 @@
-import matter from "gray-matter";
-
 export default function ether({
-  frontmatter = {},
   before = "",
   content = "",
   after = "",
@@ -14,14 +11,9 @@ export default function ether({
   title?: string;
   redirects?: string[];
 } = {}): string {
-  return matter.stringify(
-    `
-${before}
+  return `${before}
 BEGIN_MAGIC${title ? `[${title}]` : ""}
 ${content}
 END_MAGIC
-${after}
-`,
-    frontmatter,
-  );
+${after}`;
 }

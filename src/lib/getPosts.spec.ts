@@ -35,14 +35,13 @@ describe("getPosts", () => {
   });
 
   it("includes excerpts", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ excerpt: undefined })]);
+    vi.mocked(readSources).mockReturnValue([
+      meta({ excerpt: "MAGIC_AUTO_EXTRACT" }),
+    ]);
 
     vi.mocked(fetchPost).mockResolvedValue(
       ether({
         content: "word",
-        frontmatter: {
-          excerpt: "MAGIC_AUTO_EXTRACT",
-        },
       }),
     );
 
@@ -101,121 +100,7 @@ describe("getPosts", () => {
     expect(result?.image?.src).toEqual("https://example.com/image.png");
   });
 
-  it("uses frontmatter title", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ title: undefined })]);
-
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          title: "Hello",
-        },
-      }),
-    );
-
-    const posts = await getPosts();
-    const result = posts[0];
-
-    expect(result?.title).toEqual("Hello");
-  });
-
-  it("uses frontmatter author", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ author: undefined })]);
-
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          author: "Alice",
-        },
-      }),
-    );
-
-    const posts = await getPosts();
-    const result = posts[0];
-
-    expect(result?.author).toEqual("Alice");
-  });
-
-  it("uses frontmatter excerpt", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ excerpt: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          excerpt: "Hello",
-        },
-      }),
-    );
-
-    const posts = await getPosts();
-    const result = posts[0];
-
-    expect(result?.excerpt).toEqual("Hello");
-  });
-
-  it("uses frontmatter tags", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ tags: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          tags: ["a", "b", "c"],
-        },
-      }),
-    );
-
-    const posts = await getPosts();
-    const result = posts[0];
-
-    expect(result?.tags).toEqual(expect.arrayContaining(["a", "b", "c"]));
-  });
-
-  it("uses frontmatter date", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ date: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          date: new Date("2021-09-02"),
-        },
-      }),
-    );
-
-    const posts = await getPosts();
-    const result = posts[0];
-
-    expect(result?.date_string).toEqual("2021-09-02");
-  });
-
-  it("uses frontmatter slug", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ slug: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          slug: "hello",
-        },
-      }),
-    );
-
-    const posts = await getPosts();
-    const result = posts.find((p) => p.slug === "hello");
-
-    expect(result?.slug).toEqual("hello");
-  });
-
   it("uses legacy status", async () => {
-    const posts = await getPosts();
-    const result = posts[0];
-
-    expect(result?.status).toEqual("publish");
-  });
-
-  it("uses frontmatter status", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ status: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          status: "publish",
-        },
-      }),
-    );
-
     const posts = await getPosts();
     const result = posts[0];
 
@@ -389,22 +274,6 @@ https://blog.beeminder.com/depunish
     expect(content).toContain("2");
   });
 
-  it("parses frontmatter", async () => {
-    vi.mocked(readSources).mockReturnValue([meta({ slug: undefined })]);
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: {
-          slug: "val",
-        },
-      }),
-    );
-
-    const posts = await getPosts();
-    const { slug } = posts.find((p) => p.slug === "val") || {};
-
-    expect(slug).toEqual("val");
-  });
-
   it("uses wordpress excerpt", async () => {
     vi.mocked(readSources).mockReturnValue([meta({ excerpt: "wp excerpt" })]);
 
@@ -429,45 +298,26 @@ https://blog.beeminder.com/depunish
 
   it("throws on duplicate slugs", async () => {
     vi.mocked(readSources).mockReturnValue([
-      { source: "doc.bmndr.co/a" },
-      { source: "doc.bmndr.co/b" },
+      meta({ source: "doc.bmndr.co/a", slug: "the_slug", date: "2020-01-01" }),
+      meta({ source: "doc.bmndr.co/b", slug: "the_slug", date: "2020-01-01" }),
     ]);
-
-    vi.mocked(fetchPost).mockResolvedValue(
-      ether({
-        frontmatter: meta({
-          slug: "the_slug",
-          date: new Date(),
-        }),
-      }),
-    );
 
     await expect(getPosts()).rejects.toThrow(/Duplicate slug/);
   });
 
   it("throws on duplicate disqus IDs", async () => {
     vi.mocked(readSources).mockReturnValue([
-      { source: "doc.bmndr.co/a" },
-      { source: "doc.bmndr.co/b" },
+      meta({
+        source: "doc.bmndr.co/a",
+        date: "2020-01-01",
+        disqus_id: "the_disqus_id",
+      }),
+      meta({
+        source: "doc.bmndr.co/b",
+        date: "2020-01-01",
+        disqus_id: "the_disqus_id",
+      }),
     ]);
-
-    vi.mocked(fetchPost).mockResolvedValueOnce(
-      ether({
-        frontmatter: meta({
-          disqus_id: "the_disqus_id",
-          date: new Date(),
-        }),
-      }),
-    );
-
-    vi.mocked(fetchPost).mockResolvedValueOnce(
-      ether({
-        frontmatter: meta({
-          disqus_id: "the_disqus_id",
-          date: new Date(),
-        }),
-      }),
-    );
 
     await expect(getPosts()).rejects.toThrow(/Duplicate disqus/);
   });
