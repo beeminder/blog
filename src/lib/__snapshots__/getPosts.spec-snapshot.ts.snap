@@ -5247,7 +5247,7 @@ You can report those in the comments or
 "
 `;
 
-exports[`body > post athletes hash 20c50fcee4500274200a6f7a548f4a9a 1`] = `
+exports[`body > post athletes hash a3590e7bf12a75f1a173a33fe890c412 1`] = `
 "
 <p>
   <img
@@ -10113,7 +10113,7 @@ Claiming the bounty at midnight is fine.
 "
 `;
 
-exports[`body > post blogmorphosis hash 8e28c0cd4c82241ad375991ded12234c 1`] = `
+exports[`body > post blogmorphosis hash 4ed52deb9d78c831d6ae26d8f6dbd82e 1`] = `
 "
 <p>
   <img
@@ -42146,7 +42146,7 @@ And stay on the Yellow Brick Road.
 "
 `;
 
-exports[`body > post glossary hash 7f58cd7783ab93d2bc4a2f19949eb6cd 1`] = `
+exports[`body > post glossary hash d9f14e73b59814a412cab69f13c78c66 1`] = `
 "
 <p>
   <img
@@ -42306,7 +42306,9 @@ as we notice nomenclature that isn&#8217;t self-evident or terms change.
   <a href=\\"#n\\">
     n
   </a>
-  o
+  <a href=\\"#o\\">
+    o
+  </a>
   <a href=\\"#p\\">
     p
   </a>
@@ -42342,7 +42344,7 @@ as we notice nomenclature that isn&#8217;t self-evident or terms change.
   Akrasia
 </h4>
 <p>
-  : Procrastination, impetuousness, failure of willpower, acting against one&#8217;s own better judgment.
+  Procrastination, impetuousness, failure of willpower, acting against one&#8217;s own better judgment.
 Doing something you regret even as you&#8217;re doing it.
 See the sidebar of this blog, or check out our
   <a
@@ -42353,23 +42355,10 @@ See the sidebar of this blog, or check out our
   </a>
   .
 </p>
-Procrastination, impetuousness, failure of willpower, acting against one&#8217;s own better judgment.
-Doing something you regret even as you&#8217;re doing it.
-See the sidebar of this blog, or check out our
-<a
-  href=\\"http://blog.beeminder.com/akrasia\\"
-  title=\\"The inaugural post on the Beeminder Blog\\"
->
-  Anti-Akrasia Manifesto
-</a>
-.
-
-&#8212;&gt;
 <h4 id=\\"ahorizon .def\\">
   Akrasia Horizon
 </h4>
 <p>
-  :
   <em>
     Akrasia
   </em>
@@ -42379,6 +42368,7 @@ See the sidebar of this blog, or check out our
   </em>
   quantifies &#8220;immediate&#8221;.
 It&#8217;s the timeframe within which your short-term impulses outweigh your better judgment &#8212; taken by Beeminder to always be one week in the future.
+ 
 You can make arbitrary changes to your goal &#8212; the steepness of your
   <em>
     bright red line
@@ -42410,7 +42400,7 @@ See also
   Akrasia-proofing
 </h4>
 <p>
-  : The delay Beeminder imposes on making changes to your goal so that you&#8217;re always making decisions beyond you
+  The delay Beeminder imposes on making changes to your goal so that you&#8217;re always making decisions beyond you
   <em>
     akrasia horizon
   </em>
@@ -42425,7 +42415,7 @@ See also
   Akratic
 </h4>
 <p>
-  : The adjectival form of
+  The adjectival form of
   <em>
     akrasia
   </em>
@@ -42453,7 +42443,7 @@ UPDATE: Akratics Anonymous has been subsumed by the amazing
   All-you-can-eat-buffet-hopping vacation
 </h4>
 <p>
-  : A hypothetical reason to make a weight-loss
+  A hypothetical reason to make a weight-loss
   <em>
     bright red line
   </em>
@@ -42468,7 +42458,7 @@ For most goals it&#8217;s sufficient to add a
   Archive
 </h4>
 <p>
-  : To get a goal out of your gallery &#8212; used to cry uncle on a goal.
+  To get a goal out of your gallery &#8212; used to cry uncle on a goal.
 The goal will be archived after one week, i.e., subject to the
   <em>
     akrasia horizon
@@ -42481,7 +42471,7 @@ Newly created goals that you archive will also give you the option to blow them 
   Autodata goal
 </h4>
 <p>
-  : A goal that has an automatic data source, like
+  A goal that has an automatic data source, like
   <a
     href=\\"http://beeminder.com/rescuetime\\"
     title=\\"Passive time-tracking\\"
@@ -42545,7 +42535,7 @@ The full list of autodata sources is on the Beeminder
   Auto-ratchet
 </h4>
 <p>
-  : A premium feature to automatically
+  A premium feature to automatically
   <em>
     ratchet
   </em>
@@ -42559,7 +42549,7 @@ The full list of autodata sources is on the Beeminder
   Auto-summing
 </h4>
 <p>
-  : Goals that are
+  Goals that are
   <em>
     auto-summing
   </em>
@@ -42571,7 +42561,7 @@ Exceptions include weight loss and odometer goals and whittle-down goals.
   Auto-widening
 </h4>
 <p>
-  : This
+  This
   <a
     href=\\"https://blog.beeminder.com/autowide/\\"
     title=\\"Blog post about how we killed this beastly abomination\\"
@@ -42587,13 +42577,13 @@ Exceptions include weight loss and odometer goals and whittle-down goals.
   Backburner (below the fold)
 </h4>
 <p>
-  : This isn&#8217;t a thing anymore!
+  This isn&#8217;t a thing anymore!
 </p>
 <h4 id=\\"badside .def\\">
   Bad side of the line
 </h4>
 <p>
-  : The
+  The
   <em>
     bright red line
   </em>
@@ -42608,7 +42598,7 @@ If you end the day (whenever you set your deadline to) on the wrong side, you
   The beehive
 </h4>
 <p>
-  : Beeminder headquarters.
+  Beeminder headquarters.
   <a
     href=\\"http://blog.beeminder.com/beehive\\"
     title=\\"Blog post from when we first moved here\\"
@@ -42629,7 +42619,7 @@ Later we moved in with Mobilitus /
   Beemail
 </h4>
 <p>
-  : Daily, weekly, monthly, or yearly emails that we (the founders) send to keep everyone in the loop on what&#8217;s new with Beeminder.
+  Daily, weekly, monthly, or yearly emails that we (the founders) send to keep everyone in the loop on what&#8217;s new with Beeminder.
 By default you&#8217;ll get them monthly but you can change that by going to
 Your Account →
 Settings →
@@ -42641,7 +42631,7 @@ If you&#8217;re reading our glossary then you&#8217;ll probably enjoy getting da
   Beemergency
 </h4>
 <p>
-  : A day when your
+  A day when your
   <em>
     datapoint
   </em>
@@ -42666,7 +42656,7 @@ by midnight at the end of this day.
   To beemind
 </h4>
 <p>
-  : To use Beeminder to track and commit to a goal.
+  To use Beeminder to track and commit to a goal.
 Often used transitively, as in &#8220;I&#8217;m beeminding my donut consumption.&#8221;
 Think of &#8220;beeminding X&#8221; as an intensified version of &#8220;minding X&#8221;.
 </p>
@@ -42674,7 +42664,7 @@ Think of &#8220;beeminding X&#8221; as an intensified version of &#8220;minding 
   Bot
 </h4>
 <p>
-  : The program you interact with by email or SMS. 
+  The program you interact with by email or SMS. 
 It reminds you to add data, you reply to it with new data, and it warns you if you&#8217;re about to
   <em>
     derail
@@ -42685,7 +42675,7 @@ It reminds you to add data, you reply to it with new data, and it warns you if y
   Bright red line
 </h4>
 <p>
-  : The line demarcating the
+  The line demarcating the
   <em>
     good side
   </em>
@@ -42703,7 +42693,7 @@ If your progress perfectly followed the bright red line, you would reach your go
   Centerline
 </h4>
 <p>
-  : Not a thing anymore!
+  Not a thing anymore!
 See
   <em>
     bright red line
@@ -42714,7 +42704,7 @@ See
   Commitment contract (also: commitment device)
 </h4>
 <p>
-  : A means by which you constrain your own future behavior for the purposes of thwarting
+  A means by which you constrain your own future behavior for the purposes of thwarting
   <em>
     akrasia
   </em>
@@ -42743,7 +42733,7 @@ See also
   Commitment dial
 </h4>
 <p>
-  : The three parameters, shown beneath your graph, that determine your goal and the steepness of the
+  The three parameters, shown beneath your graph, that determine your goal and the steepness of the
   <em>
     bright red line
   </em>
@@ -42778,7 +42768,7 @@ See
   Cumulative
 </h4>
 <p>
-  : See
+  See
   <em>
     auto-summing
   </em>
@@ -42791,7 +42781,7 @@ See
   Datapoints
 </h4>
 <p>
-  : The values you enter into Beeminder, or that Beeminder enters for you in the case of
+  The values you enter into Beeminder, or that Beeminder enters for you in the case of
   <em>
     autodata goals
   </em>
@@ -42822,7 +42812,7 @@ red means you&#8217;re going to
   Derail
 </h4>
 <p>
-  : To allow your
+  To allow your
   <em>
     datapoints
   </em>
@@ -42851,7 +42841,7 @@ If you had a
   Dial up/down
 </h4>
 <p>
-  : To make your
+  To make your
   <em>
     bright red line
   </em>
@@ -42875,7 +42865,7 @@ Changes you make to your red line have a one-week delay before they take effect,
   Do Less goal
 </h4>
 <p>
-  : Formerly known as 
+  Formerly known as 
 &#8220;
   <a
     href=\\"http://blog.beeminder.com/less\\"
@@ -42912,7 +42902,7 @@ See also
   Do More goal
 </h4>
 <p>
-  : This is the most common Beeminder goal type. 
+  This is the most common Beeminder goal type. 
 You enter a value every time you do something you want to do more of &#8212; minutes of exercise, number of workouts, servings of vegetables, hours of work &#8212; and Beeminder
   <em>
     auto-sums
@@ -42932,7 +42922,7 @@ Think of them as goals to do more (or less) than you would otherwise do if left 
   Emergency day (eep day)
 </h4>
 <p>
-  : See
+  See
   <em>
     beemergency
   </em>
@@ -42945,7 +42935,7 @@ Think of them as goals to do more (or less) than you would otherwise do if left 
   Flatline / flatlining
 </h4>
 <p>
-  : When you report no data, Beeminder assumes that you did nothing (or stayed the same weight). 
+  When you report no data, Beeminder assumes that you did nothing (or stayed the same weight). 
 We add a placeholder
   <em>
     datapoint
@@ -42966,7 +42956,7 @@ Exception:
   Flat spot
 </h4>
 <p>
-  : A period in which your
+  A period in which your
   <em>
     bright red line
   </em>
@@ -42995,7 +42985,7 @@ When you start a new goal or
   Freebee
 </h4>
 <p>
-  : A freebee is a goal with a $0 pledge.
+  A freebee is a goal with a $0 pledge.
 (Historical note: Freebees used to refer to
   <a
     href=\\"https://blog.beeminder.com/freebees/\\"
@@ -43009,7 +42999,7 @@ When you start a new goal or
   Freeze
 </h4>
 <p>
-  : If you
+  If you
   <em>
     derail
   </em>
@@ -43039,11 +43029,11 @@ You can still add data to a frozen goal but the
   </em>
   won&#8217;t remind you to do so and the graph won&#8217;t update when you do.
 </p>
-<h4>
-  Frontburner (above the fold) {.def}
+<h4 id=\\"frontburner .def\\">
+  Frontburner (above the fold)
 </h4>
 <p>
-  : See
+  See
   <em>
     backburner
   </em>
@@ -43052,11 +43042,11 @@ You can still add data to a frozen goal but the
 <h2 id=\\"g\\">
   G
 </h2>
-<h4>
-  Good side of the line/road {.def}
+<h4 id=\\"goodside .def\\">
+  Good side of the line/road
 </h4>
 <p>
-  : See
+  See
   <em>
     bad side
   </em>
@@ -43069,7 +43059,7 @@ You can still add data to a frozen goal but the
   Legit check
 </h4>
 <p>
-  : An email that the
+  An email that the
   <em>
     bot
   </em>
@@ -43090,7 +43080,7 @@ It&#8217;s slightly cumbersome, by design, but if the derailment was in any way 
   Lifehacking
 </h4>
 <p>
-  : The use of clever or perhaps unorthodox tricks to improve one&#8217;s life, particularly one&#8217;s own behavior.
+  The use of clever or perhaps unorthodox tricks to improve one&#8217;s life, particularly one&#8217;s own behavior.
 Beeminder is a hardcore lifehack.
 </p>
 <h2 id=\\"m\\">
@@ -43100,7 +43090,7 @@ Beeminder is a hardcore lifehack.
   Mercy
 </h4>
 <p>
-  : Old name for post-derail
+  Old name for post-derail
   <em>
     respite
   </em>
@@ -43110,7 +43100,7 @@ Beeminder is a hardcore lifehack.
   Motivation point
 </h4>
 <p>
-  : The minimum
+  The minimum
   <em>
     pledge
   </em>
@@ -43144,7 +43134,7 @@ Also known as the psychological bite point (thanks to Noah Wilde for the term).
   No-Excuses Mode
 </h4>
 <p>
-  : If you check this box (press this button) in your goal settings then you&#8217;re precommitting to accept all derailments as final, regardless of any extenuating circumstances.
+  If you check this box (press this button) in your goal settings then you&#8217;re precommitting to accept all derailments as final, regardless of any extenuating circumstances.
 In other words, if you cry foul in response to a
   <em>
     legit check
@@ -43172,7 +43162,7 @@ Details in the
   No-mercy rerail
 </h4>
 <p>
-  : Normally you automatically
+  Normally you automatically
   <em>
     rerail
   </em>
@@ -43191,11 +43181,14 @@ Check the no-mercy checkbox in your goal settings if you want to be immediately 
   </em>
   .
 </p>
+<h2 id=\\"o\\">
+  O
+</h2>
 <h4 id=\\"odom .def\\">
   Odometer goal
 </h4>
 <p>
-  : A goal that is not
+  A goal that is not
   <em>
     auto-summing
   </em>
@@ -43218,7 +43211,7 @@ If you report a zero then Beeminder treats that as the odometer getting reset (o
   Panic threshold
 </h4>
 <p>
-  : Not a thing anymore! We got rid of this! 
+  Not a thing anymore! We got rid of this! 
 Instead you can now directly set for each goal the time of day that Beeminder starts sending reminders.
 One less glossary term to worry about!
 </p>
@@ -43226,7 +43219,7 @@ One less glossary term to worry about!
   Pessimistic presumptive reports
 </h4>
 <p>
-  : This applies to
+  This applies to
   <em>
     Do Less
   </em>
@@ -43260,7 +43253,7 @@ See
   Pledge
 </h4>
 <p>
-  : The amount of money you have committed to pay if you
+  The amount of money you have committed to pay if you
   <em>
     derail
   </em>
@@ -43300,7 +43293,7 @@ You can lower your pledge for free but it&#8217;s subject to the
   Precommit to recommit
 </h4>
 <p>
-  : This is the fundamental tenet of Beeminder that, unless you&#8217;ve explicitly hit
+  This is the fundamental tenet of Beeminder that, unless you&#8217;ve explicitly hit
   <em>
     archive
   </em>
@@ -43319,7 +43312,7 @@ It has a name because, historically, it was something you had to specifically op
   Premium plans
 </h4>
 <p>
-  : We intend for Beeminder to always be a totally free awesomeness-inducer (free if you don&#8217;t cross the
+  We intend for Beeminder to always be a totally free awesomeness-inducer (free if you don&#8217;t cross the
   <em>
     bright red line
   </em>
@@ -43345,7 +43338,7 @@ you&#8217;ll get
   Programmable self
 </h4>
 <p>
-  : The next stage of evolution of
+  The next stage of evolution of
   <em>
     quantified self
   </em>
@@ -43366,7 +43359,7 @@ you&#8217;ll get
   Quantified self
 </h4>
 <p>
-  : &#8220;Self knowledge through numbers&#8221;. 
+  &#8220;Self knowledge through numbers&#8221;. 
 (See
   <a
     href=\\"http://quantifiedself.com\\"
@@ -43387,7 +43380,7 @@ you&#8217;ll get
   Ratchet
 </h4>
 <p>
-  : Changing the
+  Changing the
   <em>
     bright red line
   </em>
@@ -43410,7 +43403,7 @@ Ratcheting adjusts your bright red line to be closer to your current
   Rate/steepness
 </h4>
 <p>
-  : The number of goal actions or units you are commmitted to completing per week (or per day).
+  The number of goal actions or units you are commmitted to completing per week (or per day).
 A rate of zero means a
   <em>
     flat spot
@@ -43434,7 +43427,7 @@ The rate can be adjusted subject to the
   Rerail
 </h4>
 <p>
-  : To recommit to a goal after you&#8217;ve
+  To recommit to a goal after you&#8217;ve
   <em>
     derailed
   </em>
@@ -43463,7 +43456,7 @@ The
   Respite
 </h4>
 <p>
-  : Previously known as &#8220;mercy&#8221; and now as
+  Previously known as &#8220;mercy&#8221; and now as
   <em>
     post-derail respite
   </em>
@@ -43494,17 +43487,17 @@ For a
   Retroratchet
 </h4>
 <p>
-  : Old name for
+  Old name for
   <em>
     ratchet
   </em>
   .
 </p>
-<h4>
-  Right lane {.def}
+<h4 id=\\"rightlane .def\\">
+  Right lane
 </h4>
 <p>
-  : Not a thing anymore!
+  Not a thing anymore!
 There&#8217;s just a single
   <em>
     bright red line
@@ -43515,17 +43508,17 @@ There&#8217;s just a single
   Road
 </h4>
 <p>
-  : See
+  See
   <em>
     yellow brick road
   </em>
   .
 </p>
-<h4>
-  Road dial {.def}
+<h4 id=\\"roaddial .def\\">
+  Road dial
 </h4>
 <p>
-  : See
+  See
   <em>
     commitment dial
   </em>
@@ -43538,7 +43531,7 @@ There&#8217;s just a single
   Safety buffer, safe days
 </h4>
 <p>
-  : The number of days you can go without reporting data or doing what you committed to before you
+  The number of days you can go without reporting data or doing what you committed to before you
   <em>
     derail
   </em>
@@ -43557,7 +43550,7 @@ If you are at zero safe days then the next day is a
   Set-A-Limit goal
 </h4>
 <p>
-  : Former name for
+  Former name for
   <em>
     Do Less
   </em>
@@ -43567,7 +43560,7 @@ If you are at zero safe days then the next day is a
   Short-circuit
 </h4>
 <p>
-  : To increase your
+  To increase your
   <em>
     pledge
   </em>
@@ -43591,7 +43584,7 @@ For example, if you&#8217;re jumping from a $10 pledge to a $30 pledge, you must
   SOS clause
 </h4>
 <p>
-  : If something truly unexpected happens, such as physical injury, that prevents you from staying on the right side of the
+  If something truly unexpected happens, such as physical injury, that prevents you from staying on the right side of the
   <em>
     bright red line
   </em>
@@ -43618,7 +43611,7 @@ Email
   (Getting) stung
 </h4>
 <p>
-  : See
+  See
   <em>
     derail
   </em>
@@ -43628,7 +43621,7 @@ Email
   Supporters
 </h4>
 <p>
-  : Supporters are friends/family/enemies who will be cc&#8217;d on any
+  Supporters are friends/family/enemies who will be cc&#8217;d on any
   <em>
     legit check
   </em>
@@ -43654,7 +43647,7 @@ See
   Urgency load
 </h4>
 <p>
-  : The idea of Urgency Load is to construct a single number that captures how edge-skatey you are across all your goals.
+  The idea of Urgency Load is to construct a single number that captures how edge-skatey you are across all your goals.
 Every day of
   <em>
     safety buffer
@@ -43680,7 +43673,7 @@ And adding new goals can at best leave your urgency load unchanged, if you keep 
   User-Visible Improvement (UVI)
 </h4>
 <p>
-  : Early on, before we even publicly launched, the Beeminder founders, being dogfood maniacs, hard-committed to averaging one user-visible improvement to Beeminder every day.
+  Early on, before we even publicly launched, the Beeminder founders, being dogfood maniacs, hard-committed to averaging one user-visible improvement to Beeminder every day.
 We sometimes describe the day&#8217;s
   <em>
     UVI
@@ -43724,7 +43717,7 @@ We sometimes describe the day&#8217;s
   Uservoice
 </h4>
 <p>
-  : The old home of our feedback forum, now superceded by the amazing
+  The old home of our feedback forum, now superceded by the amazing
   <a
     href=\\"https://forum.beeminder.com\\"
     title=\\"Hosted by Discouse.org. Previously we linked to uservoice.beeminder.com which does technically still exist, and then to Akratics Anonymous\\"
@@ -43740,7 +43733,6 @@ We sometimes describe the day&#8217;s
   Weasel
 </h4>
 <p>
-  :
   <em>
     Weaseling
   </em>
@@ -43767,10 +43759,10 @@ We sometimes describe the day&#8217;s
   <em>
     weasel-proofing
   </em>
-  ) {#weaselproof .def}
+  ) {#weaselproof}
 </h4>
 <p>
-  : See
+  See
   <em>
     No-Excuses Mode
   </em>
@@ -43779,7 +43771,7 @@ We sometimes describe the day&#8217;s
   Whittle-down goal
 </h4>
 <p>
-  : Like an
+  Like an
   <em>
     odometer
   </em>
@@ -43790,7 +43782,7 @@ Like if you want to whittle down the number of messages in your inbox.
   Wrong lane
 </h4>
 <p>
-  : Not a thing anymore!
+  Not a thing anymore!
 There&#8217;s just a single
   <em>
     bright red line
@@ -43804,7 +43796,7 @@ There&#8217;s just a single
   Yellow brick road
 </h4>
 <p>
-  : The path to your goal. 
+  The path to your goal. 
 This is/was drawn as a literal yellow brick road on your graph and you&#8217;re committing to keep your
   <em>
     datapoints
@@ -43831,7 +43823,7 @@ UPDATE: We&#8217;ve since
   Yellow guiding lines
 </h4>
 <p>
-  : These appear above or below your goal to indicate which side of the
+  These appear above or below your goal to indicate which side of the
   <em>
     bright red line
   </em>
@@ -43873,7 +43865,7 @@ It will take effect after the akrasia horizon (7 days) but since you have that m
   Zeno polling
 </h4>
 <p>
-  : If Zeno polling is enabled, you&#8217;ll get reminded ever more persistently on
+  If Zeno polling is enabled, you&#8217;ll get reminded ever more persistently on
   <em>
     beemergency days
   </em>
@@ -58303,7 +58295,7 @@ Check out
 "
 `;
 
-exports[`body > post mirabai hash 3f1c77fa939fec1aa0bfc398445861b4 1`] = `
+exports[`body > post mirabai hash 1a624aa6f1eb83810a40dec7f7159219 1`] = `
 "
 <p>
   <img
@@ -58401,14 +58393,18 @@ Now, though, it&#8217;s the first thing I see when I get up in the morning, and 
 <h3>
   Business
 </h3>
-<p>
+<h5>
   Reply Zero
-: Answer all emails tagged with a @reply label. 
+</h5>
+<p>
+  Answer all emails tagged with a @reply label. 
 Beeminder has cured me of Inbox Sprawl by training me to achieve Inbox Zero several times a day, so my only remaining challenge is to reply to everything requiring an answer in a timely manner.
 </p>
-<p>
+<h5>
   Blog
-: I get a point every time I make an entry on
+</h5>
+<p>
+  I get a point every time I make an entry on
   <a
     href=\\"http://plover.stenoknight.com/\\"
     title=\\"The Plover Blog\\"
@@ -58429,9 +58425,11 @@ Totally getting a point for this post.
 <h3>
   Household
 </h3>
-<p>
+<h5>
   Food Money
-: I&#8217;ve been using
+</h5>
+<p>
+  I&#8217;ve been using
   <a
     href=\\"http://forum.beeminder.com/t/how-do-you-beemind-your-finances/321\\"
     title=\\"Also known as YNAB.com but this is a link to Beeminder users raving about YNAB in the Beeeminder forum, which we figure will be more persuasive to this audience than YNAB&#39;s own website\\"
@@ -58441,17 +58439,21 @@ Totally getting a point for this post.
   to keep track of my expenses, and it&#8217;s become increasingly clear that I spend way too much money on food. 
 This is a reverse odometer custom goal that keeps me under a set amount spent on groceries + restaurants + delivery.
 </p>
-<p>
+<h5>
   Cheaper Groceries
-: I love expensive grocery stores. It&#8217;s a terrible habit. 
+</h5>
+<p>
+  I love expensive grocery stores. It&#8217;s a terrible habit. 
 This goal gives me a point whenever I go to an affordable grocery store, and takes away a point whenever I go to one of the absurdly pricey fancypants stores that abound in New York City.
 </p>
 <h4 class=\\"pullquote\\">
   &#8220;[Habitica] is a perfect complement to Beeminder&#8221;
 </h4>
-<p>
+<h5>
   HabitRPG
-: Beeminder only tracks to-dos, which I reserve for apartment cleaning tasks, but I&#8217;ve been using HabitRPG
+</h5>
+<p>
+  Beeminder only tracks to-dos, which I reserve for apartment cleaning tasks, but I&#8217;ve been using HabitRPG
   <a
     class=\\"footnote\\"
     id=\\"HABITICA1\\"
@@ -58465,13 +58467,17 @@ It&#8217;s a perfect complement to Beeminder.
 <h3>
   Health
 </h3>
-<p>
+<h5>
   Swim or Gym
-: I get a point every time I go swimming at the pool downtown or to the cardio room at the gym across the street.
-</p>
+</h5>
 <p>
+  I get a point every time I go swimming at the pool downtown or to the cardio room at the gym across the street.
+</p>
+<h5>
   RunKeeper
-: Straightforward mile-based cycling goal. 
+</h5>
+<p>
+  Straightforward mile-based cycling goal. 
 Just bought my own bike last month, so I don&#8217;t always have to use Citibike anymore! 
 Instead of only biking on my daily commute, I can actually do it for fun, in my own neighborhood. 
 Beeminder&#8217;s
@@ -58483,15 +58489,19 @@ Beeminder&#8217;s
   </a>
   makes it simple.
 </p>
-<p>
+<h5>
   Junk
-: Every day I give myself three points. 
+</h5>
+<p>
+  Every day I give myself three points. 
 If I choose to consume red meat, crunchy fried things, sugary stuff, caffeine, or alcohol, I have to give back a point. 
 I need 16 points a week to stay in the green.
 </p>
-<p>
+<h5>
   Sleep as Android
-: Another great
+</h5>
+<p>
+  Another great
   <a
     href=\\"http://blog.beeminder.com/sleep\\"
     title=\\"Beeminder blog post about the official Sleep as Android integration\\"
@@ -71129,6 +71139,202 @@ Informally, the road continues indefinitely. But this being a definite contract,
   </p>
 </font>
 <p>
+</p>
+"
+`;
+
+exports[`body > post rainbowdash hash b9c7d7101c6e3560133663cbd90073e1 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Rainbow Dash in rollerskates skating on a bright red line\\"
+    title=\\"It's skating the red line, get it?\\"
+    width=\\"450px\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/1baaa36a-1202-484c-8373-9aa6f0161243\\"
+  >
+</p>
+<p>
+  You know what we heard people like? 
+Listicles! 
+Here are the top 5 new Beeminder features and updates we randomly want to tell you about!
+If your favorite isn&#8217;t here, check the
+  <a
+    href=\\"https://beeminder.com/changelog\\"
+    title=\\"All User-Visible Improvements (UVIs) to Beeminder since the dawn of time (time dawned in February of 2011, FYI)\\"
+  >
+    full list of 4,812 of them
+  </a>
+  .
+(You read that right &#8212; Beeminder&#8217;s over-a-decade-long changelog has close to 5,000 entries and counting.)
+</p>
+<h3>
+  1. The help docs!
+</h3>
+<p>
+  Support Czar Nicky diligently keeps them impeccably up to date.
+If you have a question about a Beeminder thing, it&#8217;s probably in there!
+Head to
+  <a
+    href=\\"https://help.beeminder.com\\"
+    title=\\"Thanks to HelpScout for hosting these for us\\"
+  >
+    help.beeminder.com
+  </a>
+  or just google something like &#8220;Beeminder akrasia horizon&#8221; and generally one of our articles is the first hit.
+</p>
+<h3>
+  2. The rainbow dashboard
+</h3>
+<p>
+  It&#8217;s a little garish maybe, but we took a
+  <a
+    href=\\"https://forum.beeminder.com/t/rainbow-dash-board/11478\\"
+    title=\\"55 total votes as of this writing\\"
+  >
+    poll in the forum
+  </a>
+  and almost everyone is either into it or expects to get used to it.
+</p>
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Screenshot of a rainbow dashboard\\"
+    title=\\"A small slice of Danny's dashboard, edited so all the different colors are visible at once\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/f94f4424-d8e4-4c9b-a9f3-8a49e698e235\\"
+  >
+</p>
+<p>
+  We&#8217;ll probably keep fussing with it.
+Chime in in the forum if you have opinions!
+Next we need to decide the color of the shed where we keep our bikes (just kidding).
+</p>
+<p>
+  (Shoutout to Beeminder superuser Michael Hanson for building his own custom Beeminder dashboard &#8212;
+  <a
+    href=\\"https://bmdb.michaelhanson.org/\\"
+    title=\\"Look at those pretty pastels, assuming you&#39;re logged in\\"
+  >
+    which anyone can use by plugging in their API key
+  </a>
+  &#8212; arguably prettier than ours.)
+</p>
+<h3>
+  3. Goals can be &#8220;dark green&#8221; now
+</h3>
+<p>
+  The eagle-eyed among you may have noticed a subtle hue shift in the green there.
+Here&#8217;s a review of the colors:
+</p>
+<ul>
+  <li>
+    Red means you&#8217;re within 24 hours of derailing &#8212; aka a beemergency
+  </li>
+  <li>
+    Orange means you have 1 day of safety buffer
+  </li>
+  <li>
+    Blue means 2 days of safety buffer
+  </li>
+  <li>
+    Green means 3 or more safe days
+  </li>
+</ul>
+<p>
+  And now the slightly darker green means 7+ days of safety buffer.
+The nice thing about being dark green, as we explained in
+  <a
+    href=\\"https://blog.beeminder.com/obscure\\"
+    title=\\"See item 15\\"
+  >
+    another old listicle
+  </a>
+  , is that you&#8217;re immune to the akrasia horizon.
+If something comes up or you decide you hate your Beeminder goal (it happens), you can click Archive or schedule a flat section of the bright red line.
+It takes a week for such changes to take effect, but, lucky you, you have that much safety buffer!
+So instead of clicking Archive or scheduling your break and then toughing it out for another week, you can do that and then immediately check out.
+By the time your safety buffer runs out, your break will begin.
+Your friends will be dark green with envy.
+</p>
+<p>
+  (Special thanks to our friend and Beeminder superuser Grayson Bray Morris for suggesting something like this years ago.)
+</p>
+<h3>
+  4. A new status page
+</h3>
+<p>
+  We&#8217;re pretty sure our last unscheduled downtime last month or whenever that was was the last time that will happen, but just in case, we made a new
+  <a
+    href=\\"https://status.beeminder.com\\"
+    title=\\"Beeminder is very high status\\"
+  >
+    status.beeminder.com
+  </a>
+  page.
+Until now, that URL just redirected to a Twitter feed where we&#8217;d give updates on how engulfed in flames our servers were.
+But now you have to be logged in to Twitter (and maybe refer to it as X even) to see things there so that obviously doesn&#8217;t work as a status page anymore.
+So, ok, if you ever can&#8217;t reach Beeminder (or, in fact many/most websites) stick &#8220;status.&#8221; in front of the URL and see what&#8217;s up.
+</p>
+<h3>
+  5. Weight loss goal headers are more sane
+</h3>
+<p>
+  Have you ever tried a Beeminder weight goal? 
+If so you might have noticed the insanity that was the goal page header, and generally any time we tried to tell you things about how much weight loss was due when.
+I&#8217;m sure you&#8217;ve been suffering nightmares ever since.
+</p>
+<p>
+  It is tempting to put a lot of words into trying to describe how wrong-headed it was, but sometimes a picture is worth a thousand cliches, eh?
+</p>
+<h4>
+  before
+</h4>
+<p>
+  <img
+    width=\\"712\\"
+    alt=\\"Before image showing a weight loss goal. Annotations: In what sense is the 177.9 the limit here? The current datapoint is a little less than 178. So is Beeminder saying that the 'limit' is a value below my current weight? Do I hve to weigh in even lower? What is happening? And what would 'limit -0.2' mean?\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/c7756f2e-a13a-4481-a6ea-84eec8eeda64\\"
+  >
+</p>
+<p>
+  Well the night terrors can end now!
+The goal page now tells you simply what your hard cap is today.
+You can get that both in terms of the delta (e.g. +0.25 &#8212; you can&#8217;t gain more than 0.25 stone and still be below the bright red line today), 
+or in terms of the absolute amount (e.g. 14.25 stone &#8212; that&#8217;s the actual value of the bright red line today).
+</p>
+<p>
+  (If you see one and not the other, try clicking on the black button and it will toggle to the other version.
+This highly undiscoverable click-to-toggle business is another of our Long National Nightmares. We&#8217;re working on it!)
+</p>
+<h4>
+  after
+</h4>
+<p>
+  <img
+    width=\\"749\\"
+    alt=\\"After image showing the same weight loss goal. Annotations: Okay, and here's the after. 178.87 lbs today. Or at most +0.95 lbs -- a LIMIT.\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/f603effc-e52d-4a9e-a543-667ec83a47b3\\"
+  >
+</p>
+<p>
+  The header also tells you how long you can coast along not weighing in before you&#8217;re in trouble, but that&#8217;s not new.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  Alright, that rounds out the list for now.
+(Again, see
+  <a
+    href=\\"https://beeminder.com/changelog\\"
+    title=\\"All User-Visible Improvements (UVIs) to Beeminder since the dawn of time (time dawned in February of 2011, FYI)\\"
+  >
+    the changelog
+  </a>
+  for more.)
+Keep telling us what you think we should do next!
 </p>
 "
 `;
