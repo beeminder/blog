@@ -13,25 +13,39 @@ describe("post", () => {
       content: "body",
     });
 
-    expect(() =>
-      post.parse({
-        url: "the_url",
-        md,
-      }),
-    ).toThrowError();
+    const data = {
+      source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "",
+      md,
+    };
+
+    expect(() => post.parse(data)).toThrowError();
   });
 
   it("uses disqus id", () => {
     const md = ether({
-      frontmatter: meta({
-        disqus_id: "test-post",
-        date: new Date(),
-      }),
       content: "body",
     });
 
     const p = post.parse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "test-post",
       md,
     });
 
@@ -40,15 +54,21 @@ describe("post", () => {
 
   it("does not include private notes in excerpts", async () => {
     const md = ether({
-      frontmatter: meta({
-        date: new Date(),
-      }),
       before: "private notes",
       content: "content",
     });
 
     const p = post.parse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -57,15 +77,20 @@ describe("post", () => {
 
   it("does not include raw markdown in excerpts", async () => {
     const md = ether({
-      frontmatter: meta({
-        date: new Date(),
-        excerpt: "MAGIC_AUTO_EXTRACT",
-      }),
       content: "[link](#)",
     });
 
     const p = post.parse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -74,15 +99,21 @@ describe("post", () => {
 
   it("does not use image from private notes", async () => {
     const md = ether({
-      frontmatter: meta({
-        date: new Date(),
-      }),
       before: "<img src='/private' />",
       content: "content",
     });
 
     const p = post.parse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -91,51 +122,21 @@ describe("post", () => {
 
   it("requires title", async () => {
     const md = ether({
-      frontmatter: meta({
-        title: undefined,
-        date: new Date(),
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
       source: "the_url",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("requires slug be declared one time", async () => {
-    const md = ether({
-      frontmatter: meta({
-        title: "the_title",
-        slug: "the_slug",
-        date: new Date(),
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      md,
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
       slug: "the_slug",
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("requires status be declared one time", async () => {
-    const md = ether({
-      frontmatter: meta({
-        title: "the_title",
-        status: "publish",
-        date: new Date(),
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      md,
+      title: "",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
       status: "publish",
+      disqus_id: "the_disqus_id",
+      md,
     });
 
     expect(result.success).toEqual(false);
@@ -143,14 +144,20 @@ describe("post", () => {
 
   it("requires slug", async () => {
     const md = ether({
-      frontmatter: meta({
-        slug: "",
-        date: new Date(),
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -159,14 +166,20 @@ describe("post", () => {
 
   it("requires author", async () => {
     const md = ether({
-      frontmatter: meta({
-        author: "",
-        date: new Date(),
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -175,14 +188,20 @@ describe("post", () => {
 
   it("requires disqus_id", async () => {
     const md = ether({
-      frontmatter: meta({
-        disqus_id: "",
-        date: new Date(),
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "",
       md,
     });
 
@@ -191,14 +210,20 @@ describe("post", () => {
 
   it("requires redirects", async () => {
     const md = ether({
-      frontmatter: meta({
-        redirects: undefined,
-        date: new Date(),
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: undefined,
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -207,13 +232,20 @@ describe("post", () => {
 
   it("requires date", async () => {
     const md = ether({
-      frontmatter: meta({
-        date: undefined,
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -222,14 +254,20 @@ describe("post", () => {
 
   it("requires tags", async () => {
     const md = ether({
-      frontmatter: meta({
-        tags: undefined,
-        date: new Date(),
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: undefined,
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -238,14 +276,20 @@ describe("post", () => {
 
   it("requires status", async () => {
     const md = ether({
-      frontmatter: meta({
-        status: undefined,
-        date: new Date(),
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -254,12 +298,20 @@ describe("post", () => {
 
   it("requires source", async () => {
     const md = ether({
-      frontmatter: meta({
-        date: new Date(),
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
+      source: undefined,
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -268,15 +320,21 @@ describe("post", () => {
 
   it("requires new line preceeding HTML comments", async () => {
     const md = ether({
-      frontmatter: meta({
-        date: new Date(),
-      }),
       content: `This is the paragraph in question
 <!-- comment --> More text`,
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -285,15 +343,21 @@ describe("post", () => {
 
   it("specifies error reason", async () => {
     const md = ether({
-      frontmatter: meta({
-        date: new Date(),
-      }),
       content: `This is the paragraph in question
 <!-- comment --> More text`,
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -307,14 +371,20 @@ describe("post", () => {
 
   it("requires excerpt", async () => {
     const md = ether({
-      frontmatter: meta({
-        excerpt: undefined,
-        date: new Date(),
-      }),
+      content: "content",
     });
 
     const result = post.safeParse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: undefined,
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -324,14 +394,19 @@ describe("post", () => {
   it("expects excerpt from MAGIC_AUTO_EXTRACT to be Generated", async () => {
     const md = ether({
       content: "words",
-      frontmatter: meta({
-        excerpt: "MAGIC_AUTO_EXTRACT",
-        date: new Date(),
-      }),
     });
 
     const result = post.parse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "MAGIC_AUTO_EXTRACT",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -341,14 +416,19 @@ describe("post", () => {
   it("expects custom excerpt to return unchanged", async () => {
     const md = ether({
       content: "words",
-      frontmatter: meta({
-        excerpt: "the excerpt",
-        date: new Date(),
-      }),
     });
 
     const result = post.parse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -358,13 +438,19 @@ describe("post", () => {
   it("extracts image title", async () => {
     const md = ether({
       content: `<img src="https://blog.beeminder.com/image.png" title="the_title" />`,
-      frontmatter: meta({
-        date: new Date(),
-      }),
     });
 
     const result = post.parse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -374,13 +460,19 @@ describe("post", () => {
   it("extracts image alt", async () => {
     const md = ether({
       content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" />`,
-      frontmatter: meta({
-        date: new Date(),
-      }),
     });
 
     const result = post.parse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
@@ -390,18 +482,227 @@ describe("post", () => {
   it("extracts image alt and title", async () => {
     const md = ether({
       content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" title="the_title" />`,
-      frontmatter: meta({
-        date: new Date(),
-      }),
     });
 
     const result = post.parse({
       source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
       md,
     });
 
     expect(result.image).toEqual(
       expect.objectContaining({ title: "the_title", alt: "the_alt" }),
     );
+  });
+
+  it("does not accept date from frontmatter", async () => {
+    const md = ether({
+      frontmatter: meta({
+        date: "2020-01-01",
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
+      md,
+    });
+    expect(result.success).toEqual(false);
+  });
+
+  it("does not accept date_string from frontmatter", async () => {
+    const md = ether({
+      frontmatter: meta({
+        date_string: "2020-01-01",
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
+      md,
+    });
+    expect(result.success).toEqual(false);
+  });
+
+  it("does not accept excerpt from frontmatter", async () => {
+    const md = ether({
+      frontmatter: meta({
+        excerpt: "the_excerpt",
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      date: "2020-01-01",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
+      md,
+    });
+    expect(result.success).toEqual(false);
+  });
+
+  it("does not accept slug from frontmatter", async () => {
+    const md = ether({
+      frontmatter: meta({
+        slug: "the_slug",
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
+      md,
+    });
+    expect(result.success).toEqual(false);
+  });
+
+  it("does not accept author from frontmatter", async () => {
+    const md = ether({
+      frontmatter: meta({
+        author: "the_author",
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      status: "publish",
+      disqus_id: "the_disqus_id",
+      md,
+    });
+
+    expect(result.success).toEqual(false);
+  });
+
+  it("does not accept tags from frontmatter", async () => {
+    const md = ether({
+      frontmatter: meta({
+        tags: ["the_tag"],
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
+      md,
+    });
+
+    expect(result.success).toEqual(false);
+  });
+
+  it("does not accept disqus_id from frontmatter", async () => {
+    const md = ether({
+      frontmatter: meta({
+        disqus_id: "the_disqus_id",
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      status: "publish",
+      md,
+    });
+
+    expect(result.success).toEqual(false);
+  });
+
+  it("does not accept status from frontmatter", async () => {
+    const md = ether({
+      frontmatter: meta({
+        status: "publish",
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      redirects: ["the_redirect"],
+      author: "the_author",
+      disqus_id: "the_disqus_id",
+      md,
+    });
+
+    expect(result.success).toEqual(false);
+  });
+
+  it("does not accept redirects from frontmatter", async () => {
+    const md = ether({
+      frontmatter: meta({
+        redirects: ["the_redirect"],
+      }),
+    });
+
+    const result = post.safeParse({
+      source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
+      md,
+    });
+
+    expect(result.success).toEqual(false);
   });
 });
