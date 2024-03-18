@@ -7014,178 +7014,165 @@
     "excerpt": "There are a lot of things in the category of “nerd tendencies I’ve had to unlearn”. I often turn them into capital-P Principles as a way to drill them into my head. Eventually I intend to collect them all into a meta post but here are a few random examples in the meantime: the Anti-Magic Principle, the Anti-Settings Principle, the Shirk-n-Turk Principle, and the Anti-Robustness",
     "redirects": []
   },
-  {
-  "slug": "athletes",
-  "date": "2023-08-09",
-  "author": "dreeves",
-  "tags": ["akrasia", "bee-all", "FAQ", "rationality", "tips"],
-  "status": "publish",
-  "excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes",
-  "source": "doc.bmndr.co/athletes",
-  "disqus_id": "2163 https://blog.beeminder.com/?p=2163",
-  "redirects": []
-  },
-  {
-  "slug": "blogmorphosis",
-  "source": "doc.bmndr.co/blogmorphosis",
-  "redirects": [],
-  "disqus_id": "blogmorphosis",
-  "date": "2023-08-23",
-  "author": "dreeves",
-  "tags": ["navel-gazing", "bee-all", "tech", "colophon", "meta"],
-  "status": "publish",
-  "excerpt": "This is our first official post on our shiny new WordPress-free blog. Confetti-emoji! For well over a decade the Beeminder blog was on WordPress, hosted by WP Engine. That was..."
-  },
-  {
-  "slug": "astroblog",
-  "source": "doc.bmndr.co/astroblog",
-  "redirects": [],
-  "disqus_id": "astroblog",
-  "date": "2023-09-06",
-  "author": "Nathan Arthur",
-  "tags": ["bee-all", "navel-gazing", "nerdery", "meta"],
-  "status": "publish",
-  "excerpt": "This is another X-Treme Nerd Interlude post. Last time we announced, mercifully briefly, our shiny new blog redesign and if you’re a normal human you should read that, nod thoughtfully, say “looks lovely”, and be on your merry way. The rest of you can frolic deep in the weeds here with"
-  },
-  {
-  "slug": "predict",
-  "source": "doc.bmndr.co/predict",
-  "redirects": [],
-  "disqus_id": "predict",
-  "date": "2023-09-20",
-  "author": "dreeves",
-  "tags": ["bee-all", "rationality", "prediction markets", "nerdery", "history of beeminder", "startups", "commitment contracts"],
-  "status": "publish",
-  "excerpt": "A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd"
-  },
-  {
-  "slug": "readwise",
-  "source": "doc.bmndr.co/readwise",
-  "redirects": [],
-  "disqus_id": "readwise",
-  "date": "2023-09-27",
-  "author": "Adam Wolf",
-  "tags": ["akrasia", "bee-all", "get everything done", "integrations", "PSA", "rationality", "startups", "reading"],
-  "status": "publish",
-  "excerpt": "Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an"
-  },
-  {
-  "slug": "college",
-  "source": "doc.bmndr.co/college",
-  "redirects": [],
-  "date": "2023-10-18",
-  "author": "shanaqui",
-  "status": "publish",
-  "tags": ["akrasia", "bee-all", "get everything done", "studying", "case studies", "students", "rationality", "tips"],
-  "disqus_id": "college",
-  "excerpt": "We’re slightly behind for the traditional September start date, but it’s not too late! The semester at the London School of Hygiene & Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already. I don’t know about any of you, but whenever the new school year starts it feels like"
-  },
-  {
-  "slug": "manifold",
-  "source": "doc.bmndr.co/manifold",
-  "redirects": [],
-  "date": "2023-11-02",
-  "author": "dreeves",
-  "status": "publish",
-  "tags": ["akrasia", "rationality", "prediction markets", "bee-all", "startups", "integrations"],
-  "disqus_id": "manifold",
-  "excerpt": "Probably no Manifold users have a gambling problem (maybe just that one guy?) but, just in case, now Manifold can say it has what casinos call a self-exclusion program. Kind of? Mostly we expect this to be useful the other way around. Maybe Scott Alexander"
-  },
-  {
-  "slug": "antimagic404",
-  "source": "doc.bmndr.co/antimagic404",
-  "redirects": [],
-  "date": "2023-11-15",
-  "author": "dreeves",
-  "status": "publish",
-  "tags": ["akrasia", "rationality", "bee-all", "startups", "blogging", "meta", "navel-gazing", "nerdery"],
-  "disqus_id": "antimagic404",
-  "excerpt": "MAGIC_AUTO_EXTRACT"
-  },
-  {
-  "slug": "risk",
-  "source": "doc.bmndr.co/risk",
-  "redirects": [],
-  "date": "2023-11-29",
-  "author": "dreeves",
-  "status": "publish",
-  "tags": ["akrasia", "rationality", "bee-all", "startups", "meta", "navel-gazing", "nerdery", "finance"],
-  "disqus_id": "risk",
-  "excerpt": "MAGIC_AUTO_EXTRACT"
-  },{
-  "slug": "rocks",
-  "source": "doc.bmndr.co/rocks",
-  "redirects": [],
-  "date": "2023-12-13",
-  "author": "dreeves",
-  "status": "publish",
-  "tags": ["akrasia", "rationality", "bee-all", "self-help", "get everything done"],
-  "disqus_id": "rocks",
-  "excerpt": "MAGIC_AUTO_EXTRACT"
-  },{
-  "slug": "honeygrams",
-  "source": "doc.bmndr.co/honeygrams",
-  "redirects": [],
-  "date": "2023-12-20",
-  "author": "dreeves",
-  "status": "publish",
-  "tags": ["akrasia", "rationality", "bee-all", "holiday"],
-  "disqus_id": "honeygrams",
-  "excerpt": "MAGIC_AUTO_EXTRACT"
-  },
-  {
-  "slug": "montholutions",
-  "disqus_id": "montholutions",
-  "source": "doc.bmndr.co/montholutions",
-  "redirects": [],
-  "date": "2024-01-04",
-  "author": "shanaqui",
-  "status": "publish",
-  "tags": ["akrasia", "bee-all", "resolutions", "productivity porn", "PSA"],
-  "excerpt": "MAGIC_AUTO_EXTRACT"
-  },
-  {
-  "slug": "pigou",
-  "disqus_id": "pigou",
-  "source": "doc.bmndr.co/pigouminder",
-  "redirects": [],
-  "date": "2024-01-18",
-  "author": "dreeves",
-  "status": "publish",
-  "tags": ["akrasia", "bee-all", "rationality", "philosophy", "commitment devices"],
-  "excerpt": "MAGIC_AUTO_EXTRACT"
-  },
-  {
-  "slug": "diy",
-  "disqus_id": "diy",
-  "source": "doc.bmndr.co/diy",
-  "redirects": [],
-  "date": "2024-01-31",
-  "author": "dreeves",
-  "status": "publish",
-  "tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies"],
-  "excerpt": "MAGIC_AUTO_EXTRACT"
-  },
-  {
-  "slug": "love",
-  "disqus_id": "love",
-  "source": "doc.bmndr.co/love",
-  "redirects": [],
-  "date": "2024-02-14",
-  "author": "dreeves",
-  "status": "publish",
-  "tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies", "romance"],
-  "excerpt": "MAGIC_AUTO_EXTRACT"
-  },
-  {
-  "slug": "humblebundle",
-  "disqus_id": "humblebundle",
-  "source": "doc.bmndr.co/humbee",
-  "redirects": [],
-  "date": "2024-02-28",
-  "author": "bsoule",
-  "status": "publish",
-  "tags": ["bee-all", "productivity", "navel-gazing", "productivity porn", "money", "rationality"],
-  "excerpt": "MAGIC_AUTO_EXTRACT"
-  }
+{
+"slug": "athletes",
+"date": "2023-08-09",
+"author": "dreeves",
+"tags": ["akrasia", "bee-all", "FAQ", "rationality", "tips"],
+"status": "publish",
+"excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes",
+"source": "doc.bmndr.co/athletes",
+"disqus_id": "2163 https://blog.beeminder.com/?p=2163",
+"redirects": []
+},{
+"slug": "blogmorphosis",
+"source": "doc.bmndr.co/blogmorphosis",
+"redirects": [],
+"disqus_id": "blogmorphosis",
+"date": "2023-08-23",
+"author": "dreeves",
+"tags": ["navel-gazing", "bee-all", "tech", "colophon", "meta"],
+"status": "publish",
+"excerpt": "This is our first official post on our shiny new WordPress-free blog. Confetti-emoji! For well over a decade the Beeminder blog was on WordPress, hosted by WP Engine. That was..."
+},{
+"slug": "astroblog",
+"source": "doc.bmndr.co/astroblog",
+"redirects": [],
+"disqus_id": "astroblog",
+"date": "2023-09-06",
+"author": "Nathan Arthur",
+"tags": ["bee-all", "navel-gazing", "nerdery", "meta"],
+"status": "publish",
+"excerpt": "This is another X-Treme Nerd Interlude post. Last time we announced, mercifully briefly, our shiny new blog redesign and if you’re a normal human you should read that, nod thoughtfully, say “looks lovely”, and be on your merry way. The rest of you can frolic deep in the weeds here with"
+},{
+"slug": "predict",
+"source": "doc.bmndr.co/predict",
+"redirects": [],
+"disqus_id": "predict",
+"date": "2023-09-20",
+"author": "dreeves",
+"tags": ["bee-all", "rationality", "prediction markets", "nerdery", "history of beeminder", "startups", "commitment contracts"],
+"status": "publish",
+"excerpt": "A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd"
+},{
+"slug": "readwise",
+"source": "doc.bmndr.co/readwise",
+"redirects": [],
+"disqus_id": "readwise",
+"date": "2023-09-27",
+"author": "Adam Wolf",
+"tags": ["akrasia", "bee-all", "get everything done", "integrations", "PSA", "rationality", "startups", "reading"],
+"status": "publish",
+"excerpt": "Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an"
+},{
+"slug": "college",
+"source": "doc.bmndr.co/college",
+"redirects": [],
+"date": "2023-10-18",
+"author": "shanaqui",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "get everything done", "studying", "case studies", "students", "rationality", "tips"],
+"disqus_id": "college",
+"excerpt": "We’re slightly behind for the traditional September start date, but it’s not too late! The semester at the London School of Hygiene & Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already. I don’t know about any of you, but whenever the new school year starts it feels like"
+},{
+"slug": "manifold",
+"source": "doc.bmndr.co/manifold",
+"redirects": [],
+"date": "2023-11-02",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "rationality", "prediction markets", "bee-all", "startups", "integrations"],
+"disqus_id": "manifold",
+"excerpt": "Probably no Manifold users have a gambling problem (maybe just that one guy?) but, just in case, now Manifold can say it has what casinos call a self-exclusion program. Kind of? Mostly we expect this to be useful the other way around. Maybe Scott Alexander"
+},{
+"slug": "antimagic404",
+"source": "doc.bmndr.co/antimagic404",
+"redirects": [],
+"date": "2023-11-15",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "rationality", "bee-all", "startups", "blogging", "meta", "navel-gazing", "nerdery"],
+"disqus_id": "antimagic404",
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "risk",
+"source": "doc.bmndr.co/risk",
+"redirects": [],
+"date": "2023-11-29",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "rationality", "bee-all", "startups", "meta", "navel-gazing", "nerdery", "finance"],
+"disqus_id": "risk",
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "rocks",
+"source": "doc.bmndr.co/rocks",
+"redirects": [],
+"date": "2023-12-13",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "rationality", "bee-all", "self-help", "get everything done"],
+"disqus_id": "rocks",
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "honeygrams",
+"source": "doc.bmndr.co/honeygrams",
+"redirects": [],
+"date": "2023-12-20",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "rationality", "bee-all", "holiday"],
+"disqus_id": "honeygrams",
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "montholutions",
+"disqus_id": "montholutions",
+"source": "doc.bmndr.co/montholutions",
+"redirects": [],
+"date": "2024-01-04",
+"author": "shanaqui",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "resolutions", "productivity porn", "PSA"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "pigou",
+"disqus_id": "pigou",
+"source": "doc.bmndr.co/pigouminder",
+"redirects": [],
+"date": "2024-01-18",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "rationality", "philosophy", "commitment devices"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "diy",
+"disqus_id": "diy",
+"source": "doc.bmndr.co/diy",
+"redirects": [],
+"date": "2024-01-31",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "love",
+"disqus_id": "love",
+"source": "doc.bmndr.co/love",
+"redirects": [],
+"date": "2024-02-14",
+"author": "dreeves",
+"status": "publish",
+"tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies", "romance"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "humblebundle",
+"disqus_id": "humblebundle",
+"source": "doc.bmndr.co/humbee",
+"redirects": [],
+"date": "2024-02-28",
+"author": "bsoule",
+"status": "publish",
+"tags": ["bee-all", "productivity", "navel-gazing", "productivity porn", "money", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+}
 ]
