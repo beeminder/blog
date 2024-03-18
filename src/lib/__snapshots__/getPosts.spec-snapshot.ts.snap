@@ -71143,6 +71143,202 @@ Informally, the road continues indefinitely. But this being a definite contract,
 "
 `;
 
+exports[`body > post rainbowdash hash b9c7d7101c6e3560133663cbd90073e1 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Rainbow Dash in rollerskates skating on a bright red line\\"
+    title=\\"It's skating the red line, get it?\\"
+    width=\\"450px\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/1baaa36a-1202-484c-8373-9aa6f0161243\\"
+  >
+</p>
+<p>
+  You know what we heard people like? 
+Listicles! 
+Here are the top 5 new Beeminder features and updates we randomly want to tell you about!
+If your favorite isn&#8217;t here, check the
+  <a
+    href=\\"https://beeminder.com/changelog\\"
+    title=\\"All User-Visible Improvements (UVIs) to Beeminder since the dawn of time (time dawned in February of 2011, FYI)\\"
+  >
+    full list of 4,812 of them
+  </a>
+  .
+(You read that right &#8212; Beeminder&#8217;s over-a-decade-long changelog has close to 5,000 entries and counting.)
+</p>
+<h3>
+  1. The help docs!
+</h3>
+<p>
+  Support Czar Nicky diligently keeps them impeccably up to date.
+If you have a question about a Beeminder thing, it&#8217;s probably in there!
+Head to
+  <a
+    href=\\"https://help.beeminder.com\\"
+    title=\\"Thanks to HelpScout for hosting these for us\\"
+  >
+    help.beeminder.com
+  </a>
+  or just google something like &#8220;Beeminder akrasia horizon&#8221; and generally one of our articles is the first hit.
+</p>
+<h3>
+  2. The rainbow dashboard
+</h3>
+<p>
+  It&#8217;s a little garish maybe, but we took a
+  <a
+    href=\\"https://forum.beeminder.com/t/rainbow-dash-board/11478\\"
+    title=\\"55 total votes as of this writing\\"
+  >
+    poll in the forum
+  </a>
+  and almost everyone is either into it or expects to get used to it.
+</p>
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Screenshot of a rainbow dashboard\\"
+    title=\\"A small slice of Danny's dashboard, edited so all the different colors are visible at once\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/f94f4424-d8e4-4c9b-a9f3-8a49e698e235\\"
+  >
+</p>
+<p>
+  We&#8217;ll probably keep fussing with it.
+Chime in in the forum if you have opinions!
+Next we need to decide the color of the shed where we keep our bikes (just kidding).
+</p>
+<p>
+  (Shoutout to Beeminder superuser Michael Hanson for building his own custom Beeminder dashboard &#8212;
+  <a
+    href=\\"https://bmdb.michaelhanson.org/\\"
+    title=\\"Look at those pretty pastels, assuming you&#39;re logged in\\"
+  >
+    which anyone can use by plugging in their API key
+  </a>
+  &#8212; arguably prettier than ours.)
+</p>
+<h3>
+  3. Goals can be &#8220;dark green&#8221; now
+</h3>
+<p>
+  The eagle-eyed among you may have noticed a subtle hue shift in the green there.
+Here&#8217;s a review of the colors:
+</p>
+<ul>
+  <li>
+    Red means you&#8217;re within 24 hours of derailing &#8212; aka a beemergency
+  </li>
+  <li>
+    Orange means you have 1 day of safety buffer
+  </li>
+  <li>
+    Blue means 2 days of safety buffer
+  </li>
+  <li>
+    Green means 3 or more safe days
+  </li>
+</ul>
+<p>
+  And now the slightly darker green means 7+ days of safety buffer.
+The nice thing about being dark green, as we explained in
+  <a
+    href=\\"https://blog.beeminder.com/obscure\\"
+    title=\\"See item 15\\"
+  >
+    another old listicle
+  </a>
+  , is that you&#8217;re immune to the akrasia horizon.
+If something comes up or you decide you hate your Beeminder goal (it happens), you can click Archive or schedule a flat section of the bright red line.
+It takes a week for such changes to take effect, but, lucky you, you have that much safety buffer!
+So instead of clicking Archive or scheduling your break and then toughing it out for another week, you can do that and then immediately check out.
+By the time your safety buffer runs out, your break will begin.
+Your friends will be dark green with envy.
+</p>
+<p>
+  (Special thanks to our friend and Beeminder superuser Grayson Bray Morris for suggesting something like this years ago.)
+</p>
+<h3>
+  4. A new status page
+</h3>
+<p>
+  We&#8217;re pretty sure our last unscheduled downtime last month or whenever that was was the last time that will happen, but just in case, we made a new
+  <a
+    href=\\"https://status.beeminder.com\\"
+    title=\\"Beeminder is very high status\\"
+  >
+    status.beeminder.com
+  </a>
+  page.
+Until now, that URL just redirected to a Twitter feed where we&#8217;d give updates on how engulfed in flames our servers were.
+But now you have to be logged in to Twitter (and maybe refer to it as X even) to see things there so that obviously doesn&#8217;t work as a status page anymore.
+So, ok, if you ever can&#8217;t reach Beeminder (or, in fact many/most websites) stick &#8220;status.&#8221; in front of the URL and see what&#8217;s up.
+</p>
+<h3>
+  5. Weight loss goal headers are more sane
+</h3>
+<p>
+  Have you ever tried a Beeminder weight goal? 
+If so you might have noticed the insanity that was the goal page header, and generally any time we tried to tell you things about how much weight loss was due when.
+I&#8217;m sure you&#8217;ve been suffering nightmares ever since.
+</p>
+<p>
+  It is tempting to put a lot of words into trying to describe how wrong-headed it was, but sometimes a picture is worth a thousand cliches, eh?
+</p>
+<h4>
+  before
+</h4>
+<p>
+  <img
+    width=\\"712\\"
+    alt=\\"Before image showing a weight loss goal. Annotations: In what sense is the 177.9 the limit here? The current datapoint is a little less than 178. So is Beeminder saying that the 'limit' is a value below my current weight? Do I hve to weigh in even lower? What is happening? And what would 'limit -0.2' mean?\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/c7756f2e-a13a-4481-a6ea-84eec8eeda64\\"
+  >
+</p>
+<p>
+  Well the night terrors can end now!
+The goal page now tells you simply what your hard cap is today.
+You can get that both in terms of the delta (e.g. +0.25 &#8212; you can&#8217;t gain more than 0.25 stone and still be below the bright red line today), 
+or in terms of the absolute amount (e.g. 14.25 stone &#8212; that&#8217;s the actual value of the bright red line today).
+</p>
+<p>
+  (If you see one and not the other, try clicking on the black button and it will toggle to the other version.
+This highly undiscoverable click-to-toggle business is another of our Long National Nightmares. We&#8217;re working on it!)
+</p>
+<h4>
+  after
+</h4>
+<p>
+  <img
+    width=\\"749\\"
+    alt=\\"After image showing the same weight loss goal. Annotations: Okay, and here's the after. 178.87 lbs today. Or at most +0.95 lbs -- a LIMIT.\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/f603effc-e52d-4a9e-a543-667ec83a47b3\\"
+  >
+</p>
+<p>
+  The header also tells you how long you can coast along not weighing in before you&#8217;re in trouble, but that&#8217;s not new.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  Alright, that rounds out the list for now.
+(Again, see
+  <a
+    href=\\"https://beeminder.com/changelog\\"
+    title=\\"All User-Visible Improvements (UVIs) to Beeminder since the dawn of time (time dawned in February of 2011, FYI)\\"
+  >
+    the changelog
+  </a>
+  for more.)
+Keep telling us what you think we should do next!
+</p>
+"
+`;
+
 exports[`body > post ratchet hash 1570aa49e7a0b862699efaef14f7be7b 1`] = `
 "
 <p>
