@@ -7037,15 +7037,33 @@
 },{
 "slug": "astroblog",
 "source": "doc.bmndr.co/astroblog",
-"redirects": []
+"redirects": [],
+"disqus_id": "astroblog",
+"date": "2023-09-06",
+"author": "Nathan Arthur",
+"tags": ["bee-all", "navel-gazing", "nerdery", "meta"],
+"status": "publish",
+"excerpt": "This is another X-Treme Nerd Interlude post. Last time we announced, mercifully briefly, our shiny new blog redesign and if you’re a normal human you should read that, nod thoughtfully, say “looks lovely”, and be on your merry way. The rest of you can frolic deep in the weeds here with"
 },{
 "slug": "predict",
 "source": "doc.bmndr.co/predict",
-"redirects": []
+"redirects": [],
+"disqus_id": "predict",
+"date": "2023-09-20",
+"author": "dreeves",
+"tags": ["bee-all", "rationality", "prediction markets", "nerdery", "history of beeminder", "startups", "commitment contracts"],
+"status": "publish",
+"excerpt": "A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd"
 },{
 "slug": "readwise",
 "source": "doc.bmndr.co/readwise",
-"redirects": []
+"redirects": [],
+"disqus_id": "readwise",
+"date": "2023-09-27",
+"author": "Adam Wolf",
+"tags": ["akrasia", "bee-all", "get everything done", "integrations", "PSA", "rationality", "startups", "reading"],
+"status": "publish",
+"excerpt": "Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an"
 },{
 "slug": "college",
 "source": "doc.bmndr.co/college",
