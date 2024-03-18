@@ -532,6 +532,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/qs' 1`] = `"https://the_
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/qs2013' 1`] = `"https://the_source_domain/qs2013/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rainbowdash' 1`] = `"https://the_source_domain/rainbowdash/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ratchet' 1`] = `"https://the_source_domain/ratchet/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/reactions' 1`] = `"https://the_source_domain/reactions/export/txt"`;
