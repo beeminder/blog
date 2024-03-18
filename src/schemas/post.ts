@@ -4,48 +4,25 @@ import parseTitle from "../lib/parseTitle";
 import getExcerpt from "../lib/getExcerpt";
 import { image } from "./image";
 import extractImage from "../lib/extractImage";
-import matter from "gray-matter";
-import { frontmatter } from "./frontmatter";
 import { body } from "./body";
 import { dateString } from "./dateString";
-
-const intersect = (
-  o1: Record<string, unknown>,
-  o2: Record<string, unknown>,
-) => {
-  return Object.keys(o1).filter((k) => k in o2);
-};
 
 export const post = z
   .object({
     source: z.string(),
     title: z.string().optional(),
-    slug: z.string().optional(),
-    date: z.string().optional(),
-    author: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-    status: z.string().optional(),
-    disqus_id: z.string().optional(),
-    excerpt: z.string().optional(),
-    redirects: z.array(z.string()).optional(),
+    slug: z.string(),
+    date: z.string(),
+    author: z.string(),
+    tags: z.array(z.string()),
+    status: z.string(),
+    disqus_id: z.string(),
+    excerpt: z.string(),
+    redirects: z.array(z.string()),
     md: z.string(),
   })
   .transform(({ source: url, md, ...rest }, ctx) => {
-    const { data, content } = matter(md);
-    const fm = frontmatter.parse(data);
-    const intersecting = intersect(fm, rest);
-
-    if (intersecting.length > 0) {
-      intersecting.forEach((key) => {
-        ctx.addIssue({
-          message: `Cannot declare ${key} in two places ${url}`,
-          code: ZodIssueCode.custom,
-        });
-      });
-      return z.NEVER;
-    }
-
-    const meta = { ...rest, ...fm };
+    const content = md;
     const c = body.safeParse(content);
 
     if (!c.success) {
@@ -60,15 +37,15 @@ export const post = z
       return z.NEVER;
     }
 
-    const date = meta.date && new Date(meta.date);
+    const date = rest.date && new Date(rest.date);
     const dateStringResult = dateString.safeParse(date);
 
     return {
-      ...meta,
-      tags: meta.tags?.filter(Boolean),
-      excerpt: getExcerpt(meta.excerpt, c.data),
+      ...rest,
+      tags: rest.tags?.filter(Boolean),
+      excerpt: getExcerpt(rest.excerpt, c.data),
       image: extractImage(c.data),
-      title: meta.title || parseTitle(md),
+      title: rest.title || parseTitle(md),
       date,
       date_string: dateStringResult.success && dateStringResult.data,
       content: c.data,
