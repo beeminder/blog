@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import prefetch from "@astrojs/prefetch";
 import getRedirects from "./src/lib/getRedirects";
 
 import sitemap from "@astrojs/sitemap";
@@ -15,10 +14,8 @@ export default defineConfig({
     console.error(e);
     throw e;
   }),
-  integrations: [
-    prefetch({
-      selector: "a",
-    }),
-    sitemap(),
-  ],
+  prefetch: {
+    prefetchAll: true,
+  },
+  integrations: [sitemap()],
 });
