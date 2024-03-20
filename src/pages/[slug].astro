@@ -1,5 +1,5 @@
 ---
-import type {  InferGetStaticPropsType } from "astro";
+import type { InferGetStaticPropsType } from "astro";
 import Tags from "../components/Tags.astro";
 import getPosts from "../lib/getPosts";
 import Shadowbox from "../components/Shadowbox.astro";
@@ -12,10 +12,10 @@ import Paginated from "../layouts/Paginated.astro";
 export async function getStaticPaths() {
   const posts = await getPosts({
     includeUnpublished: true,
-    sort: true
+    sort: true,
   });
 
-  const published = (p: Post) => p.status === "publish"
+  const published = (p: Post) => p.status === "publish";
 
   return posts.map((post: Post, i: number) => ({
     params: {
@@ -31,22 +31,9 @@ export async function getStaticPaths() {
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-const {
-  post,
-  newer,
-  older
-} = Astro.props as Props;
+const { post, newer, older } = Astro.props as Props;
 
-const {
-  content,
-  title,
-  tags,
-  disqus_id,
-  excerpt,
-  image,
-  status,
-  slug,
-} = post
+const { content, title, tags, disqus_id, excerpt, image, status, slug } = post;
 
 const isDraft = status === "draft";
 const className = isDraft ? "draft" : undefined;
@@ -66,32 +53,39 @@ const { extracted, ...imageProps } = image || {};
     url: `/${older.slug}`,
   }}
 >
-<div class="post">
-  <Shadowbox padding={2} class={className}>
-    <PostMeta
-      post={{
-        ...post,
-        title,
-      }}
-      includeExcerpt={false}
-      linkTitle={false}
-      Heading="h1"
-    />
-    {extracted ? undefined : <img class="aligncenter" {...imageProps} />}
-    <Typography set:html={content} />
-    <Tags tags={tags} />
-  </Shadowbox>
+  <div class="post">
+    <Shadowbox padding={2} class={className}>
+      <PostMeta
+        post={{
+          ...post,
+          title,
+        }}
+        includeExcerpt={false}
+        linkTitle={false}
+        Heading="h1"
+      />
+      {extracted ? undefined : <img class="aligncenter" {...imageProps} />}
+      <Typography set:html={content} />
+      <Tags tags={tags} />
+    </Shadowbox>
 
-  <Shadowbox padding={2}>
-    {isDraft ? <p>Comments are disabled on DRAFT pages.</p> : <Comments id={disqus_id} url={`https://blog.beeminder.com/${slug}/`} />}
-  </Shadowbox>
-</div>
+    <Shadowbox id="comments" padding={2}>
+      {
+        isDraft ? (
+          <p>Comments are disabled on DRAFT pages.</p>
+        ) : (
+          <Comments
+            id={disqus_id}
+            url={`https://blog.beeminder.com/${slug}/`}
+          />
+        )
+      }
+    </Shadowbox>
+  </div>
 </Paginated>
-
 
 <style>
   .post :global(.draft) {
     border: 1rem solid #ff700a;
   }
 </style>
-
