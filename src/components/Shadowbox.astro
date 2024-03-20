@@ -2,12 +2,14 @@
 interface Props {
   padding?: number;
   class?: string | undefined;
+  id?: string | undefined;
 }
 
-const { padding = 1, class: className } = Astro.props;
+const { padding = 1, class: className, id } = Astro.props;
 ---
 
 <div
+  id={id}
   class:list={["shadowbox", className]}
   style={{
     "--gap-multiplier": padding,
