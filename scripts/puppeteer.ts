@@ -44,8 +44,12 @@ async function handleUrl(browser: Browser, url: string) {
   const pathname = new URL(url).pathname;
   console.time(pathname);
 
-  const path1 = await snap(browser, url, "base");
-  const path2 = await snap(browser, url.replace(base, compare), "compare");
+  const path1 = await snap(browser, `${url}?snap`, "base");
+  const path2 = await snap(
+    browser,
+    `${url.replace(base, compare)}?snap`,
+    "compare",
+  );
   const img1 = readScreenshot(path1);
   const img2 = readScreenshot(path2);
   const meta1 = await img1.metadata();
