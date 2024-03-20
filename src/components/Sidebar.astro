@@ -116,7 +116,11 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
   </Shadowbox>
   {
     sha && (
-      <a class="sha" href={`https://github.com/beeminder/blog/commit/${sha}`}>
+      <a
+        id="sha"
+        class="sha"
+        href={`https://github.com/beeminder/blog/commit/${sha}`}
+      >
         {sha.slice(0, 7)}
       </a>
     )
