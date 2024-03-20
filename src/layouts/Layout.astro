@@ -29,7 +29,7 @@ const {
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <link
@@ -83,6 +83,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
+    <script src="../scripts/snap.ts"></script>
     <script src="../scripts/slideshow.ts"></script>
     <script src="../scripts/hotkeys.ts"></script>
 
