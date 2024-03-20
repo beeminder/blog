@@ -705,4 +705,26 @@ describe("post", () => {
 
     expect(result.success).toEqual(false);
   });
+
+  it("parses date correctly", async () => {
+    const md = ether({
+      content: "content",
+    });
+
+    const result = post.parse({
+      source: "the_url",
+      date: "2020-01-01",
+      excerpt: "the_excerpt",
+      slug: "the_slug",
+      title: "the_title",
+      tags: ["the_tag"],
+      author: "the_author",
+      status: "publish",
+      disqus_id: "the_disqus_id",
+      redirects: [],
+      md,
+    });
+
+    expect(result.date.getFullYear()).toEqual(2020);
+  });
 });

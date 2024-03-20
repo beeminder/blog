@@ -56,9 +56,8 @@ async function makeArchives(): Promise<Archives> {
 
   const yearMonths = posts.reduce<Record<number, Record<number, Post[]>>>(
     (acc, post) => {
-      const date = new Date(post.date);
-      const year = date.getFullYear();
-      const month = date.getMonth();
+      const year = post.date.getFullYear();
+      const month = post.date.getMonth();
 
       if (!acc[year]) {
         acc[year] = {};

@@ -1,4 +1,4 @@
-import { fetchBuilder, FileSystemCache, MemoryCache } from "node-fetch-cache";
+import NodeFetchCache, { FileSystemCache, MemoryCache } from "node-fetch-cache";
 import memoize from "./memoize";
 import canonicalizeUrl from "./canonicalizeUrl";
 import env from "./env";
@@ -19,7 +19,11 @@ function buildCache() {
   }
 }
 
-const getFetcher = memoize(() => fetchBuilder.withCache(buildCache()));
+const getFetcher = memoize(() =>
+  NodeFetchCache.create({
+    cache: buildCache(),
+  }),
+);
 
 export default async function fetchPost(url: string): Promise<string> {
   return getFetcher()(canonicalizeUrl(url)).then((r) => {

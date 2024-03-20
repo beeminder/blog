@@ -37,7 +37,12 @@ export const post = z
       return z.NEVER;
     }
 
-    const date = rest.date && new Date(rest.date);
+    const date = new Date(rest.date);
+
+    // WORKAROUND: Correct for timezone
+    // SOURCE: https://stackoverflow.com/a/67599505/937377
+    date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
+
     const dateStringResult = dateString.safeParse(date);
 
     return {

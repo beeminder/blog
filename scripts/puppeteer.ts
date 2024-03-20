@@ -80,7 +80,7 @@ async function takeScreenshots() {
     },
   });
   const browser = await puppeteer.launch({
-    headless: "new",
+    headless: true,
   });
   const urls = await getSitemap();
   console.log(urls);

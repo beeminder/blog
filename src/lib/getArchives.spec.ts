@@ -49,4 +49,12 @@ describe("getArchives", () => {
 
     expect(result[0]?.months[0]?.posts[0]?.title).toEqual("B");
   });
+
+  it("assigns post published on the first to correct month", async () => {
+    vi.mocked(readSources).mockReturnValue([meta({ date: "2013-01-01" })]);
+
+    const result = await getArchives();
+
+    expect(result[0]?.label).toEqual(2013);
+  });
 });
