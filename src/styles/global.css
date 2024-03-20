@@ -13,8 +13,10 @@
   font-display: block;
   font-weight: 700;
   src:
-    url(@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff2) format("woff2"),
-    url(@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff) format("woff");
+    url(@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff2)
+      format("woff2"),
+    url(@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff)
+      format("woff");
 }
 
 @font-face {
@@ -23,8 +25,10 @@
   font-display: block;
   font-weight: 900;
   src:
-    url(@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff2) format("woff2"),
-    url(@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff) format("woff");
+    url(@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff2)
+      format("woff2"),
+    url(@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff)
+      format("woff");
 }
 
 @font-face {
@@ -32,7 +36,8 @@
   font-style: normal;
   font-display: block;
   font-weight: 400 700;
-  src: url(@fontsource-variable/lora/files/lora-latin-wght-normal.woff2) format("woff2-variations");
+  src: url(@fontsource-variable/lora/files/lora-latin-wght-normal.woff2)
+    format("woff2-variations");
 }
 
 @font-face {
@@ -40,7 +45,8 @@
   font-style: italic;
   font-display: block;
   font-weight: 50 100 200 300 500;
-  src: url(@fontsource-variable/lora/files/lora-latin-wght-italic.woff2) format("woff2-variations");
+  src: url(@fontsource-variable/lora/files/lora-latin-wght-italic.woff2)
+    format("woff2-variations");
 }
 
 :root {
@@ -77,11 +83,11 @@ h2,
 h3,
 h4,
 h5,
-h1>*,
-h2>*,
-h3>*,
-h4>*,
-h5>* {
+h1 > *,
+h2 > *,
+h3 > *,
+h4 > *,
+h5 > * {
   line-height: var(--line-height-headings);
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
