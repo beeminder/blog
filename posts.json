@@ -7184,5 +7184,15 @@
 "status": "publish",
 "tags": ["bee-all", "navel-gazing", "new features"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "wakatime",
+"disqus_id": "wakatime",
+"source": "doc.bmndr.co/wakatime",
+"redirects": [],
+"date": "2024-03-26",
+"author": "dreeves",
+"status": "draft",
+"tags": ["bee-all", "integrations", "startups", "rationality", "programming"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
