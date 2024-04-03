@@ -92483,6 +92483,107 @@ Join the Dirty Plate Club!
 "
 `;
 
+exports[`body > post wakatime hash 974c5c694c2405ba7517056901b650a1 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"A busy bee coding with a stopwatch\\"
+    title=\\"What busy bees had to do before WakaTime\\"
+    width=\\"450px\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/6edb7235-6b24-4f96-8018-0d33e17ede40\\"
+  >
+</p>
+<p>
+  WakaTime bills itself as &#8220;dashboards for developers&#8221;. 
+It tracks various productivity metrics as you code, which it tracks via a plugin for your editor of choice.
+</p>
+<h3>
+  Yes but I use QuackPad Pro++: The Duck-Typed Editor
+</h3>
+<p>
+  You&#8217;re in luck! 
+Well not you, weirdo.
+But if your editor of choice actually exists then probably you are.
+WakaTime has built open-source plugins for over 90 IDEs and text editors, including browser-based ones.
+They even wrote a native Mac app to track your time in xCode after Apple nixed plugins for xCode.
+</p>
+<p>
+  It&#8217;s already popular with Beeminder users (and vice versa, we hear) so we&#8217;ve at long last built an autodata integration for it!
+</p>
+<h3>
+  It&#8217;s about time
+</h3>
+<p>
+  Correct, we&#8217;ve started with just one of the metrics that WakaTime automatically tracks: time spent programming.
+That currently includes time spent waiting on compiles and deploys.
+On WakaTime&#8217;s dashboard you can see that broken down.
+</p>
+<h3>
+  Ok, how do I use it?
+</h3>
+<p>
+  You just head to
+  <a
+    href=\\"https://www.beeminder.com/wakatime\\"
+    title=\\"Fancy landing page for the integration\\"
+  >
+    beeminder.com/wakatime
+  </a>
+  or click the WakaTime logo on the Beeminder front page, and then follow the prompts.
+</p>
+<p>
+  (For the full documentation, check
+  <a
+    href=\\"https://help.beeminder.com/article/357-wakatime\\"
+    title=\\"Did you know we have extensive help docs for all of Beeminder? No mean feat. We achieve it by beeminding it, of course.\\"
+  >
+    our help doc
+  </a>
+  .)
+</p>
+<p>
+  Once your goal is set up, you just go about your coding day like usual, and Beeminder and WakaTime handle the rest.
+</p>
+<h3>
+  Wait, I’m a WakaTime user new to Beeminder!
+</h3>
+<p>
+  Welcome aboard! 
+You might want to check out our
+  <a
+    href=\\"https://help.beeminder.com/category/5-quick-start-overview\\"
+    title=\\"A collection of 15 newbee-oriented articles starting witih &quot;What is Beeminder?&quot;\\"
+  >
+    getting started guide
+  </a>
+  in our Help Docs, and then get yourself signed up.
+Assuming you&#8217;re on board with the commitment device, paying-money-if-you-go-off-track bit, the beauty of an autodata integration is that you don’t normally need to interact with Beeminder once you’ve gone through the process above of setting up your commitment.
+Just code like normal, WakaTime keeps track of how much time you spent, and Beeminder alerts you if you&#8217;re not spending enough time.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  Ok, and in case you didn&#8217;t actually read any of this and jumped down here for the punchline, just click this button and there&#8217;s a decent chance you&#8217;ll figure it out as you go:
+</p>
+<center>
+  <a href=\\"https://www.beeminder.com/wakatime\\">
+    <span style=\\"background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important\\">
+      Mind your WakaTiming!
+    </span>
+  </a>
+</center>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+"
+`;
+
 exports[`body > post wantcanwill hash a620bfe7c2422878a6ec7613df163724 1`] = `
 "
 <p>

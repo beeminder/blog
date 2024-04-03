@@ -700,6 +700,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/veggieminding' 1`] = `"h
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/waisted' 1`] = `"https://the_source_domain/waisted/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/wakatime' 1`] = `"https://the_source_domain/wakatime/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/wantcanwill' 1`] = `"https://the_source_domain/wantcanwill/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/waterfalls' 1`] = `"https://the_source_domain/waterfalls/export/txt"`;

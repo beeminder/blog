@@ -1,6 +1,7 @@
 ---
 import Sidebar from "../components/Sidebar.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 import sourcesanspro700 from "@fontsource/source-sans-pro/files/source-sans-pro-latin-700-normal.woff2";
 import sourcesanspro900 from "@fontsource/source-sans-pro/files/source-sans-pro-latin-900-normal.woff2";
@@ -101,6 +102,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       </div>
       <div><Sidebar /></div>
     </div>
+
+    <Footer />
 
     <style>
       .cap {
