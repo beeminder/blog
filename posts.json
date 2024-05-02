@@ -7204,5 +7204,15 @@
 "status": "publish",
 "tags": ["bee-all", "new features"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "wetfeet",
+"disqus_id": "wetfeet",
+"source": "doc.bmndr.co/wetfeet",
+"redirects": [],
+"date": "2024-05-01",
+"author": "bsoule",
+"status": "publish",
+"tags": ["bee-all", "new features", "feature unannouncements"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
