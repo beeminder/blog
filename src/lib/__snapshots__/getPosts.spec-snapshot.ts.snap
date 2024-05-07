@@ -24391,6 +24391,7 @@ And years is like, better late than never, but barely (1%).
   <img
     class=\\"aligncenter\\"
     width=\\"100%\\"
+    alt
     src=\\"https://camo.githubusercontent.com/c1e7b00b2a3fcaefd296533eead35359141c0f23/68747470733a2f2f63646e2e676c697463682e636f6d2f66663937346432642d653231322d343730652d383538372d6630363532303533353064302532466c6174652d70656e616c74792e706e67\\"
   >
 </p>
@@ -75884,6 +75885,7 @@ exports[`body > post rssminder hash c6dd4884840ecfbef4f92d105d2abcb7 1`] = `
 <p>
   <img
     class=\\"aligncenter\\"
+    alt
     width=\\"450px\\"
     src=\\"https://blog.beeminder.com/wp-content/uploads/2022/11/rssminder.png\\"
   >
@@ -91103,6 +91105,231 @@ Support interactions take on a collaborative tone.
 "
 `;
 
+exports[`body > post urgency hash 094ac56a9fcd127666c7c7338433a222 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Abstract diagram illustrating a sorting algorithm\\"
+    title=\\"Not sure what this is depicting? Clear your mind and see if the answer bubbles up into your consciousness.\\"
+    width=\\"450px\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/ba37eb4d-6471-4a30-90b1-6883c1f016f5\\"
+  >
+</p>
+<p>
+  Last month we announced
+  <a
+    href=\\"https://blog.beeminder.com/rainbowdash\\"
+    title=\\"The Rainbow Dashboard And Other New Features\\"
+  >
+    a handful of new features
+  </a>
+  and we&#8217;d like to start by adding one more to the list.
+Namely, if you fail to enter data on a do-less goal and Beeminder enters a
+  <a
+    href=\\"https://help.beeminder.com/article/67-do-less-goals#ppr\\"
+    title=\\"Help doc explaining all about do-less goals and PPRs\\"
+  >
+    pessimistic presumptive report
+  </a>
+  (PPR) for you, that goal will sort to the top of your dashboard until you add the missing data.
+(This has made do-less goals
+  <em>
+    so much
+  </em>
+  nicer for me personally.)
+</p>
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Screenshot of the top of my dashboard\\"
+    title=\\"Screenshot of the top of my dashboard\\"
+    src=\\"https://github.com/beeminder/blog/assets/9928/d953b2fe-59d1-478e-ba39-c6e064f664bf\\"
+  >
+</p>
+<p>
+  As part of that change, we changed &#8220;DEADLINE&#8221; in the dashboard header to &#8220;URGENCY&#8221;, which brings us to the philosophical part of this blog post.
+</p>
+<h2>
+  Paternalistic Black-Box Sorting
+</h2>
+<p>
+  We believe in
+  <a
+    href=\\"https://blog.beeminder.com/choices\\"
+    title=\\"The Anti-Settings Principle, which is related, and which also links to an essay from the Basecamp folks about Opinionated Software specifically\\"
+  >
+    Opinionated Software
+  </a>
+  and our Opinion is that urgency means seeing goals in this order on your dashboard:
+</p>
+<ol>
+  <li>
+    <a
+      href=\\"https://blog.beeminder.com/glossary#freeze\\"
+      title=\\"Glossary entry. Short version: Ways a goal can freeze include (1) it&#39;s derailed but can&#39;t rerail, (2) you stopped adding data and the deadman switch activated, (3) you completed the goal i.e. you reached the goal end date.\\"
+    >
+      Frozen
+    </a>
+    goals
+  </li>
+  <li>
+    Do-less goals with
+    <a
+      href=\\"https://blog.beeminder.com/glossary/#pess\\"
+      title=\\"Glossary entry: This applies to *Do Less* goals and can be turned on or off in goal settings for goals with manual data entry, as opposed to *autodata goals*. When you don&#39;t report a value Beeminder conservatively assumes that you did twice whatever the current daily rate is. It actually inserts a dummy datapoint to that effect telling you to edit it if it&#39;s not correct. So it&#39;s the analog of *flatlining* for *Do More goals*. Without this feature you can flake out and fail to report data and Beeminder will treat you as successful.\\"
+    >
+      PPRs
+    </a>
+  </li>
+  <li>
+    The rest of your goals, sorted by
+    <a href=\\"https://blog.beeminder.com/glossary/#safebuf\\">
+      safety buffer
+    </a>
+  </li>
+  <li>
+    Tie-breaker: more
+    <a
+      href=\\"https://blog.beeminder.com/glossary/#pledge\\"
+      title=\\"The pledge or stakes on a goal is the amount of money you pay if you derail, by crossing the bright red line on the graph\\"
+    >
+      expensive
+    </a>
+    goals first
+  </li>
+</ol>
+<p>
+  A frozen goal usually means one that you completed successfully.
+It has reached its end date and has a smiley face on it.
+(In rarer cases it can be a goal that derailed but couldn&#8217;t automatically rerail due to a problem with your payment method or because you scheduled it to be archived.)
+We need these goals at the top of your dashboard for anti-cranial-silicosis reasons.
+This is especially true because of how easy it is to inadvertently end up with a goal end date sooner than you intended, unfortunately.
+Letting frozen goals be buried at the bottom of your dashboard would be a behavioral economic disaster.
+We want them up in your face until you make the decision to restart them or archive them.
+It&#8217;s important that they don&#8217;t go out of sight, out of mind unless you explicitly choose for them to do so.
+(To be clear, this part has already long been the case.)
+</p>
+<p>
+  Next is what we described at the top of this post.
+Philosophically speaking, do-less goals with PPRs are next because these need to be up in your face as well, partly because of the
+  <a
+    href=\\"https://blog.beeminder.com/whattomind/#:~:text=Prefer%20things%20that%20make%20inherently,than%20beeminding%20number%20of%20runs.\\"
+    title=\\"QS as in Quantified Self. The QS First principle says that one should prefer to mind metrics that make meaningful graphs. For example, beeminding miles run is more interesting than beeminding number of runs. Allowing PPRs to stand makes your graph less reflective of the real-world thing it&#39;s measuring.\\"
+  >
+    QS First principle
+  </a>
+  : PPRs make your graph less reflective of the real-world thing it&#8217;s measuring.
+Assuming you care about the accuracy of your graph &#8212; which we feel strongly that you should! &#8212; you need these goals to get your attention when they need data, even if they&#8217;re far from derailing.
+</p>
+<p>
+  After that, sorting by when the goals will derail is obvious, as is the tie-breaking.
+We&#8217;re all pretty deadline-driven here.
+</p>
+<h2>
+  Tech Nerd Interlude:
+  <code>
+    urgencyKey
+  </code>
+  in the API
+</h2>
+<p>
+  Thanks to our amazing iOS maintainer, 
+Theo, 
+for suggesting this part.
+The Beeminder API now includes an urgency key for each goal, that looks like this:
+</p>
+<p>
+  <code>
+    FRO1;PPR1;DL1234567890;P1234567890;goalname
+  </code>
+</p>
+<p>
+  Technically that&#8217;s encoding all the layers of sorting described above, and which we&#8217;ll explain shortly, since this is the tech nerd interlude section, but the point is, even as a programmer using this, you don&#8217;t have to know or care how that key is constructed.
+You just sort (ascending) the goals by that key to get them in order of decreasing urgency.
+But in case you&#8217;re curious, here&#8217;s how we build it:
+</p>
+<ul>
+  <li>
+    the first 4 characters are
+    <code>
+      FRO1
+    </code>
+    or
+    <code>
+      FROx
+    </code>
+    for &#8220;is / isn&#8217;t frozen&#8221; so frozen goals sort first
+  </li>
+  <li>
+    the next 4 characters are
+    <code>
+      PPR1
+    </code>
+    or
+    <code>
+      PPRx
+    </code>
+    for &#8220;has / doesn&#8217;t have a PPR&#8221; so goals whose most recent datapoint is a PPR are the next highest on the dashboard
+  </li>
+  <li>
+    the 10 digits after
+    <code>
+      DL
+    </code>
+    are the unixtime in seconds of deadline (now + safebuf) so goals due sooner sort higher
+  </li>
+  <li>
+    the 10 digits after the
+    <code>
+      P
+    </code>
+    are \\\\(10^9\\\\) minus the pledge in cents, so goals with higher pledges sort higher
+  </li>
+  <li>
+    the goalname at the end is a final tiebreaker to sort alphabetically by goalname so the sort is stable
+  </li>
+</ul>
+<p>
+  Again, consumers of the API (like the Android and iOS smartphone apps) should just treat it as the definition of urgency handed down from God and sort by it (as ascii or unicode, whatever&#8217;s convenient).
+</p>
+<h2>
+  Future Work
+</h2>
+<p>
+  We expect this to come to the smartphone apps next month.
+Longer term, we&#8217;d like Beeminder to be smarter about what urgency means.
+We have an internal spec that involves generalizing
+  <a
+    href=\\"https://blog.beeminder.com/integers/\\"
+    title=\\"Integery Goals, Timey-Wimey Goals, and Conservarounding\\"
+  >
+    our setting for numeric precision
+  </a>
+  and letting the user specify how long a quantum of progress (measured in goal units) should take.
+Then we can sort goals not by when they&#8217;re due but by when you need to
+  <em>
+    start
+  </em>
+  them by.
+Work in progress!
+The beauty of the black-box urgency key implementation is that we&#8217;re free to define and redefine urgency to our hearts&#8217; delight as we have such ideas.
+</p>
+<p>
+  In the meantime, you may have your own ideas about urgency and want to, say, pin important goals, bury ones you don&#8217;t need in sight, or filter goals in various ways.
+We view all of that as client-side choices to made on top of Beeminder&#8217;s choice about urgency order.
+If you want a taste of such features, we recommend Benjamin Fox (zzq)&#8217;s browser extension,
+  <a
+    href=\\"https://forum.beeminder.com/t/my-beeminder-browser-extension/6648\\"
+    title=\\"Long forum thread discussing it\\"
+  >
+    BeeBrowse
+  </a>
+  .
+</p>
+"
+`;
+
 exports[`body > post urlminder hash 3a59aa49a53ba0d7095bd1db1da9f396 1`] = `
 "
 <p>
@@ -93684,6 +93911,286 @@ It boosts the effect your intentions have on your behavior (which is normally li
     24 71.25 \\"auto-entered from withings scale at 11:09\\"
   </pre>
 </font>
+"
+`;
+
+exports[`body > post wetfeet hash d9dcd73167ea97e7f046d9e1a9ef2b7e 1`] = `
+"
+<p>
+  <img
+    class=\\"aligncenter\\"
+    alt=\\"Feet submerged in a pool with money everywhere\\"
+    title=\\"Do we have too many 'death to' posts? It's like Saint-Exupéry says about perfection. Not that this actually counts. Unless we decide to kill $0 goals altogether?\\"
+    width=\\"450px\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/82eecb6f-48a5-49cb-91a9-8ac9bddc90d4\\"
+  >
+</p>
+<p>
+  First, we&#8217;d like to present a foresight award to Beeminder (and
+  <a
+    href=\\"https://manifold.markets\\"
+    title=\\"Breaking news, Manifold is pivoting to a real-money prediction market; stay tuned\\"
+  >
+    Manifold
+  </a>
+  ) user
+  <a
+    href=\\"%22https://www.beeminder.com/ianminds\\"
+    title=\\"ianminds&#39;s Beeminder gallery -- notice they&#39;ve been beeminding for over a decade!\\"
+  >
+    ianminds
+  </a>
+  , who
+  <a
+    href=\\"https://manifold.markets/ianminds/will-beeminder-implement-timelimite\\"
+    title=\\"Will Beeminder implement time-limited pledgeless goals?\\"
+  >
+    predicted we&#8217;d do this
+  </a>
+  almost a year ago.
+</p>
+<p>
+  Cutting to the chase, here&#8217;s how things work now.
+As ever, when creating a goal, you can choose to have it start at $0 or to put $5 at stake from the get-go.
+The interface for doing so looks a little different, though:
+</p>
+<p>
+  <img
+    width=\\"370\\"
+    class=\\"aligncenter\\"
+    alt=\\"Checkbox which says 'Hold the pledge at $0 for 7 days while I get my feet wet'\\"
+    title=\\"Checkbox which says 'Hold the pledge at $0 for 7 days while I get my feet wet'\\"
+    src=\\"https://github.com/beeminder/blog/assets/46881/f4659be5-cd6f-46e1-8206-47d73fdfbcdc\\"
+  >
+</p>
+<p>
+  And the real difference is that, before, the goal would stay at $0 indefinitely.
+Well, indefinitely until you first derailed (that means letting your datapoints cross the bright red line on your graph, for anyone just tuning in). 
+Then only after that first derail would it go up to $5 at stake for the next derailment.
+Now if you opt to start at $0 at risk because you&#8217;re just not sure if you picked the right metric, or if you&#8217;ll even like it, etc, then at the end of the first week, we will bump the pledge up to $5 for you.
+</p>
+<p>
+  Any questions?
+</p>
+<h4>
+  What about my existing $0 goals?!
+</h4>
+<p>
+  We haven&#8217;t changed anything with those&#8230; yet. 
+We would like to do away with them as well
+  <a
+    class=\\"footnote\\"
+    id=\\"BEEMIUM1\\"
+    href=\\"#BEEMIUM\\"
+  >
+    [1]
+  </a>
+  but we won&#8217;t do that without plenty of warning. 
+That&#8217;s why we&#8217;re starting with this experiment. 
+We&#8217;re easing into the water a toe at a time.
+</p>
+<h4>
+  What if I really like free
+  <a
+    class=\\"footnote\\"
+    id=\\"FREEBEE1\\"
+    href=\\"#FREEBEE\\"
+  >
+    [2]
+  </a>
+  things?
+</h4>
+<p>
+  Then try hard not to derail?
+We actually think the best users actively prefer their $0 goals to become $5 goals after some period.
+Our theory is that the model Beeminder user only ever picks $0 when creating a goal out of uncertainty about what&#8217;s realistic to commit to and other unknowns.
+</p>
+<p>
+  <a
+    href=\\"https://www.hellyer.net/\\"
+    title=\\"See also his entry on our About Us page!\\"
+  >
+    Philip Hellyer
+  </a>
+  likes to chide us (very correctly) about what he calls the Month Of Wasted Awesomeness. 
+If you start a goal at $0, with a week of initial
+  <a
+    href=\\"https://blog.beeminder.com/glossary/#flatspot\\"
+    title=\\"Glossary entry for &#39;flat spot&#39;: a period in which your bright red line is effectively paused, requiring no work\\"
+  >
+    flat spot
+  </a>
+  , and you shrug off $5 and $10 derailments, then your first four weeks of your new goal will be like:
+</p>
+<ol>
+  <li>
+    Coast along for a week on the initial flat spot
+  </li>
+  <li>
+    Derail at $0, whoop-de-do
+  </li>
+  <li>
+    Get a week of
+    <a
+      href=\\"https://help.beeminder.com/article/18-respite\\"
+      title=\\"Respite -- respite and nepenthe\\"
+    >
+      post-derail respite
+    </a>
+    , coast along again
+  </li>
+  <li>
+    Derail at $5, yawn
+  </li>
+  <li>
+    Get
+    <em>
+      another
+    </em>
+    week of post-derail respite, coast along yet again
+  </li>
+  <li>
+    Derail at $10, very mild groan
+  </li>
+  <li>
+    You guessed it, another week of post-derail respite
+  </li>
+  <li>
+    Now you have a $30 beemergency and are finally arsed to do something about it
+  </li>
+</ol>
+<p>
+  Feet-wetting mode isn&#8217;t actually helping with that problem very much, but it&#8217;s a step in the right direction!
+If you don&#8217;t start with a week of initial flat spot, at least, this reduces the Month of Wasted Awesomeness by 25%.
+</p>
+<h4>
+  When does the bump happen
+  <em>
+    exactly
+  </em>
+  ?
+</h4>
+<p>
+  I have no idea! This has only been live for a couple days.
+We have plenty of time to finish implementing the part that actually increases your pledge.
+But seriously, the idea is for it to happen exactly 7 days after you created the goal, or 24 hours after we send you a reminder that the feet-wetting period is ending, which should happen six days after goal creation.
+</p>
+<h4>
+  What about an archived goal?
+</h4>
+<p>
+  Well, that mostly shouldn&#8217;t happen, since in the first week getting rid of a goal means outright deleting it, rather than archiving it.
+And since we&#8217;re temporarily grandfathering all the previously created goals, it&#8217;d take a bit of doing to wind up with an archived or otherwise frozen goal with a $0 pledge on it.
+Which is not to say that some of you won&#8217;t manage it.
+</p>
+<h4>
+  Wait, you didn&#8217;t answer my question about archived goals, are you avoiding making eye contact with me?
+</h4>
+<p>
+  Probably yes. We&#8217;re very shy.
+</p>
+<p>
+  Anyway, we think that you should always prefer to restart a goal rather than create a new version of it, so if a goal manages to freeze at $0 pledged, for any one of the possible combinations of events that could lead to this 
+(immediately weaselproofing and scheduling an archive on your brand new goal? a payment on a different goal failing, causing your account to get flagged, and then derailing the $0 goal within the first week? having previously had a Beemium plan when the goal was last active?) 
+then you will be able to restart it with the same feet-wetting option as if it were a brand new goal.
+</p>
+<p>
+  In other words, a frozen still-feet-wetting $0 goal will 
+(we are hereby committing)
+allow you to opt in to a week of $0 at risk for the first week after unfreezing.
+</p>
+<h4>
+  Why is that elephant staring at me?
+</h4>
+<p>
+  Oh, his name is Beemium. 
+He is in the room.
+</p>
+<p>
+  For Beemium folks, we&#8217;re not taking away your pledgeless goals.
+If you want a pledgeless goal now it&#8217;s
+  <em>
+    almost
+  </em>
+  the same as before. 
+Now you tick a square (instead of a circle) to start at $0 pledged, and  set the
+  <a
+    href=\\"https://blog.beeminder.com/pledgecaps/\\"
+    title=\\"Ancient blog post that introduced pledge caps, but probably you don&#39;t need to read a whole other blog post. Pledge caps are what they sound like.\\"
+  >
+    pledge cap
+  </a>
+  to $0 to stop the pledge from increasing when you derail.
+Really not very different at all!
+</p>
+<h4>
+  So what if I cancel my Beemium plan?
+</h4>
+<p>
+  Then all your $0 pledge caps will get bumped to $5 pledge caps. 
+This is the same as it ever was.
+The difference now is that since $0 pledges are week-long trials only, your newly $5-capped goal, with current $0 pledge, will get picked up as a goal whose feet-wetting period is already overdue to end, and we&#8217;ll send you an email saying so within the first day after your premium plan was downgraded.
+Then 24 hours after that, your pledge would get bumped up to $5.
+</p>
+<p>
+  The same would happen if you decided to move the pledge cap from $0 to $5 yourself without canceling Beemium.
+</p>
+<h4>
+  Any other money-grubbing machinations in the works?
+</h4>
+<p>
+  So many!
+Users have long been excited about the idea of automatic pledge decays: 
+if you go long enough without derailing then probably your pledge is too high.
+  <a
+    href=\\"https://blog.beeminder.com/nailingit\\"
+    title=\\"Part of a whole series of posts trying to convince you that if you never derail then probably your goal isn&#39;t ambitious enough, and, yes, we make money when you derail but the incentives are all remarkably aligned. If you&#39;re looking at us with a very raised eyebrow, click the link and hear us out!\\"
+  >
+    Derailing it is nailing it
+  </a>
+  !
+So, partly as a reward for staying on track, but partly as a hint that you should be less afraid of derailing, we&#8217;re pretty on board with having your pledge automatically go back down after a while.
+And we have a whole menagerie of ideas like that for adjusting pledges to squeeze maximal motivation out of them.
+Maybe we&#8217;ll throw machine learning at it, who knows.
+Having the pledge bump itself from $0 to $5 after 7 days is one of many things we may do.
+We won&#8217;t spring any of this on you, and we&#8217;ll always respect pledge caps, of course, but we&#8217;re excited about how much more motivating Beeminder goals can potentially be if we&#8217;re smarter about setting the stakes.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"BEEMIUM\\"
+    href=\\"#BEEMIUM1\\"
+  >
+    [1]
+  </a>
+  Yes, Beemium excluded, but we&#8217;d rather not talk about that.
+</p>
+<p>
+  <a
+    class=\\"footnote\\"
+    id=\\"FREEBEE\\"
+    href=\\"#FREEBEE1\\"
+  >
+    [2]
+  </a>
+  This is not to be confused with 
+&#8220;
+  <a
+    href=\\"https://blog.beeminder.com/deathtofreebees/\\"
+    title=\\"About the ill-fated ephemeral goals from the early days of Beeminder\\"
+  >
+    Death To Freebees; Or, Freebees Für Alles
+  </a>
+  &#8221; which you were almost surely not going to confuse this with but we think that post is a fascinating look into the early days of Beeminder and how dumb we were so we wanted an excuse to at least link to it in a footnote.
+</p>
 "
 `;
 
