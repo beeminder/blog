@@ -24220,7 +24220,7 @@ start by doing something that scares you just a tiny bit, and work up from there
 "
 `;
 
-exports[`body > post commitstew hash 225891745ac706abefe89daf7925cbc1 1`] = `
+exports[`body > post commitstew hash 79eeffa91e6baf54d35c928902a7a8a8 1`] = `
 "
 <p>
   <img
@@ -24388,12 +24388,17 @@ Months late mostly doesn’t count. 10%.
 And years is like, better late than never, but barely (1%).
 </p>
 <p>
-  <img
-    class=\\"aligncenter\\"
-    width=\\"100%\\"
-    alt
-    src=\\"https://camo.githubusercontent.com/c1e7b00b2a3fcaefd296533eead35359141c0f23/68747470733a2f2f63646e2e676c697463682e636f6d2f66663937346432642d653231322d343730652d383538372d6630363532303533353064302532466c6174652d70656e616c74792e706e67\\"
+  <a
+    href=\\"https://github.com/beeminder/blog/assets/9928/ced49e13-08eb-4d51-998e-7030e1954197\\"
+    title=\\"Click for bigger version\\"
   >
+    <img
+      class=\\"aligncenter\\"
+      width=\\"100%\\"
+      alt
+      src=\\"https://github.com/beeminder/blog/assets/9928/ced49e13-08eb-4d51-998e-7030e1954197\\"
+    >
+  </a>
 </p>
 <p>
   So the real nerdery is in defining this function for exactly how much credit you get as a function of how late you are. 
@@ -24472,18 +24477,11 @@ Clicking that link logs the commitment which I can then edit or later mark fulfi
   <img
     class=\\"aligncenter\\"
     width=\\"100%\\"
-    alt=\\"My Reliability: 96.879%  &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Based on 391 commitments  &lt;/li&gt;
-&lt;li&gt;+7 that are still pending (due in the future)  &lt;/li&gt;
-&lt;li&gt;And including 11 (gulp) that are currently overdue [1]&lt;br&gt;(footnote: [1] including, as I type this, my promise to send these slides to the QS folks&#8221;
-title=&#8221;My Reliability: 96.879%  &lt;/li&gt;
-&lt;li&gt;Based on 391 commitments  &lt;/li&gt;
-&lt;li&gt;+7 that are still pending (due in the future)  &lt;/li&gt;
-&lt;li&gt;And including 11 (gulp) that are currently overdue [1]&lt;br&gt;(footnote: [1] including, as I type this, my promise to send these slides to the QS folks&#8221;
-src=&#8221;&lt;a href=\\"
+    alt=\\"My Reliability: 96.879%  * Based on 391 commitments  * +7 that are still pending (due in the future)  * And including 11 (gulp) that are currently overdue [1]  
+(footnote: [1] including, as I type this, my promise to send these slides to the QS folks\\"
+    title=\\"My Reliability: 96.879%  * Based on 391 commitments  * +7 that are still pending (due in the future)  * And including 11 (gulp) that are currently overdue [1]  (footnote: [1] including, as I type this, my promise to send these slides to the QS folks\\"
+    src=\\"https://blog.beeminder.com/wp-content/uploads/2019/04/screenshot2307.png\\"
   >
-  https://blog.beeminder.com/wp-content/uploads/2019/04/screenshot2307.png&quot;/&gt;
 </p>
 <p>
   That’s my reliability based on 391 commitments, plus 7 that don’t count for or against my score because they’re not due yet.
@@ -24498,18 +24496,10 @@ And we’ve been working on this for exactly a year now.
   <img
     class=\\"aligncenter\\"
     width=\\"100%\\"
-    alt=\\"Numbers:  &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;About 10 active beta users  &lt;/li&gt;
-&lt;li&gt;1157 commitments in the database  &lt;/li&gt;
-&lt;li&gt;365 days of very gradual development [1]&lt;br&gt;(footnote: [1] Yes, today (2018-09-22) is the 1st anniversary of the initial Git commit]&#8221;
-title=&#8221;Numbers:  &lt;/li&gt;
-&lt;li&gt;About 10 active beta users  &lt;/li&gt;
-&lt;li&gt;1157 commitments in the database  &lt;/li&gt;
-&lt;li&gt;365 days of very gradual development [1]&lt;br&gt;(footnote: [1] Yes, today (2018-09-22) is the 1st anniversary of the initial Git commit]&#8221;
-src=&#8221;&lt;a href=\\"
+    alt=\\"Numbers:  * About 10 active beta users  * 1157 commitments in the database  * 365 days of very gradual development [1]  (footnote: [1] Yes, today (2018-09-22) is the 1st anniversary of the initial Git commit]\\"
+    title=\\"Numbers:  * About 10 active beta users  * 1157 commitments in the database  * 365 days of very gradual development [1]  (footnote: [1] Yes, today (2018-09-22) is the 1st anniversary of the initial Git commit]\\"
+    src=\\"https://blog.beeminder.com/wp-content/uploads/2019/04/screenshot2317.png\\"
   >
-  https://blog.beeminder.com/wp-content/uploads/2019/04/screenshot2317.png&quot;/&gt;
 </p>
 <h4 class=\\"pullquote\\">
   It can be relaxing to put faith in a system that ensures you’ll do what you need to when you need to
@@ -42147,7 +42137,7 @@ And stay on the Yellow Brick Road.
 "
 `;
 
-exports[`body > post glossary hash d9f14e73b59814a412cab69f13c78c66 1`] = `
+exports[`body > post glossary hash 7d4b16aba72de178d600b280311cbcc2 1`] = `
 "
 <p>
   <img
@@ -42179,7 +42169,7 @@ but it&#8217;s on the internet now so from now on you can google things like &#8
 </p>
 <p>
   UPDATE: We&#8217;re continually adding to this 
-(most recently in March 2023) 
+(most recently in April 2024) 
 as we notice nomenclature that isn&#8217;t self-evident or terms change.
   <em>
     UVI
@@ -42341,7 +42331,7 @@ as we notice nomenclature that isn&#8217;t self-evident or terms change.
 <h2 id=\\"a\\">
   A
 </h2>
-<h4 id=\\"akrasia .def\\">
+<h4 id=\\"akrasia\\">
   Akrasia
 </h4>
 <p>
@@ -42356,7 +42346,7 @@ See the sidebar of this blog, or check out our
   </a>
   .
 </p>
-<h4 id=\\"ahorizon .def\\">
+<h4 id=\\"ahorizon\\">
   Akrasia Horizon
 </h4>
 <p>
@@ -42397,7 +42387,7 @@ See also
   </a>
   .
 </p>
-<h4 id=\\"aproof .def\\">
+<h4 id=\\"aproof\\">
   Akrasia-proofing
 </h4>
 <p>
@@ -42412,7 +42402,7 @@ See also
   </em>
   )
 </p>
-<h4 id=\\"akratic .def\\">
+<h4 id=\\"akratic\\">
   Akratic
 </h4>
 <p>
@@ -42440,7 +42430,7 @@ UPDATE: Akratics Anonymous has been subsumed by the amazing
   </a>
   .
 </p>
-<h4 id=\\"aycebhv .def\\">
+<h4 id=\\"aycebhv\\">
   All-you-can-eat-buffet-hopping vacation
 </h4>
 <p>
@@ -42455,7 +42445,7 @@ For most goals it&#8217;s sufficient to add a
   </em>
   for vacations.
 </p>
-<h4 id=\\"archive .def\\">
+<h4 id=\\"archive\\">
   Archive
 </h4>
 <p>
@@ -42468,7 +42458,7 @@ The goal will be archived after one week, i.e., subject to the
 Archived goals still exist but the bot won&#8217;t bug you about them and you&#8217;ll never be charged for an archived goal.
 Newly created goals that you archive will also give you the option to blow them away completely, in case you set one up wrong.
 </p>
-<h4 id=\\"autodata .def\\">
+<h4 id=\\"autodata\\">
   Autodata goal
 </h4>
 <p>
@@ -42532,7 +42522,7 @@ The full list of autodata sources is on the Beeminder
   </a>
   .
 </p>
-<h4 id=\\"autoratchet .def\\">
+<h4 id=\\"autoratchet\\">
   Auto-ratchet
 </h4>
 <p>
@@ -42546,7 +42536,7 @@ The full list of autodata sources is on the Beeminder
   </em>
   .
 </p>
-<h4 id=\\"autosum .def\\">
+<h4 id=\\"autosum\\">
   Auto-summing
 </h4>
 <p>
@@ -42558,7 +42548,7 @@ The full list of autodata sources is on the Beeminder
 This is the typical way Beeminder works. 
 Exceptions include weight loss and odometer goals and whittle-down goals.
 </p>
-<h4 id=\\"autowide .def\\">
+<h4 id=\\"autowide\\">
   Auto-widening
 </h4>
 <p>
@@ -42574,13 +42564,13 @@ Exceptions include weight loss and odometer goals and whittle-down goals.
 <h2 id=\\"b\\">
   B
 </h2>
-<h4 id=\\"backburner .def\\">
+<h4 id=\\"backburner\\">
   Backburner (below the fold)
 </h4>
 <p>
   This isn&#8217;t a thing anymore!
 </p>
-<h4 id=\\"badside .def\\">
+<h4 id=\\"badside\\">
   Bad side of the line
 </h4>
 <p>
@@ -42595,7 +42585,7 @@ If you end the day (whenever you set your deadline to) on the wrong side, you
   </em>
   and have to pay Beeminder money.
 </p>
-<h4 id=\\"beehive .def\\">
+<h4 id=\\"beehive\\">
   The beehive
 </h4>
 <p>
@@ -42616,7 +42606,7 @@ Later we moved in with Mobilitus /
   </a>
   and then ended up fully remote, thanks to the 2020 pandemic.
 </p>
-<h4 id=\\"beemail .def\\">
+<h4 id=\\"beemail\\">
   Beemail
 </h4>
 <p>
@@ -42628,7 +42618,7 @@ Email →
 Beemail.
 If you&#8217;re reading our glossary then you&#8217;ll probably enjoy getting daily beemails (or at least weekly).
 </p>
-<h4 id=\\"beemergency .def\\">
+<h4 id=\\"beemergency\\">
   Beemergency
 </h4>
 <p>
@@ -42653,7 +42643,7 @@ You must get back to the
 by midnight at the end of this day.
 (And if you don&#8217;t like the default midnight deadline, you can change it.)
 </p>
-<h4 id=\\"beemind .def\\">
+<h4 id=\\"beemind\\">
   To beemind
 </h4>
 <p>
@@ -42661,7 +42651,7 @@ by midnight at the end of this day.
 Often used transitively, as in &#8220;I&#8217;m beeminding my donut consumption.&#8221;
 Think of &#8220;beeminding X&#8221; as an intensified version of &#8220;minding X&#8221;.
 </p>
-<h4 id=\\"bot .def\\">
+<h4 id=\\"bot\\">
   Bot
 </h4>
 <p>
@@ -42672,7 +42662,7 @@ It reminds you to add data, you reply to it with new data, and it warns you if y
   </em>
   .
 </p>
-<h4 id=\\"bright .def\\">
+<h4 id=\\"bright\\">
   Bright red line
 </h4>
 <p>
@@ -42690,7 +42680,7 @@ If your progress perfectly followed the bright red line, you would reach your go
 <h2 id=\\"c\\">
   C
 </h2>
-<h4 id=\\"centerline .def\\">
+<h4 id=\\"centerline\\">
   Centerline
 </h4>
 <p>
@@ -42701,7 +42691,7 @@ See
   </em>
   .
 </p>
-<h4 id=\\"commitment .def\\">
+<h4 id=\\"commitment\\">
   Commitment contract (also: commitment device)
 </h4>
 <p>
@@ -42730,7 +42720,7 @@ See also
   </a>
   .
 </p>
-<h4 id=\\"dial .def\\">
+<h4 id=\\"dial\\">
   Commitment dial
 </h4>
 <p>
@@ -42765,7 +42755,7 @@ See
   </a>
   .
 </p>
-<h4 id=\\"cum .def\\">
+<h4 id=\\"cum\\">
   Cumulative
 </h4>
 <p>
@@ -42778,7 +42768,7 @@ See
 <h2 id=\\"d\\">
   D
 </h2>
-<h4 id=\\"datapoint .def\\">
+<h4 id=\\"datapoint\\">
   Datapoints
 </h4>
 <p>
@@ -42809,7 +42799,7 @@ red means you&#8217;re going to
   </em>
   by midnight (or whenever your deadline is).
 </p>
-<h4 id=\\"derail .def\\">
+<h4 id=\\"derail\\">
   Derail
 </h4>
 <p>
@@ -42838,7 +42828,7 @@ If you had a
   </em>
   .
 </p>
-<h4 id=\\"dialup .def\\">
+<h4 id=\\"dialup\\">
   Dial up/down
 </h4>
 <p>
@@ -42862,7 +42852,7 @@ Changes you make to your red line have a one-week delay before they take effect,
   </em>
   .
 </p>
-<h4 id=\\"doless .def\\">
+<h4 id=\\"doless\\">
   Do Less goal
 </h4>
 <p>
@@ -42899,7 +42889,7 @@ See also
   </em>
   .
 </p>
-<h4 id=\\"domore .def\\">
+<h4 id=\\"domore\\">
   Do More goal
 </h4>
 <p>
@@ -42919,7 +42909,7 @@ Think of them as goals to do more (or less) than you would otherwise do if left 
 <h2 id=\\"e\\">
   E
 </h2>
-<h4 id=\\"eep .def\\">
+<h4 id=\\"eep\\">
   Emergency day (eep day)
 </h4>
 <p>
@@ -42932,7 +42922,7 @@ Think of them as goals to do more (or less) than you would otherwise do if left 
 <h2 id=\\"f\\">
   F
 </h2>
-<h4 id=\\"flatline .def\\">
+<h4 id=\\"flatline\\">
   Flatline / flatlining
 </h4>
 <p>
@@ -42953,7 +42943,7 @@ Exception:
   </em>
   .
 </p>
-<h4 id=\\"flatspot .def\\">
+<h4 id=\\"flatspot\\">
   Flat spot
 </h4>
 <p>
@@ -42982,7 +42972,7 @@ When you start a new goal or
   </em>
   .
 </p>
-<h4 id=\\"freebee .def\\">
+<h4 id=\\"freebee\\">
   Freebee
 </h4>
 <p>
@@ -42996,7 +42986,7 @@ When you start a new goal or
   </a>
   but that is not a thing anymore.)
 </p>
-<h4 id=\\"freeze .def\\">
+<h4 id=\\"freeze\\">
   Freeze
 </h4>
 <p>
@@ -43029,8 +43019,9 @@ You can still add data to a frozen goal but the
     bot
   </em>
   won&#8217;t remind you to do so and the graph won&#8217;t update when you do.
+Finally, we also refer to a goal as frozen if it has simply reached its goal end date.
 </p>
-<h4 id=\\"frontburner .def\\">
+<h4 id=\\"frontburner\\">
   Frontburner (above the fold)
 </h4>
 <p>
@@ -43043,7 +43034,7 @@ You can still add data to a frozen goal but the
 <h2 id=\\"g\\">
   G
 </h2>
-<h4 id=\\"goodside .def\\">
+<h4 id=\\"goodside\\">
   Good side of the line/road
 </h4>
 <p>
@@ -43056,7 +43047,7 @@ You can still add data to a frozen goal but the
 <h2 id=\\"l\\">
   L
 </h2>
-<h4 id=\\"legit .def\\">
+<h4 id=\\"legit\\">
   Legit check
 </h4>
 <p>
@@ -43077,7 +43068,7 @@ You can reply to it to cry foul if there was any reason you feel like it wasn&#8
 If you do that, we (the humans behind Beeminder) will manually reverse the derailment.
 It&#8217;s slightly cumbersome, by design, but if the derailment was in any way Beeminder&#8217;s fault (including confusion about the rules or any of this terminology) we especially want to hear why.
 </p>
-<h4 id=\\"lifehack .def\\">
+<h4 id=\\"lifehack\\">
   Lifehacking
 </h4>
 <p>
@@ -43087,7 +43078,7 @@ Beeminder is a hardcore lifehack.
 <h2 id=\\"m\\">
   M
 </h2>
-<h4 id=\\"mercy .def\\">
+<h4 id=\\"mercy\\">
   Mercy
 </h4>
 <p>
@@ -43097,7 +43088,7 @@ Beeminder is a hardcore lifehack.
   </em>
   .
 </p>
-<h4 id=\\"motivationpoint .def\\">
+<h4 id=\\"motivationpoint\\">
   Motivation point
 </h4>
 <p>
@@ -43131,7 +43122,7 @@ Also known as the psychological bite point (thanks to Noah Wilde for the term).
 <h2 id=\\"n\\">
   N
 </h2>
-<h4 id=\\"noexcuses .def\\">
+<h4 id=\\"noexcuses\\">
   No-Excuses Mode
 </h4>
 <p>
@@ -43159,7 +43150,7 @@ Details in the
   </a>
   .
 </p>
-<h4 id=\\"nomercy .def\\">
+<h4 id=\\"nomercy\\">
   No-mercy rerail
 </h4>
 <p>
@@ -43185,7 +43176,7 @@ Check the no-mercy checkbox in your goal settings if you want to be immediately 
 <h2 id=\\"o\\">
   O
 </h2>
-<h4 id=\\"odom .def\\">
+<h4 id=\\"odom\\">
   Odometer goal
 </h4>
 <p>
@@ -43208,7 +43199,7 @@ If you report a zero then Beeminder treats that as the odometer getting reset (o
 <h2 id=\\"p\\">
   P
 </h2>
-<h4 id=\\"panic .def\\">
+<h4 id=\\"panic\\">
   Panic threshold
 </h4>
 <p>
@@ -43216,8 +43207,8 @@ If you report a zero then Beeminder treats that as the odometer getting reset (o
 Instead you can now directly set for each goal the time of day that Beeminder starts sending reminders.
 One less glossary term to worry about!
 </p>
-<h4 id=\\"pess .def\\">
-  Pessimistic presumptive reports
+<h4 id=\\"pess\\">
+  Pessimistic presumptive reports (PPRs)
 </h4>
 <p>
   This applies to
@@ -43250,7 +43241,7 @@ See
   </a>
   .
 </p>
-<h4 id=\\"pledge .def\\">
+<h4 id=\\"pledge\\">
   Pledge
 </h4>
 <p>
@@ -43270,11 +43261,7 @@ By following the pledge schedule you will quickly close in on your
     motivation point
   </em>
   . 
-You can increase your pledge at any time, or
-  <em>
-    short-circuit
-  </em>
-  , by paying half the currently pledged amount.
+You can increase your pledge at any time.
 That takes effect immediately.
 You can lower your pledge for free but it&#8217;s subject to the
   <em>
@@ -43290,7 +43277,7 @@ You can lower your pledge for free but it&#8217;s subject to the
   </a>
   .)
 </p>
-<h4 id=\\"recommit .def\\">
+<h4 id=\\"recommit\\">
   Precommit to recommit
 </h4>
 <p>
@@ -43309,7 +43296,7 @@ It has a name because, historically, it was something you had to specifically op
   </a>
   .)
 </p>
-<h4 id=\\"premium .def\\">
+<h4 id=\\"premium\\">
   Premium plans
 </h4>
 <p>
@@ -43335,7 +43322,7 @@ you&#8217;ll get
   </a>
   .
 </p>
-<h4 id=\\"programmableself .def\\">
+<h4 id=\\"programmableself\\">
   Programmable self
 </h4>
 <p>
@@ -43356,7 +43343,7 @@ you&#8217;ll get
 <h2 id=\\"q\\">
   Q
 </h2>
-<h4 id=\\"qs .def\\">
+<h4 id=\\"qs\\">
   Quantified self
 </h4>
 <p>
@@ -43377,7 +43364,7 @@ you&#8217;ll get
 <h2 id=\\"r\\">
   R
 </h2>
-<h4 id=\\"ratchet .def\\">
+<h4 id=\\"ratchet\\">
   Ratchet
 </h4>
 <p>
@@ -43400,7 +43387,7 @@ Ratcheting adjusts your bright red line to be closer to your current
   </em>
   to give you less safety buffer.
 </p>
-<h4 id=\\"rate .def\\">
+<h4 id=\\"rate\\">
   Rate/steepness
 </h4>
 <p>
@@ -43424,7 +43411,7 @@ The rate can be adjusted subject to the
   </em>
   .
 </p>
-<h4 id=\\"rerail .def\\">
+<h4 id=\\"rerail\\">
   Rerail
 </h4>
 <p>
@@ -43453,7 +43440,7 @@ The
   </em>
   .
 </p>
-<h4 id=\\"respite .def\\">
+<h4 id=\\"respite\\">
   Respite
 </h4>
 <p>
@@ -43484,7 +43471,7 @@ For a
   </em>
   .
 </p>
-<h4 id=\\"retroratchet .def\\">
+<h4 id=\\"retroratchet\\">
   Retroratchet
 </h4>
 <p>
@@ -43494,7 +43481,7 @@ For a
   </em>
   .
 </p>
-<h4 id=\\"rightlane .def\\">
+<h4 id=\\"rightlane\\">
   Right lane
 </h4>
 <p>
@@ -43505,7 +43492,7 @@ There&#8217;s just a single
   </em>
   that you&#8217;ve crossed or haven&#8217;t.
 </p>
-<h4 id=\\"road .def\\">
+<h4 id=\\"road\\">
   Road
 </h4>
 <p>
@@ -43515,7 +43502,7 @@ There&#8217;s just a single
   </em>
   .
 </p>
-<h4 id=\\"roaddial .def\\">
+<h4 id=\\"roaddial\\">
   Road dial
 </h4>
 <p>
@@ -43528,7 +43515,7 @@ There&#8217;s just a single
 <h2 id=\\"s\\">
   S
 </h2>
-<h4 id=\\"safebuf .def\\">
+<h4 id=\\"safebuf\\">
   Safety buffer, safe days
 </h4>
 <p>
@@ -43547,7 +43534,7 @@ If you are at zero safe days then the next day is a
   </em>
   by midnight (or whatever deadline you&#8217;ve set).
 </p>
-<h4 id=\\"limit .def\\">
+<h4 id=\\"limit\\">
   Set-A-Limit goal
 </h4>
 <p>
@@ -43557,7 +43544,7 @@ If you are at zero safe days then the next day is a
   </em>
   goals.
 </p>
-<h4 id=\\"shortcirc .def\\">
+<h4 id=\\"shortcirc\\">
   Short-circuit
 </h4>
 <p>
@@ -43565,13 +43552,12 @@ If you are at zero safe days then the next day is a
   <em>
     pledge
   </em>
-  to the next level immediately. 
-Short-circuiting will cost you half your current pledge.
-For example, if you&#8217;re jumping from a $10 pledge to a $30 pledge, you must pay $5, unless you have a
+  to the next level immediately.
+Only possible on the most expensive
   <em>
     premium plan
   </em>
-  that allows free short-circuiting.
+  .
 (See
   <a
     href=\\"http://blog.beeminder.com/shortcircuit\\"
@@ -43581,7 +43567,7 @@ For example, if you&#8217;re jumping from a $10 pledge to a $30 pledge, you must
   </a>
   .)
 </p>
-<h4 id=\\"sos .def\\">
+<h4 id=\\"sos\\">
   SOS clause
 </h4>
 <p>
@@ -43608,7 +43594,7 @@ Email
   </a>
   .)
 </p>
-<h4 id=\\"sting .def\\">
+<h4 id=\\"sting\\">
   (Getting) stung
 </h4>
 <p>
@@ -43618,7 +43604,7 @@ Email
   </em>
   .
 </p>
-<h4 id=\\"sup .def\\">
+<h4 id=\\"sup\\">
   Supporters
 </h4>
 <p>
@@ -43644,7 +43630,7 @@ See
 <h2 id=\\"u\\">
   U
 </h2>
-<h4 id=\\"urg .def\\">
+<h4 id=\\"urg\\">
   Urgency load
 </h4>
 <p>
@@ -43670,7 +43656,7 @@ And adding new goals can at best leave your urgency load unchanged, if you keep 
   </a>
   for more technical details.)
 </p>
-<h4 id=\\"uvi .def\\">
+<h4 id=\\"uvi\\">
   User-Visible Improvement (UVI)
 </h4>
 <p>
@@ -43714,7 +43700,7 @@ We sometimes describe the day&#8217;s
   </a>
   .)
 </p>
-<h4 id=\\"uservoice .def\\">
+<h4 id=\\"uservoice\\">
   Uservoice
 </h4>
 <p>
@@ -43730,7 +43716,7 @@ We sometimes describe the day&#8217;s
 <h2 id=\\"w\\">
   W
 </h2>
-<h4 id=\\"weasel .def\\">
+<h4 id=\\"weasel\\">
   Weasel
 </h4>
 <p>
@@ -43755,12 +43741,8 @@ We sometimes describe the day&#8217;s
   </a>
   .)
 </p>
-<h4>
-  Weaselproofing (sometimes
-  <em>
-    weasel-proofing
-  </em>
-  ) {#weaselproof}
+<h4 id=\\"weaselproof\\">
+  Weaselproofing (sometimes weasel-proofing)
 </h4>
 <p>
   See
@@ -43768,7 +43750,7 @@ We sometimes describe the day&#8217;s
     No-Excuses Mode
   </em>
 </p>
-<h4 id=\\"whittle .def\\">
+<h4 id=\\"whittle\\">
   Whittle-down goal
 </h4>
 <p>
@@ -43779,7 +43761,7 @@ We sometimes describe the day&#8217;s
   goal that goes down instead of up.
 Like if you want to whittle down the number of messages in your inbox.
 </p>
-<h4 id=\\"wronglane .def\\">
+<h4 id=\\"wronglane\\">
   Wrong lane
 </h4>
 <p>
@@ -43793,7 +43775,7 @@ There&#8217;s just a single
 <h2 id=\\"y\\">
   Y
 </h2>
-<h4 id=\\"ybr .def\\">
+<h4 id=\\"ybr\\">
   Yellow brick road
 </h4>
 <p>
@@ -43820,7 +43802,7 @@ UPDATE: We&#8217;ve since
   </em>
   .
 </p>
-<h4 id=\\"guidelines .def\\">
+<h4 id=\\"guidelines\\">
   Yellow guiding lines
 </h4>
 <p>
@@ -43862,7 +43844,7 @@ It will take effect after the akrasia horizon (7 days) but since you have that m
 <h2 id=\\"z\\">
   Z
 </h2>
-<h4 id=\\"zenop .def\\">
+<h4 id=\\"zenop\\">
   Zeno polling
 </h4>
 <p>
@@ -60805,7 +60787,7 @@ Or at least end up with an informative post-mortem on why you failed.
 "
 `;
 
-exports[`body > post nerds hash 3538e54df2ea91cce619c1162158a053 1`] = `
+exports[`body > post nerds hash b0a61f41806ae3ff2cbf676423392338 1`] = `
 "
 <p>
   <img
@@ -61094,7 +61076,7 @@ The more front-and-center the graphs and numbers are, the less likely they are t
   >
     StickK.com
   </a>
-  , targetting anyone with goals.
+  , targeting anyone with goals.
 Or you could say they target anyone who&#8217;s
   <a
     href=\\"https://blog.beeminder.com/akrasia\\"
@@ -64378,7 +64360,7 @@ Thank you so much for your enthusiasm and involvement in making this possible!
 "
 `;
 
-exports[`body > post ontologies hash 88edbd5f5b6f5b538575df21578602e4 1`] = `
+exports[`body > post ontologies hash 27f7c8d249ddffeff2be8d475899cba1 1`] = `
 "
 <p>
   <img
@@ -64416,7 +64398,7 @@ Eventually I intend to collect them all into a meta post but here are a few rand
   , and
   <a
     href=\\"https://blog.beeminder.com/postel\\"
-    title=\\"The Opposite of Postel&#39;s Law. Robustness sure sounds like it should be a good thing but oh my goodness is this advice excruciatingly correct.\\"
+    title=\\"The Opposite of Postel&#39;s Law. Robustness sure sounds like it should be a good thing but oh my goodness is this anti-robustness advice excruciatingly correct.\\"
   >
     the Anti-Robustness Principle
   </a>
@@ -68013,7 +67995,7 @@ But don&#8217;t listen to me, see what a true
 "
 `;
 
-exports[`body > post predict hash b9ed963e091616cadde1b4326a1ba560 1`] = `
+exports[`body > post predict hash 0cf5067e2d686aa989cce3c12ac7cc57 1`] = `
 "
 <p>
   <img
@@ -68416,14 +68398,16 @@ See also
   >
     Yassine Meskhout
   </a>
-  &#8217;s notion of
-  <a
-    href=\\"https://forum.beeminder.com/t/yassine-meskhouts-taxing-vs-punitive-commitment-contracts/9262\\"
-    title=\\"Apparently he&#39;s never published this but he gave us permission to quote him in the Beeminder forum\\"
-  >
-    taxing vs punitive commitment contracts
+  &#8217;s notion of 
+[taxing vs punitive commitment contracts](
+  <a href=\\"https://blog.beeminder.com/pigou\\">
+    https://blog.beeminder.com/pigou
   </a>
-  .
+  <a href=\\"https://forum.beeminder.com/t/yassine-meskhouts-taxing-vs-punitive-commitment-contracts/9262\\">
+    https://forum.beeminder.com/t/yassine-meskhouts-taxing-vs-punitive-commitment-contracts/9262
+  </a>
+  &#8220;UPDATE: This was originally a link to a forum post where Yassine gave us permission to quote him. In 2024 we turned it into its own blog post: Beeminder As Your Personal Pigouvian Tax.&#8221;
+).
 </p>
 "
 `;
@@ -69664,13 +69648,13 @@ And for that, I am so very grateful.
 "
 `;
 
-exports[`body > post psychpricing hash 44e04fde3e16b6cefa9f3a77fc0b5333 1`] = `
+exports[`body > post psychpricing hash 75011522de9e519ec4130b267276ef30 1`] = `
 "
 <p>
   <img
     class=\\"aligncenter\\"
     alt=\\"A gas station sign advertising $9.999/gallon gas\\"
-    title=\\"I find it especially galling how gas stations in the US literally subtract a tenth of a penny from their per gallon prices\\"
+    title=\\"I find it especially galling how gas stations in the US literally subtract a tenth of a penny from their per gallon prices. PS from 2024: This image sure is garbage. It's funny how this seemed impressive way back in 2022! (Ok, actually we're still pretty gobsmacked that anything like this is possible at all.)\\"
     width=\\"450px\\"
     src=\\"https://blog.beeminder.com/wp-content/uploads/2022/09/DALL·E-2022-09-29-03.08.26-gas-station-sign-advertising-9.999-_-gallon-gas.png\\"
   >
@@ -83956,7 +83940,7 @@ Just make sure to arrive a bit before sunset at 7:08pm when the swifts will do t
 "
 `;
 
-exports[`body > post synonyms hash 3daf166c9ea121bf5a18ebd7f225cdd9 1`] = `
+exports[`body > post synonyms hash cda5554990dfe906ba6b8abbe3474811 1`] = `
 "
 <p>
   <img
@@ -91105,7 +91089,7 @@ Support interactions take on a collaborative tone.
 "
 `;
 
-exports[`body > post urgency hash 094ac56a9fcd127666c7c7338433a222 1`] = `
+exports[`body > post urgency hash 757fe2044e7bd99eaa77dec92d2fc457 1`] = `
 "
 <p>
   <img
@@ -91317,7 +91301,7 @@ The beauty of the black-box urgency key implementation is that we&#8217;re free 
 </p>
 <p>
   In the meantime, you may have your own ideas about urgency and want to, say, pin important goals, bury ones you don&#8217;t need in sight, or filter goals in various ways.
-We view all of that as client-side choices to made on top of Beeminder&#8217;s choice about urgency order.
+We view all of that as client-side choices to be made on top of Beeminder&#8217;s choice about urgency order.
 If you want a taste of such features, we recommend Benjamin Fox (zzq)&#8217;s browser extension,
   <a
     href=\\"https://forum.beeminder.com/t/my-beeminder-browser-extension/6648\\"
