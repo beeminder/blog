@@ -7214,5 +7214,15 @@
 "status": "publish",
 "tags": ["bee-all", "new features", "feature unannouncements"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "wetterfeet",
+"disqus_id": "wetterfeet",
+"source": "doc.bmndr.co/wetterfeet",
+"redirects": [],
+"date": "2024-05-15",
+"author": "dreeves",
+"status": "publish",
+"tags": ["bee-all", "new features", "feature unannouncements", "PSA"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
