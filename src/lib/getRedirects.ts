@@ -17,6 +17,7 @@ export default async function getRedirects(): Promise<Record<string, string>> {
     if (tag.redirect) {
       acc[`/tags/${tag.redirect}`] = `/tags/${tag.name}`;
     }
+    acc[`/tag/${tag.name}`] = `/tags/${tag.name}`;
     return acc;
   }, {});
 
