@@ -7224,5 +7224,15 @@
 "status": "publish",
 "tags": ["bee-all", "new features", "feature unannouncements", "PSA"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "ynab",
+"disqus_id": "ynab",
+"source": "doc.bmndr.co/ynab",
+"redirects": [],
+"date": "2024-05-27",
+"author": "bsoule",
+"status": "draft",
+"tags": ["bee-all", "integrations", "startups", "rationality", "budgeting", "money"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
