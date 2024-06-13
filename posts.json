@@ -7234,5 +7234,15 @@
 "status": "publish",
 "tags": ["bee-all", "integrations", "startups", "rationality", "budgeting", "money"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "groupies",
+"disqus_id": "groupies",
+"source": "doc.bmndr.co/groupies",
+"redirects": [],
+"date": "2024-06-12",
+"author": "dreeves",
+"status": "draft",
+"tags": ["bee-all", "feature announcements", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
