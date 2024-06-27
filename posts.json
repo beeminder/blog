@@ -7244,5 +7244,15 @@
 "status": "publish",
 "tags": ["bee-all", "feature announcements", "rationality"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "journal",
+"disqus_id": "journal",
+"source": "doc.bmndr.co/journal",
+"redirects": [],
+"date": "2024-06-26",
+"author": "shanaqui",
+"status": "draft",
+"tags": ["akrasia", "bee-all", "meta", "meta goals"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
