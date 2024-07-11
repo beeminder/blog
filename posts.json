@@ -7254,5 +7254,15 @@
 "status": "publish",
 "tags": ["akrasia", "bee-all", "meta", "meta goals"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "ownwords",
+"disqus_id": "ownwords",
+"source": "doc.bmndr.co/ownwords",
+"redirects": [],
+"date": "2024-07-10",
+"author": "dreeves",
+"status": "draft",
+"tags": ["bee-all", "rationality", "writing"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
