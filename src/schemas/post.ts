@@ -34,7 +34,7 @@ export const post = z
         message: `Failed to parse post ${url}`,
         code: ZodIssueCode.custom,
         params: {
-          error,
+          error: error instanceof Error ? error.message : "Unknown error",
         },
       });
       return z.NEVER;
