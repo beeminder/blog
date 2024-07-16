@@ -1,5 +1,5 @@
 import type { DiffOptions } from "vitest";
 
 export default {
-  truncateThreshold: 50,
+  contextLines: 3,
 } satisfies DiffOptions;
