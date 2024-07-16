@@ -10,5 +10,6 @@ export default defineConfig({
     include: ["src/**/*.spec-snapshot.ts"],
     watch: false,
     reporters: "dot",
+    diff: "./vitest.snapshot.diff.ts",
   },
 });
