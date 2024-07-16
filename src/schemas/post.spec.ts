@@ -364,6 +364,7 @@ describe("post", () => {
     if (result.success) {
       throw new Error("Expected error");
     }
+
     expect(JSON.stringify(result.error)).toEqual(
       expect.stringMatching(/comment syntax error/),
     );
