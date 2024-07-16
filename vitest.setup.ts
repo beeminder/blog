@@ -4,7 +4,6 @@ import fetchPost from "./src/lib/fetchPost";
 import { __reset } from "./src/lib/memoize";
 import ether from "./src/lib/test/ether";
 import getSitemap from "./src/lib/test/getSitemap";
-import readScreenshot from "./src/lib/test/readScreenshot";
 
 vi.mock("./src/lib/fetchPost");
 vi.mock("./src/lib/readSources");
@@ -48,12 +47,6 @@ beforeEach(() => {
 
   vi.mocked(fetchPost).mockResolvedValue(ether());
   vi.mocked(getSitemap).mockResolvedValue([]);
-  vi.mocked(readScreenshot).mockReturnValue({
-    metadata: () => ({
-      width: 100,
-      height: 100,
-    }),
-  } as any);
 
   vi.stubGlobal("console", {
     ...console,

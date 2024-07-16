@@ -67,9 +67,10 @@
     "diffable-html": "^5.0.0",
     "eslint": "^8.49.0",
     "pixelmatch": "^5.3.0",
+    "pixelteer": "github:narthur/pixelteer",
     "pngjs": "^7.0.0",
     "prettier": "3.0.3",
-    "puppeteer": "^21.3.8",
+    "puppeteer": "22.6.5",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vitest": "^2.0.3"
