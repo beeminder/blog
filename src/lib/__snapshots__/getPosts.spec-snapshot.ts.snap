@@ -7152,7 +7152,7 @@ Holler if you use it a lot and would find it annoying to have to go to the websi
 "
 `;
 
-exports[`body > post beehive hash a13c47cfbe1da1b1bc1aa3f0670a7bcb 1`] = `
+exports[`body > post beehive hash 3e28930050b19079394d81fc5dd9638a 1`] = `
 "
 <p>
   <img
@@ -7165,10 +7165,14 @@ exports[`body > post beehive hash a13c47cfbe1da1b1bc1aa3f0670a7bcb 1`] = `
 <p>
   Beeminder headquarters is now officially in Portland, Oregon! 
 We&#8217;re proud and excited to announce that we&#8217;ve been accepted into the
-  <a href="http://portlandseedfund.com">
+  <a
+    href="http://portlandseedfund.com"
+    title="PSF"
+  >
     Portland Seed Fund
   </a>
-  &#8217;s newest class of startups.
+  &#8217;s 
+newest class of startups.
 We&#8217;re in the esteemed company of
   <a
     href="https://www.crunchbase.com/organization/gliph"
@@ -7178,8 +7182,8 @@ We&#8217;re in the esteemed company of
   </a>
   ,
   <a
-    href="http://www.globesherpa.com/"
-    title="Pay your metro fare via your phone"
+    href="https://web.archive.org/web/20160303064909/http%3A//www.globesherpa.com/"
+    title="[was at globesherpa.com] Pay your metro fare via your phone (PS: Later became Moovel)"
   >
     GlobeSherpa
   </a>
@@ -7214,28 +7218,31 @@ We&#8217;re in the esteemed company of
   , and
 Tell it in 10 [UPDATE: pivoted to
   <a
-    href="http://glider.com"
-    title="Secure document/contract management"
+    href="https://web.archive.org/web/20140101013640/https%3A//glider.com/"
+    title="Secure document/contract management (PS: The domain glider.com seems to have been sold to an unrelated org)"
   >
     Glider
   </a>
   ].
 (Mouse over those for our attempts to describe them in a phrase.)
 Also some brilliant
-  <a href="http://portlandseedfund.com/portfolio/">
+  <a
+    href="https://web.archive.org/web/20160428091326/http%3A//www.portlandseedfund.com/portfolio.html"
+    title="Original link: portlandseedfund.com/portfolio"
+  >
     alumni of Portland Seed Fund
   </a>
   like
   <a
     href="http://geoloqi.com"
-    title="Geolocation platform -- we&#39;re kind of in awe of the Geoloqi founders"
+    title="Geolocation platform -- we&#39;re kind of in awe of the Geoloqi founders (PS: Geoloqi was later acquired by Esri)"
   >
     Geoloqi
   </a>
   and
   <a
-    href="http://audioname.com"
-    title="Record your name and add it to your signature or have it show up in Rapportive"
+    href="https://web.archive.org/web/20150206233234/http%3A//audioname.com/"
+    title="[was at audioname.com] Record your name and add it to your signature or have it show up in Rapportive"
   >
     Audioname
   </a>
@@ -7243,11 +7250,17 @@ Also some brilliant
 </p>
 <p>
   We&#8217;re in a cozy office in the hyper-hipster
-  <a href="http://en.wikipedia.org/wiki/Pearl_District,_Portland,_Oregon">
+  <a
+    href="http://en.wikipedia.org/wiki/Pearl_District,_Portland,_Oregon"
+    title="Not to be confused with the Perl district, situated between the Python and PHP districts"
+  >
     Pearl District
   </a>
   with the friendly folks at
-  <a href="http://www.upstartlabs.com">
+  <a
+    href="https://web.archive.org/web/20160312084225/http%3A//www.upstartlabs.com/"
+    title="PS: Now an internet archive link to a snapshot from Upstart Labs&#39;s glory days"
+  >
     Upstart Labs
   </a>
   .
@@ -7267,7 +7280,8 @@ We&#8217;re settling in nicely.
 </h2>
 <p>
   We&#8217;re both hardcore hacker nerds in desperate need of the business-oriented mentoring that Portland Seed Fund has to offer. 
-But we&#8217;re committed (
+But we&#8217;re committed 
+(
   <a
     href="http://blog.beeminder.com/blogdog"
     title="Note that we recently hit 365 user-visible improvements to Beeminder in 365 days"
@@ -7294,7 +7308,10 @@ We have one intrepid user who is paying $12/month to be able to jump to any amou
 Interestingly, he wasn&#8217;t concerned about paying the lower amounts but he worried that he wouldn&#8217;t reset after his initial failures so he wanted to go straight to the $270 pledge level to keep himself in line from the start. 
 We&#8217;re still working on other features to include for premium subscriptions before we roll it out publicly. (Thanks so much to everyone chomping at the bit to get in on this!)
 [UPDATE: We&#8217;ve launched
-      <a href="http://blog.beeminder.com/premium">
+      <a
+        href="http://blog.beeminder.com/premium"
+        title="The premium plans as of 2024: Infinibee, Bee Plus, Beemium"
+      >
         premium plans
       </a>
       for real now.]
@@ -7305,8 +7322,8 @@ We&#8217;re still working on other features to include for premium subscriptions
       Automate emails that we&#8217;re currently sending semi-manually.
 We got a good start on that this weekend by
       <a
-        href="https://twitter.com/beemuvi/status/176548989137727488"
-        title="If you&#39;re enough of a Beeminder groupie to want to know about every User-Visible Improvement as it happens, then follow this Twitter feed"
+        href="http://beeminder.com/changelog#378"
+        title="If you&#39;re enough of a Beeminder groupie to want to know about every User-Visible Improvement as it happens, then follow this Twitter feed: twitter.com/beemuvi (PS: This link used to be to the tweet for our changelog entry about confirmation emails but now we host our own changelog and just tweet the entries incidentally. POSSE rather than PESOS.)"
       >
         automating our confirmation emails when someone falls off their yellow brick road
       </a>
@@ -7322,22 +7339,35 @@ But with 3800 goals and growing fast [UPDATE 2013: now tens of thousands], we ne
       Publish our API! 
 We think this will be huge. 
 Mainly we want to make it easy to do with many other companies what we&#8217;ve done so far as a prototype with
-      <a href="http://skritter.com">
+      <a
+        href="http://skritter.com"
+        title="By Nick Winter, now of CodeCombat fame"
+      >
         Skritter.com
       </a>
       &#8201;&#8212;&#8201;allow other services to automatically send data to Beeminder on behalf of users to update their graphs. 
 So people using Skritter to learn to write Chinese and Japanese can commit to a certain amount of practice per week, without having to enter data into Beeminder separately. 
 Of course we already have integration with the
-      <a href="http://blog.beeminder.com/blind">
+      <a
+        href="http://blog.beeminder.com/blind"
+        title="Blog post mentioning this proto-integration"
+      >
         Withings scale
       </a>
       and are excited to integrate with a million other devices.
 [UPDATE: Our
-      <a href="http://blog.beeminder.com/api">
+      <a
+        href="http://blog.beeminder.com/api"
+        title="Blog post announcing the API"
+      >
         API is published
       </a>
-      now! And
-      <a href="http://blog.beeminder.com/tag/integrations/">
+      now! 
+And
+      <a
+        href="https://blog.beeminder.com/tags/integrations"
+        title="Beeminder blog posts tagged &#39;integrations&#39;"
+      >
         lots more integrations
       </a>
       !]
@@ -7346,7 +7376,10 @@ Of course we already have integration with the
   <li>
     <p>
       And of course we have a laundry list of feature requests on our
-      <a href="http://uservoice.beeminder.com">
+      <a
+        href="https://forum.beeminder.com"
+        title="UPDATE: This originally pointed to uservoice.beeminder.com but we replaced that with a Discourse forum"
+      >
         feedback forum
       </a>
       that our users are clamoring for.
@@ -7362,7 +7395,10 @@ We can&#8217;t begin to tell you how grateful we are to have such an enthusiasti
 <p>
   <em>
     Title image:
-    <a href="http://4walls4all.wordpress.com/author/samuelmclaughlin/">
+    <a
+      href="http://4walls4all.wordpress.com/author/samuelmclaughlin/"
+      title="Image from around 2010"
+    >
       Samuel McLaughlin
     </a>
   </em>
@@ -9166,7 +9202,7 @@ He&#8217;s also working on a new
 "
 `;
 
-exports[`body > post blackmail hash d06dd69abaef39ab2b2a6b6955fab657 1`] = `
+exports[`body > post blackmail hash b7169551eca2ed6363e1e047d278a724 1`] = `
 "
 <p>
   <img
@@ -9415,7 +9451,7 @@ A recent
 Similarly, Nate Soares&#8217;s
   <a
     href="https://mindingourway.com/guilt/"
-    title="From Nate&#39;s site, Mind Our Way (to the heavens)"
+    title="From Nate&#39;s site, Minding Our Way (to the heavens)"
   >
     Replacing Guilt
   </a>
@@ -24739,7 +24775,7 @@ Both
 "
 `;
 
-exports[`body > post competitors hash 8ca96ac64c1ccece94c7e6b90f640961 1`] = `
+exports[`body > post competitors hash bf25fa55c26e76f2195aa600993d4b15 1`] = `
 "
 <p>
   <img
@@ -24997,6 +25033,28 @@ Locking away snacks is the obvious use case but you can also lock away TV remote
       Y Combinator company
     </a>
     !
+  </li>
+  <li>
+    <strong>
+      <a
+        href="https://goaliemvmt.com/"
+        title="Breaking news: WayBetter now has a thing called Games which may make it a direct competitor of Goalie, from what we can tell"
+      >
+        Goalie
+      </a>
+    </strong>
+    is kind of like WayBetter but maybe way more general.
+  </li>
+  <li>
+    <strong>
+      <a
+        href="https://usecobweb.com/"
+        title="Fellow Portland startup!"
+      >
+        Cobweb
+      </a>
+    </strong>
+    is a timer app that charges you money if you use your phone before the timer runs out.
   </li>
 </ul>
 <h3>
@@ -31842,7 +31900,7 @@ And I&#8217;m making this kind of Slytherin argument for how it helps your own b
 "
 `;
 
-exports[`body > post dogfood hash 1009594f5c4045f855467c743f180f54 1`] = `
+exports[`body > post dogfood hash 0fdf740d07c079663e258d34fce1515f 1`] = `
 "
 <p>
   <img
@@ -31932,6 +31990,15 @@ Especially when premium credit is worthless to
       </a>
       . 
 We could make a new kind of credit&#8201;&#8212;&#8201;derail credit&#8201;&#8212;&#8201;but that&#8217;s a can of worms.
+[UPDATE 20024: 
+We sure did
+      <a
+        href="https://blog.beeminder.com/honeygrams"
+        title="Blog post introducing Honey Money"
+      >
+        open that can of worms
+      </a>
+      .]
     </p>
     <p>
       Bottom line, the whole dogfood bounty thing is so fraught and messy in so many ways that I feel pretty fine about killing it, despite the wistful little pang.
@@ -34999,7 +35066,7 @@ $$\\frac{1-\\exp(r-R)}{1-\\exp(r)}$$
 "
 `;
 
-exports[`body > post faire hash 27469e657f118eef5e6d1419fd6c84f0 1`] = `
+exports[`body > post faire hash 88e0f5ac79623a361da0be708f34af51 1`] = `
 "
 <p>
   <img
@@ -45377,7 +45444,7 @@ since I created a GTBee task that I&#8217;d finish this post by 11 am PT. Worked
 "
 `;
 
-exports[`body > post gym hash 30eb1ad5ef2ca54741e8a97dfaf77ede 1`] = `
+exports[`body > post gym hash 1cf3e81888c59e6bf22f6d7570a7196a 1`] = `
 "
 <p>
   <img
@@ -45526,6 +45593,16 @@ The current Beeminder implementation of Danny and Bethany taking your money is m
       How to Do What You Want
     </a>
     .
+  </li>
+  <li>
+    UPDATE 2024:
+    <a
+      href="https://blog.beeminder.com/buyminder"
+      title="Beeminder blog post from 2021"
+    >
+      Beemind What You Buy
+    </a>
+    is a nice generalization of this.
   </li>
 </ul>
 <h2>
@@ -59923,7 +60000,7 @@ After repeatedly pointing people to the bottom section of this blog post about b
 "
 `;
 
-exports[`body > post motivationtypes hash 306ad2c8baebd1ce7bb10707e61bc895 1`] = `
+exports[`body > post motivationtypes hash a63b37387382501ba0cc8963b425a34c 1`] = `
 "
 <p>
   <img
@@ -67225,7 +67302,7 @@ Can you tell that I&#8217;m in awe?
 "
 `;
 
-exports[`body > post pigou hash 07b65766e0060134944539775b064752 1`] = `
+exports[`body > post pigou hash 3e9cb86ebdd99e99cf83ffb888f0b32c 1`] = `
 "
 <p>
   <img
@@ -67359,7 +67436,7 @@ This is the beauty of the
   To review, 
 a punishment framing can encourage an excuse-making mindset over a results-oriented mindset.
 It can also encourage you to make your goals less ambitious.
-Instead, try treating Beeminder&#8217;s stings as an elegant behavior-shaping tax and accept that some derailments are inevitable.
+Instead, try treating Beeminder&#8217;s stings as a behavior-shaping tax and accept that some derailments are inevitable.
 You can view that tax as the cost of the service Beeminder provides: nudges or rumble strips keeping you on track.
 Finally, you can dial in a sweet spot in terms of both the steepness of the bright red line and the amount of money at risk.
 The (meta) goal is to be pushed to do as much as possible&#8201;&#8212;&#8201;or whatever maximizes the motivational value you get from Beeminder&#8201;&#8212;&#8201;at minimal cost.
@@ -70187,7 +70264,7 @@ And fellow consumers, cultivate more outrage when companies try to trick you!
 "
 `;
 
-exports[`body > post punishment hash 9b5a507efdad1c5bfbd96921fd889fd1 1`] = `
+exports[`body > post punishment hash a9de1148962678d2e5b063c761a3b9ce 1`] = `
 "
 <p>
   <img
@@ -70285,7 +70362,7 @@ Like the annoying beeping that stops when you put on your seatbelt.
     class="aligncenter"
     title="Danny chimes in: If you want to get even nerdier, this shows the Cartesian product of the set of possible types of stimuli (applying or removing) with the set of possible goals (to increase or decrease a behavior)"
     alt="Table showing the four types of punishment and reinforcement"
-    src="https://draftin.com:443/images/54288?token=LIwmVCn-k8x5nuL3gQj7pADexT6dWBa-1i-hAu7BRvQIep8Vr3_b4sM5kTmuEliipqXhPTTxcrIwyAYmQ_UR1UM"
+    src="https://github.com/beeminder/blog/assets/9928/420208df-b2e5-4f1f-a1f3-646620b109a7"
   >
 </p>
 <p>
