@@ -21,7 +21,9 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "preinstall": "npx only-allow pnpm",
-    "puppeteer": "tsx ./scripts/puppeteer.ts"
+    "puppeteer": "tsx ./scripts/puppeteer.ts",
+    "puppeteer:report": "tsx ./scripts/puppeteer-report.ts",
+    "puppeteer:reset": "pnpm run cache:clear && pnpm run build && rm -rf ./shots && mkdir ./shots"
   },
   "dependencies": {
     "@astrojs/prefetch": "^0.4.1",

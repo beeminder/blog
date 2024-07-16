@@ -17,7 +17,7 @@ const server = await preview({
 });
 
 const urls = await getSitemap();
-const paths = urls.map((url) => new URL(url).pathname);
+const paths = urls.map((url) => new URL(url).pathname + "?snap");
 
 await compareUrls({
   baseUrl1: base,
