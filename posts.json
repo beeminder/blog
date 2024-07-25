@@ -7264,5 +7264,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "writing"],
 "excerpt": "We have two excuses to blog about this. First, we’re using our new group goals feature to experiment with something we’re calling Book Brigades. To quote myself from the forum post about it: A book brigade is a very small group of very like-minded"
+},{
+"slug": "grayson",
+"disqus_id": "grayson",
+"source": "doc.bmndr.co/grayson",
+"redirects": [],
+"date": "2024-07-24",
+"author": "Grayson Bray Morris",
+"status": "draft",
+"tags": ["bee-all", "rationality", "writing", "newbees", "FAQ", "graphing"],
+"excerpt": "We have two excuses to blog about this. First, we’re using our new group goals feature to experiment with something we’re calling Book Brigades. To quote myself from the forum post about it: A book brigade is a very small group of very like-minded"
 }
 ]
