@@ -46,7 +46,8 @@
     "tags": [
       "food",
       "tips",
-      "weight loss"
+      "weight loss",
+      "madhacks"
     ],
     "status": "publish",
     "disqus_id": "165 https://blog.beeminder.com/?p=165",
@@ -2752,7 +2753,8 @@
       "food",
       "guest posts",
       "rationality",
-      "yellow brick road"
+      "yellow brick road",
+      "madhacks"
     ],
     "status": "publish",
     "disqus_id": "837 https://blog.beeminder.com/?p=837",
@@ -4463,7 +4465,8 @@
       "lifehacks",
       "rationality",
       "tips",
-      "weight loss"
+      "weight loss",
+      "madhacks"
     ],
     "status": "publish",
     "disqus_id": "1443 https://blog.beeminder.com/?p=1443",
@@ -5913,7 +5916,8 @@
       "lifehacks",
       "PSA",
       "rationality",
-      "tips"
+      "tips", 
+      "madhacks"
     ],
     "status": "publish",
     "disqus_id": "1823 https://blog.beeminder.com/?p=1823",
@@ -6123,6 +6127,7 @@
       "bee-all",
       "best-of",
       "lifehacks",
+      "madhacks",
       "productivity porn",
       "PSA",
       "psychology",
@@ -6440,7 +6445,8 @@
       "rationality",
       "self-binding",
       "tips",
-      "weight loss"
+      "weight loss",
+      "madhacks"
     ],
     "status": "publish",
     "disqus_id": "1959 https://blog.beeminder.com/?p=1959",
@@ -6606,7 +6612,8 @@
       "quantified self",
       "rationality",
       "tips",
-      "weight loss"
+      "weight loss",
+      "madhacks"
     ],
     "status": "publish",
     "disqus_id": "2023 https://blog.beeminder.com/?p=2023",
@@ -6793,6 +6800,7 @@
       "bee-all",
       "case studies",
       "lifehacks",
+      "madhacks",
       "rationality",
       "self-binding",
       "tips"
@@ -7273,6 +7281,16 @@
 "author": "Grayson Bray Morris",
 "status": "publish",
 "tags": ["bee-all", "rationality", "writing", "newbees", "FAQ", "graphing"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "legolaps",
+"disqus_id": "legolaps",
+"source": "doc.bmndr.co/legolaps",
+"redirects": [],
+"date": "2024-08-07",
+"author": "dreeves",
+"status": "publish",
+"tags": ["bee-all", "rationality", "fitness", "madhacks"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
