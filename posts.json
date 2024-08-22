@@ -7292,5 +7292,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "fitness", "madhacks"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "relativity",
+"disqus_id": "relativity",
+"source": "doc.bmndr.co/relativity",
+"redirects": [],
+"date": "2024-08-21",
+"author": "dreeves",
+"status": "publish",
+"tags": ["bee-all", "new features"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
