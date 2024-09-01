@@ -7302,5 +7302,15 @@
 "status": "publish",
 "tags": ["bee-all", "new features"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "oura",
+"disqus_id": "oura",
+"source": "doc.bmndr.co/oura",
+"redirects": [],
+"date": "2024-08-31",
+"author": "shanaqui",
+"status": "publish",
+"tags": ["bee-all", "new features", "integrations", "fitness", "wearables"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
