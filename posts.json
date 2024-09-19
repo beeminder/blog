@@ -7312,5 +7312,15 @@
 "status": "publish",
 "tags": ["bee-all", "new features", "integrations", "fitness", "wearables"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "squeam",
+"disqus_id": "squeam",
+"source": "doc.bmndr.co/squeam",
+"redirects": [],
+"date": "2024-09-18",
+"author": "dreeves",
+"status": "publish",
+"tags": ["bee-all", "startups", "terminology", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
