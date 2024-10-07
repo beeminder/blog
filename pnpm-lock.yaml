@@ -12,8 +12,8 @@ importers:
         specifier: ^0.4.1
         version: 0.4.1
       '@astrojs/rss':
-        specifier: ^4.0.5
-        version: 4.0.5
+        specifier: ^4.0.7
+        version: 4.0.7
       '@astrojs/sitemap':
         specifier: ^3.1.1
         version: 3.1.1
@@ -31,7 +31,7 @@ importers:
         version: 16.3.1
       expost:
         specifier: git+https://github.com/bsoule/expost.git#fdb67c45baf4d4b00c74f873e58af57939c5788e
-        version: https://codeload.github.com/bsoule/expost/tar.gz/fdb67c45baf4d4b00c74f873e58af57939c5788e
+        version: git+https://git@github.com:bsoule/expost.git#fdb67c45baf4d4b00c74f873e58af57939c5788e
       feather-icons:
         specifier: ^4.29.1
         version: 4.29.1
@@ -134,7 +134,7 @@ importers:
         version: 5.3.0
       pixelteer:
         specifier: github:narthur/pixelteer
-        version: https://codeload.github.com/narthur/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3(puppeteer@22.6.5(typescript@5.2.2))
+        version: git+https://git@github.com:narthur/pixelteer.git#4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3(puppeteer@22.6.5(typescript@5.2.2))
       pngjs:
         specifier: ^7.0.0
         version: 7.0.0
@@ -190,8 +190,8 @@ packages:
     resolution: {integrity: sha512-g61lZupWq1bYbcBnYZqdjndShr/J3l/oFobBKPA3+qMat146zce3nz2kdO4giGbhYDt4gYdhmoBz0vZJ4sIurQ==}
     engines: {node: '>=18.14.1'}
 
-  '@astrojs/rss@4.0.5':
-    resolution: {integrity: sha512-IyJVL6z09AQtxbgLaAwebT3T5YKe4oTHDesqydJv1KLHw+zEzzMCFuuNsEyxjiqu7df9+DDCpDXLj/WRiEUXvw==}
+  '@astrojs/rss@4.0.7':
+    resolution: {integrity: sha512-ZEG55XFB19l+DplUvBISmz04UbjDtKliRO4Y5+ERRhAMjgCVVobEBNE6ZwWG1h6orWUocy4nfPihKXDyB73x9g==}
 
   '@astrojs/sitemap@3.1.1':
     resolution: {integrity: sha512-qPgdBIcDUaea98mTtLfi5z9oXZpzSjEn/kes70/Ex8FOZZ+DIHVKRYOLOtvy8p+FTXr/9oc7BjmIbTYmYLLJVg==}
@@ -760,6 +760,7 @@ packages:
   '@humanwhocodes/config-array@0.11.11':
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -767,6 +768,7 @@ packages:
 
   '@humanwhocodes/object-schema@1.2.1':
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    deprecated: Use @eslint/object-schema instead
 
   '@img/sharp-darwin-arm64@0.33.3':
     resolution: {integrity: sha512-FaNiGX1MrOuJ3hxuNzWgsT/mg5OHG/Izh59WW2mk1UwYHUwtfbhk5QNKYZgxf0pLOhx9ctGiGa2OykD71vOnSw==}
@@ -1876,6 +1878,7 @@ packages:
   eslint@8.49.0:
     resolution: {integrity: sha512-jw03ENfm6VJI0jA9U+8H5zfl5b+FvuU3YYvZRdZHOlU2ggJkxrlkJH4HcDrZpj6YwD8kuYqvQM8LyesoazrSOQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -1921,8 +1924,8 @@ packages:
     resolution: {integrity: sha512-A5EmesHW6rfnZ9ysHQjPdJRni0SRar0tjtG5MNtm9n5TUvsYU8oozprtRD4AqHxcZWWlVuAmQo2nWKfN9oyjTw==}
     engines: {node: '>=0.10.0'}
 
-  expost@https://codeload.github.com/bsoule/expost/tar.gz/fdb67c45baf4d4b00c74f873e58af57939c5788e:
-    resolution: {tarball: https://codeload.github.com/bsoule/expost/tar.gz/fdb67c45baf4d4b00c74f873e58af57939c5788e}
+  expost@git+https://git@github.com:bsoule/expost.git#fdb67c45baf4d4b00c74f873e58af57939c5788e:
+    resolution: {commit: fdb67c45baf4d4b00c74f873e58af57939c5788e, repo: git@github.com:bsoule/expost.git, type: git}
     version: 1.0.0
 
   extend-shallow@2.0.1:
@@ -1957,8 +1960,8 @@ packages:
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
 
-  fast-xml-parser@4.2.7:
-    resolution: {integrity: sha512-J8r6BriSLO1uj2miOk1NW0YVm8AGOOu3Si2HQp/cSmo6EA4m3fcwu2WKjJ4RK9wMLBtg69y1kS8baDiQBR41Ig==}
+  fast-xml-parser@4.5.0:
+    resolution: {integrity: sha512-/PlTQCI96+fZMAOLMZK4CWG1ItCbfZ/0jx7UIJFChPNrx7tcEgerUgWbeieCM9MfHInUDyK8DWYZ+YrywDJuTg==}
     hasBin: true
 
   fastq@1.15.0:
@@ -2082,6 +2085,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-modules@1.0.0:
     resolution: {integrity: sha512-sKzpEkf11GpOFuw0Zzjzmt4B4UZwjOcG757PPvrfhxcLFbq0wpsgpOqxpxtxFiCG4DtG93M6XRVbF2oGdev7bg==}
@@ -2214,6 +2218,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -2396,6 +2401,7 @@ packages:
 
   loupe@2.3.6:
     resolution: {integrity: sha512-RaPMZKiMy8/JruncMU5Bt6na1eftNoo++R4Y+N2FrxkDVTrGvcyzFTsaGif4QTeKESheMGegbhw6iUAq+5A8zA==}
+    deprecated: Please upgrade to 2.3.7 which fixes GHSA-4q6p-r6v2-jvc5
 
   loupe@3.1.1:
     resolution: {integrity: sha512-edNu/8D5MKVfGVFRhFf8aAxiTM6Wumfz5XsaatSxlD3w4R1d/WEKUTydCdPGbl9K7QG/Ca3GnDV2sIKIpXRQcw==}
@@ -2855,8 +2861,8 @@ packages:
     resolution: {integrity: sha512-o8mkY4E/+LNUf6LzX96ht6k6CEDi65k9G2rjMtBe9Oo+VPKSvl+0GKHuH/AlG+GA5LPG/i5hrekkxUc3s2HU+Q==}
     hasBin: true
 
-  pixelteer@https://codeload.github.com/narthur/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3:
-    resolution: {tarball: https://codeload.github.com/narthur/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3}
+  pixelteer@git+https://git@github.com:narthur/pixelteer.git#4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3:
+    resolution: {commit: 4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3, repo: git@github.com:narthur/pixelteer.git, type: git}
     version: 1.0.0
     peerDependencies:
       puppeteer: ^22.6.5
@@ -2951,6 +2957,7 @@ packages:
   puppeteer@22.6.5:
     resolution: {integrity: sha512-YuoRKGj3MxHhUwrey7vmNvU4odGdUdNsj1ee8pfcqQlLWIXfMOXZCAXh8xdzpZESHH3tCGWp2xmPZE8E6iUEWg==}
     engines: {node: '>=18'}
+    deprecated: < 22.8.2 is no longer supported
     hasBin: true
 
   queue-microtask@1.2.3:
@@ -3054,6 +3061,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup@3.29.2:
@@ -3131,9 +3139,11 @@ packages:
 
   shikiji-core@0.9.19:
     resolution: {integrity: sha512-AFJu/vcNT21t0e6YrfadZ+9q86gvPum6iywRyt1OtIPjPFe25RQnYJyxHQPMLKCCWA992TPxmEmbNcOZCAJclw==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   shikiji@0.9.19:
     resolution: {integrity: sha512-Kw2NHWktdcdypCj1GkKpXH4o6Vxz8B8TykPlPuLHOGSV8VkhoCLcFOH4k19K4LXAQYRQmxg+0X/eM+m2sLhAkg==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   siginfo@2.0.0:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
@@ -3794,9 +3804,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/rss@4.0.5':
+  '@astrojs/rss@4.0.7':
     dependencies:
-      fast-xml-parser: 4.2.7
+      fast-xml-parser: 4.5.0
       kleur: 4.1.5
 
   '@astrojs/sitemap@3.1.1':
@@ -5508,7 +5518,7 @@ snapshots:
     dependencies:
       homedir-polyfill: 1.0.3
 
-  expost@https://codeload.github.com/bsoule/expost/tar.gz/fdb67c45baf4d4b00c74f873e58af57939c5788e:
+  expost@git+https://git@github.com:bsoule/expost.git#fdb67c45baf4d4b00c74f873e58af57939c5788e:
     dependencies:
       cheerio: 1.0.0-rc.12
       marked: 12.0.2
@@ -5556,7 +5566,7 @@ snapshots:
 
   fast-levenshtein@2.0.6: {}
 
-  fast-xml-parser@4.2.7:
+  fast-xml-parser@4.5.0:
     dependencies:
       strnum: 1.0.5
 
@@ -6645,7 +6655,7 @@ snapshots:
     dependencies:
       pngjs: 6.0.0
 
-  pixelteer@https://codeload.github.com/narthur/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3(puppeteer@22.6.5(typescript@5.2.2)):
+  pixelteer@git+https://git@github.com:narthur/pixelteer.git#4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3(puppeteer@22.6.5(typescript@5.2.2)):
     dependencies:
       pixelmatch: 5.3.0
       pngjs: 7.0.0
