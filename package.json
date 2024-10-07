@@ -72,7 +72,7 @@
     "pixelteer": "github:narthur/pixelteer",
     "pngjs": "^7.0.0",
     "prettier": "3.0.3",
-    "puppeteer": "22.6.5",
+    "puppeteer": "22.15.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vitest": "^2.0.3"
