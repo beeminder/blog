@@ -119,3 +119,19 @@ jobs:
         run: pnpm install
       - name: Check formatting
         run: pnpm prettier --check .
+  outdated:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v4.0.0
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "pnpm"
+      - name: Install
+        run: pnpm install
+      - name: Check outdated
+        run: pnpm outdated
