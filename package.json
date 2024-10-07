@@ -36,7 +36,7 @@
     "expost": "git+https://github.com/bsoule/expost.git#fdb67c45baf4d4b00c74f873e58af57939c5788e",
     "feather-icons": "^4.29.1",
     "findup-sync": "^5.0.0",
-    "happy-dom": "^12.0.1",
+    "happy-dom": "^15.7.4",
     "levenshtein": "^1.0.5",
     "marked": "^9.0.2",
     "marked-smartypants": "^1.1.3",
