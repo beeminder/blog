@@ -20,9 +20,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - name: Force pnpm to use https instead of ssh for compatability with Dependabot
-        run: |
-          git config --global url."https://".insteadOf git://
-          git config --global url."https://github.com/".insteadOf git@github.com:
+        run: git config --global url."https://".insteadOf git+ssh://git@
       - name: Install
         run: pnpm install
       - name: Test
@@ -40,9 +38,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - name: Force pnpm to use https instead of ssh for compatability with Dependabot
-        run: |
-          git config --global url."https://".insteadOf git://
-          git config --global url."https://github.com/".insteadOf git@github.com:
+        run: git config --global url."https://".insteadOf git+ssh://git@
       - name: Install
         run: pnpm install
       - name: Test
@@ -60,9 +56,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - name: Force pnpm to use https instead of ssh for compatability with Dependabot
-        run: |
-          git config --global url."https://".insteadOf git://
-          git config --global url."https://github.com/".insteadOf git@github.com:
+        run: git config --global url."https://".insteadOf git+ssh://git@
       - name: Install
         run: pnpm install
       - name: Build
@@ -80,9 +74,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - name: Force pnpm to use https instead of ssh for compatability with Dependabot
-        run: |
-          git config --global url."https://".insteadOf git://
-          git config --global url."https://github.com/".insteadOf git@github.com:
+        run: git config --global url."https://".insteadOf git+ssh://git@
       - name: Install
         run: pnpm install
       - name: Check
@@ -100,9 +92,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - name: Force pnpm to use https instead of ssh for compatability with Dependabot
-        run: |
-          git config --global url."https://".insteadOf git://
-          git config --global url."https://github.com/".insteadOf git@github.com:
+        run: git config --global url."https://".insteadOf git+ssh://git@
       - name: Install
         run: pnpm install
       - name: Check types
@@ -120,9 +110,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - name: Force pnpm to use https instead of ssh for compatability with Dependabot
-        run: |
-          git config --global url."https://".insteadOf git://
-          git config --global url."https://github.com/".insteadOf git@github.com:
+        run: git config --global url."https://".insteadOf git+ssh://git@
       - name: Install
         run: pnpm install
       - name: Run eslint
@@ -140,9 +128,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - name: Force pnpm to use https instead of ssh for compatability with Dependabot
-        run: |
-          git config --global url."https://".insteadOf git://
-          git config --global url."https://github.com/".insteadOf git@github.com:
+        run: git config --global url."https://".insteadOf git+ssh://git@
       - name: Install
         run: pnpm install
       - name: Check formatting
