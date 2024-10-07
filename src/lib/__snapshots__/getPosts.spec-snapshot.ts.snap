@@ -45104,6 +45104,122 @@ Let&#8217;s return to Robert Emmons, the leading scientific expert on gratitude,
 "
 `;
 
+exports[`body > post grayson hash b40e343431631a46e322c25dbb4037f7 1`] = `
+"
+<p>
+  <img
+    src="https://github.com/user-attachments/assets/cc2f4aee-2e31-41f4-aa1e-07ee55e13a8d"
+    class="aligncenter"
+    alt="A man wearing a backpack, walking up a staircase made out of books"
+    title="This is aspirational, right? He's climbing the stairway of books! Steady progress, all that."
+    width="450px"
+  >
+</p>
+<blockquote>
+  <p>
+    <em>
+      <a
+        href="https://www.amazon.com/stores/Grayson-Bray-Morris/author/B006QX3JXA"
+        title="Grayson&#39;s internet hiatus means that her Amazon author page is the only link we have for her currently"
+      >
+        Grayson Bray Morris
+      </a>
+      has been a bright spot in the Beeminder community almost since the beginning. 
+She&#8217;s currently taking a break from the internet, but before she peaced out she gave us permission to canonize this classic 2015 (!) post from her old blog, by publishing it here on Beeminder&#8217;s blog.
+The original title was 
+&#8220;
+      <strong>
+        Baby Got Bonus: Beeminding Your Way to Awesome
+      </strong>
+      &#8221;.
+It&#8217;s a simple illustration of what&#8217;s so great about Beeminder&#8217;s cumulative graphs, which are a common source of consternation for newbees.
+We&#8217;ve linked countless users to the original so we&#8217;re grateful to Grayson that we can now continue to do that by pointing them here!
+    </em>
+  </p>
+</blockquote>
+<p>
+  Way back in November of 2014, I discovered a productivity tool that would turn out to actually work for me. 
+And more than just work: it’s been amazing. 
+It’s helping me achieve goals I’ve had for decades&#8201;&#8212;&#8201;goals I always abandoned, time after time after time, when the first flush of enthusiasm waned. 
+Here’s a major part of the reason why.
+</p>
+<h3>
+  Feeling All Accomplished, All the Time
+</h3>
+<p>
+  If you set up your
+  <a
+    href="https://www.beeminder.com/"
+    title="[Now that this post is on Beeminder&#39;s blog you probably don&#39;t need a link back to Beeminder but it was there in the original and we&#39;re being careful not to make any changes except for what&#39;s in square brackets, like this hovertext]"
+  >
+    Beeminder
+  </a>
+  messaging right, it lets you focus on the goals that need some love
+  <em>
+    today
+  </em>
+  . 
+So although I’ve got nearly two dozen goals set up, there are generally only a handful that are close to derailing on any given day, and Beeminder tells me what they are. 
+It takes off a lot of the stress of prioritizing what to do, keeps my to-do list short and sweet, and once I do those few things, I feel like I’m meeting
+  <em>
+    all
+  </em>
+  my goals, because they’re all above that dotted line [UPDATE: now red line] whether I worked on them or not.
+</p>
+<p>
+  Let me repeat that.
+  <em>
+    I feel like I’m meeting all my goals, whether I worked on them today or not.
+  </em>
+</p>
+<p>
+  Let’s say my goal is to write an average of 250 words a day. 
+Following my usual strategy, if I miss any days I start to feel like a slacker&#8201;&#8212;&#8201;even if I wrote lots on other days:
+</p>
+<figure>
+  <p>
+    <img
+      src="https://github.com/beeminder/blog/assets/9928/87b4d939-3622-4819-b0c4-4e7a3c42e52a"
+      alt="Non-cumultive graph: Failing"
+    >
+  </p>
+</figure>
+<p>
+  But Beeminder puts this cumulative data in unambiguous visual terms that reflect the success I’m actually having. 
+As a result,
+  <em>
+    the same objective behavior makes me feel accomplished instead of lazy
+  </em>
+  :
+</p>
+<figure>
+  <p>
+    <img
+      src="https://github.com/beeminder/blog/assets/9928/bdedc306-2b70-43ff-8923-b5bb4dd07d4c"
+      alt="Cumulative graph: Succeeding"
+    >
+  </p>
+  <figcaption>
+    [
+    <em>
+      Caption from the future: What Grayson called the Yellow Brick Road is
+      <a
+        href="https://blog.beeminder.com/brl"
+        title="Goodbye Yellow Brick Road, Hello Bright Red Line"
+      >
+        now
+      </a>
+      the Bright Red Line
+    </em>
+    ]
+  </figcaption>
+</figure>
+<p>
+  Since the real goal is to get words written, Beeminder tracking is a much more productive strategy.
+</p>
+"
+`;
+
 exports[`body > post groupies hash 54d80628b5adbca279daf13ea1050d90 1`] = `
 "
 <p>
@@ -53133,6 +53249,119 @@ FURTHER UPDATE:
     Done!
   </a>
   )
+</p>
+"
+`;
+
+exports[`body > post legolaps hash 39f8dbcc0d5e8948c3f52340a8283b7a 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    width="450px"
+    alt="A mouse carrying a single marble up the stairs"
+    title="It's a Sysiphean sphere-schlepping shrew"
+    src="https://github.com/user-attachments/assets/50cb5328-5a2d-4a4e-bfc1-152c4176d998"
+  >
+</p>
+<blockquote>
+  <p>
+    <em>
+      This blog post started its life during the pandemic,
+      <a
+        class="footnote"
+        id="JON1"
+        href="#JON"
+      >
+        [1]
+      </a>
+      as part of a series in the
+      <a
+        href="https://blog.beeminder.com/glossary#beemail"
+        title="Beemails are our email newsletter, which you can choose to get daily, weekly, monthly, or yearly"
+      >
+        daily beemail
+      </a>
+      called
+      <a
+        href="https://doc.beeminder.com/madhack"
+        title="Several of these have turned into blog posts in the meantime, including now this one, which was #40"
+      >
+        Madhack Mondays
+      </a>
+      .
+    </em>
+  </p>
+</blockquote>
+<p>
+  Here&#8217;s a highly beemindable workout idea for the dead of winter
+  <a
+    class="footnote"
+    id="AUS1"
+    href="#AUS"
+  >
+    [2]
+  </a>
+  if you have stairs in your house.
+Put 100 marbles or legos or whatever in a bowl at the bottom of your stairs. 
+Then start a timer and see how fast you can carry them all upstairs one at a time.
+I did this during the pandemic, when my record was 17m31s, edging out our then-11-year-old by 2 seconds.
+</p>
+<p>
+  If you&#8217;re doing this for time, there are three rules:
+</p>
+<ol>
+  <li>
+    The marbles/legos must go one at a time from the floor to the top of the stairs.
+  </li>
+  <li>
+    Start and stop the timer in the same place, i.e., 100 full laps.
+  </li>
+  <li>
+    Both feet must touch the floor both at the very bottom and very top every time.
+  </li>
+</ol>
+<p>
+  I worked out a technique where you stay super crouched as you bring your second foot up to meet your first foot at the top, before pivoting and dropping two stairs down. 
+That way you minimize how far you raise your center of mass. 
+So much saved energy! 
+Not as much saved energy as ignoring this blog post altogether, but, I mean, are you going to leave this gauntlet just sitting there?
+</p>
+<p>
+  Of course I don&#8217;t know how standardized house heights are so if you beat me I&#8217;ll assume your house is shorter.
+</p>
+<p>
+  And for those who are not freakishly competitive you could just beemind a number of times you go up and down the stairs per day or per week&#8201;&#8212;&#8201;tracked via marbles/legos&#8201;&#8212;&#8201;without timing it and without doing it 100 times in a row or until you throw up. 
+I assume that&#8217;s a thing people could do!
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class="footnote"
+    id="JON"
+    href="#JON1"
+  >
+    [1]
+  </a>
+  Here&#8217;s another fun variant, invented independently during the pandemic by 
+Jon Courtney.
+You know how Mt Everest is 29,032 feet high?
+And your stairs are something like 10 vertical feet?
+Well, if you divide those numbers you get about 3000.
+Put that many marbles in a bowl at the bottom of your stairs&#8201;&#8212;&#8201;or maybe a tenth or a hundredth of that and do this ten or a hundred times.
+Then, after you&#8217;ve carried them up one by one, you&#8217;ll have effectively (technically ineffectively) climbed from sea level to the top of Mt Everest.
+</p>
+<p>
+  <a
+    class="footnote"
+    id="AUS"
+    href="#AUS1"
+  >
+    [2]
+  </a>
+  Shout-out to our Australian users, of which we have weirdly many.
 </p>
 "
 `;
@@ -63006,6 +63235,186 @@ for valuable feedback and discussion.
 "
 `;
 
+exports[`body > post nuclear hash b5849ccbfc5b9c54b47a3de17bc2fc19 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    title="Get it?"
+    alt="A big nuclear waste symbol in the center of a dial with a bunch of other buttons. and also some bees."
+    width="450px"
+    src="https://github.com/user-attachments/assets/b6fd44a9-0933-42a5-a929-4fcc32198e48"
+  >
+</p>
+<p>
+  Beeminder as the nuclear option means beeminding something as an insurance policy.
+You have a nice graph of your progress but you maintain enough safety buffer that you&#8217;re not in danger of derailing and getting stung (being charged money for going off track on your goal, for those just tuning in).
+In other words, Beeminder is there in the background but you find ways to not actually need it:
+setting up environmental
+  <a
+    href="https://blog.beeminder.com/forget#TAP"
+    title="Beeminder blog post on Plans To Forget -- and specifically footnote 1 which talks about Trigger-Action Plans"
+  >
+    triggers
+  </a>
+  , 
+instilling habits,
+  <a
+    href="https://blog.beeminder.com/groupies/"
+    title="Beeminder blog post about our latest and greatest social accountability feature: Group Goals. I guess if you&#39;re getting your social accountability from a group goal on Beeminder that doesn&#39;t exactly count as not needing Beeminder!"
+  >
+    social accountability
+  </a>
+  , 
+you name it.
+If those things should happen to fail, Beeminder&#8217;s got your back.
+</p>
+<p>
+  Being motivated by the threat of Beeminder&#8217;s sting sucks, you say?
+We
+  <a
+    href="https://blog.beeminder.com/pigou"
+    title="Latest post in our Derailing-It-Is-Nailing-It series, about how you can frame Beeminder&#39;s sting as a tax you pay on excess indulging, not a punishment"
+  >
+    don&#8217;t think it needs to feel that way
+  </a>
+  but maybe it does for you.
+If, so our contention will be that, for certain goals, you still need Beeminder as emergency backup.
+</p>
+<h4 class="pullquote">
+  &#8220;If you aren&#8217;t certain &#8230; maybe don&#8217;t beemind it&#8221;
+</h4>
+<p>
+  First, assume that your Beeminder goal passes the
+  <a
+    href="https://blog.beeminder.com/wantcanwill/"
+    title="Blog post from the very early days of Beeminder (2011): The Want-Can-Will Test for Akrasia"
+  >
+    Want-Can-Will Test
+  </a>
+  .
+Namely, you definitely
+  <em>
+    want
+  </em>
+  to do it, you definitely
+  <em>
+    can
+  </em>
+  do it, but based on your history you&#8217;re not sure you
+  <em>
+    will
+  </em>
+  do it.
+Sometimes people try to beemind
+  <a
+    href="https://blog.beeminder.com/dontmind"
+    title="A list of things to not beemind. Should goals are number 6. Not to be confused with another classic Beeminder post about a Trigger-Action Plan for should-statements."
+  >
+    Should goals
+  </a>
+  &#8201;&#8212;&#8201;things they feel guilty for not doing but that they don&#8217;t genuinely want to do.
+This is important and a bit buried in our
+  <a
+    href="https://blog.beeminder.com/dontmind"
+    title="Yes, we&#39;re linking to this in two sentences in a row. It&#39;s very good!"
+  >
+    list of things you shouldn&#8217;t beemind
+  </a>
+  so let us quote it here:
+</p>
+<blockquote>
+  <p>
+    Vegetables are healthy but you enjoy candy more.
+Maybe being sweaty or out of breath is particularly unpleasant for you despite how good it is for you.
+Maybe YouTube is more engaging than
+    <a
+      href="https://blog.beeminder.com/textbooks/"
+      title="Beeminder, With The Power Of Reading!"
+    >
+      textbooks
+    </a>
+    .
+  </p>
+  <p>
+    We sometimes hear complaints about Beeminder, along the lines that it&#8217;s
+    <a
+      href="https://blog.beeminder.com/blackmail"
+      title="Is Beeminder Self-Blackmail? Yes in a good way?"
+    >
+      self-blackmail
+    </a>
+    or unhealthily suppressing parts of yourself.
+You should take those warnings seriously!
+If you aren&#8217;t certain that more exercise or more writing or less TV, or whatever it is, is optimal for you, maybe don&#8217;t beemind it.
+  </p>
+</blockquote>
+<p>
+  One way to make sure it&#8217;s a good idea to beemind something is to make the rate you commit to extremely
+  <a
+    href="https://blog.beeminder.com/easythings/"
+    title="Beemind Easy Things (2016)"
+  >
+    easy
+  </a>
+  .
+You unambiguously want to eat some amount of vegetables that&#8217;s a fair bit more than your current 3 servings per month.
+You definitely want to study more than 5 minutes a day.
+Start with such a lower bound and
+  <a
+    href="https://blog.beeminder.com/calendial"
+    title="Calendialing. This refers to a meta goal for reviewing your Beeminder goals and adjusting their rates (how much you&#39;re committed to) in light of what&#39;s coming up on your calendar -- or just how the goal is feeling."
+  >
+    periodically dial
+  </a>
+  the rate up as long it still feels easy and valuable.
+As long as Beeminder is making you do a bit more (or less, in the case of a Do Less goal) than you&#8217;d do if left to your own devices, that&#8217;s a win.
+Think rationally about
+  <a
+    href="https://blog.beeminder.com/burnout/"
+    title="Beating Beeminder Burnout (2014), which may be the first time we referred to Beeminder as the nuclear option"
+  >
+    how much more
+  </a>
+  than that to push yourself.
+</p>
+<p>
+  With the want-can-will criteria established, our claim is that there&#8217;s one thing worse than the alleged suckiness of beeminding something: deciding that, due to said suckiness, you won&#8217;t beemind that thing and then failing to do the thing altogether.
+</p>
+<p>
+  So all the reasons you can think of for why Beeminder sucks too much and you can hit your bare minimum without Beeminder, absolutely implement all of those.
+Beeminder will just be a nice graph of your success.
+But also, Beeminder will be there juuuuust in case all those other things fail.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  PS: This post is aimed at people who would rather be motivated in other ways than Beeminder.
+But many of us are inveterate edge-skaters and actively like being motivated in that way.
+We&#8217;re deadline-driven.
+That
+  <a
+    href="https://blog.beeminder.com/stress"
+    title="Is Beeminder Too Stressful? This post argues that you can use it to intentionally add stress if that&#39;s valuable for you but that many people use it to reduce stress."
+  >
+    isn&#8217;t necessarily stressful
+  </a>
+  , especially when we
+  <a
+    href="https://blog.beeminder.com/indulge"
+    title="Beeminder Making You Do Self-Indulgent Things"
+  >
+    beemind self-indulgent things
+  </a>
+  .
+For us, Beeminder isn&#8217;t just the nuclear option, it&#8217;s also the heavy artillery option and also the kitten-gently-nudging-you-with-its-fuzzy-head option.
+</p>
+"
+`;
+
 exports[`body > post nudge hash 6b0b9487704da4fa4cf07d4667786eb4 1`] = `
 "
 <p>
@@ -64869,6 +65278,137 @@ Unless you truly do have no need at all for Beeminder, you&#8217;ll eventually e
     Schelling fence
   </a>
   but you still want more of a wall in case you crash through it.
+</p>
+"
+`;
+
+exports[`body > post oura hash eeebd027543328de183a8077465d6fe8 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    title="Dramatization. Actual product may appear differently. Invisibility sold separately."
+    alt="A jewel-encrusted bee set into a ring"
+    width="450px"
+    src="https://github.com/user-attachments/assets/ea71b25b-e23e-4cfc-b669-ec8cbdb531d3"
+  >
+</p>
+<p>
+  Once again, we&#8217;re releasing an integration I&#8217;m enthusiastic about right around my birthday, and this time it wasn&#8217;t even planned that way!
+So what is Oura?
+They make wearable health trackers in the form of rings, which are super wearable and maybe even a little bit stylish. 
+(Uh, don&#8217;t take any style tips from me, though.) 
+Bethany and I both use Oura, and I&#8217;ve been very quickly won over by mine, despite only getting it back in July.
+</p>
+<h2>
+  Why choose Oura
+</h2>
+<p>
+  All the data, and how it handles that data! 
+It tracks many of the same metrics as (for example) my Garmin did, but now that it&#8217;s collected enough data about me, it compares me not against other people but against my own baseline. 
+So while it notices that my heart rate variability (HRV) is very low compared to other people, and it definitely flags that up, it doesn&#8217;t yell at me about it quite as much as it felt like Garmin did.
+It accepts that by my own standards I&#8217;m pretty relaxed (rather than tracking me as stressed for literally every waking moment).
+</p>
+<p>
+  It has some nice nuance in the charts, where it doesn&#8217;t just register stress and relaxation, but gradations between the two.
+My state gets categorized into stressed, engaged, relaxed, and restorative.
+And it graphs this over the course of the day.
+</p>
+<figure>
+  <p>
+    <img
+      class="aligncenter"
+      src="https://github.com/user-attachments/assets/3aaafe3a-443c-48fb-8c63-f1713ca15704"
+    >
+  </p>
+  <figcaption>
+    <i>
+      Look! I&#8217;m getting a good grade at relaxing, something which is both normal to want and possible to achieve.
+    </i>
+  </figcaption>
+</figure>
+<p>
+  The device tracks sleep very well, graphing your heart rate overnight and providing some examples to compare it to. 
+Apparently my heart rate nearly always speeds up right after I fall asleep, which is probably a sign of physical overtiredness. 
+With that data, I&#8217;ve made some tweaks and things look a little better!
+</p>
+<p>
+  For the female-bodied among us, it also makes a great period tracker. 
+It requires 60 days of data to make predictions, but even before the 60 days are up, you can give it information about your last cycle and typical cycle length, and it&#8217;ll start fitting that together with your body temperature each night.
+</p>
+<p>
+  And speaking of body temperature, I was pretty impressed when it picked up the fact that I had a high temperature overnight
+  <em>
+    before
+  </em>
+  I realised I felt terrible. 
+I&#8217;d figured it was just picking up some random fluctuation, but that day I was genuinely pretty run down.
+</p>
+<p>
+  I&#8217;ve really only dipped into the basics here. 
+Oura is packed with features to help you figure out your readiness to exercise, your stress levels, sleep quality, resting heart rate, etc. 
+If you want a casual day-to-day health tracker, it&#8217;s pretty great&#8201;&#8212;&#8201;though it&#8217;s worth noting that Garmin and Fitbit are still ahead of it on activity tracking accuracy. 
+If you&#8217;re a marathon runner tracking your training, you probably still want to opt for a more traditional wearable.
+</p>
+<h2>
+  And how can I use Oura with Beeminder?
+</h2>
+<p>
+  To start with, we&#8217;ve picked three metrics that Bethany and I are particularly interested in and find useful:
+</p>
+<ul>
+  <li>
+    Sedentary time
+  </li>
+  <li>
+    Sleep
+  </li>
+  <li>
+    Steps
+  </li>
+</ul>
+<p>
+  This way, not only do we get the great data and analysis from the Oura app, we can get a little nudge to improve our scores, get moving, and get some solid sleep! 
+If there&#8217;s something else you can track via Oura that you&#8217;re interested in beeminding, we&#8217;d be eager to hear about that and how you&#8217;d like to see it graphed.
+</p>
+<p>
+  <img
+    class="aligncenter"
+    width="450px"
+    alt="A Beeminder do-less goal"
+    title="Pretty consistent with the sedentary time there, Nicky, noice!"
+    src="https://github.com/user-attachments/assets/bb3d3f23-e9ef-4883-bfe5-3e8e600541dd"
+  >
+</p>
+<p>
+  To create a goal with one of those metrics, head to
+  <a
+    href="https://www.beeminder.com/new"
+    title="Follow this link, or go from your dashboard, or the top-right dropdown menu"
+  >
+    beeminder.com/new
+  </a>
+  , pick the Oura icon from the list of integrations, and choose the metric you&#8217;d like to graph. 
+Or, here, have a button:
+</p>
+<center>
+  <a href="https://www.beeminder.com/oura">
+    <span style="background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important">
+      My Precious
+    </span>
+  </a>
+</center>
+<p>
+  Choosing sedentary time creates a Do Less goal, limiting you to a maximum of X hours of sedentary time per day.
+The sleep and steps metrics create Do More goals. 
+For a walkthrough on goal setup,
+  <a
+    href="https://help.beeminder.com/article/361-oura"
+    title="The example there is sedentary time, but the process is similar for each of the metrics"
+  >
+    check out the help doc we&#8217;ve already lined up
+  </a>
+  !
 </p>
 "
 `;
@@ -73543,6 +74083,73 @@ That&#8217;s enough for me to call this post a success!
 "
 `;
 
+exports[`body > post relativity hash 4f41c765e2ab536fb47c68fd03d5671b 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    title="A sliding window, get it? Maybe we're just getting pickier but the robotic minions generated a lot of dreck for this so Bee took over and John-Henry'd it."
+    alt="An image of a line graph with everything outside the central window hazy"
+    width="450px"
+    src="https://github.com/user-attachments/assets/d8861ecd-456f-4161-b85b-416b9a10d8a6"
+  >
+</p>
+<p>
+  In a recent poll of most annoying things about Beeminder graphs there was a surprise winner.
+People really want to specify the plot range of their graphs using relative dates.
+Like always showing just the most recent month of data on the graph.
+Well, your wish is (sometimes, when we feel like it) our command.
+</p>
+<p>
+  Check it out:
+</p>
+<p>
+  <img
+    class="aligncenter"
+    alt="Screenshot of the UI for picking X-min: None, Specific Date, One week ago, Two weeks ago, One month ago, One year ago"
+    src="https://github.com/user-attachments/assets/11515aa8-4536-4974-b07a-fbd5e4dbb9ad"
+  >
+</p>
+<p>
+  That&#8217;s now live in the settings below your graph.
+&#8220;None&#8221; means no minimum&#8201;&#8212;&#8201;show all the data for all time.
+And of course if you pick &#8220;Specific Date&#8221; then a date-picker appears like before.
+</p>
+<h3>
+  Does this violate the
+  <a
+    href="https://blog.beeminder.com/choices"
+    title="Choices are Bad: The Anti-Settings Principle"
+  >
+    Anti-Settings Principle
+  </a>
+  ?
+</h3>
+<p>
+  Yes and no. 
+Conceptually at least, this is an elegant generalization of the existing x-min setting.
+It still specifies a date&#8201;&#8212;&#8201;just that how you specifiy that date is more flexible.
+Namely, it can be an arithmetic expression like &#8220;now minus a month&#8221;.
+(Internally it&#8217;s not the prettiest.)
+</p>
+<p>
+  We&#8217;ll presumably keep tweaking it.
+If you want a 3-month window, let us know.
+If you want other unusual time windows, we&#8217;ll probably just make it a numeric field that lets you give a number of days.
+But even this version should
+  <a
+    href="https://blog.beeminder.com/pdp"
+    title="The Pareto Dominance Principle for Apps and Websites"
+  >
+    Pareto-dominate
+  </a>
+  the status quo ante.
+Enjoy!
+Go forth and relativize your plot ranges.
+</p>
+"
+`;
+
 exports[`body > post reminders hash 1759059b30de545b899ee60639d213de 1`] = `
 "
 <p>
@@ -81893,6 +82500,135 @@ Finally, that last 10% (again,
       Bee Soule
     </a>
   </em>
+</p>
+"
+`;
+
+exports[`body > post squeam hash fa8768917c1a8860efc2fcbe1898e6c1 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    alt="A painting of a head with other heads and skulls coming out of it"
+    title="Does this image make you a little squeamish? Are you never going to read our blog again? Should we pick a more dignified representation of user-squeamishness? What if we offended you?!"
+    width="450px"
+    src="https://github.com/user-attachments/assets/431d2f0d-83b3-449e-bfe4-d2080354813c"
+  >
+</p>
+<p>
+  Being a smidge embarrassed by the term &#8220;user-squeaming&#8221;, we sat on this draft for years.
+But when we used it again this morning we decided the concept handle had officially stuck and figured it was time to give it the imprimatur of a blog post.
+</p>
+<p>
+  User-squeaming means being excessively squeamish about what various (usually hypothetical) users might yell at us about. 
+It kept us from deploying
+  <a
+    href="https://blog.beeminder.com/commitwall/"
+    title="Commitwall: No More Beeminding Without A Way To Be Charged Money"
+  >
+    Commitwall
+  </a>
+  for years, for example.
+&#8220;What if users are galled at the presumptuousness of being asked for a credit card before they&#8217;ve even had a chance to try Beeminder?&#8221;, we asked ourselves.
+Or how we kept an option in settings for god-knows-how-long to opt out of getting
+  <a
+    href="https://blog.beeminder.com/recommit/"
+    title="We used to call this Precommit to Recommit, back when it needed a name. Now it doesn&#39;t because there&#39;s no such thing as anything but that."
+  >
+    rerailed when you derail
+  </a>
+  . 
+&#8220;What if someone&#8217;s in the hospital and gets charged again and again?&#8221;
+  <a
+    class="footnote"
+    id="HOSPITAL1"
+    href="#HOSPITAL"
+  >
+    [1]
+  </a>
+  Pathetically pusillanimous!
+</p>
+<p>
+  It&#8217;s not that we care not what users think and need,
+but calling out &#8220;user-squeaming&#8221; helps remind us to be more risk-taking, more decisive, and more
+  <a
+    href="https://blog.beeminder.com/choices/"
+    title="Blog post about the Anti-Settings Principle"
+  >
+    opinionated
+  </a>
+  .
+  <a
+    class="footnote"
+    id="OPINE1"
+    href="#OPINE"
+  >
+    [2]
+  </a>
+</p>
+<p>
+  This morning it came up in the context of debating a design decision about showing the data source for a Beeminder graph.
+What if someone wants to share their Spanish goal, but doesn&#8217;t want to reveal that they use Duolingo?!
+What if someone is mortified for it to be publicly known that they use a Fitbit instead of an Apple Watch?
+Not publicly known by anyone they know in real life who can see their wrist, mind you, but Known to the Internet.
+</p>
+<p>
+  If any such person exists, they can just make their goal private. 
+That&#8217;s a good enough solution, and we don&#8217;t need to add
+  <a
+    href="https://blog.beeminder.com/choices"
+    title="The Anti-Setting Principle"
+  >
+    complexity and settings
+  </a>
+  to the app to satisfy the potential hypothetical theoretical preferences of a user whom we squeamed into existence.
+</p>
+<p>
+  Some people or some companies may be too cavalier and
+  <a
+    href="https://slatestarcodex.com/2014/03/24/should-you-reverse-any-advice-you-hear/"
+    title="Scott Alexander&#39;s classic post about whether you should reverse any advice you hear"
+  >
+    need the opposite of this advice
+  </a>
+  but for us, asking ourselves &#8220;are we just user-squeaming or would this actually be bad?&#8221; has been a helpful question time and again.
+</p>
+<p>
+  That&#8217;s especially true in our case, given that we&#8217;ve committed to the
+  <a
+    href="https://blog.beeminder.com/pdp"
+    title="The Pareto Dominance Principle (PDP) requires that, when changing the functionality of your product, you can never accept even a small degradation for any (reasonable) user."
+  >
+    Pareto Dominance Principle
+  </a>
+  . 
+That&#8217;s quite a bulwark against making users sad, so it&#8217;s valuable to remind ourselves not to overdo it by user-squeaming.
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class="footnote"
+    id="HOSPITAL"
+    href="#HOSPITAL1"
+  >
+    [1]
+  </a>
+  Actually this is a legitimate worry and we do have a solution that doesn&#8217;t completely destroy the whole commitment device that is Beeminder.
+Namely, there&#8217;s a deadman switch.
+If you don&#8217;t interact with Beeminder at all for long enough, your graphs will freeze.
+(We&#8217;re intentionally a bit vague about the parameters on that to avoid any temptation to make it happen on purpose, but we think we&#8217;ve struck an ok balance.)
+</p>
+<p>
+  <a
+    class="footnote"
+    id="OPINE"
+    href="#OPINE1"
+  >
+    [2]
+  </a>
+  Opinionated as in Opinionated Software&#8201;&#8212;&#8201;your app should not be flexible and agnostic, it should take sides and have a cohesive vision. Of course Beeminder is extremely flexible and agnostic about a lot of things. How to be opinionated is complicated, ok?
 </p>
 "
 `;
