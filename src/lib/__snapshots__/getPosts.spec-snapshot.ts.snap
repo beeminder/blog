@@ -357,7 +357,7 @@ We also have a ton of great presentations, exercises, and live direct coaching, 
 "
 `;
 
-exports[`body > post achilles hash f9287395d579bb1f9385c3c662ba0d6c 1`] = `
+exports[`body > post achilles hash c3b31f6b9669d6726415e63c65c45f06 1`] = `
 "
 <p>
   <img
@@ -384,7 +384,11 @@ Create a goal as soon as you think of it, but with an initial flat spot of a wee
   <strong>
     Important
   </strong>
-  : When creating the goal, pick an aggressive slope for after the long initial flat spot. 
+  : When creating the goal, pick an aggressive slope for
+  <em>
+    after
+  </em>
+  the long initial flat spot. 
 Otherwise you may keep your head in the sand indefinitely, with the goal never forcing you to do more than you would&#8217;ve anyway!)
 </p>
 <p>
@@ -1656,7 +1660,7 @@ But it was clear to students that that was a terrible idea. And sure enough, the
 "
 `;
 
-exports[`body > post akratics hash 7eda1ae4e157c3d96a002dbcb9b17bde 1`] = `
+exports[`body > post akratics hash a0bec8249f90dc62284bcbdcbdfee008 1`] = `
 "
 <p>
   <img
@@ -1670,14 +1674,7 @@ exports[`body > post akratics hash 7eda1ae4e157c3d96a002dbcb9b17bde 1`] = `
   &#8220;I did all the right things and it didn&#8217;t work&#8221;
 </h3>
 <p>
-  The kind of
-  <a
-    href="https://web.archive.org/web/20151005093423/https%3A//answers.yahoo.com/question/index?qid=20110515102132AALhnHm"
-    title="Ancient broken Yahoo Answers link"
-  >
-    people who say that
-  </a>
-  , Beeminder is not for them.
+  The kind of people who say that, Beeminder is not for them.
 Beeminder is for goals you know you
   <em>
     can
@@ -1696,8 +1693,8 @@ Apparently you didn&#8217;t want it as bad as you thought, they point out, or yo
 A reasonable objection! 
 If you think that way, Beeminder
   <a
-    href="http://en.wikipedia.org/wiki/The_Soup_Nazi"
-    title="NO graph for you!"
+    href="https://blog.beeminder.com/gatewaydrug/"
+    title="NO graph for you! UPDATE: This was originally a link to the Wikipedia entry on the Soup Nazi. It&#39;s now a link to a far-future Beeminder blog post in which we talk about the Soup Nazi."
   >
     isn&#8217;t really for you either
   </a>
@@ -1787,6 +1784,25 @@ In fact, you can join it right here:
     the Beeminder forum
   </a>
   .
+</p>
+<h2>
+  Update from the far future (2024)
+</h2>
+<p>
+  The Beeminder forum continues to thrive.
+For something exclusive, there&#8217;s now the Beeminder Discord.
+But we obviously can&#8217;t tell you here how to get in on that.
+Also we decided the link (for the text &#8220;people who say that&#8221;) in the first sentence of this post to an ancient weight loss question on Yahoo Answers seemed kind of mocking.
+Plus the answers were low quality.
+Embarrassment all around.
+So
+  <a
+    href="https://web.archive.org/web/20151005093423/https%3A//answers.yahoo.com/question/index?qid=20110515102132AALhnHm"
+    title="Ancient broken Yahoo Answers link"
+  >
+    that link
+  </a>
+  is removed above, but since we hate revisionist-history edits, you can still see it down here, if you must.
 </p>
 <p>
   <br>
@@ -9581,7 +9597,7 @@ Then go to the goal settings for goals that should auto-update from Withings.
 "
 `;
 
-exports[`body > post blockchain hash 6d11ea69f00ddb6e9c86aeaf37e05d65 1`] = `
+exports[`body > post blockchain hash 962f4b44a308c23d4d827d31b784dd00 1`] = `
 "
 <p>
   <img
@@ -9808,7 +9824,7 @@ That&#8217;s just Strava currently, for CommitPool, but it could be any wearable
   But (a) how does CommitPool relinquish that control? and (b) even if they do, what good does that do?
 If it&#8217;s about the user cheating, there&#8217;s ultimately no way to prevent that.
 You can always put your Fitbit on your dog and CommitPool and Beeminder can&#8217;t tell the difference.
-Similarly, there&#8217;s no way to fully eliminate the need to trust some central entity in the chain that starts with you taking steps to your gadget recording those steps to the steps getting recorded on a blockchain to the smart contract paying out.
+Similarly, there&#8217;s no way to fully eliminate the need to trust some central entity in the chain that starts with you taking steps, to your gadget recording those steps, to the steps getting recorded on a blockchain, to the smart contract paying out.
 </p>
 <p>
   The blockchain&#8217;s trustlessness and code-is-law-ness only applies to the last step, once your steps are recorded on the blockchain.
@@ -39014,7 +39030,7 @@ The SMS bot costs a small amount of money, probably not enough to justify it bei
 "
 `;
 
-exports[`body > post focusmate hash 44fb4ca095ec122f73b3af16f6556797 1`] = `
+exports[`body > post focusmate hash bc191d2efaeca7a50c3117ae65938167 1`] = `
 "
 <p>
   <img
@@ -39039,7 +39055,7 @@ Beeminder&#8217;s
       , Nicky, is here to tell you about it!
 See also the
       <a
-        href="https://blog.focusmate.com/beeminder-focusmate-integration/"
+        href="https://www.focusmate.com/blog/beeminder-focusmate-integration/"
         title="Beeminder is Focusmate&#39;s very first integration!"
       >
         announcement on Focusmate&#8217;s blog
@@ -45814,7 +45830,7 @@ Those people evidently didn&#8217;t really need Beeminder in the first place.
 "
 `;
 
-exports[`body > post habitica hash 4dbe653b98a1a1c665fb96fce6a56737 1`] = `
+exports[`body > post habitica hash e574730a6c5712e3793846a118892b15 1`] = `
 "
 <p>
   <img
@@ -61025,7 +61041,7 @@ It&#8217;s not derailing, it&#8217;s more like hitting the rumble strip on the h
 "
 `;
 
-exports[`body > post nanowrimo hash 554b03655a9c7ad76ddf004d1247248c 1`] = `
+exports[`body > post nanowrimo hash 6a05f2b82588ba753b360876500d125e 1`] = `
 "
 <p>
   <img
@@ -68063,7 +68079,7 @@ With Beeminder you&#8217;re internalizing the externality imposed on your future
 "
 `;
 
-exports[`body > post pledgecaps hash c09705a76b0d9310e40130207f326fe4 1`] = `
+exports[`body > post pledgecaps hash 2f0de83ae11f4c3c6cb8971d497a555a 1`] = `
 "
 <p>
   <img
@@ -69080,7 +69096,7 @@ But don&#8217;t listen to me, see what a true
 "
 `;
 
-exports[`body > post predict hash 0cf5067e2d686aa989cce3c12ac7cc57 1`] = `
+exports[`body > post predict hash 663befe37104933d394ea27c82782ce0 1`] = `
 "
 <p>
   <img
@@ -69483,16 +69499,14 @@ See also
   >
     Yassine Meskhout
   </a>
-  &#8217;s notion of 
-[taxing vs punitive commitment contracts](
-  <a href="https://blog.beeminder.com/pigou">
-    https://blog.beeminder.com/pigou
+  &#8217;s notion of
+  <a
+    href="https://blog.beeminder.com/pigou"
+    title="UPDATE: This was originally a link to a forum post where Yassine gave us permission to quote him. In 2024 we turned it into its own blog post: Beeminder As Your Personal Pigouvian Tax."
+  >
+    taxing vs punitive commitment contracts
   </a>
-  <a href="https://forum.beeminder.com/t/yassine-meskhouts-taxing-vs-punitive-commitment-contracts/9262">
-    https://forum.beeminder.com/t/yassine-meskhouts-taxing-vs-punitive-commitment-contracts/9262
-  </a>
-  &#8220;UPDATE: This was originally a link to a forum post where Yassine gave us permission to quote him. In 2024 we turned it into its own blog post: Beeminder As Your Personal Pigouvian Tax.&#8221;
-).
+  .
 </p>
 "
 `;
@@ -69528,7 +69542,7 @@ Like because it&#8217;s there, you&#8217;re bored, or to prevent being hungry la
 "
 `;
 
-exports[`body > post premium hash 822fcfeff60379645edfe14a9a06de4a 1`] = `
+exports[`body > post premium hash b5996dec08660572746a28ca39df2833 1`] = `
 "
 <p>
   <img
@@ -85651,7 +85665,7 @@ coined by Nir Eyal
 "
 `;
 
-exports[`body > post systems hash 3063a7b9b76c8a0a12abc439b9d0a784 1`] = `
+exports[`body > post systems hash cd2180250f1ba156b800efdaa6e6317f 1`] = `
 "
 <p>
   <img
@@ -91421,7 +91435,7 @@ And I&#8217;m so excited for another year of relentless awesomeness together!
 "
 `;
 
-exports[`body > post typebee hash bd5049e7d68973f8adb5ac1520af54cb 1`] = `
+exports[`body > post typebee hash 4cd1532cb42e7780b50437010157211d 1`] = `
 "
 <p>
   <img
@@ -94503,7 +94517,7 @@ In short, we&#8217;re guaranteeing that you won&#8217;t!
 "
 `;
 
-exports[`body > post weighly hash fce5814cbac5454c056739160648efcf 1`] = `
+exports[`body > post weighly hash b66e041d088b21668cfa686292e69c56 1`] = `
 "
 <p>
   <img
@@ -94532,7 +94546,10 @@ Maybe you have a fancy scale that tells you what really matters: percent body fa
   Unfortunately, estimating body fat from those electrical impedance devices is hardly better than a random number generator. 
 They tell you something plausible only by factoring in your weight, height, sex, and age.
 Change any of these values and your body fat percentage on the scale magically changes.
-  <a href="http://www.mayoclinic.com/health/body-fat-analyzers/AN01789">
+  <a
+    href="https://web.archive.org/web/20210609122546/https%3A//www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/body-fat-analyzers/faq-20057944?p=1"
+    title="UPDATE: The origial URL -- http://www.mayoclinic.com/health/body-fat-analyzers/AN01789 -- broke."
+  >
     The Mayo Clinic backs us up on this
   </a>
   .
@@ -94588,11 +94605,13 @@ Would you throw your hands up, eat all the junk food in the house, and gear up f
 No!
 Maybe dinner the night before was a little larger than normal, or you drank a lot of water, 
 or maybe you just haven&#8217;t emptied your bowels recently enough! 
-In fact, one of our beeminders (UPDATE: it was
+In fact, one of our beeminders 
+(UPDATE: it was
   <a href="http://robfelty.com">
     Rob Felty
   </a>
-  , who assures us he doesn&#8217;t mind being quoted even when it&#8217;s about poop) recently commented:
+  , 
+who assures us he doesn&#8217;t mind being quoted even when it&#8217;s about poop) recently commented:
 </p>
 <blockquote>
   <p>
@@ -99153,7 +99172,7 @@ UPDATE: I feel weird doing silent edits (especially after that sentence stood fo
 "
 `;
 
-exports[`body > post zipit hash 1b68c3db02a45ced1e4ffdd98f6800da 1`] = `
+exports[`body > post zipit hash c84fe944a408201230f55fef0b69cc2c 1`] = `
 "
 <p>
   <img
@@ -99190,13 +99209,14 @@ Right in the abstract you can see tell-tale signs of p-hacking:
     a TED talk
   </a>
   ).
-Sivers himself seems to have regretted how his talk was interpreted and 
-[posted a semi-retraction](
-  <a href="https://sivers.org/zipit2">
-    https://sivers.org/zipit2
+Sivers himself seems to have regretted how his talk was interpreted and
+  <a
+    href="https://sivers.org/zipit2"
+    title="[identity goals are] usually related to personal development, that would make you a slightly different person if completed."
+  >
+    posted a semi-retraction
   </a>
-  &#8220;[identity goals are] usually related to personal development, that would make you a slightly different person if completed.&#8221;&#8221;
-) wherein he clarifies that the study he&#8217;s referencing is only about
+  wherein he clarifies that the study he&#8217;s referencing is only about
   <em>
     identity goals
   </em>
