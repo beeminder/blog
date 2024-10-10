@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Log Deployment Status 
         run: echo "Deployment URL- ${{ github.event.deployment_status.target_url }}"
-      - run: echo "Deployment Data - ${{ github.event.deployment_status }}"
+      - run: echo "Deployment Data - ${{ toJSON(github.event.deployment_status) }}"
       - uses: narthur/pa11y-ratchet@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
