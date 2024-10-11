@@ -19,18 +19,20 @@ const { posts } = Astro.props;
         <li>
           <Shadowbox>
             <Typography small sans>
-                {p.image && (
-                  <a class="thumbnail" href={`/${p.slug}`}>
-                    <Img
-                      src={p.image.src}
-                      alt={p.image.alt}
-                      title={p.image.title}
-                      width="200"
-                      height="200"
-                    />
-                  </a>
-                )}
-                <div class="post-meta"><PostMeta post={p} /></div>
+              {p.image && (
+                <a class="thumbnail" href={`/${p.slug}`}>
+                  <Img
+                    src={p.image.src}
+                    alt={p.image.alt || p.title}
+                    title={p.image.title}
+                    width="200"
+                    height="200"
+                  />
+                </a>
+              )}
+              <div class="post-meta">
+                <PostMeta post={p} />
+              </div>
             </Typography>
           </Shadowbox>
         </li>
