@@ -8,6 +8,12 @@ jobs:
       checks: read
       pull-requests: write
     steps:
+      - uses: actions/checkout@v4
+        name: Checkout configuration file
+        with:
+          sparse-checkout: |
+            .pa11yci.json
+          sparse-checkout-cone-mode: false
       - name: Log Deployment Status 
         run: echo "Deployment URL- ${{ github.event.deployment_status.environment_url }}"
       - uses: narthur/pa11y-ratchet@v2
