@@ -1,0 +1,18 @@
+name: E2E
+on: [deployment_status]
+jobs:
+  accessibility:
+    if: github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      checks: read
+      pull-requests: write
+    steps:
+      - name: Log Deployment Status 
+        run: echo "Deployment URL- ${{ github.event.deployment_status.environment_url }}"
+      - uses: narthur/pa11y-ratchet@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          sitemap-url: ${{ github.event.deployment_status.environment_url }}/sitemap-0.xml
+          find: https://blog.beeminder.com
+          replace: ${{ github.event.deployment_status.environment_url }}
