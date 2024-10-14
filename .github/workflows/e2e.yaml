@@ -8,6 +8,12 @@ jobs:
       checks: read
       pull-requests: write
     steps:
+      - uses: actions/checkout@v4
+        name: Checkout configuration file
+        with:
+          sparse-checkout: |
+            .pa11yci.json
+          sparse-checkout-cone-mode: false
       - name: Log Deployment Status 
         run: echo "Deployment URL- ${{ github.event.deployment_status.environment_url }}"
       - uses: narthur/pa11y-ratchet@v2
@@ -16,3 +22,4 @@ jobs:
           sitemap-url: ${{ github.event.deployment_status.environment_url }}/sitemap-0.xml
           find: https://blog.beeminder.com
           replace: ${{ github.event.deployment_status.environment_url }}
+          config-path: .pa11yci.json
