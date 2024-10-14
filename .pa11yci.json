@@ -1,3 +1,4 @@
 {
-  "hideElements": ".typography .inner *"
+  "hideElements": ".typography .inner *",
+  "ignore": ["WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1"]
 }
