@@ -12,8 +12,10 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
 <div class="sidebar">
   <Shadowbox>
     <form action="https://duckduckgo.com">
-      <button type="submit"><Icon name="search" /></button>
-      <input name="q" placeholder="Search" />
+      <button type="submit" aria-label="Submit search"
+        ><Icon name="search" /></button
+      >
+      <input name="q" placeholder="Search" aria-label="Search" />
       <input type="hidden" name="sites" value="blog.beeminder.com" />
     </form>
   </Shadowbox>
