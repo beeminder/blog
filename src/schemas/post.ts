@@ -43,12 +43,18 @@ export const post = z
     const date = rest.date && new Date(rest.date);
     const dateStringResult = dateString.safeParse(date);
 
+    if (rest.title) {
+      throw new Error(
+        `(${url}) : Title is not allowed in posts.json. Use frontmatter only. "BEGIN_MAGIC[The-Post-Name-Here]"`,
+      );
+    }
+
     return {
       ...rest,
       tags: rest.tags?.filter(Boolean),
       excerpt: getExcerpt(rest.excerpt, c),
       image: extractImage(c),
-      title: rest.title || parseTitle(md),
+      title: parseTitle(md),
       date,
       date_string: dateStringResult.success && dateStringResult.data,
       content: c,
