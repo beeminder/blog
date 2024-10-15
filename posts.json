@@ -1,7 +1,6 @@
 [
   {
     "source": "doc.bmndr.co/beemblog-akrasia",
-    "title": "How To Do What You Want: Akrasia and Self-Binding",
     "slug": "akrasia",
     "date": "2011-01-24",
     "author": "dreeves",
@@ -23,7 +22,6 @@
   },
   {
     "source": "doc.bmndr.co/beemblog-easyhard",
-    "title": "Weight Loss: Really Easy, Really Hard",
     "slug": "easyhard",
     "date": "2011-02-02",
     "author": "melza",
@@ -39,7 +37,6 @@
   },
   {
     "source": "doc.bmndr.co/beemblog-preeat",
-    "title": "No Preemptive Eating",
     "slug": "preeat",
     "date": "2011-02-20",
     "author": "dreeves",
@@ -56,7 +53,6 @@
   },
   {
     "source": "doc.bmndr.co/foodrules",
-    "title": "Food Habits",
     "slug": "foodhabits",
     "date": "2011-03-01",
     "author": "Kevin McGowan",
@@ -74,7 +70,6 @@
   },
   {
     "source": "doc.bmndr.co/lildeb",
-    "title": "Little Debbie Does Dog Food",
     "slug": "lildeb",
     "date": "2011-03-10",
     "author": "dreeves",
@@ -92,7 +87,6 @@
   },
   {
     "source": "doc.bmndr.co/gym",
-    "title": "To Buy or Not To Buy a Gym Membership",
     "slug": "gym",
     "date": "2011-03-22",
     "author": "Jill Renaud",
@@ -110,7 +104,6 @@
   },
   {
     "source": "doc.bmndr.co/sediment",
-    "title": "Productivity Hack: The Sedimentary Filing System",
     "slug": "sediment",
     "date": "2011-04-01",
     "author": "dreeves",
@@ -131,7 +124,6 @@
   },
   {
     "source": "doc.bmndr.co/martin",
-    "title": "Case Study: Martin's Renovating",
     "slug": "martin",
     "date": "2011-04-10",
     "author": "dreeves",
@@ -148,7 +140,6 @@
   },
   {
     "source": "doc.bmndr.co/beemblog-michelle",
-    "title": "What Happens When You Don't Report Your Weight; or, Driving Blind",
     "slug": "blind",
     "date": "2011-04-19",
     "author": "dreeves",
@@ -168,7 +159,6 @@
   },
   {
     "source": "doc.bmndr.co/beemblog-rails",
-    "title": "Beeminder on Rails",
     "slug": "rails",
     "date": "2011-04-29",
     "author": "dreeves",
@@ -188,7 +178,6 @@
   },
   {
     "source": "doc.bmndr.co/unintended",
-    "title": "Unintended Consequences",
     "slug": "unintended",
     "date": "2011-05-23",
     "author": "dreeves",
@@ -208,7 +197,6 @@
   },
   {
     "source": "doc.bmndr.co/akranon",
-    "title": "Akratics Anonymous",
     "slug": "akratics",
     "date": "2011-06-01",
     "author": "dreeves",
@@ -228,7 +216,6 @@
   },
   {
     "source": "doc.bmndr.co/timecarrot",
-    "title": "TimeCarrot = StickK + RescueTime",
     "slug": "timecarrot",
     "date": "2011-06-10",
     "author": "dreeves",
@@ -246,7 +233,6 @@
   },
   {
     "source": "doc.bmndr.co/joshstickk",
-    "title": "BMNDR vs StickK",
     "slug": "stickk",
     "date": "2011-06-16",
     "author": "guest",
@@ -265,7 +251,6 @@
   },
   {
     "source": "doc.bmndr.co/solstice",
-    "title": "Summer Solstice PSA",
     "slug": "solstice",
     "date": "2011-06-28",
     "author": "dreeves",
@@ -280,7 +265,6 @@
   },
   {
     "source": "doc.bmndr.co/sos",
-    "title": "Force Majeure, Or Beeminder's SOS Clause",
     "slug": "sos",
     "date": "2011-07-01",
     "author": "dreeves",
@@ -304,7 +288,6 @@
   },
   {
     "source": "doc.bmndr.co/roadwidth",
-    "title": "The Magical Widening Yellow Brick Road",
     "slug": "roadwidth",
     "date": "2011-07-10",
     "author": "dreeves",
@@ -318,7 +301,6 @@
   },
   {
     "source": "doc.bmndr.co/backfiring",
-    "title": "Backfiring Workouts",
     "slug": "backfiring",
     "date": "2011-07-27",
     "author": "dreeves",
@@ -336,7 +318,6 @@
   },
   {
     "source": "doc.bmndr.co/ahorizon",
-    "title": "The Road Dial and the Akrasia Horizon",
     "slug": "dial",
     "date": "2011-09-01",
     "author": "dreeves",
@@ -360,7 +341,6 @@
   },
   {
     "source": "doc.bmndr.co/beenamer",
-    "title": "The Name \"Beeminder\"",
     "slug": "beenamer",
     "date": "2011-09-17",
     "author": "dreeves",
@@ -381,7 +361,6 @@
   },
   {
     "source": "doc.bmndr.co/textbot",
-    "title": "Buzzing BeeBot",
     "slug": "textbot",
     "date": "2011-09-22",
     "author": "guest",
@@ -398,7 +377,6 @@
   },
   {
     "source": "doc.bmndr.co/blaunch",
-    "title": "Beeminder Open to the Public",
     "slug": "launch",
     "date": "2011-10-13",
     "author": "bsoule",
@@ -435,7 +413,6 @@
   },
   {
     "source": "doc.bmndr.co/chunky",
-    "title": "It's Chunky Time!",
     "slug": "chunky",
     "date": "2011-11-03",
     "author": "dreeves",
@@ -455,7 +432,6 @@
   },
   {
     "source": "doc.bmndr.co/blogdog",
-    "title": "Dog Food Renewed",
     "slug": "blogdog",
     "date": "2011-11-14",
     "author": "bsoule",
@@ -482,7 +458,6 @@
   },
   {
     "source": "doc.bmndr.co/tgbee",
-    "title": "PSA: T Minus One Week to Thanksgiving",
     "slug": "tg",
     "date": "2011-11-18",
     "author": "dreeves",
@@ -500,7 +475,6 @@
   },
   {
     "source": "doc.bmndr.co/bwidget",
-    "title": "Beeminder Dashboard Widget",
     "slug": "widget",
     "date": "2011-12-01",
     "author": "dreeves",
@@ -517,7 +491,6 @@
   },
   {
     "source": "doc.bmndr.co/trackhack",
-    "title": "Trackers vs Lifehackers",
     "slug": "trackhack",
     "date": "2011-12-31",
     "author": "dreeves",
@@ -559,7 +532,6 @@
   },
   {
     "source": "doc.bmndr.co/competitors",
-    "title": "Aiding and Abetting",
     "slug": "competitors",
     "date": "2012-01-15",
     "author": "dreeves",
@@ -582,7 +554,6 @@
   },
   {
     "source": "doc.bmndr.co/j2jenkins",
-    "title": "Jamming with Jake Jenkins",
     "slug": "j2j",
     "date": "2012-01-25",
     "author": "Jake Jenkins",
@@ -603,7 +574,6 @@
   },
   {
     "source": "doc.bmndr.co/ged",
-    "title": "Get Everything Done",
     "slug": "ged",
     "date": "2012-02-05",
     "author": "dreeves",
@@ -625,7 +595,6 @@
   },
   {
     "source": "doc.bmndr.co/layaways",
-    "title": "Layaways and Lamentations",
     "slug": "layaways",
     "date": "2012-02-14",
     "author": "dreeves",
@@ -648,7 +617,6 @@
   },
   {
     "source": "doc.bmndr.co/gandalf",
-    "title": "Study Wizardry",
     "slug": "gandalf",
     "date": "2012-02-22",
     "author": "guest",
@@ -672,7 +640,6 @@
   },
   {
     "source": "doc.bmndr.co/bp",
-    "title": "Beeminder Hits the Oregon Trail",
     "slug": "beehive",
     "date": "2012-03-06",
     "author": "bsoule",
@@ -689,7 +656,6 @@
   },
   {
     "source": "doc.bmndr.co/weighly",
-    "title": "Why Weigh (Daily)?",
     "slug": "weighly",
     "date": "2012-03-19",
     "author": "melza",
@@ -711,7 +677,6 @@
   },
   {
     "source": "doc.bmndr.co/bbah",
-    "title": "Flexible Self-Control",
     "slug": "flexbind",
     "date": "2012-03-26",
     "author": "dreeves",
@@ -736,7 +701,6 @@
   },
   {
     "source": "doc.bmndr.co/pdxqs",
-    "title": "Quantified Self Talk: Beeminding Beeminder",
     "slug": "pdxqs",
     "date": "2012-04-12",
     "author": "dreeves",
@@ -757,7 +721,6 @@
   },
   {
     "source": "doc.bmndr.co/lee",
-    "title": "Monkey Brains and Multiple Selves",
     "slug": "monkey",
     "date": "2012-04-24",
     "author": "guest",
@@ -778,7 +741,6 @@
   },
   {
     "source": "doc.bmndr.co/innocentive",
-    "title": "Innocentive $10k Challenge: Increasing People's Ability to Start and Stay on Task",
     "slug": "innocentive",
     "date": "2012-05-03",
     "author": "dreeves",
@@ -800,7 +762,6 @@
   },
   {
     "source": "doc.bmndr.co/tuit",
-    "title": "Beeminder: Round Tuit Dispenser",
     "slug": "tuit",
     "date": "2012-05-17",
     "author": "dreeves",
@@ -841,7 +802,6 @@
   },
   {
     "source": "doc.bmndr.co/chirpify",
-    "title": "Birds and the Bees: Chirpify and Beeminder Shack Up",
     "slug": "chirpify",
     "date": "2012-06-03",
     "author": "dreeves",
@@ -859,7 +819,6 @@
   },
   {
     "source": "doc.bmndr.co/psfdd",
-    "title": "Portland Seed Fund Demo Day",
     "slug": "psfdd",
     "date": "2012-06-11",
     "author": "bsoule",
@@ -878,7 +837,6 @@
   },
   {
     "source": "doc.bmndr.co/masochism",
-    "title": "Hammers and Chisels",
     "slug": "lift",
     "date": "2012-06-20",
     "author": "dreeves",
@@ -901,7 +859,6 @@
   },
   {
     "source": "doc.bmndr.co/mindingpress",
-    "title": "Press Roundup: What's the Buzz?",
     "slug": "buzz",
     "date": "2012-06-30",
     "author": "dreeves",
@@ -921,7 +878,6 @@
   },
   {
     "source": "doc.bmndr.co/tri",
-    "title": "Case Study: Triathlon Training",
     "slug": "tri",
     "date": "2012-07-10",
     "author": "bsoule",
@@ -940,7 +896,6 @@
   },
   {
     "source": "doc.bmndr.co/synonyms",
-    "title": "Synonyms for Self-Binding",
     "slug": "synonyms",
     "date": "2012-07-21",
     "author": "dreeves",
@@ -965,7 +920,6 @@
   },
   {
     "source": "doc.bmndr.co/gympact",
-    "title": "GymPact vs Beeminder",
     "slug": "gympact",
     "date": "2012-08-01",
     "author": "dreeves",
@@ -984,7 +938,6 @@
   },
   {
     "source": "doc.bmndr.co/weusethat",
-    "title": "Beeminder: We Use That; or, WeUseThat: Beeminder",
     "slug": "weusethat",
     "date": "2012-08-09",
     "author": "bsoule",
@@ -1003,7 +956,6 @@
   },
   {
     "source": "doc.bmndr.co/perverse",
-    "title": "Perverse Incentives and the Paradox of Beeminder's Sting",
     "slug": "perverse",
     "date": "2012-08-19",
     "author": "dreeves",
@@ -1028,7 +980,6 @@
   },
   {
     "source": "doc.bmndr.co/smart",
-    "title": "Beeminder is S.M.A.R.T., Overcomes Bias",
     "slug": "smart",
     "date": "2012-08-23",
     "author": "dreeves",
@@ -1055,7 +1006,6 @@
   },
   {
     "source": "doc.bmndr.co/blogapi",
-    "title": "Beeminder API",
     "slug": "api",
     "date": "2012-09-05",
     "author": "dreeves",
@@ -1075,7 +1025,6 @@
   },
   {
     "source": "doc.bmndr.co/pjf-anki",
-    "title": "Failing your Goals with Beeminder",
     "slug": "habits",
     "date": "2012-09-14",
     "author": "pjf",
@@ -1096,7 +1045,6 @@
   },
   {
     "source": "doc.bmndr.co/gmailzero",
-    "title": "Gmail Zero: Beeminding Your Inbox",
     "slug": "gmailzero",
     "date": "2012-09-22",
     "author": "dreeves",
@@ -1115,7 +1063,6 @@
   },
   {
     "source": "doc.bmndr.co/mustdo",
-    "title": "The One Must-Do Task Each Day",
     "slug": "mustdo",
     "date": "2012-10-03",
     "author": "alys",
@@ -1142,7 +1089,6 @@
   },
   {
     "source": "doc.bmndr.co/mongosad",
-    "title": "Destroy All!",
     "slug": "mongo",
     "date": "2012-09-30",
     "author": "dreeves",
@@ -1162,7 +1108,6 @@
   },
   {
     "source": "doc.bmndr.co/810",
-    "title": "Launch Anniversary! How Crazy Are We Now?",
     "slug": "one",
     "date": "2012-10-13",
     "author": "dreeves",
@@ -1179,7 +1124,6 @@
   },
   {
     "source": "doc.bmndr.co/tv",
-    "title": "Emergency TV Day",
     "slug": "tv",
     "date": "2012-10-24",
     "author": "dreeves",
@@ -1200,7 +1144,6 @@
   },
   {
     "source": "doc.bmndr.co/beedroid",
-    "title": "Announcing the Beeminder Android and iPhone Apps",
     "slug": "apps",
     "date": "2012-10-25",
     "author": "Andy Brett",
@@ -1241,7 +1184,6 @@
   },
   {
     "source": "doc.bmndr.co/nanowrimo",
-    "title": "Beemind Your NaNoWriMo Progress",
     "slug": "nanowrimo",
     "date": "2012-11-01",
     "author": "dreeves",
@@ -1299,7 +1241,6 @@
   },
   {
     "source": "doc.bmndr.co/scpd",
-    "title": "Pledge Short-Circuiting",
     "slug": "shortcircuit",
     "date": "2012-12-09",
     "author": "dreeves",
@@ -1320,7 +1261,6 @@
   },
   {
     "source": "doc.bmndr.co/resjump",
-    "title": "Get the Jump on Your Resolutions",
     "slug": "resolutions",
     "date": "2012-12-21",
     "author": "Philip Hellyer",
@@ -1340,7 +1280,6 @@
   },
   {
     "source": "doc.bmndr.co/buzz",
-    "title": "Beeminder Buzz at 30,000 Feet, and other New Year's Coverage",
     "slug": "southwest",
     "date": "2013-01-09",
     "author": "dreeves",
@@ -1359,7 +1298,6 @@
   },
   {
     "source": "doc.bmndr.co/gratitude",
-    "title": "Everything is Amazing, Even Gratitude Journaling",
     "slug": "gratitude",
     "date": "2013-01-24",
     "author": "dreeves",
@@ -1380,7 +1318,6 @@
   },
   {
     "source": "doc.bmndr.co/ineptitude",
-    "title": "Beeminder Error in Your Favor, and Other Crashes of Ineptitude",
     "slug": "ineptitude",
     "date": "2013-01-24",
     "author": "dreeves",
@@ -1401,7 +1338,6 @@
   },
   {
     "source": "doc.bmndr.co/pcrc",
-    "title": "Precommit to Recommit: The Third Great Beeminder Epiphany",
     "slug": "recommit",
     "date": "2013-02-13",
     "author": "dreeves",
@@ -1425,7 +1361,6 @@
   },
   {
     "source": "doc.bmndr.co/gitminder",
-    "title": "Gitminder: Commit To Keep Coding",
     "slug": "gitminder",
     "date": "2013-02-22",
     "author": "Andy Brett",
@@ -1445,7 +1380,6 @@
   },
   {
     "source": "doc.bmndr.co/sociallyefficient",
-    "title": "Socially Efficient Commitment Devices",
     "slug": "anticharity",
     "date": "2013-03-05",
     "author": "dreeves",
@@ -1467,7 +1401,6 @@
   },
   {
     "source": "doc.bmndr.co/beebox",
-    "title": "Beeminding Outside the Box",
     "slug": "box",
     "date": "2013-03-16",
     "author": "bsoule",
@@ -1513,7 +1446,6 @@
   },
   {
     "source": "doc.bmndr.co/beemium",
-    "title": "Announcing Beeminder Premium Plans: Bee Lite, Plan Bee, Beemium, and Beekeeper",
     "slug": "premium",
     "date": "2013-04-12",
     "author": "dreeves",
@@ -1533,7 +1465,6 @@
   },
   {
     "source": "doc.bmndr.co/legit",
-    "title": "Weasel-Proofing and the Definition of Legitimacy",
     "slug": "legit",
     "date": "2013-04-05",
     "author": "dreeves",
@@ -1555,7 +1486,6 @@
   },
   {
     "source": "doc.bmndr.co/wsj",
-    "title": "Beeminder Buzz: Front Page of the Wall Street Journal",
     "slug": "wsj",
     "date": "2013-04-24",
     "author": "bsoule",
@@ -1572,7 +1502,6 @@
   },
   {
     "source": "doc.bmndr.co/duo",
-    "title": "Todas as línguas! Beeminder ama Duolingo",
     "slug": "duolingo",
     "date": "2013-05-24",
     "author": "Andy Brett",
@@ -1591,7 +1520,6 @@
   },
   {
     "source": "doc.bmndr.co/autocancel",
-    "title": "Auto-Canceling Subscriptions",
     "slug": "autocancel",
     "date": "2013-05-04",
     "author": "dreeves",
@@ -1612,7 +1540,6 @@
   },
   {
     "source": "doc.bmndr.co/fair",
-    "title": "Exquisitely Fair Pre-Pay Discounts",
     "slug": "fair",
     "date": "2013-05-13",
     "author": "dreeves",
@@ -1636,7 +1563,6 @@
   },
   {
     "source": "doc.bmndr.co/routine",
-    "title": "To Break From Routine Is Human",
     "slug": "routine",
     "date": "2013-05-16",
     "author": "Andy Brett",
@@ -1655,7 +1581,6 @@
   },
   {
     "source": "doc.bmndr.co/leniency",
-    "title": "Catch-up Unmustered; or, Easier is Harder",
     "slug": "catchup",
     "date": "2013-06-14",
     "author": "bsoule",
@@ -1678,7 +1603,6 @@
   },
   {
     "source": "doc.bmndr.co/zeno",
-    "title": "Zeno Polling",
     "slug": "zeno",
     "date": "2013-06-24",
     "author": "dreeves",
@@ -1697,7 +1621,6 @@
   },
   {
     "source": "doc.bmndr.co/sin",
-    "title": "Beeminding Sin",
     "slug": "sin",
     "date": "2013-07-03",
     "author": "Wolf Tivy",
@@ -1723,7 +1646,6 @@
   },
   {
     "source": "doc.bmndr.co/jargon",
-    "title": "Beeminder Glossary",
     "slug": "glossary",
     "date": "2013-07-14",
     "author": "dreeves",
@@ -1744,7 +1666,6 @@
   },
   {
     "source": "doc.bmndr.co/nick",
-    "title": "Spiraling Into Control",
     "slug": "nick",
     "date": "2013-07-24",
     "author": "Nick Winter",
@@ -1768,7 +1689,6 @@
   },
   {
     "source": "doc.bmndr.co/curtain",
-    "title": "Beehind the Curtain: Secrets of our Support Success",
     "slug": "curtain",
     "date": "2013-08-03",
     "author": "dreeves",
@@ -1787,7 +1707,6 @@
   },
   {
     "source": "doc.bmndr.co/nwo",
-    "title": "New World Order: Goals No Longer Freeze",
     "slug": "nwo",
     "date": "2013-08-13",
     "author": "dreeves",
@@ -1808,7 +1727,6 @@
   },
   {
     "source": "doc.bmndr.co/cheating",
-    "title": "Combatting Cheating",
     "slug": "cheating",
     "date": "2013-08-24",
     "author": "dreeves",
@@ -1847,7 +1765,6 @@
   },
   {
     "source": "doc.bmndr.co/breaks",
-    "title": "Scheduled Breaks!",
     "slug": "breaks",
     "date": "2013-09-13",
     "author": "bsoule",
@@ -1865,7 +1782,6 @@
   },
   {
     "source": "doc.bmndr.co/doless",
-    "title": "Do-Less Goals with Pessimistic Presumptive Reports",
     "slug": "less",
     "date": "2013-09-23",
     "author": "dreeves",
@@ -1883,7 +1799,6 @@
   },
   {
     "source": "doc.bmndr.co/moreless",
-    "title": "More Schwag, Less Beeminding",
     "slug": "moreless",
     "date": "2013-10-03",
     "author": "dreeves",
@@ -1907,7 +1822,6 @@
   },
   {
     "source": "doc.bmndr.co/two",
-    "title": "Beeminder Turns Two!",
     "slug": "two",
     "date": "2013-10-13",
     "author": "bsoule",
@@ -1948,7 +1862,6 @@
   },
   {
     "source": "doc.bmndr.co/draft",
-    "title": "Year-Round NaNoWriMo with Beeminder and Draft",
     "slug": "draft",
     "date": "2013-11-01",
     "author": "dreeves",
@@ -1987,7 +1900,6 @@
   },
   {
     "source": "doc.bmndr.co/uvi1000",
-    "title": "1000 Days of User-Visible Improvements",
     "slug": "uvi",
     "date": "2013-11-21",
     "author": "dreeves",
@@ -2016,7 +1928,6 @@
   },
   {
     "source": "doc.bmndr.co/beedroid2",
-    "title": "Android and Beeminder and Tasker",
     "slug": "beedroid",
     "date": "2013-12-03",
     "author": "dreeves",
@@ -2036,7 +1947,6 @@
   },
   {
     "source": "doc.bmndr.co/wist",
-    "title": "How Beeminder Paid for 14 Bikes",
     "slug": "bikes",
     "date": "2013-12-06",
     "author": "Henrik Wist",
@@ -2056,7 +1966,6 @@
   },
   {
     "source": "doc.bmndr.co/nyr2013",
-    "title": "Resolutions for Real",
     "slug": "dip",
     "date": "2013-12-24",
     "author": "Philip Hellyer",
@@ -2074,7 +1983,6 @@
   },
   {
     "source": "doc.bmndr.co/erica",
-    "title": "The Beekeeper Program: Beeminder-Based Lifecoaching",
     "slug": "beekeeper",
     "date": "2014-01-01",
     "author": "Erica Edelman",
@@ -2115,7 +2023,6 @@
   },
   {
     "source": "doc.bmndr.co/qs2013",
-    "title": "Minding Bee: Time Tracking, Behavior Change, and the Birth of Beeminder",
     "slug": "qs2013",
     "date": "2014-01-23",
     "author": "bsoule",
@@ -2161,7 +2068,6 @@
   },
   {
     "source": "doc.bmndr.co/runnersworld",
-    "title": "Another Press Roundup Part Deux, Revisited: Return of the Beeminder Buzz Returns Again!",
     "slug": "runnersworld",
     "date": "2014-02-02",
     "author": "Erica Edelman",
@@ -2177,7 +2083,6 @@
   },
   {
     "source": "doc.bmndr.co/newbees",
-    "title": "Beeminder: A User's Guide for New Bees",
     "slug": "newbees",
     "date": "2014-02-22",
     "author": "dreeves",
@@ -2199,7 +2104,6 @@
   },
   {
     "source": "doc.bmndr.co/fatty",
-    "title": "Fat Cyclist Weight Loss Competition with Beeminder",
     "slug": "fatty",
     "date": "2014-03-05",
     "author": "bsoule",
@@ -2211,7 +2115,6 @@
   },
   {
     "source": "doc.bmndr.co/vegetables",
-    "title": "Eat Your Vegetables",
     "slug": "vegetables",
     "date": "2014-03-15",
     "author": "bsoule",
@@ -2276,7 +2179,6 @@
   },
   {
     "source": "doc.bmndr.co/heartbleed",
-    "title": "Heartbleed and Other Epic Crashes of Ineptitude",
     "slug": "heartbleed",
     "date": "2014-04-14",
     "author": "dreeves",
@@ -2294,7 +2196,6 @@
   },
   {
     "source": "doc.bmndr.co/bothsides",
-    "title": "(Never)Minding Both Sides",
     "slug": "bothsides",
     "date": "2014-04-24",
     "author": "dreeves",
@@ -2311,7 +2212,6 @@
   },
   {
     "source": "doc.bmndr.co/refereeminder",
-    "title": "New Feature: Supporters",
     "slug": "supporters",
     "date": "2014-05-04",
     "author": "dreeves",
@@ -2332,7 +2232,6 @@
   },
   {
     "source": "doc.bmndr.co/jess",
-    "title": "Beeminding Your Way Out of Your Comfort Zone",
     "slug": "comfortzone",
     "date": "2014-05-14",
     "author": "Jess Whittlestone",
@@ -2354,7 +2253,6 @@
   },
   {
     "source": "doc.bmndr.co/ericegyptian",
-    "title": "Learning Ancient Egyptian in an Hour Per Week with Beeminder",
     "slug": "hieroglyphs",
     "date": "2014-05-22",
     "author": "Eric Kidd",
@@ -2373,7 +2271,6 @@
   },
   {
     "source": "doc.bmndr.co/burnout",
-    "title": "Beating Beeminder Burnout",
     "slug": "burnout",
     "date": "2014-06-04",
     "author": "dreeves",
@@ -2394,7 +2291,6 @@
   },
   {
     "source": "doc.bmndr.co/maniac",
-    "title": "Bethany's Maniac Week",
     "slug": "maniac",
     "date": "2014-06-07",
     "author": "bsoule",
@@ -2417,7 +2313,6 @@
   },
   {
     "source": "doc.bmndr.co/exproad",
-    "title": "Clearing Up Confusion About Exponential Roads",
     "slug": "exproad",
     "date": "2014-06-28",
     "author": "dreeves",
@@ -2431,7 +2326,6 @@
   },
   {
     "source": "doc.bmndr.co/fatcyclist",
-    "title": "Ringcycles Wins Fat Cyclist Weight Loss Contest!",
     "slug": "fatcyclist",
     "date": "2014-07-07",
     "author": "dreeves",
@@ -2450,7 +2344,6 @@
   },
   {
     "source": "doc.bmndr.co/howeyeuse",
-    "title": "How I Use Beeminder",
     "slug": "philip",
     "date": "2014-07-18",
     "author": "Philip Hellyer",
@@ -2472,7 +2365,6 @@
   },
   {
     "source": "doc.bmndr.co/typebee",
-    "title": "The Type Bee Personality",
     "slug": "typebee",
     "date": "2014-07-29",
     "author": "dreeves",
@@ -2493,7 +2385,6 @@
   },
   {
     "source": "doc.bmndr.co/twitter",
-    "title": "Birds and The Bees: Beeminder Has Twitter Integration",
     "slug": "twitter",
     "date": "2014-08-05",
     "author": "Chris Goodman",
@@ -2511,7 +2402,6 @@
   },
   {
     "source": "doc.bmndr.co/smarmbot",
-    "title": "Don't Be a Smarmbot",
     "slug": "smarmbot",
     "date": "2014-08-25",
     "author": "dreeves",
@@ -2531,7 +2421,6 @@
   },
   {
     "source": "doc.bmndr.co/buzz5",
-    "title": "Press Roundup 5",
     "slug": "buzz5",
     "date": "2014-09-04",
     "author": "dreeves",
@@ -2550,7 +2439,6 @@
   },
   {
     "source": "doc.bmndr.co/whattomind",
-    "title": "What To Mind: Picking a Metric",
     "slug": "whattomind",
     "date": "2014-09-14",
     "author": "dreeves",
@@ -2574,7 +2462,6 @@
   },
   {
     "source": "doc.bmndr.co/pledgecaps",
-    "title": "New Feature: Pledge Caps",
     "slug": "pledgecaps",
     "date": "2014-09-24",
     "author": "dreeves",
@@ -2592,7 +2479,6 @@
   },
   {
     "source": "doc.bmndr.co/freebees",
-    "title": "Freebees: Not Actually Free",
     "slug": "freebees",
     "date": "2014-10-04",
     "author": "dreeves",
@@ -2611,7 +2497,6 @@
   },
   {
     "source": "doc.bmndr.co/discourse",
-    "title": "New Discourse Forum!",
     "slug": "discourse",
     "date": "2014-10-15",
     "author": "dreeves",
@@ -2655,7 +2540,6 @@
   },
   {
     "source": "doc.bmndr.co/arbdead",
-    "title": "New Feature and Veritable Paradigm Shift: Arbitrary Deadlines",
     "slug": "deadlines",
     "date": "2014-10-28",
     "author": "dreeves",
@@ -2677,7 +2561,6 @@
   },
   {
     "source": "doc.bmndr.co/three",
-    "title": "Beeminder Turns Three!",
     "slug": "three",
     "date": "2014-10-28",
     "author": "bsoule",
@@ -2699,7 +2582,6 @@
   },
   {
     "source": "doc.bmndr.co/rosary",
-    "title": "Code and Catholicism: Beeminding Praying and Integrating Beeminder on iOS",
     "slug": "rosary",
     "date": "2014-12-11",
     "author": "Pedro Paulo Oliveira Jr.",
@@ -2741,7 +2623,6 @@
   },
   {
     "source": "doc.bmndr.co/veggieminding",
-    "title": "1000 Days of Fruits and Vegetables",
     "slug": "veggieminding",
     "date": "2014-11-28",
     "author": "alys",
@@ -2763,7 +2644,6 @@
   },
   {
     "source": "doc.bmndr.co/rituals",
-    "title": "Beeminding Rituals",
     "slug": "rituals",
     "date": "2014-12-04",
     "author": "Leah Libresco",
@@ -2805,7 +2685,6 @@
   },
   {
     "source": "doc.bmndr.co/tock",
-    "title": "Tocks",
     "slug": "tocks",
     "date": "2015-01-14",
     "author": "bsoule",
@@ -2828,7 +2707,6 @@
   },
   {
     "source": "doc.bmndr.co/pomopoker",
-    "title": "Pomodoro Poker",
     "slug": "pomopoker",
     "date": "2015-01-20",
     "author": "dreeves",
@@ -2850,7 +2728,6 @@
   },
   {
     "source": "doc.bmndr.co/bucketminding",
-    "title": "Bucketminding",
     "slug": "bucket",
     "date": "2015-02-03",
     "author": "dreeves",
@@ -2887,7 +2764,6 @@
   },
   {
     "source": "doc.bmndr.co/triangle",
-    "title": "Triangular Beeminding; Or, Drink Less, Using the Power of Triangles",
     "slug": "triangle",
     "date": "2015-02-27",
     "author": "David R. MacIver",
@@ -2931,7 +2807,6 @@
   },
   {
     "source": "doc.bmndr.co/beeyond",
-    "title": "Case Study: Beemind Going Beyond Your Usual Routine",
     "slug": "beeyond",
     "date": "2015-03-30",
     "author": "Tadeusz Andrzej Kadłubowski",
@@ -2950,7 +2825,6 @@
   },
   {
     "source": "doc.bmndr.co/movingav",
-    "title": "Should You Beemind The Moving Average?",
     "slug": "movingav",
     "date": "2015-03-20",
     "author": "dreeves",
@@ -2973,7 +2847,6 @@
   },
   {
     "source": "doc.bmndr.co/essy",
-    "title": "Monkeys Are Afraid of Bees",
     "slug": "fearofbees",
     "date": "2015-04-09",
     "author": "Mary Renaud",
@@ -2993,7 +2866,6 @@
   },
   {
     "source": "doc.bmndr.co/aftermath",
-    "title": "Dealing with Beemergencies in an Emergency",
     "slug": "crisis",
     "date": "2015-04-19",
     "author": "Philip Hellyer",
@@ -3036,7 +2908,6 @@
   },
   {
     "source": "doc.bmndr.co/gmailzero2",
-    "title": "GmailZero: Not Just For Your Inbox Anymore",
     "slug": "gmailzeroer",
     "date": "2015-04-29",
     "author": "bsoule",
@@ -3056,7 +2927,6 @@
   },
   {
     "source": "doc.bmndr.co/smoking",
-    "title": "Smoking Sticks and Carrots",
     "slug": "smoking",
     "date": "2015-05-20",
     "author": "dreeves",
@@ -3117,7 +2987,6 @@
   },
   {
     "source": "doc.bmndr.co/meetup",
-    "title": "Quantified Self 2015 and Bay Area Beeminder Meetup",
     "slug": "qs15",
     "date": "2015-06-18",
     "author": "dreeves",
@@ -3134,7 +3003,6 @@
   },
   {
     "source": "doc.bmndr.co/seinfeld",
-    "title": "The Seinfeld Hack; or, Don't Break The Chain",
     "slug": "seinfeld",
     "date": "2015-06-29",
     "author": "dreeves",
@@ -3159,7 +3027,6 @@
   },
   {
     "source": "doc.bmndr.co/nudge",
-    "title": "Cranial Silicosis and Paths of Least Resistance",
     "slug": "nudge",
     "date": "2015-07-16",
     "author": "dreeves",
@@ -3181,7 +3048,6 @@
   },
   {
     "source": "doc.bmndr.co/chelsea",
-    "title": "Weasel Heart-To-Heart",
     "slug": "chelsea",
     "date": "2015-07-27",
     "author": "Chelsea Miller",
@@ -3202,7 +3068,6 @@
   },
   {
     "source": "doc.bmndr.co/mirabai",
-    "title": "Nine Greens",
     "slug": "mirabai",
     "date": "2015-08-07",
     "author": "Mirabai Knight",
@@ -3223,7 +3088,6 @@
   },
   {
     "source": "doc.bmndr.co/trust",
-    "title": "Trusting Your Divided Self",
     "slug": "trust",
     "date": "2015-08-19",
     "author": "Philip Hellyer",
@@ -3242,7 +3106,6 @@
   },
   {
     "source": "doc.bmndr.co/should",
-    "title": "I Resolve Not To Resolve; Or, The Anti-Resolution Resolution",
     "slug": "should",
     "date": "2015-08-29",
     "author": "dreeves",
@@ -3261,7 +3124,6 @@
   },
   {
     "source": "doc.bmndr.co/QSGlobal2015",
-    "title": "Bee on Extreme Productivity (QS 2015)",
     "slug": "qs2015",
     "date": "2015-09-08",
     "author": "bsoule",
@@ -3282,7 +3144,6 @@
   },
   {
     "source": "doc.bmndr.co/buzzyear",
-    "title": "Press Roundup: A Year of Buzz",
     "slug": "buzzyear",
     "date": "2015-09-18",
     "author": "dreeves",
@@ -3301,7 +3162,6 @@
   },
   {
     "source": "doc.bmndr.co/remrev",
-    "title": "Revamped Reminders",
     "slug": "reminders",
     "date": "2015-10-01",
     "author": "bsoule",
@@ -3320,7 +3180,6 @@
   },
   {
     "source": "doc.bmndr.co/waterfalls",
-    "title": "Chasing Waterfalls",
     "slug": "waterfalls",
     "date": "2015-10-12",
     "author": "dreeves",
@@ -3341,7 +3200,6 @@
   },
   {
     "source": "doc.bmndr.co/hardsoon",
-    "title": "Hard-Committing To Do Something \"Soon\"",
     "slug": "hardsoon",
     "date": "2015-10-22",
     "author": "bsoule",
@@ -3360,7 +3218,6 @@
   },
   {
     "source": "doc.bmndr.co/four",
-    "title": "Fourth Anniversary of Beeminder",
     "slug": "four",
     "date": "2015-10-29",
     "author": "bsoule",
@@ -3403,7 +3260,6 @@
   },
   {
     "source": "doc.bmndr.co/faireminder",
-    "title": "Beeminder's Youngest User",
     "slug": "faire",
     "date": "2015-11-21",
     "author": "Faire Soule-Reeves",
@@ -3422,7 +3278,6 @@
   },
   {
     "source": "doc.bmndr.co/cybermonday",
-    "title": "Cyber Monday: <s>OK, Fine</s> Never Again",
     "slug": "cybermonday",
     "date": "2015-12-01",
     "author": "dreeves",
@@ -3439,7 +3294,6 @@
   },
   {
     "source": "doc.bmndr.co/systems",
-    "title": "Systems Not Goals",
     "slug": "systems",
     "date": "2015-12-11",
     "author": "dreeves",
@@ -3460,7 +3314,6 @@
   },
   {
     "source": "doc.bmndr.co/buzz7",
-    "title": "Buzzy Buzz Buzz: Discover Magazine Edition",
     "slug": "buzz7",
     "date": "2015-12-22",
     "author": "bsoule",
@@ -3478,7 +3331,6 @@
   },
   {
     "source": "doc.bmndr.co/habitica",
-    "title": "Bee Your Best Self in 2016 with Habitica",
     "slug": "habitica",
     "date": "2016-01-12",
     "author": "Siena Leslie",
@@ -3500,7 +3352,6 @@
   },
   {
     "source": "doc.bmndr.co/frictionless",
-    "title": "Frictionless Tracking with Beeminder Autodata (QS 2015)",
     "slug": "frictionless",
     "date": "2016-01-23",
     "author": "dreeves",
@@ -3519,7 +3370,6 @@
   },
   {
     "source": "doc.bmndr.co/buzz8",
-    "title": "Post New Year's Press Roundup",
     "slug": "buzz8",
     "date": "2016-02-05",
     "author": "dreeves",
@@ -3538,7 +3388,6 @@
   },
   {
     "source": "doc.bmndr.co/revealedprefs",
-    "title": "Revealed Preference",
     "slug": "revealed",
     "date": "2016-02-15",
     "author": "dreeves",
@@ -3559,7 +3408,6 @@
   },
   {
     "source": "doc.bmndr.co/mongoid",
-    "title": "MongoMapper to Mongoid; Or, Breaking All The Things",
     "slug": "mongoid",
     "date": "2016-02-25",
     "author": "dreeves",
@@ -3577,7 +3425,6 @@
   },
   {
     "source": "doc.bmndr.co/egodepletion",
-    "title": "Ego Depletion Depletion",
     "slug": "ego",
     "date": "2016-03-09",
     "author": "dreeves",
@@ -3600,7 +3447,6 @@
   },
   {
     "source": "doc.bmndr.co/willpower",
-    "title": "What Is Willpower?",
     "slug": "willpower",
     "date": "2016-03-21",
     "author": "dreeves",
@@ -3621,7 +3467,6 @@
   },
   {
     "source": "doc.bmndr.co/deathtofreebees",
-    "title": "Death To Freebees; Or, Freebees Für Alles",
     "slug": "deathtofreebees",
     "date": "2016-04-02",
     "author": "dreeves",
@@ -3662,7 +3507,6 @@
   },
   {
     "source": "doc.bmndr.co/obscure",
-    "title": "16 Obscure Beeminder Features",
     "slug": "obscure",
     "date": "2016-04-26",
     "author": "dreeves",
@@ -3683,7 +3527,6 @@
   },
   {
     "source": "doc.bmndr.co/safe",
-    "title": "What It Means To Give Beeminder Your Credit Card",
     "slug": "creditcard",
     "date": "2016-05-09",
     "author": "dreeves",
@@ -3702,7 +3545,6 @@
   },
   {
     "source": "doc.bmndr.co/buzz9",
-    "title": "Honeymoons, True Love, and Yet More Buzz",
     "slug": "buzz9",
     "date": "2016-05-24",
     "author": "dreeves",
@@ -3721,7 +3563,6 @@
   },
   {
     "source": "doc.bmndr.co/weekendsoff",
-    "title": "New Premium Feature: Weekends Off",
     "slug": "weekends",
     "date": "2016-05-28",
     "author": "bsoule",
@@ -3739,7 +3580,6 @@
   },
   {
     "source": "doc.bmndr.co/road",
-    "title": "New Premium Feature: Rudimentary Road Editor",
     "slug": "road",
     "date": "2016-06-17",
     "author": "dreeves",
@@ -3759,7 +3599,6 @@
   },
   {
     "source": "doc.bmndr.co/beemplice",
-    "title": "Beeminder and Complice Make It Official",
     "slug": "beemplice",
     "date": "2016-06-29",
     "author": "dreeves",
@@ -3779,7 +3618,6 @@
   },
   {
     "source": "doc.bmndr.co/beemarb",
-    "title": "Beemind Arbitrary Tasks Automatically with Complice",
     "slug": "arbeetrary",
     "date": "2016-07-11",
     "author": "Malcolm Ocean",
@@ -3801,7 +3639,6 @@
   },
   {
     "source": "doc.bmndr.co/cockroach",
-    "title": "The Cockroach Principle",
     "slug": "cockroach",
     "date": "2016-07-24",
     "author": "dreeves",
@@ -3821,7 +3658,6 @@
   },
   {
     "source": "doc.bmndr.co/kibeemium",
-    "title": "Announcing the Infinibee Plan and Other Premium Changes",
     "slug": "infinibee",
     "date": "2016-08-09",
     "author": "dreeves",
@@ -3839,7 +3675,6 @@
   },
   {
     "source": "doc.bmndr.co/modal-beeminder",
-    "title": "Team Black vs Team Yellow: The Two Styles of Beeminding",
     "slug": "olimay",
     "date": "2016-08-25",
     "author": "Oliver Mayor",
@@ -3864,7 +3699,6 @@
   },
   {
     "source": "doc.bmndr.co/derail",
-    "title": "Newbee Corner: What Happens When I 'Derail'?",
     "slug": "derail",
     "date": "2016-09-10",
     "author": "bsoule",
@@ -3882,7 +3716,6 @@
   },
   {
     "source": "doc.bmndr.co/anomalily",
-    "title": "Introducing Lillian Karabaic, Minister of the Exterior",
     "slug": "anomalily",
     "date": "2016-09-28",
     "author": "Lillian Karabaic",
@@ -3900,7 +3733,6 @@
   },
   {
     "source": "doc.bmndr.co/beeta",
-    "title": "Unveiling the Big Beeminder Redesign of 2016",
     "slug": "redesign",
     "date": "2016-10-14",
     "author": "dreeves",
@@ -3919,7 +3751,6 @@
   },
   {
     "source": "doc.bmndr.co/urlminder",
-    "title": "New Official URLminder Integration",
     "slug": "urlminder",
     "date": "2016-11-02",
     "author": "bsoule",
@@ -3955,7 +3786,6 @@
   },
   {
     "source": "doc.bmndr.co/five",
-    "title": "Fifth Anniversary of Beeminder",
     "slug": "five",
     "date": "2016-11-18",
     "author": "bsoule",
@@ -3975,7 +3805,6 @@
   },
   {
     "source": "doc.bmndr.co/shirknturk",
-    "title": "The Shirk & Turk Principle",
     "slug": "shirknturk",
     "date": "2016-12-06",
     "author": "dreeves",
@@ -3997,7 +3826,6 @@
   },
   {
     "source": "doc.bmndr.co/hardthings",
-    "title": "Beemind Easy Things",
     "slug": "easythings",
     "date": "2016-12-22",
     "author": "Chelsea Miller",
@@ -4036,7 +3864,6 @@
   },
   {
     "source": "doc.bmndr.co/buzz10",
-    "title": "Press Roundup to Trump All Press Roundups",
     "slug": "buzz10",
     "date": "2017-01-25",
     "author": "Lillian Karabaic",
@@ -4053,7 +3880,6 @@
   },
   {
     "source": "doc.bmndr.co/support",
-    "title": "Newbee Corner: What Happens When I Email Support?",
     "slug": "support",
     "date": "2017-02-10",
     "author": "Chelsea Miller",
@@ -4070,7 +3896,6 @@
   },
   {
     "source": "doc.bmndr.co/buglabels",
-    "title": "Our Label Ontology For Issue Tracking",
     "slug": "buglabels",
     "date": "2017-03-01",
     "author": "dreeves",
@@ -4090,7 +3915,6 @@
   },
   {
     "source": "doc.bmndr.co/arabic",
-    "title": "Learning a Language with Beeminder",
     "slug": "language",
     "date": "2017-03-16",
     "author": "Alex Strick van Linschoten",
@@ -4108,7 +3932,6 @@
   },
   {
     "source": "doc.bmndr.co/write",
-    "title": "Newbee Corner: Beemind Your Writing (By Word Count, Automatically)",
     "slug": "write",
     "date": "2017-04-04",
     "author": "dreeves",
@@ -4128,7 +3951,6 @@
   },
   {
     "source": "doc.bmndr.co/autofetch",
-    "title": "Third-Party App Developers Rejoice: No More Polling For Autodata",
     "slug": "autofetch",
     "date": "2017-04-20",
     "author": "bsoule",
@@ -4146,7 +3968,6 @@
   },
   {
     "source": "doc.bmndr.co/mayhem",
-    "title": "Maniac Mayhem: Commit To a Month of Making Things Every Morning",
     "slug": "mayhem",
     "date": "2017-05-03",
     "author": "Lillian Karabaic",
@@ -4165,7 +3986,6 @@
   },
   {
     "source": "doc.bmndr.co/applehealth",
-    "title": "iOS Updates: Apple Health, Today Widget, and GTBee",
     "slug": "apple",
     "date": "2017-05-23",
     "author": "Andy Brett",
@@ -4183,7 +4003,6 @@
   },
   {
     "source": "doc.bmndr.co/bamsterdam",
-    "title": "The Bee Team Goes To Amsterdam",
     "slug": "amsterdam",
     "date": "2017-06-10",
     "author": "bsoule",
@@ -4200,7 +4019,6 @@
   },
   {
     "source": "doc.bmndr.co/paypal",
-    "title": "Announcement: Beeminder Adds PayPal as a Payment Option",
     "slug": "paypal",
     "date": "2017-07-06",
     "author": "dreeves",
@@ -4216,7 +4034,6 @@
   },
   {
     "source": "doc.bmndr.co/pact",
-    "title": "Beeminder: Like Pact Except All We Do Is Take Your Money",
     "slug": "pact",
     "date": "2017-07-22",
     "author": "dreeves",
@@ -4234,7 +4051,6 @@
   },
   {
     "source": "doc.bmndr.co/will",
-    "title": "The \"I Will\" System",
     "slug": "will",
     "date": "2017-08-09",
     "author": "dreeves",
@@ -4260,7 +4076,6 @@
   },
   {
     "source": "doc.bmndr.co/buzz11",
-    "title": "Press Roundup: 99 More Things The Internet Has Said About Beeminder",
     "slug": "buzz11",
     "date": "2017-08-25",
     "author": "dreeves",
@@ -4299,7 +4114,6 @@
   },
   {
     "source": "doc.bmndr.co/tao2",
-    "title": "The Sting of Work: How I Use Beeminder, Part Two",
     "slug": "tao2",
     "date": "2017-09-29",
     "author": "Brennan K. Brown",
@@ -4318,7 +4132,6 @@
   },
   {
     "source": "doc.bmndr.co/psych",
-    "title": "Psychoanalyzing Beeminder",
     "slug": "psych",
     "date": "2017-11-22",
     "author": "Michele Gregoire Gill",
@@ -4358,7 +4171,6 @@
   },
   {
     "source": "doc.bmndr.co/bites",
-    "title": "Beemind Bites",
     "slug": "bites",
     "date": "2017-11-04",
     "author": "Braden Shepherdson",
@@ -4380,7 +4192,6 @@
   },
   {
     "source": "doc.bmndr.co/kara",
-    "title": "500 Words A Day",
     "slug": "kara",
     "date": "2017-12-08",
     "author": "Kara Timmins",
@@ -4397,7 +4208,6 @@
   },
   {
     "source": "doc.bmndr.co/schelling",
-    "title": "Schelling Fences on Slippery Slopes",
     "slug": "schelling",
     "date": "2017-12-27",
     "author": "Scott Alexander",
@@ -4418,7 +4228,6 @@
   },
   {
     "source": "doc.bmndr.co/psych2",
-    "title": "Negative Reinforcement ≠ Punishment",
     "slug": "punishment",
     "date": "2018-01-12",
     "author": "Michele Gregoire Gill",
@@ -4437,7 +4246,6 @@
   },
   {
     "source": "doc.bmndr.co/deathtoexp",
-    "title": "Feature Unannouncement: Exponential Roads Going Piecewise Linear",
     "slug": "deathtoexp",
     "date": "2018-01-30",
     "author": "dreeves",
@@ -4455,7 +4263,6 @@
   },
   {
     "source": "doc.bmndr.co/waisted",
-    "title": "The Dirty Plate Club",
     "slug": "waisted",
     "date": "2018-02-15",
     "author": "dreeves",
@@ -4475,7 +4282,6 @@
   },
   {
     "source": "doc.bmndr.co/fifty",
-    "title": "Beeminding All The Things",
     "slug": "allthethings",
     "date": "2018-03-03",
     "author": "Brent Yorgey",
@@ -4496,7 +4302,6 @@
   },
   {
     "source": "doc.bmndr.co/barfingcats",
-    "title": "Barfing Cats and Other Stories from Talking to Weasels in Support",
     "slug": "barfingcats",
     "date": "2018-03-21",
     "author": "dreeves",
@@ -4516,7 +4321,6 @@
   },
   {
     "source": "doc.bmndr.co/ivana",
-    "title": "Does Practice Make Perfect?",
     "slug": "practice",
     "date": "2018-04-07",
     "author": "Ivana Kurecic",
@@ -4537,7 +4341,6 @@
   },
   {
     "source": "doc.bmndr.co/kim",
-    "title": "Beeminding And All That Jazz",
     "slug": "kim",
     "date": "2018-04-25",
     "author": "Kim Harrison",
@@ -4558,7 +4361,6 @@
   },
   {
     "source": "doc.bmndr.co/mbork",
-    "title": "How To Use Beeminder Without Ever (Hardly Ever) Leaving Emacs",
     "slug": "mbork",
     "date": "2018-05-11",
     "author": "Marcin Borkowski",
@@ -4577,7 +4379,6 @@
   },
   {
     "source": "doc.bmndr.co/fifty2",
-    "title": "The Fifty Goals of Brent Yorgey",
     "slug": "fifty",
     "date": "2018-05-29",
     "author": "Brent Yorgey",
@@ -4598,7 +4399,6 @@
   },
   {
     "source": "doc.bmndr.co/wsj2",
-    "title": "Beeminder in the Wall Street Journal Every Five Years",
     "slug": "wsj2",
     "date": "2018-06-14",
     "author": "dreeves",
@@ -4615,7 +4415,6 @@
   },
   {
     "source": "doc.bmndr.co/meditation",
-    "title": "A Monastery is a Commitment Device",
     "slug": "meditation",
     "date": "2018-06-29",
     "author": "David Howell",
@@ -4634,7 +4433,6 @@
   },
   {
     "source": "doc.bmndr.co/slytherin404",
-    "title": "Slytherin 404 Errors",
     "slug": "slytherin404",
     "date": "2018-07-19",
     "author": "dreeves",
@@ -4656,7 +4454,6 @@
   },
   {
     "source": "doc.bmndr.co/scholar",
-    "title": "Beeminder Scholarships to Attend Quantified Self 2018 in Portland",
     "slug": "scholar",
     "date": "2018-08-04",
     "author": "dreeves",
@@ -4673,7 +4470,6 @@
   },
   {
     "source": "doc.bmndr.co/mercy",
-    "title": "Feature Announcement: General Mercy",
     "slug": "mercy",
     "date": "2018-08-22",
     "author": "bsoule",
@@ -4712,7 +4508,6 @@
   },
   {
     "source": "doc.bmndr.co/swifts",
-    "title": "Portland Beeminder Meetup: The Birds and The Bees Meet Again",
     "slug": "swifts",
     "date": "2018-09-21",
     "author": "dreeves",
@@ -4750,7 +4545,6 @@
   },
   {
     "source": "doc.bmndr.co/shanaqui",
-    "title": "Introducing Shanaqui: Beeminder Support Czar",
     "slug": "shanaqui",
     "date": "2018-10-30",
     "author": "shanaqui",
@@ -4767,7 +4561,6 @@
   },
   {
     "source": "doc.bmndr.co/flic",
-    "title": "Beeminding With A Physical Button",
     "slug": "flic",
     "date": "2018-11-15",
     "author": "Zachary Jacobi",
@@ -4808,7 +4601,6 @@
   },
   {
     "source": "doc.bmndr.co/NY2019",
-    "title": "Beeminder's New Year's Resolution Survivor",
     "slug": "survivor",
     "date": "2018-12-27",
     "author": "dreeves",
@@ -4826,7 +4618,6 @@
   },
   {
     "source": "doc.bmndr.co/accountability",
-    "title": "Accountability Partners and Soft Accountability",
     "slug": "accountability",
     "date": "2019-01-02",
     "author": "Malcolm Ocean",
@@ -4845,7 +4636,6 @@
   },
   {
     "source": "doc.bmndr.co/buzz13",
-    "title": "13th Beeminder Buzz Press Roundup",
     "slug": "buzz13",
     "date": "2019-01-31",
     "author": "dreeves",
@@ -4862,7 +4652,6 @@
   },
   {
     "source": "doc.bmndr.co/textbooks",
-    "title": "Beeminder, With The Power Of Reading!",
     "slug": "textbooks",
     "date": "2019-03-20",
     "author": "Lawrence Evalyn",
@@ -4881,7 +4670,6 @@
   },
   {
     "source": "doc.bmndr.co/commitwall",
-    "title": "Commitwall: No More Beeminding Without A Way To Be Charged Money",
     "slug": "commitwall",
     "date": "2019-02-14",
     "author": "dreeves",
@@ -4900,7 +4688,6 @@
   },
   {
     "source": "doc.bmndr.co/defail",
-    "title": "Derailing Is Not Failing; or, Beeminder Revenue Proportional To User Awesomeness",
     "slug": "defail",
     "date": "2019-03-02",
     "author": "dreeves",
@@ -4919,7 +4706,6 @@
   },
   {
     "source": "doc.bmndr.co/commitstew",
-    "title": "Quantified Self Talk: Tracking My Personal Reliability",
     "slug": "commitstew",
     "date": "2019-04-13",
     "author": "dreeves",
@@ -4945,7 +4731,6 @@
   },
   {
     "source": "doc.bmndr.co/bugreports",
-    "title": "How You Talk Yourself Out Of Reporting A Bug",
     "slug": "bugreports",
     "date": "2019-05-01",
     "author": "dreeves",
@@ -4965,7 +4750,6 @@
   },
   {
     "source": "doc.bmndr.co/dogeatdog",
-    "title": "Startups Not Eating Each Other Like Cannibalistic Dogs",
     "slug": "dogeatdog",
     "date": "2019-05-18",
     "author": "dreeves",
@@ -4985,7 +4769,6 @@
   },
   {
     "source": "doc.bmndr.co/pareto",
-    "title": "Pareto Dominance",
     "slug": "pareto",
     "date": "2019-06-21",
     "author": "dreeves",
@@ -5002,7 +4785,6 @@
   },
   {
     "source": "doc.bmndr.co/pdp",
-    "title": "The Pareto Dominance Principle for Apps and Websites",
     "slug": "pdp",
     "date": "2019-07-30",
     "author": "dreeves",
@@ -5022,7 +4804,6 @@
   },
   {
     "source": "doc.bmndr.co/paretocaps",
-    "title": "Pareto Dominating The Pledge Cap UI For Goal Creation",
     "slug": "paretocaps",
     "date": "2019-08-09",
     "author": "dreeves",
@@ -5040,7 +4821,6 @@
   },
   {
     "source": "doc.bmndr.co/lockmyphone",
-    "title": "Add Datapoints From the Notifications Bar (Even While Your Phone Is Locked!)",
     "slug": "lockmyphone",
     "date": "2019-08-23",
     "author": "Thomas Kahn",
@@ -5061,7 +4841,6 @@
   },
   {
     "source": "doc.bmndr.co/motivationtypes",
-    "title": "Motivational Archetypes",
     "slug": "motivationtypes",
     "date": "2019-09-11",
     "author": "dreeves",
@@ -5078,7 +4857,6 @@
   },
   {
     "source": "doc.bmndr.co/vegdays",
-    "title": "How To Technically Count As A Vegetarian While Eating Animals",
     "slug": "vegdays",
     "date": "2019-09-27",
     "author": "dreeves",
@@ -5101,7 +4879,6 @@
   },
   {
     "source": "doc.bmndr.co/dogfood",
-    "title": "Dogfood Binge",
     "slug": "dogfood",
     "date": "2019-10-10",
     "author": "Mary Renaud",
@@ -5120,7 +4897,6 @@
   },
   {
     "source": "doc.bmndr.co/redqueen",
-    "title": "Redqueening, Inbox Zero, Backlogs, and Fluid Dynamics",
     "slug": "redqueen",
     "date": "2019-10-23",
     "author": "dreeves",
@@ -5142,7 +4918,6 @@
   },
   {
     "source": "doc.bmndr.co/euler",
-    "title": "Beeminder &hearts; Project Euler",
     "slug": "projecteuler",
     "date": "2019-11-05",
     "author": "dreeves",
@@ -5162,7 +4937,6 @@
   },
   {
     "source": "doc.bmndr.co/zipit",
-    "title": "Social Reality And The Canard About Keeping Your Goals To Yourself",
     "slug": "zipit",
     "date": "2019-11-22",
     "author": "dreeves",
@@ -5183,7 +4957,6 @@
   },
   {
     "source": "doc.bmndr.co/integers",
-    "title": "Integery Goals, Timey-Wimey Goals, and Conservarounding",
     "slug": "integers",
     "date": "2019-11-27",
     "author": "dreeves",
@@ -5199,7 +4972,6 @@
   },
   {
     "source": "doc.bmndr.co/gmailzerolabels",
-    "title": "Meet The New Gmail Zero, Same As The Old Gmail Zero",
     "slug": "gmailzerolabels",
     "date": "2019-12-18",
     "author": "Adam Wolf",
@@ -5216,7 +4988,6 @@
   },
   {
     "source": "doc.bmndr.co/buzz2019",
-    "title": "Beeminder Buzz Press Roundup 2019",
     "slug": "buzz2019",
     "date": "2020-01-08",
     "author": "dreeves",
@@ -5233,7 +5004,6 @@
   },
   {
     "source": "doc.bmndr.co/manwide",
-    "title": "Feature Unannouncement: Auto-Widening Yellow Brick Roads Have Gone Manual",
     "slug": "autowide",
     "date": "2020-01-29",
     "author": "bsoule",
@@ -5252,7 +5022,6 @@
   },
   {
     "source": "doc.bmndr.co/manwide2",
-    "title": "Death to Auto-Widening Yellow Brick Roads, Part 2",
     "slug": "manwide",
     "date": "2020-02-18",
     "author": "dreeves",
@@ -5272,7 +5041,6 @@
   },
   {
     "source": "doc.bmndr.co/eggbasket",
-    "title": "The Startup Egg-Basket Principle",
     "slug": "eggbasket",
     "date": "2020-02-29",
     "author": "dreeves",
@@ -5293,7 +5061,6 @@
   },
   {
     "source": "doc.bmndr.co/specs",
-    "title": "How To Write Functional Specs",
     "slug": "specs",
     "date": "2020-03-12",
     "author": "dreeves",
@@ -5314,7 +5081,6 @@
   },
   {
     "source": "doc.bmndr.co/isolate",
-    "title": "Self-Isolation Strategies: Mary On Creating Challenges To Make Time Pass",
     "slug": "isomary",
     "date": "2020-03-25",
     "author": "Mary Renaud",
@@ -5333,7 +5099,6 @@
   },
   {
     "source": "doc.bmndr.co/isonikki",
-    "title": "Self-Isolation Strategies: Nikki’s Operation Safety Bubble",
     "slug": "isonikki",
     "date": "2020-03-31",
     "author": "shanaqui",
@@ -5353,7 +5118,6 @@
   },
   {
     "source": "doc.bmndr.co/megabreak",
-    "title": "Schedule Breaks On All The Things!",
     "slug": "megabreak",
     "date": "2020-04-20",
     "author": "dreeves",
@@ -5394,7 +5158,6 @@
   },
   {
     "source": "doc.bmndr.co/lanes",
-    "title": "Feature Unannouncement: Death To Custom Lane Widths",
     "slug": "lanes",
     "date": "2020-05-01",
     "author": "dreeves",
@@ -5412,7 +5175,6 @@
   },
   {
     "source": "doc.bmndr.co/isolines",
-    "title": "X-Treme Nerd Interlude: Computing and Visualizing Level Curves of the Days-To-Derailment Function for the Upcoming Yellow Brick Half-Plane New World Order",
     "slug": "isolines",
     "date": "2020-05-14",
     "author": "Uluç Saranlı",
@@ -5434,7 +5196,6 @@
   },
   {
     "source": "doc.bmndr.co/antimagic",
-    "title": "The Anti-Magic Principle",
     "slug": "magic",
     "date": "2020-05-27",
     "author": "dreeves",
@@ -5458,7 +5219,6 @@
   },
   {
     "source": "doc.bmndr.co/ybhp",
-    "title": "Announcement: The Yellow Brick Half-Plane Has Arrived",
     "slug": "ybhp",
     "date": "2020-06-09",
     "author": "dreeves",
@@ -5479,7 +5239,6 @@
   },
   {
     "source": "doc.bmndr.co/taskratchet",
-    "title": "Announcing TaskRatchet: Like Beeminder for Your Todo List",
     "slug": "taskratchet",
     "date": "2020-06-22",
     "author": "Nathan Arthur",
@@ -5504,7 +5263,6 @@
   },
   {
     "source": "doc.bmndr.co/buns",
-    "title": "Beeminding the Fuzzy Friends",
     "slug": "buns",
     "date": "2020-07-03",
     "author": "shanaqui",
@@ -5516,7 +5274,6 @@
   },
   {
     "source": "doc.bmndr.co/postel",
-    "title": "The Anti-Robustness Principle",
     "slug": "postel",
     "date": "2020-07-16",
     "author": "dreeves",
@@ -5536,7 +5293,6 @@
   },
   {
     "source": "doc.bmndr.co/choices",
-    "title": "Choices are Bad: The Anti-Settings Principle",
     "slug": "choices",
     "date": "2020-07-30",
     "author": "dreeves",
@@ -5557,7 +5313,6 @@
   },
   {
     "source": "doc.bmndr.co/baas",
-    "title": "Beeminder &hearts; Boss as a Service",
     "slug": "baas",
     "date": "2020-08-10",
     "author": "Manasvini Krishna",
@@ -5580,7 +5335,6 @@
   },
   {
     "source": "doc.bmndr.co/docdriven",
-    "title": "Blog-Post-Driven Development",
     "slug": "docdriven",
     "date": "2020-08-24",
     "author": "dreeves",
@@ -5598,7 +5352,6 @@
   },
   {
     "source": "doc.bmndr.co/speclist",
-    "title": "How To Write Functional Specs II: The Spec-List",
     "slug": "speclist",
     "date": "2020-09-05",
     "author": "dreeves",
@@ -5618,7 +5371,6 @@
   },
   {
     "source": "doc.bmndr.co/metablog",
-    "title": "Happy Now, Beeminder?",
     "slug": "meta",
     "date": "2020-09-18",
     "author": "dreeves",
@@ -5637,7 +5389,6 @@
   },
   {
     "source": "doc.bmndr.co/marshmallow",
-    "title": "The Stanford Marshmallow Experiment: A Retrospective",
     "slug": "marshmallow",
     "date": "2020-10-03",
     "author": "dreeves",
@@ -5655,7 +5406,6 @@
   },
   {
     "source": "doc.bmndr.co/ratchet",
-    "title": "Road Ratchet Revamp Redresses \"Ratcheting Breaks Breaks\" Bug",
     "slug": "ratchet",
     "date": "2020-10-14",
     "author": "bsoule",
@@ -5677,7 +5427,6 @@
   },
   {
     "source": "doc.bmndr.co/bookcase",
-    "title": "Beeminding the Right Thing: A Bookcase Study",
     "slug": "bookcase",
     "date": "2020-10-27",
     "author": "shanaqui",
@@ -5694,7 +5443,6 @@
   },
   {
     "source": "doc.bmndr.co/nerds",
-    "title": "Strategy Memo: Beeminder Is For Nerds",
     "slug": "nerds",
     "date": "2020-11-07",
     "author": "dreeves",
@@ -5715,7 +5463,6 @@
   },
   {
     "source": "doc.bmndr.co/upsidedown",
-    "title": "Upside-Down Support",
     "slug": "upsidedown",
     "date": "2020-11-20",
     "author": "dreeves",
@@ -5734,7 +5481,6 @@
   },
   {
     "source": "doc.bmndr.co/icecream",
-    "title": "Ice Cream Truck Loopholes",
     "slug": "icecream",
     "date": "2020-12-03",
     "author": "dreeves",
@@ -5756,7 +5502,6 @@
   },
   {
     "source": "doc.bmndr.co/achilles",
-    "title": "Beeminder's Achilles Heel",
     "slug": "achilles",
     "date": "2020-12-16",
     "author": "dreeves",
@@ -5777,7 +5522,6 @@
   },
   {
     "source": "doc.bmndr.co/nebulous",
-    "title": "How To Beemind Nebulous Goals",
     "slug": "nebulous",
     "date": "2020-12-29",
     "author": "dreeves",
@@ -5797,7 +5541,6 @@
   },
   {
     "source": "doc.bmndr.co/deathtolife",
-    "title": "Death To Lifetime Plans",
     "slug": "deathtolife",
     "date": "2021-01-09",
     "author": "dreeves",
@@ -5817,7 +5560,6 @@
   },
   {
     "source": "doc.bmndr.co/focus",
-    "title": "Strategy Memo: Beeminder Is Pledge-Focused",
     "slug": "focus",
     "date": "2021-01-22",
     "author": "dreeves",
@@ -5837,7 +5579,6 @@
   },
   {
     "source": "doc.bmndr.co/burgle",
-    "title": "The Burgle Bug Fairness Principle",
     "slug": "burglebug",
     "date": "2021-02-04",
     "author": "dreeves",
@@ -5857,7 +5598,6 @@
   },
   {
     "source": "doc.bmndr.co/dozero",
-    "title": "Do-Zero Goals Considered Harmful",
     "slug": "dozero",
     "date": "2021-02-17",
     "author": "Chelsea Miller",
@@ -5881,7 +5621,6 @@
   },
   {
     "source": "doc.bmndr.co/dontmind",
-    "title": "What Not To Beemind",
     "slug": "dontmind",
     "date": "2021-03-02",
     "author": "Chelsea Miller",
@@ -5904,7 +5643,6 @@
   },
   {
     "source": "doc.bmndr.co/buyminder",
-    "title": "Beemind What You Buy",
     "slug": "buyminder",
     "date": "2021-03-13",
     "author": "dreeves",
@@ -5916,7 +5654,7 @@
       "lifehacks",
       "PSA",
       "rationality",
-      "tips", 
+      "tips",
       "madhacks"
     ],
     "status": "publish",
@@ -5926,7 +5664,6 @@
   },
   {
     "source": "doc.bmndr.co/contrapositive",
-    "title": "Contra Positive Reinforcement: Why Beeminder Is A Glutton For Punishment",
     "slug": "contrapositive",
     "date": "2021-03-26",
     "author": "dreeves",
@@ -5947,7 +5684,6 @@
   },
   {
     "source": "doc.bmndr.co/bayesianwill",
-    "title": "Bayesian Willpower",
     "slug": "bayes",
     "date": "2021-04-08",
     "author": "dreeves",
@@ -5967,7 +5703,6 @@
   },
   {
     "source": "doc.bmndr.co/crutch",
-    "title": "Is Beeminder A Crutch?",
     "slug": "crutch",
     "date": "2021-04-21",
     "author": "dreeves",
@@ -5987,7 +5722,6 @@
   },
   {
     "source": "doc.bmndr.co/codecombat",
-    "title": "Beeminder &hearts; CodeCombat",
     "slug": "codecombat",
     "date": "2021-07-26",
     "author": "dreeves",
@@ -6005,7 +5739,6 @@
   },
   {
     "source": "doc.bmndr.co/goalnames",
-    "title": "How To Name Your Goals",
     "slug": "goalnames",
     "date": "2021-05-04",
     "author": "dreeves",
@@ -6024,7 +5757,6 @@
   },
   {
     "source": "doc.bmndr.co/incentalign",
-    "title": "Incentive Alignment",
     "slug": "incentalign",
     "date": "2021-05-15",
     "author": "dreeves",
@@ -6043,7 +5775,6 @@
   },
   {
     "source": "doc.bmndr.co/brl",
-    "title": "Goodbye Yellow Brick Road, Hello Bright Red Line",
     "slug": "brl",
     "date": "2021-05-28",
     "author": "dreeves",
@@ -6062,7 +5793,6 @@
   },
   {
     "source": "doc.bmndr.co/pocket",
-    "title": "Beeminder &hearts; Pocket",
     "slug": "pocket",
     "date": "2021-07-05",
     "author": "dreeves",
@@ -6080,7 +5810,6 @@
   },
   {
     "source": "doc.bmndr.co/fake",
-    "title": "Fake Data Is The Devil",
     "slug": "fake",
     "date": "2021-06-10",
     "author": "dreeves",
@@ -6100,7 +5829,6 @@
   },
   {
     "source": "doc.bmndr.co/frac",
-    "title": "Fractional Beeminding",
     "slug": "frac",
     "date": "2021-07-02",
     "author": "dreeves",
@@ -6119,7 +5847,6 @@
   },
   {
     "source": "doc.bmndr.co/forget",
-    "title": "Make A Plan To Forget",
     "slug": "forget",
     "date": "2021-08-26",
     "author": "dreeves",
@@ -6140,7 +5867,6 @@
   },
   {
     "source": "doc.bmndr.co/nicky",
-    "title": "Nicky's Ultimate Support Secret: Dogfood",
     "slug": "nicky",
     "date": "2021-09-08",
     "author": "shanaqui",
@@ -6159,7 +5885,6 @@
   },
   {
     "source": "doc.bmndr.co/microcommitments",
-    "title": "Complice's Gloves Come Off: Announcing Micro Commitment Contracts in Complice",
     "slug": "microcommitments",
     "date": "2021-09-28",
     "author": "Malcolm Ocean",
@@ -6171,7 +5896,6 @@
   },
   {
     "source": "doc.bmndr.co/loss",
-    "title": "Loss Aversion vs The Endowment Effect",
     "slug": "loss",
     "date": "2021-10-12",
     "author": "dreeves",
@@ -6190,7 +5914,6 @@
   },
   {
     "source": "doc.bmndr.co/aversion",
-    "title": "Loss Aversion Aversion",
     "slug": "aversion",
     "date": "2021-10-30",
     "author": "dreeves",
@@ -6210,7 +5933,6 @@
   },
   {
     "source": "doc.bmndr.co/study",
-    "title": "Nicky's Secret To Beeminding Studying: It's About Time",
     "slug": "study",
     "date": "2021-11-12",
     "author": "shanaqui",
@@ -6230,7 +5952,6 @@
   },
   {
     "source": "doc.bmndr.co/calendial",
-    "title": "Calendialing",
     "slug": "calendial",
     "date": "2021-12-02",
     "author": "dreeves",
@@ -6249,7 +5970,6 @@
   },
   {
     "source": "doc.bmndr.co/milkman",
-    "title": "Book Review: How To Change",
     "slug": "milkman",
     "date": "2021-12-15",
     "author": "dreeves",
@@ -6276,7 +5996,6 @@
   },
   {
     "source": "doc.bmndr.co/focusmate",
-    "title": "Beeminder &hearts; Focusmate",
     "slug": "focusmate",
     "date": "2021-12-27",
     "author": "shanaqui",
@@ -6296,7 +6015,6 @@
   },
   {
     "source": "doc.bmndr.co/cb",
-    "title": "The Bright Red Staircase",
     "slug": "staircase",
     "date": "2022-01-26",
     "author": "dreeves",
@@ -6317,7 +6035,6 @@
   },
   {
     "source": "doc.bmndr.co/punish",
-    "title": "Paying Is Not Punishment",
     "slug": "depunish",
     "date": "2022-02-09",
     "author": "dreeves",
@@ -6336,7 +6053,6 @@
   },
   {
     "source": "doc.bmndr.co/noexcuses",
-    "title": "Death To Weaselproofing; Announcing No-Excuses Mode",
     "slug": "noexcuses",
     "date": "2022-02-22",
     "author": "dreeves",
@@ -6355,7 +6071,6 @@
   },
   {
     "source": "doc.bmndr.co/control",
-    "title": "Control Systems For Backlogs",
     "slug": "control",
     "date": "2022-03-05",
     "author": "dreeves",
@@ -6375,7 +6090,6 @@
   },
   {
     "source": "doc.bmndr.co/freshen",
-    "title": "Backlog Freshening",
     "slug": "freshen",
     "date": "2022-03-18",
     "author": "dreeves",
@@ -6396,7 +6110,6 @@
   },
   {
     "source": "doc.bmndr.co/freshenicky",
-    "title": "Backlog Freshening For Humans",
     "slug": "freshdocs",
     "date": "2022-03-31",
     "author": "shanaqui",
@@ -6415,7 +6128,6 @@
   },
   {
     "source": "doc.bmndr.co/freecodecamp",
-    "title": "Beeminder &hearts; freeCodeCamp",
     "slug": "freecodecamp",
     "date": "2022-04-28",
     "author": "dreeves",
@@ -6433,7 +6145,6 @@
   },
   {
     "source": "doc.bmndr.co/allitimentation",
-    "title": "Alliterative Alimentation",
     "slug": "allitimentation",
     "date": "2022-04-14",
     "author": "dreeves",
@@ -6455,7 +6166,6 @@
   },
   {
     "source": "doc.bmndr.co/bothsidesnow",
-    "title": "Both Sides Now",
     "slug": "bothsidesnow",
     "date": "2022-05-12",
     "author": "shanaqui",
@@ -6473,7 +6183,6 @@
   },
   {
     "source": "doc.bmndr.co/blockchain",
-    "title": "Beeminder But On The Blockchain?",
     "slug": "blockchain",
     "date": "2022-05-26",
     "author": "dreeves",
@@ -6492,7 +6201,6 @@
   },
   {
     "source": "doc.bmndr.co/toothbrush",
-    "title": "Troubleshooting My Toothbrush",
     "slug": "toothbrush",
     "date": "2022-06-09",
     "author": "shanaqui",
@@ -6510,7 +6218,6 @@
   },
   {
     "source": "doc.bmndr.co/blackmail",
-    "title": "Is Beeminder Self-Blackmail?",
     "slug": "blackmail",
     "date": "2022-06-23",
     "author": "dreeves",
@@ -6531,7 +6238,6 @@
   },
   {
     "source": "doc.bmndr.co/bkopenhagen",
-    "title": "Beeminder Goes To Copenhagen",
     "slug": "copenhagen",
     "date": "2022-07-07",
     "author": "bsoule",
@@ -6545,7 +6251,6 @@
   },
   {
     "source": "doc.bmndr.co/backup",
-    "title": "A Funny Story About \"Backing Up Your Website\"",
     "slug": "backup",
     "date": "2022-07-21",
     "author": "dreeves",
@@ -6564,7 +6269,6 @@
   },
   {
     "source": "doc.bmndr.co/storygraph",
-    "title": "Beeminder &hearts; The StoryGraph",
     "slug": "storygraph",
     "date": "2022-08-04",
     "author": "shanaqui",
@@ -6583,7 +6287,6 @@
   },
   {
     "source": "doc.bmndr.co/orange",
-    "title": "Orange Is The New Red",
     "slug": "orange",
     "date": "2022-08-18",
     "author": "dreeves",
@@ -6602,7 +6305,6 @@
   },
   {
     "source": "doc.bmndr.co/donotgain",
-    "title": "Primum Non Amplifico",
     "slug": "donotgain",
     "date": "2022-09-01",
     "author": "dreeves",
@@ -6622,7 +6324,6 @@
   },
   {
     "source": "doc.bmndr.co/cbt",
-    "title": "Beeminder vs CBT",
     "slug": "cbt",
     "date": "2022-09-15",
     "author": "Nathan Arthur",
@@ -6642,7 +6343,6 @@
   },
   {
     "source": "doc.bmndr.co/psychpricing",
-    "title": "Psychological Pricing",
     "slug": "psychpricing",
     "date": "2022-09-29",
     "author": "dreeves",
@@ -6661,7 +6361,6 @@
   },
   {
     "source": "doc.bmndr.co/stress",
-    "title": "Is Beeminder Too Stressful?",
     "slug": "stress",
     "date": "2022-10-13",
     "author": "dreeves",
@@ -6678,7 +6377,6 @@
   },
   {
     "source": "doc.bmndr.co/fail",
-    "title": "When Beeminder Fails",
     "slug": "fail",
     "date": "2022-10-27",
     "author": "dreeves",
@@ -6696,7 +6394,6 @@
   },
   {
     "source": "doc.bmndr.co/rssminder",
-    "title": "Announcing RSSminder",
     "slug": "rssminder",
     "date": "2022-11-10",
     "author": "dreeves",
@@ -6715,7 +6412,6 @@
   },
   {
     "source": "doc.bmndr.co/smoove",
-    "title": "X-Treme Nerd Interlude: Silky Smooth Beeminder Trend Lines",
     "slug": "smooth",
     "date": "2022-12-02",
     "author": "Uluç Saranlı",
@@ -6734,7 +6430,6 @@
   },
   {
     "source": "doc.bmndr.co/toxin",
-    "title": "Kavka's Toxin Puzzle and the Superpower of Commitment Devices",
     "slug": "toxin",
     "date": "2022-12-16",
     "author": "dreeves",
@@ -6752,7 +6447,6 @@
   },
   {
     "source": "doc.bmndr.co/metamindblog",
-    "title": "Beeminder &hearts; Beeminder: Introducing the Meta Integration",
     "slug": "metamind",
     "date": "2022-12-30",
     "author": "dreeves",
@@ -6772,7 +6466,6 @@
   },
   {
     "source": "doc.bmndr.co/copyright",
-    "title": "Dumbest Hill To Die On: Automating Your Copyright Year is Lies",
     "slug": "copyright",
     "date": "2023-01-13",
     "author": "dreeves",
@@ -6791,7 +6484,6 @@
   },
   {
     "source": "doc.bmndr.co/indulge",
-    "title": "Beeminder Making You Do Self-Indulgent Things",
     "slug": "indulge",
     "date": "2023-01-27",
     "author": "dreeves",
@@ -6812,7 +6504,6 @@
   },
   {
     "source": "doc.bmndr.co/stripe",
-    "title": "X-Treme Nerd Interlude: How To Upgrade Your Stripe Checkout Integration In Just Four Easy Years!",
     "slug": "stripe",
     "date": "2023-02-10",
     "author": "bsoule",
@@ -6831,7 +6522,6 @@
   },
   {
     "source": "doc.bmndr.co/world",
-    "title": "Beeminder's Plans To Take Over The World",
     "slug": "world",
     "date": "2023-02-24",
     "author": "dreeves",
@@ -6850,7 +6540,6 @@
   },
   {
     "source": "doc.bmndr.co/gatewaydrug",
-    "title": "Announcement: Signing Up For Beeminder Requires Hard-Committing To Use Beeminder",
     "slug": "gatewaydrug",
     "date": "2023-03-10",
     "author": "bsoule",
@@ -6890,7 +6579,6 @@
   },
   {
     "source": "doc.bmndr.co/blingily",
-    "title": "Feature Announcement: Parceling Out Goals Sting-ily",
     "slug": "stingily",
     "date": "2023-04-13",
     "author": "dreeves",
@@ -6907,7 +6595,6 @@
   },
   {
     "source": "doc.bmndr.co/lichess",
-    "title": "Beeminder &hearts; Lichess",
     "slug": "lichess",
     "date": "2023-04-27",
     "author": "dreeves",
@@ -6926,7 +6613,6 @@
   },
   {
     "source": "doc.bmndr.co/datasmithing",
-    "title": "Smithing Your Habits",
     "slug": "datasmithing",
     "date": "2023-05-11",
     "author": "Melissa Smith",
@@ -6948,7 +6634,6 @@
   },
   {
     "source": "doc.bmndr.co/trydeepwork",
-    "title": "Beeminder &hearts; trydeepwork.com",
     "slug": "trydeepwork",
     "date": "2023-05-25",
     "author": "bsoule",
@@ -6968,7 +6653,6 @@
   },
   {
     "source": "doc.bmndr.co/reactions",
-    "title": "Common Reactions To Beeminder",
     "slug": "reactions",
     "date": "2023-06-08",
     "author": "dreeves",
@@ -6986,7 +6670,6 @@
   },
   {
     "source": "doc.bmndr.co/inertia",
-    "title": "Wolf vs Harford on The Power of No vs Yes",
     "slug": "yesno",
     "date": "2023-07-12",
     "author": "dreeves",
@@ -7006,7 +6689,6 @@
   },
   {
     "source": "doc.bmndr.co/ontologies",
-    "title": "The Anti-Ontology Principle",
     "slug": "ontologies",
     "date": "2023-07-27",
     "author": "dreeves",
@@ -7022,315 +6704,528 @@
     "excerpt": "There are a lot of things in the category of “nerd tendencies I’ve had to unlearn”. I often turn them into capital-P Principles as a way to drill them into my head. Eventually I intend to collect them all into a meta post but here are a few random examples in the meantime: the Anti-Magic Principle, the Anti-Settings Principle, the Shirk-n-Turk Principle, and the Anti-Robustness",
     "redirects": []
   },
-{
-"slug": "athletes",
-"date": "2023-08-09",
-"author": "dreeves",
-"tags": ["akrasia", "bee-all", "FAQ", "rationality", "tips"],
-"status": "publish",
-"excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes",
-"source": "doc.bmndr.co/athletes",
-"disqus_id": "2163 https://blog.beeminder.com/?p=2163",
-"redirects": []
-},{
-"slug": "blogmorphosis",
-"source": "doc.bmndr.co/blogmorphosis",
-"redirects": [],
-"disqus_id": "blogmorphosis",
-"date": "2023-08-23",
-"author": "dreeves",
-"tags": ["navel-gazing", "bee-all", "tech", "colophon", "meta"],
-"status": "publish",
-"excerpt": "This is our first official post on our shiny new WordPress-free blog. Confetti-emoji! For well over a decade the Beeminder blog was on WordPress, hosted by WP Engine. That was..."
-},{
-"slug": "astroblog",
-"source": "doc.bmndr.co/astroblog",
-"redirects": [],
-"disqus_id": "astroblog",
-"date": "2023-09-06",
-"author": "Nathan Arthur",
-"tags": ["bee-all", "navel-gazing", "nerdery", "meta"],
-"status": "publish",
-"excerpt": "This is another X-Treme Nerd Interlude post. Last time we announced, mercifully briefly, our shiny new blog redesign and if you’re a normal human you should read that, nod thoughtfully, say “looks lovely”, and be on your merry way. The rest of you can frolic deep in the weeds here with"
-},{
-"slug": "predict",
-"source": "doc.bmndr.co/predict",
-"redirects": [],
-"disqus_id": "predict",
-"date": "2023-09-20",
-"author": "dreeves",
-"tags": ["bee-all", "rationality", "prediction markets", "nerdery", "history of beeminder", "startups", "commitment contracts"],
-"status": "publish",
-"excerpt": "A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd"
-},{
-"slug": "readwise",
-"source": "doc.bmndr.co/readwise",
-"redirects": [],
-"disqus_id": "readwise",
-"date": "2023-09-27",
-"author": "Adam Wolf",
-"tags": ["akrasia", "bee-all", "get everything done", "integrations", "PSA", "rationality", "startups", "reading"],
-"status": "publish",
-"excerpt": "Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an"
-},{
-"slug": "college",
-"source": "doc.bmndr.co/college",
-"redirects": [],
-"date": "2023-10-18",
-"author": "shanaqui",
-"status": "publish",
-"tags": ["akrasia", "bee-all", "get everything done", "studying", "case studies", "students", "rationality", "tips"],
-"disqus_id": "college",
-"excerpt": "We’re slightly behind for the traditional September start date, but it’s not too late! The semester at the London School of Hygiene & Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already. I don’t know about any of you, but whenever the new school year starts it feels like"
-},{
-"slug": "manifold",
-"source": "doc.bmndr.co/manifold",
-"redirects": [],
-"date": "2023-11-02",
-"author": "dreeves",
-"status": "publish",
-"tags": ["akrasia", "rationality", "prediction markets", "bee-all", "startups", "integrations"],
-"disqus_id": "manifold",
-"excerpt": "Probably no Manifold users have a gambling problem (maybe just that one guy?) but, just in case, now Manifold can say it has what casinos call a self-exclusion program. Kind of? Mostly we expect this to be useful the other way around. Maybe Scott Alexander"
-},{
-"slug": "antimagic404",
-"source": "doc.bmndr.co/antimagic404",
-"redirects": [],
-"date": "2023-11-15",
-"author": "dreeves",
-"status": "publish",
-"tags": ["akrasia", "rationality", "bee-all", "startups", "blogging", "meta", "navel-gazing", "nerdery"],
-"disqus_id": "antimagic404",
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "risk",
-"source": "doc.bmndr.co/risk",
-"redirects": [],
-"date": "2023-11-29",
-"author": "dreeves",
-"status": "publish",
-"tags": ["akrasia", "rationality", "bee-all", "startups", "meta", "navel-gazing", "nerdery", "finance"],
-"disqus_id": "risk",
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "rocks",
-"source": "doc.bmndr.co/rocks",
-"redirects": [],
-"date": "2023-12-13",
-"author": "dreeves",
-"status": "publish",
-"tags": ["akrasia", "rationality", "bee-all", "self-help", "get everything done"],
-"disqus_id": "rocks",
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "honeygrams",
-"source": "doc.bmndr.co/honeygrams",
-"redirects": [],
-"date": "2023-12-20",
-"author": "dreeves",
-"status": "publish",
-"tags": ["akrasia", "rationality", "bee-all", "holiday"],
-"disqus_id": "honeygrams",
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "montholutions",
-"disqus_id": "montholutions",
-"source": "doc.bmndr.co/montholutions",
-"redirects": [],
-"date": "2024-01-04",
-"author": "shanaqui",
-"status": "publish",
-"tags": ["akrasia", "bee-all", "resolutions", "productivity porn", "PSA"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "pigou",
-"disqus_id": "pigou",
-"source": "doc.bmndr.co/pigouminder",
-"redirects": [],
-"date": "2024-01-18",
-"author": "dreeves",
-"status": "publish",
-"tags": ["akrasia", "bee-all", "rationality", "philosophy", "commitment devices"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "diy",
-"disqus_id": "diy",
-"source": "doc.bmndr.co/diy",
-"redirects": [],
-"date": "2024-01-31",
-"author": "dreeves",
-"status": "publish",
-"tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "love",
-"disqus_id": "love",
-"source": "doc.bmndr.co/love",
-"redirects": [],
-"date": "2024-02-14",
-"author": "dreeves",
-"status": "publish",
-"tags": ["akrasia", "bee-all", "rationality", "commitment devices", "case studies", "romance"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "humblebundle",
-"disqus_id": "humblebundle",
-"source": "doc.bmndr.co/humbee",
-"redirects": [],
-"date": "2024-02-28",
-"author": "bsoule",
-"status": "publish",
-"tags": ["bee-all", "productivity", "navel-gazing", "productivity porn", "money", "rationality"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "rainbowdash",
-"disqus_id": "rainbowdash",
-"source": "doc.bmndr.co/rainbowdash",
-"redirects": [],
-"date": "2024-03-13",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "navel-gazing", "new features"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "wakatime",
-"disqus_id": "wakatime",
-"source": "doc.bmndr.co/wakatime",
-"redirects": [],
-"date": "2024-03-26",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "integrations", "startups", "rationality", "programming"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "urgency",
-"disqus_id": "urgency",
-"source": "doc.bmndr.co/sort",
-"redirects": [],
-"date": "2024-04-17",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "new features"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "wetfeet",
-"disqus_id": "wetfeet",
-"source": "doc.bmndr.co/wetfeet",
-"redirects": [],
-"date": "2024-05-01",
-"author": "bsoule",
-"status": "publish",
-"tags": ["bee-all", "new features", "feature unannouncements"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "wetterfeet",
-"disqus_id": "wetterfeet",
-"source": "doc.bmndr.co/wetterfeet",
-"redirects": [],
-"date": "2024-05-15",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "new features", "feature unannouncements", "PSA"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "ynab",
-"disqus_id": "ynab",
-"source": "doc.bmndr.co/ynab",
-"redirects": [],
-"date": "2024-05-27",
-"author": "bsoule",
-"status": "publish",
-"tags": ["bee-all", "integrations", "startups", "rationality", "budgeting", "money"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "groupies",
-"disqus_id": "groupies",
-"source": "doc.bmndr.co/groupies",
-"redirects": [],
-"date": "2024-06-12",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "feature announcements", "rationality"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "journal",
-"disqus_id": "journal",
-"source": "doc.bmndr.co/journal",
-"redirects": [],
-"date": "2024-06-26",
-"author": "shanaqui",
-"status": "publish",
-"tags": ["akrasia", "bee-all", "meta", "meta goals"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "ownwords",
-"disqus_id": "ownwords",
-"source": "doc.bmndr.co/ownwords",
-"redirects": [],
-"date": "2024-07-10",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "rationality", "writing"],
-"excerpt": "We have two excuses to blog about this. First, we’re using our new group goals feature to experiment with something we’re calling Book Brigades. To quote myself from the forum post about it: A book brigade is a very small group of very like-minded"
-},{
-"slug": "grayson",
-"disqus_id": "grayson",
-"source": "doc.bmndr.co/grayson",
-"redirects": [],
-"date": "2024-07-24",
-"author": "Grayson Bray Morris",
-"status": "publish",
-"tags": ["bee-all", "rationality", "writing", "newbees", "FAQ", "graphing"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "legolaps",
-"disqus_id": "legolaps",
-"source": "doc.bmndr.co/legolaps",
-"redirects": [],
-"date": "2024-08-07",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "rationality", "fitness", "madhacks"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "relativity",
-"disqus_id": "relativity",
-"source": "doc.bmndr.co/relativity",
-"redirects": [],
-"date": "2024-08-21",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "new features"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "oura",
-"disqus_id": "oura",
-"source": "doc.bmndr.co/oura",
-"redirects": [],
-"date": "2024-08-31",
-"author": "shanaqui",
-"status": "publish",
-"tags": ["bee-all", "new features", "integrations", "fitness", "wearables"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "squeam",
-"disqus_id": "squeam",
-"source": "doc.bmndr.co/squeam",
-"redirects": [],
-"date": "2024-09-18",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "startups", "terminology", "rationality"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-},{
-"slug": "nuclear",
-"disqus_id": "nuclear",
-"source": "doc.bmndr.co/nuclear",
-"redirects": [],
-"date": "2024-10-02",
-"author": "dreeves",
-"status": "publish",
-"tags": ["bee-all", "philosophy", "rationality"],
-"excerpt": "MAGIC_AUTO_EXTRACT"
-}
+  {
+    "slug": "athletes",
+    "date": "2023-08-09",
+    "author": "dreeves",
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "FAQ",
+      "rationality",
+      "tips"
+    ],
+    "status": "publish",
+    "excerpt": "Here are two facts about elite athletes that sound contradictory at first blush but aren't: 1. Elite athletes, being more efficient at propelling themselves, burn fewer calories per mile than muggles. 2. Elite athletes, being better at turning calories into motion, burn more calories per hour than muggles. It all makes",
+    "source": "doc.bmndr.co/athletes",
+    "disqus_id": "2163 https://blog.beeminder.com/?p=2163",
+    "redirects": []
+  },
+  {
+    "slug": "blogmorphosis",
+    "source": "doc.bmndr.co/blogmorphosis",
+    "redirects": [],
+    "disqus_id": "blogmorphosis",
+    "date": "2023-08-23",
+    "author": "dreeves",
+    "tags": [
+      "navel-gazing",
+      "bee-all",
+      "tech",
+      "colophon",
+      "meta"
+    ],
+    "status": "publish",
+    "excerpt": "This is our first official post on our shiny new WordPress-free blog. Confetti-emoji! For well over a decade the Beeminder blog was on WordPress, hosted by WP Engine. That was..."
+  },
+  {
+    "slug": "astroblog",
+    "source": "doc.bmndr.co/astroblog",
+    "redirects": [],
+    "disqus_id": "astroblog",
+    "date": "2023-09-06",
+    "author": "Nathan Arthur",
+    "tags": [
+      "bee-all",
+      "navel-gazing",
+      "nerdery",
+      "meta"
+    ],
+    "status": "publish",
+    "excerpt": "This is another X-Treme Nerd Interlude post. Last time we announced, mercifully briefly, our shiny new blog redesign and if you’re a normal human you should read that, nod thoughtfully, say “looks lovely”, and be on your merry way. The rest of you can frolic deep in the weeds here with"
+  },
+  {
+    "slug": "predict",
+    "source": "doc.bmndr.co/predict",
+    "redirects": [],
+    "disqus_id": "predict",
+    "date": "2023-09-20",
+    "author": "dreeves",
+    "tags": [
+      "bee-all",
+      "rationality",
+      "prediction markets",
+      "nerdery",
+      "history of beeminder",
+      "startups",
+      "commitment contracts"
+    ],
+    "status": "publish",
+    "excerpt": "A fun fact about predicting your own behavior, particularly publicly, is that the act of predicting it changes the prediction. “I’m 75% likely to maintain my Duolingo streak all year, but now that I’ve said so I’m actually 90% likely, but now that I’ve said that, …” Or what happens when the probability starts very low but you add a wager? It’s like this self-describing xkcd"
+  },
+  {
+    "slug": "readwise",
+    "source": "doc.bmndr.co/readwise",
+    "redirects": [],
+    "disqus_id": "readwise",
+    "date": "2023-09-27",
+    "author": "Adam Wolf",
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "get everything done",
+      "integrations",
+      "PSA",
+      "rationality",
+      "startups",
+      "reading"
+    ],
+    "status": "publish",
+    "excerpt": "Readwise Reader is a powerful tool for “power readers”. It’s like a supercharged read-it-later app, with first-class support for notes and highlights and tags. Now, you can keep track of your Readwise Reader items using Beeminder. You save things like web pages, PDFs, YouTube videos, Twitter threads, or aim it at an RSS feed or an"
+  },
+  {
+    "slug": "college",
+    "source": "doc.bmndr.co/college",
+    "redirects": [],
+    "date": "2023-10-18",
+    "author": "shanaqui",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "get everything done",
+      "studying",
+      "case studies",
+      "students",
+      "rationality",
+      "tips"
+    ],
+    "disqus_id": "college",
+    "excerpt": "We’re slightly behind for the traditional September start date, but it’s not too late! The semester at the London School of Hygiene & Tropical Medicine started on 2nd October, and (thanks to Beeminder!) I got started back on my studies toward my distance learning MSc already. I don’t know about any of you, but whenever the new school year starts it feels like"
+  },
+  {
+    "slug": "manifold",
+    "source": "doc.bmndr.co/manifold",
+    "redirects": [],
+    "date": "2023-11-02",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "rationality",
+      "prediction markets",
+      "bee-all",
+      "startups",
+      "integrations"
+    ],
+    "disqus_id": "manifold",
+    "excerpt": "Probably no Manifold users have a gambling problem (maybe just that one guy?) but, just in case, now Manifold can say it has what casinos call a self-exclusion program. Kind of? Mostly we expect this to be useful the other way around. Maybe Scott Alexander"
+  },
+  {
+    "slug": "antimagic404",
+    "source": "doc.bmndr.co/antimagic404",
+    "redirects": [],
+    "date": "2023-11-15",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "rationality",
+      "bee-all",
+      "startups",
+      "blogging",
+      "meta",
+      "navel-gazing",
+      "nerdery"
+    ],
+    "disqus_id": "antimagic404",
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "risk",
+    "source": "doc.bmndr.co/risk",
+    "redirects": [],
+    "date": "2023-11-29",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "rationality",
+      "bee-all",
+      "startups",
+      "meta",
+      "navel-gazing",
+      "nerdery",
+      "finance"
+    ],
+    "disqus_id": "risk",
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "rocks",
+    "source": "doc.bmndr.co/rocks",
+    "redirects": [],
+    "date": "2023-12-13",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "rationality",
+      "bee-all",
+      "self-help",
+      "get everything done"
+    ],
+    "disqus_id": "rocks",
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "honeygrams",
+    "source": "doc.bmndr.co/honeygrams",
+    "redirects": [],
+    "date": "2023-12-20",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "rationality",
+      "bee-all",
+      "holiday"
+    ],
+    "disqus_id": "honeygrams",
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "montholutions",
+    "disqus_id": "montholutions",
+    "source": "doc.bmndr.co/montholutions",
+    "redirects": [],
+    "date": "2024-01-04",
+    "author": "shanaqui",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "resolutions",
+      "productivity porn",
+      "PSA"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "pigou",
+    "disqus_id": "pigou",
+    "source": "doc.bmndr.co/pigouminder",
+    "redirects": [],
+    "date": "2024-01-18",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "rationality",
+      "philosophy",
+      "commitment devices"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "diy",
+    "disqus_id": "diy",
+    "source": "doc.bmndr.co/diy",
+    "redirects": [],
+    "date": "2024-01-31",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "rationality",
+      "commitment devices",
+      "case studies"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "love",
+    "disqus_id": "love",
+    "source": "doc.bmndr.co/love",
+    "redirects": [],
+    "date": "2024-02-14",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "rationality",
+      "commitment devices",
+      "case studies",
+      "romance"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "humblebundle",
+    "disqus_id": "humblebundle",
+    "source": "doc.bmndr.co/humbee",
+    "redirects": [],
+    "date": "2024-02-28",
+    "author": "bsoule",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "productivity",
+      "navel-gazing",
+      "productivity porn",
+      "money",
+      "rationality"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "rainbowdash",
+    "disqus_id": "rainbowdash",
+    "source": "doc.bmndr.co/rainbowdash",
+    "redirects": [],
+    "date": "2024-03-13",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "navel-gazing",
+      "new features"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "wakatime",
+    "disqus_id": "wakatime",
+    "source": "doc.bmndr.co/wakatime",
+    "redirects": [],
+    "date": "2024-03-26",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "integrations",
+      "startups",
+      "rationality",
+      "programming"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "urgency",
+    "disqus_id": "urgency",
+    "source": "doc.bmndr.co/sort",
+    "redirects": [],
+    "date": "2024-04-17",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "new features"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "wetfeet",
+    "disqus_id": "wetfeet",
+    "source": "doc.bmndr.co/wetfeet",
+    "redirects": [],
+    "date": "2024-05-01",
+    "author": "bsoule",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "new features",
+      "feature unannouncements"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "wetterfeet",
+    "disqus_id": "wetterfeet",
+    "source": "doc.bmndr.co/wetterfeet",
+    "redirects": [],
+    "date": "2024-05-15",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "new features",
+      "feature unannouncements",
+      "PSA"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "ynab",
+    "disqus_id": "ynab",
+    "source": "doc.bmndr.co/ynab",
+    "redirects": [],
+    "date": "2024-05-27",
+    "author": "bsoule",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "integrations",
+      "startups",
+      "rationality",
+      "budgeting",
+      "money"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "groupies",
+    "disqus_id": "groupies",
+    "source": "doc.bmndr.co/groupies",
+    "redirects": [],
+    "date": "2024-06-12",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "feature announcements",
+      "rationality"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "journal",
+    "disqus_id": "journal",
+    "source": "doc.bmndr.co/journal",
+    "redirects": [],
+    "date": "2024-06-26",
+    "author": "shanaqui",
+    "status": "publish",
+    "tags": [
+      "akrasia",
+      "bee-all",
+      "meta",
+      "meta goals"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "ownwords",
+    "disqus_id": "ownwords",
+    "source": "doc.bmndr.co/ownwords",
+    "redirects": [],
+    "date": "2024-07-10",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "rationality",
+      "writing"
+    ],
+    "excerpt": "We have two excuses to blog about this. First, we’re using our new group goals feature to experiment with something we’re calling Book Brigades. To quote myself from the forum post about it: A book brigade is a very small group of very like-minded"
+  },
+  {
+    "slug": "grayson",
+    "disqus_id": "grayson",
+    "source": "doc.bmndr.co/grayson",
+    "redirects": [],
+    "date": "2024-07-24",
+    "author": "Grayson Bray Morris",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "rationality",
+      "writing",
+      "newbees",
+      "FAQ",
+      "graphing"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "legolaps",
+    "disqus_id": "legolaps",
+    "source": "doc.bmndr.co/legolaps",
+    "redirects": [],
+    "date": "2024-08-07",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "rationality",
+      "fitness",
+      "madhacks"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "relativity",
+    "disqus_id": "relativity",
+    "source": "doc.bmndr.co/relativity",
+    "redirects": [],
+    "date": "2024-08-21",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "new features"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "oura",
+    "disqus_id": "oura",
+    "source": "doc.bmndr.co/oura",
+    "redirects": [],
+    "date": "2024-08-31",
+    "author": "shanaqui",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "new features",
+      "integrations",
+      "fitness",
+      "wearables"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "squeam",
+    "disqus_id": "squeam",
+    "source": "doc.bmndr.co/squeam",
+    "redirects": [],
+    "date": "2024-09-18",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "startups",
+      "terminology",
+      "rationality"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  },
+  {
+    "slug": "nuclear",
+    "disqus_id": "nuclear",
+    "source": "doc.bmndr.co/nuclear",
+    "redirects": [],
+    "date": "2024-10-02",
+    "author": "dreeves",
+    "status": "publish",
+    "tags": [
+      "bee-all",
+      "philosophy",
+      "rationality"
+    ],
+    "excerpt": "MAGIC_AUTO_EXTRACT"
+  }
 ]
