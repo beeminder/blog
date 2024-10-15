@@ -45,7 +45,7 @@ export const post = z
 
     if (rest.title) {
       throw new Error(
-        `(${url}) : Title is not allowed in posts.json. Use frontmatter only. "BEGIN_MAGIC[The-Post-Name-Here]"`,
+        `(${url}) : Title is not allowed in posts.json. Specify in markdown only. "BEGIN_MAGIC[The-Post-Name-Here]"`,
       );
     }
 
