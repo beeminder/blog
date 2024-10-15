@@ -393,7 +393,6 @@
   },
   {
     "source": "doc.bmndr.co/wantcanwill",
-    "title": "The Want-Can-Will Test for Akrasia",
     "slug": "wantcanwill",
     "date": "2011-10-24",
     "author": "dreeves",
@@ -512,7 +511,6 @@
   },
   {
     "source": "doc.bmndr.co/qs",
-    "title": "Quantified Self",
     "slug": "qs",
     "date": "2011-12-16",
     "author": "dreeves",
@@ -777,7 +775,6 @@
   },
   {
     "source": "doc.bmndr.co/weasels",
-    "title": "Getting Back On The Wagon",
     "slug": "weasels",
     "date": "2012-05-25",
     "author": "Philip Hellyer",
@@ -1162,7 +1159,6 @@
   },
   {
     "source": "doc.bmndr.co/trello",
-    "title": "Beeminder ♥ Trello",
     "slug": "trello",
     "date": "2012-10-29",
     "author": "Andy Brett",
@@ -1200,7 +1196,6 @@
   },
   {
     "source": "doc.bmndr.co/fitbit",
-    "title": "Beeminder ♥ Fitbit",
     "slug": "fitbit",
     "date": "2012-11-13",
     "author": "Andy Brett",
@@ -1220,7 +1215,6 @@
   },
   {
     "source": "doc.bmndr.co/rescuetime",
-    "title": "Beeminder ♥ RescueTime",
     "slug": "rescuetime",
     "date": "2012-11-27",
     "author": "Andy Brett",
@@ -1423,7 +1417,6 @@
   },
   {
     "source": "doc.bmndr.co/exponential",
-    "title": "Intrafamily Bets and the Genius of the Exponential Pledge Schedule",
     "slug": "exponential",
     "date": "2013-03-26",
     "author": "dreeves",
@@ -1747,7 +1740,6 @@
   },
   {
     "source": "doc.bmndr.co/runkeeper",
-    "title": "Beeminder ♥ RunKeeper",
     "slug": "runkeeper",
     "date": "2013-09-03",
     "author": "bsoule",
@@ -1841,7 +1833,6 @@
   },
   {
     "source": "doc.bmndr.co/beemup",
-    "title": "Beeminder &#x2665; Jawbone",
     "slug": "jawbone",
     "date": "2013-10-23",
     "author": "Andy Brett",
@@ -1878,7 +1869,6 @@
   },
   {
     "source": "doc.bmndr.co/beemyou",
-    "title": "Beeminder &#x2665; ... You! How To Build Your Own Beeminder Integrations",
     "slug": "oauth",
     "date": "2013-11-12",
     "author": "Andy Brett",
@@ -2002,7 +1992,6 @@
   },
   {
     "source": "doc.bmndr.co/beenice",
-    "title": "Be Nice To Yourself",
     "slug": "beenice",
     "date": "2014-01-13",
     "author": "bsoule",
@@ -2047,7 +2036,6 @@
   },
   {
     "source": "doc.bmndr.co/codeschool",
-    "title": "Beeminder &#x2665; Code School",
     "slug": "codeschool",
     "date": "2014-02-11",
     "author": "dreeves",
@@ -2131,7 +2119,6 @@
   },
   {
     "source": "doc.bmndr.co/bweight",
-    "title": "Bee's Guide To Beeminding Weight Loss",
     "slug": "weight",
     "date": "2014-03-25",
     "author": "bsoule",
@@ -2151,7 +2138,6 @@
   },
   {
     "source": "doc.bmndr.co/gtbee",
-    "title": "Get Things Done (Or Else!) With Beeminder and GTBee",
     "slug": "gtbee",
     "date": "2014-04-03",
     "author": "Andy Brett",
@@ -2519,7 +2505,6 @@
   },
   {
     "source": "doc.bmndr.co/habitrpg",
-    "title": "Beeminder &#x2665; HabitRPG",
     "slug": "habitrpg",
     "date": "2014-10-25",
     "author": "dreeves",
@@ -2601,7 +2586,6 @@
   },
   {
     "source": "doc.bmndr.co/zapier",
-    "title": "Beeminder &#x2665; Zapier: Hundreds of New Integrations in One",
     "slug": "zapier",
     "date": "2014-11-19",
     "author": "dreeves",
@@ -2663,7 +2647,6 @@
   },
   {
     "source": "doc.bmndr.co/sleep",
-    "title": "Beeminder ♥ Sleep as Android",
     "slug": "sleep",
     "date": "2014-12-31",
     "author": "bsoule",
@@ -2746,7 +2729,6 @@
   },
   {
     "source": "doc.bmndr.co/epson",
-    "title": "Beeminder ♥ Epson",
     "slug": "epson",
     "date": "2015-02-06",
     "author": "dreeves",
@@ -2787,7 +2769,6 @@
   },
   {
     "source": "doc.bmndr.co/garmin",
-    "title": "Beeminder &#x2665; Garmin",
     "slug": "garmin",
     "date": "2015-03-10",
     "author": "bsoule",
@@ -2886,7 +2867,6 @@
   },
   {
     "source": "doc.bmndr.co/ifttt",
-    "title": "If This MIND That: Beeminder ♥ IFTTT",
     "slug": "ifttt",
     "date": "2015-05-08",
     "author": "bsoule",
@@ -2950,7 +2930,6 @@
   },
   {
     "source": "doc.bmndr.co/misfit",
-    "title": "Misfit and Bee-fit: Beeminder &#x2665; Misfit",
     "slug": "misfit",
     "date": "2015-05-29",
     "author": "bsoule",
@@ -2968,7 +2947,6 @@
   },
   {
     "source": "doc.bmndr.co/skritter",
-    "title": "Beeminder &#x2665; Skritter",
     "slug": "skritter",
     "date": "2015-06-09",
     "author": "bsoule",
@@ -3237,7 +3215,6 @@
   },
   {
     "source": "doc.bmndr.co/complice",
-    "title": "Hard Commitments & Soft Commitments: Beeminder ♥ Complice",
     "slug": "complice",
     "date": "2015-11-10",
     "author": "Malcolm Ocean",
@@ -3486,7 +3463,6 @@
   },
   {
     "source": "doc.bmndr.co/custard",
-    "title": "Walking On Custard",
     "slug": "custard",
     "date": "2016-04-14",
     "author": "Neil Hughes",
@@ -3768,7 +3744,6 @@
   },
   {
     "source": "doc.bmndr.co/josh",
-    "title": "Beehind the Scenes of the Beeminder Redesign",
     "slug": "josh",
     "date": "2016-11-09",
     "author": "Josh Pitzalis",
@@ -3846,7 +3821,6 @@
   },
   {
     "source": "doc.bmndr.co/todoist",
-    "title": "Beeminder ♥ Todoist",
     "slug": "todoist",
     "date": "2017-01-06",
     "author": "Lillian Karabaic",
@@ -4093,7 +4067,6 @@
   },
   {
     "source": "doc.bmndr.co/tao",
-    "title": "The Tao of Bees: How I use Beeminder",
     "slug": "tao",
     "date": "2017-09-12",
     "author": "Brennan K. Brown",
@@ -4151,7 +4124,6 @@
   },
   {
     "source": "doc.bmndr.co/six",
-    "title": "Beeminder Is Sixy!",
     "slug": "six",
     "date": "2017-10-19",
     "author": "bsoule",
@@ -4488,7 +4460,6 @@
   },
   {
     "source": "doc.bmndr.co/toggl",
-    "title": "Beeminder &#x2665; Toggl",
     "slug": "toggl",
     "date": "2018-09-07",
     "author": "dreeves",
@@ -4525,7 +4496,6 @@
   },
   {
     "source": "doc.bmndr.co/strava",
-    "title": "Beeminder &#x2665; Strava",
     "slug": "strava",
     "date": "2018-10-12",
     "author": "dreeves",
@@ -4581,7 +4551,6 @@
   },
   {
     "source": "doc.bmndr.co/clozemaster",
-    "title": "Beeminder &#x2665; Clozemaster",
     "slug": "clozemaster",
     "date": "2018-11-30",
     "author": "Clozemaster",
@@ -5138,7 +5107,6 @@
   },
   {
     "source": "doc.bmndr.co/cry",
-    "title": "Lupine Lachrymosis; or, The Anti-Wolf-Crying Principle",
     "slug": "cry",
     "date": "1970-01-01",
     "author": "dreeves",
@@ -6560,7 +6528,6 @@
   },
   {
     "source": "doc.bmndr.co/nailingit",
-    "title": "Derailing It Is Nailing It",
     "slug": "nailingit",
     "date": "2023-03-24",
     "author": "shanaqui",

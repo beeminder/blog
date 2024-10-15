@@ -3,7 +3,6 @@ export default function meta(
 ): Record<string, unknown> {
   const id = Math.random().toString(36).slice(2, 9);
   const obj = {
-    title: `the_title_${id}`,
     source: `doc.bmndr.co/the_source_${id}`,
     date: "2011-01-24",
     slug: `the_slug_${id}`,
