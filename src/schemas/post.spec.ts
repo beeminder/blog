@@ -10,7 +10,6 @@ describe("post", () => {
         disqus_id: "",
         date: new Date(),
       }),
-      content: "body",
     });
 
     const data = {
@@ -18,7 +17,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -31,16 +29,13 @@ describe("post", () => {
   });
 
   it("uses disqus id", () => {
-    const md = ether({
-      content: "body",
-    });
+    const md = ether();
 
     const p = post.parse({
       source: "the_url",
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -55,7 +50,6 @@ describe("post", () => {
   it("does not include private notes in excerpts", async () => {
     const md = ether({
       before: "private notes",
-      content: "content",
     });
 
     const p = post.parse({
@@ -63,7 +57,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -85,7 +78,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -100,7 +92,6 @@ describe("post", () => {
   it("does not use image from private notes", async () => {
     const md = ether({
       before: "<img src='/private' />",
-      content: "content",
     });
 
     const p = post.parse({
@@ -108,7 +99,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -122,7 +112,7 @@ describe("post", () => {
 
   it("requires title", async () => {
     const md = ether({
-      content: "content",
+      title: null,
     });
 
     const result = post.safeParse({
@@ -130,7 +120,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -143,16 +132,13 @@ describe("post", () => {
   });
 
   it("requires slug", async () => {
-    const md = ether({
-      content: "content",
-    });
+    const md = ether();
 
     const result = post.safeParse({
       source: "the_url",
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -165,16 +151,13 @@ describe("post", () => {
   });
 
   it("requires author", async () => {
-    const md = ether({
-      content: "content",
-    });
+    const md = ether();
 
     const result = post.safeParse({
       source: "the_url",
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "",
@@ -187,16 +170,13 @@ describe("post", () => {
   });
 
   it("requires disqus_id", async () => {
-    const md = ether({
-      content: "content",
-    });
+    const md = ether();
 
     const result = post.safeParse({
       source: "the_url",
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -209,16 +189,13 @@ describe("post", () => {
   });
 
   it("requires redirects", async () => {
-    const md = ether({
-      content: "content",
-    });
+    const md = ether();
 
     const result = post.safeParse({
       source: "the_url",
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: undefined,
       author: "the_author",
@@ -231,16 +208,13 @@ describe("post", () => {
   });
 
   it("requires date", async () => {
-    const md = ether({
-      content: "content",
-    });
+    const md = ether();
 
     const result = post.safeParse({
       source: "the_url",
       date: "",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -253,16 +227,13 @@ describe("post", () => {
   });
 
   it("requires tags", async () => {
-    const md = ether({
-      content: "content",
-    });
+    const md = ether();
 
     const result = post.safeParse({
       source: "the_url",
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: undefined,
       redirects: ["the_redirect"],
       author: "the_author",
@@ -275,16 +246,13 @@ describe("post", () => {
   });
 
   it("requires status", async () => {
-    const md = ether({
-      content: "content",
-    });
+    const md = ether();
 
     const result = post.safeParse({
       source: "the_url",
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -297,16 +265,13 @@ describe("post", () => {
   });
 
   it("requires source", async () => {
-    const md = ether({
-      content: "content",
-    });
+    const md = ether();
 
     const result = post.safeParse({
       source: undefined,
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -329,7 +294,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -352,7 +316,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -371,16 +334,13 @@ describe("post", () => {
   });
 
   it("requires excerpt", async () => {
-    const md = ether({
-      content: "content",
-    });
+    const md = ether();
 
     const result = post.safeParse({
       source: "the_url",
       date: "2020-01-01",
       excerpt: undefined,
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -402,7 +362,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "MAGIC_AUTO_EXTRACT",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -415,16 +374,13 @@ describe("post", () => {
   });
 
   it("expects custom excerpt to return unchanged", async () => {
-    const md = ether({
-      content: "words",
-    });
+    const md = ether();
 
     const result = post.parse({
       source: "the_url",
       date: "2020-01-01",
       excerpt: "the excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -446,7 +402,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -468,7 +423,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -490,7 +444,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -515,7 +468,6 @@ describe("post", () => {
       source: "the_url",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -537,7 +489,6 @@ describe("post", () => {
       source: "the_url",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -559,7 +510,6 @@ describe("post", () => {
       source: "the_url",
       date: "2020-01-01",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -581,7 +531,6 @@ describe("post", () => {
       source: "the_url",
       date: "2020-01-01",
       excerpt: "the_excerpt",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -604,7 +553,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       status: "publish",
@@ -627,7 +575,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       redirects: ["the_redirect"],
       author: "the_author",
       status: "publish",
@@ -650,7 +597,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -673,7 +619,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       redirects: ["the_redirect"],
       author: "the_author",
@@ -696,7 +641,6 @@ describe("post", () => {
       date: "2020-01-01",
       excerpt: "the_excerpt",
       slug: "the_slug",
-      title: "the_title",
       tags: ["the_tag"],
       author: "the_author",
       status: "publish",
