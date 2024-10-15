@@ -8,6 +8,7 @@ import meta from "./test/meta";
 describe("getPosts", () => {
   beforeEach(() => {
     vi.mocked(readSources).mockReturnValue([meta()]);
+    vi.mocked(fetchPost).mockResolvedValue(ether());
   });
 
   it("only loads sources once", async () => {

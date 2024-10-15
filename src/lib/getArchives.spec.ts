@@ -41,12 +41,12 @@ describe("getArchives", () => {
 
   it("sorts posts by date", async () => {
     vi.mocked(readSources).mockReturnValue([
-      meta({ title: "A", date: "2013-02-22" }),
-      meta({ title: "B", date: "2013-02-21" }),
+      meta({ slug: "A", date: "2013-02-22" }),
+      meta({ slug: "B", date: "2013-02-21" }),
     ]);
 
     const result = await getArchives();
 
-    expect(result[0]?.months[0]?.posts[0]?.title).toEqual("B");
+    expect(result[0]?.months[0]?.posts[0]?.slug).toEqual("B");
   });
 });
