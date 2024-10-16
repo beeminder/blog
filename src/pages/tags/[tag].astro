@@ -12,7 +12,12 @@ export async function getStaticPaths() {
     params: {
       tag: t.name,
     },
-    props: t,
+    props: {
+      ...t,
+      posts: t.posts.sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      ),
+    },
   }));
 }
 
@@ -23,6 +28,8 @@ const title = `Tag: ${name}`;
 ---
 
 <Layout title={title}>
-  <TitleLockup slot="before-content" Heading="h1" title={title}>{count} posts</TitleLockup>
+  <TitleLockup slot="before-content" Heading="h1" title={title}
+    >{count} posts</TitleLockup
+  >
   <Posts posts={posts} />
 </Layout>
