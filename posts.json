@@ -7179,20 +7179,25 @@
       "rationality"
     ],
     "excerpt": "MAGIC_AUTO_EXTRACT"
-  },
-  {
-    "slug": "nuclear",
-    "disqus_id": "nuclear",
-    "source": "doc.bmndr.co/nuclear",
-    "redirects": [],
-    "date": "2024-10-02",
-    "author": "dreeves",
-    "status": "publish",
-    "tags": [
-      "bee-all",
-      "philosophy",
-      "rationality"
-    ],
-    "excerpt": "MAGIC_AUTO_EXTRACT"
-  }
+},{
+"slug": "nuclear",
+"disqus_id": "nuclear",
+"source": "doc.bmndr.co/nuclear",
+"redirects": [],
+"date": "2024-10-02",
+"author": "dreeves",
+"status": "publish",
+"tags": ["bee-all", "philosophy", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "hyperrational",
+"disqus_id": "hyperrational",
+"source": "doc.bmndr.co/hyperrational",
+"redirects": [],
+"date": "2024-10-16",
+"author": "dreeves",
+"status": "publish",
+"tags": ["bee-all", "philosophy", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+}
 ]
