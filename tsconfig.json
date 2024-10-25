@@ -2,6 +2,7 @@
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
     "verbatimModuleSyntax": true,
-    "types": ["vitest/importMeta"]
+    "types": ["vitest/importMeta"],
+    "skipLibCheck": true
   }
 }
