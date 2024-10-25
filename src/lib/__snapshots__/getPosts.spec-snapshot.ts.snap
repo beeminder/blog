@@ -1633,9 +1633,7 @@ Actually I believe you don&#8217;t literally have the choice to stipulate that&#
     that many domestic violence victims would choose no-drop prosecution if they could.
 In the case of an abusive relationship I could imagine strategic reasons for that (so you can&#8217;t, and your spouse knows you can&#8217;t, cave to threats to get you to drop charges) but the claim is that due to the sad psychology of domestic violence victims, it&#8217;s really about forcing your future self to follow through with what you know (when you sit back and reflect) is the right thing to do.
   </p>
-</font>
-<p>
-  <font size="-1">
+  <p>
     <a
       class="footnote"
       id="dea"
@@ -1647,8 +1645,8 @@ In the case of an abusive relationship I could imagine strategic reasons for tha
 Once they&#8217;re picked they fail the course (they paid thousands for this course, we presume) if they don&#8217;t meet them.
 So rationally they should choose all the deadlines to be on the last day, to maximize flexibility.
 But it was clear to students that that was a terrible idea. And sure enough, the ones who precommitted to spaced-out deadlines did better.
-  </font>
-</p>
+  </p>
+</font>
 <br>
 <p>
   To comment on this article, go to
@@ -7989,7 +7987,7 @@ On the bright side, that&#8217;s been enough time to collect a few real-life, ho
 "
 `;
 
-exports[`body > post beenamer hash a348f9a847c0c7c3e6f5feabab811603 1`] = `
+exports[`body > post beenamer hash e54df98e3a93346e9ce8e67522fe513b 1`] = `
 "
 <p>
   <img
@@ -17250,7 +17248,7 @@ also at
 "
 `;
 
-exports[`body > post buzz11 hash 585528f34a2f8bddd1fe6c74ba44542c 1`] = `
+exports[`body > post buzz11 hash ab32c99f811e1eb409a0e059bbe413f9 1`] = `
 "
 <p>
   <img
@@ -28651,7 +28649,7 @@ See for example
 "
 `;
 
-exports[`body > post deadlines hash 97c0016300cef8c87bf5b626a2119d79 1`] = `
+exports[`body > post deadlines hash 2d2c145f9f40c5f9492860aa6d2f52eb 1`] = `
 "
 <p>
   <img
@@ -28840,7 +28838,7 @@ That&#8217;s also why it&#8217;s tucked away in Terrifyingly Advanced Settings f
 </p>
 <ol>
   <li>
-    You can&#8217;t currently have a deadline before noon. 
+    You can&#8217;t currently have a deadline before noon.
 We&#8217;ll be changing this but for now the interface isn&#8217;t good enough to make clear the distinction between, say, a 6am earlybird deadline and a 6am night-owl deadline.
 I.e. all morning deadlines are of the night-owl variety.
   </li>
@@ -28853,9 +28851,9 @@ I.e. all morning deadlines are of the night-owl variety.
       There may be a more severe bug with the iPhone app that causes crashes. Let us know if you see that!
     </s>
     UPDATE: We&#8217;re back to just the iPhone app being confused about deadlines.
-    <strong>
+    <b>
       FINAL UPDATE: Both Android and iPhone apps understand arbitrary deadlines now.
-    </strong>
+    </b>
   </li>
   <li>
     Some autodata sources make this difficult by only giving us data at day granularity, which means we have to honor their notion of what the day boundary is. Or maybe we can work around it by adjusting the timezone in the external account. 
@@ -28863,9 +28861,9 @@ For now, you can only customize deadlines for non-autodata goals.
   </li>
   <li>
     Some of us are
-    <em>
+    <i>
       very
-    </em>
+    </i>
     used to the midnight/3am deadlines and we&#8217;re worried that people (including ourselves) may change deadlines and forget they&#8217;ve done so and accidentally derail. 
 So we&#8217;re working on various ways to make the deadlines more in your face. 
 And if you do accidentally derail because of this, definitely reply to the legit check to let us know!
@@ -33671,7 +33669,7 @@ Just be on that Yellow Brick Road tomorrow and you&#8217;re all good.
 "
 `;
 
-exports[`body > post easythings hash 825d1909001face3c05a2cd8920cac7e 1`] = `
+exports[`body > post easythings hash f0ca397e87621d6c74ed82a798bee295 1`] = `
 "
 <p>
   <img
@@ -33953,11 +33951,13 @@ That&#8217;d be so embarrassing.
     >
       Beating Beeminder Burnout
     </a>
-    <br>
-    &nbsp;
-    <br>
   </li>
 </ol>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
 <h2>
   Footnotes
 </h2>
@@ -42013,7 +42013,7 @@ And stay on the Yellow Brick Road.
 "
 `;
 
-exports[`body > post glossary hash 7d4b16aba72de178d600b280311cbcc2 1`] = `
+exports[`body > post glossary hash 9aad05ce15ebf91b516dff952d0da086 1`] = `
 "
 <p>
   <img
@@ -42027,7 +42027,7 @@ exports[`body > post glossary hash 7d4b16aba72de178d600b280311cbcc2 1`] = `
   By popular demand, we&#8217;ve created a
   <a
     href="https://en.wikipedia.org/wiki/Jargon_File"
-    title="It's a thing from the early days of the internet"
+    title="It&#39;s a thing from the early days of the internet"
   >
     jargon file
   </a>
@@ -42376,7 +42376,7 @@ Newly created goals that you archive will also give you the option to blow them 
   and
   <a
     href="http://beeminder.com/zapier"
-    title="Pronounced to rhyme with 'happier'"
+    title="Pronounced to rhyme with &#39;happier&#39;"
   >
     Zapier
   </a>
@@ -42392,7 +42392,7 @@ The full list of autodata sources is on the Beeminder
   or at the bottom of
   <a
     href="http://beeminder.com/services"
-    title="Confusingly, this page also includes services you've authorized for signing in to Beeminder, which is not the same as autodata sources"
+    title="Confusingly, this page also includes services you&#39;ve authorized for signing in to Beeminder, which is not the same as autodata sources"
   >
     beeminder.com/services
   </a>
@@ -42488,9 +42488,9 @@ Later we moved in with Mobilitus /
 <p>
   Daily, weekly, monthly, or yearly emails that we (the founders) send to keep everyone in the loop on what&#8217;s new with Beeminder.
 By default you&#8217;ll get them monthly but you can change that by going to
-Your Account →
-Settings →
-Email →
+Your Account &rarr;
+Settings &rarr;
+Email &rarr;
 Beemail.
 If you&#8217;re reading our glossary then you&#8217;ll probably enjoy getting daily beemails (or at least weekly).
 </p>
@@ -42988,7 +42988,7 @@ As you
   , your pledge amount increases
   <a
     href="http://blog.beeminder.com/exponential/"
-    title="'The genius of the exponential pledge schedule'"
+    title="&#39;The genius of the exponential pledge schedule&#39;"
   >
     exponentially
   </a>
@@ -43066,7 +43066,7 @@ Another common example is beeminding reading a book by reporting your current pa
 If you report a zero then Beeminder treats that as the odometer getting reset (or starting a new book) and Beeminder keeps your cumulative total going.
   <a
     href="https://help.beeminder.com/article/68-odometer-goals"
-    title="This glossary predates our help docs and we're gradually adding links from here to there"
+    title="This glossary predates our help docs and we&#39;re gradually adding links from here to there"
   >
     Details in our help docs
   </a>
@@ -43184,7 +43184,7 @@ It has a name because, historically, it was something you had to specifically op
 (or yearly or
   <a
     href="http://blog.beeminder.com/fair"
-    title="Beeminder's exquisitely fair prepayment slider"
+    title="Beeminder&#39;s exquisitely fair prepayment slider"
   >
     anythingly
   </a>
@@ -43733,7 +43733,7 @@ This can be toggled under email settings.
 (See
   <a
     href="http://blog.beeminder.com/zeno"
-    title="Short version: If it's an beemergency day we send the reminder at the usual time (you can set this in goal settings) and then if you're still not back on the right side of the bright red line, we send another one half way from then until your deadline. Rinse, repeat."
+    title="Short version: If it&#39;s an beemergency day we send the reminder at the usual time (you can set this in goal settings) and then if you&#39;re still not back on the right side of the bright red line, we send another one half way from then until your deadline. Rinse, repeat."
   >
     Zeno Polling
   </a>
@@ -47858,6 +47858,177 @@ But if you just scrolled down here impulsively, you&#8217;ll want to actually
     buy the Humble Bundle
   </a>
   first.
+</p>
+"
+`;
+
+exports[`body > post hyperrational hash 24320d72ed60fd298a41f105708a9b78 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    alt="Digital AI art with a person at an old-fashioned computer"
+    title="We'll let you play the 8-bit music in your head"
+    width="450px"
+    src="https://github.com/user-attachments/assets/b888ae86-0f80-4e6f-a2f7-a51fe823d19f"
+  >
+</p>
+<p>
+  Question from the internet: 
+What do we mean by calling Beeminder hyperrational goal tracking?
+  <a
+    class="footnote"
+    id="TAGLINES1"
+    href="#TAGLINES"
+  >
+    [1]
+  </a>
+</p>
+<p>
+  Before I give my answer, here&#8217;s a recent example from the inventor of Ruby on Rails using &#8220;hyperrational&#8221; in the context of sociopathic companies:
+  <a
+    class="footnote"
+    id="SOCIOPATHY1"
+    href="#SOCIOPATHY"
+  >
+    [2]
+  </a>
+</p>
+<blockquote>
+  <p>
+    [Fines on tech companies] put a price on criminal behavior, and if the gains from committing those crimes exceed the cost of the fines, there&#8217;s a base hyper-rational calculus that says the company should continue to break the law.
+  </p>
+</blockquote>
+<p>
+  So, hyperrational means excessively rational&#8201;&#8212;&#8201;so rational it&#8217;s irrational again?&#8201;&#8212;&#8201;and I&#8217;m kind of making fun of ourselves by applying it to Beeminder. 
+But also it&#8217;s because Beeminder in a sense fights irrationality with irrationality.
+  <a
+    href="https://www.youtube.com/watch?v=JP7o4uyJalM"
+    title="A recent talk I gave: Homo Economicus Wannabees. Homo economicus maximizes the expectation of its utility function, but that utility can and should have an altruistic component."
+  >
+    Homo economicus
+  </a>
+  would never opt in to a commitment device
+  <a
+    href="https://blog.beeminder.com/ownwords"
+    title="See item 1 about a strategic commitment device for the game of Chicken"
+  >
+    except
+  </a>
+  for a strategic game-theoretic reason involving other players. 
+A perfectly rational person is perfectly cooperative with
+  <em>
+    themself
+  </em>
+  . 
+A commitment device needlessly constrains your future actions. 
+Sacrificing optionality is costly! 
+But for humans suffering from hyperbolic discounting, it elegantly corrects for a different irrationality and leaves you more rational.
+</p>
+<p>
+  Happy now, Internet?
+</p>
+<p>
+  Last year I posed this as a quiz to the daily beemail subscribers, with a honey money bounty
+  <a
+    class="footnote"
+    id="HONEY1"
+    href="#HONEY"
+  >
+    [3]
+  </a>
+  for the best answers.
+I ended up giving the bounty to everyone who successfully distingished hyperrationality from meta-rationality (being rational about one&#8217;s irrationality&#8201;&#8212;&#8201;a key prerequisite for using Beeminder).
+</p>
+<p>
+  I was worried that some people might find it obtuse or pretentious but it turns out it&#8217;s one of the favorite
+  <a
+    href="https://beeminder.consider.it/#whats-the-best-beeminder-tagline-11"
+    title="We also have candidate autodata integrations there but we&#39;re migrating those to GitHub"
+  >
+    taglines in the collection
+  </a>
+  .
+Which may be more a commentary on the Beeminder
+  <a
+    href="https://blog.beeminder.com/nerds"
+    title="Strategy Memo: Beeminder Is For Nerds"
+  >
+    audience
+  </a>
+  than about any lack of obtuseness or pretentiousness.
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class="footnote"
+    id="TAGLINES"
+    href="#TAGLINES1"
+  >
+    [1]
+  </a>
+  It&#8217;s one of our many rotating taglines. 
+You can see them all and even vote for your favorites on our
+  <a
+    href="https://beeminder.consider.it/#whats-the-best-beeminder-tagline-11"
+    title="We also have candidate autodata integrations there but we&#39;re migrating those to GitHub"
+  >
+    Consider.it page
+  </a>
+  .
+Or hit refresh again and again on
+  <a
+    href="https://www.beeminder.com/home"
+    title="Technically this is beeminder.com/home because beeminder.com redirects to your dashboard if you&#39;re logged in. Actually that shows taglines as well, so, either way."
+  >
+    beeminder.com
+  </a>
+  .
+</p>
+<p>
+  <a
+    class="footnote"
+    id="SOCIOPATHY"
+    href="#SOCIOPATHY1"
+  >
+    [2]
+  </a>
+  Sociopathic companies is favorite topic of mine as well.
+See our posts on
+  <a
+    href="https://blog.bmndr.co/psychpricing"
+    title="Key argument against $99.99-style pricing: You’re exploiting the customer’s constrained attention with the goal of implanting an inaccurate perception of the actual price"
+  >
+    Psychological Pricing
+  </a>
+  and
+  <a
+    href="https://blog.bmndr.co/burglebug"
+    title="Beeminder bug classification system: Bitty Bugs, Baneful Bugs, Bum-steer Bugs, Bamboozle Bugs, Burgle Bugs"
+  >
+    The Burgle Bug Fairness Principle
+  </a>
+  for my ranting.
+</p>
+<p>
+  <a
+    class="footnote"
+    id="HONEY"
+    href="#HONEY1"
+  >
+    [3]
+  </a>
+  Actually this was shortly before officially introducing honey money and it was still just &#8220;premium credit&#8221; at that time.
+Now
+  <a
+    href="https://blog.beeminder.com/honeygrams"
+    title="Introducing Honeygrams (and Honey Money). Also includes our 12 reasons why we decided to introduce Honey Money in the first place."
+  >
+    honey money
+  </a>
+  can be used as derail credit as well.
 </p>
 "
 `;
@@ -68780,7 +68951,7 @@ I&#8217;m sure it made sense at the time!
 "
 `;
 
-exports[`body > post practice hash 579ee86f8bd08eb9c5df915239a689e7 1`] = `
+exports[`body > post practice hash a14173cc15fde4e421e78c169489a1e3 1`] = `
 "
 <p>
   <img
@@ -84925,7 +85096,7 @@ There will be physical prizes, though, and some of those prizes will be uniquely
 "
 `;
 
-exports[`body > post swifts hash e2f2cf3fa1e9e804b1ec26f3c4b9c51d 1`] = `
+exports[`body > post swifts hash 7548463072336bf0dd8064b32aa0627c 1`] = `
 "
 <p>
   <img
@@ -85026,19 +85197,19 @@ And vice versa, if you&#8217;re attending Quantified Self and have the merest cu
       href="http://rescuetime.com"
       title="RescueTime is amazing; highly recommended"
     >
-      RescueTime
+      Rescuetime
     </a>
     ,
     <a
-      href="http://eternalist.io/landing/"
-      title="self-writing journal"
+      href="https://forum.quantifiedself.com/t/try-eternalist-the-worlds-first-self-writing-journal/7192"
+      title="Self-writing journal. UPDATE: link died, now pointing to a QS forum post about it for posterity"
     >
       Eternalist
     </a>
     , and
     <a
       href="http://www.mymee.com/"
-      title="data-driven coaching"
+      title="Data-driven coaching. UPDATE: not sure if what&#39;s here as of 2024 is the same company"
     >
       Mymee
     </a>
