@@ -5555,11 +5555,11 @@ snapshots:
   expost@https://codeload.github.com/bsoule/expost/tar.gz/5ede9b382d3630e103b7921ca1cbce58038d26b5:
     dependencies:
       cheerio: 1.0.0-rc.12
-      marked: 12.0.2
-      marked-smartypants: 1.1.6(marked@12.0.2)
+      marked: 14.1.3
       memize: 2.1.0
       rimraf: 6.0.1
       sanitize-html: 2.13.0
+      smartypants: 0.2.2
 
   extend-shallow@2.0.1:
     dependencies:
