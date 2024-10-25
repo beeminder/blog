@@ -30,8 +30,8 @@ importers:
         specifier: ^16.3.1
         version: 16.4.5
       expost:
-        specifier: github:bsoule/expost#5ede9b382d3630e103b7921ca1cbce58038d26b5
-        version: https://codeload.github.com/bsoule/expost/tar.gz/5ede9b382d3630e103b7921ca1cbce58038d26b5
+        specifier: github:bsoule/expost#920313519f180153c00f2f4f4c78b4f86974517e
+        version: https://codeload.github.com/bsoule/expost/tar.gz/920313519f180153c00f2f4f4c78b4f86974517e
       feather-icons:
         specifier: ^4.29.1
         version: 4.29.2
@@ -1769,8 +1769,8 @@ packages:
     resolution: {integrity: sha512-A5EmesHW6rfnZ9ysHQjPdJRni0SRar0tjtG5MNtm9n5TUvsYU8oozprtRD4AqHxcZWWlVuAmQo2nWKfN9oyjTw==}
     engines: {node: '>=0.10.0'}
 
-  expost@https://codeload.github.com/bsoule/expost/tar.gz/5ede9b382d3630e103b7921ca1cbce58038d26b5:
-    resolution: {tarball: https://codeload.github.com/bsoule/expost/tar.gz/5ede9b382d3630e103b7921ca1cbce58038d26b5}
+  expost@https://codeload.github.com/bsoule/expost/tar.gz/920313519f180153c00f2f4f4c78b4f86974517e:
+    resolution: {tarball: https://codeload.github.com/bsoule/expost/tar.gz/920313519f180153c00f2f4f4c78b4f86974517e}
     version: 1.0.0
 
   extend-shallow@2.0.1:
@@ -5083,7 +5083,7 @@ snapshots:
     dependencies:
       homedir-polyfill: 1.0.3
 
-  expost@https://codeload.github.com/bsoule/expost/tar.gz/5ede9b382d3630e103b7921ca1cbce58038d26b5:
+  expost@https://codeload.github.com/bsoule/expost/tar.gz/920313519f180153c00f2f4f4c78b4f86974517e:
     dependencies:
       cheerio: 1.0.0-rc.12
       marked: 14.1.3
