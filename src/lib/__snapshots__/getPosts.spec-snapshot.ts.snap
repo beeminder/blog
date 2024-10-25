@@ -618,7 +618,7 @@ It refers to a way of changing one&#8217;s own incentives to make an otherwise e
 This can be quite rational.  A classic example is from
   <a
     href="http://books.google.com/books?id=7RkL4Z8Yg5AC"
-    title="Schelling's famous book, Strategy of Conflict"
+    title="Schelling&#39;s famous book, Strategy of Conflict"
   >
     Thomas Schelling
   </a>
@@ -667,7 +667,7 @@ Same consumption rate, less cost. The problem is your future self won&#8217;t
   rational with a pile of candy in the house.
   <a
     href="http://hyperboleandahalf.blogspot.com/2010/10/god-of-cake.html"
-    title="The God of Cake, by Hyperbole and a Half. There's no reason to link to this; it's just ridiculously funny."
+    title="The God of Cake, by Hyperbole and a Half. There&#39;s no reason to link to this; it&#39;s just ridiculously funny."
   >
     Sugar is a bit addictive, after all.
   </a>
@@ -946,7 +946,7 @@ Well, we&#8217;ve got more than intentions&#8201;&#8212;&#8201;we&#8217;ve got B
 In an upcoming post we&#8217;ll describe our
   <a
     href="http://en.wikipedia.org/wiki/Eating_your_own_dog_food"
-    title="Wikipedia entry on eating one's own dog food"
+    title="Wikipedia entry on eating one&#39;s own dog food"
   >
     dog food
   </a>
@@ -1633,9 +1633,7 @@ Actually I believe you don&#8217;t literally have the choice to stipulate that&#
     that many domestic violence victims would choose no-drop prosecution if they could.
 In the case of an abusive relationship I could imagine strategic reasons for that (so you can&#8217;t, and your spouse knows you can&#8217;t, cave to threats to get you to drop charges) but the claim is that due to the sad psychology of domestic violence victims, it&#8217;s really about forcing your future self to follow through with what you know (when you sit back and reflect) is the right thing to do.
   </p>
-</font>
-<p>
-  <font size="-1">
+  <p>
     <a
       class="footnote"
       id="dea"
@@ -1647,8 +1645,8 @@ In the case of an abusive relationship I could imagine strategic reasons for tha
 Once they&#8217;re picked they fail the course (they paid thousands for this course, we presume) if they don&#8217;t meet them.
 So rationally they should choose all the deadlines to be on the last day, to maximize flexibility.
 But it was clear to students that that was a terrible idea. And sure enough, the ones who precommitted to spaced-out deadlines did better.
-  </font>
-</p>
+  </p>
+</font>
 <br>
 <p>
   To comment on this article, go to
@@ -7989,7 +7987,7 @@ On the bright side, that&#8217;s been enough time to collect a few real-life, ho
 "
 `;
 
-exports[`body > post beenamer hash a348f9a847c0c7c3e6f5feabab811603 1`] = `
+exports[`body > post beenamer hash e54df98e3a93346e9ce8e67522fe513b 1`] = `
 "
 <p>
   <img
@@ -11114,7 +11112,7 @@ And although beeminding hobbies is old hat by now&#8201;&#8212;&#8201;starting w
 Overcoming akrasia, after all, means getting yourself to
   <a
     href="http://blog.beeminder.com/akrasia"
-    title="Inaugural Beeminder blog post! 'How To Do What You Want'"
+    title="Inaugural Beeminder blog post! &#39;How To Do What You Want&#39;"
   >
     do what you truly want to do
   </a>
@@ -11132,7 +11130,7 @@ I can sit down without guilt and spend 25 minutes knitting because I want to and
 (Dreeves feels similarly about
   <a
     href="http://beeminder.com/d/bab"
-    title="UPDATE: 'set-a-limit' goals are now called 'do less' goals"
+    title="UPDATE: &#39;set-a-limit&#39; goals are now called &#39;do less&#39; goals"
   >
     his set-a-limit goal on time spent with the kids
   </a>
@@ -11272,7 +11270,7 @@ So, live the love every week, and beemind it.
     . (See the
     <a
       href="http://beeminder.com/faq#qcut"
-      title="Short version: you can enter a number of hours like 1:30 and Beeminder will treat that as if you'd entered 1.5"
+      title="Short version: you can enter a number of hours like 1:30 and Beeminder will treat that as if you&#39;d entered 1.5"
     >
       colon shortcut
     </a>
@@ -17250,7 +17248,7 @@ also at
 "
 `;
 
-exports[`body > post buzz11 hash 585528f34a2f8bddd1fe6c74ba44542c 1`] = `
+exports[`body > post buzz11 hash ab32c99f811e1eb409a0e059bbe413f9 1`] = `
 "
 <p>
   <img
@@ -23404,7 +23402,7 @@ exports[`body > post codeschool hash d0e6b555d5f5356044e7da907d3d4f44 1`] = `
       We&#8217;re pretty over the moon for
       <a
         href="http://codeschool.com"
-        title="'Learn by doing'"
+        title="&#39;Learn by doing&#39;"
       >
         Code School
       </a>
@@ -23421,7 +23419,7 @@ Since many or most of you are here directly from Code School with no previous ex
 It&#8217;s borrowed from when we wrote a similar, if more one-sided, announcement of our
       <a
         href="http://blog.beeminder.com/gitminder"
-        title="Previous blog post about our integration with GitHub -- 'Gitminder: Commit To Keep Coding' -- or go directly to gitminder.com"
+        title="Previous blog post about our integration with GitHub -- &#39;Gitminder: Commit To Keep Coding&#39; -- or go directly to gitminder.com"
       >
         GitHub integration
       </a>
@@ -23452,7 +23450,7 @@ UPDATE AGAIN: We&#8217;re now mainly waiting for a green light from Pluralsight.
   For the full Beeminder story, you could start with
   <a
     href="http://blog.beeminder.com/akrasia"
-    title="'How To Do What You Want: Akrasia and Self-Binding'"
+    title="&#39;How To Do What You Want: Akrasia and Self-Binding&#39;"
   >
     our inaugural blog post
   </a>
@@ -23460,21 +23458,21 @@ UPDATE AGAIN: We&#8217;re now mainly waiting for a green light from Pluralsight.
 If you know all about commitment devices&#8201;&#8212;&#8201;perhaps you know one of
   <a
     href="http://blog.beeminder.com/competitors"
-    title="'Aiding and Abetting'"
+    title="&#39;Aiding and Abetting&#39;"
   >
     our competitors
   </a>
   like
   <a
     href="http://stickk.com"
-    title="'Take a contract out on yourself'"
+    title="&#39;Take a contract out on yourself&#39;"
   >
     StickK
   </a>
   or
   <a
     href="http://gympact.com"
-    title="'Incentivize your exercise'"
+    title="&#39;Incentivize your exercise&#39;"
   >
     GymPact
   </a>
@@ -23484,7 +23482,7 @@ That means that (1) if you&#8217;re a lifehacking data nerd you&#8217;re going t
 (2) you can make commitment contracts that are based on data and
   <a
     href="http://blog.beeminder.com/flexbind"
-    title="'Flexible Self-Control'"
+    title="&#39;Flexible Self-Control&#39;"
   >
     much more flexible
   </a>
@@ -23502,7 +23500,7 @@ We don&#8217;t even ask for a credit card until the first time you go off track.
 This is particularly true of activities that have a learning curve or some other
   <a
     href="http://blog.beeminder.com/dip"
-    title="Previous Beeminder blog post about overcoming 'the Dip', to use Seth Godin's term"
+    title="Previous Beeminder blog post about overcoming &#39;the Dip&#39;, to use Seth Godin&#39;s term"
   >
     kind of dip
   </a>
@@ -23577,7 +23575,7 @@ That allows you to commit to keep committing code or closing issues.
 Before that we added
   <a
     href="http://blog.beeminder.com/trello"
-    title="Trello is the best to-do manager ever. It's so good we use it as a full-blown issue tracker."
+    title="Trello is the best to-do manager ever. It&#39;s so good we use it as a full-blown issue tracker."
   >
     Trello integration
   </a>
@@ -23589,7 +23587,7 @@ which many programmers use to ensure inexorable forward progress on their projec
 so you can commit to steady progress on learning new
   <a
     href="http://yacinebaroudi.com/2013/03/coding-is-the-closest-thing-we-have-to-a-superpower-code-dot-org/"
-    title="'Coding is the closest thing we have to a superpower' -- Drew Huston, cofounder of Dropbox"
+    title="&#39;Coding is the closest thing we have to a superpower&#39; -- Drew Huston, cofounder of Dropbox"
   >
     superpowers
   </a>
@@ -23605,7 +23603,7 @@ Lessons are typically 6-8 sections of 3-10 questions each, so at least 5,000 poi
 If you want to be certain to complete, say, one lesson each week, then you&#8217;d enter 5000 in the
   <a
     href="https://beeminder.com/codeschool"
-    title="This takes you to the same place as the big button at the end of this post. So I guess this link is just for Google's benefit or something."
+    title="This takes you to the same place as the big button at the end of this post. So I guess this link is just for Google&#39;s benefit or something."
   >
     Beeminder Code School wizard
   </a>
@@ -23667,7 +23665,7 @@ The Beeminder email/sms bot (or smartphone app) will warn you if you&#8217;re ve
 If you&#8217;re into role-playing games,
   <a
     href="http://codecombat.com"
-    title="We've been talking to CodeCombat cofounder Nick Winter about a Beeminder integration and we plan to do it as soon as CodeCombat displays total points as a key metric as you work your way through the levels"
+    title="We&#39;ve been talking to CodeCombat cofounder Nick Winter about a Beeminder integration and we plan to do it as soon as CodeCombat displays total points as a key metric as you work your way through the levels"
   >
     CodeCombat
   </a>
@@ -23679,7 +23677,7 @@ But if you
   want to pull out all the stops&#8201;&#8212;&#8201;and if you can spend 12 weeks in New York City&#8201;&#8212;&#8201;we can personally vouch for the awesomeness of
   <a
     href="http://www.fullstackacademy.com/"
-    title="'Fullstack Academy is an immersive, full-time course in web development offered in New York City.'"
+    title="&#39;Fullstack Academy is an immersive, full-time course in web development offered in New York City.&#39;"
   >
     Fullstack Academy of Code
   </a>
@@ -24856,7 +24854,7 @@ Hover over the links for trash talk.
 is the oldest (launched in 2008) and, with the demise of Pact in 2017, Beeminder&#8217;s primary competitor.
     <a
       href="http://blog.beeminder.com/stickk/"
-      title="Actually a guest post from 2011, before Beeminder publicly launched. We're overdue for another post about StickK."
+      title="Actually a guest post from 2011, before Beeminder publicly launched. We&#39;re overdue for another post about StickK."
     >
       We&#8217;ve blogged about StickK before
     </a>
@@ -24866,7 +24864,7 @@ is the oldest (launched in 2008) and, with the demise of Pact in 2017, Beeminder
     <strong>
       <a
         href="http://beeminder.com"
-        title="That's us! Beeminder is reminders with a sting. Keep all your datapoints on a Yellow Brick Road to your goal or pay the price."
+        title="That&#39;s us! Beeminder is reminders with a sting. Keep all your datapoints on a Yellow Brick Road to your goal or pay the price."
       >
         Beeminder
       </a>
@@ -24887,7 +24885,7 @@ Beeminder
     <strong>
       <a
         href="http://dietbet.com"
-        title="We haven't tried this"
+        title="We haven&#39;t tried this"
       >
         DietBet
       </a>
@@ -24917,7 +24915,7 @@ facilitates weight-loss wagers among friends, i.e., you use it to set up a group
     <strong>
       <a
         href="http://writeordie.com"
-        title="They mean the 'write' part literally but not the 'die' part"
+        title="They mean the &#39;write&#39; part literally but not the &#39;die&#39; part"
       >
         Write or Die
       </a>
@@ -24947,7 +24945,7 @@ facilitates weight-loss wagers among friends, i.e., you use it to set up a group
     counts as a competitor now that they&#8217;ve added
     <a
       href="https://blog.beeminder.com/microcommitments/"
-      title="Beeminder guest post announcing Complice's commitment contract feature"
+      title="Beeminder guest post announcing Complice&#39;s commitment contract feature"
     >
       micro commitment contracts
     </a>
@@ -24957,7 +24955,7 @@ facilitates weight-loss wagers among friends, i.e., you use it to set up a group
     <strong>
       <a
         href="http://pavlok.com"
-        title="It's a bracelet that will shock you! As in, electric shock. For reals."
+        title="It&#39;s a bracelet that will shock you! As in, electric shock. For reals."
       >
         Pavlok
       </a>
@@ -25003,7 +25001,7 @@ doesn&#8217;t exactly count as a commitment device app (unless you count the thr
     <strong>
       <a
         href="https://play.google.com/store/apps/details?id=com.urbandroid.ddc"
-        title="Disables your phone for an amount of time you specify. There's roughly no way to reenable it once you commit."
+        title="Disables your phone for an amount of time you specify. There&#39;s roughly no way to reenable it once you commit."
       >
         Digital Detox
       </a>
@@ -25036,7 +25034,7 @@ Locking away snacks is the obvious use case but you can also lock away TV remote
     <strong>
       <a
         href="https://www.forfeit.app/"
-        title="iOS and Android; we've had this one in the 'On the Horizon' section for some time; they're now looking like a formidable competitor!"
+        title="iOS and Android; we&#39;ve had this one in the &#39;On the Horizon&#39; section for some time; they&#39;re now looking like a formidable competitor!"
       >
         Forfeit
       </a>
@@ -25106,7 +25104,7 @@ If you can vouch for any of these, let us know!
     <strong>
       <a
         href="https://www.squibler.io/dangerous-writing-prompt-app"
-        title="Don't stop writing or all progress will be lost"
+        title="Don&#39;t stop writing or all progress will be lost"
       >
         Squibler
       </a>
@@ -25159,7 +25157,7 @@ If you can vouch for any of these, let us know!
     <strong>
       <a
         href="https://commit.club/"
-        title="HT Aleks Jakulin. Another web3 thing that we haven't personally tried."
+        title="HT Aleks Jakulin. Another web3 thing that we haven&#39;t personally tried."
       >
         Commit Club
       </a>
@@ -25200,7 +25198,7 @@ If you can vouch for any of these, let us know!
     <strong>
       <a
         href="https://taskpact.org"
-        title="We're a little skeptical that their blog is not written by humans"
+        title="We&#39;re a little skeptical that their blog is not written by humans"
       >
         TaskPact
       </a>
@@ -25233,7 +25231,7 @@ pioneered what DietBet seems to be taking to the bank, though we&#8217;re not ce
     <strong>
       <a
         href="http://egonomicslab.com"
-        title="Name is Thomas Schelling's coinage"
+        title="Name is Thomas Schelling&#39;s coinage"
       >
         egOnomics Lab
       </a>
@@ -25244,7 +25242,7 @@ pioneered what DietBet seems to be taking to the bank, though we&#8217;re not ce
     <strong>
       <a
         href="https://gofuckingdoit.com/"
-        title="Go Fucking Do It. That's their name, not our admonition. We haven't tried this one, except extremely cursorily, not actually putting in a credit card."
+        title="Go Fucking Do It. That&#39;s their name, not our admonition. We haven&#39;t tried this one, except extremely cursorily, not actually putting in a credit card."
       >
         GFDI
       </a>
@@ -25263,7 +25261,7 @@ It&#8217;s vaguely similar to our own Beeminder spinoff, GTBee, described below.
     <strong>
       <a
         href="http://www.bettermeapp.co/"
-        title="We've given this a cursory trial and it seems to work, though it seems a little pointless that hitting Snooze shames you on Facebook while the equally easy to hit button, Clear, makes it just go away. But perhaps you're motivated to not just clear it because then you'll never wake up. We haven't tried the 'be at a specified place at a specified time' feature."
+        title="We&#39;ve given this a cursory trial and it seems to work, though it seems a little pointless that hitting Snooze shames you on Facebook while the equally easy to hit button, Clear, makes it just go away. But perhaps you&#39;re motivated to not just clear it because then you&#39;ll never wake up. We haven&#39;t tried the &#39;be at a specified place at a specified time&#39; feature."
       >
         BetterMe
       </a>
@@ -25306,7 +25304,7 @@ Anyway, we feel a little silly having something we made ourselves in the Maybe M
     <strong>
       <a
         href="http://lazyjar.com"
-        title="Nice and simple: Android and iOS, pick your weekly penalty, additional penalty for stopping before 6 months. We're not sure how it works for edge skaters who'll try to cram all their weekly steps into the last day!"
+        title="Nice and simple: Android and iOS, pick your weekly penalty, additional penalty for stopping before 6 months. We&#39;re not sure how it works for edge skaters who&#39;ll try to cram all their weekly steps into the last day!"
       >
         Lazy Jar
       </a>
@@ -25358,7 +25356,7 @@ penalizes you each week you don&#8217;t hit your Fitbit steps goal, and you&#821
     <strong>
       <a
         href="https://commitpool.com/"
-        title="We're kind of curmudgeonly about blockchain things but the founders seem great"
+        title="We&#39;re kind of curmudgeonly about blockchain things but the founders seem great"
       >
         CommitPool
       </a>
@@ -25426,7 +25424,7 @@ was an iPhone and Android app that automatically tracked when you went to the gy
 See also
     <a
       href="http://forum.beeminder.com/t/geofencing-location-based-goals/416"
-      title="Comment that started it off: GymPact doesn't have a yellow brick road or exponential pledge schedule or many of the other reasons Beeminder gets the underlying psychology / behavioral economics right. Not to mention GymPact has no API or friendly data export (not sure about that one -- google's not finding much though). GymPact fans should by all means jump to their defense!"
+      title="Comment that started it off: GymPact doesn&#39;t have a yellow brick road or exponential pledge schedule or many of the other reasons Beeminder gets the underlying psychology / behavioral economics right. Not to mention GymPact has no API or friendly data export (not sure about that one -- google&#39;s not finding much though). GymPact fans should by all means jump to their defense!"
     >
       discussion of Beeminder vs GymPact on the Beeminder forum
     </a>
@@ -25478,7 +25476,7 @@ Sadly, they closed their doors in 2013.
     <strong>
       <a
         href="http://runorelse.com"
-        title="We definitely can't trash talk this one when the creator, Fred Trotter, was so kind to us that he put a link to Beeminder on the placeholder page"
+        title="We definitely can&#39;t trash talk this one when the creator, Fred Trotter, was so kind to us that he put a link to Beeminder on the placeholder page"
       >
         Run Or Else
       </a>
@@ -25498,7 +25496,7 @@ Run Or Else went on (hopefully temporary (PS: ok it&#8217;s been 6 years but we&
     <strong>
       <a
         href="http://www.crunchbase.com/organization/healthrally"
-        title="This used to link to healthrally.com but that doesn't exist anymore so now it links to their Crunchbase profile"
+        title="This used to link to healthrally.com but that doesn&#39;t exist anymore so now it links to their Crunchbase profile"
       >
         HealthRally
       </a>
@@ -25533,7 +25531,7 @@ BetterMe (see main list above) now has this niche covered.
     <strong>
       <a
         href="http://lifehacker.com/betchyu-helps-you-reach-goals-by-asking-friends-to-bet-1604736548"
-        title="How Americans say 'bet you', get it? And we replaced the link to betchyu.com with a link to their LifeHacker coverage, which also mentions us as 'the data-heavy Beeminder'"
+        title="How Americans say &#39;bet you&#39;, get it? And we replaced the link to betchyu.com with a link to their LifeHacker coverage, which also mentions us as &#39;the data-heavy Beeminder&#39;"
       >
         Betchyu
       </a>
@@ -25545,7 +25543,7 @@ and had an Android and iPhone app for setting up bets with friends, similar to F
     <strong>
       <a
         href="http://lifehacker.com/5973684/fitsby-puts-real-money-on-the-line-to-make-sure-you-and-your-friends-go-to-the-gym"
-        title="We never tried this (and now we'll never be able to! oh regret!)"
+        title="We never tried this (and now we&#39;ll never be able to! oh regret!)"
       >
         Fitsby
       </a>
@@ -25556,7 +25554,7 @@ and had an Android and iPhone app for setting up bets with friends, similar to F
     <strong>
       <a
         href="http://www.thekitchensafe.com/pages/mysafe"
-        title="The Beeminder founders and others on the Bee Team have their existing device, the Kitchen Safe, which doesn't have any internet connectivity, just a timer, but is pretty brilliant. Also we saw them on Shark Tank and they were super charming. PS: We contributed to their Kickstarter for mySafe but won't be charged now that they canceled it."
+        title="The Beeminder founders and others on the Bee Team have their existing device, the Kitchen Safe, which doesn&#39;t have any internet connectivity, just a timer, but is pretty brilliant. Also we saw them on Shark Tank and they were super charming. PS: We contributed to their Kickstarter for mySafe but won&#39;t be charged now that they canceled it."
       >
         mySafe
       </a>
@@ -25716,7 +25714,7 @@ Anecdotally, that effect dwarfs any actual customer stealing that the competitor
   PS: We&#8217;ve learned of a newcomer about to launch on Monday, by the founder of the
   <a
     href="http://programmableself.com"
-    title="That's Fred Trotter. And we proudly view Beeminder as epitomizing the Programmable Self movement."
+    title="That&#39;s Fred Trotter. And we proudly view Beeminder as epitomizing the Programmable Self movement."
   >
     Programmable Self
   </a>
@@ -25753,7 +25751,7 @@ We&#8217;ll add them to this list then!
 UPDATE: Voila: the
     <a
       href="http://blog.beeminder.com/api"
-      title="We're very proud of API and even prouder that there's a community of people doing cool things with it!"
+      title="We&#39;re very proud of API and even prouder that there&#39;s a community of people doing cool things with it!"
     >
       Beeminder API
     </a>
@@ -27794,7 +27792,7 @@ This is all standing the test of time beautifully but one thing we&#8217;ve noti
 Classic example of the
   <a
     href="https://en.wikipedia.org/wiki/Illusion_of_transparency"
-    title="The illusion of transparency is a tendency for people to overestimate the degree to which their personal mental state is known by others. Another manifestation of the illusion of transparency (sometimes called the observer's illusion of transparency) is a tendency for people to overestimate how well they understand others' personal mental states. This cognitive bias is similar to theillusion of asymmetric insight."
+    title="The illusion of transparency is a tendency for people to overestimate the degree to which their personal mental state is known by others. Another manifestation of the illusion of transparency (sometimes called the observer&#39;s illusion of transparency) is a tendency for people to overestimate how well they understand others&#39; personal mental states. This cognitive bias is similar to theillusion of asymmetric insight."
   >
     illusion of transparency
   </a>
@@ -27959,7 +27957,7 @@ First question: What is this goal actually measuring?
 You could use
   <a
     href="http://blog.beeminder.com/gmailzero"
-    title="Beeminder's Gmail integration for beeminding your inbox"
+    title="Beeminder&#39;s Gmail integration for beeminding your inbox"
   >
     GmailZero
   </a>
@@ -27991,7 +27989,7 @@ You could use
   UPDATE: I really like
   <a
     href="http://draftin.com"
-    title="I also recommend Nathan's Draft -- like github for writers -- which is really beautifully done"
+    title="I also recommend Nathan&#39;s Draft -- like github for writers -- which is really beautifully done"
   >
     Nathan Kontny
   </a>
@@ -27999,7 +27997,7 @@ You could use
 advice to end every support email with &#8220;
   <a
     href="http://ninjasandrobots.com/does-that-help"
-    title="Summary: The conversations you have with users are gold. Try to elicit another response from them with a direct question instead of a lame-o 'let us know if you need further assistance.'"
+    title="Summary: The conversations you have with users are gold. Try to elicit another response from them with a direct question instead of a lame-o &#39;let us know if you need further assistance.&#39;"
   >
     Does that help?
   </a>
@@ -28651,7 +28649,7 @@ See for example
 "
 `;
 
-exports[`body > post deadlines hash 97c0016300cef8c87bf5b626a2119d79 1`] = `
+exports[`body > post deadlines hash 2d2c145f9f40c5f9492860aa6d2f52eb 1`] = `
 "
 <p>
   <img
@@ -28840,7 +28838,7 @@ That&#8217;s also why it&#8217;s tucked away in Terrifyingly Advanced Settings f
 </p>
 <ol>
   <li>
-    You can&#8217;t currently have a deadline before noon. 
+    You can&#8217;t currently have a deadline before noon.
 We&#8217;ll be changing this but for now the interface isn&#8217;t good enough to make clear the distinction between, say, a 6am earlybird deadline and a 6am night-owl deadline.
 I.e. all morning deadlines are of the night-owl variety.
   </li>
@@ -28853,9 +28851,9 @@ I.e. all morning deadlines are of the night-owl variety.
       There may be a more severe bug with the iPhone app that causes crashes. Let us know if you see that!
     </s>
     UPDATE: We&#8217;re back to just the iPhone app being confused about deadlines.
-    <strong>
+    <b>
       FINAL UPDATE: Both Android and iPhone apps understand arbitrary deadlines now.
-    </strong>
+    </b>
   </li>
   <li>
     Some autodata sources make this difficult by only giving us data at day granularity, which means we have to honor their notion of what the day boundary is. Or maybe we can work around it by adjusting the timezone in the external account. 
@@ -28863,9 +28861,9 @@ For now, you can only customize deadlines for non-autodata goals.
   </li>
   <li>
     Some of us are
-    <em>
+    <i>
       very
-    </em>
+    </i>
     used to the midnight/3am deadlines and we&#8217;re worried that people (including ourselves) may change deadlines and forget they&#8217;ve done so and accidentally derail. 
 So we&#8217;re working on various ways to make the deadlines more in your face. 
 And if you do accidentally derail because of this, definitely reply to the legit check to let us know!
@@ -33671,7 +33669,7 @@ Just be on that Yellow Brick Road tomorrow and you&#8217;re all good.
 "
 `;
 
-exports[`body > post easythings hash 825d1909001face3c05a2cd8920cac7e 1`] = `
+exports[`body > post easythings hash 5e8835389fd6ba73c862c17dcbf60d44 1`] = `
 "
 <p>
   <img
@@ -33953,11 +33951,13 @@ That&#8217;d be so embarrassing.
     >
       Beating Beeminder Burnout
     </a>
-    <br>
-    &nbsp;
-    <br>
   </li>
 </ol>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
 <h2>
   Footnotes
 </h2>
@@ -42013,7 +42013,7 @@ And stay on the Yellow Brick Road.
 "
 `;
 
-exports[`body > post glossary hash 7d4b16aba72de178d600b280311cbcc2 1`] = `
+exports[`body > post glossary hash 9aad05ce15ebf91b516dff952d0da086 1`] = `
 "
 <p>
   <img
@@ -42027,7 +42027,7 @@ exports[`body > post glossary hash 7d4b16aba72de178d600b280311cbcc2 1`] = `
   By popular demand, we&#8217;ve created a
   <a
     href="https://en.wikipedia.org/wiki/Jargon_File"
-    title="It's a thing from the early days of the internet"
+    title="It&#39;s a thing from the early days of the internet"
   >
     jargon file
   </a>
@@ -42376,7 +42376,7 @@ Newly created goals that you archive will also give you the option to blow them 
   and
   <a
     href="http://beeminder.com/zapier"
-    title="Pronounced to rhyme with 'happier'"
+    title="Pronounced to rhyme with &#39;happier&#39;"
   >
     Zapier
   </a>
@@ -42392,7 +42392,7 @@ The full list of autodata sources is on the Beeminder
   or at the bottom of
   <a
     href="http://beeminder.com/services"
-    title="Confusingly, this page also includes services you've authorized for signing in to Beeminder, which is not the same as autodata sources"
+    title="Confusingly, this page also includes services you&#39;ve authorized for signing in to Beeminder, which is not the same as autodata sources"
   >
     beeminder.com/services
   </a>
@@ -42488,9 +42488,9 @@ Later we moved in with Mobilitus /
 <p>
   Daily, weekly, monthly, or yearly emails that we (the founders) send to keep everyone in the loop on what&#8217;s new with Beeminder.
 By default you&#8217;ll get them monthly but you can change that by going to
-Your Account →
-Settings →
-Email →
+Your Account &rarr;
+Settings &rarr;
+Email &rarr;
 Beemail.
 If you&#8217;re reading our glossary then you&#8217;ll probably enjoy getting daily beemails (or at least weekly).
 </p>
@@ -42988,7 +42988,7 @@ As you
   , your pledge amount increases
   <a
     href="http://blog.beeminder.com/exponential/"
-    title="'The genius of the exponential pledge schedule'"
+    title="&#39;The genius of the exponential pledge schedule&#39;"
   >
     exponentially
   </a>
@@ -43066,7 +43066,7 @@ Another common example is beeminding reading a book by reporting your current pa
 If you report a zero then Beeminder treats that as the odometer getting reset (or starting a new book) and Beeminder keeps your cumulative total going.
   <a
     href="https://help.beeminder.com/article/68-odometer-goals"
-    title="This glossary predates our help docs and we're gradually adding links from here to there"
+    title="This glossary predates our help docs and we&#39;re gradually adding links from here to there"
   >
     Details in our help docs
   </a>
@@ -43184,7 +43184,7 @@ It has a name because, historically, it was something you had to specifically op
 (or yearly or
   <a
     href="http://blog.beeminder.com/fair"
-    title="Beeminder's exquisitely fair prepayment slider"
+    title="Beeminder&#39;s exquisitely fair prepayment slider"
   >
     anythingly
   </a>
@@ -43733,7 +43733,7 @@ This can be toggled under email settings.
 (See
   <a
     href="http://blog.beeminder.com/zeno"
-    title="Short version: If it's an beemergency day we send the reminder at the usual time (you can set this in goal settings) and then if you're still not back on the right side of the bright red line, we send another one half way from then until your deadline. Rinse, repeat."
+    title="Short version: If it&#39;s an beemergency day we send the reminder at the usual time (you can set this in goal settings) and then if you&#39;re still not back on the right side of the bright red line, we send another one half way from then until your deadline. Rinse, repeat."
   >
     Zeno Polling
   </a>
@@ -46051,14 +46051,14 @@ exports[`body > post habitrpg hash 002f3d0dd923c56e81ebe825d9cca37e 1`] = `
     <em>
       <a
         href="http://habitrpg.com"
-        title="RPG is for role-playing game and if you didn't know that I'm not sure what you're doing here"
+        title="RPG is for role-playing game and if you didn&#39;t know that I&#39;m not sure what you&#39;re doing here"
       >
         HabitRPG
       </a>
       and
       <a
         href="https://www.beeminder.com"
-        title="Beeminder is reminders with a sting and if you didn't know that, well, you probably came here from HabitRPG -- welcome!"
+        title="Beeminder is reminders with a sting and if you didn&#39;t know that, well, you probably came here from HabitRPG -- welcome!"
       >
         Beeminder
       </a>
@@ -46076,7 +46076,7 @@ so we&#8217;re very excited to finally be shipping it, thanks to the hacking ski
 and with assistance from
       <a
         href="http://oldgods.net/alys/"
-        title="Alys's homepage"
+        title="Alys&#39;s homepage"
       >
         Alice Harris
       </a>
@@ -46112,7 +46112,7 @@ Since this is Beeminder turf we&#8217;ll start with a quick explanation of what 
 (For the full Beeminder story, you could start with
   <a
     href="http://blog.beeminder.com/akrasia"
-    title="'How To Do What You Want: Akrasia and Self-Binding'"
+    title="&#39;How To Do What You Want: Akrasia and Self-Binding&#39;"
   >
     our inaugural blog post
   </a>
@@ -46235,7 +46235,7 @@ His
   UPDATE: More details on the
   <a
     href="http://habitrpg.wikia.com/wiki/Beeminder"
-    title="Still in flux as of this writing but there's an important section for a workaround if you want to be able to delete completed To-Dos"
+    title="Still in flux as of this writing but there&#39;s an important section for a workaround if you want to be able to delete completed To-Dos"
   >
     Beeminder page of the HabitRPG wiki
   </a>
@@ -47858,6 +47858,177 @@ But if you just scrolled down here impulsively, you&#8217;ll want to actually
     buy the Humble Bundle
   </a>
   first.
+</p>
+"
+`;
+
+exports[`body > post hyperrational hash 24320d72ed60fd298a41f105708a9b78 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    alt="Digital AI art with a person at an old-fashioned computer"
+    title="We'll let you play the 8-bit music in your head"
+    width="450px"
+    src="https://github.com/user-attachments/assets/b888ae86-0f80-4e6f-a2f7-a51fe823d19f"
+  >
+</p>
+<p>
+  Question from the internet: 
+What do we mean by calling Beeminder hyperrational goal tracking?
+  <a
+    class="footnote"
+    id="TAGLINES1"
+    href="#TAGLINES"
+  >
+    [1]
+  </a>
+</p>
+<p>
+  Before I give my answer, here&#8217;s a recent example from the inventor of Ruby on Rails using &#8220;hyperrational&#8221; in the context of sociopathic companies:
+  <a
+    class="footnote"
+    id="SOCIOPATHY1"
+    href="#SOCIOPATHY"
+  >
+    [2]
+  </a>
+</p>
+<blockquote>
+  <p>
+    [Fines on tech companies] put a price on criminal behavior, and if the gains from committing those crimes exceed the cost of the fines, there&#8217;s a base hyper-rational calculus that says the company should continue to break the law.
+  </p>
+</blockquote>
+<p>
+  So, hyperrational means excessively rational&#8201;&#8212;&#8201;so rational it&#8217;s irrational again?&#8201;&#8212;&#8201;and I&#8217;m kind of making fun of ourselves by applying it to Beeminder. 
+But also it&#8217;s because Beeminder in a sense fights irrationality with irrationality.
+  <a
+    href="https://www.youtube.com/watch?v=JP7o4uyJalM"
+    title="A recent talk I gave: Homo Economicus Wannabees. Homo economicus maximizes the expectation of its utility function, but that utility can and should have an altruistic component."
+  >
+    Homo economicus
+  </a>
+  would never opt in to a commitment device
+  <a
+    href="https://blog.beeminder.com/ownwords"
+    title="See item 1 about a strategic commitment device for the game of Chicken"
+  >
+    except
+  </a>
+  for a strategic game-theoretic reason involving other players. 
+A perfectly rational person is perfectly cooperative with
+  <em>
+    themself
+  </em>
+  . 
+A commitment device needlessly constrains your future actions. 
+Sacrificing optionality is costly! 
+But for humans suffering from hyperbolic discounting, it elegantly corrects for a different irrationality and leaves you more rational.
+</p>
+<p>
+  Happy now, Internet?
+</p>
+<p>
+  Last year I posed this as a quiz to the daily beemail subscribers, with a honey money bounty
+  <a
+    class="footnote"
+    id="HONEY1"
+    href="#HONEY"
+  >
+    [3]
+  </a>
+  for the best answers.
+I ended up giving the bounty to everyone who successfully distingished hyperrationality from meta-rationality (being rational about one&#8217;s irrationality&#8201;&#8212;&#8201;a key prerequisite for using Beeminder).
+</p>
+<p>
+  I was worried that some people might find it obtuse or pretentious but it turns out it&#8217;s one of the favorite
+  <a
+    href="https://beeminder.consider.it/#whats-the-best-beeminder-tagline-11"
+    title="We also have candidate autodata integrations there but we&#39;re migrating those to GitHub"
+  >
+    taglines in the collection
+  </a>
+  .
+Which may be more a commentary on the Beeminder
+  <a
+    href="https://blog.beeminder.com/nerds"
+    title="Strategy Memo: Beeminder Is For Nerds"
+  >
+    audience
+  </a>
+  than about any lack of obtuseness or pretentiousness.
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class="footnote"
+    id="TAGLINES"
+    href="#TAGLINES1"
+  >
+    [1]
+  </a>
+  It&#8217;s one of our many rotating taglines. 
+You can see them all and even vote for your favorites on our
+  <a
+    href="https://beeminder.consider.it/#whats-the-best-beeminder-tagline-11"
+    title="We also have candidate autodata integrations there but we&#39;re migrating those to GitHub"
+  >
+    Consider.it page
+  </a>
+  .
+Or hit refresh again and again on
+  <a
+    href="https://www.beeminder.com/home"
+    title="Technically this is beeminder.com/home because beeminder.com redirects to your dashboard if you&#39;re logged in. Actually that shows taglines as well, so, either way."
+  >
+    beeminder.com
+  </a>
+  .
+</p>
+<p>
+  <a
+    class="footnote"
+    id="SOCIOPATHY"
+    href="#SOCIOPATHY1"
+  >
+    [2]
+  </a>
+  Sociopathic companies is favorite topic of mine as well.
+See our posts on
+  <a
+    href="https://blog.bmndr.co/psychpricing"
+    title="Key argument against $99.99-style pricing: You’re exploiting the customer’s constrained attention with the goal of implanting an inaccurate perception of the actual price"
+  >
+    Psychological Pricing
+  </a>
+  and
+  <a
+    href="https://blog.bmndr.co/burglebug"
+    title="Beeminder bug classification system: Bitty Bugs, Baneful Bugs, Bum-steer Bugs, Bamboozle Bugs, Burgle Bugs"
+  >
+    The Burgle Bug Fairness Principle
+  </a>
+  for my ranting.
+</p>
+<p>
+  <a
+    class="footnote"
+    id="HONEY"
+    href="#HONEY1"
+  >
+    [3]
+  </a>
+  Actually this was shortly before officially introducing honey money and it was still just &#8220;premium credit&#8221; at that time.
+Now
+  <a
+    href="https://blog.beeminder.com/honeygrams"
+    title="Introducing Honeygrams (and Honey Money). Also includes our 12 reasons why we decided to introduce Honey Money in the first place."
+  >
+    honey money
+  </a>
+  can be used as derail credit as well.
 </p>
 "
 `;
@@ -61727,7 +61898,7 @@ exports[`body > post newbees hash 4554f371f5a050834df968c4506b6e05 1`] = `
       For the really basic basics, start with our
       <a
         href="http://www.youtube.com/watch?v=jB62AyZ6gHk"
-        title="Yes, these are the founders' children"
+        title="Yes, these are the founders&#39; children"
       >
         Explain Like I&#8217;m 5
       </a>
@@ -61879,7 +62050,7 @@ For example, instead of having a Do Less goal where you are trying to minimize h
   (
   <a
     href="http://blog.beeminder.com/less/"
-    title="We have a whole 'nother blog post about this"
+    title="We have a whole &#39;nother blog post about this"
   >
     PPRs
   </a>
@@ -61987,7 +62158,7 @@ If they are orange you will cross the red line tomorrow if you do nothing.
 If your datapoints are blue you have two days of slack before an
   <a
     href="https://blog.beeminder.com/glossary#eep"
-    title="Glossary entry for 'eep day', aka 'beemergency'"
+    title="Glossary entry for &#39;eep day&#39;, aka &#39;beemergency&#39;"
   >
     emergency day
   </a>
@@ -62050,7 +62221,7 @@ You would enter:
 </p>
 <pre>
   <code>
-    8 150 "birthday cake"
+    8 150 &quot;birthday cake&quot;
   </code>
 </pre>
 <p>
@@ -62070,8 +62241,8 @@ So let&#8217;s say that you want to enter in that you watched 3 Dr. Who episodes
 </p>
 <pre>
   <code>
-    ^^ 1 "Transfinite Train Theory"
-^^ 1 "Owl Triangulation on the Kolsky Peninsula"
+    ^^ 1 &quot;Transfinite Train Theory&quot;
+^^ 1 &quot;Owl Triangulation on the Kolsky Peninsula&quot;
   </code>
 </pre>
 <p>
@@ -62355,7 +62526,7 @@ and
   <li>
     <a
       href="https://blog.beeminder.com/chunky/"
-      title="Wondering about goals where you can't do something daily?"
+      title="Wondering about goals where you can&#39;t do something daily?"
     >
       It&#8217;s Chunky Time!
     </a>
@@ -62376,7 +62547,7 @@ and
   <li>
     <a
       href="https://blog.beeminder.com/beenamer"
-      title="Fun fact: Beeminder was originally called 'Kibotzer' (the kibitzing robot)"
+      title="Fun fact: Beeminder was originally called &#39;Kibotzer&#39; (the kibitzing robot)"
     >
       Why the name Beeminder?
     </a>
@@ -62384,7 +62555,7 @@ and
   <li>
     <a
       href="https://blog.beeminder.com/competitors"
-      title="'Aiding and Abetting'"
+      title="&#39;Aiding and Abetting&#39;"
     >
       Beeminder competitors
     </a>
@@ -62392,7 +62563,7 @@ and
   <li>
     <a
       href="https://blog.beeminder.com/glossary"
-      title="It's a little nutty that we need a glossary, but, well, we do."
+      title="It&#39;s a little nutty that we need a glossary, but, well, we do."
     >
       The Beeminder Glossary
     </a>
@@ -62413,7 +62584,7 @@ and
   <li>
     <a
       href="https://blog.beeminder.com/uvi"
-      title="Beeminder wouldn't exist if it weren't for beeminding this aspect of Beeminder"
+      title="Beeminder wouldn&#39;t exist if it weren&#39;t for beeminding this aspect of Beeminder"
     >
       1000 Days of User-Visible Improvements
     </a>
@@ -68780,7 +68951,7 @@ I&#8217;m sure it made sense at the time!
 "
 `;
 
-exports[`body > post practice hash 579ee86f8bd08eb9c5df915239a689e7 1`] = `
+exports[`body > post practice hash a14173cc15fde4e421e78c169489a1e3 1`] = `
 "
 <p>
   <img
@@ -69631,7 +69802,7 @@ If you don&#8217;t want to be limited in that way, that brings us to our big ann
 <p>
   <a
     href="http://j2jenkins.com/2013/04/01/choosing-to-invest-in-beeminder/"
-    title="Blog post by one of our all-time favorite Beeminders making the don't-be-a-free-user argument as it relates to Beeminder"
+    title="Blog post by one of our all-time favorite Beeminders making the don&#39;t-be-a-free-user argument as it relates to Beeminder"
   >
     Believe it or not
   </a>
@@ -69727,7 +69898,7 @@ We&#8217;ve always said that Beeminder is entirely free if you never fall off yo
 Some are dirt simple suggestions or pointers to
   <a
     href="http://lifehacker.com/5895140/10-stubborn-exercise-myths-that-wont-die-debunked-by-science"
-    title="Exercise myths that won't die, debunked by science"
+    title="Exercise myths that won&#39;t die, debunked by science"
   >
     Lifehacker articles
   </a>
@@ -69805,14 +69976,14 @@ Even for power users it&#8217;s rare to need to do these things, but here&#8217;
   When you hit
   <a
     href="http://blog.beeminder.com/glossary/#retroratchet"
-    title="It's a link to our glossary but in case you're too lazy to click it we'll paste the whole entry right here: Changing the yellow brick road within the akrasia horizon, for the purposes of removing excess safety buffer. This feature is in flux but the current non-premium version works as follows: Hitting retroratchet adjusts your yellow brick road such that your current datapoint is on the centerline. This means you’ll have 1 day of safety buffer, and the countdown will read 2 days and some number of hours."
+    title="It&#39;s a link to our glossary but in case you&#39;re too lazy to click it we&#39;ll paste the whole entry right here: Changing the yellow brick road within the akrasia horizon, for the purposes of removing excess safety buffer. This feature is in flux but the current non-premium version works as follows: Hitting retroratchet adjusts your yellow brick road such that your current datapoint is on the centerline. This means you’ll have 1 day of safety buffer, and the countdown will read 2 days and some number of hours."
   >
     retroratchet
   </a>
   you can choose how much safety buffer you want to be left with, including making it an
   <a
     href="http://blog.beeminder.com/glossary/#e"
-    title="Another glossary link though this one is fairly self-explanatory. An emergency day, or eep day, or beemergency, is when your datapoint is in the red and you'll derail at midnight if you don't get it back on the yellow brick road."
+    title="Another glossary link though this one is fairly self-explanatory. An emergency day, or eep day, or beemergency, is when your datapoint is in the red and you&#39;ll derail at midnight if you don&#39;t get it back on the yellow brick road."
   >
     emergency day
   </a>
@@ -69976,7 +70147,7 @@ The short version is that if you stop using Beeminder, we automatically stop cha
 <h2>
   <a
     href="http://blog.beeminder.com/fair"
-    title="Short version: If you offer users a discount for paying yearly instead of monthly, why not generalize that and give them a slider to choose how often they'll pay. Every 2 months, every 6 months, every year, every 2 years, every 5 years, ... You can even let them pay once for a lifetime subscription. It's pretty great (if your users happen to be huge nerds)!"
+    title="Short version: If you offer users a discount for paying yearly instead of monthly, why not generalize that and give them a slider to choose how often they&#39;ll pay. Every 2 months, every 6 months, every year, every 2 years, every 5 years, ... You can even let them pay once for a lifetime subscription. It&#39;s pretty great (if your users happen to be huge nerds)!"
   >
     Exquisitely Fair Pre-Pay Discounts
   </a>
@@ -76237,7 +76408,7 @@ With more than 5 million people using our apps I feel we have the responsibility
   app helps people to pray the
   <a
     href="http://en.wikipedia.org/wiki/Rosary"
-    title="For non-Catholics who may not know, the rosary is a traditional Catholic prayer composed of five sets of one Lord's Prayer and then ten Hail Marys"
+    title="For non-Catholics who may not know, the rosary is a traditional Catholic prayer composed of five sets of one Lord&#39;s Prayer and then ten Hail Marys"
   >
     Rosary
   </a>
@@ -76289,14 +76460,14 @@ Leah has used Beeminder for multiple purposes from
   on time to
   <a
     href="http://www.patheos.com/blogs/unequallyyoked/2014/11/heres-what-i-was-beeminding-this-winterspring.html"
-    title="Leah's blog post about beeminding her book writing"
+    title="Leah&#39;s blog post about beeminding her book writing"
   >
     writing
   </a>
   a
   <a
     href="http://www.patheos.com/blogs/unequallyyoked/2014/11/ive-written-a-book.html"
-    title="'Being a convert and learning to pray is a little bit like studying a foreign language. The trouble is that it’s a lot like studying a foreign language *in* the new language.'"
+    title="&#39;Being a convert and learning to pray is a little bit like studying a foreign language. The trouble is that it’s a lot like studying a foreign language *in* the new language.&#39;"
   >
     book
   </a>
@@ -76336,7 +76507,7 @@ I’m a convert (&#8230;)
 It&#8217;s the way, with variations, a fair share of people successfully lead a life of prayer.
   <a
     href="http://www.usccb.org/bible/romans/7"
-    title="'For I know that good does not dwell in me, that is, in my flesh. The willing is ready at hand, but doing the good is not. For I do not do the good I want, but I do the evil I do not want.'"
+    title="&#39;For I know that good does not dwell in me, that is, in my flesh. The willing is ready at hand, but doing the good is not. For I do not do the good I want, but I do the evil I do not want.&#39;"
   >
     Romans 7:18-19
   </a>
@@ -76358,7 +76529,7 @@ It&#8217;s the way, with variations, a fair share of people successfully lead a 
   A model of motivation I first
   <a
     href="http://www.iese.edu/es/files/IRCO-CrossCultural-motivation_tcm5-6119.pdf"
-    title="The concept comes from 'Perez-Lopez, J.A., 1991'"
+    title="The concept comes from &#39;Perez-Lopez, J.A., 1991&#39;"
   >
     heard from IESE Business School
   </a>
@@ -76411,7 +76582,7 @@ Therefore, in this layered framework, each level supports the adjacent in order 
   Inserting a poetic touch, I cannot resist the temptation to quote
   <a
     href="http://en.wikipedia.org/wiki/Henri_Guillaumet"
-    title="He walked for a week over three mountain passes. Though tempted to give up, he persisted while thinking of his wife, Noëlle, until June 19 at dawn when he was rescued by a 14-year-old boy named Juan García. He reached a village whose inhabitants could not believe his story. This exploit made him stand out among the 'stars' of Aéropostale."
+    title="He walked for a week over three mountain passes. Though tempted to give up, he persisted while thinking of his wife, Noëlle, until June 19 at dawn when he was rescued by a 14-year-old boy named Juan García. He reached a village whose inhabitants could not believe his story. This exploit made him stand out among the &#39;stars&#39; of Aéropostale."
   >
     Henri Guillaumet
   </a>
@@ -76519,7 +76690,7 @@ your Beeminder goal and you&#8217;ll see a popup confirmation.
   &#8212;&#8212;&#8212; Non-Nerds:
   <a
     href="#thanks"
-    title="Forge on only if you have Donald Knuth's blessings"
+    title="Forge on only if you have Donald Knuth&#39;s blessings"
   >
     Jump To The End
   </a>
@@ -76540,7 +76711,7 @@ your Beeminder goal and you&#8217;ll see a popup confirmation.
   The
   <a
     href="https://www.beeminder.com/api"
-    title="Beeminder REST API. It's very easy to use!"
+    title="Beeminder REST API. It&#39;s very easy to use!"
   >
     Beeminder API documentation
   </a>
@@ -76555,18 +76726,18 @@ In the iOS SDK it&#8217;s easy to do that without any external library:
 </p>
 <pre>
   <code>
-    static NSString * BackendBaseURL = @"https://www.beeminder.com/";
-static NSString * OAuth2Path     = @"apps/authorize";
-static NSString * ClientId       = @"client_id=mysupersecretwithbeeminder";
-static NSString * RedirectURI    = @"redirect_uri=iterco://beeminder-callback";
-static NSString * ResponseType   = @"response_type=token";
+    static NSString * BackendBaseURL = @&quot;https://www.beeminder.com/&quot;;
+static NSString * OAuth2Path     = @&quot;apps/authorize&quot;;
+static NSString * ClientId       = @&quot;client_id=mysupersecretwithbeeminder&quot;;
+static NSString * RedirectURI    = @&quot;redirect_uri=iterco://beeminder-callback&quot;;
+static NSString * ResponseType   = @&quot;response_type=token&quot;;
 
 - (void) beginOAuth
 {
   if([[NSUserDefaults standardUserDefaults]
-      stringForKey:@"beeminder_token"] == nil)
+      stringForKey:@&quot;beeminder_token&quot;] == nil)
   {
-    NSString * auth = [BackendBaseURL stringByAppendingFormat: @"%@?%@&amp;%@&amp;%@",
+    NSString * auth = [BackendBaseURL stringByAppendingFormat: @&quot;%@?%@&amp;%@&amp;%@&quot;,
                                                                OAuth2Path,
                                                                ClientId,
                                                                RedirectURI,
@@ -76606,20 +76777,20 @@ No login credentials are entered in your app.
   <code>
     -(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-  NSLog(@"%@",url);
-  if([url.host isEqualToString:@"beeminder-callback"]) {
-    NSArray * comp = [url.query componentsSeparatedByString:@"&amp;"];
+  NSLog(@&quot;%@&quot;,url);
+  if([url.host isEqualToString:@&quot;beeminder-callback&quot;]) {
+    NSArray * comp = [url.query componentsSeparatedByString:@&quot;&amp;&quot;];
     for(NSString * st in comp) {
-      NSArray * twoComp = [st componentsSeparatedByString:@"="];
+      NSArray * twoComp = [st componentsSeparatedByString:@&quot;=&quot;];
       if(twoComp.count == 2) {
-        if([twoComp[0] isEqualToString:@"access_token"]) {
+        if([twoComp[0] isEqualToString:@&quot;access_token&quot;]) {
           [[NSUserDefaults standardUserDefaults] setObject:twoComp[1] 
-                                                 forKey:@"beeminder_token"];
+                                                 forKey:@&quot;beeminder_token&quot;];
           [[NSUserDefaults standardUserDefaults] synchronize];
         } else 
-        if([twoComp[1] isEqualToString:@"username"]) {
+        if([twoComp[1] isEqualToString:@&quot;username&quot;]) {
           [[NSUserDefaults standardUserDefaults] setObject:twoComp[1] 
-                                                 forKey:@"beeminder_username"];
+                                                 forKey:@&quot;beeminder_username&quot;];
           [[NSUserDefaults standardUserDefaults] synchronize]; 
         }
       }
@@ -76655,8 +76826,8 @@ No login credentials are entered in your app.
   id failure = ^(AFHTTPRequestOperation *operation, NSError *error) {
     completion(NO, [operation.response statusCode]);
   };
-  NSDictionary *params = @{ @"access_token" : [self getToken] };
-  [_client getPath:@"/api/v1/users/me/goals.json"
+  NSDictionary *params = @{ @&quot;access_token&quot; : [self getToken] };
+  [_client getPath:@&quot;/api/v1/users/me/goals.json&quot;
            parameters:params success:success failure:failure];
 }
   </code>
@@ -76671,7 +76842,7 @@ No login credentials are entered in your app.
 <pre>
   <code>
     _client = [AFHTTPClient clientWithBaseURL:
-    [NSURL URLWithString:@"https://www.beeminder.com/"]];
+	[NSURL URLWithString:@&quot;https://www.beeminder.com/&quot;]];
 [_client registerHTTPOperationClass:[AFJSONRequestOperation class]];
 [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
   </code>
@@ -76693,13 +76864,13 @@ No login credentials are entered in your app.
     completion(NO, [operation.response statusCode]);
   };
   NSDictionary *params = @{
-    @"access_token": [self getToken],
-    @"comment": @"Added by Electronic Rosary by Netfilter",
-    @"value": @"1"
+    @&quot;access_token&quot;: [self getToken],
+    @&quot;comment&quot;: @&quot;Added by Electronic Rosary by Netfilter&quot;,
+    @&quot;value&quot;: @&quot;1&quot;
   };
 
   NSString * path = [NSString stringWithFormat:
-                     @"/api/v1/users/me/goals/%@/datapoints.json",
+                     @&quot;/api/v1/users/me/goals/%@/datapoints.json&quot;,
                      [self getSelectedGoal]];
   [_client postPath:path parameters:params success:success failure:failure];
 }
@@ -76789,7 +76960,7 @@ In his spare time he reads, plays soccer, and organizes
     sometimes involving
     <a
       href="http://nobodyreadit.wordpress.com/2014/09/10/improvised-medicine-personal-recollections/"
-      title="PPJ's placeholder blog"
+      title="PPJ&#39;s placeholder blog"
     >
       improvised medicine
     </a>
@@ -84714,7 +84885,7 @@ exports[`body > post survivor hash 58e97db710b27304536f5e25d6ded3aa 1`] = `
   January 1st being a culturally significant temporal landmark, it&#8217;s not as silly as it
   <a
     href="https://blog.beeminder.com/should"
-    title="Beeminder blog post in which we suggest that you shouldn't resolve to do things"
+    title="Beeminder blog post in which we suggest that you shouldn&#39;t resolve to do things"
   >
     may seem
   </a>
@@ -84730,7 +84901,7 @@ We&#8217;d go so far as to say it&#8217;s those pooh-poohing New Year&#8217;s re
 (including our
   <a
     href="https://blog.beeminder.com/dip"
-    title="Another Beeminder blog post, that starts with the sentence 'New Years Resolutions are ridiculous'"
+    title="Another Beeminder blog post, that starts with the sentence &#39;New Years Resolutions are ridiculous&#39;"
   >
     past selves
   </a>
@@ -84900,7 +85071,7 @@ There will be physical prizes, though, and some of those prizes will be uniquely
 &#8220;
   <a
     href="https://blog.beeminder.com/achilles/"
-    title="Why is it in that post? Because it was discussing new year's resolutions"
+    title="Why is it in that post? Because it was discussing new year&#39;s resolutions"
   >
     Achilles Heel
   </a>
@@ -84916,7 +85087,7 @@ There will be physical prizes, though, and some of those prizes will be uniquely
     Image credit:
     <a
       href="https://petalsandwings.blog/2018/01/28/winter-emergency-feeding/"
-      title="It's about literal beekeeping!"
+      title="It&#39;s about literal beekeeping!"
     >
       Petals and Wings
     </a>
@@ -84925,7 +85096,7 @@ There will be physical prizes, though, and some of those prizes will be uniquely
 "
 `;
 
-exports[`body > post swifts hash e2f2cf3fa1e9e804b1ec26f3c4b9c51d 1`] = `
+exports[`body > post swifts hash 7548463072336bf0dd8064b32aa0627c 1`] = `
 "
 <p>
   <img
@@ -85026,19 +85197,19 @@ And vice versa, if you&#8217;re attending Quantified Self and have the merest cu
       href="http://rescuetime.com"
       title="RescueTime is amazing; highly recommended"
     >
-      RescueTime
+      Rescuetime
     </a>
     ,
     <a
-      href="http://eternalist.io/landing/"
-      title="self-writing journal"
+      href="https://forum.quantifiedself.com/t/try-eternalist-the-worlds-first-self-writing-journal/7192"
+      title="Self-writing journal. UPDATE: link died, now pointing to a QS forum post about it for posterity"
     >
       Eternalist
     </a>
     , and
     <a
       href="http://www.mymee.com/"
-      title="data-driven coaching"
+      title="Data-driven coaching. UPDATE: not sure if what&#39;s here as of 2024 is the same company"
     >
       Mymee
     </a>
@@ -92651,7 +92822,7 @@ exports[`body > post uvi hash e6998306d2b96fca39902c3b47a03a71 1`] = `
 We&#8217;ve made 1000 user-visible improvements (UVIs) to
   <a
     href="http://beeminder.com"
-    title="This article is aimed at fellow startups who might not know what Beeminder is so I'll tell you right here! It's goal tracking with teeth -- you put in your credit card and agree to get charged if you don't keep all your datapoints on a Yellow Brick Road that we draw on your graph."
+    title="This article is aimed at fellow startups who might not know what Beeminder is so I&#39;ll tell you right here! It&#39;s goal tracking with teeth -- you put in your credit card and agree to get charged if you don&#39;t keep all your datapoints on a Yellow Brick Road that we draw on your graph."
   >
     Beeminder
   </a>
@@ -92820,7 +92991,7 @@ When we originally
     Tweets from our main twitter account (
     <a
       href="http://twitter.com/bmndr"
-      title="@bmndr is Beeminder's main Twitter account and we use @beemuvi to tweet our User-Visible Improvements"
+      title="@bmndr is Beeminder&#39;s main Twitter account and we use @beemuvi to tweet our User-Visible Improvements"
     >
       @bmndr
     </a>
@@ -92875,7 +93046,7 @@ We would definitely have paid if someone had.
   More recently, we deployed our daily UVI and even publicly tweeted it, but forgot to update the actual graph (which we still do manually, but we recommend you set up an
   <a
     href="https://ifttt.com/recipes/86058"
-    title="If you've been living under a rock and don't know then let me tell you: IFTTT = If This Then That. It's super useful for automating things on the internet, with no hacking required. This is an example recipe for sending a +1 to a Beeminder graph whenever a new RSS item appears at some feed URL."
+    title="If you&#39;ve been living under a rock and don&#39;t know then let me tell you: IFTTT = If This Then That. It&#39;s super useful for automating things on the internet, with no hacking required. This is an example recipe for sending a +1 to a Beeminder graph whenever a new RSS item appears at some feed URL."
   >
     IFTTT recipe
   </a>
@@ -92988,7 +93159,7 @@ Another $1000 is on the line with nary a day&#8217;s respite!
   who won our $1000:
   <a
     href="http://blog.beeminder.com/bikes"
-    title="Spoiler: He donated all the money to charity! And note the part about not paying off some debt -- it's clearly not that $1000 is pocket change to him..."
+    title="Spoiler: He donated all the money to charity! And note the part about not paying off some debt -- it&#39;s clearly not that $1000 is pocket change to him..."
   >
     blog.beeminder.com/bikes
   </a>
