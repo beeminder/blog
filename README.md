@@ -1,3 +1,21 @@
+## Quick Links
+
+- [ZOMBIES!](https://github.com/beeminder/blog/issues?q=is:open+is:issue+label:ZOM "Open gissues labeled ZOM") :zombie:
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+  [Undotted i's](https://github.com/beeminder/blog/issues?q=is:issue+is:closed+-label:zap+-label:nix+-label:cnr+-label:dup+-label:pub "Gissues that are closed but don't have any of the resolution labels: zap, nix, cnr, dup, or pub") :eye:
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+  [Active dev](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:DEV+-label:ZzZ "Open dev gissues NOT labeled ZzZ") :bug:
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+  [Snoozed](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:ZzZ "Open gissues labeled ZzZ") :zzz:
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+  [Closed dev](https://github.com/beeminder/blog/issues?q=is:issue+is:closed+label:DEV "Closed dev gissues") :heavy_check_mark:
+- Freshgishing ([blog post](https://blog.beeminder.com/freshen/ "Backlog Freshening")):
+  &nbsp;&nbsp;
+  [Bee](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ+assignee:bsoule "Open non-snoozed gissues, oldest first, assigned to Bethany")
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+  [Danny/all](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ "Open non-snoozed gissues, oldest first, assigned to anyone (what Danny uses for freshgishing)") &nbsp;&nbsp; :soap:
+- [Quickie UVIs](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:UVI+label:PEA+-label:SKY+-label:ADO "Open + UVI + PEA - SKY - ADO = open peasy non-sky-pie spec'd UVIs") :sweat_smile:
+
 ## Blog Post Ideas
 
 Ideas for new blog posts live here as gissues.
@@ -75,24 +93,6 @@ by a hash of its source.
 ## Production
 
 Commits merged to `master` are automatically deployed via Render.com.
-
-## Quick Links
-
-- [ZOMBIES!](https://github.com/beeminder/blog/issues?q=is:open+is:issue+label:ZOM "Open gissues labeled ZOM") :zombie:
-  &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Undotted i's](https://github.com/beeminder/blog/issues?q=is:issue+is:closed+-label:zap+-label:nix+-label:cnr+-label:dup+-label:pub "Gissues that are closed but don't have any of the resolution labels: zap, nix, cnr, dup, or pub") :eye:
-  &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Active dev](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:DEV+-label:ZzZ "Open dev gissues NOT labeled ZzZ") :bug:
-  &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Snoozed](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:ZzZ "Open gissues labeled ZzZ") :zzz:
-  &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Closed dev](https://github.com/beeminder/blog/issues?q=is:issue+is:closed+label:DEV "Closed dev gissues") :heavy_check_mark:
-- Freshgishing ([blog post](https://blog.beeminder.com/freshen/ "Backlog Freshening")):
-  &nbsp;&nbsp;
-  [Bee](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ+assignee:bsoule "Open non-snoozed gissues, oldest first, assigned to Bethany")
-  &nbsp;&nbsp; | &nbsp;&nbsp;
-  [Danny/all](https://github.com/beeminder/blog/issues?q=is:issue+is:open+sort:updated-asc+-label:ZzZ "Open non-snoozed gissues, oldest first, assigned to anyone (what Danny uses for freshgishing)") &nbsp;&nbsp; :soap:
-- [Quickie UVIs](https://github.com/beeminder/blog/issues?q=is:issue+is:open+label:UVI+label:PEA+-label:SKY+-label:ADO "Open + UVI + PEA - SKY - ADO = open peasy non-sky-pie spec'd UVIs") :sweat_smile:
 
 [1]: https://quickref.me/yaml "Standard YAML quick reference"
 [2]: http://doc.bmndr.co/ "AKA ExPost"
