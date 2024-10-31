@@ -7199,5 +7199,15 @@
 "status": "publish",
 "tags": ["bee-all", "philosophy", "rationality"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "fracblog",
+"disqus_id": "fracblog",
+"source": "doc.bmndr.co/fracblog",
+"redirects": [],
+"date": "2024-10-30",
+"author": "dreeves",
+"status": "publish",
+"tags": ["bee-all", "akrasia", "rationality", "case studies", "navel-gazing", "tips"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
