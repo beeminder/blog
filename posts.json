@@ -7209,5 +7209,15 @@
 "status": "publish",
 "tags": ["bee-all", "akrasia", "rationality", "case studies", "navel-gazing", "tips"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "uncle",
+"disqus_id": "uncle",
+"source": "doc.bmndr.co/uncle",
+"redirects": [],
+"date": "2024-12-02",
+"author": "dreeves",
+"status": "draft",
+"tags": ["bee-all", "akrasia", "rationality", "feature announcements", "tips", "akrasia horizon"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
