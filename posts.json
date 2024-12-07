@@ -7219,5 +7219,15 @@
 "status": "publish",
 "tags": ["bee-all", "akrasia", "rationality", "feature announcements", "tips", "akrasia horizon"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "curlminder",
+"disqus_id": "curlminder",
+"source": "doc.bmndr.co/curlminder",
+"redirects": [],
+"date": "2024-12-06",
+"author": "dreeves",
+"status": "draft",
+"tags": ["bee-all", "akrasia", "integrations", "rationality", "feature announcements", "tips", "nerdery"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
