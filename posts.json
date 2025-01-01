@@ -7229,5 +7229,15 @@
 "status": "publish",
 "tags": ["bee-all", "akrasia", "integrations", "rationality", "feature announcements", "tips", "nerdery"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "melzaminder",
+"disqus_id": "melzaminder",
+"source": "doc.bmndr.co/melzaminder",
+"redirects": [],
+"date": "2025-01-01",
+"author": "melza",
+"status": "publish",
+"tags": ["bee-all", "fitness", "diet", "weight loss"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
