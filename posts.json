@@ -7237,7 +7237,7 @@
 "date": "2025-01-01",
 "author": "melza",
 "status": "publish",
-"tags": ["bee-all", "fitness", "diet", "weight loss"],
+"tags": ["bee-all", "fitness", "diet", "weight loss", "melzaminder"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
 },{
 "slug": "whyweigh",
@@ -7247,7 +7247,17 @@
 "date": "2025-01-14",
 "author": "dreev",
 "status": "publish",
-"tags": ["bee-all", "fitness", "diet", "weight loss"],
+"tags": ["bee-all", "fitness", "diet", "weight loss", "melzaminder"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "proxymetrics",
+"disqus_id": "proxymetrics",
+"source": "doc.bmndr.co/proxymetrics",
+"redirects": [],
+"date": "2025-01-29",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "fitness", "rationality", "melzaminder", "case studies"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
