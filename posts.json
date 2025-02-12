@@ -7259,5 +7259,15 @@
 "status": "publish",
 "tags": ["bee-all", "fitness", "rationality", "melzaminder", "case studies"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "fatebook",
+"disqus_id": "fatebook",
+"source": "doc.bmndr.co/fatebook",
+"redirects": [],
+"date": "2025-02-11",
+"author": "dreev",
+"status": "draft",
+"tags": ["bee-all", "rationality", "integrations", "prediction", "prediction markets", "startups"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
