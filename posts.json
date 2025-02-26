@@ -7269,5 +7269,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "integrations", "prediction", "startups"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "homeostasis",
+"disqus_id": "homeostasis",
+"source": "doc.bmndr.co/homeostasis",
+"redirects": [],
+"date": "2025-02-25",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "fitness", "diet", "weight loss", "melzaminder", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
