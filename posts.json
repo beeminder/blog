@@ -7299,5 +7299,15 @@
 "status": "publish",
 "tags": ["bee-all", "forum", "community", "writing", "rationality", "nerdery"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "brigade",
+"disqus_id": "brigade",
+"source": "doc.bmndr.co/brigade",
+"redirects": [],
+"date": "2025-04-09",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "books", "reading", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
