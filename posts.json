@@ -7309,5 +7309,15 @@
 "status": "publish",
 "tags": ["bee-all", "books", "reading", "rationality"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "maayot",
+"disqus_id": "maayot",
+"source": "doc.bmndr.co/maayot",
+"redirects": [],
+"date": "2025-04-22",
+"author": "Maayot",
+"status": "publish",
+"tags": ["bee-all", "integrations", "language learning", "guest posts", "new features", "startups"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
