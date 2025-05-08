@@ -7319,5 +7319,15 @@
 "status": "publish",
 "tags": ["bee-all", "integrations", "language learning", "guest posts", "new features", "startups"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "optivate",
+"disqus_id": "optivate",
+"source": "doc.bmndr.co/optivate",
+"redirects": [],
+"date": "2025-05-07",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "akrasia", "navel-gazing", "math"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
