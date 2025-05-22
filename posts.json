@@ -7329,5 +7329,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "akrasia", "navel-gazing", "math"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "rolodex",
+"disqus_id": "rolodex",
+"source": "doc.bmndr.co/rolodex",
+"redirects": [],
+"date": "2025-05-21",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "akrasia", "case studies", "social graph"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
