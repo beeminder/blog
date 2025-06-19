@@ -7349,5 +7349,15 @@
 "status": "publish",
 "tags": ["bee-all", "akrasia", "integrations", "productivity porn", "rationality", "startups", "apps"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "freshenable",
+"disqus_id": "freshenable",
+"source": "doc.bmndr.co/freshenable",
+"redirects": [],
+"date": "2025-06-18",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "akrasia", "case studies", "productivity porn"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
