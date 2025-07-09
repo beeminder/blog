@@ -7359,5 +7359,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "akrasia", "case studies", "productivity porn"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "deprecate",
+"disqus_id": "deprecate",
+"source": "doc.bmndr.co/deprecate",
+"redirects": [],
+"date": "2025-07-08",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "software engineering", "arguing with developers", "language nerds", "descriptivism vs prescriptivism", "linguistics"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
