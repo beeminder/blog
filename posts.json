@@ -7369,5 +7369,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "software engineering", "arguing with developers", "language nerds", "descriptivism vs prescriptivism", "linguistics"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "boobeemium",
+"disqus_id": "boobeemium",
+"source": "doc.bmndr.co/boobeemium",
+"redirects": [],
+"date": "2025-07-22",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "premium", "perks", "navel-gazing"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
