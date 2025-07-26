@@ -8,11 +8,5 @@ assignees: ''
 ---
 
 ## Replicata 
-
-
-
 ## Expectata
-
-
-
 ## Resultata
