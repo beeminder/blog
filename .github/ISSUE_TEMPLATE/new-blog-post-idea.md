@@ -6,8 +6,8 @@ labels: IDEA
 assignees: ""
 ---
 
-```[tasklist]
-### Desiderata
+## Desiderata
+
 - [ ] Have someone read a draft
 - [ ] Keywords/tags
 - [ ] Title image
@@ -17,4 +17,3 @@ assignees: ""
 - [ ] Waggledance
 - [ ] Tweet
 - [ ] Tip of the day
-```
