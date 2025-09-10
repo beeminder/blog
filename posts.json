@@ -7399,5 +7399,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "linguistics", "evangelism"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "magicstrings",
+"disqus_id": "magicstrings",
+"source": "doc.bmndr.co/magicstrings",
+"redirects": [],
+"date": "2025-09-09",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "computer science", "software engineering", "case studies"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
