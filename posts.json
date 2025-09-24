@@ -7409,5 +7409,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "computer science", "software engineering", "case studies"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "magicdata",
+"disqus_id": "magicdata",
+"source": "doc.bmndr.co/magicdata",
+"redirects": [],
+"date": "2025-09-23",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "nitty-gritty", "navel-gazing", "PSA", "tips", "feature announcements"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
