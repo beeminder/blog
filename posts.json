@@ -7419,5 +7419,15 @@
 "status": "publish",
 "tags": ["bee-all", "nitty-gritty", "navel-gazing", "PSA", "tips", "feature announcements"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "tare",
+"disqus_id": "tare",
+"source": "doc.bmndr.co/tare",
+"redirects": [],
+"date": "2025-10-07",
+"author": "dreev",
+"status": "draft",
+"tags": ["bee-all", "PSA", "tips", "feature announcements", "odometer goals"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
