@@ -21,5 +21,9 @@ export default async function getRedirects(): Promise<Record<string, string>> {
     return acc;
   }, {});
 
-  return { ...postRedirects, ...tagRedirects };
+  const authorRedirects: Record<string, string> = {
+    "/authors/dreeves": "/authors/dreev",
+  };
+
+  return { ...postRedirects, ...tagRedirects, ...authorRedirects };
 }
