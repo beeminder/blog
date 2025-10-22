@@ -7429,5 +7429,15 @@
 "status": "publish",
 "tags": ["bee-all", "PSA", "tips", "feature announcements", "odometer goals"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "protein",
+"disqus_id": "protein",
+"source": "doc.bmndr.co/protein",
+"redirects": [],
+"date": "2025-10-21",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "weight loss", "tips", "fitness", "diet", "melzaminder", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
