@@ -7449,5 +7449,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "writing", "commitment devices", "tips", "nanowrimo"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "delay",
+"disqus_id": "delay",
+"source": "doc.bmndr.co/delay",
+"redirects": [],
+"date": "2025-11-18",
+"author": "dreev",
+"status": "draft",
+"tags": ["bee-all", "rationality", "tips", "principles", "procrastination"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
