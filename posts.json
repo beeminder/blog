@@ -7469,5 +7469,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "writing", "commitment devices", "tips", "nanowrimo"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "quals",
+"disqus_id": "quals",
+"source": "doc.bmndr.co/quals",
+"redirects": [],
+"date": "2025-12-16",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "writing", "terminology", "software engineering"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
