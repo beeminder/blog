@@ -7479,5 +7479,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "writing", "terminology", "software engineering"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "pseudovernacular",
+"disqus_id": "pseudovernacular",
+"source": "doc.bmndr.co/cryptoglossia",
+"redirects": [],
+"date": "2026-01-06",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "writing", "terminology", "software engineering", "math"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
