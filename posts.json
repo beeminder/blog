@@ -7499,5 +7499,15 @@
 "status": "publish",
 "tags": ["bee-all", "integrations", "rationality", "video games", "new features"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "hotkeys",
+"disqus_id": "hotkeys",
+"source": "doc.bmndr.co/hotkey",
+"redirects": [],
+"date": "2026-02-03",
+"author": "bsoule",
+"status": "publish",
+"tags": ["bee-all", "new features", "rationality", "nerds"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
