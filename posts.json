@@ -7509,5 +7509,15 @@
 "status": "publish",
 "tags": ["bee-all", "new features", "rationality", "nerds"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "neology",
+"disqus_id": "neology",
+"source": "doc.bmndr.co/goodjargon",
+"redirects": [],
+"date": "2026-02-17",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "nerds", "writing", "terminology"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
