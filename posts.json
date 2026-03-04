@@ -7529,5 +7529,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "nerds", "writing", "terminology"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "snooze",
+"disqus_id": "snooze",
+"source": "doc.bmndr.co/snooze",
+"redirects": [],
+"date": "2026-03-03",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "akrasia", "rationality", "feature announcements"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
