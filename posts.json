@@ -7539,5 +7539,15 @@
 "status": "publish",
 "tags": ["bee-all", "akrasia", "rationality", "feature announcements"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "sheeple",
+"disqus_id": "sheeple",
+"source": "doc.bmndr.co/sheeple",
+"redirects": [],
+"date": "2026-03-17",
+"author": "dreev",
+"status": "draft",
+"tags": ["bee-all", "rationality", "startups", "terminology"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
