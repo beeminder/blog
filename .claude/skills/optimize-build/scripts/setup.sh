@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Setup script for build performance optimization experiments.
-# Checks out master, pulls, creates a new branch, and installs dependencies.
+# Creates a new branch, installs dependencies, and warms the cache.
 
 set -euo pipefail
 
@@ -20,6 +20,10 @@ if [ ! -f .build-perf.json ]; then
 else
   echo "=== .build-perf.json already exists, keeping existing data ==="
 fi
+
+echo "=== Warming cache with initial build ==="
+pnpm build
+echo "=== Cache warmed ==="
 
 echo "=== Setup complete ==="
 echo "Branch: $BRANCH_NAME"
