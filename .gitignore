@@ -2,6 +2,7 @@
 .vscode/
 package-lock.json
 .build-perf.json
+.build-perf-requests.txt
 
 # visual regression testing
 /shots/
