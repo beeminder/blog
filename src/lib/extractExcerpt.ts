@@ -1,16 +1,13 @@
-import getDom from "./getDom";
+import striptags from "striptags";
 import trimContent from "./trimContent";
 
 const EXCERPT_LENGTH = 300;
 
 export default function extractExcerpt(html: string): string {
   const trimmed = trimContent(html);
-  const { document } = getDom(trimmed);
-  const footnotes = Array.from(document.querySelectorAll("a.footnote"));
-
-  footnotes.forEach((el) => el.remove());
-
-  const text = document.body.textContent || "";
+  // Remove footnote links before stripping tags
+  const noFootnotes = trimmed.replace(/<a\s[^>]*class="[^"]*footnote[^"]*"[^>]*>.*?<\/a>/gi, "");
+  const text = striptags(noFootnotes);
   const noNewlines = text.replace(/[\n\r]+/g, " ");
   const words = noNewlines.split(" ");
   const excerpt = words.reduce((acc, word) => {
