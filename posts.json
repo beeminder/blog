@@ -7549,5 +7549,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "startups", "terminology"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "boardgamegeek",
+"disqus_id": "boardgamegeek",
+"source": "doc.bmndr.co/boardgamegeek",
+"redirects": [],
+"date": "2026-03-31",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "integrations", "games"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
