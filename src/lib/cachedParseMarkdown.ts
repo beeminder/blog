@@ -1,37 +1,33 @@
 import { createHash } from "node:crypto";
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { join } from "node:path";
 import { parseMarkdown } from "expost";
 
-const CACHE_FILE = ".cache/parsed-markdown.json";
-
-let cache: Record<string, string> = {};
+const CACHE_DIR = ".cache/parsed-markdown";
 
 try {
-  cache = JSON.parse(readFileSync(CACHE_FILE, "utf-8"));
+  mkdirSync(CACHE_DIR, { recursive: true });
 } catch {
-  // No cache file yet
+  // ignore
 }
-
-let dirty = false;
-
-process.on("exit", () => {
-  if (!dirty) return;
-  try {
-    writeFileSync(CACHE_FILE, JSON.stringify(cache));
-  } catch {
-    // ignore
-  }
-});
 
 export function cachedParseMarkdown(content: string): string {
   const hash = createHash("md5").update(content).digest("hex");
+  const cachePath = join(CACHE_DIR, `${hash}.html`);
 
-  if (hash in cache) {
-    return cache[hash];
+  try {
+    return readFileSync(cachePath, "utf-8");
+  } catch {
+    // Cache miss
   }
 
   const result = parseMarkdown(content);
-  cache[hash] = result;
-  dirty = true;
+
+  try {
+    writeFileSync(cachePath, result);
+  } catch {
+    // ignore write errors
+  }
+
   return result;
 }
