@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Run a single build performance experiment: benchmark 5 builds, record the
-# result, and automatically revert if performance did not improve.
+# Run a single build performance experiment: benchmark 5 builds and record
+# both build time and HTTP request metrics.
 #
 # Usage:
 #   bash experiment.sh <description>
@@ -19,17 +19,19 @@ fi
 
 DESC="$1"
 JSON_FILE=".build-perf.json"
+REQUESTS_FILE=".build-perf-requests.txt"
 NUM_RUNS=5
 
 # --- Benchmark ---
 
 TIMES=()
+FETCH_COUNTS=()
+CACHE_MISS_COUNTS=()
 
 echo "=== Starting benchmark ($NUM_RUNS runs) ==="
 
 for i in $(seq 1 $NUM_RUNS); do
   echo "--- Run $i/$NUM_RUNS ---"
-  pnpm cache:clear 2>/dev/null || true
 
   START=$(date +%s%N)
   pnpm build
@@ -38,15 +40,30 @@ for i in $(seq 1 $NUM_RUNS); do
   ELAPSED=$(echo "scale=2; ($END - $START) / 1000000000" | bc)
   TIMES+=("$ELAPSED")
 
-  echo "Run $i: ${ELAPSED}s"
+  # Read fetch metrics written by fetchPost.ts
+  if [ -f "$REQUESTS_FILE" ]; then
+    FETCH_COUNT=$(sed -n '1p' "$REQUESTS_FILE")
+    CACHE_MISSES=$(sed -n '2p' "$REQUESTS_FILE")
+  else
+    FETCH_COUNT=0
+    CACHE_MISSES=0
+  fi
+  FETCH_COUNTS+=("${FETCH_COUNT:-0}")
+  CACHE_MISS_COUNTS+=("${CACHE_MISSES:-0}")
+
+  echo "Run $i: ${ELAPSED}s | fetches: ${FETCH_COUNT:-0} | cache misses: ${CACHE_MISSES:-0}"
 done
 
 AVG=$(echo "scale=2; (${TIMES[0]} + ${TIMES[1]} + ${TIMES[2]} + ${TIMES[3]} + ${TIMES[4]}) / 5" | bc)
+AVG_FETCHES=$(echo "scale=0; (${FETCH_COUNTS[0]} + ${FETCH_COUNTS[1]} + ${FETCH_COUNTS[2]} + ${FETCH_COUNTS[3]} + ${FETCH_COUNTS[4]}) / 5" | bc)
+AVG_MISSES=$(echo "scale=0; (${CACHE_MISS_COUNTS[0]} + ${CACHE_MISS_COUNTS[1]} + ${CACHE_MISS_COUNTS[2]} + ${CACHE_MISS_COUNTS[3]} + ${CACHE_MISS_COUNTS[4]}) / 5" | bc)
 
 echo ""
 echo "=== Benchmark Results ==="
 echo "Times: ${TIMES[*]}"
-echo "Average: ${AVG}s"
+echo "Average build time: ${AVG}s"
+echo "Average fetch calls: ${AVG_FETCHES}"
+echo "Average cache misses: ${AVG_MISSES}"
 
 # --- Record ---
 
@@ -63,6 +80,8 @@ jq --argjson num "$EXPERIMENT_NUM" \
    --argjson t4 "${TIMES[3]}" \
    --argjson t5 "${TIMES[4]}" \
    --argjson avg "$AVG" \
+   --argjson avg_fetches "$AVG_FETCHES" \
+   --argjson avg_misses "$AVG_MISSES" \
    --arg ts "$TIMESTAMP" \
    '. + [{
      experiment: $num,
@@ -70,33 +89,24 @@ jq --argjson num "$EXPERIMENT_NUM" \
      description: $desc,
      build_times: [$t1, $t2, $t3, $t4, $t5],
      average: $avg,
+     avg_fetch_calls: $avg_fetches,
+     avg_cache_misses: $avg_misses,
      timestamp: $ts,
      kept: true
    }]' "$JSON_FILE" > "${JSON_FILE}.tmp" && mv "${JSON_FILE}.tmp" "$JSON_FILE"
 
-echo "Recorded experiment $EXPERIMENT_NUM: $DESC"
+echo ""
+echo "=== Recorded experiment $EXPERIMENT_NUM: $DESC ==="
+echo "  Build time: ${AVG}s | Fetch calls: ${AVG_FETCHES} | Cache misses: ${AVG_MISSES}"
 
-# --- Evaluate & possibly revert ---
+# --- Show comparison to previous best ---
 
-# Baseline (experiment 0) is never reverted
-if [ "$EXPERIMENT_NUM" -eq 0 ]; then
-  echo "=== Baseline recorded: ${AVG}s ==="
-  exit 0
-fi
+if [ "$EXPERIMENT_NUM" -gt 0 ]; then
+  BEST_TIME=$(jq '[.[] | select(.kept == true and .experiment < '"$EXPERIMENT_NUM"')] | min_by(.average) | .average' "$JSON_FILE")
+  BEST_FETCHES=$(jq '[.[] | select(.kept == true and .experiment < '"$EXPERIMENT_NUM"')] | min_by(.avg_fetch_calls) | .avg_fetch_calls' "$JSON_FILE")
 
-# Compare to the best average among previously kept experiments
-BEST_AVG=$(jq '[.[] | select(.kept == true and .experiment < '"$EXPERIMENT_NUM"')] | min_by(.average) | .average' "$JSON_FILE")
-
-IMPROVED=$(echo "$AVG < $BEST_AVG" | bc)
-
-if [ "$IMPROVED" -eq 1 ]; then
-  echo "=== IMPROVED: ${AVG}s vs previous best ${BEST_AVG}s ==="
-else
-  echo "=== NO IMPROVEMENT: ${AVG}s vs previous best ${BEST_AVG}s ==="
-  echo "=== Reverting experiment (commit $(git rev-parse --short HEAD)) ==="
-
-  git revert HEAD --no-edit
-  jq '.[-1].kept = false' "$JSON_FILE" > "${JSON_FILE}.tmp" && mv "${JSON_FILE}.tmp" "$JSON_FILE"
-
-  echo "=== Reverted. Ready for next experiment. ==="
+  echo ""
+  echo "=== Comparison ==="
+  echo "  Build time:  ${AVG}s  (best kept: ${BEST_TIME}s)"
+  echo "  Fetch calls: ${AVG_FETCHES}  (best kept: ${BEST_FETCHES})"
 fi
