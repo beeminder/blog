@@ -10,7 +10,7 @@ echo "=== Checking out master and pulling latest ==="
 git checkout master
 git pull
 
-BRANCH_NAME="build-perf/optimize-$(date +%Y%m%d-%H%M%S)"
+BRANCH_NAME="build-perf-optimize-$(date +%Y%m%d-%H%M%S)"
 echo "=== Creating branch: $BRANCH_NAME ==="
 git checkout -b "$BRANCH_NAME"
 
