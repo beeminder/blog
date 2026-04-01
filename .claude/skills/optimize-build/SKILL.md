@@ -24,7 +24,7 @@ bash .claude/skills/optimize-build/scripts/setup.sh
 
 This will:
 - Checkout master and pull latest
-- Create and checkout a new branch `build-perf/optimize-YYYYMMDD-HHMMSS`
+- Create and checkout a new branch `build-perf-optimize-YYYYMMDD-HHMMSS`
 - Run `pnpm install`
 - Initialize `.build-perf.json` if it doesn't exist
 
