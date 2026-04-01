@@ -15,6 +15,6 @@ async function get(
 }
 
 export default function fetchPosts(): Promise<Record<string, unknown>>[] {
-  const l = pLimit(10);
+  const l = pLimit(50);
   return readSources().map((s) => l(get, s));
 }
