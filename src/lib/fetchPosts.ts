@@ -1,5 +1,6 @@
 import fetchPost from "./fetchPost";
 import readSources from "./readSources";
+import pLimit from "p-limit";
 
 async function get(
   post: Record<string, unknown>,
@@ -14,5 +15,6 @@ async function get(
 }
 
 export default function fetchPosts(): Promise<Record<string, unknown>>[] {
-  return readSources().map((s) => get(s));
+  const l = pLimit(10);
+  return readSources().map((s) => l(get, s));
 }
