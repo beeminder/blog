@@ -34,7 +34,7 @@ for i in $(seq 1 $NUM_RUNS); do
   echo "--- Run $i/$NUM_RUNS ---"
 
   START=$(date +%s%N)
-  pnpm build
+  BUILD_PERF=1 pnpm build
   END=$(date +%s%N)
 
   ELAPSED=$(echo "scale=2; ($END - $START) / 1000000000" | bc)
