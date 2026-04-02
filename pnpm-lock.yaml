@@ -71,10 +71,10 @@ importers:
     devDependencies:
       '@anatine/zod-mock':
         specifier: ^3.14.0
-        version: 3.14.0(@faker-js/faker@10.4.0)(zod@3.23.8)
+        version: 3.14.0(@faker-js/faker@9.9.0)(zod@3.23.8)
       '@faker-js/faker':
-        specifier: ^10.4.0
-        version: 10.4.0
+        specifier: ^9.0.0
+        version: 9.9.0
       '@types/diffable-html':
         specifier: ^5.0.1
         version: 5.0.2
@@ -716,9 +716,9 @@ packages:
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@faker-js/faker@10.4.0':
-    resolution: {integrity: sha512-sDBWI3yLy8EcDzgobvJTWq1MJYzAkQdpjXuPukga9wXonhpMRvd1Izuo2Qgwey2OiEoRIBr35RMU9HJRoOHzpw==}
-    engines: {node: ^20.19.0 || ^22.13.0 || ^23.5.0 || >=24.0.0, npm: '>=10'}
+  '@faker-js/faker@9.9.0':
+    resolution: {integrity: sha512-OEl393iCOoo/z8bMezRlJu+GlRGlsKbUAN7jKB6LhnKoqKve5DXRpalbItIIcwnCjs1k/FOPjFzcA6Qn+H+YbA==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
 
   '@fontsource-variable/lora@5.2.8':
     resolution: {integrity: sha512-cxjTJ9BbOWIzusewR4UMBLVePvTSWV6dtNaNsCkF/oKoyA68fJGWfaYCILOOP1BObE4dmjfZ3xo6m9hdHhtYhg==}
@@ -3615,9 +3615,9 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@anatine/zod-mock@3.14.0(@faker-js/faker@10.4.0)(zod@3.23.8)':
+  '@anatine/zod-mock@3.14.0(@faker-js/faker@9.9.0)(zod@3.23.8)':
     dependencies:
-      '@faker-js/faker': 10.4.0
+      '@faker-js/faker': 9.9.0
       randexp: 0.5.3
       zod: 3.23.8
 
@@ -4042,7 +4042,7 @@ snapshots:
 
   '@eslint/js@8.57.1': {}
 
-  '@faker-js/faker@10.4.0': {}
+  '@faker-js/faker@9.9.0': {}
 
   '@fontsource-variable/lora@5.2.8': {}
 
