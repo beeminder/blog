@@ -39,7 +39,7 @@ process.on("exit", () => {
 export default async function fetchPost(url: string): Promise<string> {
   fetchCallCount++;
   return getFetcher()(canonicalizeUrl(url)).then((r) => {
-    if (!r.fromCache) cacheMissCount++;
+    if (!(r as unknown as { fromCache: boolean }).fromCache) cacheMissCount++;
     if (!r.ok) throw new Error(`Failed to fetch ${url}`);
     return r.text();
   });
