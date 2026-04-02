@@ -7,8 +7,8 @@ Snapshot tests verify that changes don't break any posts in the blog's large bac
 ## Commands
 
 ```bash
-pnpm run test:snapshots        # Run snapshot tests
-pnpm run test:snapshots:update # Update snapshots after verifying changes are correct
+pnpm run test:snapshot         # Run snapshot tests
+pnpm run test:snapshot:update  # Update snapshots after verifying changes are correct
 pnpm run cache:clear           # Clear local fetch cache to sync with upstream source changes
 ```
 
