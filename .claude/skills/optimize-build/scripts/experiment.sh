@@ -82,7 +82,7 @@ echo "Average cache misses: ${AVG_MISSES}"
 # --- Record ---
 
 COMMIT=$(git rev-parse HEAD)
-TIMESTAMP=$(date -Iseconds)
+TIMESTAMP=$(date "+%Y-%m-%dT%H:%M:%S%z")
 EXPERIMENT_NUM=$(jq 'length' "$JSON_FILE")
 
 jq --argjson num "$EXPERIMENT_NUM" \
