@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2024.04.16-a",
   "engines": {
-    "node": ">=18.16.0",
+    "node": ">=20",
     "pnpm": ">=9.0.2"
   },
   "scripts": {
