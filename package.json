@@ -54,7 +54,6 @@
     "@types/feather-icons": "^4.29.2",
     "@types/findup-sync": "^4.0.2",
     "@types/levenshtein": "^1.0.2",
-    "@types/marked": "^6.0.0",
     "@types/node-fetch-cache": "^3.0.0",
     "@types/pixelmatch": "^5.2.5",
     "@types/pngjs": "^6.0.3",
