@@ -43,7 +43,8 @@ if (IS_BUILD_PERF) {
 export default async function fetchPost(url: string): Promise<string> {
   fetchCallCount++;
   return getFetcher()(canonicalizeUrl(url)).then((r) => {
-    if (!(r as unknown as { fromCache: boolean }).fromCache) cacheMissCount++;
+    const resp = r as unknown as { fromCache?: boolean };
+    if ("fromCache" in resp && resp.fromCache === false) cacheMissCount++;
     if (!r.ok) throw new Error(`Failed to fetch ${url}`);
     return r.text();
   });
