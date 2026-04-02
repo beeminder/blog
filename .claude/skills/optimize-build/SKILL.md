@@ -23,6 +23,7 @@ bash .claude/skills/optimize-build/scripts/setup.sh
 ```
 
 This will:
+
 - Create and checkout a new branch `build-perf-optimize-YYYYMMDD-HHMMSS`
 - Run `pnpm install`
 - Initialize `.build-perf.json` if it doesn't exist
@@ -45,6 +46,7 @@ Run up to N experiments, where N is the number passed as the skill argument (def
 For each experiment:
 
 1. **Make ONE code change** that you predict will improve build performance. Use your knowledge of Astro, Vite, and general build optimization techniques. Consider:
+
    - Reducing the number of files processed
    - Optimizing image handling
    - Adjusting Vite/Rollup configuration
@@ -56,34 +58,42 @@ For each experiment:
    - Reducing the number of external fetch calls
 
 2. **Commit the change:**
+
    ```bash
    git add -A && git commit -m "perf: <short description of the change>"
    ```
 
 3. **Run the experiment:**
+
    ```bash
    bash .claude/skills/optimize-build/scripts/experiment.sh "<short description>"
    ```
 
    The script will:
+
    - Run 5 timed builds (cache is preserved between runs)
    - Record build time, fetch call count, and cache miss count to `.build-perf.json`
    - Show comparison to the best previous kept experiment
 
 4. **Evaluate and decide:** The script does NOT auto-revert. You must evaluate the results and decide whether to keep or revert each experiment. Consider both metrics:
+
    - **Build time** — lower is better
    - **Fetch call count** — lower is better (fewer external service requests)
 
    There may be trade-offs between these metrics. Use your judgment:
+
    - If both metrics improve: **keep**
    - If both metrics regress: **revert**
    - If one improves and the other regresses: consider the magnitude of each change and make a judgment call
 
    To revert:
+
    ```bash
    git revert HEAD --no-edit
    ```
+
    Then update `.build-perf.json` to mark the experiment as not kept:
+
    ```bash
    jq '.[-1].kept = false' .build-perf.json > .build-perf.json.tmp && mv .build-perf.json.tmp .build-perf.json
    ```
@@ -93,6 +103,7 @@ For each experiment:
 ### 4. Summary Report
 
 After all experiments (or after reaching the max), print a summary table showing:
+
 - Experiment number
 - Commit hash (short)
 - Description
