@@ -22,6 +22,20 @@ JSON_FILE=".build-perf.json"
 REQUESTS_FILE=".build-perf-requests.txt"
 NUM_RUNS=5
 
+# --- Preflight checks ---
+
+for cmd in jq bc; do
+  if ! command -v "$cmd" >/dev/null 2>&1; then
+    echo "Error: required command '$cmd' not found. Please install it and re-run $0." >&2
+    exit 1
+  fi
+done
+
+if [ ! -f "$JSON_FILE" ]; then
+  echo "Error: '$JSON_FILE' not found. Run setup.sh first." >&2
+  exit 1
+fi
+
 # --- Benchmark ---
 
 TIMES=()
