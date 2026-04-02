@@ -1,7 +1,7 @@
 // usage:
 // pnpm dlx tsx ./scripts/image-cache.ts
 
-import { readFileSync, readdirSync, writeFileSync } from "fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "fs";
 import findup from "findup-sync";
 
 const ONE_WEEK = 7 * 24 * 60 * 60 * 1000;
@@ -17,10 +17,10 @@ const folderPath = new URL(`${nodeModules}/.astro/assets`, import.meta.url)
 
 let files: string[] = [];
 
-try {
+if (existsSync(folderPath)) {
   files = readdirSync(folderPath, "utf8");
-} catch (e) {
-  console.warn(e);
+} else {
+  console.warn(`Asset cache not found at ${folderPath}, skipping`);
 }
 
 files.forEach((file) => {
