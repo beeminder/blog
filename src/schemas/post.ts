@@ -5,7 +5,7 @@ import getExcerpt from "../lib/getExcerpt";
 import { image } from "./image";
 import extractImage from "../lib/extractImage";
 import { dateString } from "./dateString";
-import { parseMarkdown } from "expost";
+import { cachedParseMarkdown } from "../lib/cachedParseMarkdown";
 
 export const post = z
   .object({
@@ -27,7 +27,7 @@ export const post = z
     let c;
 
     try {
-      c = parseMarkdown(content);
+      c = cachedParseMarkdown(content);
     } catch (error) {
       ctx.addIssue({
         path: ["md"],
