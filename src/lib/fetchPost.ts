@@ -1,5 +1,5 @@
 import { writeFileSync } from "node:fs";
-import { fetchBuilder, FileSystemCache, MemoryCache } from "node-fetch-cache";
+import NodeFetchCache, { FileSystemCache, MemoryCache } from "node-fetch-cache";
 import memoize from "./memoize";
 import canonicalizeUrl from "./canonicalizeUrl";
 import env from "./env";
@@ -20,7 +20,7 @@ function buildCache() {
   }
 }
 
-const getFetcher = memoize(() => fetchBuilder.withCache(buildCache()));
+const getFetcher = memoize(() => NodeFetchCache.create({ cache: buildCache() }));
 
 const IS_BUILD_PERF = !!env("BUILD_PERF");
 
