@@ -1,0 +1,12 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "tags": ["-lintignore"],
+  "entry": ["src/scripts/*.ts", "vitest.snapshot.diff.ts"],
+  "ignoreDependencies": [
+    "pixelmatch",
+    "pngjs",
+    "@types/pixelmatch",
+    "@types/pngjs"
+  ],
+  "ignoreBinaries": ["only-allow"]
+}

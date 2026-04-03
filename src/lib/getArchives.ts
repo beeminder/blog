@@ -2,7 +2,7 @@ import type { Post } from "../schemas/post";
 import getPosts from "./getPosts";
 import memoize from "./memoize";
 
-export type Month = {
+type Month = {
   label: string;
   posts: Post[];
   post_count: number;
