@@ -16,7 +16,8 @@ export function cachedParseMarkdown(content: string): string {
   const cachePath = join(CACHE_DIR, `${hash}.html`);
 
   try {
-    return readFileSync(cachePath, "utf-8");
+    const cached = readFileSync(cachePath, "utf-8");
+    if (typeof cached === "string") return cached;
   } catch {
     // Cache miss
   }
