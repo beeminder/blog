@@ -66,7 +66,7 @@ export const post = z
       content: z.string(),
       excerpt: z.string(),
       slug: z.string().min(1),
-      image: image.optional(),
+      image: image.or(z.undefined()),
       title: z.string(),
       tags: z.array(z.string()),
       redirects: z.array(z.string()),
