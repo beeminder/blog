@@ -1,4 +1,4 @@
-import { ZodIssueCode, z } from "zod";
+import { z } from "zod";
 import { status } from "./status";
 import parseTitle from "../lib/parseTitle";
 import getExcerpt from "../lib/getExcerpt";
@@ -32,7 +32,7 @@ export const post = z
       ctx.addIssue({
         path: ["md"],
         message: `Failed to parse post ${url}`,
-        code: ZodIssueCode.custom,
+        code: "custom",
         params: {
           error: error instanceof Error ? error.message : "Unknown error",
         },
