@@ -17,7 +17,9 @@ export default async function getRedirects(): Promise<Record<string, string>> {
 
   // Build tag redirects from posts.json tag arrays (no fetch needed)
   const tagNames = [
-    ...new Set(sources.flatMap((p) => (p.tags as string[]) ?? [])),
+    ...new Set(
+      sources.flatMap((p) => (p.tags as string[]) ?? []).map((t) => t.toLowerCase())
+    ),
   ];
   const tagRedirects: Record<string, string> = {};
   for (const tag of tagNames) {
