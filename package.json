@@ -23,7 +23,8 @@
     "preinstall": "npx only-allow pnpm",
     "puppeteer": "tsx ./scripts/puppeteer.ts",
     "puppeteer:report": "tsx ./scripts/puppeteer-report.ts",
-    "puppeteer:reset": "pnpm run cache:clear && pnpm run build && rm -rf ./shots && mkdir ./shots"
+    "puppeteer:reset": "pnpm run cache:clear && pnpm run build && rm -rf ./shots && mkdir ./shots",
+    "knip": "knip"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
@@ -53,6 +54,7 @@
     "@types/feather-icons": "^4.29.4",
     "@types/findup-sync": "^4.0.5",
     "@types/levenshtein": "^1.0.4",
+    "@types/node": "^25.5.2",
     "@types/node-fetch-cache": "^3.0.5",
     "@types/pixelmatch": "^5.2.6",
     "@types/pngjs": "^6.0.5",
@@ -64,6 +66,7 @@
     "csv-parse": "^6.2.1",
     "diffable-html": "^6.0.1",
     "eslint": "^8.57.1",
+    "knip": "^6.3.0",
     "pixelmatch": "^7.1.0",
     "pixelteer": "github:narthur/pixelteer",
     "pngjs": "^7.0.0",
