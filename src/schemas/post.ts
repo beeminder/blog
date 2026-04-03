@@ -80,4 +80,3 @@ export const post = z
   );
 
 export type Post = z.infer<typeof post>;
-export type PostInput = z.input<typeof post>;
