@@ -1,8 +1,0 @@
-/dist
-/.cache
-/.vscode
-/.node_modules
-/public
-/pnpm-lock.yaml
-/posts.json
-/shots
