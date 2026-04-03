@@ -16,11 +16,16 @@ export default getTags;
 async function makeTags(): Promise<Tag[]> {
   const posts = await getPosts();
   const tagNames = [
-    ...new Set(posts.map((p) => p.tags).flat().map((t) => t.toLowerCase())),
+    ...new Set(
+      posts
+        .map((p) => p.tags)
+        .flat()
+        .map((t) => t.toLowerCase()),
+    ),
   ];
   const tags = tagNames.map((t) => {
     const matched = posts.filter((p) =>
-      p.tags.some((pt) => pt.toLowerCase() === t)
+      p.tags.some((pt) => pt.toLowerCase() === t),
     );
     return {
       name: t,
