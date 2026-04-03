@@ -20,7 +20,9 @@ function buildCache() {
   }
 }
 
-const getFetcher = memoize(() => NodeFetchCache.create({ cache: buildCache() }));
+const getFetcher = memoize(() =>
+  NodeFetchCache.create({ cache: buildCache() }),
+);
 
 const IS_BUILD_PERF = !!env("BUILD_PERF");
 
