@@ -16,7 +16,7 @@ jobs:
           sparse-checkout-cone-mode: false
       - name: Log Deployment Status
         run: echo "Deployment URL- ${{ github.event.deployment_status.environment_url }}"
-      - uses: narthur/pa11y-ratchet@v3.5.0
+      - uses: narthur/pa11y-ratchet@v3.5.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           urls: |
