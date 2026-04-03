@@ -54,8 +54,6 @@
     "@types/node-fetch-cache": "^3.0.5",
     "@types/pixelmatch": "^5.2.6",
     "@types/pngjs": "^6.0.5",
-    "@typescript-eslint/eslint-plugin": "^8.58.0",
-    "@typescript-eslint/parser": "^8.58.0",
     "@vitest/ui": "^2.1.9",
     "diffable-html": "^6.0.1",
     "eslint": "^10.1.0",
