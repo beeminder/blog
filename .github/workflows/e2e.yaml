@@ -14,15 +14,33 @@ jobs:
           sparse-checkout: |
             .pa11yci.json
           sparse-checkout-cone-mode: false
-      - name: Log Deployment Status 
+      - name: Log Deployment Status
         run: echo "Deployment URL- ${{ github.event.deployment_status.environment_url }}"
-      - name: Enable unprivileged user namespaces
-        run: sudo sysctl kernel.unprivileged_userns_clone=1
-        shell: bash
-      - uses: narthur/pa11y-ratchet@v2
+      - uses: narthur/pa11y-ratchet@v3.5.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          sitemap-url: ${{ github.event.deployment_status.environment_url }}/sitemap-0.xml
+          urls: |
+            https://blog.beeminder.com/
+            https://blog.beeminder.com/tags/
+            https://blog.beeminder.com/authors/
+            https://blog.beeminder.com/akrasia/
+            https://blog.beeminder.com/easyhard/
+            https://blog.beeminder.com/preeat/
+            https://blog.beeminder.com/page/1/
+            https://blog.beeminder.com/page/21/
+            https://blog.beeminder.com/page/42/
+            https://blog.beeminder.com/tags/FAQ/
+            https://blog.beeminder.com/tags/android/
+            https://blog.beeminder.com/tags/beekeeper/
+            https://blog.beeminder.com/authors/Adam Wolf/
+            https://blog.beeminder.com/authors/David R. MacIver/
+            https://blog.beeminder.com/authors/Josh Pitzalis/
+            https://blog.beeminder.com/2011/
+            https://blog.beeminder.com/2016/
+            https://blog.beeminder.com/2021/
+            https://blog.beeminder.com/2011/April/
+            https://blog.beeminder.com/2018/March/
+            https://blog.beeminder.com/2021/January/
           find: https://blog.beeminder.com
           replace: ${{ github.event.deployment_status.environment_url }}
           config-path: .pa11yci.json
