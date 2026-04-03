@@ -15,7 +15,7 @@ try {
   console.warn(e);
 }
 
-for (const file of files) {
+for (const file of files.filter((f) => f.endsWith(".json"))) {
   const path = join(folderPath, file);
   const content = readFileSync(path, "utf8");
   const json = JSON.parse(content);
