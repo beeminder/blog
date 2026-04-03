@@ -15,8 +15,7 @@ const getDuplicates = (
   return keys.filter((key) => keys.indexOf(key) !== keys.lastIndexOf(key));
 };
 
-function getSourcesHash(): string {
-  const sources = readSources();
+function getSourcesHash(sources: Record<string, unknown>[]): string {
   return createHash("md5").update(JSON.stringify(sources)).digest("hex");
 }
 
@@ -55,7 +54,8 @@ const makePosts = memoize((): Promise<Post>[] =>
 );
 
 const getAllPosts = memoize(async (): Promise<Post[]> => {
-  const hash = getSourcesHash();
+  const sources = readSources();
+  const hash = getSourcesHash(sources);
   const cached = tryReadPostsCache(hash);
   if (cached) return cached;
 

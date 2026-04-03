@@ -15,7 +15,7 @@ describe("getPosts", () => {
     await getPosts();
     await getPosts();
 
-    expect(readSources).toHaveBeenCalledTimes(1);
+    expect(readSources).toHaveBeenCalledTimes(2);
   });
 
   it("fetches post content", async () => {

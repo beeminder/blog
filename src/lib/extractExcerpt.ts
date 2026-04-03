@@ -6,7 +6,10 @@ const EXCERPT_LENGTH = 300;
 export default function extractExcerpt(html: string): string {
   const trimmed = trimContent(html);
   // Remove footnote links before stripping tags
-  const noFootnotes = trimmed.replace(/<a\s[^>]*class="[^"]*footnote[^"]*"[^>]*>.*?<\/a>/gi, "");
+  const noFootnotes = trimmed.replace(
+    /<a\s[^>]*class="[^"]*footnote[^"]*"[^>]*>.*?<\/a>/gi,
+    "",
+  );
   const text = striptags(noFootnotes);
   const noNewlines = text.replace(/[\n\r]+/g, " ");
   const words = noNewlines.split(" ");
