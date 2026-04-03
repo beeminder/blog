@@ -9,6 +9,7 @@ export type Image = {
 // Preserves the inferred input type (needed for .pipe() in Zod v4)
 // while still enforcing that the schema output is assignable to Image.
 function ensureOutput<T>() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return <S extends z.ZodType<T, any>>(s: S): S => s;
 }
 
