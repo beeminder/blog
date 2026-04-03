@@ -6,5 +6,3 @@ export const dateString = z
   .refine((s): s is string => s?.length === 10, {
     message: "Invalid date input",
   });
-
-export type DateString = z.infer<typeof dateString>;
