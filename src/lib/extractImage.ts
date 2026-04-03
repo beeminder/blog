@@ -1,17 +1,13 @@
 import type { Image } from "../schemas/image";
-import getDom from "./getDom";
 
 export default function extractImage(html: string): Image | undefined {
-  const { document } = getDom(html);
+  const match = html.match(/<img\s[^>]*?\/?>/i);
+  if (!match) return undefined;
 
-  const img = document.querySelector("img") as unknown as HTMLImageElement;
+  const tag = match[0];
+  const src = tag.match(/src=["']([^"']*)["']/i)?.[1] ?? "";
+  const alt = tag.match(/alt=["']([^"']*)["']/i)?.[1] ?? "";
+  const title = tag.match(/title=["']([^"']*)["']/i)?.[1] ?? "";
 
-  return img
-    ? {
-        src: img.src,
-        alt: img.alt,
-        title: img.title,
-        extracted: true,
-      }
-    : undefined;
+  return { src, alt, title, extracted: true };
 }

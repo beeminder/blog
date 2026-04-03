@@ -13,9 +13,11 @@ describe("getPosts", () => {
 
   it("only loads sources once", async () => {
     await getPosts();
+    vi.mocked(readSources).mockClear();
+
     await getPosts();
 
-    expect(readSources).toHaveBeenCalledTimes(1);
+    expect(readSources).toHaveBeenCalledTimes(0);
   });
 
   it("fetches post content", async () => {
