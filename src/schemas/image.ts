@@ -6,7 +6,7 @@ export type Image = {
   extracted?: boolean | undefined;
 } & HTMLAttributes<"img">;
 
-export const image: z.ZodType<Image> = z
+export const image = z
   .object({
     src: z.string(),
     extracted: z.boolean().optional(),
