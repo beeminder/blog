@@ -1,3 +1,4 @@
+import decodeHtmlEntities from "./decodeHtmlEntities";
 import extractExcerpt from "./extractExcerpt";
 import striptags from "striptags";
 
@@ -11,6 +12,6 @@ export default function getExcerpt(
     case undefined:
       return undefined;
     default:
-      return striptags(excerpt);
+      return decodeHtmlEntities(striptags(excerpt));
   }
 }
