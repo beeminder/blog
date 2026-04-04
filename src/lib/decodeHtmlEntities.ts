@@ -13,8 +13,5 @@ export default function decodeHtmlEntities(text: string): string {
     .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) =>
       String.fromCodePoint(parseInt(hex, 16)),
     )
-    .replace(
-      /&\w+;/g,
-      (entity) => NAMED_ENTITIES[entity] ?? entity,
-    );
+    .replace(/&\w+;/g, (entity) => NAMED_ENTITIES[entity] ?? entity);
 }
