@@ -1,7 +1,6 @@
 ---
 import type { Post } from "../schemas/post";
 import Shadowbox from "./Shadowbox.astro";
-import Img from "./Img.astro";
 import feather from "feather-icons";
 
 interface Props {
@@ -42,12 +41,14 @@ const chevronRight = feather.icons["chevron-right"].toSvg();
             <a href={`/${p.slug}`} class="card">
               {p.image && (
                 <div class="card-image">
-                  <Img
+                  <img
                     src={p.image.src}
                     alt={p.image.alt || p.title}
                     title={p.image.title}
                     width="400"
                     height="225"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               )}
