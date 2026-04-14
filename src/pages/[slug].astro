@@ -6,6 +6,7 @@ import Shadowbox from "../components/Shadowbox.astro";
 import PostMeta from "../components/PostMeta.astro";
 import Typography from "../components/Typography.astro";
 import Comments from "../components/Comments.astro";
+import RecommendedPosts from "../components/RecommendedPosts.astro";
 import type { Post } from "../schemas/post";
 import Paginated from "../layouts/Paginated.astro";
 
@@ -32,8 +33,8 @@ export async function getStaticPaths() {
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { post, newer, older } = Astro.props as Props;
-
 const { content, title, tags, disqus_id, excerpt, image, status, slug } = post;
+const allPosts = await getPosts({ sort: true });
 
 const isDraft = status === "draft";
 const className = isDraft ? "draft" : undefined;
@@ -68,6 +69,8 @@ const { extracted, ...imageProps } = image || {};
       <Typography set:html={content} />
       <Tags tags={tags} />
     </Shadowbox>
+
+    {!isDraft && <RecommendedPosts currentPost={post} posts={allPosts} />}
 
     <Shadowbox id="comments" padding={2}>
       {
