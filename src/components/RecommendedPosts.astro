@@ -121,6 +121,10 @@ const { posts: recommended } = Astro.props;
     pointer-events: none;
   }
 
+  .arrow :global(span) {
+    display: flex;
+  }
+
   .arrow-left {
     left: -20px;
     padding-right: 2px;
@@ -128,6 +132,7 @@ const { posts: recommended } = Astro.props;
 
   .arrow-right {
     right: -20px;
+    padding-left: 2px;
   }
 
 
