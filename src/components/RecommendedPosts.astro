@@ -204,6 +204,7 @@ const chevronRight = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height=
 
     updateArrows();
     slider.addEventListener("scroll", updateArrows, { passive: true });
+    new ResizeObserver(updateArrows).observe(slider);
 
     left.addEventListener("click", () => {
       slider.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
