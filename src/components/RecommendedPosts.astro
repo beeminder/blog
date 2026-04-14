@@ -186,11 +186,11 @@ const chevronRight = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height=
   }
 </style>
 
-<script>
-  document.querySelectorAll<HTMLElement>(".recommended").forEach((wrapper) => {
-    const slider = wrapper.querySelector<HTMLElement>(".slider");
-    const left = wrapper.querySelector<HTMLButtonElement>(".arrow-left");
-    const right = wrapper.querySelector<HTMLButtonElement>(".arrow-right");
+<script is:inline>
+  document.querySelectorAll(".recommended").forEach((wrapper) => {
+    const slider = wrapper.querySelector(".slider");
+    const left = wrapper.querySelector(".arrow-left");
+    const right = wrapper.querySelector(".arrow-right");
     if (!slider || !left || !right) return;
 
     const scrollAmount = () => slider.clientWidth;
