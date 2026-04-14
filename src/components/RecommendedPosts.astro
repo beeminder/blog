@@ -4,27 +4,10 @@ import Shadowbox from "./Shadowbox.astro";
 import feather from "feather-icons";
 
 interface Props {
-  currentPost: Post;
   posts: Post[];
 }
 
-const { currentPost, posts } = Astro.props;
-
-const published = posts.filter(
-  (p) => p.status === "publish" && p.slug !== currentPost.slug,
-);
-
-const currentTags = new Set(currentPost.tags);
-
-const scored = published
-  .map((p) => ({
-    post: p,
-    score: p.tags.filter((t) => currentTags.has(t)).length,
-  }))
-  .filter((entry) => entry.score > 0)
-  .sort((a, b) => b.score - a.score || b.post.date.getTime() - a.post.date.getTime());
-
-const recommended = scored.slice(0, 6).map((entry) => entry.post);
+const { posts: recommended } = Astro.props;
 
 const chevronLeft = feather.icons["chevron-left"].toSvg();
 const chevronRight = feather.icons["chevron-right"].toSvg();

@@ -17,8 +17,21 @@ export async function getStaticPaths() {
   });
 
   const published = (p: Post) => p.status === "publish";
+  const publishedPosts = posts.filter(published);
 
-  const sorted = [...posts].sort((a, b) => b.date.getTime() - a.date.getTime());
+  const recommendedMap = new Map<string, Post[]>();
+  for (const post of publishedPosts) {
+    const currentTags = new Set(post.tags);
+    const scored = publishedPosts
+      .filter((p) => p.slug !== post.slug)
+      .map((p) => ({
+        post: p,
+        score: p.tags.filter((t) => currentTags.has(t)).length,
+      }))
+      .filter((e) => e.score > 0)
+      .sort((a, b) => b.score - a.score || b.post.date.getTime() - a.post.date.getTime());
+    recommendedMap.set(post.slug, scored.slice(0, 6).map((e) => e.post));
+  }
 
   return posts.map((post: Post, i: number) => ({
     params: {
@@ -28,14 +41,14 @@ export async function getStaticPaths() {
       post,
       newer: posts.slice(0, i).reverse().find(published),
       older: posts.slice(i + 1).find(published),
-      allPosts: sorted,
+      recommendedPosts: recommendedMap.get(post.slug) ?? [],
     },
   }));
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-const { post, newer, older, allPosts } = Astro.props as Props;
+const { post, newer, older, recommendedPosts } = Astro.props as Props;
 const { content, title, tags, disqus_id, excerpt, image, status, slug } = post;
 
 const isDraft = status === "draft";
@@ -72,7 +85,7 @@ const { extracted, ...imageProps } = image || {};
       <Tags tags={tags} />
     </Shadowbox>
 
-    {!isDraft && <RecommendedPosts currentPost={post} posts={allPosts} />}
+    {!isDraft && recommendedPosts.length > 0 && <RecommendedPosts posts={recommendedPosts} />}
 
     <Shadowbox id="comments" padding={2}>
       {
