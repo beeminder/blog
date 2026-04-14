@@ -19,18 +19,31 @@ export async function getStaticPaths() {
   const published = (p: Post) => p.status === "publish";
   const publishedPosts = posts.filter(published);
 
+  const tagIndex = new Map<string, Post[]>();
+  for (const p of publishedPosts) {
+    for (const tag of p.tags) {
+      const list = tagIndex.get(tag);
+      if (list) list.push(p);
+      else tagIndex.set(tag, [p]);
+    }
+  }
+
   const recommendedMap = new Map<string, Post[]>();
   for (const post of publishedPosts) {
-    const currentTags = new Set(post.tags);
-    const scored = publishedPosts
-      .filter((p) => p.slug !== post.slug)
-      .map((p) => ({
-        post: p,
-        score: p.tags.filter((t) => currentTags.has(t)).length,
-      }))
-      .filter((e) => e.score > 0)
-      .sort((a, b) => b.score - a.score || b.post.date.getTime() - a.post.date.getTime());
-    recommendedMap.set(post.slug, scored.slice(0, 6).map((e) => e.post));
+    const scores = new Map<string, number>();
+    for (const tag of post.tags) {
+      for (const p of tagIndex.get(tag) ?? []) {
+        if (p.slug !== post.slug) {
+          scores.set(p.slug, (scores.get(p.slug) ?? 0) + 1);
+        }
+      }
+    }
+    const slugToPost = new Map(publishedPosts.map((p) => [p.slug, p]));
+    const sorted = [...scores.entries()]
+      .sort((a, b) => b[1] - a[1] || slugToPost.get(b[0])!.date.getTime() - slugToPost.get(a[0])!.date.getTime())
+      .slice(0, 6)
+      .map(([slug]) => slugToPost.get(slug)!);
+    recommendedMap.set(post.slug, sorted);
   }
 
   return posts.map((post: Post, i: number) => ({
