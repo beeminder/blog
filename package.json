@@ -60,7 +60,7 @@
     "pixelmatch": "^7.1.0",
     "pixelteer": "github:narthur/pixelteer",
     "pngjs": "^7.0.0",
-    "prettier": "3.8.1",
+    "prettier": "3.8.2",
     "puppeteer": "24.40.0",
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.58.2",
