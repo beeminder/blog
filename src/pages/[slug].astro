@@ -28,6 +28,7 @@ export async function getStaticPaths() {
     }
   }
 
+  const slugToPost = new Map(publishedPosts.map((p) => [p.slug, p]));
   const recommendedMap = new Map<string, Post[]>();
   for (const post of publishedPosts) {
     const scores = new Map<string, number>();
@@ -38,7 +39,6 @@ export async function getStaticPaths() {
         }
       }
     }
-    const slugToPost = new Map(publishedPosts.map((p) => [p.slug, p]));
     const sorted = [...scores.entries()]
       .sort((a, b) => b[1] - a[1] || slugToPost.get(b[0])!.date.getTime() - slugToPost.get(a[0])!.date.getTime())
       .slice(0, 6)
