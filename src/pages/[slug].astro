@@ -30,7 +30,13 @@ export async function getStaticPaths() {
       }))
       .filter((e) => e.score > 0)
       .sort((a, b) => b.score - a.score || b.post.date.getTime() - a.post.date.getTime());
-    recommendedMap.set(post.slug, scored.slice(0, 6).map((e) => e.post));
+    recommendedMap.set(post.slug, scored.slice(0, 6).map((e) => ({
+      slug: e.post.slug,
+      title: e.post.title,
+      image: e.post.image ? { src: e.post.image.src, alt: e.post.image.alt, title: e.post.image.title } : undefined,
+      date_string: e.post.date_string,
+      author: e.post.author,
+    })));
   }
 
   return posts.map((post: Post, i: number) => ({
