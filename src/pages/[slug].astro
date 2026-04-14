@@ -6,6 +6,7 @@ import Shadowbox from "../components/Shadowbox.astro";
 import PostMeta from "../components/PostMeta.astro";
 import Typography from "../components/Typography.astro";
 import Comments from "../components/Comments.astro";
+import RecommendedPosts from "../components/RecommendedPosts.astro";
 import type { Post } from "../schemas/post";
 import Paginated from "../layouts/Paginated.astro";
 
@@ -16,6 +17,34 @@ export async function getStaticPaths() {
   });
 
   const published = (p: Post) => p.status === "publish";
+  const publishedPosts = posts.filter(published);
+
+  const tagIndex = new Map<string, Post[]>();
+  for (const p of publishedPosts) {
+    for (const tag of p.tags) {
+      const list = tagIndex.get(tag);
+      if (list) list.push(p);
+      else tagIndex.set(tag, [p]);
+    }
+  }
+
+  const slugToPost = new Map(publishedPosts.map((p) => [p.slug, p]));
+  const recommendedMap = new Map<string, Post[]>();
+  for (const post of publishedPosts) {
+    const scores = new Map<string, number>();
+    for (const tag of post.tags) {
+      for (const p of tagIndex.get(tag) ?? []) {
+        if (p.slug !== post.slug) {
+          scores.set(p.slug, (scores.get(p.slug) ?? 0) + 1);
+        }
+      }
+    }
+    const sorted = [...scores.entries()]
+      .sort((a, b) => b[1] - a[1] || slugToPost.get(b[0])!.date.getTime() - slugToPost.get(a[0])!.date.getTime())
+      .slice(0, 6)
+      .map(([slug]) => slugToPost.get(slug)!);
+    recommendedMap.set(post.slug, sorted);
+  }
 
   return posts.map((post: Post, i: number) => ({
     params: {
@@ -25,14 +54,14 @@ export async function getStaticPaths() {
       post,
       newer: posts.slice(0, i).reverse().find(published),
       older: posts.slice(i + 1).find(published),
+      recommendedPosts: recommendedMap.get(post.slug) ?? [],
     },
   }));
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-const { post, newer, older } = Astro.props as Props;
-
+const { post, newer, older, recommendedPosts } = Astro.props as Props;
 const { content, title, tags, disqus_id, excerpt, image, status, slug } = post;
 
 const isDraft = status === "draft";
@@ -68,6 +97,8 @@ const { extracted, ...imageProps } = image || {};
       <Typography set:html={content} />
       <Tags tags={tags} />
     </Shadowbox>
+
+    {!isDraft && recommendedPosts.length > 0 && <RecommendedPosts posts={recommendedPosts} />}
 
     <Shadowbox id="comments" padding={2}>
       {
