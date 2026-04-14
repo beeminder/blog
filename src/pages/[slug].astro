@@ -30,7 +30,7 @@ export async function getStaticPaths() {
       }))
       .filter((e) => e.score > 0)
       .sort((a, b) => b.score - a.score || b.post.date.getTime() - a.post.date.getTime());
-    recommendedMap.set(post.slug, scored.slice(0, 3).map((e) => e.post));
+    recommendedMap.set(post.slug, scored.slice(0, 6).map((e) => e.post));
   }
 
   return posts.map((post: Post, i: number) => ({
