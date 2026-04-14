@@ -1,16 +1,14 @@
 ---
 import type { Post } from "../schemas/post";
 import Shadowbox from "./Shadowbox.astro";
-import feather from "feather-icons";
-
 interface Props {
   posts: Post[];
 }
 
 const { posts: recommended } = Astro.props;
 
-const chevronLeft = feather.icons["chevron-left"].toSvg();
-const chevronRight = feather.icons["chevron-right"].toSvg();
+const chevronLeft = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>';
+const chevronRight = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>';
 ---
 
 {recommended.length > 0 && (
