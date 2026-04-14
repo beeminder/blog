@@ -96,7 +96,7 @@ const chevronRight = feather.icons["chevron-right"].toSvg();
   }
 
   .arrow {
-    display: none;
+    display: flex;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -135,11 +135,6 @@ const chevronRight = feather.icons["chevron-right"].toSvg();
     right: -20px;
   }
 
-  @container (min-width: 500px) {
-    .arrow {
-      display: flex;
-    }
-  }
 
   .card {
     flex: 0 0 220px;
