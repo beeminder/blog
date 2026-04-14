@@ -1,0 +1,219 @@
+---
+import type { Post } from "../schemas/post";
+import Shadowbox from "./Shadowbox.astro";
+import Img from "./Img.astro";
+import Icon from "./Icon.astro";
+
+interface Props {
+  posts: Post[];
+}
+
+const { posts: recommended } = Astro.props;
+---
+
+{recommended.length > 0 && (
+  <Shadowbox padding={2}>
+    <div class="recommended">
+      <h2>Recommended Posts</h2>
+      <div class="slider-wrapper">
+        <button class="arrow arrow-left" aria-label="Scroll left"><Icon name="chevron-left" /></button>
+        <div class="slider">
+          {recommended.map((p) => (
+            <a href={`/${p.slug}`} class="card">
+              {p.image && (
+                <div class="card-image">
+                  <Img
+                    src={p.image.src}
+                    alt={p.image.alt || p.title}
+                    title={p.image.title}
+                    width="400"
+                    height="225"
+                  />
+                </div>
+              )}
+              <div class="card-body">
+                <h3 set:html={p.title} />
+                <small>{p.date_string} &bull; {p.author}</small>
+              </div>
+            </a>
+          ))}
+        </div>
+        <button class="arrow arrow-right" aria-label="Scroll right"><Icon name="chevron-right" /></button>
+      </div>
+    </div>
+  </Shadowbox>
+)}
+
+<style>
+  .recommended {
+    container-type: inline-size;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: var(--gap-1);
+  }
+
+  .slider-wrapper {
+    position: relative;
+  }
+
+  .slider {
+    --cols: 1;
+    --card-width: calc((100cqi - (var(--cols) - 1) * var(--gap-1)) / var(--cols));
+
+    display: flex;
+    gap: var(--gap-1);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: var(--gap-0-5);
+    margin: calc(-1 * var(--gap-0-5));
+    scroll-padding-inline: var(--gap-0-5);
+  }
+
+  @container (min-width: 380px) {
+    .slider { --cols: 2; }
+  }
+
+  @container (min-width: 580px) {
+    .slider { --cols: 3; }
+  }
+
+  @container (min-width: 780px) {
+    .slider { --cols: 4; }
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .arrow {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    transition: box-shadow 0.15s ease, border-color 0.15s ease, opacity 0.2s ease, scale 0.2s ease;
+  }
+
+  .arrow:hover:not(:disabled) {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    border-color: #bbb;
+  }
+
+  .arrow:disabled {
+    opacity: 0;
+    scale: 0.5;
+    pointer-events: none;
+  }
+
+  .arrow :global(span) {
+    display: flex;
+  }
+
+  .arrow-left {
+    left: -20px;
+    padding-right: 2px;
+  }
+
+  .arrow-right {
+    right: -20px;
+    padding-left: 2px;
+  }
+
+
+  .card {
+    flex: 0 0 var(--card-width);
+    scroll-snap-align: start;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.15s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+    text-decoration: none;
+  }
+
+  .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #f0f0f0;
+  }
+
+  .card-image :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-body {
+    padding: var(--gap-0-5) var(--gap-1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body h3 {
+    margin: 0 0 var(--gap-0-5) 0;
+    font-size: 0.95rem;
+    color: var(--primary);
+  }
+
+  .card-body small {
+    font-family: sans-serif;
+    color: #767676;
+    font-size: 0.8rem;
+    margin-top: auto;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>(".recommended").forEach((wrapper) => {
+    const slider = wrapper.querySelector<HTMLElement>(".slider");
+    const left = wrapper.querySelector<HTMLButtonElement>(".arrow-left");
+    const right = wrapper.querySelector<HTMLButtonElement>(".arrow-right");
+    if (!slider || !left || !right) return;
+
+    const scrollAmount = () => slider.clientWidth;
+
+    const updateArrows = () => {
+      const atStart = slider.scrollLeft <= 1;
+      const atEnd = slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1;
+      left.disabled = atStart;
+      right.disabled = atEnd;
+    };
+
+    updateArrows();
+    slider.addEventListener("scroll", updateArrows, { passive: true });
+    new ResizeObserver(updateArrows).observe(slider);
+
+    left.addEventListener("click", () => {
+      slider.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+    });
+    right.addEventListener("click", () => {
+      slider.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+    });
+  });
+</script>
