@@ -196,12 +196,7 @@ const chevronRight = feather.icons["chevron-right"].toSvg();
     const right = wrapper.querySelector<HTMLButtonElement>(".arrow-right");
     if (!slider || !left || !right) return;
 
-    const scrollAmount = () => {
-      const card = slider.querySelector<HTMLElement>(".card");
-      if (!card) return 240;
-      const gap = parseFloat(getComputedStyle(slider).gap) || 16;
-      return card.offsetWidth + gap;
-    };
+    const scrollAmount = () => slider.clientWidth;
 
     const updateArrows = () => {
       const atStart = slider.scrollLeft <= 1;
