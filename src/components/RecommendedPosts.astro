@@ -112,12 +112,18 @@ const chevronRight = feather.icons["chevron-right"].toSvg();
     align-items: center;
     justify-content: center;
     color: var(--black);
-    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease, opacity 0.2s ease, scale 0.2s ease;
   }
 
-  .arrow:hover {
+  .arrow:hover:not(:disabled) {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
     border-color: #bbb;
+  }
+
+  .arrow:disabled {
+    opacity: 0;
+    scale: 0.5;
+    pointer-events: none;
   }
 
   .arrow-left {
@@ -196,6 +202,16 @@ const chevronRight = feather.icons["chevron-right"].toSvg();
       const gap = parseFloat(getComputedStyle(slider).gap) || 16;
       return card.offsetWidth + gap;
     };
+
+    const updateArrows = () => {
+      const atStart = slider.scrollLeft <= 1;
+      const atEnd = slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1;
+      left.disabled = atStart;
+      right.disabled = atEnd;
+    };
+
+    updateArrows();
+    slider.addEventListener("scroll", updateArrows, { passive: true });
 
     left.addEventListener("click", () => {
       slider.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
