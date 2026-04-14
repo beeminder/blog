@@ -1,6 +1,8 @@
 ---
 import type { Post } from "../schemas/post";
 import Shadowbox from "./Shadowbox.astro";
+import Img from "./Img.astro";
+
 interface Props {
   posts: Post[];
 }
@@ -22,14 +24,12 @@ const chevronRight = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height=
             <a href={`/${p.slug}`} class="card">
               {p.image && (
                 <div class="card-image">
-                  <img
+                  <Img
                     src={p.image.src}
                     alt={p.image.alt || p.title}
                     title={p.image.title}
                     width="400"
                     height="225"
-                    loading="lazy"
-                    decoding="async"
                   />
                 </div>
               )}
