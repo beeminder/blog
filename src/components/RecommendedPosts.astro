@@ -1,16 +1,8 @@
 ---
+import type { Post } from "../schemas/post";
 import Shadowbox from "./Shadowbox.astro";
-
-interface RecommendedPost {
-  slug: string;
-  title: string;
-  image?: { src: string; alt?: string; title?: string };
-  date_string: string;
-  author: string;
-}
-
 interface Props {
-  posts: RecommendedPost[];
+  posts: Post[];
 }
 
 const { posts: recommended } = Astro.props;
