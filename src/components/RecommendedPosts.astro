@@ -1,6 +1,5 @@
 ---
 import type { Post } from "../schemas/post";
-import Shadowbox from "./Shadowbox.astro";
 interface Props {
   posts: Post[];
 }
@@ -12,7 +11,7 @@ const chevronRight = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height=
 ---
 
 {recommended.length > 0 && (
-  <Shadowbox padding={2}>
+  <div class="recommended-wrapper">
     <div class="recommended">
       <h2>Recommended Posts</h2>
       <div class="slider-wrapper">
@@ -43,10 +42,17 @@ const chevronRight = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height=
         <button class="arrow arrow-right" aria-label="Scroll right" set:html={chevronRight} />
       </div>
     </div>
-  </Shadowbox>
+  </div>
 )}
 
 <style>
+  .recommended-wrapper {
+    background-color: white;
+    box-shadow: 0 0 6px #ccc;
+    padding: calc(var(--gap-1) * 2);
+    margin-bottom: var(--gap-1);
+  }
+
   .recommended {
     container-type: inline-size;
   }
