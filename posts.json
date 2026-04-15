@@ -7559,5 +7559,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "integrations", "games"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "darkgreen",
+"disqus_id": "darkgreen",
+"source": "doc.bmndr.co/darkgreen",
+"redirects": [],
+"date": "2026-04-14",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "PSA", "FAQ", "tips"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
