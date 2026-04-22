@@ -26,6 +26,7 @@ You are helping the user groom DEV-labeled issues in the beeminder/blog project.
 **Always use the `dev-grooming-session` helper script** for fetching, sorting, and snoozing issues. The script is located at `dev-grooming/dev-grooming-session` (relative to repo root). It handles stale-first sorting, DEV filtering, ZzZ exclusion, and snooze filtering deterministically — do NOT attempt to sort or filter issues yourself.
 
 **Use `gh` directly only for actions that have no session equivalent:**
+
 - `gh issue edit` — for updating title, body, labels, etc.
 - `gh issue close` — for closing issues (only if you are the author)
 - `gh issue comment` — for leaving comments (e.g., pinging the author)
@@ -139,31 +140,34 @@ After drafting any content (title, description, criteria, split plan, etc.), alw
 
 Present the label taxonomy and let the user choose which labels to add or remove:
 
-| Category | Labels |
-|----------|--------|
-| Work type | `DEV`, `BUG`, `RFE`, `INF`, `UVI`, `ABC` |
-| Status | `ZzZ` (snoozed), `ZOM` (regression) |
-| Size/priority | `PEA` (easy), `SKY` (ambitious), `ADO` (unclear what to do) |
-| Content | `IDEA`, `DRAFT`, `NOTES`, `IMG`, `GUEST`, `STY` |
-| Resolution | `zap` (fixed), `nix` (won't do), `cnr` (can't reproduce), `dup` (duplicate), `pub` (published) |
+| Category      | Labels                                                                                         |
+| ------------- | ---------------------------------------------------------------------------------------------- |
+| Work type     | `DEV`, `BUG`, `RFE`, `INF`, `UVI`, `ABC`                                                       |
+| Status        | `ZzZ` (snoozed), `ZOM` (regression)                                                            |
+| Size/priority | `PEA` (easy), `SKY` (ambitious), `ADO` (unclear what to do)                                    |
+| Content       | `IDEA`, `DRAFT`, `NOTES`, `IMG`, `GUEST`, `STY`                                                |
+| Resolution    | `zap` (fixed), `nix` (won't do), `cnr` (can't reproduce), `dup` (duplicate), `pub` (published) |
 
 Update: `gh issue edit <number> --add-label "<label>"` or `--remove-label "<label>"`
 
 **Option 6 - Close issue / Mark resolved:**
 
 First check if the current user is the issue author:
+
 ```bash
 gh issue view <number> --json author -q '.author.login'
 gh api user -q '.login'
 ```
 
-*If the user IS the author:*
+_If the user IS the author:_
+
 1. Ask which resolution label to apply: `zap`, `nix`, `cnr`, `dup`
 2. Confirm with the user before closing
 3. Apply label: `gh issue edit <number> --add-label "<resolution>"`
 4. Close: `gh issue close <number> --comment "<reason>"`
 
-*If the user is NOT the author:*
+_If the user is NOT the author:_
+
 1. Ask which resolution label to apply: `zap`, `nix`, `cnr`, `dup`
 2. Apply label: `gh issue edit <number> --add-label "<resolution>"`
 3. Comment pinging the author: `gh issue comment <number> --body "Marking as <resolution>. @<author> — feel free to close if you agree."`
@@ -193,57 +197,57 @@ After each action, run `dev-grooming/dev-grooming-session next` again to surface
 
 ## Commands Reference
 
-| Command | Purpose |
-|---------|---------|
-| `dev-grooming-session next` | Show the most stale non-snoozed DEV issue |
+| Command                                 | Purpose                                    |
+| --------------------------------------- | ------------------------------------------ |
+| `dev-grooming-session next`             | Show the most stale non-snoozed DEV issue  |
 | `dev-grooming-session list [--limit N]` | List DEV issues by staleness (default: 10) |
-| `dev-grooming-session view <N>` | Show full details for issue #N |
-| `dev-grooming-session snooze <N> <dur>` | Snooze issue #N for a duration |
-| `dev-grooming-session unsnooze <N>` | Remove snooze for issue #N |
-| `dev-grooming-session snoozed` | List currently snoozed issues |
-| `dev-grooming-session reset` | Clear all snooze state for this repo |
-| `dev-grooming-session status` | Show open/snoozed/groomable counts |
+| `dev-grooming-session view <N>`         | Show full details for issue #N             |
+| `dev-grooming-session snooze <N> <dur>` | Snooze issue #N for a duration             |
+| `dev-grooming-session unsnooze <N>`     | Remove snooze for issue #N                 |
+| `dev-grooming-session snoozed`          | List currently snoozed issues              |
+| `dev-grooming-session reset`            | Clear all snooze state for this repo       |
+| `dev-grooming-session status`           | Show open/snoozed/groomable counts         |
 
 All commands should be prefixed with the repo-relative path: `dev-grooming/dev-grooming-session`
 
 ## Label Taxonomy Quick Reference
 
-| Label | Category | Meaning |
-|-------|----------|---------|
-| `DEV` | Work type | Development work |
-| `BUG` | Work type | Bug report |
-| `RFE` | Work type | Request For Enhancement |
-| `INF` | Work type | Infrastructure (not user-visible) |
-| `UVI` | Work type | User-Visible Improvement |
-| `ABC` | Work type | Non-technical / prose / webcopy |
-| `ZzZ` | Status | Snoozed (excluded from grooming) |
-| `ZOM` | Status | Regression / zombie (high priority) |
-| `PEA` | Size | Easy-peasy (small, quick win) |
-| `SKY` | Size | Pie in the sky (ambitious/speculative) |
-| `ADO` | Size | Questions about what to Actually Do |
-| `zap` | Resolution | Fixed / done |
-| `nix` | Resolution | Won't do |
-| `cnr` | Resolution | Could not reproduce |
-| `dup` | Resolution | Duplicate |
-| `pub` | Resolution | Published |
-| `IDEA` | Content | Blog post idea |
-| `DRAFT` | Content | Draft status |
-| `NOTES` | Content | Notes / research |
-| `IMG` | Content | Image-related |
-| `GUEST` | Content | Guest author |
-| `STY` | Content | Style / polish / CSS |
+| Label   | Category   | Meaning                                |
+| ------- | ---------- | -------------------------------------- |
+| `DEV`   | Work type  | Development work                       |
+| `BUG`   | Work type  | Bug report                             |
+| `RFE`   | Work type  | Request For Enhancement                |
+| `INF`   | Work type  | Infrastructure (not user-visible)      |
+| `UVI`   | Work type  | User-Visible Improvement               |
+| `ABC`   | Work type  | Non-technical / prose / webcopy        |
+| `ZzZ`   | Status     | Snoozed (excluded from grooming)       |
+| `ZOM`   | Status     | Regression / zombie (high priority)    |
+| `PEA`   | Size       | Easy-peasy (small, quick win)          |
+| `SKY`   | Size       | Pie in the sky (ambitious/speculative) |
+| `ADO`   | Size       | Questions about what to Actually Do    |
+| `zap`   | Resolution | Fixed / done                           |
+| `nix`   | Resolution | Won't do                               |
+| `cnr`   | Resolution | Could not reproduce                    |
+| `dup`   | Resolution | Duplicate                              |
+| `pub`   | Resolution | Published                              |
+| `IDEA`  | Content    | Blog post idea                         |
+| `DRAFT` | Content    | Draft status                           |
+| `NOTES` | Content    | Notes / research                       |
+| `IMG`   | Content    | Image-related                          |
+| `GUEST` | Content    | Guest author                           |
+| `STY`   | Content    | Style / polish / CSS                   |
 
 ## Snooze Durations
 
-| Input | Duration |
-|-------|----------|
-| 1h | 1 hour |
-| 4h | 4 hours |
-| 1d | 1 day |
-| 3d | 3 days |
-| 1w | 1 week |
-| 2w | 2 weeks |
-| 1m | 1 month (30 days) |
+| Input | Duration          |
+| ----- | ----------------- |
+| 1h    | 1 hour            |
+| 4h    | 4 hours           |
+| 1d    | 1 day             |
+| 3d    | 3 days            |
+| 1w    | 1 week            |
+| 2w    | 2 weeks           |
+| 1m    | 1 month (30 days) |
 
 ## Tips
 
