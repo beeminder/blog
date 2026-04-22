@@ -1,0 +1,6 @@
+{
+  "setup_script": "pnpm install",
+  "dev_server_script": "pnpm dev",
+  "verification_script": "pnpm run lint && pnpm run check:ts && pnpm test",
+  "copy_files": [".env"]
+}
