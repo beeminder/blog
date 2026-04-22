@@ -218,6 +218,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/custard' 1`] = `"https:/
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/cybermonday' 1`] = `"https://the_source_domain/cybermonday/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/darkgreen' 1`] = `"https://the_source_domain/darkgreen/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/datasmithing' 1`] = `"https://the_source_domain/datasmithing/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/deathtoexp' 1`] = `"https://the_source_domain/deathtoexp/export/txt"`;
