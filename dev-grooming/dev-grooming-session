@@ -117,24 +117,47 @@ fetch_issues() {
     --jq '[.[] | select(.labels | map(.name) | index("ZzZ") | not)] | sort_by(.updatedAt)'
 }
 
-# Filter out snoozed issues from JSON array
+# Build JSON array of currently-snoozed issue numbers for a repo
+get_snoozed_numbers() {
+  local repo="$1"
+  ensure_snooze_file
+  local now_epoch
+  now_epoch=$(date +%s)
+
+  jq -r --arg repo "$repo" --arg now "$now_epoch" '
+    .[$repo] // {} | to_entries
+    | map(select((.value | sub("\\+.*";"") | gsub("-";"/") | . as $d | now) < ($now | tonumber) | not))
+    | map(.key)
+  ' "$SNOOZE_FILE" 2>/dev/null || echo '[]'
+}
+
+# Filter out snoozed issues from JSON array in a single jq pass
 filter_snoozed() {
   local repo="$1"
   local issues="$2"
-  local result="[]"
 
-  local count
-  count=$(echo "$issues" | jq 'length')
+  # Collect snoozed numbers by checking each entry
+  local snoozed_nums="[]"
+  local entries
+  entries=$(jq -r --arg repo "$repo" '.[$repo] // {} | to_entries[] | "\(.key) \(.value)"' "$SNOOZE_FILE" 2>/dev/null) || true
 
-  for ((i=0; i<count; i++)); do
-    local num
-    num=$(echo "$issues" | jq -r ".[$i].number")
-    if ! is_snoozed "$repo" "$num"; then
-      result=$(echo "$result" | jq --argjson issue "$(echo "$issues" | jq ".[$i]")" '. + [$issue]')
-    fi
-  done
+  if [[ -n "$entries" ]]; then
+    local now_epoch
+    now_epoch=$(date +%s)
+    while IFS=' ' read -r num expiry; do
+      local expiry_epoch
+      expiry_epoch=$(date -d "$expiry" +%s 2>/dev/null) || continue
+      if (( now_epoch < expiry_epoch )); then
+        snoozed_nums=$(echo "$snoozed_nums" | jq --arg n "$num" '. + [$n]')
+      else
+        # Expired — clean it up
+        remove_snooze "$repo" "$num"
+      fi
+    done <<< "$entries"
+  fi
 
-  echo "$result"
+  echo "$issues" | jq --argjson snoozed "$snoozed_nums" \
+    '[.[] | select(.number | tostring | IN($snoozed[]) | not)]'
 }
 
 cmd_next() {
@@ -261,14 +284,17 @@ cmd_status() {
   repo=$(get_repo)
   ensure_snooze_file
 
-  local total_dev snoozed_count
+  local total_dev zzz_count snoozed_count groomable
   total_dev=$(gh issue list --state open --label DEV --json number --limit 500 --jq 'length')
+  zzz_count=$(gh issue list --state open --label DEV,ZzZ --json number --limit 500 --jq 'length')
   snoozed_count=$(jq --arg repo "$repo" '.[$repo] // {} | length' "$SNOOZE_FILE")
+  groomable=$(( total_dev - zzz_count - snoozed_count ))
 
   echo "Repo:      $repo"
   echo "DEV open:  $total_dev issues"
+  echo "ZzZ:       $zzz_count issues"
   echo "Snoozed:   $snoozed_count issues"
-  echo "Groomable: $((total_dev - snoozed_count)) issues"
+  echo "Groomable: $groomable issues"
 }
 
 # Main dispatch
