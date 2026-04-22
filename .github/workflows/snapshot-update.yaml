@@ -34,21 +34,24 @@ jobs:
       - name: Generate PR description
         id: description
         run: |
-          git add -A
-          if git diff --cached --quiet; then
+          NEW_FILES=$(git ls-files --others -- '*.snap')
+          MODIFIED_FILES=$(git diff --name-only -- '*.snap')
+          DELETED_FILES=$(git diff --diff-filter=D --name-only -- '*.snap')
+
+          if [ -z "$NEW_FILES" ] && [ -z "$MODIFIED_FILES" ]; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
 
-            ADDED=$(git diff --cached --name-status -- '*.snap' | grep '^A' | wc -l)
-            DELETED=$(git diff --cached --name-status -- '*.snap' | grep '^D' | wc -l)
-            MODIFIED=$(git diff --cached --name-status -- '*.snap' | grep '^M' | wc -l)
+            ADDED=$(echo "$NEW_FILES" | grep -c . || true)
+            DELETED=$(echo "$DELETED_FILES" | grep -c . || true)
+            MODIFIED=$(echo "$MODIFIED_FILES" | grep -v '^$' | grep -c . || true)
 
             FILE_LIST=""
-            while IFS= read -r file; do
+            for file in $NEW_FILES $MODIFIED_FILES; do
               [ -z "$file" ] && continue
               FILE_LIST="${FILE_LIST}- \`${file}\`"$'\n'
-            done < <(git diff --cached --name-only -- '*.snap')
+            done
 
             EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
             {
@@ -69,8 +72,6 @@ jobs:
               echo "Please review the changed files in this PR for details on what changed."
               echo "$EOF"
             } >> "$GITHUB_OUTPUT"
-
-            git reset
           fi
       - name: Create or update PR
         if: steps.description.outputs.has_changes == 'true'
@@ -80,4 +81,5 @@ jobs:
           commit-message: "chore: update snapshots"
           title: "chore: update snapshots"
           body: ${{ steps.description.outputs.body }}
+          add-paths: '*.snap'
           delete-branch: true
