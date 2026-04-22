@@ -8,6 +8,34 @@ set -euo pipefail
 SNOOZE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/grooming-session"
 SNOOZE_FILE="$SNOOZE_DIR/snoozed.json"
 
+# Portable date helpers (GNU/Linux and BSD/macOS)
+# Returns ISO-8601 UTC timestamp offset by $1 seconds from now
+date_offset_iso() {
+  local seconds="$1"
+  if date --version >/dev/null 2>&1; then
+    # GNU date
+    date -u -d "+${seconds} seconds" '+%Y-%m-%dT%H:%M:%S+00:00'
+  else
+    # BSD date (macOS)
+    date -u -v+"${seconds}S" '+%Y-%m-%dT%H:%M:%S+00:00'
+  fi
+}
+
+# Parses an ISO-8601 date string to epoch seconds
+date_to_epoch() {
+  local datestr="$1"
+  if date --version >/dev/null 2>&1; then
+    # GNU date
+    date -d "$datestr" +%s
+  else
+    # BSD date (macOS) — strip timezone colon for compatibility
+    local cleaned
+    cleaned=$(echo "$datestr" | sed 's/\([+-][0-9][0-9]\):\([0-9][0-9]\)$/\1\2/')
+    date -j -f '%Y-%m-%dT%H:%M:%S%z' "$cleaned" +%s 2>/dev/null || \
+      date -j -f '%Y-%m-%dT%H:%M:%S' "$datestr" +%s
+  fi
+}
+
 usage() {
   cat <<EOF
 Usage: $0 <command> [options]
@@ -60,7 +88,7 @@ set_snooze() {
   esac
 
   local expiry
-  expiry=$(date -u -d "+${seconds} seconds" --iso-8601=seconds)
+  expiry=$(date_offset_iso "$seconds")
 
   local tmp
   tmp=$(mktemp)
@@ -105,7 +133,7 @@ filter_snoozed() {
     now_epoch=$(date +%s)
     while IFS=' ' read -r num expiry; do
       local expiry_epoch
-      expiry_epoch=$(date -d "$expiry" +%s 2>/dev/null) || continue
+      expiry_epoch=$(date_to_epoch "$expiry" 2>/dev/null) || continue
       if (( now_epoch < expiry_epoch )); then
         snoozed_nums=$(echo "$snoozed_nums" | jq --arg n "$num" '. + [$n]')
       else
@@ -224,7 +252,7 @@ cmd_snoozed() {
     now_epoch=$(date +%s)
     while IFS=' ' read -r num expiry; do
       local expiry_epoch
-      expiry_epoch=$(date -d "$expiry" +%s 2>/dev/null) || continue
+      expiry_epoch=$(date_to_epoch "$expiry" 2>/dev/null) || continue
       if (( now_epoch >= expiry_epoch )); then
         remove_snooze "$repo" "$num"
       fi
