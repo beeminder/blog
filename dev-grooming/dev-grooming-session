@@ -20,6 +20,7 @@ Commands:
   unsnooze <N>      Remove snooze for issue #N
   snoozed           List currently snoozed issues
   reset             Clear all snooze state for this repo
+  status            Show open/snoozed/groomable counts
 
 Run from a git repo with gh configured.
 EOF
