@@ -40,14 +40,15 @@ jobs:
           else
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
 
-            ADDED=$(git diff --cached --name-status | grep '^A' | wc -l)
-            DELETED=$(git diff --cached --name-status | grep '^D' | wc -l)
-            MODIFIED=$(git diff --cached --name-status | grep '^M' | wc -l)
+            ADDED=$(git diff --cached --name-status -- '*.snap' | grep '^A' | wc -l)
+            DELETED=$(git diff --cached --name-status -- '*.snap' | grep '^D' | wc -l)
+            MODIFIED=$(git diff --cached --name-status -- '*.snap' | grep '^M' | wc -l)
 
             FILE_LIST=""
             while IFS= read -r file; do
+              [ -z "$file" ] && continue
               FILE_LIST="${FILE_LIST}- \`${file}\`"$'\n'
-            done < <(git diff --cached --name-only)
+            done < <(git diff --cached --name-only -- '*.snap')
 
             EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
             {
@@ -79,3 +80,4 @@ jobs:
           commit-message: "chore: update snapshots"
           title: "chore: update snapshots"
           body: ${{ steps.description.outputs.body }}
+          delete-branch: true
