@@ -34,11 +34,11 @@ jobs:
       - name: Generate PR description
         id: description
         run: |
-          NEW_FILES=$(git ls-files --others -- '*.snap')
-          MODIFIED_FILES=$(git diff --name-only -- '*.snap')
+          NEW_FILES=$(git ls-files --others --exclude-standard -- '*.snap')
+          MODIFIED_FILES=$(git diff --diff-filter=M --name-only -- '*.snap')
           DELETED_FILES=$(git diff --diff-filter=D --name-only -- '*.snap')
 
-          if [ -z "$NEW_FILES" ] && [ -z "$MODIFIED_FILES" ]; then
+          if [ -z "$NEW_FILES" ] && [ -z "$MODIFIED_FILES" ] && [ -z "$DELETED_FILES" ]; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
@@ -48,7 +48,7 @@ jobs:
             MODIFIED=$(echo "$MODIFIED_FILES" | grep -v '^$' | grep -c . || true)
 
             FILE_LIST=""
-            for file in $NEW_FILES $MODIFIED_FILES; do
+            for file in $NEW_FILES $MODIFIED_FILES $DELETED_FILES; do
               [ -z "$file" ] && continue
               FILE_LIST="${FILE_LIST}- \`${file}\`"$'\n'
             done
