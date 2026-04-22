@@ -32426,6 +32426,109 @@ I.e., our exquisitely fair discount slider wouldn&#8217;t be fair if we removed 
 "
 `;
 
+exports[`body > post darkgreen hash 7f0c5730167393e855759fec81af61bc 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    alt="Some Beeminder graphs and a rainbow and a green shield"
+    title="Graph colors enhanced to show texture."
+    width="450px"
+    src="https://github.com/user-attachments/assets/c13193d2-d8b6-4900-9439-02a72efdf082"
+  >
+</p>
+<p>
+  A full 10 years ago we published a listicle, 
+&#8220;
+  <a
+    href="https://blog.beeminder.com/obscure/"
+    title="Technically it has 17 entries now; we randomly added a new one a few years later"
+  >
+    16 Obscure Beeminder Features
+  </a>
+  &#8221;. 
+Number 15, we could say, surprised us. 
+With its longevity and practicality. 
+Since we don&#8217;t actually want to clickbait you, here it is:
+</p>
+<blockquote>
+  <p>
+    If you have over a week of safety buffer you&#8217;re immune to the
+    <a
+      href="http://blog.beeminder.com/glossary/#ahorizon"
+      title="Akrasia is distorted decision-making in the face of immediate consequences and your akrasia horizon quantifies “immediate”. It’s the timeframe within which your short-term impulses outweigh your better judgment — taken by Beeminder to always be one week in the future. You can make arbitrary changes to your goal — the steepness of your bright red line (formerly yellow brick road) — but only outside the akrasia horizon."
+    >
+      akrasia horizon
+    </a>
+    .
+  </p>
+</blockquote>
+<br>
+<div style="border-style:solid;border-width:1px;padding:10px 70px 20px">
+  <h3>
+    <center>
+      Quick Review: Akrasia and the Akrasia Horizon
+    </center>
+  </h3>
+  <p>
+    <i>
+      Akrasia
+    </i>
+    (also defined in the sidebar of the blog) means acting against your own better judgment.
+Beeminder&#8217;s
+    <i>
+      akrasia horizon
+    </i>
+    refers to the restriction that, while you can make your goal easier or even end it altogether at any time, the change takes a week to take effect.
+So you can change your mind about your commitment for a thought-out reason, but you can&#8217;t do so akratically.
+See our
+    <a
+      href="https://help.beeminder.com/article/45-what-is-the-akrasia-horizon"
+      title="More philosophical than most of our help docs, with lots of blog post links"
+    >
+      help article
+    </a>
+    for more.
+  </p>
+</div>
+<br>
+<p>
+  In short, akrasia horizon immunity means that you can immediately flatten your bright red line and&#8201;&#8212;&#8201;though it takes a week for the flattening to take effect&#8201;&#8212;&#8201;by the time you run out of safety buffer you&#8217;ll have reached the
+  <a
+    href="http://blog.beeminder.com/glossary/#flatspot"
+    title="A period in which your bright red line is paused, requiring no work. You may want to add a flat spot for a vacation, for example. You do so by dialing down your red line with the commitment dial. When you start a new goal or rerail, Beeminder by default starts you with a flat spot so you can build up an initial safety buffer."
+  >
+    flat spot
+  </a>
+  .
+</p>
+<p>
+  In our blog post introducing the
+  <a
+    href="https://blog.beeminder.com/rainbowdash"
+    title="Now it&#39;s just the dashboard, since we&#39;ve all forgotten what the non-rainbow dashboard ever looked like"
+  >
+    rainbow dashboard
+  </a>
+  , we point out that goals with 7+ days of safety buffer are shown in a subtly darker shade of green, to remind you that you&#8217;ve achieved akrasia horizon immunity.
+Quoting ourselves:
+</p>
+<blockquote>
+  <p>
+    If something comes up or you decide you hate your Beeminder goal (it happens), you can click Archive or schedule a flat section of the bright red line. 
+It takes a week for such changes to take effect, but, lucky you, you have that much safety buffer! 
+So instead of clicking Archive or scheduling your break and then toughing it out for another week, you can do that and then immediately check out. 
+By the time your safety buffer runs out, your break will begin. 
+Your friends will be dark green with envy.
+  </p>
+</blockquote>
+<p>
+  Of course if you had the discipline to maintain a week of safety buffer you wouldn&#8217;t need Beeminder in the first place. 
+But it&#8217;s a nice little carrot to go with the stick.
+</p>
+"
+`;
+
 exports[`body > post datasmithing hash acfdda5d3cfe687cc238472a6aded83f 1`] = `
 "
 <p>
@@ -73132,7 +73235,7 @@ you might find the
 "
 `;
 
-exports[`body > post obscure hash b511511e931c9ba749b7cbf7c89301c8 1`] = `
+exports[`body > post obscure hash af79e5e0242db809affb62d6ae426738 1`] = `
 "
 <p>
   <img
@@ -73345,7 +73448,7 @@ The other shortcuts for entering data are on the obscure side as well.
 This was inadvertently a trick question when we polled people but all I meant was that if you have over a week of safety buffer then if something comes up you can immediately flatten your road and&#8201;&#8212;&#8201;though it takes a week for the flattening to take effect&#8201;&#8212;&#8201;by the time you run out of safety buffer you&#8217;ll have reached the
   <a
     href="http://blog.beeminder.com/glossary/#flatspot"
-    title="A period in which your yellow brick road is paused, requiring no work. You may want to add a flat spot for a vacation, for example. You do so by dialing down your road with the road dial. When you start a new goal or rerail, Beeminder by default starts you with a flat spot so you can build up an initialsafety buffer."
+    title="A period in which your yellow brick road is paused, requiring no work. You may want to add a flat spot for a vacation, for example. You do so by dialing down your road with the road dial. When you start a new goal or rerail, Beeminder by default starts you with a flat spot so you can build up an initial safety buffer."
   >
     flat spot
   </a>
