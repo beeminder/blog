@@ -82,6 +82,7 @@ Adapted from `~/.claude/skills/grooming/SKILL.md` with these project-specific ad
 - **Close with resolution label**: When closing, prompt for resolution label (zap, nix, cnr, dup) and apply it
 - **ZzZ snooze option**: Offer "Add ZzZ label" as an alternative to script-level snooze (persistent, visible to all contributors)
 - **ZOM awareness**: Flag ZOM-labeled issues as high priority in analysis
+- **Author-only close rule**: Only the issue's author may close it. If the current user is not the author, the skill should instead apply the resolution label (e.g. `zap`) and leave a comment pinging the author. The skill must check authorship before offering "Close issue" vs "Mark resolved".
 - **Script path**: Reference `.claude/skills/dev-grooming/dev-grooming-session` (project-local)
 
 ## Source Code Structure Changes
