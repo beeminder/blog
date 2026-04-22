@@ -30,3 +30,7 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# zenflow
+.zenflow/*
+!.zenflow/settings.json
