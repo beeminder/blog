@@ -39,34 +39,6 @@ ensure_snooze_file() {
   fi
 }
 
-# Get repo-specific snooze data
-get_repo_snoozes() {
-  local repo="$1"
-  ensure_snooze_file
-  jq -r --arg repo "$repo" '.[$repo] // {}' "$SNOOZE_FILE"
-}
-
-# Check if an issue is snoozed (returns 0 if snoozed, 1 if not)
-is_snoozed() {
-  local repo="$1" issue_number="$2"
-  local expiry
-  expiry=$(jq -r --arg repo "$repo" --arg num "$issue_number" \
-    '.[$repo][$num] // empty' "$SNOOZE_FILE" 2>/dev/null) || return 1
-  [[ -z "$expiry" ]] && return 1
-
-  local expiry_epoch now_epoch
-  expiry_epoch=$(date -d "$expiry" +%s 2>/dev/null) || return 1
-  now_epoch=$(date +%s)
-
-  if (( now_epoch < expiry_epoch )); then
-    return 0  # still snoozed
-  else
-    # Snooze expired — clean it up
-    remove_snooze "$repo" "$issue_number"
-    return 1
-  fi
-}
-
 set_snooze() {
   local repo="$1" issue_number="$2" duration="$3"
   ensure_snooze_file
@@ -270,17 +242,23 @@ cmd_status() {
   repo=$(get_repo)
   ensure_snooze_file
 
-  local total_dev groomable
+  local total_dev after_zzz groomable zzz_count snoozed_count
   total_dev=$(gh issue list --state open --label DEV --json number --limit 500 --jq 'length')
 
   # Use the same fetch+filter pipeline as list/next for an accurate groomable count
   local issues
   issues=$(fetch_issues 500)
+  after_zzz=$(echo "$issues" | jq 'length')
+  zzz_count=$(( total_dev - after_zzz ))
+
   issues=$(filter_snoozed "$repo" "$issues")
   groomable=$(echo "$issues" | jq 'length')
+  snoozed_count=$(( after_zzz - groomable ))
 
   echo "Repo:      $repo"
   echo "DEV open:  $total_dev issues"
+  echo "ZzZ:       $zzz_count issues"
+  echo "Snoozed:   $snoozed_count issues"
   echo "Groomable: $groomable issues"
 }
 
