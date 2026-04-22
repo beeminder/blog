@@ -64,7 +64,8 @@ Create `.claude/skills/dev-grooming/dev-grooming-session` by adapting the person
 - Make executable (`chmod +x`)
 - Verify: run `dev-grooming-session status` and `dev-grooming-session list` against beeminder/blog
 
-### [ ] Step: Create SKILL.md with label-aware workflow
+### [x] Step: Create SKILL.md with label-aware workflow
+<!-- chat-id: 5287d852-98b8-4075-b46c-be87def44f29 -->
 
 Create `.claude/skills/dev-grooming/SKILL.md` adapting the personal grooming skill:
 - Scope to DEV-labeled issues
