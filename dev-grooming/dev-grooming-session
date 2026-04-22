@@ -117,20 +117,6 @@ fetch_issues() {
     --jq '[.[] | select(.labels | map(.name) | index("ZzZ") | not)] | sort_by(.updatedAt)'
 }
 
-# Build JSON array of currently-snoozed issue numbers for a repo
-get_snoozed_numbers() {
-  local repo="$1"
-  ensure_snooze_file
-  local now_epoch
-  now_epoch=$(date +%s)
-
-  jq -r --arg repo "$repo" --arg now "$now_epoch" '
-    .[$repo] // {} | to_entries
-    | map(select((.value | sub("\\+.*";"") | gsub("-";"/") | . as $d | now) < ($now | tonumber) | not))
-    | map(.key)
-  ' "$SNOOZE_FILE" 2>/dev/null || echo '[]'
-}
-
 # Filter out snoozed issues from JSON array in a single jq pass
 filter_snoozed() {
   local repo="$1"
@@ -284,16 +270,17 @@ cmd_status() {
   repo=$(get_repo)
   ensure_snooze_file
 
-  local total_dev zzz_count snoozed_count groomable
+  local total_dev groomable
   total_dev=$(gh issue list --state open --label DEV --json number --limit 500 --jq 'length')
-  zzz_count=$(gh issue list --state open --label DEV,ZzZ --json number --limit 500 --jq 'length')
-  snoozed_count=$(jq --arg repo "$repo" '.[$repo] // {} | length' "$SNOOZE_FILE")
-  groomable=$(( total_dev - zzz_count - snoozed_count ))
+
+  # Use the same fetch+filter pipeline as list/next for an accurate groomable count
+  local issues
+  issues=$(fetch_issues 500)
+  issues=$(filter_snoozed "$repo" "$issues")
+  groomable=$(echo "$issues" | jq 'length')
 
   echo "Repo:      $repo"
   echo "DEV open:  $total_dev issues"
-  echo "ZzZ:       $zzz_count issues"
-  echo "Snoozed:   $snoozed_count issues"
   echo "Groomable: $groomable issues"
 }
 
