@@ -214,6 +214,22 @@ cmd_snoozed() {
   repo=$(get_repo)
   ensure_snooze_file
 
+  # Clean up expired entries first
+  local entries
+  entries=$(jq -r --arg repo "$repo" '.[$repo] // {} | to_entries[] | "\(.key) \(.value)"' "$SNOOZE_FILE" 2>/dev/null) || true
+
+  if [[ -n "$entries" ]]; then
+    local now_epoch
+    now_epoch=$(date +%s)
+    while IFS=' ' read -r num expiry; do
+      local expiry_epoch
+      expiry_epoch=$(date -d "$expiry" +%s 2>/dev/null) || continue
+      if (( now_epoch >= expiry_epoch )); then
+        remove_snooze "$repo" "$num"
+      fi
+    done <<< "$entries"
+  fi
+
   local snoozes
   snoozes=$(jq -r --arg repo "$repo" '.[$repo] // {}' "$SNOOZE_FILE")
 
