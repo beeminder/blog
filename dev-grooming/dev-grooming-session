@@ -1,0 +1,292 @@
+#!/usr/bin/env bash
+
+# dev-grooming-session - Surface the most stale DEV-labeled GitHub issues for grooming
+# Usage: dev-grooming-session next | list | view [N] | snooze [N] <dur> | reset | status
+
+set -euo pipefail
+
+SNOOZE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/grooming-session"
+SNOOZE_FILE="$SNOOZE_DIR/snoozed.json"
+
+usage() {
+  cat <<EOF
+Usage: $0 <command> [options]
+
+Commands:
+  next              Show the most stale non-snoozed DEV issue
+  list [--limit N]  List DEV issues sorted by least recently updated (default limit: 10)
+  view <N>          Show full details for issue #N
+  snooze <N> <dur>  Snooze issue #N for a duration (e.g. 1h, 4h, 1d, 3d, 1w, 1m)
+  unsnooze <N>      Remove snooze for issue #N
+  snoozed           List currently snoozed issues
+  reset             Clear all snooze state for this repo
+
+Run from a git repo with gh configured.
+EOF
+}
+
+get_repo() {
+  gh repo view --json nameWithOwner -q '.nameWithOwner' 2>/dev/null || {
+    echo "Error: not in a GitHub repository or gh not configured" >&2
+    exit 1
+  }
+}
+
+ensure_snooze_file() {
+  mkdir -p "$SNOOZE_DIR"
+  if [[ ! -f "$SNOOZE_FILE" ]]; then
+    echo '{}' > "$SNOOZE_FILE"
+  fi
+}
+
+# Get repo-specific snooze data
+get_repo_snoozes() {
+  local repo="$1"
+  ensure_snooze_file
+  jq -r --arg repo "$repo" '.[$repo] // {}' "$SNOOZE_FILE"
+}
+
+# Check if an issue is snoozed (returns 0 if snoozed, 1 if not)
+is_snoozed() {
+  local repo="$1" issue_number="$2"
+  local expiry
+  expiry=$(jq -r --arg repo "$repo" --arg num "$issue_number" \
+    '.[$repo][$num] // empty' "$SNOOZE_FILE" 2>/dev/null) || return 1
+  [[ -z "$expiry" ]] && return 1
+
+  local expiry_epoch now_epoch
+  expiry_epoch=$(date -d "$expiry" +%s 2>/dev/null) || return 1
+  now_epoch=$(date +%s)
+
+  if (( now_epoch < expiry_epoch )); then
+    return 0  # still snoozed
+  else
+    # Snooze expired — clean it up
+    remove_snooze "$repo" "$issue_number"
+    return 1
+  fi
+}
+
+set_snooze() {
+  local repo="$1" issue_number="$2" duration="$3"
+  ensure_snooze_file
+
+  local seconds=0
+  local num="${duration%[hHdDwWmM]}"
+  local unit="${duration: -1}"
+
+  case "$unit" in
+    h|H) seconds=$((num * 3600)) ;;
+    d|D) seconds=$((num * 86400)) ;;
+    w|W) seconds=$((num * 604800)) ;;
+    m|M) seconds=$((num * 2592000)) ;;  # 30 days
+    *)
+      echo "Error: invalid duration '$duration'. Use e.g. 1h, 1d, 1w, 1m" >&2
+      exit 1
+      ;;
+  esac
+
+  local expiry
+  expiry=$(date -u -d "+${seconds} seconds" --iso-8601=seconds)
+
+  local tmp
+  tmp=$(mktemp)
+  jq --arg repo "$repo" --arg num "$issue_number" --arg exp "$expiry" \
+    '.[$repo] //= {} | .[$repo][$num] = $exp' "$SNOOZE_FILE" > "$tmp" && mv "$tmp" "$SNOOZE_FILE"
+
+  echo "Snoozed issue #$issue_number until $expiry"
+}
+
+remove_snooze() {
+  local repo="$1" issue_number="$2"
+  ensure_snooze_file
+  local tmp
+  tmp=$(mktemp)
+  jq --arg repo "$repo" --arg num "$issue_number" \
+    'if .[$repo] then .[$repo] |= del(.[$num]) else . end' "$SNOOZE_FILE" > "$tmp" && mv "$tmp" "$SNOOZE_FILE"
+}
+
+# Fetch DEV-labeled issues sorted by updated (ascending = most stale first), excluding ZzZ
+fetch_issues() {
+  local limit="${1:-100}"
+  gh issue list \
+    --state open \
+    --label DEV \
+    --json number,title,updatedAt,createdAt,labels,assignees \
+    --limit "$limit" \
+    --jq '[.[] | select(.labels | map(.name) | index("ZzZ") | not)] | sort_by(.updatedAt)'
+}
+
+# Filter out snoozed issues from JSON array
+filter_snoozed() {
+  local repo="$1"
+  local issues="$2"
+  local result="[]"
+
+  local count
+  count=$(echo "$issues" | jq 'length')
+
+  for ((i=0; i<count; i++)); do
+    local num
+    num=$(echo "$issues" | jq -r ".[$i].number")
+    if ! is_snoozed "$repo" "$num"; then
+      result=$(echo "$result" | jq --argjson issue "$(echo "$issues" | jq ".[$i]")" '. + [$issue]')
+    fi
+  done
+
+  echo "$result"
+}
+
+cmd_next() {
+  local repo
+  repo=$(get_repo)
+  local issues
+  issues=$(fetch_issues 100)
+  issues=$(filter_snoozed "$repo" "$issues")
+
+  local count
+  count=$(echo "$issues" | jq 'length')
+
+  if (( count == 0 )); then
+    echo "No open non-snoozed DEV issues found."
+    exit 0
+  fi
+
+  # First item is the most stale
+  local issue
+  issue=$(echo "$issues" | jq '.[0]')
+  local num
+  num=$(echo "$issue" | jq -r '.number')
+
+  echo "=== Most Stale DEV Issue ($count open non-snoozed DEV issues remaining) ==="
+  echo ""
+
+  # Fetch issue body
+  gh issue view "$num"
+
+  # Fetch comments separately (the --comments flag replaces body output, not appends)
+  local comment_count
+  comment_count=$(gh issue view "$num" --json comments --jq '.comments | length')
+  if (( comment_count > 0 )); then
+    echo ""
+    echo "=== Comments ($comment_count) ==="
+    echo ""
+    gh issue view "$num" --comments
+  fi
+}
+
+cmd_list() {
+  local limit=10
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --limit) limit="$2"; shift 2 ;;
+      *) shift ;;
+    esac
+  done
+
+  local repo
+  repo=$(get_repo)
+  local issues
+  issues=$(fetch_issues 100)
+  issues=$(filter_snoozed "$repo" "$issues")
+
+  local count
+  count=$(echo "$issues" | jq 'length')
+
+  if (( count == 0 )); then
+    echo "No open non-snoozed DEV issues found."
+    exit 0
+  fi
+
+  echo "=== Most Stale DEV Issues (showing up to $limit of $count) ==="
+  echo ""
+
+  echo "$issues" | jq -r --argjson limit "$limit" '
+    .[:$limit] | .[] |
+    "  #\(.number)\t\(.updatedAt[:10])\t[\(.labels | map(.name) | join(","))]\t\(.title)"
+  ' | column -t -s $'\t'
+}
+
+cmd_view() {
+  local num="${1:?Error: issue number required}"
+  gh issue view "$num"
+}
+
+cmd_snooze() {
+  local num="${1:?Error: issue number required}"
+  local duration="${2:?Error: duration required (e.g. 1h, 1d, 1w, 1m)}"
+  local repo
+  repo=$(get_repo)
+  set_snooze "$repo" "$num" "$duration"
+}
+
+cmd_unsnooze() {
+  local num="${1:?Error: issue number required}"
+  local repo
+  repo=$(get_repo)
+  remove_snooze "$repo" "$num"
+  echo "Unsnoozed issue #$num"
+}
+
+cmd_snoozed() {
+  local repo
+  repo=$(get_repo)
+  ensure_snooze_file
+
+  local snoozes
+  snoozes=$(jq -r --arg repo "$repo" '.[$repo] // {}' "$SNOOZE_FILE")
+
+  if [[ "$snoozes" == "{}" ]]; then
+    echo "No snoozed issues."
+    exit 0
+  fi
+
+  echo "=== Snoozed Issues ==="
+  echo ""
+  echo "$snoozes" | jq -r 'to_entries[] | "  #\(.key)\tuntil \(.value)"' | column -t -s $'\t'
+}
+
+cmd_reset() {
+  local repo
+  repo=$(get_repo)
+  ensure_snooze_file
+  local tmp
+  tmp=$(mktemp)
+  jq --arg repo "$repo" 'del(.[$repo])' "$SNOOZE_FILE" > "$tmp" && mv "$tmp" "$SNOOZE_FILE"
+  echo "Reset grooming session for $repo"
+}
+
+cmd_status() {
+  local repo
+  repo=$(get_repo)
+  ensure_snooze_file
+
+  local total_dev snoozed_count
+  total_dev=$(gh issue list --state open --label DEV --json number --limit 500 --jq 'length')
+  snoozed_count=$(jq --arg repo "$repo" '.[$repo] // {} | length' "$SNOOZE_FILE")
+
+  echo "Repo:      $repo"
+  echo "DEV open:  $total_dev issues"
+  echo "Snoozed:   $snoozed_count issues"
+  echo "Groomable: $((total_dev - snoozed_count)) issues"
+}
+
+# Main dispatch
+cmd="${1:-}"
+shift || true
+
+case "$cmd" in
+  next)     cmd_next "$@" ;;
+  list)     cmd_list "$@" ;;
+  view)     cmd_view "$@" ;;
+  snooze)   cmd_snooze "$@" ;;
+  unsnooze) cmd_unsnooze "$@" ;;
+  snoozed)  cmd_snoozed "$@" ;;
+  reset)    cmd_reset "$@" ;;
+  status)   cmd_status "$@" ;;
+  help|-h|--help) usage ;;
+  *)
+    usage >&2
+    exit 1
+    ;;
+esac
