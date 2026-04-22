@@ -53,7 +53,8 @@ Save to `{@artifacts_path}/plan.md`. If the feature is trivial and doesn't warra
 
 ---
 
-### [ ] Step: Create dev-grooming-session helper script
+### [x] Step: Create dev-grooming-session helper script
+<!-- chat-id: 0de470d5-6a6d-4757-93e5-a1a86235c11c -->
 
 Create `.claude/skills/dev-grooming/dev-grooming-session` by adapting the personal `grooming-session` script:
 - Filter for `DEV`-labeled issues only (`gh issue list --label DEV`)
