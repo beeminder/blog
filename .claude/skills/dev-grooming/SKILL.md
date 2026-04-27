@@ -23,7 +23,7 @@ You are helping the user groom DEV-labeled issues in the beeminder/blog project.
 
 ## CRITICAL: Workflow Constraints
 
-**Always use the `dev-grooming-session` helper script** for fetching, sorting, and snoozing issues. The script is located at `dev-grooming/dev-grooming-session` (relative to repo root). It handles stale-first sorting, DEV filtering, ZzZ exclusion, and snooze filtering deterministically — do NOT attempt to sort or filter issues yourself.
+**Always use the `dev-grooming-session` helper script** for fetching, sorting, and snoozing issues. The script is located at `.claude/skills/dev-grooming/dev-grooming-session` (relative to repo root). It handles stale-first sorting, DEV filtering, ZzZ exclusion, and snooze filtering deterministically — do NOT attempt to sort or filter issues yourself.
 
 **Use `gh` directly only for actions that have no session equivalent:**
 
@@ -41,7 +41,7 @@ You are helping the user groom DEV-labeled issues in the beeminder/blog project.
 ## Step 1: Get the Most Stale DEV Issue
 
 ```bash
-dev-grooming/dev-grooming-session next
+.claude/skills/dev-grooming/dev-grooming-session next
 ```
 
 This fetches all open DEV issues, filters out ZzZ-labeled and snoozed ones, sorts by least recently updated, and displays the most stale issue with full details **including comments**.
@@ -176,7 +176,7 @@ _If the user is NOT the author:_
 **Option 7 - Snooze (script):**
 
 1. Ask the user how long to snooze (e.g. 1h, 4h, 1d, 3d, 1w, 1m), or accept inline if already specified
-2. Run: `dev-grooming/dev-grooming-session snooze <number> <duration>`
+2. Run: `.claude/skills/dev-grooming/dev-grooming-session snooze <number> <duration>`
 3. The issue will be hidden from grooming until the snooze expires (local only)
 
 **Option 8 - Snooze (ZzZ label):**
@@ -191,24 +191,24 @@ Move directly to the next issue without changes.
 
 ## Step 5: Continue Loop
 
-After each action, run `dev-grooming/dev-grooming-session next` again to surface the next most-stale issue. Repeat until no issues remain or the user stops.
+After each action, run `.claude/skills/dev-grooming/dev-grooming-session next` again to surface the next most-stale issue. Repeat until no issues remain or the user stops.
 
 ---
 
 ## Commands Reference
 
-| Command                                 | Purpose                                    |
-| --------------------------------------- | ------------------------------------------ |
-| `dev-grooming-session next`             | Show the most stale non-snoozed DEV issue  |
-| `dev-grooming-session list [--limit N]` | List DEV issues by staleness (default: 10) |
-| `dev-grooming-session view <N>`         | Show full details for issue #N             |
-| `dev-grooming-session snooze <N> <dur>` | Snooze issue #N for a duration             |
-| `dev-grooming-session unsnooze <N>`     | Remove snooze for issue #N                 |
-| `dev-grooming-session snoozed`          | List currently snoozed issues              |
-| `dev-grooming-session reset`            | Clear all snooze state for this repo       |
-| `dev-grooming-session status`           | Show open/snoozed/groomable counts         |
+| Command                                                       | Purpose                                    |
+| ------------------------------------------------------------- | ------------------------------------------ |
+| `.claude/skills/dev-grooming/dev-grooming-session next`             | Show the most stale non-snoozed DEV issue  |
+| `.claude/skills/dev-grooming/dev-grooming-session list [--limit N]` | List DEV issues by staleness (default: 10) |
+| `.claude/skills/dev-grooming/dev-grooming-session view <N>`         | Show full details for issue #N             |
+| `.claude/skills/dev-grooming/dev-grooming-session snooze <N> <dur>` | Snooze issue #N for a duration             |
+| `.claude/skills/dev-grooming/dev-grooming-session unsnooze <N>`     | Remove snooze for issue #N                 |
+| `.claude/skills/dev-grooming/dev-grooming-session snoozed`          | List currently snoozed issues              |
+| `.claude/skills/dev-grooming/dev-grooming-session reset`            | Clear all snooze state for this repo       |
+| `.claude/skills/dev-grooming/dev-grooming-session status`           | Show open/snoozed/groomable counts         |
 
-All commands should be prefixed with the repo-relative path: `dev-grooming/dev-grooming-session`
+Run all commands from the repo root.
 
 ## Label Taxonomy Quick Reference
 
