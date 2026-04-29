@@ -7569,5 +7569,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "PSA", "FAQ", "tips"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "sliders",
+"disqus_id": "sliders",
+"source": "doc.bmndr.co/sliders",
+"redirects": [],
+"date": "2026-04-28",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "feature announcements"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
