@@ -197,8 +197,8 @@ After each action, run `.claude/skills/dev-grooming/dev-grooming-session next` a
 
 ## Commands Reference
 
-| Command                                                       | Purpose                                    |
-| ------------------------------------------------------------- | ------------------------------------------ |
+| Command                                                             | Purpose                                    |
+| ------------------------------------------------------------------- | ------------------------------------------ |
 | `.claude/skills/dev-grooming/dev-grooming-session next`             | Show the most stale non-snoozed DEV issue  |
 | `.claude/skills/dev-grooming/dev-grooming-session list [--limit N]` | List DEV issues by staleness (default: 10) |
 | `.claude/skills/dev-grooming/dev-grooming-session view <N>`         | Show full details for issue #N             |
