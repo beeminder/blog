@@ -22731,6 +22731,8 @@ Haters rejoice!)
       .)
     </p>
   </li>
+</ol>
+<ol>
   <li>
     <p>
       Prasanna Kumarr wrote about their
@@ -22854,17 +22856,19 @@ Haters rejoice!)
       </a>
     </p>
   </li>
+</ol>
+<ol>
   <li>
-    <p>
-      <a
-        href="https://djangostars.com/blog/mobile-app-gamification-few-things-to-consider/"
-        title="Opener: Beeminder is a tricky tool for those who don’t like losing things"
-      >
-        A list of gamification apps
-      </a>
-      which Beeminder sort of counts as
-    </p>
+    <a
+      href="https://djangostars.com/blog/mobile-app-gamification-few-things-to-consider/"
+      title="Opener: Beeminder is a tricky tool for those who don’t like losing things"
+    >
+      A list of gamification apps
+    </a>
+    which Beeminder sort of counts as
   </li>
+</ol>
+<ol>
   <li>
     <p>
       <a
@@ -23007,6 +23011,8 @@ Haters rejoice!)
       </a>
     </p>
   </li>
+</ol>
+<ol>
   <li>
     <p>
       Nadi De Angelis&#8217;s
@@ -23714,6 +23720,8 @@ I intended to shame ourselves, i.e.,
     </em>
     was not a success story in this case.]
   </li>
+</ol>
+<ol>
   <li>
     <a
       href="http://collegeinfogeek.com/resources/"
@@ -28702,9 +28710,13 @@ facilitates weight-loss wagers among friends, i.e., you use it to set up a group
         Pavlok
       </a>
     </strong>
-    is a physical bracelet that administers shock therapy to purge bad habits.
-Beeminder&#8217;s CEO has frequently worn one and is excited about integration possibilities.
   </li>
+</ul>
+<p>
+  is a physical bracelet that administers shock therapy to purge bad habits.
+Beeminder&#8217;s CEO has frequently worn one and is excited about integration possibilities.
+</p>
+<ul>
   <li>
     <strong>
       <a
@@ -111322,6 +111334,8 @@ by Brennan Brown (also the author of
       from an experienced user
     </strong>
   </li>
+</ol>
+<ol>
   <li>
     <a
       href="http://katzenfabrik.cat/blog/beeminder"
