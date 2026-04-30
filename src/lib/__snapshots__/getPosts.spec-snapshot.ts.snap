@@ -92187,6 +92187,168 @@ script,
 "
 `;
 
+exports[`body > post sliders hash 77f4a820933e3345b59240077ed8b8eb 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    alt="Steampunk version of the coupled sliders"
+    title="Maxwell's Beemon"
+    width="450px"
+    src="https://github.com/user-attachments/assets/dfd1c8ec-f3ba-4353-98d5-f4203f8289db"
+  >
+</p>
+<p>
+  Announcement:
+You can now jump down as many pledge steps as you like without waiting a week between jumps. 
+And pledges and pledge caps don&#8217;t have to be changed separately&#8201;&#8212;&#8201;the right things just happen, like if you push the pledge cap below the current pledge, that starts a one-week timer for both of them to change together.
+</p>
+<p>
+  (Review: 
+Your
+  <em>
+    pledge
+  </em>
+  on a Beeminder goal is how much you have at stake: 
+the amount we charge you each time your datapoints deviate from the bright red line on your graph representing what you committed to maintaining.
+Beeminder has a core concept of an
+  <em>
+    akrasia horizon
+  </em>
+  , meaning you can change your mind about any aspect of your goal&#8201;&#8212;&#8201;including how much money is at stake, or ending the goal entirely&#8201;&#8212;&#8201;but any such change takes a week to take effect.
+So you can change your mind for a thought-out reason but never impetuously or out of laziness.
+Never akratically.)
+</p>
+<p>
+  Until now (actually a couple weeks ago, when this went live) the only option for lowering your pledge was to drop it one level, starting the akrasia horizon countdown.
+A week later, you could repeat that process to drop another level.
+And changing your pledge cap was a completely separate thing you had to remember to do after waiting for the pledge to drop.
+If you wanted to drop your pledge from, say, $270 to the minimum of $5 and make sure it stayed there, that was literally a month-long operation ($270 &rarr; $90 &rarr; $30 &rarr; $10 &rarr; $5).
+</p>
+<p>
+  But now the long national nightmare is over.
+</p>
+<p>
+  We do have at least one user who liked the previous status quo.
+Beeminder is all about tools against temptation and so the friction of reaffirming each pledge drop could be viewed as a feature.
+This particular user likes to reward themself with a pledge drop whenever they hit a long enough streak.
+So they can still do that but will need a bit of self-discipline&#8201;&#8212;&#8201;sticking to one pledge drop at a time&#8201;&#8212;&#8201;that previously Beeminder gave them for free.
+Since this user is wildly outnumbered by those who hated the tedium of changing pledge levels, we&#8217;re not including an
+  <a
+    href="https://blog.beeminder.com/pdp"
+    title="The Pareto Dominance Principle for Apps and Websites -- see the embedded xkcd about breaking someone&#39;s workflow"
+  >
+    option for spacebar heating
+  </a>
+  .
+But since this isn&#8217;t strictly a
+  <a
+    href="https://blog.beeminder.com/pareto/"
+    title="Our handy blog post defining the concept of Pareto dominance"
+  >
+    Pareto improvement
+  </a>
+  , we were
+  <a
+    href="https://blog.beeminder.com/pdp"
+    title="The Pareto Dominance Principle for Apps and Websites"
+  >
+    duty-bound
+  </a>
+  to blog about it.
+</p>
+<p>
+  Conceptually, the new coupled sliders for pledge and pledge cap work like this:
+</p>
+<p>
+  <img
+    class="aligncenter"
+    width="450px"
+    alt="Skeuomorphic coupled sliders"
+    title="Skeuomorphism!"
+    src="https://github.com/user-attachments/assets/db0cfd38-10c1-40a9-930b-bcd6883b45a1"
+  >
+</p>
+<p>
+  Skeuomorphism!
+The little cowcatcher that sticks down from the yellow pledge knob means that if you physically slide the pledge value higher, it brings the pledge cap with it.
+The cap can&#8217;t ever be lower than the pledge.
+Conversely, if you slide the cap lower it pushes the pledge along, for the same reason, maintaining the pledge &le; cap invariant.
+</p>
+<p>
+  In reality, it&#8217;s like this:
+</p>
+<p>
+  <img
+    width="450px"
+    class="aligncenter"
+    alt="Screenshot of pledge interface on a beeminder goal"
+    title="This is the pledge modal (from clicking the $$ amount above the goal) on a test goal"
+    src="https://github.com/user-attachments/assets/be20f489-b79c-4b33-a720-38afb1ef00b9"
+  >
+</p>
+<p>
+  We think it&#8217;s more obvious when you interact with it yourself, so we made a little mockup version.
+Try sliding the sliders back and forth and see what they do:
+</p>
+<iframe
+  src="https://www.beeminder.com/pledge-sliders-demo"
+  class="aligncenter"
+  name="Beeminder.com"
+  frameborder="0"
+  border="0"
+  cellspacing="0"
+  style="max-width:100%;width:700px;height:290px"
+  scrolling="no"
+>
+</iframe>
+<p>
+  Simple, right?
+</p>
+<h3>
+  Wait, One Wee Weirdness
+</h3>
+<p>
+  This is mostly too niche to care about, but for completeness, if you,
+  <a
+    href="https://blog.beeminder.com/boobeemium"
+    title="Blog post in which we, speaking of weirdnesses, bad-mouth our own most expensive premium plan"
+  >
+    ill-advisedly
+  </a>
+  , have a Beemium plan then something weird happens if you slide the pledge all the way to $0 (as only Beemium people are allowed to do).
+Namely, in that special case, the pledge cap will also snap itself to $0.
+The reason is a little arcane.
+Remember the
+  <a
+    href="https://blog.beeminder.com/wetfeet"
+    title="Death To Zero Dollar Goals, Birth To Feet-Wetting Mode"
+  >
+    feet-wetting
+  </a>
+  feature?
+When you first create a goal you can choose to have the pledge be at $0 just for the first week, while you get your feet wet, after which it automatically bumps itself to $5.
+It turns out that that doesn&#8217;t quite play nicely with the Beemium perk of allowing goals to be at $0 indefinitely.
+Not the way we implemented it anyway.
+This is a big part of the reason for
+  <a
+    href="https://blog.beeminder.com/deprecate"
+    title="Deprecation Warning: Using “Deprecated” To Mean “No Longer Supported”"
+  >
+    deprecating
+  </a>
+  the Beemium plan&#8201;&#8212;&#8201;all the confusing special cases and hard-to-anticipate interactions with other features like feet-wetting.
+</p>
+<p>
+  The point being, if a Beemium user sets their pledge to $0, the feet-wetting will make it bump itself up to $5 a week later.
+The workaround is to set your pledge cap to $0 to force it not to do that.
+And since we don&#8217;t want a Beemium user to have their pledge go up from $0 when they weren&#8217;t expecting it to, we have this dumb special case to make the pledge cap also go to $0 by default.
+You can then bump it back up if you want.
+Just keep in mind that without a $0 pledge cap the pledge will always bump itself back to $5 after a week.
+</p>
+"
+`;
+
 exports[`body > post slytherin404 hash e96233337120fe417a01b12028e2d585 1`] = `
 "
 <p>
