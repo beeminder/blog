@@ -1,6 +1,7 @@
 name: CI
 on:
   push:
+    branches: [master]
   pull_request:
 env:
   NODE_VERSION: "22"
@@ -8,7 +9,6 @@ env:
   ETHERPAD_DOMAIN: "${{ secrets.ETHERPAD_DOMAIN }}"
 jobs:
   test:
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,7 +25,6 @@ jobs:
       - name: Test
         run: pnpm test
   test-snapshot:
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -42,7 +41,6 @@ jobs:
       - name: Test
         run: pnpm test:snapshot
   build:
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -59,7 +57,6 @@ jobs:
       - name: Build
         run: pnpm run build
   check:
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -76,7 +73,6 @@ jobs:
       - name: Check
         run: pnpm run check
   typescript:
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -93,7 +89,6 @@ jobs:
       - name: Check types
         run: pnpm run check:ts
   lint:
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -110,7 +105,6 @@ jobs:
       - name: Run eslint
         run: pnpm run lint
   formatting:
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -127,7 +121,6 @@ jobs:
       - name: Check formatting
         run: pnpm prettier --check .
   outdated:
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -144,7 +137,6 @@ jobs:
       - name: Check outdated
         run: pnpm outdated
   knip:
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.fork
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
