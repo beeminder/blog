@@ -1,653 +1,98 @@
 import { describe, it, expect } from "vitest";
-import { post } from "./post";
+import { rawPost, processPost } from "./post";
 import ether from "../lib/test/ether";
-import meta from "../lib/test/meta";
 
-describe("post", () => {
-  it("requires disqus id", () => {
-    const md = ether({
-      frontmatter: meta({
-        disqus_id: "",
-        date: new Date(),
-      }),
-    });
+// Minimal valid metadata for the rawPost schema. Tests that need to
+// exercise validation should override individual fields rather than
+// constructing full Etherpad-format markdown.
+function meta(
+  overrides: Record<string, unknown> = {},
+): Record<string, unknown> {
+  return {
+    source: "the_url",
+    date: "2020-01-01",
+    excerpt: "the_excerpt",
+    slug: "the_slug",
+    tags: ["the_tag"],
+    redirects: ["the_redirect"],
+    author: "the_author",
+    status: "publish",
+    disqus_id: "the_disqus_id",
+    md: "ignored by rawPost",
+    ...overrides,
+  };
+}
 
-    const data = {
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "",
-      md,
-    };
-
-    expect(() => post.parse(data)).toThrowError();
+describe("rawPost", () => {
+  it("accepts a complete metadata object", () => {
+    const result = rawPost.safeParse(meta());
+    expect(result.success).toBe(true);
   });
 
-  it("uses disqus id", () => {
-    const md = ether();
-
-    const p = post.parse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "test-post",
-      md,
-    });
-
-    expect(p.disqus_id).toEqual("test-post");
+  it("requires source", () => {
+    const result = rawPost.safeParse(meta({ source: undefined }));
+    expect(result.success).toBe(false);
   });
 
-  it("does not include private notes in excerpts", async () => {
-    const md = ether({
-      before: "private notes",
-    });
-
-    const p = post.parse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(p.excerpt).not.toContain("private notes");
+  it("requires non-empty source", () => {
+    const result = rawPost.safeParse(meta({ source: "" }));
+    expect(result.success).toBe(false);
   });
 
-  it("does not include raw markdown in excerpts", async () => {
-    const md = ether({
-      content: "[link](#)",
-    });
-
-    const p = post.parse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(p.excerpt).not.toContain("(#)");
+  it("requires slug", () => {
+    const result = rawPost.safeParse(meta({ slug: "" }));
+    expect(result.success).toBe(false);
   });
 
-  it("does not use image from private notes", async () => {
-    const md = ether({
-      before: "<img src='/private' />",
-    });
-
-    const p = post.parse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(p.image).toBeUndefined();
+  it("requires author", () => {
+    const result = rawPost.safeParse(meta({ author: "" }));
+    expect(result.success).toBe(false);
   });
 
-  it("requires title", async () => {
-    const md = ether({
-      title: null,
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
+  it("requires disqus_id", () => {
+    const result = rawPost.safeParse(meta({ disqus_id: "" }));
+    expect(result.success).toBe(false);
   });
 
-  it("requires slug", async () => {
-    const md = ether();
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
+  it("requires date", () => {
+    const result = rawPost.safeParse(meta({ date: "" }));
+    expect(result.success).toBe(false);
   });
 
-  it("requires author", async () => {
-    const md = ether();
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
+  it("requires status to be a known value", () => {
+    const result = rawPost.safeParse(meta({ status: "" }));
+    expect(result.success).toBe(false);
   });
 
-  it("requires disqus_id", async () => {
-    const md = ether();
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
+  it("requires excerpt", () => {
+    const result = rawPost.safeParse(meta({ excerpt: undefined }));
+    expect(result.success).toBe(false);
   });
 
-  it("requires redirects", async () => {
-    const md = ether();
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: undefined,
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
+  it("requires tags", () => {
+    const result = rawPost.safeParse(meta({ tags: undefined }));
+    expect(result.success).toBe(false);
   });
 
-  it("requires date", async () => {
-    const md = ether();
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
+  it("requires redirects", () => {
+    const result = rawPost.safeParse(meta({ redirects: undefined }));
+    expect(result.success).toBe(false);
   });
 
-  it("requires tags", async () => {
-    const md = ether();
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: undefined,
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
+  it("requires md", () => {
+    const result = rawPost.safeParse(meta({ md: undefined }));
+    expect(result.success).toBe(false);
   });
+});
 
-  it("requires status", async () => {
-    const md = ether();
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("requires source", async () => {
-    const md = ether();
-
-    const result = post.safeParse({
-      source: undefined,
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("requires new line preceeding HTML comments", async () => {
-    const md = ether({
-      content: `This is the paragraph in question
-<!-- comment --> More text`,
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("specifies error reason", async () => {
-    const md = ether({
-      content: `This is the paragraph in question
-<!-- comment --> More text`,
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    if (result.success) {
-      throw new Error("Expected error");
-    }
-
-    expect(JSON.stringify(result.error)).toEqual(
-      expect.stringMatching(/comment syntax error/),
-    );
-  });
-
-  it("requires excerpt", async () => {
-    const md = ether();
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: undefined,
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("expects excerpt from MAGIC_AUTO_EXTRACT to be Generated", async () => {
-    const md = ether({
-      content: "words",
-    });
-
-    const result = post.parse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "MAGIC_AUTO_EXTRACT",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.excerpt).toContain("word");
-  });
-
-  it("expects custom excerpt to return unchanged", async () => {
-    const md = ether();
-
-    const result = post.parse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.excerpt).toMatch("the excerpt");
-  });
-
-  it("extracts image title", async () => {
-    const md = ether({
-      content: `<img src="https://blog.beeminder.com/image.png" title="the_title" />`,
-    });
-
-    const result = post.parse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.image?.title).toMatch("the_title");
-  });
-
-  it("extracts image alt", async () => {
-    const md = ether({
-      content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" />`,
-    });
-
-    const result = post.parse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.image?.alt).toMatch("the_alt");
-  });
-
-  it("extracts image alt and title", async () => {
-    const md = ether({
-      content: `<img src="https://blog.beeminder.com/image.png" alt="the_alt" title="the_title" />`,
-    });
-
-    const result = post.parse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.image).toEqual(
-      expect.objectContaining({ title: "the_title", alt: "the_alt" }),
-    );
-  });
-
-  it("does not accept date from frontmatter", async () => {
-    const md = ether({
-      frontmatter: meta({
-        date: "2020-01-01",
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-    expect(result.success).toEqual(false);
-  });
-
-  it("does not accept date_string from frontmatter", async () => {
-    const md = ether({
-      frontmatter: meta({
-        date_string: "2020-01-01",
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-    expect(result.success).toEqual(false);
-  });
-
-  it("does not accept excerpt from frontmatter", async () => {
-    const md = ether({
-      frontmatter: meta({
-        excerpt: "the_excerpt",
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-    expect(result.success).toEqual(false);
-  });
-
-  it("does not accept slug from frontmatter", async () => {
-    const md = ether({
-      frontmatter: meta({
-        slug: "the_slug",
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-    expect(result.success).toEqual(false);
-  });
-
-  it("does not accept author from frontmatter", async () => {
-    const md = ether({
-      frontmatter: meta({
-        author: "the_author",
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("does not accept tags from frontmatter", async () => {
-    const md = ether({
-      frontmatter: meta({
-        tags: ["the_tag"],
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("does not accept disqus_id from frontmatter", async () => {
-    const md = ether({
-      frontmatter: meta({
-        disqus_id: "the_disqus_id",
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      status: "publish",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("does not accept status from frontmatter", async () => {
-    const md = ether({
-      frontmatter: meta({
-        status: "publish",
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      redirects: ["the_redirect"],
-      author: "the_author",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
-  });
-
-  it("does not accept redirects from frontmatter", async () => {
-    const md = ether({
-      frontmatter: meta({
-        redirects: ["the_redirect"],
-      }),
-    });
-
-    const result = post.safeParse({
-      source: "the_url",
-      date: "2020-01-01",
-      excerpt: "the_excerpt",
-      slug: "the_slug",
-      tags: ["the_tag"],
-      author: "the_author",
-      status: "publish",
-      disqus_id: "the_disqus_id",
-      md,
-    });
-
-    expect(result.success).toEqual(false);
+// A small integration-style check: rawPost + processPost together
+// reproduce the seam used by getPosts. Detailed processing assertions
+// live in processPost.spec.ts.
+describe("schema + processPost integration", () => {
+  it("produces a Post when given valid input", () => {
+    const raw = rawPost.parse(meta({ md: ether() }));
+    const result = processPost(raw);
+    expect(result.disqus_id).toEqual("the_disqus_id");
+    expect(result.slug).toEqual("the_slug");
   });
 });
