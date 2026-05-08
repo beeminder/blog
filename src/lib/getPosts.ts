@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import memoize from "./memoize";
-import { type Post, post } from "../schemas/post";
+import { type Post, processPost, rawPost } from "../schemas/post";
 import fetchPosts from "./fetchPosts";
 import readSources from "./readSources";
 
@@ -44,12 +44,14 @@ function writePostsCache(hash: string, posts: Post[]): void {
 const makePosts = memoize((): Promise<Post>[] =>
   fetchPosts().map((p) =>
     p.then((d) => {
-      const result = post.safeParse(d);
-      if (result.success) return result.data;
-      throw new Error(
-        `Failed to parse post ${d.source}: ${result.error.message}`,
-        result.error,
-      );
+      const result = rawPost.safeParse(d);
+      if (!result.success) {
+        throw new Error(
+          `Failed to parse post ${d.source}: ${result.error.message}`,
+          { cause: result.error },
+        );
+      }
+      return processPost(result.data);
     }),
   ),
 );
