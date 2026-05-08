@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { status } from "./status";
 import parseTitle from "../lib/parseTitle";
-import getExcerpt from "../lib/getExcerpt";
+import resolveExcerpt from "../lib/resolveExcerpt";
 import { image } from "./image";
 import extractImage from "../lib/extractImage";
 import { dateString } from "./dateString";
@@ -78,7 +78,7 @@ export function processPost(raw: RawPost): Post {
   const processed = {
     ...rest,
     tags: rest.tags?.filter(Boolean),
-    excerpt: getExcerpt(rest.excerpt, content),
+    excerpt: resolveExcerpt(rest.excerpt, content),
     image: extractImage(content),
     title: parseTitle(md),
     date,
