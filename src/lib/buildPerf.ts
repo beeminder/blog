@@ -20,12 +20,19 @@ if (IS_BUILD_PERF) {
 }
 
 /**
- * Record a fetch attempt. Increments the total call count and, when the
- * response was not served from cache, the cache-miss count.
+ * Record that a fetch is being attempted. Always called before the
+ * request starts so failed/rejected fetches are counted too.
  */
-export function recordFetch(fromCache: boolean) {
+export function recordFetchAttempt() {
   fetchCallCount++;
-  if (!fromCache) cacheMissCount++;
+}
+
+/**
+ * Record that a fetch attempt missed the cache. Called once the
+ * response is in hand and known not to have come from cache.
+ */
+export function recordCacheMiss() {
+  cacheMissCount++;
 }
 
 export function __resetForTests() {

@@ -1,7 +1,8 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { writeFileSync } from "fs";
 import {
-  recordFetch,
+  recordFetchAttempt,
+  recordCacheMiss,
   flush,
   __resetForTests,
   __getCountsForTests,
@@ -19,33 +20,37 @@ describe("buildPerf", () => {
     });
   });
 
-  it("increments fetchCallCount on each recorded fetch", () => {
-    recordFetch(true);
-    recordFetch(true);
-    recordFetch(false);
+  it("increments fetchCallCount on each recorded attempt", () => {
+    recordFetchAttempt();
+    recordFetchAttempt();
+    recordFetchAttempt();
 
     expect(__getCountsForTests().fetchCallCount).toBe(3);
   });
 
-  it("increments cacheMissCount only on cache misses", () => {
-    recordFetch(true);
-    recordFetch(false);
-    recordFetch(false);
+  it("increments cacheMissCount only when recordCacheMiss is called", () => {
+    recordFetchAttempt();
+    recordFetchAttempt();
+    recordCacheMiss();
+    recordFetchAttempt();
+    recordCacheMiss();
 
     expect(__getCountsForTests().cacheMissCount).toBe(2);
   });
 
-  it("does not increment cacheMissCount on cache hits", () => {
-    recordFetch(true);
-    recordFetch(true);
+  it("counts attempts that never report a miss as cache hits", () => {
+    recordFetchAttempt();
+    recordFetchAttempt();
 
     expect(__getCountsForTests().cacheMissCount).toBe(0);
   });
 
   it("writes counts to .build-perf-requests.txt on flush", () => {
-    recordFetch(true);
-    recordFetch(false);
-    recordFetch(false);
+    recordFetchAttempt();
+    recordFetchAttempt();
+    recordFetchAttempt();
+    recordCacheMiss();
+    recordCacheMiss();
 
     flush();
 
@@ -56,7 +61,7 @@ describe("buildPerf", () => {
   });
 
   it("formats output as fetchCallCount newline cacheMissCount", () => {
-    recordFetch(true);
+    recordFetchAttempt();
     flush();
 
     expect(writeFileSync).toHaveBeenCalledWith(
