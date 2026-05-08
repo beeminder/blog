@@ -68,11 +68,12 @@ export function processPost(raw: RawPost): Post {
     content = cachedParseMarkdown(md);
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";
-    throw new Error(`Failed to parse post ${url}: ${message}`);
+    throw new Error(`Failed to parse post ${url}: ${message}`, {
+      cause: error,
+    });
   }
 
   const date = new Date(rest.date);
-  const dateStringResult = dateString.safeParse(date);
 
   const processed = {
     ...rest,
@@ -81,7 +82,7 @@ export function processPost(raw: RawPost): Post {
     image: extractImage(content),
     title: parseTitle(md),
     date,
-    date_string: dateStringResult.success ? dateStringResult.data : undefined,
+    date_string: dateString.parse(date),
     content,
     md,
   };
