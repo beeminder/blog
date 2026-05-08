@@ -2,7 +2,7 @@ import NodeFetchCache, { FileSystemCache, MemoryCache } from "node-fetch-cache";
 import memoize from "./memoize";
 import canonicalizeUrl from "./canonicalizeUrl";
 import env from "./env";
-import { recordFetch } from "./buildPerf";
+import { recordFetchAttempt, recordCacheMiss } from "./buildPerf";
 
 const RENDER = env("RENDER");
 const FILE_SYSTEM_CACHE = env("FILE_SYSTEM_CACHE");
@@ -25,10 +25,11 @@ const getFetcher = memoize(() =>
 );
 
 export default async function fetchPost(url: string): Promise<string> {
+  recordFetchAttempt();
   return getFetcher()(canonicalizeUrl(url)).then((r) => {
     const resp = r as unknown as { fromCache?: boolean };
     const fromCache = !("fromCache" in resp) || resp.fromCache !== false;
-    recordFetch(fromCache);
+    if (!fromCache) recordCacheMiss();
     if (!r.ok) throw new Error(`Failed to fetch ${url}`);
     return r.text();
   });
