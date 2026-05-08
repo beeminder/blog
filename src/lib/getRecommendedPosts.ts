@@ -2,10 +2,20 @@ import type { Post } from "../schemas/post";
 
 const RECOMMENDED_COUNT = 6;
 
-export default function getRecommendedPosts(
-  post: Post,
-  allPosts: Post[],
-): Post[] {
+type Index = {
+  tagIndex: Map<string, Post[]>;
+  slugToPost: Map<string, Post>;
+};
+
+// Memoize the index per allPosts reference so a `getStaticPaths` loop
+// that calls this function once per post pays the indexing cost once,
+// not N times.
+const indexCache = new WeakMap<readonly Post[], Index>();
+
+function buildIndex(allPosts: Post[]): Index {
+  const cached = indexCache.get(allPosts);
+  if (cached) return cached;
+
   const tagIndex = new Map<string, Post[]>();
   for (const p of allPosts) {
     for (const tag of p.tags) {
@@ -14,8 +24,18 @@ export default function getRecommendedPosts(
       else tagIndex.set(tag, [p]);
     }
   }
-
   const slugToPost = new Map(allPosts.map((p) => [p.slug, p]));
+
+  const index = { tagIndex, slugToPost };
+  indexCache.set(allPosts, index);
+  return index;
+}
+
+export default function getRecommendedPosts(
+  post: Post,
+  allPosts: Post[],
+): Post[] {
+  const { tagIndex, slugToPost } = buildIndex(allPosts);
 
   const scores = new Map<string, number>();
   for (const tag of post.tags) {
