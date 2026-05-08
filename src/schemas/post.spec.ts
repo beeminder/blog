@@ -5,7 +5,9 @@ import ether from "../lib/test/ether";
 // Minimal valid metadata for the rawPost schema. Tests that need to
 // exercise validation should override individual fields rather than
 // constructing full Etherpad-format markdown.
-function meta(overrides: Record<string, unknown> = {}): Record<string, unknown> {
+function meta(
+  overrides: Record<string, unknown> = {},
+): Record<string, unknown> {
   return {
     source: "the_url",
     date: "2020-01-01",
