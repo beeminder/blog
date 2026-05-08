@@ -47,7 +47,9 @@ describe("hashCache", () => {
   });
 
   it("returns the cached value without recomputing on a hit", () => {
-    vi.mocked(readFileSync).mockReturnValue("cached" as unknown as ReturnType<typeof readFileSync>);
+    vi.mocked(readFileSync).mockReturnValue(
+      "cached" as unknown as ReturnType<typeof readFileSync>,
+    );
     const compute = vi.fn(() => "fresh");
 
     const result = hashCache({
@@ -64,7 +66,9 @@ describe("hashCache", () => {
   });
 
   it("treats a deserialize that returns null as a miss", () => {
-    vi.mocked(readFileSync).mockReturnValue("stale" as unknown as ReturnType<typeof readFileSync>);
+    vi.mocked(readFileSync).mockReturnValue(
+      "stale" as unknown as ReturnType<typeof readFileSync>,
+    );
     const compute = vi.fn(() => "fresh");
 
     const result = hashCache({
@@ -81,7 +85,9 @@ describe("hashCache", () => {
   });
 
   it("treats a deserialize that throws as a miss", () => {
-    vi.mocked(readFileSync).mockReturnValue("not json" as unknown as ReturnType<typeof readFileSync>);
+    vi.mocked(readFileSync).mockReturnValue(
+      "not json" as unknown as ReturnType<typeof readFileSync>,
+    );
     const compute = vi.fn(() => "fresh");
 
     const result = hashCache({
