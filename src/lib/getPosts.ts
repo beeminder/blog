@@ -1,9 +1,9 @@
 import { createHash } from "node:crypto";
-import { readFileSync, writeFileSync } from "node:fs";
 import memoize from "./memoize";
 import { type Post, processPost, rawPost } from "../schemas/post";
 import fetchPosts from "./fetchPosts";
 import readSources from "./readSources";
+import { hashCache } from "./hashCache";
 
 const POSTS_CACHE_FILE = ".cache/posts-processed.json";
 
@@ -18,27 +18,6 @@ const getDuplicates = (
 function getSourcesHash(): string {
   const sources = readSources();
   return createHash("md5").update(JSON.stringify(sources)).digest("hex");
-}
-
-function tryReadPostsCache(hash: string): Post[] | null {
-  try {
-    const raw = JSON.parse(readFileSync(POSTS_CACHE_FILE, "utf-8"));
-    if (raw.hash !== hash) return null;
-    return (raw.posts as Array<Record<string, unknown>>).map((p) => ({
-      ...p,
-      date: new Date(p.date as string),
-    })) as Post[];
-  } catch {
-    return null;
-  }
-}
-
-function writePostsCache(hash: string, posts: Post[]): void {
-  try {
-    writeFileSync(POSTS_CACHE_FILE, JSON.stringify({ hash, posts }));
-  } catch {
-    // ignore
-  }
 }
 
 const makePosts = memoize((): Promise<Post>[] =>
@@ -56,34 +35,45 @@ const makePosts = memoize((): Promise<Post>[] =>
   ),
 );
 
-const getAllPosts = memoize(async (): Promise<Post[]> => {
-  const hash = getSourcesHash();
-  const cached = tryReadPostsCache(hash);
-  if (cached) return cached;
+const getAllPosts = memoize(
+  (): Promise<Post[]> =>
+    hashCache<Post[]>({
+      key: getSourcesHash(),
+      path: POSTS_CACHE_FILE,
+      serialize: (posts, hash) => JSON.stringify({ hash, posts }),
+      deserialize: (raw, hash) => {
+        const parsed = JSON.parse(raw);
+        if (parsed.hash !== hash) return null;
+        return (parsed.posts as Array<Record<string, unknown>>).map((p) => ({
+          ...p,
+          date: new Date(p.date as string),
+        })) as Post[];
+      },
+      compute: async () => {
+        const posts = await Promise.all(makePosts());
 
-  const posts = await Promise.all(makePosts());
+        const duplicateSlugs = getDuplicates(posts, "slug");
+        if (duplicateSlugs.length > 0) {
+          throw new Error(
+            `Duplicate slugs found: ${duplicateSlugs.join(
+              ", ",
+            )}. Slugs must be unique.`,
+          );
+        }
 
-  const duplicateSlugs = getDuplicates(posts, "slug");
-  if (duplicateSlugs.length > 0) {
-    throw new Error(
-      `Duplicate slugs found: ${duplicateSlugs.join(
-        ", ",
-      )}. Slugs must be unique.`,
-    );
-  }
+        const duplicateDisqusIds = getDuplicates(posts, "disqus_id");
+        if (duplicateDisqusIds.length > 0) {
+          throw new Error(
+            `Duplicate disqus_ids found: ${duplicateDisqusIds.join(
+              ", ",
+            )}. Disqus_ids must be unique.`,
+          );
+        }
 
-  const duplicateDisqusIds = getDuplicates(posts, "disqus_id");
-  if (duplicateDisqusIds.length > 0) {
-    throw new Error(
-      `Duplicate disqus_ids found: ${duplicateDisqusIds.join(
-        ", ",
-      )}. Disqus_ids must be unique.`,
-    );
-  }
-
-  writePostsCache(hash, posts);
-  return posts;
-});
+        return posts;
+      },
+    }),
+);
 
 const getPosts = memoize(
   async ({
