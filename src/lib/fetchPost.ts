@@ -1,8 +1,8 @@
-import { writeFileSync } from "node:fs";
 import NodeFetchCache, { FileSystemCache, MemoryCache } from "node-fetch-cache";
 import memoize from "./memoize";
 import canonicalizeUrl from "./canonicalizeUrl";
 import env from "./env";
+import { recordFetchAttempt, recordCacheMiss } from "./buildPerf";
 
 const RENDER = env("RENDER");
 const FILE_SYSTEM_CACHE = env("FILE_SYSTEM_CACHE");
@@ -24,29 +24,12 @@ const getFetcher = memoize(() =>
   NodeFetchCache.create({ cache: buildCache() }),
 );
 
-const IS_BUILD_PERF = !!env("BUILD_PERF");
-
-let fetchCallCount = 0;
-let cacheMissCount = 0;
-
-if (IS_BUILD_PERF) {
-  process.on("exit", () => {
-    try {
-      writeFileSync(
-        ".build-perf-requests.txt",
-        `${fetchCallCount}\n${cacheMissCount}`,
-      );
-    } catch {
-      // Only used during benchmarking; ignore errors
-    }
-  });
-}
-
 export default async function fetchPost(url: string): Promise<string> {
-  fetchCallCount++;
+  recordFetchAttempt();
   return getFetcher()(canonicalizeUrl(url)).then((r) => {
     const resp = r as unknown as { fromCache?: boolean };
-    if ("fromCache" in resp && resp.fromCache === false) cacheMissCount++;
+    const fromCache = !("fromCache" in resp) || resp.fromCache !== false;
+    if (!fromCache) recordCacheMiss();
     if (!r.ok) throw new Error(`Failed to fetch ${url}`);
     return r.text();
   });
