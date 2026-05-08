@@ -24,7 +24,8 @@
     "puppeteer": "tsx ./scripts/puppeteer.ts",
     "puppeteer:report": "tsx ./scripts/puppeteer-report.ts",
     "puppeteer:reset": "pnpm run cache:clear && pnpm run build && rm -rf ./shots && mkdir ./shots",
-    "knip": "knip"
+    "knip": "knip",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
@@ -56,7 +57,9 @@
     "@vitest/ui": "^4.1.5",
     "diffable-html": "^6.0.1",
     "eslint": "^10.3.0",
+    "husky": "^9.1.7",
     "knip": "^6.12.1",
+    "lint-staged": "^17.0.3",
     "pixelmatch": "^7.2.0",
     "pixelteer": "github:narthur/pixelteer",
     "pngjs": "^7.0.0",
@@ -65,5 +68,8 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.2",
     "vitest": "^4.1.5"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
   }
 }
