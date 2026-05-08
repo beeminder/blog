@@ -48,7 +48,7 @@ const makePosts = memoize((): Promise<Post>[] =>
       if (!result.success) {
         throw new Error(
           `Failed to parse post ${d.source}: ${result.error.message}`,
-          result.error,
+          { cause: result.error },
         );
       }
       return processPost(result.data);
