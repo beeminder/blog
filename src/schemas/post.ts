@@ -32,7 +32,7 @@ export type RawPost = z.infer<typeof rawPost>;
 // output. Kept as a Zod schema so consumers can still validate processed
 // posts (e.g. when reading from cache) and so the inferred Post type
 // stays in sync.
-export const post = z.object({
+const post = z.object({
   content: z.string(),
   excerpt: z.string(),
   slug: z.string().min(1),
