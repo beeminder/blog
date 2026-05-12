@@ -69189,21 +69189,21 @@ Or at least beemind the outcomes conservatively, like
 "
 `;
 
-exports[`body > post mustdo hash 528c6af9294d90655dcf97bbba78b100 1`] = `
+exports[`body > post mustdo hash c56c2c151a3b75e5dcb98d5360b2e9ea 1`] = `
 "
 <p>
   <img
     class="aligncenter"
     alt="A calendar with gold stars on it, seinfeld-hack style"
     title="Stars upon thars"
-    src="http://blog.beeminder.com/wp-content/uploads/2012/10/mustdo.png"
+    src="https://blog.beeminder.com/wp-content/uploads/2012/10/mustdo.png"
   >
 </p>
 <blockquote>
   <i>
     This is a guest post by
     <a
-      href="http://oldgods.net/alys/"
+      href="https://oldgods.net/alys/"
       title="Alys&#39;s homepage"
     >
       Alice Harris
@@ -69211,17 +69211,17 @@ exports[`body > post mustdo hash 528c6af9294d90655dcf97bbba78b100 1`] = `
     .
 It is crossposted on
     <a
-      href="http://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html"
+      href="https://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html"
       title="UPDATE 2015: We (the Beeminder founders) continue to get more and more into Mark Forster&#39;s productivity systems"
     >
       Mark Forster&#8217;s Get Everything Done blog
     </a>
     which we&#8217;re
     <a
-      href="http://blog.beeminder.com/ged"
+      href="https://blog.beeminder.com/ged"
       title="First post on the Beeminder blog about Mark Forster"
     >
-      long time fans of
+      long-time fans of
     </a>
     .
     <br>
@@ -69246,14 +69246,14 @@ It is crossposted on
         <br>
       </li>
       <li>
-        (But feel free give yourself a break and pick something like &#8220;read a chapter of Harry Potter&#8221; as your mustdo once in a while)*
+        (But feel free to give yourself a break and pick something like &#8220;read a chapter of Harry Potter&#8221; as your mustdo once in a while)
       </li>
     </ol>
   </i>
 </blockquote>
 <p>
   <a
-    href="http://beeminder.com"
+    href="https://beeminder.com"
     title="Beeminder: the me-binder"
   >
     Beeminder
@@ -69270,7 +69270,7 @@ It&#8217;s turned me from the person who every week would remorsefully discard a
   ! 
 [UPDATE 2015: See
   <a
-    href="http://blog.beeminder.com/veggieminding/"
+    href="https://blog.beeminder.com/veggieminding/"
     title="That post is from nearly a year ago, from adding this update, and Alys is still going strong"
   >
     1000 Days of Fruits and Vegetables
@@ -69396,14 +69396,14 @@ If you&#8217;re feeling up to it, be ambitious and indomitable!
   A Must-Do goal can be a useful adjunct to a normal task management system. 
 I usually use Mark Forster&#8217;s
   <a
-    href="http://markforster.squarespace.com/autofocus-system/"
+    href="https://markforster.squarespace.com/autofocus-system/"
     title="Mark&#39;s Autofocus page"
   >
     Autofocus
   </a>
   at home and
   <a
-    href="http://markforster.squarespace.com/"
+    href="https://markforster.squarespace.com/"
     title="Mark&#39;s FV / home page"
   >
     Final Version
@@ -69411,7 +69411,7 @@ I usually use Mark Forster&#8217;s
   at work
 and they&#8217;re very good at helping to overcome procrastination, but even they can&#8217;t always get me moving on actions that I&#8217;m stubbornly avoiding.
 The commitment of a
-  <a href="http://beeminder.com/money">
+  <a href="https://beeminder.com/money">
     Beeminder pledge
   </a>
   gives me the extra impetus I need.
@@ -69456,18 +69456,18 @@ When I get to that point, I intend to enter &#8220;On Tuesday I will revel in my
   </a>
   Danny adds: I suggested the idea on
   <a
-    href="http://blog.beeminder.com/akratics"
+    href="https://blog.beeminder.com/akratics"
     title="Link to join the mailing list at the end of the post"
   >
     Akratics Anonymous
   </a>
   which, if you&#8217;re reading footnotes of Beeminder blog posts, you probably want to join!
 I proposed it as a minimalistic version of a more elaborate Remember The Milk integration that
-  <a href="http://twitter.com/pjf">
+  <a href="https://twitter.com/pjf">
     Paul Fenwick
   </a>
   (also a
-  <a href="http://blog.beeminder.com/habits">
+  <a href="https://blog.beeminder.com/habits">
     previous Beeminder guest blogger
   </a>
   !) proposed.
@@ -69477,7 +69477,7 @@ I proposed it as a minimalistic version of a more elaborate Remember The Milk in
   &nbsp;
   <br>
   Please head to
-  <a href="http://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html">
+  <a href="https://markforster.squarespace.com/blog/2012/10/3/the-one-must-do-task-each-day.html">
     the version of this post on Mark Forster&#8217;s blog
   </a>
   to comment.
@@ -79141,7 +79141,7 @@ Like because it&#8217;s there, you&#8217;re bored, or to prevent being hungry la
 "
 `;
 
-exports[`body > post premium hash c93d0630305a899fce0e3a9d8fa0070a 1`] = `
+exports[`body > post premium hash 940d4125270d28ca364d68fd6ea31987 1`] = `
 "
 <p>
   <img
