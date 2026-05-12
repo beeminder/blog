@@ -60,7 +60,7 @@ If you add a _new_ `hashCache` caller, decide consciously whether its key actual
 
 ### 5. None of the above
 
-Look for new persisted caches that don't yet have an `IS_RENDER` bypass, or for a build script that copies a stale artifact into `dist/`.
+Look for new persisted caches that don't yet have a `RENDER` / `FILE_SYSTEM_CACHE=false` bypass, or for a build script that copies a stale artifact into `dist/`.
 
 ## Useful sentinel test
 
