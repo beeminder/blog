@@ -1,5 +1,7 @@
 import getPosts from "./getPosts";
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { readFileSync } from "fs";
+import { createHash } from "node:crypto";
 import fetchPost from "./fetchPost";
 import readSources from "./readSources";
 import ether from "./test/ether";
@@ -9,6 +11,57 @@ describe("getPosts", () => {
   beforeEach(() => {
     vi.mocked(readSources).mockReturnValue([meta()]);
     vi.mocked(fetchPost).mockResolvedValue(ether());
+  });
+
+  describe("disk cache bypass", () => {
+    afterEach(() => {
+      vi.mocked(readFileSync).mockReset();
+      vi.unstubAllEnvs();
+    });
+
+    function primeValidDiskCache(sources: Record<string, unknown>[]): void {
+      const hash = createHash("md5")
+        .update(JSON.stringify(sources))
+        .digest("hex");
+      const cached = JSON.stringify({
+        hash,
+        posts: [
+          {
+            ...meta(),
+            date: "2010-01-01",
+            content: "<p>stale cached content</p>",
+            date_string: "2010-01-01",
+            md: "",
+            image: null,
+            title: "Stale",
+          },
+        ],
+      });
+      // readFileSync returns string when encoding is provided (as hashCache does).
+      vi.mocked(readFileSync).mockImplementation(() => cached);
+    }
+
+    it("re-fetches posts when RENDER is set, even if a valid disk cache exists", async () => {
+      const sources = [meta()];
+      vi.mocked(readSources).mockReturnValue(sources);
+      primeValidDiskCache(sources);
+      vi.stubEnv("RENDER", "true");
+
+      await getPosts();
+
+      expect(fetchPost).toHaveBeenCalled();
+    });
+
+    it("re-fetches posts when FILE_SYSTEM_CACHE=false, even if a valid disk cache exists", async () => {
+      const sources = [meta()];
+      vi.mocked(readSources).mockReturnValue(sources);
+      primeValidDiskCache(sources);
+      vi.stubEnv("FILE_SYSTEM_CACHE", "false");
+
+      await getPosts();
+
+      expect(fetchPost).toHaveBeenCalled();
+    });
   });
 
   it("only loads sources once", async () => {
