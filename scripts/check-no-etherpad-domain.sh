@@ -6,13 +6,20 @@ set -euo pipefail
 # out of the public repo.
 
 if [ -z "${ETHERPAD_DOMAIN:-}" ] && [ -f .env ]; then
-  ETHERPAD_DOMAIN=$(
-    grep -E '^[[:space:]]*ETHERPAD_DOMAIN[[:space:]]*=' .env \
-      | head -1 \
-      | sed -E 's/^[[:space:]]*ETHERPAD_DOMAIN[[:space:]]*=[[:space:]]*//' \
-      | sed -E 's/^"(.*)"$/\1/' \
-      | sed -E "s/^'(.*)'\$/\\1/"
-  )
+  raw=$(grep -E '^[[:space:]]*ETHERPAD_DOMAIN[[:space:]]*=' .env | head -1 || true)
+  if [ -n "$raw" ]; then
+    raw="${raw#*=}"                              # drop key + =
+    raw="${raw#"${raw%%[![:space:]]*}"}"         # lstrip
+    if [[ "$raw" == \"* ]]; then
+      raw="${raw#\"}"; raw="${raw%%\"*}"         # content between double quotes
+    elif [[ "$raw" == \'* ]]; then
+      raw="${raw#\'}"; raw="${raw%%\'*}"         # content between single quotes
+    else
+      raw="${raw%%#*}"                           # strip inline comment
+      raw="${raw%"${raw##*[![:space:]]}"}"       # rstrip
+    fi
+    ETHERPAD_DOMAIN="$raw"
+  fi
 fi
 
 if [ -z "${ETHERPAD_DOMAIN:-}" ]; then
