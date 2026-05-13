@@ -12,7 +12,13 @@ let files = [];
 try {
   files = readdirSync(folderPath, "utf8");
 } catch (e) {
-  console.warn(e);
+  if (e.code === "ENOENT") {
+    // First build on a clean checkout — astro hasn't populated its image
+    // cache yet, so there's nothing to extend. Quiet, expected case.
+    console.log(`image-cache: no astro cache yet at ${folderPath}, skipping`);
+  } else {
+    console.warn(`image-cache: failed to read ${folderPath}:`, e);
+  }
 }
 
 for (const file of files.filter((f) => f.endsWith(".json"))) {
