@@ -1,1 +1,2 @@
 pnpm exec lint-staged
+./scripts/check-no-etherpad-domain.sh
