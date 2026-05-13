@@ -7579,5 +7579,15 @@
 "status": "publish",
 "tags": ["bee-all", "feature announcements"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "forster",
+"disqus_id": "forster",
+"source": "doc.bmndr.co/forster",
+"redirects": [],
+"date": "2026-05-12",
+"author": "Mark Forster",
+"status": "publish",
+"tags": ["bee-all", "rationality", "mark forster", "productivity porn", "todo lists", "guest posts"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
