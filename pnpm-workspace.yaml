@@ -1,7 +1,4 @@
 packages:
   - "."
 
-allowBuilds:
-  expost: true
-  pixelteer: true
-  esbuild: true
+dangerouslyAllowAllBuilds: true
