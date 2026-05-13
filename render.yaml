@@ -2,7 +2,7 @@ services:
   - type: web
     name: beeblog
     env: static
-    buildCommand: pnpm run build
+    buildCommand: pnpm install --frozen-lockfile && pnpm run build
     staticPublishPath: ./dist
     pullRequestPreviewsEnabled: true
     routes:
