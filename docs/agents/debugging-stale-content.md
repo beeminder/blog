@@ -16,7 +16,7 @@ There are at least seven places content can be stale. Cheapest checks first.
 | 4   | Render build cache: `.cache/parsed-markdown/`           | inside the build container          | keyed on markdown content hash, busts naturally on pad edits — safe                                                      |
 | 5   | `node-fetch-cache`                                      | local disk only                     | bypassed when `RENDER=true` (see `src/lib/fetchPost.ts`)                                                                 |
 | 6   | Astro image cache (`node_modules/.astro/assets/*.json`) | local + Render `node_modules` cache | extended weekly by `scripts/image-cache.mjs`. Only affects images                                                        |
-| 7   | Etherpad export endpoint                                | <etherpad-host>                             | no cache headers as of last check — fresh per request                                                                    |
+| 7   | Etherpad export endpoint                                | <etherpad-host>                     | no cache headers as of last check — fresh per request                                                                    |
 
 ## Decision tree
 

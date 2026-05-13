@@ -40,7 +40,7 @@ Production `ETHERPAD_DOMAIN` is `<etherpad-host>`. Only `<etherpad-host>` actual
 
 | Var                       | Effect                                                                                                            |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `ETHERPAD_DOMAIN`         | Host to fetch pads from. Required. `<etherpad-host>` in prod, `<etherpad-host>` locally if you want real content.                 |
+| `ETHERPAD_DOMAIN`         | Host to fetch pads from. Required. `<etherpad-host>` in prod, `<etherpad-host>` locally if you want real content. |
 | `RENDER`                  | Set by Render automatically. Triggers in-memory caching paths instead of disk.                                    |
 | `FILE_SYSTEM_CACHE=false` | Manual override to disable disk caches when developing locally. Useful for snapshot regeneration after pad edits. |
 
