@@ -32,7 +32,7 @@
     "@astrojs/sitemap": "^3.7.2",
     "@fontsource-variable/lora": "^5.2.8",
     "@fontsource/source-sans-pro": "^5.2.5",
-    "astro": "^6.3.1",
+    "astro": "^6.3.2",
     "dotenv": "^17.4.2",
     "expost": "github:bsoule/expost#920313519f180153c00f2f4f4c78b4f86974517e",
     "feather-icons": "^4.29.2",
