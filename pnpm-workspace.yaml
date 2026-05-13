@@ -4,3 +4,4 @@ onlyBuiltDependencies:
   - "pixelteer"
 allowBuilds:
   expost: true
+  pixelteer: true
