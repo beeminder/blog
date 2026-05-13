@@ -1,7 +1,6 @@
-packages: []
-onlyBuiltDependencies:
-  - "expost"
-  - "pixelteer"
+packages:
+  - "."
+
 allowBuilds:
   expost: true
   pixelteer: true
