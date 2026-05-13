@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "prebuild": "[ -x node_modules/.bin/astro ] || pnpm install --frozen-lockfile",
     "build": "node ./scripts/image-cache.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro",
