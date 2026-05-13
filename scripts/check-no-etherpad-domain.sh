@@ -2,9 +2,8 @@
 set -euo pipefail
 
 # Fail the commit if ETHERPAD_DOMAIN is unset, or if its value appears in any
-# file that would be in the resulting tree. This prevents the production
-# pad host from being leaked into the public repo (it has happened before —
-# see the May 2026 history scrub).
+# file that would be in the resulting tree. Keeps the production pad host
+# out of the public repo.
 
 if [ -z "${ETHERPAD_DOMAIN:-}" ] && [ -f .env ]; then
   ETHERPAD_DOMAIN=$(
