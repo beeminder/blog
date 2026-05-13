@@ -312,6 +312,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/foodrules' 1`] = `"https
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/forget' 1`] = `"https://the_source_domain/forget/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/forster' 1`] = `"https://the_source_domain/forster/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/four' 1`] = `"https://the_source_domain/four/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/frac' 1`] = `"https://the_source_domain/frac/export/txt"`;

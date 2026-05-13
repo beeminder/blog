@@ -45584,6 +45584,637 @@ It&#8217;s great.
 "
 `;
 
+exports[`body > post forster hash 3e680dde03572b54ff1695ad2ef07234 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    alt="Some bees working on a Forster List"
+    title="Q: How many bees does it take to screw in a to-do list? A: Apparently five."
+    width="450px"
+    src="https://github.com/user-attachments/assets/c0675ded-c841-474c-8d85-783e4b0488c8"
+  >
+</p>
+<blockquote>
+  <p>
+    <em>
+      RIP
+      <a
+        href="https://markforster.squarespace.com/"
+        title="Mark Forster&#39;s Get Everything Done"
+      >
+        Mark Forster
+      </a>
+      (1943-2025).
+We first met Mark (on the internet) in 2012, which is also when
+      <a
+        href="https://www.beeminder.com/mforster1uk"
+        title="Mark Forster&#39;s Beeminder gallery"
+      >
+        he started using
+      </a>
+      Beeminder.
+Forster&#8217;s systems and insights have
+      <a
+        href="https://blog.beeminder.com/tags/mark%20forster"
+        title="Beeminder blog posts tagged &#39;Mark Forster&#39;"
+      >
+        featured in many Beeminder blog posts
+      </a>
+      over the years.
+But the best of all hasn&#8217;t appeared until now.
+Years ago we collaborated with Mark on a guest post by him, to be published here on the Beeminder blog, with a definitive version of the system he called &#8220;Final Version&#8221;.
+Final Version didn&#8217;t turn out to quite be the final version of his system, which is why we sat on this draft.
+But it&#8217;s the version we&#8217;ve always liked best and is what we mean when we refer to
+      <em>
+        Forster Lists
+      </em>
+      (or sometimes
+      <em>
+        Dot Lists
+      </em>
+      ).
+So without further ado, here&#8217;s Mark Forster in his own words (and light editing from us) to explain the system.
+    </em>
+  </p>
+</blockquote>
+<h2>
+  Quick Start
+</h2>
+<ol>
+  <li>
+    Add tasks to the bottom of your to-do list as you think of them
+  </li>
+  <li>
+    When ready to work on your tasks, put a dot in front of the very first task on the list
+  </li>
+  <li>
+    Continue down the list until you hit a task you want to do (not must do) before doing the task you just dotted
+  </li>
+  <li>
+    Put a dot in front of that task and repeat until you reach the end of the list
+  </li>
+  <li>
+    You now have a chain of tasks with dots in front of them
+  </li>
+  <li>
+    Do these dotted tasks from bottom to top
+  </li>
+  <li>
+    You can either complete a task and cross it off or
+    <em>
+      start
+    </em>
+    a task, cross it off, and re-add it at the bottom
+  </li>
+  <li>
+    If urgent tasks come up, add them to the bottom with a dot, so they&#8217;re done first
+  </li>
+</ol>
+<h2>
+  Quicker Start
+</h2>
+<p>
+  <em>
+    Hello from the future.
+Forster Lists probably work best on paper but for any hands-on learners, I, Bethany, implemented a little web version of the system that might even be self-explanatory:
+  </em>
+</p>
+<center>
+  <a href="https://bsoule.com/dotlist/">
+    <span style="background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important">
+      Bee&#8217;s Forster List App
+    </span>
+  </a>
+</center>
+<p>
+  <em>
+    Back to Mark Forster&#8230; (and more from us at the end)
+  </em>
+</p>
+<h2>
+  Introduction
+</h2>
+<p>
+  Here are the long-awaited instructions for the Final Version (FV) time management system. 
+I don&#8217;t know if it&#8217;s the best time management system ever devised. 
+What I do know is that it is the best time management system that I [writing circa 2012-2015] have ever used myself. 
+It&#8217;s shown itself to be resilient, responsive, and very quick.
+</p>
+<p>
+  FV is based on my earlier time management systems, particularly the extensive range of AutoFocus and SuperFocus systems developed over the last three years. 
+These were unique in that they were constantly developing with the assistance of a large band of commenters on my website. 
+Anyone who has tried one or more of these systems will recognize the strong family resemblance that they have with FV. 
+The most striking resemblance is that they are all based on one long list (either paper or electronic) which can be used to capture just about every possible action that springs into one&#8217;s mind. 
+There is a minimum of special markings or annotations.
+</p>
+<p>
+  Such a list depends on an effective algorithm to process it. 
+There are three main requirements which have to be kept in balance. 
+These are
+  <strong>
+    urgency
+  </strong>
+  ,
+  <strong>
+    importance
+  </strong>
+  , and
+  <strong>
+    psychological readiness
+  </strong>
+  . 
+Traditional time management systems have tended to concentrate on the first two of these. 
+The neglect of psychological readiness is probably the reason that most people don&#8217;t find time management systems particularly effective or congenial.
+</p>
+<p>
+  The most distinctive feature of FV is the way that its algorithm is
+  <em>
+    primarily
+  </em>
+  based on psychological readiness&#8201;&#8212;&#8201;this then opens the way to keeping urgency and importance in the best achievable balance.
+</p>
+<h2>
+  The FV Algorithm
+</h2>
+<p>
+  The FV algorithm is loosely based on two powerful decision making methods&#8201;&#8212;&#8201;
+  <a
+    href="https://www.structuredprocrastination.com/"
+    title="Original essay by John Perry"
+  >
+    structured procrastination
+  </a>
+  and
+  <a
+    href="https://markforster.squarespace.com/blog/2007/2/5/the-resistance-principle-and-colleys-rule.html"
+    title="Heuristic for decision-making when choices come in sequence: reject the first option but remember it as a benchmark, then accept the first choice you encounter that beats the benchmark"
+  >
+    Colley&#8217;s rule
+  </a>
+  &#8201;&#8212;&#8201;though neither need be understood to use the finished algorithm.
+</p>
+<p>
+  The FV algorithm uses the question
+  <em>
+    &#8220;What do I want to do before I do x?&#8221;
+  </em>
+  to preselect a chain of tasks from the list. 
+What exactly is meant by &#8220;want&#8221; in this context is deliberately left undefined. 
+There may be a whole variety of reasons why you might want to do one thing before another thing and all of them are valid.
+</p>
+<p>
+  The chain always starts with the
+  <strong>
+    first unactioned task
+  </strong>
+  on the list. 
+Mark this task with a dot to show that it&#8217;s now been preselected. 
+Don&#8217;t take any action on the task at this stage.
+</p>
+<p>
+  This task then becomes the benchmark from which the next task is selected. 
+For example, if the first task on the list is &#8220;Write Report&#8221;, the question becomes
+  <em>
+    &#8220;What do I want to do before I write the report?&#8221;
+  </em>
+  You move through the list in order until you come to a task which you want to do (not &#8220;must do&#8221;) before writing the report. 
+This task is now selected by marking it with a dot and it becomes the benchmark for the next task. 
+If the first task you come to which you want to do before writing the report is &#8220;Check Email&#8221;, then that becomes the benchmark. 
+The question therefore changes to
+  <em>
+    &#8220;What do I want to do before I check email?&#8221;
+  </em>
+</p>
+<p>
+  As you continue through the list you might come to &#8220;Tidy Desk&#8221; and decide you want to do that before checking email. 
+Select this in the same way by marking it with a dot, and change the question to
+  <em>
+    &#8220;What do I want to do before tidying my desk?&#8221;
+  </em>
+  The answer to this is probably &#8220;nothing&#8221;, so you have now finished your preselection.
+</p>
+<p>
+  The preselected tasks in the example are:
+</p>
+<pre>
+  <code>
+    Write report
+   Check email
+   Tidy desk
+  </code>
+</pre>
+<p>
+  Do these in
+  <em>
+    reverse order
+  </em>
+  , i.e. Tidy desk, Check email, Write report. 
+Note that as in all my systems, you don&#8217;t have to finish the task&#8201;&#8212;&#8201;only do some work on it. 
+Of course if you do finish the task that&#8217;s great, but if you don&#8217;t then all you have to do is re-enter the task at the end of the list.
+</p>
+<p>
+  Once you have taken action on all the preselected tasks, preselect another chain of tasks starting again from the first unactioned task on the list.
+</p>
+<p>
+  That&#8217;s it! You&#8217;re now ready to go. 
+Everything else is further examples and explanation.
+</p>
+<h2>
+  A Longer Example
+</h2>
+<p>
+  In this example for ease of understanding no new tasks are added while working on the list. 
+This of course is unlikely in real life.
+</p>
+<p>
+  Your initial list of tasks:
+</p>
+<pre>
+  <code>
+    Email 
+   In-Tray
+   Voicemail
+   Project X Report
+   Tidy Desk
+   Call Dissatisfied Customer
+   Make Dental Appointment
+   File Invoices
+   Discuss Project Y with Bob
+   Back Up
+  </code>
+</pre>
+<p>
+  Put a dot in front of the first task:
+</p>
+<pre>
+  <code>
+    • Email
+   In-Tray
+   Voicemail
+   Project X Report
+   Tidy Desk
+   Call Dissatisfied Customer
+   Make Dental Appointment
+   File Invoices
+   Discuss Project Y with Bob
+   Back Up
+  </code>
+</pre>
+<p>
+  Now ask yourself
+  <em>
+    &#8220;What do I want to do before I do Email?&#8221;
+  </em>
+</p>
+<p>
+  You work down the list and come to Voicemail. 
+You decide you want to do Voicemail before doing Email. 
+Put a dot in front of it as well:
+</p>
+<pre>
+  <code>
+    • Email 
+   In-Tray
+ • Voicemail
+   Project X Report
+   Tidy Desk
+   Call Dissatisfied Customer
+   Make Dental Appointment
+   File Invoices
+   Discuss Project Y with Bob
+   Back Up
+  </code>
+</pre>
+<p>
+  Now ask yourself
+  <em>
+    &#8220;What do I want to do before I do Voicemail?&#8221;
+  </em>
+  You decide you want to tidy your desk.
+</p>
+<pre>
+  <code>
+    • Email 
+   In-Tray
+ • Voicemail
+   Project X Report
+ • Tidy Desk
+   Call Dissatisfied Customer
+   Make Dental Appointment
+   File Invoices
+   Discuss Project Y with Bob
+   Back Up
+  </code>
+</pre>
+<p>
+  There are no tasks you want to do before tidying your desk, so now take action on the dotted tasks in reverse order:
+</p>
+<pre>
+  <code>
+    Tidy Desk
+   Voicemail
+   Email
+  </code>
+</pre>
+<p>
+  Your list will now look like this (I&#8217;ve removed the tasks that have been actioned but if you are using paper they will still be on the page but crossed out):
+</p>
+<pre>
+  <code>
+    In-Tray
+   Project X Report
+   Call Dissatisfied Customer
+   Make Dental Appointment
+   File Invoices
+   Discuss Project Y with Bob
+   Back Up
+  </code>
+</pre>
+<p>
+  Now start again with the first unactioned task on the list, In-Tray, and repeat the same procedure. 
+The only task you want to do before In-Tray is Back Up. 
+As this is the last task on the list there are only two dotted tasks:
+</p>
+<pre>
+  <code>
+    • In-Tray
+   Project X Report
+   Call Dissatisfied Customer
+   Make Dental Appointment
+   File Invoices
+   Discuss Project Y with Bob
+ • Back Up
+  </code>
+</pre>
+<p>
+  Do the two dotted tasks in reverse order:
+</p>
+<pre>
+  <code>
+    Back Up
+   In-Tray
+  </code>
+</pre>
+<p>
+  So the list now looks like this:
+</p>
+<pre>
+  <code>
+    Project X Report
+   Call Dissatisfied Customer
+   Make Dental Appointment
+   File Invoices
+   Discuss Project Y with Bob
+  </code>
+</pre>
+<p>
+  So far the tasks have been relatively trivial, but the Project X Report is something that you have been putting off doing for a long time. 
+So repeat the procedure:
+</p>
+<pre>
+  <code>
+    • Project X Report
+   Call Dissatisfied Customer
+ • Make Dental Appointment
+ • File Invoices
+   Discuss Project Y with Bob
+  </code>
+</pre>
+<p>
+  You now file your invoices, make a dental appointment and make a start on the Project X Report.
+</p>
+<p>
+  In your final pass through the list you Discuss Project Y with Bob and Call Dissatisfied Customer.
+</p>
+<p>
+  So the tasks on the original list have been done in the following order. 
+The tasks in italics are the ones at the beginning of each scanning process.
+</p>
+<pre>
+  Tidy Desk
+   Voicemail
+  <i>
+    Email
+  </i>
+  Back Up
+  <i>
+    In-Tray
+  </i>
+  File Invoices
+   Make Dental Appointment
+  <i>
+    Project X Report
+  </i>
+  Discuss Project Y with Bob
+  <i>
+    Call Dissatisfied Customer
+  </i>
+</pre>
+<p>
+  Notice what has happened here. 
+The root tasks (the ones in italics) have been done in strict list order, regardless of importance, urgency or any other factor. 
+Some of them are relatively easy (e.g. Email) and some are relatively difficult (e.g. Project X Report) or you are reluctant to do them (e.g. Call Dissatisfied Customer).
+</p>
+<p>
+  Each of the root tasks is preceded by a short ladder of tasks which are in the order in which you want to do them. 
+The number and difficulty of the tasks in the ladder tend to reflect the difficulty of the root tasks.
+</p>
+<h2>
+  Additional Tips
+</h2>
+<p>
+  The best way to sink any time management system is to overload it right at the beginning. 
+FV is pretty resilient, but at this stage you aren&#8217;t. 
+So build up the list gradually. 
+My advice is to start off with the tasks and projects that are of immediate concern to you right now, and then add more as they come up in the natural course of things.
+</p>
+<p>
+  Tasks can be added at any level, e.g. Project X, Plan Restructuring, Call Pete, Tidy Desk.
+</p>
+<p>
+  If the first task on the list
+  <em>
+    can&#8217;t
+  </em>
+  be done now for some valid reason 
+(e.g. wrong time of day, precondition not met, bad weather), 
+then cross it out and re-enter it at the end of the list.
+Use the next task as your starting benchmark.
+</p>
+<p>
+  If at any stage you find that a task on the list is no longer relevant, then delete it.
+</p>
+<p>
+  If you find that your preselected list is no longer relevant (e.g. if you have had a long break away from the list), 
+then scrap the preselection and reselect from the beginning. 
+A shorter way to do this is to reselect only from the last preselected task which you haven&#8217;t done yet.
+</p>
+<p>
+  If one or more very urgent things come up, write them at the end of the list and mark them with a dot so that they are done next. 
+If something already on the list becomes very urgent, then move it to the end of the list and mark it with a dot in the same way.
+</p>
+<p>
+  Remember that the aim of any time management system is to help you to get your work done, not get in the way of doing your work. 
+So don&#8217;t be afraid to adjust priorities if you need to. 
+However try to keep this to a minimum&#8201;&#8212;&#8201;stick to the rules whenever possible as they will ensure you deal with your work in a systematic way.
+</p>
+<h2>
+  Why It Works
+</h2>
+<p>
+  At the beginning of this article I said there were three factors which every time management system needs to address: 
+urgency, 
+importance and 
+psychological readiness. 
+Let&#8217;s see how FV deals with each of these.
+</p>
+<p>
+  <strong>
+    Urgency.
+  </strong>
+  Because of the nature of the preselection process, urgent tasks tend to get selected&#8201;&#8212;&#8201;generally speaking the human brain wants to do things that it knows are urgent. 
+If things come up that are particularly urgent they can be added to the preselected list at any time.
+</p>
+<p>
+  <strong>
+    Importance.
+  </strong>
+  Generally speaking the human brain is a bit less keen on doing important stuff than it is on doing urgent stuff. 
+This is particularly the case when the important stuff is difficult. 
+However the FV preselection process ensures that tasks towards the beginning of the list are given as much attention as tasks towards the end of the list.
+</p>
+<p>
+  <strong>
+    Psychological Readiness.
+  </strong>
+  This is where FV really enters new dimensions. 
+By using a preselection process, the brain is softened up towards the selected tasks. 
+But this isn&#8217;t all. 
+The selection process is based on what you
+  <em>
+    want
+  </em>
+  to do. 
+This colours the whole preselected list so that even the first task, which you may not have wanted to do at all, gets affected. 
+In addition, doing the list in reverse order, with the least wanted task last, uses structured procrastination to get the tasks done.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<hr>
+<h2>
+  Posthumous Postscript
+</h2>
+<p>
+  <em>
+    Hello again from Danny and Bethany in 2026.
+Forster Lists (Dot Lists) sure have stood the test of time!
+There&#8217;s a surprising amount of cleverness in that simple protocol:
+  </em>
+</p>
+<ol>
+  <li>
+    <em>
+      Colley&#8217;s rule
+    </em>
+  </li>
+  <li>
+    <em>
+      Structured procrastination
+    </em>
+  </li>
+  <li>
+    <em>
+      <a
+        href="https://en.wikipedia.org/wiki/Getting_Things_Done"
+        title="Getting Things Done"
+      >
+        GTD
+      </a>
+      -style review
+    </em>
+  </li>
+  <li>
+    <em>
+      Distraction logging.
+    </em>
+  </li>
+</ol>
+<p>
+  <em>
+    Colley&#8217;s rule is like an anytime algorithm for picking the most important task.
+You start with an arbitrary default and continuously preempt it with tasks you want to do first.
+Structured procrastion leverages your own dumb pscychology to keep you productive despite being a little (or a lot) ADHD.
+GTD-style review is the anti-staleness measure.
+And, finally, distraction logging lets you capture everything that crosses your mind without those thoughts constantly derailing you.
+  </em>
+</p>
+<p>
+  <em>
+    Mark didn&#8217;t say a lot about that last one&#8201;&#8212;&#8201;distraction logging&#8201;&#8212;&#8201;and since our own previous discussion of it is currently buried in an old
+    <a
+      href="https://blog.beeminder.com/tocks"
+      title="See footnote 3 and its referent"
+    >
+      Beeminder blog post on Tocks
+    </a>
+    , let us end by singing its praises in the context of Forster Lists.
+  </em>
+</p>
+<p>
+  <em>
+    We love this aspect of Mark&#8217;s system, where anything that pops into your head you can just add it to the list and trust that you&#8217;ll see it later. 
+Also it helps ensure the whole list doesn&#8217;t become something you dread even looking at.
+There are ugh-y things in there but you&#8217;re also constantly dumping shiny things in.
+This reduces the temptation to let yourself be distracted from the task in the current chain. 
+By the time a task pops up in a future chain you may decide it wasn&#8217;t important and can just cross it off. 
+But the key is that with so many unimportant tasks getting dumped in, you need to make sure important ones don&#8217;t die in that sea. 
+Which Forster&#8217;s system accomplishes beautifully.
+  </em>
+</p>
+<h2>
+  Related Links
+</h2>
+<ul>
+  <li>
+    <a
+      href="http://alltom.github.io/todournament"
+      title="Another favorite of Danny&#39;s"
+    >
+      Todournament
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.lesswrong.com/posts/xfcKYznQ6B9yuxB28/final-version-perfected-an-underused-execution-algorithm"
+      title="Technically for Final Version Perfected (FVP) which is a bit more flexible but more complex"
+    >
+      Write-up by a Forster fan on LessWrong
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://bulletjournal.com"
+      title="Warning: this a link to objects in physical reality"
+    >
+      Bullet Journal
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://forum.beeminder.com/t/complementary-tools-mark-forsters-final-version-s/828"
+      title="Discussion in 2015"
+    >
+      Beeminder Forum Discussion
+    </a>
+  </li>
+</ul>
+"
+`;
+
 exports[`body > post four hash 8ea77ce18255a2bf402d456a73a2843e 1`] = `
 "
 <p>
