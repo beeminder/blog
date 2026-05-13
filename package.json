@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "prebuild": "[ -z \"$RENDER\" ] || pnpm install --frozen-lockfile",
     "build": "node ./scripts/image-cache.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -17,6 +18,7 @@
     "test:snapshot:update": "vitest --config ./vitest.snapshot.config.ts --update",
     "cache:clear": "rm -rf .cache && rm -rf node_modules/.astro",
     "check": "astro check",
+    "check:secrets": "tsx ./scripts/check-no-etherpad-domain.ts",
     "check:ts": "tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier --write .",
