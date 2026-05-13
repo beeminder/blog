@@ -1,2 +1,2 @@
 pnpm exec lint-staged
-pnpm exec tsx ./scripts/check-no-etherpad-domain.ts
+pnpm run check:secrets
