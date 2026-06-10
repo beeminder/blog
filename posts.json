@@ -7599,5 +7599,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "programming", "software engineering"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "burge",
+"disqus_id": "burge",
+"source": "doc.bmndr.co/burge",
+"redirects": [],
+"date": "2026-06-09",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "madhacks"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
