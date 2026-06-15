@@ -15,6 +15,16 @@ describe("getManifest", () => {
     expect(result[0]?.slug).toContain("the_slug");
   });
 
+  it("strips the md field — manifest entries are pre-fetch metadata", () => {
+    vi.mocked(readSources).mockReturnValue([
+      meta({ md: "should not be here" }),
+    ]);
+
+    const result = getManifest();
+
+    expect(result[0]).not.toHaveProperty("md");
+  });
+
   it("reads posts.json only once across calls", () => {
     getManifest();
     getManifest();
