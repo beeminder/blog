@@ -6,9 +6,12 @@ import env from "./env";
 // persist across builds?
 //
 // On Render the build directory can persist across deploys, so a stale cache
-// would silently serve old pad content; `FILE_SYSTEM_CACHE=false` is a manual
-// local override for the same situation (e.g. regenerating snapshots after a
-// pad edit). In both cases we must NOT trust persistent caches.
+// would silently serve old pad content. This bites hardest with the getPosts
+// disk cache, which is keyed on the posts.json hash — that key does not change
+// when a pad body is edited, so a persisted hit would never re-fetch.
+// `FILE_SYSTEM_CACHE=false` is a manual local override for the same situation
+// (e.g. regenerating snapshots after a pad edit). In both cases we must NOT
+// trust persistent caches.
 export function isPersistentCacheEnabled(): boolean {
   return !env("RENDER") && env("FILE_SYSTEM_CACHE") !== "false";
 }

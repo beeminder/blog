@@ -25,6 +25,13 @@ describe("isPersistentCacheEnabled", () => {
     expect(isPersistentCacheEnabled()).toBe(false);
   });
 
+  it("disables on Render even when FILE_SYSTEM_CACHE is true", () => {
+    vi.stubEnv("RENDER", "true");
+    vi.stubEnv("FILE_SYSTEM_CACHE", "true");
+
+    expect(isPersistentCacheEnabled()).toBe(false);
+  });
+
   it("stays enabled for other FILE_SYSTEM_CACHE values", () => {
     vi.stubEnv("RENDER", "");
     vi.stubEnv("FILE_SYSTEM_CACHE", "true");
