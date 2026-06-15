@@ -1,20 +1,16 @@
 import fetchPost from "./fetchPost";
-import readSources from "./readSources";
+import getManifest, { type ManifestEntry } from "./manifest";
+import type { RawPost } from "../schemas/post";
 import pLimit from "p-limit";
 
-async function get(
-  post: Record<string, unknown>,
-): Promise<Record<string, unknown>> {
-  if (typeof post.source !== "string") {
-    throw new Error(`Missing url in ${JSON.stringify(post)}`);
-  }
+async function get(entry: ManifestEntry): Promise<RawPost> {
   return {
-    ...post,
-    md: await fetchPost(post.source),
+    ...entry,
+    md: await fetchPost(entry.source),
   };
 }
 
-export default function fetchPosts(): Promise<Record<string, unknown>>[] {
+export default function fetchPosts(): Promise<RawPost>[] {
   const l = pLimit(10);
-  return readSources().map((s) => l(get, s));
+  return getManifest().map((s) => l(get, s));
 }
