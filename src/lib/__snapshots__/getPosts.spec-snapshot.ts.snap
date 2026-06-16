@@ -16922,6 +16922,169 @@ cleaning up after them, vet care, nail clipping, etc.
 "
 `;
 
+exports[`body > post burge hash 135472f3f63fecfe3d748809560598eb 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    width="450"
+    height="450"
+    alt="An image of a cozy den with two bees playing video games"
+    title="What video game does a bee play? Civilization 6: Hivemind"
+    src="https://github.com/user-attachments/assets/7282952b-27c5-42b4-94e5-4563072c8f0a"
+  >
+</p>
+<blockquote>
+  <p>
+    <em>
+      This is about TV and video games, not food, to be clear.
+This blog post started its life as a
+      <a
+        href="https://blog.beeminder.com/tags/madhacks/"
+        title="It was a series in the daily beemails during the pandemic. We&#39;re ever-so-gradually turning the interesting ones into blog posts."
+      >
+        Madhack Monday
+      </a>
+      based on a 
+random
+      <a
+        href="https://putanumonit.com/2019/12/30/100-ways-to-live-better/"
+        title="100 Ways to Live Better, on PutANumOnIt"
+      >
+        piece of life advice
+      </a>
+      from my friend Jacob Falkovich.
+Specifically this one:
+&#8220;Binge a show / video game for a couple of weeks, then take a break from TV for a couple of weeks.
+Trying to limit yourself to an hour a day is less fun and more addictive.&#8221;
+    </em>
+  </p>
+</blockquote>
+<p>
+  I was surprised how much that resonated with people, even in the Beeminder community, so I want to give my counterarguments!
+</p>
+<p>
+  First of all, the verb &#8220;binge&#8221; is a clue that this isn&#8217;t healthy! 
+But, ok, maybe you don&#8217;t mean it in an unhealthy way. 
+Live a little once in a while, etc. 
+Fine.
+But clearly there&#8217;s an addictive element if the concept of binging is even on the table. 
+So having some insurance against that is only prudent, right?
+</p>
+<p>
+  Can you tell where I&#8217;m going with this? 
+If you want to occasionally binge a TV show, that&#8217;s a perfectly reasonable choice&#8230; if you make it dispassionately. 
+Pick the average number of hours per week you&#8217;re ok devoting to TV / video games / whatever and beemind it. 
+If you agree with Jacob that binging for a couple weeks and then abstaining for a couple weeks is more fun, great.
+Just let Beeminder keep you honest about maintaining that binging-vs-abstaining ratio.
+Build up your safety buffer and then go crazy using it all up.
+</p>
+<p>
+  I claim it&#8217;s even more fun that way because you&#8217;ve actually earned the binge. 
+Enjoy it guilt-free!
+</p>
+<h3>
+  Counterarguments
+</h3>
+<p>
+  Beeminder superuser Lanthala was not convinced by my argument.
+She says her brain rebels against moderation and that trying to limit a fun activity to, say, an hour a day means she&#8217;ll either stop caring about the activity at all or obsess about it for the other 23 hours.
+&#8220;But,&#8221; she says, &#8220;if I go ahead and let myself be immersed in it as much as I want, the interest will run its course in a week or month.&#8221;
+</p>
+<p>
+  (For Lanthala this works in both directions: 
+If she has a necessary but aversive task, a Beeminder goal that breaks it up into an hour a day will make her much more miserable than ripping off the band-aid.
+Doing it for 9 straight hours until it&#8217;s done can mentally transform it into a fun or interesting project.)
+</p>
+<p>
+  Lanthala goes on:
+</p>
+<blockquote>
+  <p>
+    Current best-practice advice for parents trying to teach their kids to “eat in moderation” is
+    <em>
+      not
+    </em>
+    to strictly limit the amount of junk food they can eat, but in fact to regularly (say, once a week) let them eat as much as they want (yes, binge), to let them discover that there is such a thing as enough gummy bears.
+If you never let them find that out, they’ll always want more gummy bears.
+  </p>
+</blockquote>
+<p>
+  She quotes an article from Parents.com claiming that this is a common recommendation for kids and junk food:
+&#8220;Being able to fill their craving will decrease their desire for such foods instead of piquing it.&#8221;
+</p>
+<p>
+  I think Bee and I tried that one Halloween when our kids were little&#8201;&#8212;&#8201;&#8220;free rein on candy today only!&#8221;&#8201;&#8212;&#8201;and both kids made themselves sick but it didn&#8217;t change their relationship with candy at all. 
+So I&#8217;m skeptical but it&#8217;s plausible it&#8217;s what works best for some people.
+Maybe not most Beeminder users though.
+Lanthala admits as much and says that her own use of Beeminder rarely involves tracking time.
+She beeminds things that she really does have to do each day, like teeth-brushing.
+</p>
+<p>
+  So far so fair, but I don&#8217;t think any of this is an argument against beeminding TV / candy / whatever it is. 
+Let&#8217;s assume that meting it out sucks all the fun out. 
+Totally reasonable utility function one might have! 
+But that just means you need to decide what an upper limit on a binge should be and then just wait. 
+Mark it on your calendar for when you&#8217;ll have enough safety buffer built up that Beeminder will let you have that binge.
+</p>
+<p>
+  The point is to still think in terms of an acceptable average amount per week and then let Beeminder do the math from there.
+</p>
+<h3>
+  Lanthala Remains Unconvinced
+</h3>
+<p>
+  &#8220;For many people,&#8221; says Lanthala, &#8220;restricting something makes you want it more.&#8221;
+She continues:
+</p>
+<blockquote>
+  <p>
+    Think of everyone who’s ever dieted who finds that suddenly food is all they can think about, or when you had no interest in going outside but now it’s raining and you can’t so now you’re desperately wishing you could go outside.
+If you teach your kids that candy is a rare, special treat they can only ever get a few times a year, then whenever they
+    <em>
+      do
+    </em>
+    get candy, they’ll eat as much as they can, because hey, they’ll only get it a few times a year!
+Gotta get while the getting’s good, ignoring any sense of your body telling you that you’re no longer enjoying it.
+On the other hand, if they know that every Sunday is Ice Cream Sunday and they can eat as much ice cream as they want&#8201;&#8212;&#8201;even thirds!&#8201;&#8212;&#8201;they’ll learn that actually, ice cream is pretty common, easy to come by, and there’s no reason to eat thirds if you’re feeling kind of sick after seconds.
+  </p>
+</blockquote>
+<p>
+  This doesn&#8217;t match my own experience.
+If I only get ice cream on Sundays, I&#8217;ll stuff myself silly with it every Sunday.
+</p>
+<p>
+  Basically, I think there&#8217;s danger that the binge won&#8217;t really self-limit. 
+That you&#8217;ll stay up till 3am watching Netflix every dang day. 
+Lanthala seems to be saying, &#8220;so be it, any attempt to restrict my consumption will backfire&#8221;. 
+I can&#8217;t deny her lived experience, but I guess I hope that most people are more like me and
+  <em>
+    can
+  </em>
+  employ systems to limit things like TV and candy that left to our own devices we&#8217;ll abuse. 
+Or, better yet, be one of those impressive humans who just don&#8217;t have a problem with overindulgence in the first place. 
+Come to think of it, if this &#8220;binge until it self-limits&#8221; strategy works for you, maybe you&#8217;re secretly one of those impressive humans.
+</p>
+<h3>
+  Nathan Arthur with the Synthesis
+</h3>
+<p>
+  Nathan Arthur says we&#8217;re both right:
+</p>
+<blockquote>
+  <p>
+    Personally I would binge YouTube and computer games to the point of losing entire nights of sleep. 
+I needed limits in order to function at all. 
+But once I had those limits, I also needed to do some serious work to create a healthier relationship with those activities and address the things I was avoiding by going to those activities. 
+Both were important pieces for me.
+  </p>
+</blockquote>
+<p>
+  Amen?
+</p>
+"
+`;
+
 exports[`body > post burglebug hash ea8e0b49df84aa7e1fdaf149e9514335 1`] = `
 "
 <p>
@@ -52515,6 +52678,159 @@ As a result,
 "
 `;
 
+exports[`body > post grerrors hash 05cf280a21c101f4af928dd0c232da48 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    alt="5 levels of errors"
+    title="It's like Maslow's hierarchy, or Scott Alexander's classic Varieties of Argumentative Experience. Maybe not very much like either of those but I guess they served as inspiration for this image."
+    width="450px"
+    src="https://github.com/user-attachments/assets/afab3b48-958c-422d-9d80-2630c409b7a6"
+  >
+</p>
+<p>
+  Workerbee Simone saw a weird error on Beeminder one day and sent me this screenshot:
+</p>
+<p>
+  <img
+    class="aligncenter"
+    alt="ERROR_0304"
+    title="Prunebox is such a good goalname; hats off to Simone"
+    src="https://user-images.githubusercontent.com/9928/188289135-e8b057f5-5f63-4b20-a7e1-82a29208c948.png"
+  >
+</p>
+<p>
+  That rang no bells but naturally I grepped the source code for &#8220;ERROR_0304&#8221; and found this:
+</p>
+<blockquote>
+  <p>
+    <code>
+      return &quot;ERROR_0304&quot; // passed in bad format string; should never happen
+    </code>
+  </p>
+</blockquote>
+<p>
+  My past self was saying, &#8220;if this ever happens, which it totally won&#8217;t but, y&#8217;know,
+  <em>
+    if
+  </em>
+  , then my future self should immediately get pointed at this line of code&#8221;. 
+And that is what happened.
+</p>
+<p>
+  This could be too simple and obvious to blog about but until now, googling &#8220;greppable errors&#8221; wasn&#8217;t turning up anything (not anything human-written anyway) to explain it. So, you&#8217;re welcome, Internet.
+</p>
+<p>
+  (Also, 
+&#8220;
+  <a
+    href="https://thoughtbot.com/blog/how-grep-got-its-name"
+    title="g/re/p = Globally search for a Regular Expression and Print"
+  >
+    grep
+  </a>
+  &#8221; is the nerdier term for &#8220;control-f&#8221;.)
+</p>
+<p>
+  If you&#8217;re curious where the &#8220;_0304&#8221; suffix came from, it was purely to make sure the string would be unique and greppable. 
+I generally use the hour and minute of whatever my watch says as I&#8217;m typing, so apparently wrote that line of code at 3am, as I&#8217;m wont to do.
+The point is, it serves as a crude but good enough Universally Unique Identifer (UUID).
+Ok, not literally universally unique but more than good enough.
+It&#8217;s a safe bet that after we&#8217;ve hit publish on this blog post, searching &#8220;ERROR_0304&#8221; across the whole wide internet will bring you right here.
+</p>
+<p>
+  (Relatedly, it never ceases to amaze me that that&#8217;s true for most five-word snippets from any random sentence from any page on the whole internet.
+Go ahead, try googling &#8220;for most five-word snippets&#8221;.
+As I type this, it matches zero documents on the internet so presumably as you read this, it brings you right back here.)
+</p>
+<h2>
+  A hierarchy of errors
+</h2>
+<p>
+  Here&#8217;s another obvious thing.
+Errors want to be as high on this list as possible:
+</p>
+<ol>
+  <li>
+    Fail never (reserved for God and Mary Poppins)
+  </li>
+  <li>
+    Fail gracefully
+  </li>
+  <li>
+    Fail loudly
+  </li>
+  <li>
+    Fail opaquely
+  </li>
+  <li>
+    Fail silently
+  </li>
+</ol>
+<p>
+  Greppable errors help you avoid the bottom two levels, yielding loud failures that leave a nice breadcrumb trail for fixing or improving them.
+</p>
+<p>
+  Like if you&#8217;re adding a sanity-check in your code&#8201;&#8212;&#8201;e.g., you are conscientiously checking that a file exists before trying to read its contents&#8201;&#8212;&#8201;start by catching that exception in a way that the end user will point you to the place in the code where the check failed.
+Maybe later you&#8217;ll decide that&#8217;s too embarrassing and can add logic to fail more gracefully than that. 
+But the worst of all is to fail silently and the second worst is to fail opaquely. 
+Almost-best is to fail loudly. 
+If it&#8217;s really worth it, the best, short of apotheosis, is to fail gracefully.
+</p>
+<p>
+  In conclusion, here are some specific implications and advice:
+</p>
+<ol>
+  <li>
+    Do error-checking! 
+Make sure a file exists before you try to read from it. 
+Use your napkin at the dinner table. 
+Basic manners and hygiene!
+  </li>
+  <li>
+    Don&#8217;t just print &#8220;file not found&#8221;, use a greppable error that points you at the right place in the code.
+  </li>
+  <li>
+    Follow the
+    <a
+      href="https://blog.beeminder.com/postel/"
+      title="Abstract: fail loudly and immediately. The Robustness Principle is to be conservative in what you send and liberal in what you accept and this blog post is about how horrifically wrong that is."
+    >
+      Anti-Robustness Principle
+    </a>
+    aka Anti-Postel: make everything break loudly when there&#8217;s an error.
+  </li>
+  <li>
+    <a
+      href="https://blog.beeminder.com/choices/"
+      title="YAGNI = You Aren&#39;t Gonna Need It. This is a link to our blog post about the Anti-Settings Principle, which talks about YAGNI among other things"
+    >
+      YAGNI
+    </a>
+    . 
+Don&#8217;t speculate and anticipate. 
+Fail loudly and greppably first and wait to see those failures in the wild before refining your error handling.
+  </li>
+  <li>
+    I like to take this to its logical conclusion:
+Instead of &#8220;fallback handling&#8221;, do asserts that force a crash. 
+Sprinkle asserts liberally throughout your code.
+See also
+    <a
+      href="https://en.wikipedia.org/wiki/Offensive_programming"
+      title="Fail fast and visibly."
+    >
+      offensive programming
+    </a>
+    .
+(Emphasis on the first syllable of &#8220;offensive&#8221;; 
+not like error messages with slurs.)
+  </li>
+</ol>
+"
+`;
+
 exports[`body > post groupies hash 54d80628b5adbca279daf13ea1050d90 1`] = `
 "
 <p>
@@ -78111,7 +78427,7 @@ With Beeminder you&#8217;re internalizing the externality imposed on your future
 "
 `;
 
-exports[`body > post pledgecaps hash 392547b97d182cca9ca027b2d63aba1e 1`] = `
+exports[`body > post pledgecaps hash 45c67c7029626c52f78935eb83beabca 1`] = `
 "
 <p>
   <img
