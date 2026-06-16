@@ -3,17 +3,10 @@ import memoize from "./memoize";
 import { type Post, processPost, rawPost } from "../schemas/post";
 import fetchPosts from "./fetchPosts";
 import readSources from "./readSources";
-import env from "./env";
+import { isPersistentCacheEnabled } from "./cachePolicy";
 import { hashCache } from "./hashCache";
 
 const POSTS_CACHE_FILE = ".cache/posts-processed.json";
-
-// The disk cache is keyed on posts.json contents, which do not change when pad
-// content changes. On Render the build directory can persist across deploys,
-// so a cache hit would silently serve stale pad content.
-function isDiskCacheDisabled(): boolean {
-  return !!env("RENDER") || env("FILE_SYSTEM_CACHE") === "false";
-}
 
 const getDuplicates = (
   arr: Array<Record<string, unknown>>,
@@ -68,7 +61,7 @@ async function computeAllPosts(): Promise<Post[]> {
 }
 
 const getAllPosts = memoize((): Promise<Post[]> => {
-  if (isDiskCacheDisabled()) return computeAllPosts();
+  if (!isPersistentCacheEnabled()) return computeAllPosts();
 
   return hashCache<Post[]>({
     key: getSourcesHash(),
