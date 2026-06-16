@@ -1,6 +1,7 @@
 import type { Post } from "../schemas/post";
 import getPosts from "./getPosts";
 import memoize from "./memoize";
+import { normalizeTagName, tagRedirectSlug } from "./tagSlug";
 
 type Tag = {
   name: string;
@@ -20,18 +21,18 @@ async function makeTags(): Promise<Tag[]> {
       posts
         .map((p) => p.tags)
         .flat()
-        .map((t) => t.toLowerCase()),
+        .map(normalizeTagName),
     ),
   ];
   const tags = tagNames.map((t) => {
     const matched = posts.filter((p) =>
-      p.tags.some((pt) => pt.toLowerCase() === t),
+      p.tags.some((pt) => normalizeTagName(pt) === t),
     );
     return {
       name: t,
       posts: matched,
       count: matched.length,
-      redirect: t.includes(" ") ? t.replace(/ /g, "+") : null,
+      redirect: tagRedirectSlug(t),
     };
   });
 

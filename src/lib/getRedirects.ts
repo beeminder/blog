@@ -1,4 +1,5 @@
 import readSources from "./readSources";
+import { normalizeTagName, tagRedirectSlug } from "./tagSlug";
 
 export default async function getRedirects(): Promise<Record<string, string>> {
   const sources = readSources();
@@ -18,15 +19,14 @@ export default async function getRedirects(): Promise<Record<string, string>> {
   // Build tag redirects from posts.json tag arrays (no fetch needed)
   const tagNames = [
     ...new Set(
-      sources
-        .flatMap((p) => (p.tags as string[]) ?? [])
-        .map((t) => t.toLowerCase()),
+      sources.flatMap((p) => (p.tags as string[]) ?? []).map(normalizeTagName),
     ),
   ];
   const tagRedirects: Record<string, string> = {};
   for (const tag of tagNames) {
-    if (tag.includes(" ")) {
-      tagRedirects[`/tags/${tag.replace(/ /g, "+")}`] = `/tags/${tag}`;
+    const encoded = tagRedirectSlug(tag);
+    if (encoded) {
+      tagRedirects[`/tags/${encoded}`] = `/tags/${tag}`;
     }
     tagRedirects[`/tag/${tag}`] = `/tags/${tag}`;
   }
