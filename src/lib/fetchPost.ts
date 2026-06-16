@@ -1,22 +1,16 @@
 import NodeFetchCache, { FileSystemCache, MemoryCache } from "node-fetch-cache";
 import memoize from "./memoize";
 import canonicalizeUrl from "./canonicalizeUrl";
-import env from "./env";
+import { isPersistentCacheEnabled } from "./cachePolicy";
 import { recordFetchAttempt, recordCacheMiss } from "./buildPerf";
 
-const RENDER = env("RENDER");
-const FILE_SYSTEM_CACHE = env("FILE_SYSTEM_CACHE");
-
-const IS_RENDER = !!RENDER;
-const IS_FILE_SYSTEM_CACHE_DISABLED = FILE_SYSTEM_CACHE === "false";
-
 function buildCache() {
-  if (IS_RENDER || IS_FILE_SYSTEM_CACHE_DISABLED) {
-    console.info("Using in-memory cache");
-    return new MemoryCache();
-  } else {
+  if (isPersistentCacheEnabled()) {
     console.info("Using file-system cache");
     return new FileSystemCache();
+  } else {
+    console.info("Using in-memory cache");
+    return new MemoryCache();
   }
 }
 
