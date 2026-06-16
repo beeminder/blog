@@ -134,6 +134,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/bugreports' 1`] = `"http
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/buns' 1`] = `"https://the_source_domain/buns/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/burge' 1`] = `"https://the_source_domain/burge/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/burgle' 1`] = `"https://the_source_domain/burgle/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/burnout' 1`] = `"https://the_source_domain/burnout/export/txt"`;
@@ -355,6 +357,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/goodjargon' 1`] = `"http
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gratitude' 1`] = `"https://the_source_domain/gratitude/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/grayson' 1`] = `"https://the_source_domain/grayson/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/grerrors' 1`] = `"https://the_source_domain/grerrors/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/groupies' 1`] = `"https://the_source_domain/groupies/export/txt"`;
 
