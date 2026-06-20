@@ -2,6 +2,7 @@
   "$schema": "https://unpkg.com/knip@6/schema.json",
   "tags": ["-lintignore"],
   "entry": ["src/scripts/*.ts", "vitest.snapshot.diff.ts"],
+  "ignore": ["src/i18n/tk.ts"],
   "ignoreDependencies": [
     "pixelmatch",
     "pngjs",

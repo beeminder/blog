@@ -8,6 +8,11 @@
 // in .astro markup (see eslint.config.js), so new copy must be added here and
 // referenced through `strings` from "../i18n". See docs/agents/i18n.md.
 //
+// AI agents must NOT write the wording for a new string. Stub it with the
+// placeholder helper from "./tk" (describe what the copy should say and where
+// it appears) and leave the real copy to a human; CI fails while any
+// placeholder remains. See docs/agents/i18n.md for the exact call.
+//
 // Values are either plain strings, functions (for interpolation), or HTML
 // fragments rendered with Astro's `set:html` (used where copy contains inline
 // links or emphasis). The `set:html` fragments must stay static, hand-authored
