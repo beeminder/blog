@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import getTags from "../../lib/getTags";
 import Posts from "../../components/Posts.astro";
 import TitleLockup from "../../components/TitleLockup.astro";
+import { strings } from "../../i18n";
 
 export async function getStaticPaths() {
   const tags = await getTags();
@@ -24,12 +25,12 @@ export async function getStaticPaths() {
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { name, posts, count } = Astro.props;
-const title = `Tag: ${name}`;
+const title = strings.listing.tagTitle(name);
 ---
 
 <Layout title={title}>
   <TitleLockup slot="before-content" Heading="h1" title={title}
-    >{count} posts</TitleLockup
+    >{strings.listing.postCount(count)}</TitleLockup
   >
   <Posts posts={posts} />
 </Layout>

@@ -3,13 +3,14 @@ import Shadowbox from "../../components/Shadowbox.astro";
 import TitleLockup from "../../components/TitleLockup.astro";
 import Layout from "../../layouts/Layout.astro";
 import getTags from "../../lib/getTags";
+import { strings } from "../../i18n";
 
 const tags = await getTags();
 ---
 
-<Layout title="Tags">
+<Layout title={strings.tagsPage.title}>
   <Shadowbox>
-    <TitleLockup Heading="h1" title="Tags" />
+    <TitleLockup Heading="h1" title={strings.tagsPage.title} />
     <ul>
       {
         tags.map((t) => (

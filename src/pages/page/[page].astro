@@ -4,6 +4,7 @@ import getPosts from "../../lib/getPosts";
 import Posts from "../../components/Posts.astro";
 import type { Post } from "../../schemas/post";
 import Paginated from "../../layouts/Paginated.astro";
+import { strings } from "../../i18n";
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const posts = await getPosts({
@@ -24,19 +25,19 @@ const { page } = Astro.props;
 const older = page.url.next
   ? {
       url: page.url.next,
-      title: "Older Entries",
+      title: strings.pagination.older,
     }
   : undefined;
 
 const newer = page.url.prev
   ? {
       url: page.currentPage === 2 ? "/" : page.url.prev,
-      title: "Newer Entries",
+      title: strings.pagination.newer,
     }
   : undefined;
 
 ---
 
-<Paginated title={`Page ${page.currentPage}`} previous={older} next={newer}>
+<Paginated title={strings.listing.pageTitle(page.currentPage)} previous={older} next={newer}>
   <Posts posts={page.data} />
 </Paginated>

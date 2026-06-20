@@ -1,6 +1,7 @@
 ---
 import type { Post } from "../schemas/post";
 import TitleLockup from "./TitleLockup.astro";
+import { strings } from "../i18n";
 
 interface Props {
   post: Post;
@@ -25,7 +26,8 @@ const {
     title={post.title}
     href={linkTitle ? `/${post.slug}` : undefined}
   >
-    {post.date_string} • by <a href={`/authors/${post.author}`}>{post.author}</a
+    {post.date_string} {strings.postMeta.byline} <a
+      href={`/authors/${post.author}`}>{post.author}</a
     >
   </TitleLockup>
   {includeExcerpt && <p class="excerpt">{post.excerpt}</p>}
