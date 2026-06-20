@@ -60,7 +60,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="generator" content={Astro.generator} />
 
-    <title set:html={strings.meta.documentTitle(title)} />
+    <title>{strings.meta.documentTitle(title)}</title>
 
     <link rel="canonical" href={canonicalUrl} />
     <meta name="description" content={description} />

@@ -8,6 +8,8 @@ import { strings } from "../i18n";
 
 const tags = await getTags();
 const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
+// Domain the DuckDuckGo search is scoped to (config, not user-facing copy).
+const searchSite = "blog.beeminder.com";
 ---
 
 <div class="sidebar">
@@ -21,7 +23,7 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
         placeholder={strings.search.placeholder}
         aria-label={strings.search.placeholder}
       />
-      <input type="hidden" name="sites" value="blog.beeminder.com" />
+      <input type="hidden" name="sites" value={searchSite} />
     </form>
   </Shadowbox>
   <Shadowbox>

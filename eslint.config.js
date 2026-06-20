@@ -57,8 +57,10 @@ export default tseslint.config(
             //     key/id/width/height), re-listed because we override the option;
             //   - literal string props on our components: `name` (<Icon>),
             //     `Heading` (<TitleLockup>/<PostMeta>), `class` (<PostMeta>),
-            //     `slot` (e.g. <Pagination slot="before-content">);
-            //   - `value` (the hidden DuckDuckGo <input value="...">).
+            //     `slot` (e.g. <Pagination slot="before-content">).
+            // `value` is intentionally NOT excluded so user-facing button/input
+            // values are still caught; non-copy values (e.g. a config domain)
+            // should be passed via an expression rather than a literal.
             // Add a name here only when the guard false-positives on a prop that
             // genuinely isn't copy.
             exclude: [
@@ -74,7 +76,6 @@ export default tseslint.config(
               "name",
               "Heading",
               "slot",
-              "value",
             ],
           },
           // Object literals passed to component props (e.g. pagination
