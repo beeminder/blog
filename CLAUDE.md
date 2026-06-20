@@ -18,7 +18,7 @@ Padm.us (Etherpad CMS) → `posts.json` manifest → Astro build → Render → 
 
 ### User-facing strings
 
-All chrome copy lives in the `src/i18n` catalog; an ESLint rule blocks literal user-facing text in `.astro` markup so AI-authored copy can't ship. Post content (from `posts.json`) is exempt. See `docs/agents/i18n.md`.
+All chrome copy lives in the `src/i18n` catalog; an ESLint rule blocks literal user-facing text in `.astro` markup so AI-authored copy can't ship. **Do not write the wording for any new string — stub it with `tk("description of what's needed")` and leave the copy for a human;** CI (`check:i18n`) fails while any `tk(...)` placeholder remains. Post content (from `posts.json`) is exempt. See `docs/agents/i18n.md`.
 
 ### Debugging stale content
 

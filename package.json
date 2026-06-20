@@ -19,6 +19,7 @@
     "cache:clear": "rm -rf .cache && rm -rf node_modules/.astro",
     "check": "astro check",
     "check:secrets": "tsx ./scripts/check-no-etherpad-domain.ts",
+    "check:i18n": "tsx ./scripts/check-i18n-placeholders.ts",
     "check:ts": "tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier --write .",
