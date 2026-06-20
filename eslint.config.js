@@ -48,12 +48,20 @@ export default tseslint.config(
         {
           mode: "jsx-only",
           "jsx-attributes": {
-            // Structural / non-user-facing attributes. On native DOM tags the
-            // plugin only validates placeholder/alt/aria-label/value/title;
-            // the entries below suppress false positives from component props
-            // and Astro directives.
+            // The rule already validates only placeholder/alt/aria-label/value/
+            // title on native DOM tags and auto-ignores every other native
+            // attribute, so this list is NOT a denylist of all structural
+            // attributes — it only needs the names that DO get validated but
+            // are never user-facing copy:
+            //   - the plugin's own defaults (className/styleName/style/type/
+            //     key/id/width/height), re-listed because we override the option;
+            //   - literal string props on our components: `name` (<Icon>),
+            //     `Heading` (<TitleLockup>/<PostMeta>), `class` (<PostMeta>),
+            //     `slot` (e.g. <Pagination slot="before-content">);
+            //   - `value` (the hidden DuckDuckGo <input value="...">).
+            // Add a name here only when the guard false-positives on a prop that
+            // genuinely isn't copy.
             exclude: [
-              "class",
               "className",
               "styleName",
               "style",
@@ -62,24 +70,11 @@ export default tseslint.config(
               "id",
               "width",
               "height",
+              "class",
               "name",
               "Heading",
-              "value",
-              "class:list",
-              "set:html",
-              "define:vars",
-              "is:inline",
-              "src",
-              "href",
-              "rel",
-              "property",
-              "content",
               "slot",
-              "crossorigin",
-              "charset",
-              "lang",
-              "method",
-              "action",
+              "value",
             ],
           },
           // Object literals passed to component props (e.g. pagination
