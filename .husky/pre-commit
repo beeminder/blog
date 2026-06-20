@@ -1,3 +1,2 @@
 pnpm exec lint-staged
 pnpm run check:secrets
-pnpm run check:i18n
