@@ -1,8 +1,8 @@
-<div class="footer">
-  Blog design by <a href="https://nathanarthur.com">Narthur</a> of <a
-    href="https://pinepeakdigital.com">Pine Peak Digital</a
-  >.
-</div>
+---
+import { strings } from "../i18n";
+---
+
+<div class="footer" set:html={strings.footer.credit} />
 
 <style>
   .footer {

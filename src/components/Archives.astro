@@ -2,13 +2,14 @@
 import getArchives from "../lib/getArchives";
 import Shadowbox from "./Shadowbox.astro";
 import Typography from "./Typography.astro";
+import { strings } from "../i18n";
 
 const years = await getArchives();
 ---
 
 <Shadowbox>
   <Typography sans>
-    <h3>Archives</h3>
+    <h3>{strings.archives.heading}</h3>
     <ul>
       {
         years.map((y) => (

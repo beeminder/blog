@@ -3,6 +3,7 @@ import Shadowbox from "../../components/Shadowbox.astro";
 import TitleLockup from "../../components/TitleLockup.astro";
 import Layout from "../../layouts/Layout.astro";
 import getPosts from "../../lib/getPosts";
+import { strings } from "../../i18n";
 
 const posts = await getPosts();
 const authors = [...new Set(posts.map((post) => post.author))];
@@ -14,9 +15,9 @@ function getPostsByAuthor(author: string) {
 }
 ---
 
-<Layout title="Authors">
+<Layout title={strings.authors.title}>
   <Shadowbox>
-    <TitleLockup Heading="h1" title="Authors" />
+    <TitleLockup Heading="h1" title={strings.authors.title} />
     <ul>
       {
         authors.map((author) => (

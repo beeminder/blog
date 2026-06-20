@@ -6,7 +6,8 @@
     "pixelmatch",
     "pngjs",
     "@types/pixelmatch",
-    "@types/pngjs"
+    "@types/pngjs",
+    "astro-eslint-parser"
   ],
   "ignoreBinaries": ["only-allow"]
 }
