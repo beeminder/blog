@@ -10,6 +10,7 @@ import Comments from "../components/Comments.astro";
 import RecommendedPosts from "../components/RecommendedPosts.astro";
 import type { Post } from "../schemas/post";
 import Paginated from "../layouts/Paginated.astro";
+import { strings } from "../i18n";
 
 export async function getStaticPaths() {
   const posts = await getPosts({
@@ -82,7 +83,7 @@ const { extracted, ...imageProps } = image || {};
     <Shadowbox id="comments" padding={2}>
       {
         isDraft ? (
-          <p>Comments are disabled on DRAFT pages.</p>
+          <p>{strings.post.commentsDisabledOnDrafts}</p>
         ) : (
           <Comments
             id={disqus_id}

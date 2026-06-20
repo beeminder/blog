@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import getPosts from "../../lib/getPosts";
 import Posts from "../../components/Posts.astro";
 import TitleLockup from "../../components/TitleLockup.astro";
+import { strings } from "../../i18n";
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -25,10 +26,12 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { author } = Astro.params as Params;
 const { posts } = Astro.props as Props;
 
-const title = `Author: ${author}`;
+const title = strings.listing.authorTitle(author);
 ---
 
 <Layout title={title}>
-  <TitleLockup slot="before-content" Heading="h1" title={title}>{posts.length} posts</TitleLockup>
+  <TitleLockup slot="before-content" Heading="h1" title={title}
+    >{strings.listing.postCount(posts.length)}</TitleLockup
+  >
   <Posts posts={posts} />
 </Layout>

@@ -104,6 +104,43 @@ jobs:
         run: pnpm install
       - name: Run eslint
         run: pnpm run lint
+  i18n-placeholders:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4.0.0
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "pnpm"
+      - name: Install
+        run: pnpm install
+      - name: Check for unwritten copy placeholders
+        run: pnpm run check:i18n
+  strings-authorship:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch base branch
+        run: git fetch --no-tags origin "$GITHUB_BASE_REF"
+      - uses: pnpm/action-setup@v4.0.0
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "pnpm"
+      - name: Install
+        run: pnpm install
+      - name: Check i18n copy is human-authored
+        run: pnpm run check:strings
   formatting:
     runs-on: ubuntu-latest
     steps:

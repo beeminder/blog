@@ -9,6 +9,7 @@ import lora from "@fontsource-variable/lora/files/lora-latin-wght-normal.woff2";
 
 import "../styles/global.css";
 import "../styles/slideshow.css";
+import { strings } from "../i18n";
 
 interface Props {
   title: string;
@@ -20,11 +21,9 @@ const defaultImage = new URL(
   "/wp-content/uploads/2022/04/small_logo_bee_256.png",
   Astro.site
 );
-const defaultDescription =
-  "Beeminder is goal-tracking with teeth. We plot your progress on a graph with a Bright Red Line (formerly Yellow Brick Road). If your datapoints cross that line, we take your money. The Beeminder blog is a hodgepodge of productivity nerdery and behavioral economics written by the founders and various friends.";
 const {
   title,
-  description = defaultDescription,
+  description = strings.meta.defaultDescription,
   image = defaultImage,
 } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
@@ -61,7 +60,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="generator" content={Astro.generator} />
 
-    <title set:html={`${title} | Beeminder Blog`} />
+    <title>{strings.meta.documentTitle(title)}</title>
 
     <link rel="canonical" href={canonicalUrl} />
     <meta name="description" content={description} />
@@ -69,7 +68,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="RSS"
+      title={strings.meta.rssTitle}
       href="/feed.xml"
     />
 

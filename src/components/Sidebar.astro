@@ -4,44 +4,43 @@ import Archives from "./Archives.astro";
 import Icon from "./Icon.astro";
 import Shadowbox from "./Shadowbox.astro";
 import Typography from "./Typography.astro";
+import { strings } from "../i18n";
 
 const tags = await getTags();
 const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
+// Domain the DuckDuckGo search is scoped to (config, not user-facing copy).
+const searchSite = "blog.beeminder.com";
 ---
 
 <div class="sidebar">
   <Shadowbox>
     <form action="https://duckduckgo.com">
-      <button type="submit" aria-label="Submit search"
+      <button type="submit" aria-label={strings.search.submit}
         ><Icon name="search" /></button
       >
-      <input name="q" placeholder="Search" aria-label="Search" />
-      <input type="hidden" name="sites" value="blog.beeminder.com" />
+      <input
+        name="q"
+        placeholder={strings.search.placeholder}
+        aria-label={strings.search.placeholder}
+      />
+      <input type="hidden" name="sites" value={searchSite} />
     </form>
   </Shadowbox>
   <Shadowbox>
     <Typography sans>
-      <h3>About</h3>
-      <p>
-        <a href="http://beeminder.com">Beeminder</a> is goal-tracking with teeth.
-        We plot your progress on a graph with a Bright Red Line (formerly <i
-          >Yellow Brick Road</i
-        >). If your datapoints cross that line, we take your money.
-      </p>
-      <p>
-        The Beeminder blog is a hodgepodge of productivity nerdery and
-        behavioral economics written by the founders and various friends.
-      </p>
+      <h3>{strings.sidebar.aboutHeading}</h3>
+      <p set:html={strings.sidebar.aboutLede} />
+      <p set:html={strings.sidebar.aboutBlog} />
     </Typography>
   </Shadowbox>
   <Archives />
   <Shadowbox>
     <Typography sans>
-      <h3>Eating Our Own Dog Food</h3>
+      <h3>{strings.sidebar.dogfoodHeading}</h3>
       <a href="http://beeminder.com/meta/blog">
         <img
-          alt="dogfood graph"
-          title="The reason we still have a blog"
+          alt={strings.sidebar.dogfoodAlt}
+          title={strings.sidebar.dogfoodTitle}
           src="https://www.beeminder.com/meta/blog/graph?style=thumb"
           width="160"
         />
@@ -50,23 +49,13 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
   </Shadowbox>
   <Shadowbox>
     <Typography sans>
-      <h3>Start Here</h3>
-      <p>
-        Does Beeminder sound super crazypants? Just confusing? One of the first
-        things you may want to check out is our <a
-          href="http://blog.beeminder.com/newbees"
-          title="Also includes a link to our adorable Explain Like I'm 5 video"
-          >User's Guide for New Bees</a
-        >. Check out other posts we're most proud of by clicking the "best-of"
-        tag below. If you're a glutton for honey, the "bee-all" tag has
-        everything we still think is worth reading. Other good ones are the
-        "rationality" and "science" tags, if you're into that.
-      </p>
+      <h3>{strings.sidebar.startHereHeading}</h3>
+      <p set:html={strings.sidebar.startHere} />
     </Typography>
   </Shadowbox>
   <Shadowbox>
     <Typography sans>
-      <h3>Tags</h3>
+      <h3>{strings.sidebar.tagsHeading}</h3>
       <ul>
         {
           tags.slice(0, 20).map((t) => (
@@ -77,43 +66,23 @@ const sha: string | undefined = import.meta.env.RENDER_GIT_COMMIT;
             </li>
           ))
         }
-        <li><a href="/tags">...and {tags.length - 20} more tags</a></li>
+        <li>
+          <a href="/tags">{strings.sidebar.moreTags(tags.length - 20)}</a>
+        </li>
       </ul>
     </Typography>
   </Shadowbox>
   <Shadowbox>
     <Typography sans>
-      <h3>Beeminder Community</h3>
-      <p>
-        Most of the action is in the <a
-          href="http://forum.beeminder.com"
-          title="It's a Discourse.org forum; it's super slick"
-          >Beeminder forum</a
-        >. Or if you want to be slightly social without risking getting
-        distracted arguing on the internet, you can do pomodoros online in sync
-        with other Beeminder users and productivity nerds in <a
-          href="https://complice.co/room/beeminder"
-          title="Not to brag but we're close personal friends with the founder of Complice"
-          >the Beeminder coworking room on Complice</a
-        >.
-      </p>
+      <h3>{strings.sidebar.communityHeading}</h3>
+      <p set:html={strings.sidebar.community} />
     </Typography>
   </Shadowbox>
   <Shadowbox>
     <Typography sans>
-      <h3>Akrasia</h3>
-      <p>
-        Akrasia (ancient Greek ἀκρασία, "lacking command over oneself";
-        adjective: "akratic") is the state of acting against one's better
-        judgment, not doing what one genuinely wants to do. It encompasses
-        procrastination, lack of self-control, lack of follow-through, and any
-        kind of addictive behavior.
-      </p>
-      <p>
-        <a href="http://en.wikipedia.org/wiki/Akrasia"
-          >wikipedia.org/wiki/Akrasia</a
-        >
-      </p>
+      <h3>{strings.sidebar.akrasiaHeading}</h3>
+      <p set:html={strings.sidebar.akrasiaDefinition} />
+      <p set:html={strings.sidebar.akrasiaWikipedia} />
     </Typography>
   </Shadowbox>
   {
