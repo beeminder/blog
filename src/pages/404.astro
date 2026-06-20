@@ -4,6 +4,7 @@ import TitleLockup from "../components/TitleLockup.astro";
 import Layout from "../layouts/Layout.astro";
 import getPosts from "../lib/getPosts";
 import type { Post } from "../schemas/post";
+import { strings } from "../i18n";
 
 // ugh, this works in dev but not in prod, which always gives "404/" for this:
 //const sadslug = new URL(Astro.request.url).pathname.slice(1);
@@ -17,13 +18,13 @@ const posts = await getPosts().then((posts: Post[]) => posts.map(p => ({
 })));
 ---
 
-<Layout title="404 Not Found!">
+<Layout title={strings.notFound.title}>
   <Shadowbox>
-    <TitleLockup Heading="h1" title="404 Not Found!" />
+    <TitleLockup Heading="h1" title={strings.notFound.title} />
 <!-- embarrassed bee image from beeminder.com but maybe not canonical link:
 https://www.beeminder.com/assets/sadbee-e89491e7c1ea7c8568c8cdf0d19ff41acc079cc17f15277bed6fcf0b0928255d.png
 -->
-    <p>Sad trombone. Here are things you might've meant:</p>
+    <p>{strings.notFound.nearMisses}</p>
     <ul id="nearmisses" />
   </Shadowbox>
 </Layout>

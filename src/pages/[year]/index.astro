@@ -4,6 +4,7 @@ import getArchives from "../../lib/getArchives";
 import Layout from "../../layouts/Layout.astro";
 import Posts from "../../components/Posts.astro";
 import TitleLockup from "../../components/TitleLockup.astro";
+import { strings } from "../../i18n";
 
 export async function getStaticPaths() {
   const years = await getArchives();
@@ -25,7 +26,9 @@ const { months, post_count } = Astro.props as Props;
 
 <Layout title={year}>
   <Fragment slot="before-content">
-    <TitleLockup Heading="h1" title={year}>{post_count} posts</TitleLockup>
+    <TitleLockup Heading="h1" title={year}
+      >{strings.listing.postCount(post_count)}</TitleLockup
+    >
     {months[0] ? <h2 class="first">
       <a href={`/${year}/${months[0].label}`}>{months[0].label}</a>
     </h2> : null}

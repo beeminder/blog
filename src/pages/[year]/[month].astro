@@ -4,6 +4,7 @@ import getArchives from "../../lib/getArchives";
 import Layout from "../../layouts/Layout.astro";
 import Posts from "../../components/Posts.astro";
 import TitleLockup from "../../components/TitleLockup.astro";
+import { strings } from "../../i18n";
 
 export async function getStaticPaths() {
   const years = await getArchives();
@@ -30,6 +31,8 @@ const title = `${month} ${year}`;
 ---
 
 <Layout title={title}>
-  <TitleLockup slot="before-content" Heading="h1" title={title}>{posts.length} posts</TitleLockup>
+  <TitleLockup slot="before-content" Heading="h1" title={title}
+    >{strings.listing.postCount(posts.length)}</TitleLockup
+  >
   <Posts posts={posts} />
 </Layout>

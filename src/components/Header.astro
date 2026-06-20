@@ -1,27 +1,30 @@
 ---
 import Icon from "./Icon.astro";
+import { strings } from "../i18n";
 ---
 
 <div class="header">
   <div class="inner">
     <div>
-      <a href="https://beeminder.com">« Beeminder home</a>
+      <a href="https://beeminder.com">{strings.header.beeminderHome}</a>
       <h2>
-        <a href="/">Beeminder Blog</a>
+        <a href="/">{strings.header.blogTitle}</a>
       </h2>
     </div>
 
     <div class="icons">
       <a
-        title="Email Notifications"
+        title={strings.header.emailNotifications}
         href="https://cdn.forms-content.sg-form.com/b52c80cd-404f-11ee-90d4-4aa896d8a9ad"
         ><Icon name="mail" /></a
       >
-      <a title="Subscribe by RSS" href="/feed.xml"><Icon name="rss" /></a>
-      <a title="Follow us on Twitter" href="http://twitter.com/bmndr"
+      <a title={strings.header.subscribeRss} href="/feed.xml"
+        ><Icon name="rss" /></a
+      >
+      <a title={strings.header.followTwitter} href="http://twitter.com/bmndr"
         ><Icon name="twitter" /></a
       >
-      <a title="Follow us on Facebook" href="http://beeminder.com/facebook"
+      <a title={strings.header.followFacebook} href="http://beeminder.com/facebook"
         ><Icon name="facebook" /></a
       >
     </div>
