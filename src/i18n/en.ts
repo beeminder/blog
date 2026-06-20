@@ -10,7 +10,9 @@
 //
 // Values are either plain strings, functions (for interpolation), or HTML
 // fragments rendered with Astro's `set:html` (used where copy contains inline
-// links or emphasis).
+// links or emphasis). The `set:html` fragments must stay static, hand-authored
+// HTML: never interpolate dynamic or user/CMS data into them (set:html is not
+// escaped).
 
 export const en = {
   meta: {
