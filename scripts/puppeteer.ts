@@ -23,13 +23,21 @@ const urls = await getSitemap();
 //   --limit=N     cap the number of paths compared
 const detailOnly = process.argv.includes("--detail");
 const limitArg = process.argv.find((a) => a.startsWith("--limit="));
-const limit = limitArg ? Number(limitArg.split("=")[1]) : Infinity;
+let limit = Infinity;
+if (limitArg) {
+  const parsed = Number(limitArg.slice("--limit=".length));
+  if (!Number.isInteger(parsed) || parsed < 1) {
+    throw new Error(
+      `Invalid --limit value: "${limitArg.split("=")[1]}". Use a positive integer.`,
+    );
+  }
+  limit = parsed;
+}
 
 const SECTION_ROOTS = new Set(["tags", "authors", "page"]);
 const isDetailPage = (pathname: string): boolean => {
-  const segments = pathname.split("/").filter(Boolean);
-  if (segments.length !== 1) return false; // home, archives, /tags/x, etc.
-  const [segment] = segments;
+  const [segment, ...rest] = pathname.split("/").filter(Boolean);
+  if (!segment || rest.length > 0) return false; // home, archives, /tags/x, etc.
   if (SECTION_ROOTS.has(segment)) return false; // /tags, /authors, /page
   if (/^\d{4}$/.test(segment)) return false; // /YYYY year archive
   return true;
