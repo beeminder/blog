@@ -112,8 +112,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       pixelteer:
-        specifier: github:narthur/pixelteer
-        version: https://codeload.github.com/narthur/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3(puppeteer@24.43.1(typescript@6.0.3))
+        specifier: github:pinepeakdigital/pixelteer
+        version: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3(puppeteer@24.43.1(typescript@6.0.3))
       pngjs:
         specifier: ^7.0.0
         version: 7.0.0
@@ -2676,8 +2676,8 @@ packages:
     resolution: {integrity: sha512-xhcb4yHu9sM/G7foGzoLtXYcC0zHEaOXXjRKhGup0fw78Nf2Tkiapv4EQyMzrbcmQPsllAI7DbFY2UT7PlI9Pg==}
     hasBin: true
 
-  pixelteer@https://codeload.github.com/narthur/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3:
-    resolution: {tarball: https://codeload.github.com/narthur/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3}
+  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3:
+    resolution: {tarball: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3}
     version: 1.0.0
     peerDependencies:
       puppeteer: ^22.6.5
@@ -6350,7 +6350,7 @@ snapshots:
     dependencies:
       pngjs: 7.0.0
 
-  pixelteer@https://codeload.github.com/narthur/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3(puppeteer@24.43.1(typescript@6.0.3)):
+  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/4f4e26f9abb2981a1dad3e0f5b8b078835c9ceb3(puppeteer@24.43.1(typescript@6.0.3)):
     dependencies:
       pixelmatch: 5.3.0
       pngjs: 7.0.0
@@ -6631,7 +6631,7 @@ snapshots:
     dependencies:
       color: 4.2.3
       detect-libc: 2.1.2
-      semver: 7.7.4
+      semver: 7.8.0
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.33.5
       '@img/sharp-darwin-x64': 0.33.5
