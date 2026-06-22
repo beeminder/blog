@@ -8,7 +8,7 @@ jobs:
       checks: read
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         name: Checkout configuration file
         with:
           sparse-checkout: |

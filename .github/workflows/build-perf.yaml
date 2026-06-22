@@ -19,23 +19,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout base commit
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.event.pull_request.base.sha }}
           path: base
 
       - name: Checkout head commit
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           path: head
 
-      - uses: pnpm/action-setup@v4.0.0
+      - uses: pnpm/action-setup@v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
 
       - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
@@ -108,7 +108,7 @@ jobs:
           echo "Head average: ${AVG}s"
 
       - name: Post build performance comment
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           BASE_AVG: ${{ steps.base.outputs.avg }}
           HEAD_AVG: ${{ steps.head.outputs.avg }}
