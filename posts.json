@@ -7609,5 +7609,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "madhacks"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "midweekend",
+"disqus_id": "midweekend",
+"source": "doc.bmndr.co/midweekend",
+"redirects": [],
+"date": "2026-06-23",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "madhacks"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
