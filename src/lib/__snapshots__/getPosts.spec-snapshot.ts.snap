@@ -67587,6 +67587,123 @@ Instead it&#8217;s purely for that last minute push to say &#8220;no really,
 "
 `;
 
+exports[`body > post midweekend hash a511ca30b83d3bb7de483c0f334cffa1 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    alt="Stylized calendar"
+    title="As all the YouTube commenters point out, por que no los dos? You could take Wednesdays off *and* have a normal weekend. Btw, please note the subliminal advertisement for calendialing."
+    width="450"
+    src="https://github.com/user-attachments/assets/be51ff77-6e9d-4be8-9ee2-f70c918efc66"
+  >
+</p>
+<p>
+  Here&#8217;s a simple madhack from one of my favorite YouTubers, CGP Grey:
+  <a
+    href="https://www.youtube.com/watch?v=ALaTm6VzTBw"
+    title="Not to be confused with the Dr Seuss / Theo LeSieg book, Wacky Wednesday"
+  >
+    Weekend Wednesday
+  </a>
+  . 
+His video is pretty pithy and persuasive but let me make my own contribution to the internet by turning it into
+  <a
+    href="https://blog.beeminder.com/ownwords"
+    title="Beeminder blog post about articulating insights in your own words"
+  >
+    my own
+  </a>
+  typed words that you can read quieter and faster.
+</p>
+<p>
+  Claim: Five workdays in a row is too much. 
+You&#8217;re drained by the end of the week and your productivity is plummeting. 
+Then you need Saturday just to recover and so it only feels like one day of actual relaxation on Sunday before the cycle starts over.
+</p>
+<p>
+  Solution:
+  <strong>
+    Swap Wednesday and Saturday
+  </strong>
+  . 
+Now you just have two days of work, a break, then three days of work, followed by another day off.
+</p>
+<p>
+  The advantages are thus:
+</p>
+<ol>
+  <li>
+    More productivity due to more frequent recharging
+  </li>
+  <li>
+    Weekend days you can enjoy more because you&#8217;re less drained
+  </li>
+  <li>
+    A non-work day (Wednesday) that&#8217;s off-sync with the rest of the world so you can do recreational things with less crowds
+  </li>
+  <li>
+    A workday (Saturday) with few interruptions.
+  </li>
+</ol>
+<p>
+  <img
+    class="aligncenter"
+    alt="Diagram of the 2 days work, rest, 3 days work, rest cycle"
+    title="CGP Grey's illustration"
+    src="https://github.com/user-attachments/assets/d0dc63fe-adfb-4439-ad92-872cf0c8d11f"
+  >
+</p>
+<center>
+  <i>
+    Image: CGP Grey
+  </i>
+</center>
+<p>
+  I&#8217;m not fully sold on all this myself.
+The &#8220;being drained by the end of the week&#8221; concept isn&#8217;t one I really relate to, so the whole thing feels inapplicable. 
+And there&#8217;s a possible downside, pointed out by
+  <a
+    href="http://www.hellyer.net/"
+    title="Philip is one of us chickens"
+  >
+    Philip Hellyer
+  </a>
+  who tried taking Wednesdays off once, in addition to normal weekends.
+He found that in practice it meant every workday was either a Monday (ramping up) or a Friday (ramping down), which was highly unproductive for him, at the time.
+But he adds that that was before Beeminder!
+</p>
+<p>
+  Obviously if you have kids in school, or have any number of other reasons to stay more fully in sync with the rest of the world, the whole thing may be a nonstarter.
+But Weekend Wednesday seems like the kind of thing some Beeminder users will want to try.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  <em>
+    Thanks to both
+    <a
+      href="https://nathanarthur.com/"
+      title="Of TaskRatchet fame, among other things"
+    >
+      Nathan Arthur
+    </a>
+    and
+    <a
+      href="http://maryrenaud.com/"
+      title="Of Time Stream fame, among other things"
+    >
+      Mary Renaud
+    </a>
+    who first pointed me to this idea.
+  </em>
+</p>
+"
+`;
+
 exports[`body > post milkman hash 7a2f85900994511fb5aa4a64a74483c4 1`] = `
 "
 <p>
