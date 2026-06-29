@@ -15,7 +15,7 @@ const years = await getArchives();
         years.map((y) => (
           <li>
             <a href={`/${y.label}`}>
-              {y.label} ({y.post_count})
+              {y.label} (<span class="post-count">{y.post_count}</span>)
             </a>
           </li>
         ))

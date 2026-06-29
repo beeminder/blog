@@ -113,7 +113,7 @@ importers:
         version: 7.2.0
       pixelteer:
         specifier: github:pinepeakdigital/pixelteer
-        version: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/b53ef74c16c898b620281fa9ba2a8b79f734d939(puppeteer@25.2.1)
+        version: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d(puppeteer@25.2.1)
       pngjs:
         specifier: ^7.0.0
         version: 7.0.0
@@ -2738,8 +2738,8 @@ packages:
     resolution: {integrity: sha512-xhcb4yHu9sM/G7foGzoLtXYcC0zHEaOXXjRKhGup0fw78Nf2Tkiapv4EQyMzrbcmQPsllAI7DbFY2UT7PlI9Pg==}
     hasBin: true
 
-  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/b53ef74c16c898b620281fa9ba2a8b79f734d939:
-    resolution: {tarball: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/b53ef74c16c898b620281fa9ba2a8b79f734d939}
+  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d:
+    resolution: {tarball: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d}
     version: 1.0.0
     peerDependencies:
       puppeteer: ^22.6.5
@@ -6006,7 +6006,7 @@ snapshots:
     dependencies:
       pngjs: 7.0.0
 
-  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/b53ef74c16c898b620281fa9ba2a8b79f734d939(puppeteer@25.2.1):
+  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d(puppeteer@25.2.1):
     dependencies:
       pixelmatch: 5.3.0
       pngjs: 7.0.0
