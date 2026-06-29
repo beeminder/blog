@@ -47,7 +47,7 @@ const pathnames = urls.map((url) => new URL(url).pathname);
 const selected = (
   detailOnly ? pathnames.filter(isDetailPage) : pathnames
 ).slice(0, limit);
-const paths = selected.map((pathname) => pathname + "?snap");
+const paths = selected;
 
 console.log(
   `Comparing ${paths.length} path(s)${detailOnly ? " (detail pages only)" : ""}.`,
@@ -59,8 +59,15 @@ await compareUrls({
   paths,
   outDir: url.fileURLToPath(outPath),
   force: process.argv.includes("--force"),
-  onSuccess: (data) => {
-    console.log(data);
+  // Hide non-deterministic regions so they don't read as regressions.
+  // pixelteer injects these as `visibility: hidden` at capture time on both
+  // prod and local, which replaces the old in-page `.snap` CSS mechanism
+  // (no longer needs the masking CSS deployed to prod). See beeminder/blog#669.
+  //   #comments/#sha — dynamic chrome; img — content/lazy-load drift;
+  //   .post-count    — sidebar year-archive counts that move with live content.
+  maskSelectors: ["#comments", "#sha", "img", ".post-count"],
+  onSuccess: ({ current, total, path, diff, pct }) => {
+    console.log(`[${current}/${total}] ${path} — ${diff}px (${pct}%)`);
   },
   onError: (error) => {
     console.error(error);
@@ -73,5 +80,12 @@ createReport({
   shotsDir: url.fileURLToPath(outPath),
   outDir: url.fileURLToPath(root),
 });
+
+// pixelteer writes a machine-readable summary (path, diffPx, pct, crop paths)
+// to the shots dir, and saves cropped before/after/diff for each changed
+// region. See beeminder/blog#669 (item 6).
+console.log(
+  `Per-page summary + crops in ${url.fileURLToPath(new URL("summary.json", outPath))}`,
+);
 
 await server.stop();
