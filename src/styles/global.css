@@ -178,17 +178,6 @@ ol {
   margin-right: auto;
 }
 
-/* .snap purpose: improve puppeteer diffing reliability */
-
-body.snap #comments,
-body.snap #sha {
-  display: none;
-}
-
-body.snap img {
-  filter: brightness(0);
-}
-
 /* GitHub-style table CSS */
 table {
   border-spacing: 0;

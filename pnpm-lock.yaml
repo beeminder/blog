@@ -22,7 +22,7 @@ importers:
         version: 5.2.5
       astro:
         specifier: ^7.0.0
-        version: 7.0.0(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)(@types/node@26.0.0)(jiti@2.7.0)(rollup@4.60.3)(tsx@4.22.4)(yaml@2.9.0)
+        version: 7.0.0(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@26.0.0)(jiti@2.7.0)(rollup@4.60.3)(tsx@4.22.4)(yaml@2.9.0)
       dotenv:
         specifier: ^17.4.2
         version: 17.4.2
@@ -113,7 +113,7 @@ importers:
         version: 7.2.0
       pixelteer:
         specifier: github:pinepeakdigital/pixelteer
-        version: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/b53ef74c16c898b620281fa9ba2a8b79f734d939(puppeteer@25.1.0)
+        version: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d(puppeteer@25.1.0)
       pngjs:
         specifier: ^7.0.0
         version: 7.0.0
@@ -2769,8 +2769,8 @@ packages:
     resolution: {integrity: sha512-xhcb4yHu9sM/G7foGzoLtXYcC0zHEaOXXjRKhGup0fw78Nf2Tkiapv4EQyMzrbcmQPsllAI7DbFY2UT7PlI9Pg==}
     hasBin: true
 
-  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/b53ef74c16c898b620281fa9ba2a8b79f734d939:
-    resolution: {tarball: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/b53ef74c16c898b620281fa9ba2a8b79f734d939}
+  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d:
+    resolution: {tarball: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d}
     version: 1.0.0
     peerDependencies:
       puppeteer: ^22.6.5
@@ -3589,9 +3589,9 @@ snapshots:
   '@astrojs/compiler-binding-linux-x64-musl@0.2.2':
     optional: true
 
-  '@astrojs/compiler-binding-wasm32-wasi@0.2.2(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)':
+  '@astrojs/compiler-binding-wasm32-wasi@0.2.2(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.1.5(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)
+      '@napi-rs/wasm-runtime': 1.1.5(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -3603,7 +3603,7 @@ snapshots:
   '@astrojs/compiler-binding-win32-x64-msvc@0.2.2':
     optional: true
 
-  '@astrojs/compiler-binding@0.2.2(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)':
+  '@astrojs/compiler-binding@0.2.2(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)':
     optionalDependencies:
       '@astrojs/compiler-binding-darwin-arm64': 0.2.2
       '@astrojs/compiler-binding-darwin-x64': 0.2.2
@@ -3611,16 +3611,16 @@ snapshots:
       '@astrojs/compiler-binding-linux-arm64-musl': 0.2.2
       '@astrojs/compiler-binding-linux-x64-gnu': 0.2.2
       '@astrojs/compiler-binding-linux-x64-musl': 0.2.2
-      '@astrojs/compiler-binding-wasm32-wasi': 0.2.2(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)
+      '@astrojs/compiler-binding-wasm32-wasi': 0.2.2(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)
       '@astrojs/compiler-binding-win32-arm64-msvc': 0.2.2
       '@astrojs/compiler-binding-win32-x64-msvc': 0.2.2
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
 
-  '@astrojs/compiler-rs@0.2.2(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)':
+  '@astrojs/compiler-rs@0.2.2(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)':
     dependencies:
-      '@astrojs/compiler-binding': 0.2.2(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)
+      '@astrojs/compiler-binding': 0.2.2(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -4240,13 +4240,6 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.0
       '@emnapi/runtime': 1.11.0
-      '@tybys/wasm-util': 0.10.2
-    optional: true
-
-  '@napi-rs/wasm-runtime@1.1.5(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)':
-    dependencies:
-      '@emnapi/core': 1.11.0
-      '@emnapi/runtime': 1.11.1
       '@tybys/wasm-util': 0.10.2
     optional: true
 
@@ -4929,9 +4922,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@7.0.0(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)(@types/node@26.0.0)(jiti@2.7.0)(rollup@4.60.3)(tsx@4.22.4)(yaml@2.9.0):
+  astro@7.0.0(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@26.0.0)(jiti@2.7.0)(rollup@4.60.3)(tsx@4.22.4)(yaml@2.9.0):
     dependencies:
-      '@astrojs/compiler-rs': 0.2.2(@emnapi/core@1.11.0)(@emnapi/runtime@1.11.1)
+      '@astrojs/compiler-rs': 0.2.2(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)
       '@astrojs/internal-helpers': 0.10.0
       '@astrojs/markdown-satteri': 0.3.1
       '@astrojs/telemetry': 3.3.2
@@ -6116,7 +6109,7 @@ snapshots:
     dependencies:
       pngjs: 7.0.0
 
-  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/b53ef74c16c898b620281fa9ba2a8b79f734d939(puppeteer@25.1.0):
+  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d(puppeteer@25.1.0):
     dependencies:
       pixelmatch: 5.3.0
       pngjs: 7.0.0
