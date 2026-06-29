@@ -16,7 +16,7 @@ const server = await preview({
   },
 });
 
-const urls = await getSitemap();
+const urls = await getSitemap(compare);
 
 // Optional flags for targeted runs (default behaviour: compare every sitemap URL):
 //   --detail      restrict to blog post detail pages (single-segment slugs)
