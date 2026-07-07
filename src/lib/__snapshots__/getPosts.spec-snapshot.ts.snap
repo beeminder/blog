@@ -3142,14 +3142,15 @@ Feel free to email me any time at
 "
 `;
 
-exports[`body > post anticharity hash 792d174569ee1f4266a48b44c28acf6e 1`] = `
+exports[`body > post anticharity hash 786d93577be37d17c54c86ce8fcdeb7f 1`] = `
 "
 <p>
   <img
     class="aligncenter"
     alt="image of a burning dollar bill"
     title="I find it hilariously ironic that burning money is forbidden by the government since burning money (literally an IOU from the govenment) is tantamount to giving the government money"
-    src="http://blog.beeminder.com/wp-content/uploads/2013/03/burningmoney.png"
+    width="450"
+    src="https://github.com/user-attachments/assets/b91f0207-c9ec-4c65-a67f-a79fcdc752bc"
   >
 </p>
 <p>
@@ -8208,14 +8209,15 @@ Some still
 "
 `;
 
-exports[`body > post beenice hash b3c1d47cbc55f0b278243cde338c70fd 1`] = `
+exports[`body > post beenice hash 29c9bc21b75596766888b49b005859e6 1`] = `
 "
 <p>
   <img
     class="aligncenter"
     title="Seriously, please do not self-mutilate over Beeminder pledges. Maybe you should beemind that. (And speaking of self-restraint, did you see how we resisted punifying the title of this post?)"
-    alt="People boxing, ie, punching each other"
-    src="http://blog.beeminder.com/wp-content/uploads/2014/01/boxingmatch.jpg"
+    alt="People boxing"
+    width="450"
+    src="https://github.com/user-attachments/assets/858f9bfe-ce05-483b-8c75-2211253b52b3"
   >
 </p>
 <blockquote>
@@ -8294,19 +8296,6 @@ Then I can just hit Archive.
 <p>
   Ideally beeminding stuff isn&#8217;t just another punishment you heap on to an already critical inner monologue. 
 Allow us to ease that burden.
-</p>
-<p>
-  <br>
-  &nbsp;
-  <br>
-</p>
-<p>
-  <em>
-    Image source:
-    <a href="http://tineye.com/search/28a663273559d38135f077db15633a9301827172/">
-      all over the interwebz
-    </a>
-  </em>
 </p>
 <p>
   <br>
