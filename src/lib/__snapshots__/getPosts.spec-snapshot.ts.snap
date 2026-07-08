@@ -52216,6 +52216,131 @@ Unless we blog about it, which, voila.
 "
 `;
 
+exports[`body > post goproblems hash 6ad27b37424255fc4358b5f2a6cd1bf0 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    alt="Bees playing go"
+    title="37 nerd points if you know the significance of the state of this game"
+    width="450px"
+    src="https://github.com/user-attachments/assets/f5d43172-0e53-410d-b4c5-94f50f150199"
+  >
+</p>
+<p>
+  Ta-da! 
+Our newest autodata integration is with
+  <a
+    href="https://www.goproblems.com/"
+    title="Go puzzles are also known as tsumego"
+  >
+    Go Problems
+  </a>
+  .
+As in Go, the game.
+And problems as in puzzles, AKA tsumego.
+Like chess puzzles, you get a Go board in mid-game and have to figure out where to place the next stone.
+In chess you&#8217;re typically tasked with trying get a checkmate in a certain number of moves. 
+In tsumego you have to figure out what moves either kill a group of your opponent&#8217;s stones, or keep them from killing one of yours.
+For example, not like this:
+</p>
+<p>
+  <img
+    class="aligncenter"
+    alt="Screenshot from goproblems.com"
+    title="Womp womp"
+    width="300"
+    src="https://github.com/user-attachments/assets/c3c8f82d-db48-486e-9e3f-dbb4414b5749"
+  >
+</p>
+<h2>
+  How the integration works
+</h2>
+<p>
+  Head to
+  <a
+    href="https://www.beeminder.com/new"
+    title="Or select New Goal from the top-right dropdown menu"
+  >
+    beeminder.com/new
+  </a>
+  , pick the Go icon from the list of integrations, and enter your username for Go Problems and the number of problems you&#8217;re committing to solve per day.
+That defines the bright red line on your graph that your datapoints have to stay above.
+You can put in something like 1/3 if you want to solve one Go problem every 3 days.
+Or 2/7 if you want to solve 2 per week. 
+You get the idea.
+</p>
+<p>
+  <img
+    class="aligncenter"
+    alt="Connecting your Go Problems account"
+    title="Connecting your Go Problems account"
+    width="323"
+    height="482"
+    src="https://github.com/user-attachments/assets/7c4f1716-f0fe-4ee6-ae0e-d9acec287789"
+  >
+</p>
+<p>
+  And lo! 
+A spiffy new graph that fills itself in as you (wait for it) go:
+</p>
+<p>
+  <img
+    class="aligncenter"
+    alt="Beeminder graph with data automatically fetched from Go Problems"
+    title="Beeminder graph with data automatically fetched from Go Problems"
+    src="https://github.com/user-attachments/assets/945cbd95-698a-4200-8906-dd3441889a79"
+  >
+</p>
+<p>
+  Fine print:
+If you&#8217;ve already done your Go problems for today, create the goal with at least a day of safety buffer.
+We do fetch your total number when we create the goal but your commitment starts from whatever that number is.
+</p>
+<h2>
+  Wait, I&#8217;m here from goproblems.com and new to Beeminder
+</h2>
+<p>
+  Welcome!
+You might want to check out our
+  <a
+    href="https://help.beeminder.com/category/5-quick-start-overview"
+    title="A collection of 15 newbee-oriented articles starting with &#39;What is Beeminder?&#39;"
+  >
+    getting started guide
+  </a>
+  in our Help Docs, and then get yourself signed up.
+Assuming you&#8217;re on board with the commitment device, paying-money-if-you-go-off-track bit, the beauty of an autodata integration is that you don&#8217;t normally need to interact with Beeminder once you&#8217;ve gone through the process above of setting up your commitment.
+Just do your Go problems when Beeminder yells at you.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<p>
+  Ok, and in case you didn&#8217;t actually read any of this and jumped down here for the punchline, just click this button and there&#8217;s a decent chance you&#8217;ll figure it out as you&#8230;
+</p>
+<center>
+  <a href="https://www.beeminder.com/goproblems">
+    <span style="background-color:#1d76db;color:#FFF;padding:0 16px;font-size:16px;font-weight:600;line-height:3;border-radius:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;display:inline-block !important">
+      Gooooooo!
+    </span>
+  </a>
+</center>
+<p>
+  (See also the full documentation of the Go Problems integration
+  <a
+    href="https://help.beeminder.com/article/382-goproblems"
+    title="Hopefully it&#39;s pretty self-explanatory though, especially after this blog post"
+  >
+    in our help docs
+  </a>
+  .)
+</p>
+"
+`;
+
 exports[`body > post gratitude hash f671c086594e94ac757a2aa55a9b716b 1`] = `
 "
 <p>
