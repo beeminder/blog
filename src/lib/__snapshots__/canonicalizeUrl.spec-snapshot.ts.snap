@@ -354,6 +354,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/goalnames' 1`] = `"https
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/goodjargon' 1`] = `"https://the_source_domain/goodjargon/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/goproblems' 1`] = `"https://the_source_domain/goproblems/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/gratitude' 1`] = `"https://the_source_domain/gratitude/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/grayson' 1`] = `"https://the_source_domain/grayson/export/txt"`;
