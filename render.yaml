@@ -2,7 +2,8 @@ services:
   - type: web
     name: beeblog
     env: static
-    buildCommand: pnpm install --frozen-lockfile && pnpm run build
+    # Install runs via the $RENDER-gated `prebuild` hook in package.json (single source of truth). See #657.
+    buildCommand: pnpm run build
     staticPublishPath: ./dist
     pullRequestPreviewsEnabled: true
     routes:
