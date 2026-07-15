@@ -112,8 +112,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       pixelteer:
-        specifier: github:pinepeakdigital/pixelteer
-        version: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d(puppeteer@25.3.0)
+        specifier: https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz
+        version: https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz(puppeteer@25.3.0)
       pngjs:
         specifier: ^7.0.0
         version: 7.0.0
@@ -351,9 +351,6 @@ packages:
 
   '@emnapi/core@1.11.1':
     resolution: {integrity: sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ==}
-
-  '@emnapi/runtime@1.10.0':
-    resolution: {integrity: sha512-ewvYlk86xUoGI0zQRNq/mC+16R1QeDlKQy21Ki3oSYXNgLb45GV1P6A0M+/s6nyCuNDqe5VpaY84BzXGwVbwFA==}
 
   '@emnapi/runtime@1.11.0':
     resolution: {integrity: sha512-55coeOFKHv1ywEcUXJtWU5f+Jr/W5tZDvZig8DLKSwUN1JpROQ4rk/SNOQiFWmaR/VKF4zuFyW1B8JduOSv6Pg==}
@@ -2697,8 +2694,8 @@ packages:
     resolution: {integrity: sha512-xhcb4yHu9sM/G7foGzoLtXYcC0zHEaOXXjRKhGup0fw78Nf2Tkiapv4EQyMzrbcmQPsllAI7DbFY2UT7PlI9Pg==}
     hasBin: true
 
-  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d}
+  pixelteer@https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz:
+    resolution: {integrity: sha512-cI9cBSJLDHgwxX1qx4wSAFN0URWqDux9gYmf1KRYV1WpIXxC4VFHY2+C7ZpjUML6ZhtvYHjtVVkjeBGi3V2DDQ==, tarball: https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz}
     version: 1.0.0
     peerDependencies:
       puppeteer: ^22.6.5
@@ -3691,11 +3688,6 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@emnapi/runtime@1.10.0':
-    dependencies:
-      tslib: 2.8.1
-    optional: true
-
   '@emnapi/runtime@1.11.0':
     dependencies:
       tslib: 2.8.1
@@ -3997,7 +3989,7 @@ snapshots:
 
   '@img/sharp-wasm32@0.33.5':
     dependencies:
-      '@emnapi/runtime': 1.10.0
+      '@emnapi/runtime': 1.11.2
     optional: true
 
   '@img/sharp-wasm32@0.35.3':
@@ -5854,7 +5846,7 @@ snapshots:
     dependencies:
       pngjs: 7.0.0
 
-  pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d(puppeteer@25.3.0):
+  pixelteer@https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz(puppeteer@25.3.0):
     dependencies:
       pixelmatch: 5.3.0
       pngjs: 7.0.0
