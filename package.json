@@ -36,7 +36,7 @@
     "@astrojs/sitemap": "^3.7.3",
     "@fontsource-variable/lora": "^5.2.8",
     "@fontsource/source-sans-pro": "^5.2.5",
-    "astro": "^7.0.6",
+    "astro": "^7.0.9",
     "dotenv": "^17.4.2",
     "expost": "https://github.com/bsoule/expost/releases/download/v1.0.0/expost-1.0.0.tgz",
     "feather-icons": "^4.29.2",
