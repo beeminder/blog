@@ -2,4 +2,4 @@ packages:
   - "."
 
 onlyBuiltDependencies:
-  - pixelteer
+  - "pixelteer@https://codeload.github.com/pinepeakdigital/pixelteer/tar.gz/ac20ff198a1fd5306c4757a6de9aadbb45ba1a7d"
