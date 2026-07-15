@@ -8,6 +8,11 @@ updates:
       npm-dependencies:
         patterns:
           - "*"
+    ignore:
+      # TS 7.0 is the native "tsgo" rewrite; @typescript-eslint and Astro's
+      # check tooling crash on it. Drop when the ecosystem supports it.
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
