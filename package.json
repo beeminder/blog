@@ -68,7 +68,7 @@
     "knip": "^6.24.0",
     "lint-staged": "^17.0.8",
     "pixelmatch": "^7.2.0",
-    "pixelteer": "github:pinepeakdigital/pixelteer",
+    "pixelteer": "https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz",
     "pngjs": "^7.0.0",
     "prettier": "3.9.4",
     "puppeteer": "25.3.0",
