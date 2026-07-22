@@ -7629,5 +7629,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "integrations", "new features", "games"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "ramble",
+"disqus_id": "ramble",
+"source": "doc.bmndr.co/ramble",
+"redirects": [],
+"date": "2026-07-21",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "beeminder philosophy", "tips"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
