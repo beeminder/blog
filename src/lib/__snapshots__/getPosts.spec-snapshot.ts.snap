@@ -84918,6 +84918,286 @@ Keep telling us what you think we should do next!
 "
 `;
 
+exports[`body > post ramble hash cf36cab673eff3939efe71f6f126f3a2 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    width="450"
+    height="450"
+    alt="A grid of 9 scenes of the same woman going for different walks."
+    title="She's toting her pack along the dusty Winnemucca road, and she's been everywhere, man."
+    src="https://github.com/user-attachments/assets/e88a5f0a-b1ff-4396-b8a8-5b78e52d21e3"
+  >
+</p>
+<p>
+  Bee and I have been experimenting with micro-habit Beeminder goals.
+In particular, we coined the name
+  <a
+    class="footnote"
+    id="NOM1"
+    href="#NOM"
+  >
+    [1]
+  </a>
+  <em>
+    ramble goals
+  </em>
+  for moving a mile
+  <a
+    class="footnote"
+    id="MILE1"
+    href="#MILE"
+  >
+    [2]
+  </a>
+  a day, as a binary goal, meaning you get a +1 for moving at least a mile.
+Running a marathon is still just a +1. 
+We also count stationary biking, ironically, which takes all of 3 minutes without breaking a sweat.
+(We included this to make the bar for doing it very very low.)
+It&#8217;s not very
+  <a
+    href="https://blog.beeminder.com/whattomind"
+    title="What To Mind: Picking a Metric. See item 2: pick things that make interesting graphs."
+  >
+    quantified-selfy
+  </a>
+  but the idea is to have this in addition to other fitness goals that track metrics like steps or distance.
+</p>
+<h3>
+  Don&#8217;t proper distance goals make a binary version superfluous?
+</h3>
+<p>
+  No, because you don&#8217;t necessarily want to be edge-skating your steps/distance goals all the time. 
+Maybe you even want a long off-season on those goals. 
+But when you do have tons of safety buffer, you don&#8217;t want to get too lazy. 
+The mile-a-day goal overcomes the activation energy of getting started. 
+Any time you want a day off, just put in the 3 minutes and be done. 
+If it turns out that once you&#8217;re doing it, you don&#8217;t mind 17 more minutes for an actual workout, great.
+</p>
+<p>
+  This worked like a charm on me over the winter. 
+I&#8217;d get on the stationary bike (technically my real bike on rollers) to get the quick mile out the way and then I&#8217;m on a roll (haha) and start setting mini goals like &#8220;maybe I&#8217;ll keep going till I hit 100 calories&#8221; or &#8220;till I bring my average speed above 30mph&#8221; or any number of meaningless motivators.
+</p>
+<p>
+  <img
+    class="aligncenter"
+    alt="A bike on rollers"
+    title="In case anyone isn't clear on what rollers are"
+    src="https://github.com/user-attachments/assets/34e46a53-f049-4c50-b88e-400c980cf025"
+  >
+</p>
+<p>
+  The book
+  <em>
+    Atomic Habits
+  </em>
+  calls this a
+  <em>
+    gateway habit
+  </em>
+  , if you use the 2-minute rule. 
+I guess a mile in two minutes is doable on rollers with no resistance setting.
+</p>
+<p>
+  As for what to dial your commitment to&#8201;&#8212;&#8201;the steepness of the bright red line&#8201;&#8212;&#8201;Bee and I keep ours at 6-point-something per week. 
+But part of the point is that it hardly matters. 
+You effectively get any day off you want by just putting in the token few minutes.
+</p>
+<h3>
+  Metaminding
+</h3>
+<p>
+  I think this works great as a run-of-the-mill manual do-more goal. 
+I put what I did in the datapoint comment.
+But we&#8217;d be remiss if we didn&#8217;t point out that you can automate this with a
+  <a
+    href="http://bmndr.co/metaminder"
+    title="AKA Metaminder, no relation to Facebook&#39;s parent company"
+  >
+    Beeminder meta goal
+  </a>
+  if you&#8217;re already beeminding something like miles.
+Set the meta goal up to  mirror data from a main miles goal and set the meta goal&#8217;s aggday to &#8220;satsum&#8221; (previously &#8220;cap1&#8221;).
+&#8220;Satsum&#8221; is for &#8220;saturated sum&#8221;&#8201;&#8212;&#8201;it plots for each day the sum of any datapoints but capped at a value of 1.
+That way you have both your &#8220;20 miles per week&#8221; goal, or however much it is, and an &#8220;at least 1 mile per day&#8221; goal. 
+You can also set aggday to &#8220;unary&#8221; (previously &#8220;binary&#8221;) if you just want to commit to getting any datapoint each day (or most days), no matter how small.
+</p>
+<p>
+  Also if you have an autodata source like Garmin or Strava you can just link that to two goals, and not need to fuss with a meta goal.
+</p>
+<p>
+  Here&#8217;s another variation on the concept, from
+  <a
+    href="https://www.hellyer.net/"
+    title="Philip&#39;s homepage"
+  >
+    Philip Hellyer
+  </a>
+  : threshold goals.
+Apparently the inflection point for health benefits from steps-per-day is at 6000 steps. 
+So Philip uses
+  <a
+    href="https://www.beeminder.com/make"
+    title="Formerly Integromat, but that&#39;s such old news that I guess we&#39;re just going for hipster points by pointing it out at this point. Also I secretly still like that name better."
+  >
+    Beeminder&#8217;s Make.com integration
+  </a>
+  to add a +1 to his threshold goal if his main steps goal is ≥ 6000 steps.
+</p>
+<p>
+  (But also, don&#8217;t
+  <a
+    href="https://blog.beeminder.com/burnout"
+    title="Beating Beeminder Burnout"
+  >
+    overwhelm yourself
+  </a>
+  with too many goals!)
+</p>
+<h3>
+  What about autoratchet?
+</h3>
+<p>
+  If you&#8217;re sufficiently gung-ho, you might prefer to use the autoratchet feature on a goal that just tracks distance walked or run or biked.
+Or manually ratchet away safety buffer whenever you accumulate too much of it.
+But the idea is for a ramble goal to be lower stress&#8201;&#8212;&#8201;less edge-skating&#8201;&#8212;&#8201;and lower cognitive overhead. 
+You only ever worry about your one ramble per day.
+You&#8217;ll never back yourself into a corner by ratcheting away too much safety buffer on your main mileage goal.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class="footnote"
+    id="NOM"
+    href="#NOM1"
+  >
+    [1]
+  </a>
+  In case you like
+  <a
+    href="https://blog.beeminder.com/goalnames"
+    title="How To Name Your Goals"
+  >
+    naming goals
+  </a>
+  as much as me, here are alternative names for epsilon-effort, activation-energy-neutralizing goals like this, especially for the case of daily walking:
+</p>
+<ol>
+  <li>
+    milemark (like a tally mark for hitting a mile, which makes sense for a binary goal)
+  </li>
+  <li>
+    locomote
+  </li>
+  <li>
+    gambol
+  </li>
+  <li>
+    amble
+  </li>
+  <li>
+    minimile
+  </li>
+  <li>
+    stepsilon
+  </li>
+  <li>
+    gaitway
+  </li>
+  <li>
+    solvitur (for
+    <em>
+      solvitur ambulando
+    </em>
+    )
+  </li>
+  <li>
+    ambulocatalysis
+  </li>
+  <li>
+    paripathetic
+  </li>
+  <li>
+    legit (pronounced &#8220;leg it&#8221;)
+  </li>
+  <li>
+    plodcast
+  </li>
+  <li>
+    cakewalk
+  </li>
+  <li>
+    strollcall
+  </li>
+  <li>
+    bimble (Britishism meaning stroll leisurely)
+  </li>
+  <li>
+    jauntlet
+  </li>
+  <li>
+    meanderthal
+  </li>
+  <li>
+    doorstep (as in stepping out the door)
+  </li>
+  <li>
+    wanderleast
+  </li>
+  <li>
+    heartbeat
+  </li>
+  <li>
+    deminimis
+  </li>
+  <li>
+    scintilla
+  </li>
+  <li>
+    <a
+      href="https://en.wikipedia.org/wiki/Peppercorn_(law)"
+      title="Peppercorn rent is a token amount you pay in order to qualify as a legal contract"
+    >
+      peppercorn
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://en.wikipedia.org/wiki/Nulla_dies_sine_linea"
+      title="Nulla dies sine linea -- no day without a line, aka no zero days"
+    >
+      linea
+    </a>
+  </li>
+</ol>
+<p>
+  I&#8217;m embarrassed to say that those started out mine but the most creative-sounding onces are Claude.
+(I accidentally blurred the line in the above list, by compiling some of it a year or so ago and losing track of which ones we thought of and which the golems thought of.
+These days I&#8217;m more careful.
+Every word you read on Beeminder that we&#8217;re not explicitly attributing to someone or something else is typed by our human fingers.)
+</p>
+<p>
+  <a
+    class="footnote"
+    id="MILE"
+    href="#MILE1"
+  >
+    [2]
+  </a>
+  We feel dumb being all imperial with &#8220;miles&#8221; but it is at least linguistically nice:
+mileage, milemarkers, milestones.
+</p>
+"
+`;
+
 exports[`body > post ratchet hash 1570aa49e7a0b862699efaef14f7be7b 1`] = `
 "
 <p>
