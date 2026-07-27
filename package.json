@@ -16,6 +16,7 @@
     "test": "vitest",
     "test:snapshot": "vitest --config ./vitest.snapshot.config.ts",
     "test:snapshot:update": "vitest --config ./vitest.snapshot.config.ts --update",
+    "snapshot:refresh": "tsx ./scripts/refresh-snapshot-corpus.ts",
     "cache:clear": "rm -rf .cache && rm -rf node_modules/.astro",
     "check": "astro check",
     "check:secrets": "tsx ./scripts/check-no-etherpad-domain.ts",

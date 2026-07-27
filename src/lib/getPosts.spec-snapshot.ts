@@ -1,22 +1,23 @@
 import { describe, it, expect } from "vitest";
-import getPosts from "./getPosts";
-import { createHash } from "crypto";
 import toDiffableHtml from "diffable-html";
-import type { Post } from "../schemas/post";
+import { rawPost, processPost, type RawPost } from "../schemas/post";
+import corpus from "./__fixtures__/posts-corpus.json";
 
-console.time("Retrieving posts");
-const posts = await getPosts();
-console.timeEnd("Retrieving posts");
-
-console.time("Hashing posts");
-const tests = posts.map((p): [string, string, Post] => {
-  const hash = createHash("md5").update(p.md).digest("hex");
-  return [p.slug, hash, p];
-});
-console.timeEnd("Hashing posts");
+// Renders a frozen corpus of pad exports (committed in __fixtures__), not live
+// pads. The input only changes when a dev runs `pnpm snapshot:refresh` and
+// commits the result, so a stable slug key + changed value is exactly the
+// pipeline-regression signal we want — no md5-in-name trick, no nightly job.
+//
+// The array parse is fixture-integrity (fail fast if the committed corpus is
+// malformed); processPost runs inside each case so a pipeline error is
+// attributed to its slug and doesn't take down the other posts' tests.
+const posts = rawPost.array().parse(corpus);
 
 describe("body", () => {
-  it.each(tests)("post %s hash %s", (_slug, _hash, post) => {
-    expect(toDiffableHtml(post.content)).toMatchSnapshot();
-  });
+  it.each(posts.map((p): [string, RawPost] => [p.slug, p]))(
+    "post %s",
+    (_slug, post) => {
+      expect(toDiffableHtml(processPost(post).content)).toMatchSnapshot();
+    },
+  );
 });
