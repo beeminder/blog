@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`body > post accountability hash 198949256489b62550e1cf2901391926 1`] = `
+exports[`body > post accountability 1`] = `
 "
 <p>
   <img
@@ -357,7 +357,7 @@ We also have a ton of great presentations, exercises, and live direct coaching, 
 "
 `;
 
-exports[`body > post achilles hash c3b31f6b9669d6726415e63c65c45f06 1`] = `
+exports[`body > post achilles 1`] = `
 "
 <p>
   <img
@@ -513,7 +513,7 @@ But also congrats one more time to the 2019 Survivors!
 "
 `;
 
-exports[`body > post akrasia hash 5816a5c961560a777527b413eca3ec69 1`] = `
+exports[`body > post akrasia 1`] = `
 "
 <p>
   <img
@@ -1674,7 +1674,7 @@ But it was clear to students that that was a terrible idea. And sure enough, the
 "
 `;
 
-exports[`body > post akratics hash a0bec8249f90dc62284bcbdcbdfee008 1`] = `
+exports[`body > post akratics 1`] = `
 "
 <p>
   <img
@@ -1826,7 +1826,7 @@ So
 "
 `;
 
-exports[`body > post allitimentation hash 38aa6e6519ac7c4553ca19a49e24f46f 1`] = `
+exports[`body > post allitimentation 1`] = `
 "
 <p>
   <img
@@ -2382,7 +2382,7 @@ Image credit: Faire Soule-Reeves.
 "
 `;
 
-exports[`body > post allthethings hash 864715189db7f9dbf8ab07093dfda1f8 1`] = `
+exports[`body > post allthethings 1`] = `
 "
 <p>
   <img
@@ -2739,7 +2739,7 @@ I just want to have concrete actions I can do
 "
 `;
 
-exports[`body > post amsterdam hash 2f1b2b2df0c4b3276a4a9e9e21f2d251 1`] = `
+exports[`body > post amsterdam 1`] = `
 "
 <p>
   <img
@@ -2885,7 +2885,7 @@ Comment below, send us an email, or find us in the hallway track at QS17!
 "
 `;
 
-exports[`body > post anomalily hash 8b0eec93766ae456c36dc51bbbb97dd3 1`] = `
+exports[`body > post anomalily 1`] = `
 "
 <p>
   <img
@@ -3142,7 +3142,7 @@ Feel free to email me any time at
 "
 `;
 
-exports[`body > post anticharity hash 786d93577be37d17c54c86ce8fcdeb7f 1`] = `
+exports[`body > post anticharity 1`] = `
 "
 <p>
   <img
@@ -3330,7 +3330,7 @@ How damaging, or how illegal, money-burning is is quite irrelevant to the point 
 "
 `;
 
-exports[`body > post antimagic404 hash 571f393f630f817d77cfe126ca4e50f4 1`] = `
+exports[`body > post antimagic404 1`] = `
 "
 <p>
   <img
@@ -3549,7 +3549,7 @@ Are you good at solving complex engineering problems, but bad at doing the dishe
 "
 `;
 
-exports[`body > post api hash 1c25b4e3ee7a6a4f1a0de099026b26e8 1`] = `
+exports[`body > post api 1`] = `
 "
 <p>
   <img
@@ -4066,7 +4066,7 @@ ANOTHER UPDATE: See the bottom of
 "
 `;
 
-exports[`body > post apple hash 7ed3746b8bb0a8e76f6d6637cae397fa 1`] = `
+exports[`body > post apple 1`] = `
 "
 <p>
   <img
@@ -4269,7 +4269,7 @@ Keep letting us know!
 "
 `;
 
-exports[`body > post apps hash de5618422da8bb3e1686f14981a0c611 1`] = `
+exports[`body > post apps 1`] = `
 "
 <p>
   <img
@@ -4517,7 +4517,7 @@ We ended up going back to the basics&#8201;&#8212;&#8201;one notification when y
 "
 `;
 
-exports[`body > post arbeetrary hash a92eea7dd7b9b77884dddd940f7d10c5 1`] = `
+exports[`body > post arbeetrary 1`] = `
 "
 <p>
   <img
@@ -4869,7 +4869,7 @@ Yay incentives!
 "
 `;
 
-exports[`body > post astroblog hash 98b5860de9329fb5443f71343014070f 1`] = `
+exports[`body > post astroblog 1`] = `
 "
 <p>
   <img
@@ -5256,7 +5256,7 @@ You can report those in the comments or
 "
 `;
 
-exports[`body > post athletes hash a3590e7bf12a75f1a173a33fe890c412 1`] = `
+exports[`body > post athletes 1`] = `
 "
 <p>
   <img
@@ -5406,7 +5406,7 @@ You don&#8217;t want to end up with an expensive beemergency you&#8217;re physic
 "
 `;
 
-exports[`body > post autocancel hash 3a4ee41fcf98d701625dde07b0d814ef 1`] = `
+exports[`body > post autocancel 1`] = `
 "
 <p>
   <img
@@ -5574,7 +5574,7 @@ People feel, almost always, that the pledges they&#8217;ve paid for derailing we
 "
 `;
 
-exports[`body > post autofetch hash d4c04a4514c0a7b4221aa84a695812a4 1`] = `
+exports[`body > post autofetch 1`] = `
 "
 <p>
   <img
@@ -5761,7 +5761,7 @@ In the meantime, talk to us humans and we&#8217;ll make it happen!
 "
 `;
 
-exports[`body > post autowide hash 0bc7c9bac2b5f321689618c81361c78b 1`] = `
+exports[`body > post autowide 1`] = `
 "
 <p>
   <img
@@ -5844,7 +5844,7 @@ Any archived goals, should they be restarted, will act as any ordinary Beeminder
 "
 `;
 
-exports[`body > post aversion hash c4bda78c220abbbe285047a133db1aa5 1`] = `
+exports[`body > post aversion 1`] = `
 "
 <p>
   <img
@@ -6082,7 +6082,7 @@ I mean, we could use the money we collect from derailments to pay people for not
 "
 `;
 
-exports[`body > post baas hash a7e020c97135650320e76007a770a122 1`] = `
+exports[`body > post baas 1`] = `
 "
 <p>
   <img
@@ -6406,7 +6406,7 @@ Shorter feedback loops and a quick retrospective every day means you find your s
 "
 `;
 
-exports[`body > post backfiring hash 77131ff2d5cb95fe725db5226c28175f 1`] = `
+exports[`body > post backfiring 1`] = `
 "
 <p>
   <img
@@ -6475,7 +6475,7 @@ We have something better in mind; stay tuned!)
 "
 `;
 
-exports[`body > post backup hash 3f6f993aec101ed3cf44111ed471315f 1`] = `
+exports[`body > post backup 1`] = `
 "
 <p>
   <img
@@ -6570,7 +6570,7 @@ But I&#8217;m going to stop tempting fate now.
 "
 `;
 
-exports[`body > post barfingcats hash 9deb4d27044542063101c50c6a23714d 1`] = `
+exports[`body > post barfingcats 1`] = `
 "
 <p>
   <img
@@ -6743,7 +6743,7 @@ It&#8217;s by far the most common thing we hear in support and is totally fine a
 "
 `;
 
-exports[`body > post bayes hash 572f17bda6beb9947429629c5ec0b4a4 1`] = `
+exports[`body > post bayes 1`] = `
 "
 <p>
   <img
@@ -6923,7 +6923,7 @@ The Bayesian theory of willpower may be more correct and general than hyperbolic
 "
 `;
 
-exports[`body > post beedroid hash f51fd795fc9fc079d5ee26908e271bf2 1`] = `
+exports[`body > post beedroid 1`] = `
 "
 <p>
   <img
@@ -7183,7 +7183,7 @@ Holler if you use it a lot and would find it annoying to have to go to the websi
 "
 `;
 
-exports[`body > post beehive hash 3e28930050b19079394d81fc5dd9638a 1`] = `
+exports[`body > post beehive 1`] = `
 "
 <p>
   <img
@@ -7437,7 +7437,7 @@ We can&#8217;t begin to tell you how grateful we are to have such an enthusiasti
 "
 `;
 
-exports[`body > post beekeeper hash 57ae159150d34e76b8ca99e191e61d44 1`] = `
+exports[`body > post beekeeper 1`] = `
 "
 <p>
   <img
@@ -7877,7 +7877,7 @@ As a silly example
 "
 `;
 
-exports[`body > post beemplice hash b7962a732915a16de85c18d93af0c0b8 1`] = `
+exports[`body > post beemplice 1`] = `
 "
 <p>
   <img
@@ -8004,7 +8004,7 @@ On the bright side, that&#8217;s been enough time to collect a few real-life, ho
 "
 `;
 
-exports[`body > post beenamer hash e54df98e3a93346e9ce8e67522fe513b 1`] = `
+exports[`body > post beenamer 1`] = `
 "
 <p>
   <img
@@ -8209,7 +8209,7 @@ Some still
 "
 `;
 
-exports[`body > post beenice hash 29c9bc21b75596766888b49b005859e6 1`] = `
+exports[`body > post beenice 1`] = `
 "
 <p>
   <img
@@ -8383,7 +8383,7 @@ At other times it has been some nebulous desire to be the kind of person who lik
 "
 `;
 
-exports[`body > post beeyond hash ea9f6fe01ad87e243c9758ac89cd4d3d 1`] = `
+exports[`body > post beeyond 1`] = `
 "
 <p>
   <img
@@ -8648,7 +8648,7 @@ Bug us if you&#8217;re chomping at the bit for AM deadlines!
 "
 `;
 
-exports[`body > post bikes hash 5d82d3fe760b086b534d45fdc44458a2 1`] = `
+exports[`body > post bikes 1`] = `
 "
 <p>
   <img
@@ -8902,7 +8902,7 @@ So we just picked $1000 from the start in that case, and this in fact is the ver
 "
 `;
 
-exports[`body > post bites hash b7233781d27765b720935e3f04ec34eb 1`] = `
+exports[`body > post bites 1`] = `
 "
 <p>
   <img
@@ -9221,7 +9221,7 @@ He&#8217;s also working on a new
 "
 `;
 
-exports[`body > post blackmail hash b7169551eca2ed6363e1e047d278a724 1`] = `
+exports[`body > post blackmail 1`] = `
 "
 <p>
   <img
@@ -9527,7 +9527,7 @@ Others embrace the self-coercion and feel it&#8217;s worth it.
 "
 `;
 
-exports[`body > post blind hash be6a570da4bb8b8f082633b90f45d262 1`] = `
+exports[`body > post blind 1`] = `
 "
 <p>
   <img
@@ -9600,7 +9600,7 @@ Then go to the goal settings for goals that should auto-update from Withings.
 "
 `;
 
-exports[`body > post blockchain hash 962f4b44a308c23d4d827d31b784dd00 1`] = `
+exports[`body > post blockchain 1`] = `
 "
 <p>
   <img
@@ -9876,7 +9876,7 @@ Because currently that susceptibility is identical, not that either of us are li
 "
 `;
 
-exports[`body > post blogdog hash 07db120c7a7756a440c0dcc6c5a36b6d 1`] = `
+exports[`body > post blogdog 1`] = `
 "
 <p>
   <img
@@ -10144,7 +10144,7 @@ Claiming the bounty at midnight is fine.
 "
 `;
 
-exports[`body > post blogmorphosis hash 4ed52deb9d78c831d6ae26d8f6dbd82e 1`] = `
+exports[`body > post blogmorphosis 1`] = `
 "
 <p>
   <img
@@ -10252,7 +10252,7 @@ All the code for this is public at
 "
 `;
 
-exports[`body > post boardgamegeek hash 2a05a5fdeaeae63cf0c43f484ef80fdd 1`] = `
+exports[`body > post boardgamegeek 1`] = `
 "
 <p>
   <img
@@ -10344,7 +10344,7 @@ Just log things in BGG like normal and Beeminder alerts you if you need to log m
 "
 `;
 
-exports[`body > post boobeemium hash 29c51b1d3730007618046c5581c7b0f3 1`] = `
+exports[`body > post boobeemium 1`] = `
 "
 <p>
   <img
@@ -10475,7 +10475,7 @@ And look how cheap it looks, next to Beemium! 🤑
 "
 `;
 
-exports[`body > post bookcase hash aeb4f990c9c45c64031436fe36b12b0f 1`] = `
+exports[`body > post bookcase 1`] = `
 "
 <p>
   <img
@@ -10830,7 +10830,7 @@ If you didn&#8217;t, then I won&#8217;t keep you in suspense: it&#8217;s the mot
 "
 `;
 
-exports[`body > post bothsides hash 311fd257fe4e44558231a68e79f67878 1`] = `
+exports[`body > post bothsides 1`] = `
 "
 <p>
   <img
@@ -10947,7 +10947,7 @@ who suggested this idea and also was the first to alert us to our
 "
 `;
 
-exports[`body > post bothsidesnow hash d491df13c2e7652a5f877f84fae7faad 1`] = `
+exports[`body > post bothsidesnow 1`] = `
 "
 <p>
   <img
@@ -11187,7 +11187,7 @@ My contention, though, is that Beeminder can already do that, and that it&#8217;
 "
 `;
 
-exports[`body > post box hash 90800321c57ca712aa5e73f9c3a5960a 1`] = `
+exports[`body > post box 1`] = `
 "
 <p>
   <img
@@ -11588,7 +11588,7 @@ So, live the love every week, and beemind it.
 "
 `;
 
-exports[`body > post breaks hash e2ed84076b34b7cb656bb41cae0fc1e8 1`] = `
+exports[`body > post breaks 1`] = `
 "
 <p>
   <img
@@ -11672,7 +11672,7 @@ especially
 "
 `;
 
-exports[`body > post brigade hash b4156f8c9d97cbafc14701d235cd5138 1`] = `
+exports[`body > post brigade 1`] = `
 "
 <p>
   <img
@@ -15186,7 +15186,7 @@ Is that a reference to some saying?
 "
 `;
 
-exports[`body > post brl hash 582da6e51f43d1f6941d0f2744d6f8b3 1`] = `
+exports[`body > post brl 1`] = `
 "
 <p>
   <img
@@ -15573,7 +15573,7 @@ Having now realized that, I&#8217;m hereby committing to tone it down for a whil
 "
 `;
 
-exports[`body > post bucket hash 0cad10d516f0d16a8c1253411d84d7f7 1`] = `
+exports[`body > post bucket 1`] = `
 "
 <p>
   <img
@@ -15718,7 +15718,7 @@ UPDATE:
 "
 `;
 
-exports[`body > post buglabels hash 5168440acf925912fb357b5d0e2525dc 1`] = `
+exports[`body > post buglabels 1`] = `
 "
 <p>
   <img
@@ -16457,7 +16457,7 @@ Here&#8217;s how they map to our own labels:
 "
 `;
 
-exports[`body > post bugreports hash 0c4d71961bab32ce98d438ae9babbb27 1`] = `
+exports[`body > post bugreports 1`] = `
 "
 <p>
   <img
@@ -16692,7 +16692,7 @@ Based loosely on
 "
 `;
 
-exports[`body > post buns hash a471eb1df1c6cf9a0490470131063f33 1`] = `
+exports[`body > post buns 1`] = `
 "
 <p>
   <img
@@ -16911,7 +16911,7 @@ cleaning up after them, vet care, nail clipping, etc.
 "
 `;
 
-exports[`body > post burge hash 135472f3f63fecfe3d748809560598eb 1`] = `
+exports[`body > post burge 1`] = `
 "
 <p>
   <img
@@ -17074,7 +17074,7 @@ Both were important pieces for me.
 "
 `;
 
-exports[`body > post burglebug hash ea8e0b49df84aa7e1fdaf149e9514335 1`] = `
+exports[`body > post burglebug 1`] = `
 "
 <p>
   <img
@@ -17463,7 +17463,7 @@ and to the others in
 "
 `;
 
-exports[`body > post burnout hash 43947e9a6544cb841715be026fc8c0da 1`] = `
+exports[`body > post burnout 1`] = `
 "
 <p>
   <img
@@ -17584,7 +17584,7 @@ in particular
 "
 `;
 
-exports[`body > post buyminder hash 590fb7a630c674d637ed54af66302b39 1`] = `
+exports[`body > post buyminder 1`] = `
 "
 <p>
   <img
@@ -17677,7 +17677,7 @@ Thanks especially to
 "
 `;
 
-exports[`body > post buzz hash 90bf4e797507c242d48346717ac2860a 1`] = `
+exports[`body > post buzz 1`] = `
 "
 <p>
   <img
@@ -18030,7 +18030,7 @@ There&#8217;s been a lot more since then. Here are the highlights&#8230;
 "
 `;
 
-exports[`body > post buzz5 hash 58f19d5423cfb5a08a2ff2a99dde0ad7 1`] = `
+exports[`body > post buzz5 1`] = `
 "
 <p>
   <img
@@ -18815,7 +18815,7 @@ We&#8217;ll conclude with&#8230; literally any random sentence because there&#82
 "
 `;
 
-exports[`body > post buzz7 hash 343ac9a1189ce2defba7b3559475ae35 1`] = `
+exports[`body > post buzz7 1`] = `
 "
 <p>
   <img
@@ -19223,7 +19223,7 @@ Try our
 "
 `;
 
-exports[`body > post buzz8 hash ba30aeaf9438327e0f1d1d68baa78673 1`] = `
+exports[`body > post buzz8 1`] = `
 "
 <p>
   <img
@@ -19592,7 +19592,7 @@ And a small mention in this
 "
 `;
 
-exports[`body > post buzz9 hash 9690ae6f1674a1b005729374142591d9 1`] = `
+exports[`body > post buzz9 1`] = `
 "
 <p>
   <img
@@ -20198,7 +20198,7 @@ a sampling of which are in the title image of this blog post, and to which the p
 "
 `;
 
-exports[`body > post buzz10 hash dea4df8c34bd307dc9311e1a19592451 1`] = `
+exports[`body > post buzz10 1`] = `
 "
 <p>
   <img
@@ -21153,7 +21153,7 @@ also at
 "
 `;
 
-exports[`body > post buzz11 hash ab32c99f811e1eb409a0e059bbe413f9 1`] = `
+exports[`body > post buzz11 1`] = `
 "
 <p>
   <img
@@ -22110,7 +22110,7 @@ We&#8217;d like to send stickers to all 99+ of you if you&#8217;re willing to
 "
 `;
 
-exports[`body > post buzz13 hash fea49bf5d21809ed225e6597d411301b 1`] = `
+exports[`body > post buzz13 1`] = `
 "
 <p>
   <img
@@ -22713,7 +22713,7 @@ has been an avid Beeminder user for many years and
 "
 `;
 
-exports[`body > post buzz2019 hash 7a0e45f758e6dca2c6e8384744011cf9 1`] = `
+exports[`body > post buzz2019 1`] = `
 "
 <p>
   <img
@@ -23270,7 +23270,7 @@ Haters rejoice!)
 "
 `;
 
-exports[`body > post buzzyear hash 3afe6d9f46af612241bc72b6bfbc3492 1`] = `
+exports[`body > post buzzyear 1`] = `
 "
 <p>
   <img
@@ -25013,7 +25013,7 @@ Just point us to what you wrote (along with your postal address) at support@beem
 "
 `;
 
-exports[`body > post calendial hash 0f00323104d791680689c11d6f610ceb 1`] = `
+exports[`body > post calendial 1`] = `
 "
 <p>
   <img
@@ -25255,7 +25255,7 @@ So, pro-tip for cheapskates who don&#8217;t want to pay for that
 "
 `;
 
-exports[`body > post catchup hash 06e709a3b8b4e9779d23d0f88883f8d3 1`] = `
+exports[`body > post catchup 1`] = `
 "
 <p>
   <img
@@ -25453,7 +25453,7 @@ Bright red lines without meaningful commitments are useless for us.
 "
 `;
 
-exports[`body > post cbt hash 915f1a2eaa099d200eb38a220113dabf 1`] = `
+exports[`body > post cbt 1`] = `
 "
 <p>
   <img
@@ -25749,7 +25749,7 @@ Beeminder-driven behavior change can bootstrap deeper changes in cognition, emot
 "
 `;
 
-exports[`body > post cheating hash 53286a32542b43112a06497137921d21 1`] = `
+exports[`body > post cheating 1`] = `
 "
 <p>
   <img
@@ -25903,7 +25903,7 @@ Also, since this post is pretty evergreen and we point to it a lot, we modernize
 "
 `;
 
-exports[`body > post chelsea hash 81651e44068c78248b2e01ceb9c13c9f 1`] = `
+exports[`body > post chelsea 1`] = `
 "
 <p>
   <img
@@ -26300,7 +26300,7 @@ It&#8217;s another way to limit Beeminder&#8217;s threat potential, if you know 
 "
 `;
 
-exports[`body > post chirpify hash b8c1aaf40bcb944142dc7a5557316043 1`] = `
+exports[`body > post chirpify 1`] = `
 "
 <p>
   <img
@@ -26471,7 +26471,7 @@ A: When they talk to you they look at your shoes instead of their own.
 "
 `;
 
-exports[`body > post choices hash 5730e2c659336e9793d38b59451e66b7 1`] = `
+exports[`body > post choices 1`] = `
 "
 <p>
   <img
@@ -26802,7 +26802,7 @@ We suspect that they came across some ancient video or post from before the prec
 "
 `;
 
-exports[`body > post chunky hash ce3d18b239ef8a7f124d497e6bb4fc13 1`] = `
+exports[`body > post chunky 1`] = `
 "
 <p>
   <img
@@ -26883,7 +26883,7 @@ That means we have a week or so of safety buffer&#8201;&#8212;&#8201;we keep rea
 "
 `;
 
-exports[`body > post clozemaster hash 9e5f1be37f466881dfff3b0200b3cffb 1`] = `
+exports[`body > post clozemaster 1`] = `
 "
 <p>
   <img
@@ -26973,7 +26973,7 @@ You&#8217;ll bee fluent in no time.
 "
 `;
 
-exports[`body > post cockroach hash 78aec07fd2ec13c5a01b32286b383f70 1`] = `
+exports[`body > post cockroach 1`] = `
 "
 <p>
   <img
@@ -27120,7 +27120,7 @@ See also the hover text on that link or @logicalFramework in the comments who po
 "
 `;
 
-exports[`body > post codecombat hash 081d996d61ceb66f5180bdb2eeb5704c 1`] = `
+exports[`body > post codecombat 1`] = `
 "
 <p>
   <img
@@ -27299,7 +27299,7 @@ It&#8217;s the bees&#8217; knees, in our highly biased but correct opinion.
 "
 `;
 
-exports[`body > post codeschool hash d0e6b555d5f5356044e7da907d3d4f44 1`] = `
+exports[`body > post codeschool 1`] = `
 "
 <p>
   <img
@@ -27624,7 +27624,7 @@ Personally we think just making your report card public is a perfect solution, b
 "
 `;
 
-exports[`body > post college hash 73c77c02fc49cc3c3c8a74ad490dcf7f 1`] = `
+exports[`body > post college 1`] = `
 "
 <p>
   <img
@@ -27876,7 +27876,7 @@ We&#8217;re eager to hear, and maybe I&#8217;ll be stealing your ideas&#8230;
 "
 `;
 
-exports[`body > post comfortzone hash 42f2a065f68abbf6418fcced6f525938 1`] = `
+exports[`body > post comfortzone 1`] = `
 "
 <p>
   <img
@@ -28132,7 +28132,7 @@ start by doing something that scares you just a tiny bit, and work up from there
 "
 `;
 
-exports[`body > post commitstew hash 79eeffa91e6baf54d35c928902a7a8a8 1`] = `
+exports[`body > post commitstew 1`] = `
 "
 <p>
   <img
@@ -28461,7 +28461,7 @@ Just try yourname.commits.to and you’ll either see someone’s gallery of comm
 "
 `;
 
-exports[`body > post commitwall hash 9c1904e8c673fb62729cc237223f7004 1`] = `
+exports[`body > post commitwall 1`] = `
 "
 <p>
   <img
@@ -28702,7 +28702,7 @@ Both
 "
 `;
 
-exports[`body > post competitors hash 06cb1eed28608272ea818698b5b8c6cc 1`] = `
+exports[`body > post competitors 1`] = `
 "
 <p>
   <img
@@ -29816,7 +29816,7 @@ I guess it will show up on
 "
 `;
 
-exports[`body > post complice hash cd29cb46919f171610740cb524e245c2 1`] = `
+exports[`body > post complice 1`] = `
 "
 <p>
   <img
@@ -30236,7 +30236,7 @@ Also in the works: an integration that will let you beemind &#8220;I need to sho
 "
 `;
 
-exports[`body > post contrapositive hash c316da1d123ae2180bfff03d03cb6e52 1`] = `
+exports[`body > post contrapositive 1`] = `
 "
 <p>
   <img
@@ -30350,7 +30350,7 @@ Just embrace the punishment!
 "
 `;
 
-exports[`body > post control hash a78e18f21821e86d249f5137baebc22e 1`] = `
+exports[`body > post control 1`] = `
 "
 <p>
   <img
@@ -30603,7 +30603,7 @@ treating the slope of that goal as your accelerator in your
 "
 `;
 
-exports[`body > post copenhagen hash ba173630ef6adac014ee3da6a50f613e 1`] = `
+exports[`body > post copenhagen 1`] = `
 "
 <p>
   <img
@@ -30680,7 +30680,7 @@ If you have a use case in mind, come tell us about it!
 "
 `;
 
-exports[`body > post copyright hash ae2724bfb8df9fa497cab6b46122f1b7 1`] = `
+exports[`body > post copyright 1`] = `
 "
 <p>
   <img
@@ -30963,7 +30963,7 @@ Fun philosophical case study for the use-mention distinction perhaps.
 "
 `;
 
-exports[`body > post creditcard hash 6eec87b27b4fe42dfa2dc738389e3c06 1`] = `
+exports[`body > post creditcard 1`] = `
 "
 <p>
   <img
@@ -31128,7 +31128,7 @@ That&#8217;s kind of a non-rhetorical question because if the answer is no then 
 "
 `;
 
-exports[`body > post crisis hash af124cc8563d57fa32800b4b6d2600f9 1`] = `
+exports[`body > post crisis 1`] = `
 "
 <p>
   <img
@@ -31449,7 +31449,7 @@ Lots of people have a Beeminder goal to ensure that they do their
 "
 `;
 
-exports[`body > post crutch hash ecdf4826eb8024a6e101df4d82217bba 1`] = `
+exports[`body > post crutch 1`] = `
 "
 <p>
   <img
@@ -31765,7 +31765,111 @@ If you refuse safety ropes because you
 "
 `;
 
-exports[`body > post curlminder hash 0ca97de06c85f30b6f76b68c95708240 1`] = `
+exports[`body > post cry 1`] = `
+"
+<h1>
+  <span style="color:red">
+    DRAFT:
+  </span>
+  Lupine Lachrymosis, or The Anti-Wolf-Crying Principle
+</h1>
+<p>
+  <img
+    class="aligncenter"
+    alt="A photo of a wolf with a big cartoon teardrop"
+    title="Guys OMG this is a real (picture of a) wolf!!"
+    width="450px"
+    src="https://user-images.githubusercontent.com/9928/289316926-e02c91a2-b4cc-4929-a563-cbf191193ef9.png"
+  >
+</p>
+<p>
+  Hello fellow startups!
+Maybe we don&#8217;t get to call ourselves a startup now that we&#8217;re a decade old.
+Hello fellow established business people and caretakers of websites (and probably especially startups)!
+</p>
+<p>
+  You probably think you know the Anti-Wolf-Crying Principle.
+It&#8217;s pretty aphoristic, yes, but there&#8217;s an important lesson here that we learned&#8201;&#8212;&#8201;ok, are still learning&#8201;&#8212;&#8201;the hard way.
+So we wanted to enshrine it for blog-posterity.
+The idea is pretty obvious; so much so that we&#8217;re not sure of an original source for it.
+We first heard it articulated by
+  <a
+    href="https://www.kalzumeus.com/"
+    title="Patrick&#39;s (aka patio11) website"
+  >
+    Patrick McKenzie
+  </a>
+  as the &#8220;0th rule of monitoring alerts&#8221;.
+But first we should say what monitoring alerts are.
+</p>
+<h2>
+  System Notifications
+</h2>
+<h4 class="pullquote">
+  &#8220;If you ever get a monitoring alert and think &#8216;Great, I don&#8217;t need to get out of bed&#8217;, get out of bed and fix that alert.&#8221;
+</h4>
+<p>
+  A system notification or monitoring alert is how you get automatically notified when your website goes down or something about your app or service breaks in a way that is making a significant fraction of your users very sad or mad.
+We call ours airhorns, or when we send them to Slack, slackhorns.
+In the old days people would wear special devices that would beep and they&#8217;d have to find a payphone or something to find out what happened.
+Even if you&#8217;re too young to remember that, you might still call a schedule for who&#8217;s on call to deal with the website breaking a &#8220;pager rotation&#8221;.
+The point is, if your source of livelihood breaks you need to get alerted.
+So far, so good.
+</p>
+<h2>
+  The Actual Thing About Wolf-Crying
+</h2>
+<p>
+  Here&#8217;s the Rule:
+Every system notification you get must completely unambiguously without exception be something urgent enough to take some immediate action on. 
+If a non-urgent notification arrives then the completely unambiguously no-exceptions urgent action is to make whatever system event that triggered the notification stop doing so.
+</p>
+<p>
+  Patrick McKenzie&#8217;s
+  <a
+    href="https://twitter.com/patio11/status/521894528798584832"
+    title="Yes, he fit the whole point of this blog post into a tweet. But, y&#39;know, someone tweeting something, that&#39;s hardly enough to call it A Thing. A whole blog post on the other hand. We&#39;re doing the Lord&#39;s work here, promoting this to “it&#39;s a thing” status."
+  >
+    version
+  </a>
+  is that if you ever get a monitoring alert and think &#8220;Great, I don&#8217;t need to get out of bed&#8221;, get out of bed and fix that alert.
+</p>
+<h2>
+  The Embarrassing Part (For Us)
+</h2>
+<p>
+  Beeminder&#8217;s notifications are mostly non-urgent but are things we need ambient awareness of.
+And&#8201;&#8212;&#8201;lo!&#8201;&#8212;&#8201;we&#8217;ve had downtime and quasi-downtime (call it brownouts; you can trawl our
+  <a
+    href="https://twitter.com/beemstat"
+    title="Yes our status page is a Twitter account; we&#39;d host our own but the whole point of a status page is to tell you when we&#39;ve failed at hosting our own website so letting Twitter do that for us didn&#39;t seem crazy. At least it didn&#39;t a decode ago?"
+  >
+    old site status alerts
+  </a>
+  if you&#8217;re curious)
+that would&#8217;ve been minutes if we&#8217;d simply noticed the notification telling us that everything had broken.
+But we didn&#8217;t because it was in a river of noise.
+</p>
+<p>
+  Facepalm.
+</p>
+<h2 style="color:red">
+  Aaaand halt.
+</h2>
+<p>
+  This is stuck in draft mode until we can conclude with something better than &#8220;so, yeah, do as we say not as we do I guess&#8221;.
+</p>
+<p>
+  After we get that sorted, we can conclude like this:
+</p>
+<p>
+  If it&#8217;s something you need ambient awareness of, it belongs in your admin dashboard, not in your alerts.
+Because, emphatically, every alert is an emergency: either handle it or handle the emergency that is your alert system crying wolf!
+</p>
+"
+`;
+
+exports[`body > post curlminder 1`] = `
 "
 <p>
   <img
@@ -32001,7 +32105,7 @@ That link is technically publically accessible but it includes a long unguessabl
 "
 `;
 
-exports[`body > post curtain hash ccfaaf82eeda679783107be9d14a74f8 1`] = `
+exports[`body > post curtain 1`] = `
 "
 <p>
   <img
@@ -32257,7 +32361,7 @@ It&#8217;s a simpler hack for the same goal we&#8217;re trying to accomplish wit
 "
 `;
 
-exports[`body > post custard hash bcfffb4b0b37c1f9aa0d7d8813627d22 1`] = `
+exports[`body > post custard 1`] = `
 "
 <p>
   <img
@@ -32388,7 +32492,7 @@ He appreciates feedback, and is unsure whether this bit in italics can morally c
 "
 `;
 
-exports[`body > post cybermonday hash d9046492f17539b96d283e880b3cf6d0 1`] = `
+exports[`body > post cybermonday 1`] = `
 "
 <p>
   <img
@@ -32590,7 +32694,7 @@ I.e., our exquisitely fair discount slider wouldn&#8217;t be fair if we removed 
 "
 `;
 
-exports[`body > post darkgreen hash 7f0c5730167393e855759fec81af61bc 1`] = `
+exports[`body > post darkgreen 1`] = `
 "
 <p>
   <img
@@ -32693,7 +32797,7 @@ But it&#8217;s a nice little carrot to go with the stick.
 "
 `;
 
-exports[`body > post datasmithing hash acfdda5d3cfe687cc238472a6aded83f 1`] = `
+exports[`body > post datasmithing 1`] = `
 "
 <p>
   <img
@@ -33002,7 +33106,7 @@ See for example
 "
 `;
 
-exports[`body > post deadlines hash 00413c8cdf3f96fdfec1b68a106b972c 1`] = `
+exports[`body > post deadlines 1`] = `
 "
 <p>
   <img
@@ -33235,7 +33339,7 @@ And if you do accidentally derail because of this, definitely reply to the legit
 "
 `;
 
-exports[`body > post deathtoexp hash 3ffc5dea62444c58216f84b2ab381938 1`] = `
+exports[`body > post deathtoexp 1`] = `
 "
 <p>
   <img
@@ -33283,7 +33387,7 @@ So we&#8217;re betting that the loss of the mathematical elegance of a perfectly
 "
 `;
 
-exports[`body > post deathtofreebees hash 01e7d745a0a38dc537b40c11f2040066 1`] = `
+exports[`body > post deathtofreebees 1`] = `
 "
 <p>
   <img
@@ -33539,7 +33643,7 @@ Again, if you want to remove the commitment device aspect of a goal, we have a
 "
 `;
 
-exports[`body > post deathtolife hash 68b9741728d5717a5e142826f91dc69a 1`] = `
+exports[`body > post deathtolife 1`] = `
 "
 <p>
   <img
@@ -33963,7 +34067,7 @@ And if we do kill a feature you specifically paid for, we&#8217;ll bend over pre
 "
 `;
 
-exports[`body > post deepresearch hash 0f35b5ceee102bf8995bea566fcc4538 1`] = `
+exports[`body > post deepresearch 1`] = `
 "
 <p>
   <img
@@ -34981,7 +35085,7 @@ I guess for my thoughts on what this means in terms of how long till the robot a
 "
 `;
 
-exports[`body > post defail hash db217b1eb69f77c42b920c0578b308e2 1`] = `
+exports[`body > post defail 1`] = `
 "
 <p>
   <img
@@ -35209,7 +35313,7 @@ When that happens it&#8217;s typically due to actual depression and we&#8217;ve 
 "
 `;
 
-exports[`body > post defcon hash e8bdb3975087449b31396d9380ded1a6 1`] = `
+exports[`body > post defcon 1`] = `
 "
 <p>
   <img
@@ -35350,7 +35454,7 @@ Roughly, :pS = &#8220;critical&#8221;, :pM = &#8220;grave&#8221;, :pH = &#8220;s
 "
 `;
 
-exports[`body > post delay hash 9a8bf9860528d8985b0aefad21f2a64f 1`] = `
+exports[`body > post delay 1`] = `
 "
 <p>
   <img
@@ -35629,7 +35733,7 @@ Image credit: Faire Soule-Reeves.
 "
 `;
 
-exports[`body > post deprecate hash 48b0b8e55374f95c0fc88b143f743941 1`] = `
+exports[`body > post deprecate 1`] = `
 "
 <p>
   <img
@@ -35821,7 +35925,7 @@ Perhaps this conflation of &#8220;deprecation with scheduled removal&#8221; and 
 "
 `;
 
-exports[`body > post depunish hash a1f72bda7964502fdc736c504d54a45c 1`] = `
+exports[`body > post depunish 1`] = `
 "
 <p>
   <img
@@ -36184,7 +36288,7 @@ for helping to formulate the ideas in this post.
 "
 `;
 
-exports[`body > post derail hash 8279ea82edef28905be9c36c02c951aa 1`] = `
+exports[`body > post derail 1`] = `
 "
 <p>
   <img
@@ -36318,7 +36422,7 @@ In other words, if your goal is weaselproofed then we won&#8217;t just blindly b
 "
 `;
 
-exports[`body > post dial hash 57baed1a1324263c669bc6c71117ebaa 1`] = `
+exports[`body > post dial 1`] = `
 "
 <p>
   <img
@@ -36517,7 +36621,7 @@ Either way, it&#8217;s the immediate consequences distorting your decision-makin
 "
 `;
 
-exports[`body > post dip hash 788a705d2f5bbe4cca30e6f509e4137e 1`] = `
+exports[`body > post dip 1`] = `
 "
 <p>
   <img
@@ -36882,7 +36986,7 @@ But it is magic.
 "
 `;
 
-exports[`body > post discourse hash 56cfbe731ce854aa9076640420d77258 1`] = `
+exports[`body > post discourse 1`] = `
 "
 <p>
   <img
@@ -37060,7 +37164,7 @@ The
 "
 `;
 
-exports[`body > post diy hash f57e89932a84f190592afa8e0a2a459f 1`] = `
+exports[`body > post diy 1`] = `
 "
 <p>
   <img
@@ -37181,7 +37285,7 @@ Unless that continues to work indefinitely with the other friend, in which case 
 "
 `;
 
-exports[`body > post docdriven hash 9c3fd496f747e03130ea75f0f3d6dfda 1`] = `
+exports[`body > post docdriven 1`] = `
 "
 <p>
   <img
@@ -37697,7 +37801,7 @@ Thanks also to all the
 "
 `;
 
-exports[`body > post dogeatdog hash 94c51b67d122b441ec2f74eb9e426f12 1`] = `
+exports[`body > post dogeatdog 1`] = `
 "
 <p>
   <img
@@ -37898,7 +38002,7 @@ And I&#8217;m making this kind of Slytherin argument for how it helps your own b
 "
 `;
 
-exports[`body > post dogfood hash 1493a7b4d265b65b87d9134df769df08 1`] = `
+exports[`body > post dogfood 1`] = `
 "
 <p>
   <img
@@ -38163,7 +38267,7 @@ You can tell which are which by whether there’s a pledge on the goal.
 "
 `;
 
-exports[`body > post donotgain hash 06f3fa3b3f832fb12f1e8c0a625ba796 1`] = `
+exports[`body > post donotgain 1`] = `
 "
 <p>
   <img
@@ -38304,7 +38408,7 @@ And if you&#8217;re losing weight, do the same thing to ratchet yourself, always
 "
 `;
 
-exports[`body > post dontmind hash 4effc10839bd7f811619c2406c41e74d 1`] = `
+exports[`body > post dontmind 1`] = `
 "
 <p>
   <img
@@ -38873,7 +38977,7 @@ But for us normies out there, it makes Beeminder more overwhelming and scary tha
 "
 `;
 
-exports[`body > post dozero hash c0c2580d808d41640dc177fd2d56dfb2 1`] = `
+exports[`body > post dozero 1`] = `
 "
 <p>
   <img
@@ -39271,7 +39375,7 @@ For those of you who love and rely on your do-less zero goals, keep at it!
 "
 `;
 
-exports[`body > post draft hash ed65020c90acd4dea304695b1ce57de3 1`] = `
+exports[`body > post draft 1`] = `
 "
 <p>
   <img
@@ -39385,7 +39489,7 @@ We&#8217;re calling it
 "
 `;
 
-exports[`body > post duolingo hash 7efba9d5d857b8406fc22df10db9cc76 1`] = `
+exports[`body > post duolingo 1`] = `
 "
 <p>
   <img
@@ -39514,7 +39618,7 @@ Beeminder will check on your progress every day and make sure you stay on your Y
 "
 `;
 
-exports[`body > post easyhard hash 9822b1b52b06b0626463269bfab127be 1`] = `
+exports[`body > post easyhard 1`] = `
 "
 <p>
   <img
@@ -39646,7 +39750,7 @@ Just be on that Yellow Brick Road tomorrow and you&#8217;re all good.
 "
 `;
 
-exports[`body > post easythings hash 5e8835389fd6ba73c862c17dcbf60d44 1`] = `
+exports[`body > post easythings 1`] = `
 "
 <p>
   <img
@@ -39978,7 +40082,7 @@ That&#8217;d be so embarrassing.
 "
 `;
 
-exports[`body > post eggbasket hash 61b295c190b3de7be09b5fb195ccdc18 1`] = `
+exports[`body > post eggbasket 1`] = `
 "
 <p>
   <img
@@ -40083,7 +40187,7 @@ You have to be really sure it&#8217;s worth it, and if it&#8217;s diverting your
 "
 `;
 
-exports[`body > post ego hash a2c975ea597b601fbd7deb82e8805ce2 1`] = `
+exports[`body > post ego 1`] = `
 "
 <p>
   <img
@@ -40243,7 +40347,7 @@ But using it in moderation can reduce stress and that depleted ego feeling, like
 "
 `;
 
-exports[`body > post epson hash af5206de294940fb8def0f47b4a1247a 1`] = `
+exports[`body > post epson 1`] = `
 "
 <p>
   <img
@@ -40369,7 +40473,7 @@ That&#8217;s really all you need to know to get started!
 "
 `;
 
-exports[`body > post exponential hash 8b51c1eaaa8f29495da01409b90b2e74 1`] = `
+exports[`body > post exponential 1`] = `
 "
 <p>
   <img
@@ -40479,7 +40583,7 @@ That&#8217;s why we decided to actually charge money directly if you want to
 "
 `;
 
-exports[`body > post exproad hash 659da5245749d4889015cbb73ec1a576 1`] = `
+exports[`body > post exproad 1`] = `
 "
 <p>
   <img
@@ -40648,7 +40752,7 @@ UPDATE: We got the all-clear to identify Essy by her pseudonym and point to
 "
 `;
 
-exports[`body > post fail hash d85a21e4cff181eb3bdfa93d91315339 1`] = `
+exports[`body > post fail 1`] = `
 "
 <p>
   <img
@@ -40877,7 +40981,7 @@ See also our classic post about
 "
 `;
 
-exports[`body > post fair hash e9ca06ed2bf92afb33fea0d2bc867ccc 1`] = `
+exports[`body > post fair 1`] = `
 "
 <p>
   <img
@@ -41059,7 +41163,7 @@ $$\\frac{1-\\exp(r-R)}{1-\\exp(r)}$$
 "
 `;
 
-exports[`body > post faire hash ba2eb61b85a5e605ea58ecb4396d2a74 1`] = `
+exports[`body > post faire 1`] = `
 "
 <p>
   <img
@@ -41416,7 +41520,7 @@ I had to pay $10.00 to get to stay up way past my bedtime to edit this.
 "
 `;
 
-exports[`body > post fake hash e262746f6348765983227cb1239b4709 1`] = `
+exports[`body > post fake 1`] = `
 "
 <p>
   <img
@@ -41558,7 +41662,7 @@ Sorry, I know this was all obvious to most of you.
 "
 `;
 
-exports[`body > post fatcyclist hash ca5984d53fa474dcd491e645e3c11642 1`] = `
+exports[`body > post fatcyclist 1`] = `
 "
 <p>
   <img
@@ -41698,7 +41802,7 @@ The pattern we&#8217;ve seen over and over is that as soon as you
 "
 `;
 
-exports[`body > post fatebook hash 57745cd9b40929868460e643716d774e 1`] = `
+exports[`body > post fatebook 1`] = `
 "
 <p>
   <img
@@ -41856,7 +41960,7 @@ Or, here, have a button:
 "
 `;
 
-exports[`body > post fatty hash 587fe1d495c013d62953e7d30b8e7dc8 1`] = `
+exports[`body > post fatty 1`] = `
 "
 <p>
   <img
@@ -42025,7 +42129,7 @@ After some discussion this seemed most fair, since the width of your road affect
 "
 `;
 
-exports[`body > post fearofbees hash 6080a68b6521e35a1597cde72eaa3ab3 1`] = `
+exports[`body > post fearofbees 1`] = `
 "
 <p>
   <img
@@ -42161,7 +42265,7 @@ with beekeeping theme added (with permission) by
 "
 `;
 
-exports[`body > post fifty hash e856dba948b08fdee1c1f6f7aba32b4b 1`] = `
+exports[`body > post fifty 1`] = `
 "
 <p>
   <img
@@ -43067,7 +43171,7 @@ Again, ask away if you want to know more details about how particular goals work
 "
 `;
 
-exports[`body > post fitbit hash 42a8fa92879e341473f6ee87266bcd07 1`] = `
+exports[`body > post fitbit 1`] = `
 "
 <p>
   <img
@@ -43238,7 +43342,7 @@ Team Beeminder has been using a Withings scale for years and it&#8217;s rock sol
 "
 `;
 
-exports[`body > post five hash dd91d9f4e8f74dd76ea8e15573e1b19b 1`] = `
+exports[`body > post five 1`] = `
 "
 <p>
   <img
@@ -43730,7 +43834,7 @@ It&#8217;ll be almost like reading a never-ending story.
 "
 `;
 
-exports[`body > post flexbind hash b9ab0cfd4ef55038ecfa5722000d2bef 1`] = `
+exports[`body > post flexbind 1`] = `
 "
 <p>
   <img
@@ -44265,7 +44369,7 @@ To make sure we don&#8217;t keep writing drafts instead of publishing, we have a
 "
 `;
 
-exports[`body > post flic hash d095c945bab8e9fbabb83b240cf2e5bb 1`] = `
+exports[`body > post flic 1`] = `
 "
 <p>
   <img
@@ -44763,7 +44867,7 @@ It is consistently good whenever I&#8217;m reminded of it, so editing this post 
 "
 `;
 
-exports[`body > post focus hash f1aba6c72f9d665d65bf34dc0fe2bbc9 1`] = `
+exports[`body > post focus 1`] = `
 "
 <p>
   <img
@@ -45165,7 +45269,7 @@ The SMS bot costs a small amount of money, probably not enough to justify it bei
 "
 `;
 
-exports[`body > post focusmate hash bc191d2efaeca7a50c3117ae65938167 1`] = `
+exports[`body > post focusmate 1`] = `
 "
 <p>
   <img
@@ -45371,7 +45475,7 @@ Hooray for Schelling Points!
 "
 `;
 
-exports[`body > post foodhabits hash f6de2420d87f468ccbd970e8212d27a7 1`] = `
+exports[`body > post foodhabits 1`] = `
 "
 <p>
   <img
@@ -45501,7 +45605,7 @@ great.  Yay, beeminder.
 "
 `;
 
-exports[`body > post forget hash 3cfa0a356df00e3edba5747029b366d3 1`] = `
+exports[`body > post forget 1`] = `
 "
 <p>
   <img
@@ -45736,7 +45840,7 @@ It&#8217;s great.
 "
 `;
 
-exports[`body > post forster hash 3e680dde03572b54ff1695ad2ef07234 1`] = `
+exports[`body > post forster 1`] = `
 "
 <p>
   <img
@@ -46367,7 +46471,7 @@ Which Forster&#8217;s system accomplishes beautifully.
 "
 `;
 
-exports[`body > post four hash 8ea77ce18255a2bf402d456a73a2843e 1`] = `
+exports[`body > post four 1`] = `
 "
 <p>
   <img
@@ -46740,7 +46844,7 @@ latest Maniac Week attempt from August:
 "
 `;
 
-exports[`body > post frac hash 93918cf13e2e27e2c56701f63c6f9764 1`] = `
+exports[`body > post frac 1`] = `
 "
 <p>
   <img
@@ -46913,7 +47017,7 @@ The point is that &#8220;how complete your draft is&#8221; is subjective but &#8
 "
 `;
 
-exports[`body > post fracblog hash d6421d9038652cc4713ac2cb8ac803fe 1`] = `
+exports[`body > post fracblog 1`] = `
 "
 <p>
   <img
@@ -47118,7 +47222,7 @@ And I do kind of like writing late at night sometimes.
 "
 `;
 
-exports[`body > post freebees hash 37ba36086bafa8956accaab9eb37c40e 1`] = `
+exports[`body > post freebees 1`] = `
 "
 <p>
   <img
@@ -47348,7 +47452,7 @@ But when we see lots of feedback, patterns emerge and it becomes clear what we n
 "
 `;
 
-exports[`body > post freecodecamp hash e018b48b741b0e98bac21fd6b0c03e75 1`] = `
+exports[`body > post freecodecamp 1`] = `
 "
 <p>
   <img
@@ -47542,7 +47646,7 @@ Just go earn more freeCodeCamp points when Beeminder yells at you!
 "
 `;
 
-exports[`body > post freshdocs hash d9d032ebf3a9e7ed04f754534f97b4c2 1`] = `
+exports[`body > post freshdocs 1`] = `
 "
 <p>
   <img
@@ -47710,7 +47814,7 @@ I&#8217;m pretty doubtful that there&#8217;ll ever be a document that has not ev
 "
 `;
 
-exports[`body > post freshen hash 8772d2fc5f2d1ce46181a8e955f4454b 1`] = `
+exports[`body > post freshen 1`] = `
 "
 <p>
   <img
@@ -47936,7 +48040,7 @@ In other words, it&#8217;s ok to go out of sight, out of mind.
 "
 `;
 
-exports[`body > post freshenable hash cebeb35557c7e84b1b922dc0149babd1 1`] = `
+exports[`body > post freshenable 1`] = `
 "
 <p>
   <img
@@ -48222,7 +48326,7 @@ For example, if you&#8217;re using a kanban tool like Trello, you can manually d
 "
 `;
 
-exports[`body > post frictionless hash f49f98b7c978b578d0ce1e52bca28b12 1`] = `
+exports[`body > post frictionless 1`] = `
 "
 <p>
   <img
@@ -48511,7 +48615,7 @@ As our current integration partners will attest, it&#8217;s a pretty nice featur
 "
 `;
 
-exports[`body > post gandalf hash 1aba390dacbfd35a6ca6e385f148f006 1`] = `
+exports[`body > post gandalf 1`] = `
 "
 <p>
   <img
@@ -48709,7 +48813,7 @@ In December I promised to write about this, but nothing really happened until I 
 "
 `;
 
-exports[`body > post garmin hash 7b6d56828bbad7e28f39c35ac9434b46 1`] = `
+exports[`body > post garmin 1`] = `
 "
 <p>
   <img
@@ -48839,7 +48943,7 @@ Launching Garmin integration is only step one in an elaborate plot. For Science.
 "
 `;
 
-exports[`body > post gatewaydrug hash 88ccca2a27232fbcf19362322ae4026c 1`] = `
+exports[`body > post gatewaydrug 1`] = `
 "
 <p>
   <img
@@ -49128,7 +49232,7 @@ Anyway, in case there&#8217;s somehow any doubt, we are happy to clarify that we
 "
 `;
 
-exports[`body > post ged hash abfd820d7e3366401aa64cb7d289a169 1`] = `
+exports[`body > post ged 1`] = `
 "
 <p>
   <img
@@ -49206,7 +49310,7 @@ We feel like Sally Field at the Oscars.
 "
 `;
 
-exports[`body > post gitminder hash c24e7788092d56afb8f2b49bd4bbb0e4 1`] = `
+exports[`body > post gitminder 1`] = `
 "
 <p>
   <img
@@ -49301,7 +49405,7 @@ And stay on the Yellow Brick Road.
 "
 `;
 
-exports[`body > post glossary hash ad65c52115a58ebc52add8b4299838ac 1`] = `
+exports[`body > post glossary 1`] = `
 "
 <p>
   <img
@@ -51186,7 +51290,7 @@ This can be toggled under email settings.
 "
 `;
 
-exports[`body > post gmailzero hash 786524aa9b6a5ec2294a4f733df81b04 1`] = `
+exports[`body > post gmailzero 1`] = `
 "
 <p>
   <img
@@ -51399,7 +51503,7 @@ But we&#8217;re not actually reading your email, we swear it!
 "
 `;
 
-exports[`body > post gmailzeroer hash d9ba9ad0b217e481d252b74868544efe 1`] = `
+exports[`body > post gmailzeroer 1`] = `
 "
 <p>
   <img
@@ -51734,7 +51838,7 @@ After all, if it&#8217;s so unimportant that you don&#8217;t mind ignoring it fo
 "
 `;
 
-exports[`body > post gmailzerolabels hash 25141d988a42808c059cdedb3d2a4eb8 1`] = `
+exports[`body > post gmailzerolabels 1`] = `
 "
 <p>
   <img
@@ -51923,7 +52027,7 @@ We totally support Google tightening this up so we only need permission for exac
 "
 `;
 
-exports[`body > post goalnames hash 69d5c39bf9f37e058a4228e196ea22c8 1`] = `
+exports[`body > post goalnames 1`] = `
 "
 <p>
   <img
@@ -52216,7 +52320,7 @@ Unless we blog about it, which, voila.
 "
 `;
 
-exports[`body > post goproblems hash 9107276457a5db883c19d8606ffc22fa 1`] = `
+exports[`body > post goproblems 1`] = `
 "
 <p>
   <img
@@ -52341,7 +52445,7 @@ Just do your Go problems when Beeminder yells at you.
 "
 `;
 
-exports[`body > post gratitude hash f671c086594e94ac757a2aa55a9b716b 1`] = `
+exports[`body > post gratitude 1`] = `
 "
 <p>
   <img
@@ -52676,7 +52780,7 @@ Let&#8217;s return to Robert Emmons, the leading scientific expert on gratitude,
 "
 `;
 
-exports[`body > post grayson hash b40e343431631a46e322c25dbb4037f7 1`] = `
+exports[`body > post grayson 1`] = `
 "
 <p>
   <img
@@ -52792,7 +52896,7 @@ As a result,
 "
 `;
 
-exports[`body > post grerrors hash 05cf280a21c101f4af928dd0c232da48 1`] = `
+exports[`body > post grerrors 1`] = `
 "
 <p>
   <img
@@ -52945,7 +53049,7 @@ not like error messages with slurs.)
 "
 `;
 
-exports[`body > post groupies hash 54d80628b5adbca279daf13ea1050d90 1`] = `
+exports[`body > post groupies 1`] = `
 "
 <p>
   <img
@@ -53202,7 +53306,7 @@ more reason to evangelize Beeminder to your friends and family.
 "
 `;
 
-exports[`body > post gtbee hash 11a354afbccc9d1f20ea5b2106f77ca9 1`] = `
+exports[`body > post gtbee 1`] = `
 "
 <p>
   <img
@@ -53285,7 +53389,7 @@ since I created a GTBee task that I&#8217;d finish this post by 11 am PT. Worked
 "
 `;
 
-exports[`body > post gym hash 1cf3e81888c59e6bf22f6d7570a7196a 1`] = `
+exports[`body > post gym 1`] = `
 "
 <p>
   <img
@@ -53471,7 +53575,7 @@ If you&#8217;re going to spend $1000 on a treadmill, hoping you&#8217;re not one
 "
 `;
 
-exports[`body > post gympact hash f52d27181fb115ee1637bd8a41aa342f 1`] = `
+exports[`body > post gympact 1`] = `
 "
 <p>
   <img
@@ -53539,7 +53643,7 @@ Those people evidently didn&#8217;t really need Beeminder in the first place.
 "
 `;
 
-exports[`body > post habitica hash dfad19bf691354bede2d7722e3b0bfe3 1`] = `
+exports[`body > post habitica 1`] = `
 "
 <p>
   <img
@@ -53740,7 +53844,7 @@ Say hello in the Tavern, set up your goals, and share your new year&#8217;s reso
 "
 `;
 
-exports[`body > post habitrpg hash 002f3d0dd923c56e81ebe825d9cca37e 1`] = `
+exports[`body > post habitrpg 1`] = `
 "
 <p>
   <img
@@ -53958,7 +54062,7 @@ His
 "
 `;
 
-exports[`body > post habits hash 244b804fef6655f6fe7505dc893b5a34 1`] = `
+exports[`body > post habits 1`] = `
 "
 <p>
   <img
@@ -54133,7 +54237,7 @@ Stefan has the
 "
 `;
 
-exports[`body > post hardsoon hash 71e1ea9597aec95d14db0d3b762a97f4 1`] = `
+exports[`body > post hardsoon 1`] = `
 "
 <p>
   <img
@@ -54345,7 +54449,7 @@ If you don&#8217;t feel like reading all that, just focus on the phrase &#8220;v
 "
 `;
 
-exports[`body > post heartbleed hash e2ead3e78d215ab7a8356ca724989ada 1`] = `
+exports[`body > post heartbleed 1`] = `
 "
 <p>
   <img
@@ -54549,7 +54653,7 @@ One of them, for Bethany, was running, which the two of us did together at 2:30a
 "
 `;
 
-exports[`body > post hieroglyphs hash b384ff803c4dedcd918355eb92c90a08 1`] = `
+exports[`body > post hieroglyphs 1`] = `
 "
 <p>
   <img
@@ -55154,7 +55258,7 @@ Oh, and we didn&#8217;t even mention that he also helps moderate a language-lear
 "
 `;
 
-exports[`body > post homeostasis hash 10402cccdb200e6263ec6b5a7095008a 1`] = `
+exports[`body > post homeostasis 1`] = `
 "
 <p>
   <img
@@ -55503,7 +55607,7 @@ We have one participant keeping their weight
 "
 `;
 
-exports[`body > post honeygrams hash 21f5f8747acc366d9f411e05ea8569e5 1`] = `
+exports[`body > post honeygrams 1`] = `
 "
 <p>
   <img
@@ -55706,7 +55810,7 @@ Go ahead, click on it:
 "
 `;
 
-exports[`body > post hotkeys hash 48eaf5c6efb5791f947bab0147be88dc 1`] = `
+exports[`body > post hotkeys 1`] = `
 "
 <p>
   <img
@@ -55945,7 +56049,7 @@ It even has a
 "
 `;
 
-exports[`body > post humblebundle hash 818bb2e6a45417604557eaa6c9535e4d 1`] = `
+exports[`body > post humblebundle 1`] = `
 "
 <p>
   <img
@@ -56159,7 +56263,7 @@ But if you just scrolled down here impulsively, you&#8217;ll want to actually
 "
 `;
 
-exports[`body > post hyperrational hash 24320d72ed60fd298a41f105708a9b78 1`] = `
+exports[`body > post hyperrational 1`] = `
 "
 <p>
   <img
@@ -56330,7 +56434,7 @@ Now
 "
 `;
 
-exports[`body > post icecream hash cdfb9353fc878dfb68b7997be1204696 1`] = `
+exports[`body > post icecream 1`] = `
 "
 <p>
   <img
@@ -56500,7 +56604,7 @@ Just that the glaring, blatant loopholes tend not to be the ones you need to wor
 "
 `;
 
-exports[`body > post ifttt hash b64c9f8cf80ea7b13b29735e1cd742b6 1`] = `
+exports[`body > post ifttt 1`] = `
 "
 <p>
   <img
@@ -56668,7 +56772,7 @@ Let us know in the comments or
 "
 `;
 
-exports[`body > post incentalign hash 98dfab47e312954625903b29c97bfec5 1`] = `
+exports[`body > post incentalign 1`] = `
 "
 <p>
   <img
@@ -56827,7 +56931,7 @@ Incentive alignment more generally refers to any adjustment to your own future i
 "
 `;
 
-exports[`body > post indulge hash 0b225e6ae52bc7984f5edef6ae727757 1`] = `
+exports[`body > post indulge 1`] = `
 "
 <p>
   <img
@@ -56990,7 +57094,7 @@ then that&#8217;s
 "
 `;
 
-exports[`body > post ineptitude hash bd20cc4f0660525a35a04322e2fc761a 1`] = `
+exports[`body > post ineptitude 1`] = `
 "
 <p>
   <img
@@ -57154,7 +57258,7 @@ Of course, even if we hadn&#8217;t worked around it, it should be moot in Ruby 1
 "
 `;
 
-exports[`body > post infinibee hash 01d1bbd2d7026ceef7d9800784a6bbb9 1`] = `
+exports[`body > post infinibee 1`] = `
 "
 <p>
   <img
@@ -57742,7 +57846,7 @@ Ms Travel Bee
 "
 `;
 
-exports[`body > post inkhaven hash 6e2fe733b80794e017c272ebaed7e40b 1`] = `
+exports[`body > post inkhaven 1`] = `
 "
 <p>
   <img
@@ -57889,7 +57993,7 @@ is exactly 500 words.
 "
 `;
 
-exports[`body > post inkhavenredux hash bc683fe419e612b988f4056561820645 1`] = `
+exports[`body > post inkhavenredux 1`] = `
 "
 <p>
   <img
@@ -58199,7 +58303,7 @@ But that&#8217;s where the writing tip to First Just Write comes in.
 "
 `;
 
-exports[`body > post innocentive hash c60dc9d0be904915cc9452f06801a44b 1`] = `
+exports[`body > post innocentive 1`] = `
 "
 <p>
   <img
@@ -58931,7 +59035,7 @@ In the case of an abusive relationship I could imagine strategic reasons for tha
 "
 `;
 
-exports[`body > post integers hash 7498adc3e6de16d46d257d7d28d27135 1`] = `
+exports[`body > post integers 1`] = `
 "
 <p>
   <img
@@ -59283,7 +59387,7 @@ Those aren&#8217;t user-originating datapoints.
 "
 `;
 
-exports[`body > post isolines hash 10efd3dd8b008f763668b0c609d2b685 1`] = `
+exports[`body > post isolines 1`] = `
 "
 <p>
   <img
@@ -59595,7 +59699,7 @@ In fact, this whole post is just one small piece of it.
 "
 `;
 
-exports[`body > post isomary hash 70f5f72e72bc2145fbf78cf21f15de0b 1`] = `
+exports[`body > post isomary 1`] = `
 "
 <p>
   <img
@@ -59757,7 +59861,7 @@ And if you’re using a Beeminder goal to track it and feel like sharing it, pas
 "
 `;
 
-exports[`body > post isonikki hash 776c5e2c34538714d0ef9d158dff10ec 1`] = `
+exports[`body > post isonikki 1`] = `
 "
 <p>
   <img
@@ -60046,7 +60150,7 @@ I know of people in the Netherlands taking part.
 "
 `;
 
-exports[`body > post j2j hash 43982b06d52ef94a8bd73a932a64dbb4 1`] = `
+exports[`body > post j2j 1`] = `
 "
 <p>
   <img
@@ -60336,7 +60440,7 @@ Keep tweaking the commitment until you start making progress towards your goal.
 "
 `;
 
-exports[`body > post jawbone hash eb668369ecb9e22f6bc62ee125a090f9 1`] = `
+exports[`body > post jawbone 1`] = `
 "
 <p>
   <img
@@ -60444,7 +60548,7 @@ or create one now:
 "
 `;
 
-exports[`body > post josh hash bbce91b0af9738a0ad87e218c093e16a 1`] = `
+exports[`body > post josh 1`] = `
 "
 <p>
   <img
@@ -60852,7 +60956,7 @@ tell us how it all went down.
 "
 `;
 
-exports[`body > post journal hash 19e54a05142344a66c3bb73b60d78bec 1`] = `
+exports[`body > post journal 1`] = `
 "
 <p>
   <img
@@ -61047,7 +61151,7 @@ But it&#8217;s definitely a practice I personally recommend.
 "
 `;
 
-exports[`body > post kara hash 30c99945bc230fefa9992faa5133ce79 1`] = `
+exports[`body > post kara 1`] = `
 "
 <p>
   <img
@@ -61182,7 +61286,7 @@ Kara currently resides in Tacoma, Washington with her husband and three dogs.
 "
 `;
 
-exports[`body > post kim hash d74a620f36f7ac7ae2e05b53f0ddafef 1`] = `
+exports[`body > post kim 1`] = `
 "
 <p>
   <img
@@ -61426,7 +61530,7 @@ I honestly could not have done it without you!
 "
 `;
 
-exports[`body > post lanes hash 6685e9a51fce97ebd884acf323ab14bd 1`] = `
+exports[`body > post lanes 1`] = `
 "
 <p>
   <img
@@ -61577,7 +61681,7 @@ Et voila.
 "
 `;
 
-exports[`body > post language hash 7ef4b3086909103f3d9d68a1edf1f115 1`] = `
+exports[`body > post language 1`] = `
 "
 <p>
   <img
@@ -61861,7 +61965,7 @@ He lives in Amman, Jordan.
 "
 `;
 
-exports[`body > post launch hash d6efa052c97d4dd1de6bcc5bd58baadd 1`] = `
+exports[`body > post launch 1`] = `
 "
 <p>
   <img
@@ -61964,7 +62068,7 @@ And special thanks to the
 "
 `;
 
-exports[`body > post layaways hash 0e59bd6e0c56d7474c6a91d576f01703 1`] = `
+exports[`body > post layaways 1`] = `
 "
 <p>
   <img
@@ -62061,7 +62165,7 @@ If that goes well, you&#8217;ll hear from them here as well.
 "
 `;
 
-exports[`body > post legit hash a147f35c929ec23da1a8e369d1cdb427 1`] = `
+exports[`body > post legit 1`] = `
 "
 <p>
   <img
@@ -62155,7 +62259,7 @@ FURTHER UPDATE:
 "
 `;
 
-exports[`body > post legolaps hash 39f8dbcc0d5e8948c3f52340a8283b7a 1`] = `
+exports[`body > post legolaps 1`] = `
 "
 <p>
   <img
@@ -62268,7 +62372,7 @@ Then, after you&#8217;ve carried them up one by one, you&#8217;ll have effective
 "
 `;
 
-exports[`body > post less hash ffe9897c449197d8ca70bd0041f57c88 1`] = `
+exports[`body > post less 1`] = `
 "
 <p>
   <img
@@ -62441,7 +62545,7 @@ And thanks to everyone on the
 "
 `;
 
-exports[`body > post lichess hash 0280e71e9f63b42712292f501f4db3ec 1`] = `
+exports[`body > post lichess 1`] = `
 "
 <p>
   <img
@@ -62657,7 +62761,7 @@ Mid-range Elo is typically about 200 points higher on Lichess but it diverges wi
 "
 `;
 
-exports[`body > post lift hash bc993a4be32b148db305848e1c9c56fe 1`] = `
+exports[`body > post lift 1`] = `
 "
 <p>
   <img
@@ -62822,7 +62926,7 @@ We apply an aversive stimulus in order to decrease undesired behavior.
 "
 `;
 
-exports[`body > post lildeb hash 1e1c863f0811ec7751f764b43783dee2 1`] = `
+exports[`body > post lildeb 1`] = `
 "
 <p>
   <img
@@ -62908,7 +63012,7 @@ It really worked like a charm. (There were many times when, the moment the clock
 "
 `;
 
-exports[`body > post lockmyphone hash 1c534cb089acc125daf1b1d7e7041a91 1`] = `
+exports[`body > post lockmyphone 1`] = `
 "
 <p>
   <img
@@ -63122,7 +63226,7 @@ Animated screenshot by
 "
 `;
 
-exports[`body > post loss hash f76db842005ad27c26c018b5b96a3d5f 1`] = `
+exports[`body > post loss 1`] = `
 "
 <p>
   <img
@@ -63469,7 +63573,7 @@ Equivalently: You are risk-averse.
 "
 `;
 
-exports[`body > post love hash 3b23c9d3b6334a4090aa5e81a64f6bde 1`] = `
+exports[`body > post love 1`] = `
 "
 <p>
   <img
@@ -63750,7 +63854,7 @@ And if you&#8217;re ready to start spreading the love around, go ahead and click
 "
 `;
 
-exports[`body > post maayot hash bddf1f165724b2e028c4c3391d317d64 1`] = `
+exports[`body > post maayot 1`] = `
 "
 <p>
   <img
@@ -63865,7 +63969,7 @@ Or, here, have a button:
 "
 `;
 
-exports[`body > post magic hash bb858d8a81f9abd86f9ceba68bbdc50f 1`] = `
+exports[`body > post magic 1`] = `
 "
 <p>
   <img
@@ -64067,7 +64171,7 @@ it&#8217;s the thing that actually induces you to look at it the right way.
 "
 `;
 
-exports[`body > post magicdata hash 885769fb38bb15e71b03809e9ae67744 1`] = `
+exports[`body > post magicdata 1`] = `
 "
 <p>
   <img
@@ -64278,7 +64382,7 @@ So let us know!
 "
 `;
 
-exports[`body > post magicstrings hash 4ae6172b6d79b36f6dc4ef5361226e34 1`] = `
+exports[`body > post magicstrings 1`] = `
 "
 <p>
   <img
@@ -64545,7 +64649,7 @@ There was some debate in the Beeminder Discord a while back about how common-kno
 "
 `;
 
-exports[`body > post maniac hash 67abc865c499a8ce19127d2cc2d743b3 1`] = `
+exports[`body > post maniac 1`] = `
 "
 <p>
   <img
@@ -64877,7 +64981,7 @@ is 72 to 104 hours.
 "
 `;
 
-exports[`body > post manifold hash 70365f8f76c94c1cd86687533778ef18 1`] = `
+exports[`body > post manifold 1`] = `
 "
 <p>
   <img
@@ -65085,7 +65189,7 @@ Beeminder is the streak concept done right.
 "
 `;
 
-exports[`body > post manwide hash 3e431ca0f6064e9294660cced67234a6 1`] = `
+exports[`body > post manwide 1`] = `
 "
 <p>
   <img
@@ -65210,7 +65314,7 @@ But it&#8217;s much cleaner to just make you guess your maximum daily weight flu
 "
 `;
 
-exports[`body > post marshmallow hash 6440da11fb517ae8ac30ca968c9d3286 1`] = `
+exports[`body > post marshmallow 1`] = `
 "
 <p>
   <img
@@ -65530,7 +65634,7 @@ But maybe be accountable for things you say to your kids just in case, is my poi
 "
 `;
 
-exports[`body > post martin hash 0ae77c9d65261db6ede0b45358b1679a 1`] = `
+exports[`body > post martin 1`] = `
 "
 <p>
   <img
@@ -65561,7 +65665,7 @@ Then sometime in January he hit the 249 hours, making his $5k safe, and you can 
 "
 `;
 
-exports[`body > post mayhem hash a152e23941f8021545ec71db122716c3 1`] = `
+exports[`body > post mayhem 1`] = `
 "
 <p>
   <img
@@ -65690,7 +65794,7 @@ What will you be working on?
 "
 `;
 
-exports[`body > post mbork hash ee84ce1ba62817b4d6601daa11bd117a 1`] = `
+exports[`body > post mbork 1`] = `
 "
 <p>
   <img
@@ -66094,7 +66198,7 @@ Like you can have a do-less goal for eating &#8220;cupcakes&#8221; and only you 
 "
 `;
 
-exports[`body > post meditation hash b97f94145e700dd4a20d1095245c567f 1`] = `
+exports[`body > post meditation 1`] = `
 "
 <p>
   <img
@@ -66333,7 +66437,7 @@ He is currently operating on the theory that good enterprise software developmen
 "
 `;
 
-exports[`body > post megabreak hash a773ad5ef97e02adfe51c9dab0f5b009 1`] = `
+exports[`body > post megabreak 1`] = `
 "
 <p>
   <img
@@ -66432,7 +66536,7 @@ see the
 "
 `;
 
-exports[`body > post melzaminder hash c948dd682d84addaef29ca278a172be6 1`] = `
+exports[`body > post melzaminder 1`] = `
 "
 <p>
   <img
@@ -66651,7 +66755,7 @@ There are 24 people in that group now&#8201;&#8212;&#8201;everyone who&#8217;s e
 "
 `;
 
-exports[`body > post mercy hash e94940df5cda9838e4bfc8ea59e4d760 1`] = `
+exports[`body > post mercy 1`] = `
 "
 <p>
   <img
@@ -66955,7 +67059,7 @@ Especially for something that initially seemed eminently straightforward&#8201;&
 "
 `;
 
-exports[`body > post meta hash 3f925bca758b3416793c941b931f80e9 1`] = `
+exports[`body > post meta 1`] = `
 "
 <p>
   <img
@@ -67174,7 +67278,7 @@ Having your votes counted twice is your reward for getting in on the ground floo
 "
 `;
 
-exports[`body > post metamind hash fc484f908a5a0424821a34e8cf6db3e6 1`] = `
+exports[`body > post metamind 1`] = `
 "
 <p>
   <img
@@ -67374,7 +67478,7 @@ We&#8217;re excited to lift these restrictions and hope you&#8217;ll holler at u
 "
 `;
 
-exports[`body > post microcommitments hash a862c05ee1bb048e6ad25ba5e7a13291 1`] = `
+exports[`body > post microcommitments 1`] = `
 "
 <p>
   <img
@@ -67701,7 +67805,7 @@ Instead it&#8217;s purely for that last minute push to say &#8220;no really,
 "
 `;
 
-exports[`body > post midweekend hash a511ca30b83d3bb7de483c0f334cffa1 1`] = `
+exports[`body > post midweekend 1`] = `
 "
 <p>
   <img
@@ -67818,7 +67922,7 @@ But Weekend Wednesday seems like the kind of thing some Beeminder users will wan
 "
 `;
 
-exports[`body > post milkman hash 7a2f85900994511fb5aa4a64a74483c4 1`] = `
+exports[`body > post milkman 1`] = `
 "
 <p>
   <img
@@ -68628,7 +68732,7 @@ Check out
 "
 `;
 
-exports[`body > post mirabai hash 9acab7ee4c0873a36e55942e520a1f24 1`] = `
+exports[`body > post mirabai 1`] = `
 "
 <p>
   <img
@@ -68884,7 +68988,7 @@ Someday soon I&#8217;ll crank up the difficulty on my goals a bit, or add anothe
 "
 `;
 
-exports[`body > post misfit hash c838e4b2ec32a93bdab0ca17c250bb9a 1`] = `
+exports[`body > post misfit 1`] = `
 "
 <p>
   <img
@@ -68996,7 +69100,7 @@ And if you do fall behind, we&#8217;ll charge you money (or ask you to add a cre
 "
 `;
 
-exports[`body > post mongo hash 0809174cdaf89a70957536aa1b2a6d6c 1`] = `
+exports[`body > post mongo 1`] = `
 "
 <p>
   <img
@@ -69179,7 +69283,7 @@ Note that the Mongo thing happened six months ago so I guess we were overdue for
 "
 `;
 
-exports[`body > post mongoid hash 1610f22f51612ebd18fe767f5afd04ba 1`] = `
+exports[`body > post mongoid 1`] = `
 "
 <p>
   <img
@@ -69429,7 +69533,7 @@ Now stop with your quibbling and let us finish this story.
 "
 `;
 
-exports[`body > post monkey hash 40dc8571165b97846de96d54d9482547 1`] = `
+exports[`body > post monkey 1`] = `
 "
 <p>
   <img
@@ -69619,7 +69723,7 @@ But if you stay on your yellow brick road, both selves win.
 "
 `;
 
-exports[`body > post montholutions hash c997bf6ae9298bc68e96d6a215aa6f3f 1`] = `
+exports[`body > post montholutions 1`] = `
 "
 <p>
   <img
@@ -69916,7 +70020,7 @@ there&#8217;s no time like the present!
 "
 `;
 
-exports[`body > post moreless hash 526551f435609f8ff5741e320dc7641f 1`] = `
+exports[`body > post moreless 1`] = `
 "
 <p>
   <img
@@ -70060,7 +70164,7 @@ After repeatedly pointing people to the bottom section of this blog post about b
 "
 `;
 
-exports[`body > post motivationtypes hash a63b37387382501ba0cc8963b425a34c 1`] = `
+exports[`body > post motivationtypes 1`] = `
 "
 <p>
   <img
@@ -70185,7 +70289,7 @@ Like by making sure you have at least one goal in each category or focusing on t
 "
 `;
 
-exports[`body > post movingav hash c49abd6bd941449fc7bf02f994c0e153 1`] = `
+exports[`body > post movingav 1`] = `
 "
 <p>
   <img
@@ -70367,7 +70471,7 @@ Or at least beemind the outcomes conservatively, like
 "
 `;
 
-exports[`body > post mustdo hash c56c2c151a3b75e5dcb98d5360b2e9ea 1`] = `
+exports[`body > post mustdo 1`] = `
 "
 <p>
   <img
@@ -70663,7 +70767,7 @@ I proposed it as a minimalistic version of a more elaborate Remember The Milk in
 "
 `;
 
-exports[`body > post nailingit hash c6915667fa26f3fde6badc1143df879c 1`] = `
+exports[`body > post nailingit 1`] = `
 "
 <p>
   <img
@@ -70856,7 +70960,7 @@ It&#8217;s not derailing, it&#8217;s more like hitting the rumble strip on the h
 "
 `;
 
-exports[`body > post nanowrimo hash 83f9232a312b5b8e10d751f88d91da4a 1`] = `
+exports[`body > post nanowrimo 1`] = `
 "
 <p>
   <img
@@ -70951,7 +71055,7 @@ We can also do that if you&#8217;re writing in an Etherpad or anywhere else that
 "
 `;
 
-exports[`body > post nebulous hash a2cc7187467b1fe93a241188ab5e49ef 1`] = `
+exports[`body > post nebulous 1`] = `
 "
 <p>
   <img
@@ -71132,7 +71236,7 @@ Or at least end up with an informative post-mortem on why you failed.
 "
 `;
 
-exports[`body > post neology hash e19e523f707e4c797cf28988328e191c 1`] = `
+exports[`body > post neology 1`] = `
 "
 <p>
   <img
@@ -71589,7 +71693,7 @@ It&#8217;s true if you think of the red line Beeminder draws as a crude approxim
 "
 `;
 
-exports[`body > post nerds hash 3701d99f52187b410f6e2e07d49955c8 1`] = `
+exports[`body > post nerds 1`] = `
 "
 <p>
   <img
@@ -71953,7 +72057,7 @@ We&#8217;re always delighted to clarify and explain if you ask!
 "
 `;
 
-exports[`body > post newbees hash b60aa94ab28ee75a0e50401611b8ecbe 1`] = `
+exports[`body > post newbees 1`] = `
 "
 <p>
   <img
@@ -72726,7 +72830,7 @@ and
 "
 `;
 
-exports[`body > post nick hash 174999b2347cfb16ef9a0458b919e3ef 1`] = `
+exports[`body > post nick 1`] = `
 "
 <p>
   <img
@@ -73065,7 +73169,7 @@ Then, after you&#8217;ve succeeded at everything without ever paying $5 to the b
 "
 `;
 
-exports[`body > post nicky hash 1fb1ca0a06f4c717bc95f0b7bd06bcee 1`] = `
+exports[`body > post nicky 1`] = `
 "
 <p>
   <img
@@ -73246,7 +73350,7 @@ No special access, no extra privileges, maybe even no discounts or special prici
 "
 `;
 
-exports[`body > post noexcuses hash 580073fa39b46356fed1fd619ba02629 1`] = `
+exports[`body > post noexcuses 1`] = `
 "
 <p>
   <img
@@ -73504,7 +73608,7 @@ for valuable feedback and discussion.
 "
 `;
 
-exports[`body > post nuclear hash 29874464d4015efe8f5119bdc930fbfe 1`] = `
+exports[`body > post nuclear 1`] = `
 "
 <p>
   <img
@@ -73684,7 +73788,7 @@ For us, Beeminder isn&#8217;t just the nuclear option, it&#8217;s also the heavy
 "
 `;
 
-exports[`body > post nudge hash 6b0b9487704da4fa4cf07d4667786eb4 1`] = `
+exports[`body > post nudge 1`] = `
 "
 <p>
   <img
@@ -73944,7 +74048,7 @@ Or, as we say, if you never pay Beeminder then you probably didn&#8217;t really 
 "
 `;
 
-exports[`body > post nwo hash eae485d2843a021fab7fc70ccb6d68e0 1`] = `
+exports[`body > post nwo 1`] = `
 "
 <p>
   <img
@@ -74222,7 +74326,7 @@ Which will also take care of the top-requested feature in our
 "
 `;
 
-exports[`body > post oauth hash ba129023e411dc035add933ff65753bb 1`] = `
+exports[`body > post oauth 1`] = `
 "
 <p>
   <img
@@ -74425,7 +74529,7 @@ you might find the
 "
 `;
 
-exports[`body > post obscure hash af79e5e0242db809affb62d6ae426738 1`] = `
+exports[`body > post obscure 1`] = `
 "
 <p>
   <img
@@ -74716,7 +74820,7 @@ We&#8217;re working hard to do more of that.
 "
 `;
 
-exports[`body > post olimay hash 6768cbbb9557decd9aae319321ccc959 1`] = `
+exports[`body > post olimay 1`] = `
 "
 <p>
   <img
@@ -74981,7 +75085,7 @@ I&#8217;ve learned a lot from using it, and I&#8217;m glad to be part of a commu
 "
 `;
 
-exports[`body > post one hash 2a1c52337a0665e451f92f587d55d0df 1`] = `
+exports[`body > post one 1`] = `
 "
 <p>
   <img
@@ -75318,7 +75422,7 @@ Thank you so much for your enthusiasm and involvement in making this possible!
 "
 `;
 
-exports[`body > post ontologies hash 27f7c8d249ddffeff2be8d475899cba1 1`] = `
+exports[`body > post ontologies 1`] = `
 "
 <p>
   <img
@@ -75477,7 +75581,7 @@ I&#8217;ve now found
 "
 `;
 
-exports[`body > post optivate hash 5e4a0ad33ea3fdf560b13bec339b8b25 1`] = `
+exports[`body > post optivate 1`] = `
 "
 <p>
   <img
@@ -75794,7 +75898,7 @@ Under a blizzard of contrived assumptions, you now know that when your stakes ar
 "
 `;
 
-exports[`body > post orange hash 66c896cbbb348ca2ea83d149eb0c1645 1`] = `
+exports[`body > post orange 1`] = `
 "
 <p>
   <img
@@ -75868,7 +75972,7 @@ Unless you truly do have no need at all for Beeminder, you&#8217;ll eventually e
 "
 `;
 
-exports[`body > post oura hash eeebd027543328de183a8077465d6fe8 1`] = `
+exports[`body > post oura 1`] = `
 "
 <p>
   <img
@@ -75999,7 +76103,7 @@ For a walkthrough on goal setup,
 "
 `;
 
-exports[`body > post ownwords hash b769f0183e0265023d9a6ae565738a4c 1`] = `
+exports[`body > post ownwords 1`] = `
 "
 <p>
   <img
@@ -76290,7 +76394,7 @@ Win-win?
 "
 `;
 
-exports[`body > post pact hash 6e7a9c4a1bc960a57f147002a9350f9f 1`] = `
+exports[`body > post pact 1`] = `
 "
 <p>
   <img
@@ -76541,7 +76645,7 @@ We&#8217;ve written extensively about why that isn&#8217;t as
 "
 `;
 
-exports[`body > post pareto hash 67c8a430cf9a74ab349b886918b3eb42 1`] = `
+exports[`body > post pareto 1`] = `
 "
 <p>
   <img
@@ -76722,7 +76826,7 @@ See also the hovertext on the image.
 "
 `;
 
-exports[`body > post paretocaps hash 848f705cf36c0bb45c5d1abc3239ef5f 1`] = `
+exports[`body > post paretocaps 1`] = `
 "
 <p>
   <img
@@ -76976,7 +77080,7 @@ I feel a little silly because this was supposed to be a simple UI tweak with a h
 "
 `;
 
-exports[`body > post paypal hash da34728a41fd06d17b0a2fd65b51c627 1`] = `
+exports[`body > post paypal 1`] = `
 "
 <p>
   <img
@@ -77135,7 +77239,7 @@ So, alright, the people have spoken!
 "
 `;
 
-exports[`body > post pdp hash 4628159a1950cc6fcc056de917481f33 1`] = `
+exports[`body > post pdp 1`] = `
 "
 <p>
   <img
@@ -77317,7 +77421,7 @@ Fixing regressions is always higher priority but the PDP doesn&#8217;t impose an
 "
 `;
 
-exports[`body > post pdxqs hash 67b48fd0187936a0264bf3598cb302fa 1`] = `
+exports[`body > post pdxqs 1`] = `
 "
 <p>
   <img
@@ -77567,7 +77671,7 @@ Of course, we track
 "
 `;
 
-exports[`body > post perverse hash 262f9b82a861306b4ff9b4336c6ed97a 1`] = `
+exports[`body > post perverse 1`] = `
 "
 <p>
   <img
@@ -77652,7 +77756,7 @@ If I get annoyed with myself for not being on task enough then I&#8217;ll dial u
 "
 `;
 
-exports[`body > post philip hash 4a57c7f52dffddc22d8080ae5be2a646 1`] = `
+exports[`body > post philip 1`] = `
 "
 <p>
   <img
@@ -78437,7 +78541,7 @@ Can you tell that I&#8217;m in awe?
 "
 `;
 
-exports[`body > post pigou hash 3e9cb86ebdd99e99cf83ffb888f0b32c 1`] = `
+exports[`body > post pigou 1`] = `
 "
 <p>
   <img
@@ -78658,7 +78762,7 @@ With Beeminder you&#8217;re internalizing the externality imposed on your future
 "
 `;
 
-exports[`body > post pledgecaps hash 45c67c7029626c52f78935eb83beabca 1`] = `
+exports[`body > post pledgecaps 1`] = `
 "
 <p>
   <img
@@ -78876,7 +78980,7 @@ Or possibly you don&#8217;t want Beeminder at all in that case, and would prefer
 "
 `;
 
-exports[`body > post pocket hash dfd3c6f125feed018479b43d5f42b6f6 1`] = `
+exports[`body > post pocket 1`] = `
 "
 <p>
   <img
@@ -79017,7 +79121,7 @@ Without doing that you have no hope of reading the other somethings because they
 "
 `;
 
-exports[`body > post pomopoker hash 296a22d2061e991335d0f8dcb0adc41c 1`] = `
+exports[`body > post pomopoker 1`] = `
 "
 <p>
   <img
@@ -79105,7 +79209,7 @@ But as long as you&#8217;re not sandbagging, it&#8217;s fair game to pick a task
 "
 `;
 
-exports[`body > post postel hash 2e5218f310d70b30fd650dfef5060130 1`] = `
+exports[`body > post postel 1`] = `
 "
 <p>
   <img
@@ -79360,7 +79464,7 @@ I&#8217;m sure it made sense at the time!
 "
 `;
 
-exports[`body > post postminder hash 8986cf2dbebf3044524e6d0c6fd180a8 1`] = `
+exports[`body > post postminder 1`] = `
 "
 <p>
   <img
@@ -79557,7 +79661,7 @@ this isn&#8217;t going to work out.
 "
 `;
 
-exports[`body > post practice hash a14173cc15fde4e421e78c169489a1e3 1`] = `
+exports[`body > post practice 1`] = `
 "
 <p>
   <img
@@ -79873,7 +79977,7 @@ But don&#8217;t listen to me, see what a true
 "
 `;
 
-exports[`body > post predict hash 663befe37104933d394ea27c82782ce0 1`] = `
+exports[`body > post predict 1`] = `
 "
 <p>
   <img
@@ -80288,7 +80392,7 @@ See also
 "
 `;
 
-exports[`body > post preeat hash 8e7d083d3033a47cebeb9b41336dcae1 1`] = `
+exports[`body > post preeat 1`] = `
 "
 <p>
   <img
@@ -80319,7 +80423,7 @@ Like because it&#8217;s there, you&#8217;re bored, or to prevent being hungry la
 "
 `;
 
-exports[`body > post premium hash 940d4125270d28ca364d68fd6ea31987 1`] = `
+exports[`body > post premium 1`] = `
 "
 <p>
   <img
@@ -80831,7 +80935,7 @@ We discuss the seeming
 "
 `;
 
-exports[`body > post projecteuler hash f005a824846d259a62a0f979ba247394 1`] = `
+exports[`body > post projecteuler 1`] = `
 "
 <p>
   <img
@@ -80949,7 +81053,7 @@ What&#8217;s not to like?
 "
 `;
 
-exports[`body > post protein hash c64217d1a9c63832c2ab91728f878dac 1`] = `
+exports[`body > post protein 1`] = `
 "
 <p>
   <img
@@ -81677,7 +81781,7 @@ In the wise words of Greg LeMond, it never gets easier, you just go faster.
 "
 `;
 
-exports[`body > post proxymetrics hash 1e39026b53eb3272a858c0feddacbe0c 1`] = `
+exports[`body > post proxymetrics 1`] = `
 "
 <p>
   <img
@@ -81977,7 +82081,7 @@ You have an underlying goal that you distill into something
 "
 `;
 
-exports[`body > post pseudovernacular hash 8e9e5c4461c63bff14cea606f41d528e 1`] = `
+exports[`body > post pseudovernacular 1`] = `
 "
 <p>
   <img
@@ -82490,7 +82594,7 @@ So a surjection maps over the whole codomain, covering all of it.
 "
 `;
 
-exports[`body > post psfdd hash 183a138998cb2bbbe7e922f267c27530 1`] = `
+exports[`body > post psfdd 1`] = `
 "
 <p>
   <img
@@ -82821,7 +82925,7 @@ In short, despite the bizarre way we collect it, people are ultimately paying us
 "
 `;
 
-exports[`body > post psych hash 07c2b455617d45fdab4d8682149a53a5 1`] = `
+exports[`body > post psych 1`] = `
 "
 <p>
   <img
@@ -83065,7 +83169,7 @@ And for that, I am so very grateful.
 "
 `;
 
-exports[`body > post psychpricing hash e8c18de276d8ebcfbe9dc7549bac6e73 1`] = `
+exports[`body > post psychpricing 1`] = `
 "
 <p>
   <img
@@ -83136,7 +83240,7 @@ And fellow consumers, cultivate more outrage when companies try to trick you!
 "
 `;
 
-exports[`body > post punishment hash a9de1148962678d2e5b063c761a3b9ce 1`] = `
+exports[`body > post punishment 1`] = `
 "
 <p>
   <img
@@ -83361,7 +83465,7 @@ Similarly, some kids may perceive attention as a positive thing; others, as some
 "
 `;
 
-exports[`body > post qs hash 6e35318c472d472756507ad2da7225b2 1`] = `
+exports[`body > post qs 1`] = `
 "
 <p>
   <img
@@ -83610,7 +83714,7 @@ Finally, we have a version of our API in private beta which a couple people have
 "
 `;
 
-exports[`body > post qs15 hash bc3cf64e4130dcbaed1c7cee6d8f2fd5 1`] = `
+exports[`body > post qs15 1`] = `
 "
 <p>
   <img
@@ -83765,7 +83869,7 @@ When those run out you can use &#8220;beeminder10&#8221; to drop the Expo price 
 "
 `;
 
-exports[`body > post qs2013 hash 9609b38169a32893c20707e4dda83127 1`] = `
+exports[`body > post qs2013 1`] = `
 "
 <p>
   <img
@@ -84031,7 +84135,7 @@ But I have a tool that lets me parameterize how much.
 "
 `;
 
-exports[`body > post qs2015 hash bfcddf5b5a2627edd6b92fda28ec57a8 1`] = `
+exports[`body > post qs2015 1`] = `
 "
 <p>
   <img
@@ -84402,7 +84506,7 @@ Or even join us for it if you&#8217;re in Portland.]
 "
 `;
 
-exports[`body > post quals hash f4bf38e18c27cb9adcc94fb6232a3aab 1`] = `
+exports[`body > post quals 1`] = `
 "
 <p>
   <img
@@ -84580,7 +84684,7 @@ So, yes, you could be less weird and verbify &#8220;qual&#8221; as &#8220;qualif
 "
 `;
 
-exports[`body > post rails hash e4404a11d063339813085916dbe5ac4d 1`] = `
+exports[`body > post rails 1`] = `
 "
 <p>
   <img
@@ -84721,7 +84825,7 @@ Informally, the road continues indefinitely. But this being a definite contract,
 "
 `;
 
-exports[`body > post rainbowdash hash 893a482ae3b67ae2a8c52274a32c14d4 1`] = `
+exports[`body > post rainbowdash 1`] = `
 "
 <p>
   <img
@@ -84918,7 +85022,287 @@ Keep telling us what you think we should do next!
 "
 `;
 
-exports[`body > post ratchet hash 1570aa49e7a0b862699efaef14f7be7b 1`] = `
+exports[`body > post ramble 1`] = `
+"
+<p>
+  <img
+    class="aligncenter"
+    width="450"
+    height="450"
+    alt="A grid of 9 scenes of the same woman going for different walks."
+    title="She's toting her pack along the dusty Winnemucca road, and she's been everywhere, man."
+    src="https://github.com/user-attachments/assets/e88a5f0a-b1ff-4396-b8a8-5b78e52d21e3"
+  >
+</p>
+<p>
+  Bee and I have been experimenting with micro-habit Beeminder goals.
+In particular, we coined the name
+  <a
+    class="footnote"
+    id="NOM1"
+    href="#NOM"
+  >
+    [1]
+  </a>
+  <em>
+    ramble goals
+  </em>
+  for moving a mile
+  <a
+    class="footnote"
+    id="MILE1"
+    href="#MILE"
+  >
+    [2]
+  </a>
+  a day, as a binary goal, meaning you get a +1 for moving at least a mile.
+Running a marathon is still just a +1. 
+We also count stationary biking, ironically, which takes all of 3 minutes without breaking a sweat.
+(We included this to make the bar for doing it very very low.)
+It&#8217;s not very
+  <a
+    href="https://blog.beeminder.com/whattomind"
+    title="What To Mind: Picking a Metric. See item 2: pick things that make interesting graphs."
+  >
+    quantified-selfy
+  </a>
+  but the idea is to have this in addition to other fitness goals that track metrics like steps or distance.
+</p>
+<h3>
+  Don&#8217;t proper distance goals make a binary version superfluous?
+</h3>
+<p>
+  No, because you don&#8217;t necessarily want to be edge-skating your steps/distance goals all the time. 
+Maybe you even want a long off-season on those goals. 
+But when you do have tons of safety buffer, you don&#8217;t want to get too lazy. 
+The mile-a-day goal overcomes the activation energy of getting started. 
+Any time you want a day off, just put in the 3 minutes and be done. 
+If it turns out that once you&#8217;re doing it, you don&#8217;t mind 17 more minutes for an actual workout, great.
+</p>
+<p>
+  This worked like a charm on me over the winter. 
+I&#8217;d get on the stationary bike (technically my real bike on rollers) to get the quick mile out the way and then I&#8217;m on a roll (haha) and start setting mini goals like &#8220;maybe I&#8217;ll keep going till I hit 100 calories&#8221; or &#8220;till I bring my average speed above 30mph&#8221; or any number of meaningless motivators.
+</p>
+<p>
+  <img
+    class="aligncenter"
+    alt="A bike on rollers"
+    title="In case anyone isn't clear on what rollers are"
+    src="https://github.com/user-attachments/assets/34e46a53-f049-4c50-b88e-400c980cf025"
+  >
+</p>
+<p>
+  The book
+  <em>
+    Atomic Habits
+  </em>
+  calls this a
+  <em>
+    gateway habit
+  </em>
+  , if you use the 2-minute rule. 
+I guess a mile in two minutes is doable on rollers with no resistance setting.
+</p>
+<p>
+  As for what to dial your commitment to&#8201;&#8212;&#8201;the steepness of the bright red line&#8201;&#8212;&#8201;Bee and I keep ours at 6-point-something per week. 
+But part of the point is that it hardly matters. 
+You effectively get any day off you want by just putting in the token few minutes.
+</p>
+<h3>
+  Metaminding
+</h3>
+<p>
+  I think this works great as a run-of-the-mill manual do-more goal. 
+I put what I did in the datapoint comment.
+But we&#8217;d be remiss if we didn&#8217;t point out that you can automate this with a
+  <a
+    href="http://bmndr.co/metaminder"
+    title="AKA Metaminder, no relation to Facebook&#39;s parent company"
+  >
+    Beeminder meta goal
+  </a>
+  if you&#8217;re already beeminding something like miles.
+Set the meta goal up to  mirror data from a main miles goal and set the meta goal&#8217;s aggday to &#8220;satsum&#8221; (previously &#8220;cap1&#8221;).
+&#8220;Satsum&#8221; is for &#8220;saturated sum&#8221;&#8201;&#8212;&#8201;it plots for each day the sum of any datapoints but capped at a value of 1.
+That way you have both your &#8220;20 miles per week&#8221; goal, or however much it is, and an &#8220;at least 1 mile per day&#8221; goal. 
+You can also set aggday to &#8220;unary&#8221; (previously &#8220;binary&#8221;) if you just want to commit to getting any datapoint each day (or most days), no matter how small.
+</p>
+<p>
+  Also if you have an autodata source like Garmin or Strava you can just link that to two goals, and not need to fuss with a meta goal.
+</p>
+<p>
+  Here&#8217;s another variation on the concept, from
+  <a
+    href="https://www.hellyer.net/"
+    title="Philip&#39;s homepage"
+  >
+    Philip Hellyer
+  </a>
+  : threshold goals.
+Apparently the inflection point for health benefits from steps-per-day is at 6000 steps. 
+So Philip uses
+  <a
+    href="https://www.beeminder.com/make"
+    title="Formerly Integromat, but that&#39;s such old news that I guess we&#39;re just going for hipster points by pointing it out at this point. Also I secretly still like that name better."
+  >
+    Beeminder&#8217;s Make.com integration
+  </a>
+  to add a +1 to his threshold goal if his main steps goal is ≥ 6000 steps.
+</p>
+<p>
+  (But also, don&#8217;t
+  <a
+    href="https://blog.beeminder.com/burnout"
+    title="Beating Beeminder Burnout"
+  >
+    overwhelm yourself
+  </a>
+  with too many goals!)
+</p>
+<h3>
+  What about autoratchet?
+</h3>
+<p>
+  If you&#8217;re sufficiently gung-ho, you might prefer to use the autoratchet feature on a goal that just tracks distance walked or run or biked.
+Or manually ratchet away safety buffer whenever you accumulate too much of it.
+But the idea is for a ramble goal to be lower stress&#8201;&#8212;&#8201;less edge-skating&#8201;&#8212;&#8201;and lower cognitive overhead. 
+You only ever worry about your one ramble per day.
+You&#8217;ll never back yourself into a corner by ratcheting away too much safety buffer on your main mileage goal.
+</p>
+<p>
+  <br>
+  &nbsp;
+  <br>
+</p>
+<h2>
+  Footnotes
+</h2>
+<p>
+  <a
+    class="footnote"
+    id="NOM"
+    href="#NOM1"
+  >
+    [1]
+  </a>
+  In case you like
+  <a
+    href="https://blog.beeminder.com/goalnames"
+    title="How To Name Your Goals"
+  >
+    naming goals
+  </a>
+  as much as me, here are alternative names for epsilon-effort, activation-energy-neutralizing goals like this, especially for the case of daily walking:
+</p>
+<ol>
+  <li>
+    milemark (like a tally mark for hitting a mile, which makes sense for a binary goal)
+  </li>
+  <li>
+    locomote
+  </li>
+  <li>
+    gambol
+  </li>
+  <li>
+    amble
+  </li>
+  <li>
+    minimile
+  </li>
+  <li>
+    stepsilon
+  </li>
+  <li>
+    gaitway
+  </li>
+  <li>
+    solvitur (for
+    <em>
+      solvitur ambulando
+    </em>
+    )
+  </li>
+  <li>
+    ambulocatalysis
+  </li>
+  <li>
+    paripathetic
+  </li>
+  <li>
+    legit (pronounced &#8220;leg it&#8221;)
+  </li>
+  <li>
+    plodcast
+  </li>
+  <li>
+    cakewalk
+  </li>
+  <li>
+    strollcall
+  </li>
+  <li>
+    bimble (Britishism meaning stroll leisurely)
+  </li>
+  <li>
+    jauntlet
+  </li>
+  <li>
+    meanderthal
+  </li>
+  <li>
+    doorstep (as in stepping out the door)
+  </li>
+  <li>
+    wanderleast
+  </li>
+  <li>
+    heartbeat
+  </li>
+  <li>
+    deminimis
+  </li>
+  <li>
+    scintilla
+  </li>
+  <li>
+    <a
+      href="https://en.wikipedia.org/wiki/Peppercorn_(law)"
+      title="Peppercorn rent is a token amount you pay in order to qualify as a legal contract"
+    >
+      peppercorn
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://en.wikipedia.org/wiki/Nulla_dies_sine_linea"
+      title="Nulla dies sine linea -- no day without a line, aka no zero days"
+    >
+      linea
+    </a>
+  </li>
+</ol>
+<p>
+  I&#8217;m embarrassed to say that those started out mine but the most creative-sounding onces are Claude.
+(I accidentally blurred the line in the above list, by compiling some of it a year or so ago and losing track of which ones we thought of and which the golems thought of.
+These days I&#8217;m more careful.
+Every word you read on Beeminder that we&#8217;re not explicitly attributing to someone or something else is typed by our human fingers.)
+</p>
+<p>
+  <a
+    class="footnote"
+    id="MILE"
+    href="#MILE1"
+  >
+    [2]
+  </a>
+  We feel dumb being all imperial with &#8220;miles&#8221; but it is at least linguistically nice:
+mileage, milemarkers, milestones.
+</p>
+"
+`;
+
+exports[`body > post ratchet 1`] = `
 "
 <p>
   <img
@@ -85401,7 +85785,7 @@ If it gives you any guff (frustration, confusion, wrongness, obtuseness, &#8230;
 "
 `;
 
-exports[`body > post reactions hash f9e7d86e3f21f3d13c5788550123061b 1`] = `
+exports[`body > post reactions 1`] = `
 "
 <p>
   <img
@@ -85745,7 +86129,7 @@ See especially the case of Pact, whose scheme of paying successful users we&#821
 "
 `;
 
-exports[`body > post readwise hash df9779ab68a4458e6036baf279071d00 1`] = `
+exports[`body > post readwise 1`] = `
 "
 <p>
   <img
@@ -85835,7 +86219,7 @@ Just work through your items, either deleting them, archiving them, or otherwise
 "
 `;
 
-exports[`body > post recommit hash 092241b965df40e4027dee893e4621e3 1`] = `
+exports[`body > post recommit 1`] = `
 "
 <p>
   <img
@@ -86076,7 +86460,7 @@ We certainly do.
 "
 `;
 
-exports[`body > post redesign hash ae66c52eb7968d7c12f4c3bfff6face0 1`] = `
+exports[`body > post redesign 1`] = `
 "
 <p>
   <img
@@ -86367,7 +86751,7 @@ That was over 16,000 lines of code in 453 files.
 "
 `;
 
-exports[`body > post redqueen hash f77e012de466af445e95732cde73cb07 1`] = `
+exports[`body > post redqueen 1`] = `
 "
 <p>
   <img
@@ -86594,7 +86978,7 @@ That&#8217;s enough for me to call this post a success!
 "
 `;
 
-exports[`body > post relativity hash 4f41c765e2ab536fb47c68fd03d5671b 1`] = `
+exports[`body > post relativity 1`] = `
 "
 <p>
   <img
@@ -86661,7 +87045,7 @@ Go forth and relativize your plot ranges.
 "
 `;
 
-exports[`body > post reminders hash 1759059b30de545b899ee60639d213de 1`] = `
+exports[`body > post reminders 1`] = `
 "
 <p>
   <img
@@ -87015,7 +87399,7 @@ And respite from the relentless reminders.
 "
 `;
 
-exports[`body > post rescuetime hash 0463f674e47000ecf3db269f7e13d2a3 1`] = `
+exports[`body > post rescuetime 1`] = `
 "
 <p>
   <img
@@ -87140,7 +87524,7 @@ Your Yellow Brick Road starts today, so just keep using RescueTime like you norm
 "
 `;
 
-exports[`body > post resolutions hash b5ae2c55554779aeb32b85fe2e7a669d 1`] = `
+exports[`body > post resolutions 1`] = `
 "
 <p>
   <img
@@ -87416,7 +87800,7 @@ You might also want to read about
 "
 `;
 
-exports[`body > post revealed hash 740f93fb7e6336a6c399e7df2ebf85fe 1`] = `
+exports[`body > post revealed 1`] = `
 "
 <p>
   <img
@@ -87554,7 +87938,7 @@ and for first articulating the proof by contradiction.
 "
 `;
 
-exports[`body > post risk hash fe5bb70390365749df2ca75dc1a19236 1`] = `
+exports[`body > post risk 1`] = `
 "
 <p>
   <img
@@ -87699,7 +88083,7 @@ Some people are way too &#8220;put out fires as they happen&#8221; and some peop
 "
 `;
 
-exports[`body > post rituals hash bfd32837adf291fd4e6f8435ee47e4c7 1`] = `
+exports[`body > post rituals 1`] = `
 "
 <p>
   <img
@@ -87933,7 +88317,7 @@ But it turns out those are usually pretty stupid values of should and if I have 
 "
 `;
 
-exports[`body > post road hash 78b748c51e8717f517138cc3d1c60acd 1`] = `
+exports[`body > post road 1`] = `
 "
 <p>
   <img
@@ -88133,7 +88517,7 @@ More on
 "
 `;
 
-exports[`body > post roadwidth hash d93ff8cc7ae5d22893966b22e3a4ed0e 1`] = `
+exports[`body > post roadwidth 1`] = `
 "
 <p>
   <img
@@ -88529,7 +88913,7 @@ You don&#8217;t actually have to have any idea how to choose what safety buffer 
 "
 `;
 
-exports[`body > post rocks hash 6b387bd1cf59905d9f2cf73bd8d5d0cb 1`] = `
+exports[`body > post rocks 1`] = `
 "
 <p>
   <img
@@ -88662,7 +89046,7 @@ Eating and breathing?
 "
 `;
 
-exports[`body > post rolodex hash b2998dcf24c648ccfa320747d80cdd75 1`] = `
+exports[`body > post rolodex 1`] = `
 "
 <p>
   <img
@@ -88836,7 +89220,7 @@ And I have a Beeminder goal to ping a person on my spreadsheet about once every 
 "
 `;
 
-exports[`body > post rosary hash 24e84c774565ba8cf9f44904ddaa7cf4 1`] = `
+exports[`body > post rosary 1`] = `
 "
 <p>
   <img
@@ -89511,7 +89895,7 @@ And fun fact: he was one of the first
 "
 `;
 
-exports[`body > post routine hash 3043a402b603cbdd87db265a5ee2c3e3 1`] = `
+exports[`body > post routine 1`] = `
 "
 <p>
   <img
@@ -89654,7 +90038,7 @@ And of course there&#8217;s
 "
 `;
 
-exports[`body > post rssminder hash c6dd4884840ecfbef4f92d105d2abcb7 1`] = `
+exports[`body > post rssminder 1`] = `
 "
 <p>
   <img
@@ -89788,7 +90172,7 @@ We&#8217;re excited to see what else people come up with!
 "
 `;
 
-exports[`body > post runkeeper hash 3f67e8b8a48aa5a359fa7abecd022814 1`] = `
+exports[`body > post runkeeper 1`] = `
 "
 <p>
   <img
@@ -89916,7 +90300,7 @@ But it was the first data source we integrated with Beeminder in the beginning.
 "
 `;
 
-exports[`body > post runnersworld hash 5e1a279cbee33099eaba3cb554928084 1`] = `
+exports[`body > post runnersworld 1`] = `
 "
 <p>
   <img
@@ -90519,7 +90903,7 @@ Or at least that&#8217;s how
 "
 `;
 
-exports[`body > post schelling hash c031bb1308674326c0d00d91f053f74d 1`] = `
+exports[`body > post schelling 1`] = `
 "
 <p>
   <img
@@ -90798,7 +91182,7 @@ Slippery slopes can sometimes be avoided by establishing a &#8220;Schelling fenc
 "
 `;
 
-exports[`body > post scholar hash da2157a916eaf835d39cbacb59753943 1`] = `
+exports[`body > post scholar 1`] = `
 "
 <p>
   <img
@@ -90899,7 +91283,7 @@ If so, it would help us a lot for planning if you could check the appropriate ch
 "
 `;
 
-exports[`body > post sediment hash b0f1000ad8b8710850731da99438c60f 1`] = `
+exports[`body > post sediment 1`] = `
 "
 <p>
   <img
@@ -91131,7 +91515,7 @@ You would not be reading this if today weren&#8217;t an &#8220;emergency blog po
 "
 `;
 
-exports[`body > post seinfeld hash 63ddfda121f37be84d56f0ab7dd59508 1`] = `
+exports[`body > post seinfeld 1`] = `
 "
 <p>
   <img
@@ -91245,7 +91629,7 @@ Probably by beeminding more and more things more and more ambitiously, to the po
 "
 `;
 
-exports[`body > post shanaqui hash 9006e2f60ba9941d4dffcc0198b2f666 1`] = `
+exports[`body > post shanaqui 1`] = `
 "
 <p>
   <img
@@ -91651,7 +92035,7 @@ It means &#8220;storyteller&#8221;, so I adopted the word as my username both fo
 "
 `;
 
-exports[`body > post sheeple hash dad5282b9184320a44979d0bfb4a1587 1`] = `
+exports[`body > post sheeple 1`] = `
 "
 <p>
   <img
@@ -91826,7 +92210,7 @@ See
 "
 `;
 
-exports[`body > post shirknturk hash f24e35c1e8aed5f67e8ca9e052f4dfe8 1`] = `
+exports[`body > post shirknturk 1`] = `
 "
 <p>
   <img
@@ -92070,7 +92454,7 @@ This also makes it especially easy to apply the Shirk &amp; Turk Principle!
 "
 `;
 
-exports[`body > post shortcircuit hash 42b25947c51b9189c805ffc585d4856b 1`] = `
+exports[`body > post shortcircuit 1`] = `
 "
 <p>
   <img
@@ -92319,7 +92703,7 @@ Yes, today is an
 "
 `;
 
-exports[`body > post should hash 26b3771b3a4b8e5774456382e3a99d93 1`] = `
+exports[`body > post should 1`] = `
 "
 <p>
   <img
@@ -92440,7 +92824,7 @@ And the rest is history.
 "
 `;
 
-exports[`body > post sin hash e3202ef04364556842d45ab922e08bfe 1`] = `
+exports[`body > post sin 1`] = `
 "
 <p>
   <img
@@ -92590,7 +92974,7 @@ Though it might be interesting to report explicit zeros so you can record the ac
 "
 `;
 
-exports[`body > post six hash 96659583bba2ca69b9c708e18885cdb7 1`] = `
+exports[`body > post six 1`] = `
 "
 <p>
   <img
@@ -92958,7 +93342,7 @@ Which also reminds us to remind you to spend some time with our wonderfully supp
 "
 `;
 
-exports[`body > post skritter hash 3707216ff313ff1df89020d0f2085e21 1`] = `
+exports[`body > post skritter 1`] = `
 "
 <p>
   <img
@@ -93202,7 +93586,7 @@ So I guess this is also a disclosure of the (in)vested interest here.
 "
 `;
 
-exports[`body > post sleep hash e20a80e9d426b7a13cfafc8d07fe0cb4 1`] = `
+exports[`body > post sleep 1`] = `
 "
 <p>
   <img
@@ -93377,7 +93761,7 @@ script,
 "
 `;
 
-exports[`body > post sliders hash 77f4a820933e3345b59240077ed8b8eb 1`] = `
+exports[`body > post sliders 1`] = `
 "
 <p>
   <img
@@ -93539,7 +93923,7 @@ Just keep in mind that without a $0 pledge cap the pledge will always bump itsel
 "
 `;
 
-exports[`body > post slytherin404 hash e96233337120fe417a01b12028e2d585 1`] = `
+exports[`body > post slytherin404 1`] = `
 "
 <p>
   <img
@@ -93686,7 +94070,7 @@ I strongly disagree with, for example, GitHub&#8217;s approach to Slytherin 404s
 "
 `;
 
-exports[`body > post smarmbot hash eb9b48f6b6f18d5c75161ba3f9a370ab 1`] = `
+exports[`body > post smarmbot 1`] = `
 "
 <p>
   <img
@@ -93927,7 +94311,7 @@ They&#8217;re admitting it&#8217;s a bot, and giving it a moo-ish touch.
 "
 `;
 
-exports[`body > post smart hash 1865962cd03b635e9bbd55e8080376de 1`] = `
+exports[`body > post smart 1`] = `
 "
 <p>
   <img
@@ -94124,7 +94508,7 @@ You&#8217;re exactly the kind of users we want right now so please send us your 
 "
 `;
 
-exports[`body > post smoking hash 9e0fa82d4997d5c98f3916c7e58e9827 1`] = `
+exports[`body > post smoking 1`] = `
 "
 <p>
   <img
@@ -94340,7 +94724,7 @@ As a matter of principle, I recommend skipping the above paragraph and going str
 "
 `;
 
-exports[`body > post smooth hash 54e75f34a806de72d90b97ec713ca279 1`] = `
+exports[`body > post smooth 1`] = `
 "
 <p>
   <img
@@ -94529,7 +94913,7 @@ But now you know the rest of the story.
 "
 `;
 
-exports[`body > post snooze hash 667704d2dfda6e8a230c9737de5894ea 1`] = `
+exports[`body > post snooze 1`] = `
 "
 <p>
   <img
@@ -94811,7 +95195,7 @@ See
 "
 `;
 
-exports[`body > post solstice hash 4f4f52224ce31c11df5756f1fc52bfd4 1`] = `
+exports[`body > post solstice 1`] = `
 "
 <p>
   <img
@@ -94838,7 +95222,7 @@ So if you&#8217;re beeminding things that are facilitated by sunlight, now&#8217
 "
 `;
 
-exports[`body > post sos hash 03701894c4adba7f19a9ef49d23c45e7 1`] = `
+exports[`body > post sos 1`] = `
 "
 <p>
   <img
@@ -94997,7 +95381,7 @@ Namely, they very much don&#8217;t want to have to weasel and that itself is pre
 "
 `;
 
-exports[`body > post southwest hash f0248ef4771a38561f9616710131a0f3 1`] = `
+exports[`body > post southwest 1`] = `
 "
 <p>
   <img
@@ -95379,7 +95763,7 @@ Not to mention all the links we&#8217;ve been collecting of
 "
 `;
 
-exports[`body > post speclist hash 39dfa9512d8a808f287a56108b6dea5b 1`] = `
+exports[`body > post speclist 1`] = `
 "
 <p>
   <img
@@ -95620,7 +96004,7 @@ for reading and discussing drafts of this.
 "
 `;
 
-exports[`body > post specs hash f376fa557c782e108f45727f16a0095f 1`] = `
+exports[`body > post specs 1`] = `
 "
 <p>
   <img
@@ -95805,7 +96189,7 @@ Finally, that last 10% (again,
 "
 `;
 
-exports[`body > post squeam hash fa8768917c1a8860efc2fcbe1898e6c1 1`] = `
+exports[`body > post squeam 1`] = `
 "
 <p>
   <img
@@ -95934,7 +96318,7 @@ If you don&#8217;t interact with Beeminder at all for long enough, your graphs w
 "
 `;
 
-exports[`body > post staircase hash 1b012bdcc49971cb900de36d0abc2702 1`] = `
+exports[`body > post staircase 1`] = `
 "
 <p>
   <img
@@ -96193,7 +96577,7 @@ fractal beeminding, right down to units of the Planck time!
 "
 `;
 
-exports[`body > post steam hash a3c7733ac29f702bb150a3f0d742fa1f 1`] = `
+exports[`body > post steam 1`] = `
 "
 <p>
   <img
@@ -96360,7 +96744,7 @@ Or, here, have a button:
 "
 `;
 
-exports[`body > post stickk hash 28cac7a8b48e79c119b67406a2654209 1`] = `
+exports[`body > post stickk 1`] = `
 "
 <p>
   <img
@@ -96410,7 +96794,7 @@ exports[`body > post stickk hash 28cac7a8b48e79c119b67406a2654209 1`] = `
 "
 `;
 
-exports[`body > post stingily hash 6f32a8aa891b8065aeee4185ba802a79 1`] = `
+exports[`body > post stingily 1`] = `
 "
 <p>
   <img
@@ -96618,7 +97002,7 @@ If you stub your toe on the goal limit we wanna hear about it.
 "
 `;
 
-exports[`body > post storygraph hash d078cf839ae3e4bb59bec2c3b4ffcebd 1`] = `
+exports[`body > post storygraph 1`] = `
 "
 <p>
   <img
@@ -96833,7 +97217,7 @@ Let us know about what you dream of tracking, and we&#8217;ll see what we can do
 "
 `;
 
-exports[`body > post strava hash ca5724813cebc62f4dd5d3af53c40cad 1`] = `
+exports[`body > post strava 1`] = `
 "
 <p>
   <img
@@ -96988,7 +97372,7 @@ And as the days get short and you get lazy, Beeminder will be there nipping at y
 "
 `;
 
-exports[`body > post stress hash 564dc45a0ef844e902d78f9de0ab297b 1`] = `
+exports[`body > post stress 1`] = `
 "
 <p>
   <img
@@ -97122,7 +97506,7 @@ I&#8217;m beeminding my way through a monumental backlog of blog post drafts, ok
 "
 `;
 
-exports[`body > post stripe hash 0e4bc428dde37194d94e8033dd5d28a1 1`] = `
+exports[`body > post stripe 1`] = `
 "
 <p>
   <img
@@ -97415,7 +97799,7 @@ But we will eventually pull the bandaid off.
 "
 `;
 
-exports[`body > post study hash dae9437e4f05e5db68ad61b242ea4c8a 1`] = `
+exports[`body > post study 1`] = `
 "
 <p>
   <img
@@ -97686,7 +98070,7 @@ There&#8217;s no escaping from simply having to put. in. the. time.
 "
 `;
 
-exports[`body > post support hash 4ce8b8a8e41780fa18fe2d6800edb5f2 1`] = `
+exports[`body > post support 1`] = `
 "
 <p>
   <img
@@ -98018,7 +98402,7 @@ Our favorite is probably
 "
 `;
 
-exports[`body > post supporters hash 44dfe76586384bd970a109a60d26b81f 1`] = `
+exports[`body > post supporters 1`] = `
 "
 <p>
   <img
@@ -98153,7 +98537,7 @@ for suggesting this feature.
 "
 `;
 
-exports[`body > post survivor hash 58e97db710b27304536f5e25d6ded3aa 1`] = `
+exports[`body > post survivor 1`] = `
 "
 <p>
   <img
@@ -98379,7 +98763,7 @@ There will be physical prizes, though, and some of those prizes will be uniquely
 "
 `;
 
-exports[`body > post swifts hash 7548463072336bf0dd8064b32aa0627c 1`] = `
+exports[`body > post swifts 1`] = `
 "
 <p>
   <img
@@ -98619,7 +99003,7 @@ Just make sure to arrive a bit before sunset at 7:08pm when the swifts will do t
 "
 `;
 
-exports[`body > post synonyms hash fa9adcaa9b08736b8799565d150af5b4 1`] = `
+exports[`body > post synonyms 1`] = `
 "
 <p>
   <img
@@ -99119,7 +99503,7 @@ coined by Nir Eyal
 "
 `;
 
-exports[`body > post systems hash e8ee6169484a3e0a54b4b3920d4bebde 1`] = `
+exports[`body > post systems 1`] = `
 "
 <p>
   <img
@@ -99235,7 +99619,7 @@ Which I should confess I haven&#8217;t actually read but I did read Scott Adams&
 "
 `;
 
-exports[`body > post tao hash e13ae95fceec160f40382c8bf22cff91 1`] = `
+exports[`body > post tao 1`] = `
 "
 <p>
   <img
@@ -99808,7 +100192,7 @@ He resides in Calgary, Canada.
 "
 `;
 
-exports[`body > post tao2 hash 8474a34550e266c5cbf899c9114fb7a2 1`] = `
+exports[`body > post tao2 1`] = `
 "
 <p>
   <img
@@ -100214,7 +100598,7 @@ He resides in Calgary, Canada.
 "
 `;
 
-exports[`body > post tare hash 09bcdc59327a72a3436cbf8eeab363c3 1`] = `
+exports[`body > post tare 1`] = `
 "
 <p>
   <img
@@ -100741,7 +101125,7 @@ It&#8217;s phonetic for &#8220;cumulative&#8221;.
 "
 `;
 
-exports[`body > post taskratchet hash 9658aeff6e4f9b63a952c916c6654686 1`] = `
+exports[`body > post taskratchet 1`] = `
 "
 <p>
   <img
@@ -101002,7 +101386,7 @@ So join today, and let&#8217;s build this together!
 "
 `;
 
-exports[`body > post textbooks hash 84f565d506b32ce75daaf157b2ae83e5 1`] = `
+exports[`body > post textbooks 1`] = `
 "
 <p>
   <img
@@ -101344,7 +101728,7 @@ The oldest book he owns was printed in 1791; it is a collection of morally impro
 "
 `;
 
-exports[`body > post textbot hash d9cbbcce6081e80a1d3c4b635180be34 1`] = `
+exports[`body > post textbot 1`] = `
 "
 <p>
   <img
@@ -101427,7 +101811,7 @@ We know it&#8217;s annoying to have to think about that though, so the bot also 
 "
 `;
 
-exports[`body > post tg hash a54f38a424d979870d4df46434825f75 1`] = `
+exports[`body > post tg 1`] = `
 "
 <p>
   <img
@@ -101516,7 +101900,7 @@ Second, we now have a nice feature to
 "
 `;
 
-exports[`body > post three hash 0d101d598d6b1a46d90daf9258049a47 1`] = `
+exports[`body > post three 1`] = `
 "
 <p>
   <img
@@ -102116,7 +102500,7 @@ Epson and Zapier are temporarily relegated to this footnote because we&#8217;re 
 "
 `;
 
-exports[`body > post timebridges hash 032f564b14d05c23a79ba7de56a4465c 1`] = `
+exports[`body > post timebridges 1`] = `
 "
 <p>
   <img
@@ -102291,7 +102675,7 @@ It&#8217;s a process of experimentation to see what works for you.
 "
 `;
 
-exports[`body > post timecarrot hash c8fe1515bd372327846f050a1cb8f9f3 1`] = `
+exports[`body > post timecarrot 1`] = `
 "
 <p>
   <img
@@ -102441,7 +102825,7 @@ And of course now that Beeminder has
 "
 `;
 
-exports[`body > post timestream hash d3c9c55783a6e1f81ba55e5cff6eb700 1`] = `
+exports[`body > post timestream 1`] = `
 "
 <p>
   <img
@@ -102590,7 +102974,7 @@ Download it at
 "
 `;
 
-exports[`body > post tocks hash 3febcee0c42f859818903e0b551749cd 1`] = `
+exports[`body > post tocks 1`] = `
 "
 <p>
   <img
@@ -102905,7 +103289,7 @@ I guess it&#8217;s a hack to make the incentives work.
 "
 `;
 
-exports[`body > post todoist hash 435dba8b0f2d1bdbdff5438f24b22eae 1`] = `
+exports[`body > post todoist 1`] = `
 "
 <p>
   <img
@@ -103035,7 +103419,7 @@ We&#8217;re also directly integrated with
 "
 `;
 
-exports[`body > post toggl hash ae76ae09a30ce3bba6c1d5e399844503 1`] = `
+exports[`body > post toggl 1`] = `
 "
 <p>
   <img
@@ -103162,7 +103546,7 @@ Beeminder breaks you out of that pattern and gives you an immediate incentive to
 "
 `;
 
-exports[`body > post toothbrush hash 83845dde664c96ec0e940d9989932df1 1`] = `
+exports[`body > post toothbrush 1`] = `
 "
 <p>
   <img
@@ -103393,7 +103777,7 @@ But in the future I will use a
 "
 `;
 
-exports[`body > post toxin hash 54196f05ec294204fcf3e9047b6d4eef 1`] = `
+exports[`body > post toxin 1`] = `
 "
 <p>
   <img
@@ -103503,7 +103887,7 @@ The only way to form an honest prediction that future-you will do something you 
 "
 `;
 
-exports[`body > post trackhack hash 4d2b732403262f518da0d471094dcd2f 1`] = `
+exports[`body > post trackhack 1`] = `
 "
 <p>
   <img
@@ -103837,7 +104221,7 @@ Another recent post&#8201;&#8212;&#8201;
 "
 `;
 
-exports[`body > post trello hash bf827a18baad9907361d250312c9e3dd 1`] = `
+exports[`body > post trello 1`] = `
 "
 <p>
   <img
@@ -103975,7 +104359,7 @@ And if someone at Trello is reading this, we&#8217;d love a promiscuous mode for
 "
 `;
 
-exports[`body > post tri hash 970461ddfcd5ce467a09906ae62c13ff 1`] = `
+exports[`body > post tri 1`] = `
 "
 <p>
   <img
@@ -104212,7 +104596,7 @@ But given credit card processing fees plus other Beeminder stakeholders (like th
 "
 `;
 
-exports[`body > post triangle hash b22b1d222aed3d40c49853b3b480db55 1`] = `
+exports[`body > post triangle 1`] = `
 "
 <p>
   <img
@@ -104598,7 +104982,7 @@ You can export the data and do something else with it or change the aggregation 
 "
 `;
 
-exports[`body > post trust hash 4e7a39cccd15a197dc241a0a3ee40671 1`] = `
+exports[`body > post trust 1`] = `
 "
 <p>
   <img
@@ -104944,7 +105328,7 @@ to auto-adjust some of my goal slopes
 "
 `;
 
-exports[`body > post trydeepwork hash 11817e395b291f843570d960c0fe7630 1`] = `
+exports[`body > post trydeepwork 1`] = `
 "
 <p>
   <img
@@ -105090,7 +105474,7 @@ But I decided to rectify that at the beginning of 2023 and am gradually
 "
 `;
 
-exports[`body > post tuit hash 0b423f3386f46fa2f302cd93c98e0b83 1`] = `
+exports[`body > post tuit 1`] = `
 "
 <p>
   <img
@@ -105172,7 +105556,7 @@ No matter how rich or recalcitrant you are, it won&#8217;t take many initial der
 "
 `;
 
-exports[`body > post tv hash 4d7a2609f8690a97e48e5d874473f054 1`] = `
+exports[`body > post tv 1`] = `
 "
 <p>
   <img
@@ -105250,7 +105634,7 @@ We&#8217;ll see what kind of a
 "
 `;
 
-exports[`body > post twitter hash 58478e59582d215d6e6b78989237de5c 1`] = `
+exports[`body > post twitter 1`] = `
 "
 <p>
   <img
@@ -105472,7 +105856,7 @@ We decided to wait to see if anyone would actually want to do things like that b
 "
 `;
 
-exports[`body > post two hash 19e461e33285cbae8e4a34210095d4b2 1`] = `
+exports[`body > post two 1`] = `
 "
 <p>
   <img
@@ -105740,7 +106124,7 @@ And I&#8217;m so excited for another year of relentless awesomeness together!
 "
 `;
 
-exports[`body > post typebee hash de365fc47670154098d42e5778549e5f 1`] = `
+exports[`body > post typebee 1`] = `
 "
 <p>
   <img
@@ -106061,7 +106445,7 @@ See also the sidebar of this blog.
 "
 `;
 
-exports[`body > post uncle hash 4689a31390699477a6d2e289bf7023c5 1`] = `
+exports[`body > post uncle 1`] = `
 "
 <p>
   <img
@@ -106405,7 +106789,7 @@ For simplicity we generally talk about the common case of Do More goals rather t
 "
 `;
 
-exports[`body > post unintended hash 7442c003cc9fc20bf4cd27db3f6f60c7 1`] = `
+exports[`body > post unintended 1`] = `
 "
 <p>
   <img
@@ -106552,7 +106936,7 @@ Thanks to
 "
 `;
 
-exports[`body > post upsidedown hash 18bf19d1418ec84db649295b414c2c82 1`] = `
+exports[`body > post upsidedown 1`] = `
 "
 <p>
   <img
@@ -106944,7 +107328,7 @@ Support interactions take on a collaborative tone.
 "
 `;
 
-exports[`body > post urgency hash 757fe2044e7bd99eaa77dec92d2fc457 1`] = `
+exports[`body > post urgency 1`] = `
 "
 <p>
   <img
@@ -107169,7 +107553,7 @@ If you want a taste of such features, we recommend Benjamin Fox (zzq)&#8217;s br
 "
 `;
 
-exports[`body > post urlminder hash 1e53c5bed07a59aa9a4ab75dec0b32e2 1`] = `
+exports[`body > post urlminder 1`] = `
 "
 <p>
   <img
@@ -107263,7 +107647,7 @@ With an Odometer goal you report today&#8217;s total wordcount, which your word 
 "
 `;
 
-exports[`body > post uvi hash e6998306d2b96fca39902c3b47a03a71 1`] = `
+exports[`body > post uvi 1`] = `
 "
 <p>
   <img
@@ -107809,7 +108193,7 @@ So you can adjust your goal, but you can&#8217;t change it out of laziness, unle
 "
 `;
 
-exports[`body > post vegdays hash 78e5ccde2507301a8c7578020bd7c074 1`] = `
+exports[`body > post vegdays 1`] = `
 "
 <p>
   <img
@@ -108034,7 +108418,7 @@ Fish don&#8217;t seem very sentient I guess.
 "
 `;
 
-exports[`body > post vegetables hash d0fdde6d0f7fe83f19599d66b98dc3c4 1`] = `
+exports[`body > post vegetables 1`] = `
 "
 <p>
   <img
@@ -108180,7 +108564,7 @@ Some of these are even written by an actual expert.
 "
 `;
 
-exports[`body > post veggieminding hash a77239d9ad958e69b6bea8f306c15411 1`] = `
+exports[`body > post veggieminding 1`] = `
 "
 <p>
   <img
@@ -108390,7 +108774,7 @@ As long as you&#8217;re eating better than you used to be, you&#8217;re doing ju
 "
 `;
 
-exports[`body > post waisted hash fd85a9ca4e47be9049a527f0a06f0f70 1`] = `
+exports[`body > post waisted 1`] = `
 "
 <p>
   <img
@@ -108549,7 +108933,7 @@ Join the Dirty Plate Club!
 "
 `;
 
-exports[`body > post wakatime hash 974c5c694c2405ba7517056901b650a1 1`] = `
+exports[`body > post wakatime 1`] = `
 "
 <p>
   <img
@@ -108650,7 +109034,7 @@ Just code like normal, WakaTime keeps track of how much time you spent, and Beem
 "
 `;
 
-exports[`body > post wantcanwill hash aea71dfcb1998e074beeb8edf2d9cb92 1`] = `
+exports[`body > post wantcanwill 1`] = `
 "
 <p>
   <img
@@ -108782,7 +109166,7 @@ And you should
 "
 `;
 
-exports[`body > post waterfalls hash 5f683408a1b35655a8d043b61b35b5e3 1`] = `
+exports[`body > post waterfalls 1`] = `
 "
 <p>
   <img
@@ -108884,7 +109268,7 @@ Hooray!
 "
 `;
 
-exports[`body > post weasels hash c4781b377cff9836ebdf1c8dd575e9c5 1`] = `
+exports[`body > post weasels 1`] = `
 "
 <p>
   <img
@@ -109083,7 +109467,7 @@ Between us, I&#8217;m confident that I will achieve my substantially different f
 "
 `;
 
-exports[`body > post weekends hash ae37edc533e54382b9241cd11462decb 1`] = `
+exports[`body > post weekends 1`] = `
 "
 <p>
   <img
@@ -109153,7 +109537,7 @@ In short, we&#8217;re guaranteeing that you won&#8217;t!
 "
 `;
 
-exports[`body > post weighly hash b66e041d088b21668cfa686292e69c56 1`] = `
+exports[`body > post weighly 1`] = `
 "
 <p>
   <img
@@ -109473,7 +109857,7 @@ Suddenly your scale is speaking gibberish (unless you&#8217;re really good at me
 "
 `;
 
-exports[`body > post weight hash 341e0c156cfbc1e22fdcd1bb69c7131b 1`] = `
+exports[`body > post weight 1`] = `
 "
 <p>
   <img
@@ -109756,7 +110140,7 @@ It boosts the effect your intentions have on your behavior (which is normally li
 "
 `;
 
-exports[`body > post wetfeet hash d9dcd73167ea97e7f046d9e1a9ef2b7e 1`] = `
+exports[`body > post wetfeet 1`] = `
 "
 <p>
   <img
@@ -110036,7 +110420,7 @@ We won&#8217;t spring any of this on you, and we&#8217;ll always respect pledge 
 "
 `;
 
-exports[`body > post wetterfeet hash 14446bbeeb54235c6ee0ed5228cdac72 1`] = `
+exports[`body > post wetterfeet 1`] = `
 "
 <p>
   <img
@@ -110166,7 +110550,7 @@ If that&#8217;s not you, don&#8217;t be shy!
 "
 `;
 
-exports[`body > post weusethat hash f9748392a35a40fa6e225d0a38cd8f95 1`] = `
+exports[`body > post weusethat 1`] = `
 "
 <p>
   <img
@@ -110478,7 +110862,7 @@ Also, we think we&#8217;re about to sign up for
 "
 `;
 
-exports[`body > post whattomind hash c60729f450d2c5f8962c1011562ec27f 1`] = `
+exports[`body > post whattomind 1`] = `
 "
 <p>
   <img
@@ -110666,7 +111050,7 @@ They&#8217;re things like
 "
 `;
 
-exports[`body > post whyweigh hash c9515a4b2e9b78769cd817a6825a0589 1`] = `
+exports[`body > post whyweigh 1`] = `
 "
 <p>
   <img
@@ -110841,7 +111225,7 @@ We&#8217;ll say more about other gauges and proxy metrics and about a feedback c
 "
 `;
 
-exports[`body > post widget hash b479101d7838c1a7f28676b0bfba7adc 1`] = `
+exports[`body > post widget 1`] = `
 "
 <p>
   <img
@@ -110910,7 +111294,7 @@ So, with mere hours left to
 "
 `;
 
-exports[`body > post will hash e6eee04d3bb33abdff38f420ad242383 1`] = `
+exports[`body > post will 1`] = `
 "
 <p>
   <img
@@ -111101,7 +111485,7 @@ We&#8217;re developing Commits.to, as it&#8217;s now called, very gradually and 
 "
 `;
 
-exports[`body > post willpower hash ddffd2aba456bf0feec7c5a6f9c6c51d 1`] = `
+exports[`body > post willpower 1`] = `
 "
 <p>
   <img
@@ -111250,7 +111634,7 @@ if you feel it doesn&#8217;t!)&#8201;&#8212;&#8201;the follow-through will be in
 "
 `;
 
-exports[`body > post world hash a62235a05c42c8b4af6b031a95fc4c20 1`] = `
+exports[`body > post world 1`] = `
 "
 <p>
   <img
@@ -111351,7 +111735,7 @@ That&#8217;s so mainstream now&#8201;&#8212;&#8201;thanks to Fitbit and Apple He
 "
 `;
 
-exports[`body > post write hash b6fc751d6adbea849f78fb050d9afbe4 1`] = `
+exports[`body > post write 1`] = `
 "
 <p>
   <img
@@ -111687,7 +112071,7 @@ But for most people you&#8217;re not exposing yourself to undue risk by getting 
 "
 `;
 
-exports[`body > post wsj hash 271ac04acdbb9f8b31ec8a05104463e7 1`] = `
+exports[`body > post wsj 1`] = `
 "
 <p>
   <img
@@ -111941,7 +112325,7 @@ It&#8217;s the
 "
 `;
 
-exports[`body > post wsj2 hash c892a6fdce0001cca95b203621fa9988 1`] = `
+exports[`body > post wsj2 1`] = `
 "
 <p>
   <img
@@ -112803,7 +113187,7 @@ Let us know if we missed anything, and also if you&#8217;re in the above list be
 "
 `;
 
-exports[`body > post ybhp hash 7d31f1687068b4aca5e0e634c63c4459 1`] = `
+exports[`body > post ybhp 1`] = `
 "
 <p>
   <img
@@ -113210,7 +113594,7 @@ Last but not least, thanks to another Beeminder superfan, Kenn Hamm (@kenoubi on
 "
 `;
 
-exports[`body > post yesno hash c4228957067f3599c5a4ab81947abb44 1`] = `
+exports[`body > post yesno 1`] = `
 "
 <p>
   <img
@@ -113349,7 +113733,7 @@ That way you can beemind All The Things, but very gradually and nonstressfully (
 "
 `;
 
-exports[`body > post ynab hash b85e6a488f9f0ceec8c8c6c443bffe45 1`] = `
+exports[`body > post ynab 1`] = `
 "
 <p>
   <img
@@ -113456,7 +113840,7 @@ Or regular reconciliations of your accounts?
 "
 `;
 
-exports[`body > post zapier hash dcc46ed4b738ec58935c5f943eaa4163 1`] = `
+exports[`body > post zapier 1`] = `
 "
 <p>
   <img
@@ -113775,7 +114159,7 @@ Here are a few you can start with:
 "
 `;
 
-exports[`body > post zeno hash f66cd53b7fb3df3be4e3d53a30232f98 1`] = `
+exports[`body > post zeno 1`] = `
 "
 <p>
   <img
@@ -113985,7 +114369,7 @@ UPDATE: I feel weird doing silent edits (especially after that sentence stood fo
 "
 `;
 
-exports[`body > post zipit hash c84fe944a408201230f55fef0b69cc2c 1`] = `
+exports[`body > post zipit 1`] = `
 "
 <p>
   <img
