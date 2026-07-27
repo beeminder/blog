@@ -616,6 +616,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/quals' 1`] = `"https://t
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/rainbowdash' 1`] = `"https://the_source_domain/rainbowdash/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ramble' 1`] = `"https://the_source_domain/ramble/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/ratchet' 1`] = `"https://the_source_domain/ratchet/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/reactions' 1`] = `"https://the_source_domain/reactions/export/txt"`;

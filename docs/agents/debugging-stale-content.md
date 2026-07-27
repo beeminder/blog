@@ -76,19 +76,21 @@ curl -s "https://blog.beeminder.com/<slug>/?bust=$(date +%s)" | grep -c "$SENTIN
 
 A `0` on the last line means the deployed output is missing the sentinel — proceed to step 4.
 
-## Snapshot drift after pad edits
+## Refreshing the snapshot corpus after pad edits
 
-When pads are edited upstream, `test-snapshot` will fail on the next PR because snapshot test names embed `md5(p.md)`. Old hash becomes obsolete, new hash is unknown.
+The `getPosts` snapshot renders a **frozen corpus** committed at `src/lib/__fixtures__/posts-corpus.json`, not live pads. Pad edits therefore never make an unrelated PR go red — the snapshot only changes when a dev deliberately refreshes it. There is no nightly job.
 
-To regenerate snapshots cleanly:
+To pull current pad content into the snapshot:
 
 ```bash
-pnpm cache:clear
-FILE_SYSTEM_CACHE=false pnpm test:snapshot:update
-git diff src/lib/__snapshots__/   # sanity check — typically tiny
+pnpm snapshot:refresh          # refetches every pad live, rewrites the fixture
+pnpm test:snapshot:update      # re-renders the fixture into the .snap
+git diff src/lib/__fixtures__/ src/lib/__snapshots__/   # review both
 ```
 
-If you skip `cache:clear`, the local `.cache/parsed-markdown/` may bake old rendering into the snapshot, producing a noisy diff that won't match CI.
+`snapshot:refresh` sets `FILE_SYSTEM_CACHE=false` itself, so a stale local cache can't bake old content into the fixture. Commit the fixture and the `.snap` diff together in a normal reviewed PR; CI renders the same committed fixture, so the diff is exactly what changed.
+
+New posts aren't regression-covered until the next refresh — run the two commands above whenever you want the snapshot to track new pad content.
 
 ## Fix patterns to mirror
 
