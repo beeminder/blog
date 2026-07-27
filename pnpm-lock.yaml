@@ -15,8 +15,8 @@ importers:
         specifier: ^3.7.3
         version: 3.7.3
       '@fontsource-variable/lora':
-        specifier: ^5.2.8
-        version: 5.2.8
+        specifier: ^5.3.0
+        version: 5.3.0
       '@fontsource/source-sans-pro':
         specifier: ^5.2.5
         version: 5.2.5
@@ -550,8 +550,8 @@ packages:
     resolution: {integrity: sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@fontsource-variable/lora@5.2.8':
-    resolution: {integrity: sha512-cxjTJ9BbOWIzusewR4UMBLVePvTSWV6dtNaNsCkF/oKoyA68fJGWfaYCILOOP1BObE4dmjfZ3xo6m9hdHhtYhg==}
+  '@fontsource-variable/lora@5.3.0':
+    resolution: {integrity: sha512-2ph8KiZ8Bn141hWuC3ErtpJ+Ui8p2MJQn8TJNRSRmLmnCIOCtHfiBM9R7WLRPeUG/q6hXyHOxWQ8DvRSX+ixvQ==}
 
   '@fontsource/source-sans-pro@5.2.5':
     resolution: {integrity: sha512-ypendqc4pYUc+EgF7qqPY9iVYEz1t/Qr03VojKxG/2g3dnpHa1B6DOlDxWQjQXDj5QrG6inEqGT0g+edjALZyg==}
@@ -2060,7 +2060,7 @@ packages:
     engines: {node: '>=12.0.0'}
 
   expost@https://github.com/bsoule/expost/releases/download/v1.0.0/expost-1.0.0.tgz:
-    resolution: {integrity: sha512-7CBbsLwa6tQwUpmtS+VeBZYHljOOyilSDI7ukP+AMI+G+oDh3iPloFN12wEYxsQLQQ5O0I2r/Ypu3rY0GZCJAA==, tarball: https://github.com/bsoule/expost/releases/download/v1.0.0/expost-1.0.0.tgz}
+    resolution: {tarball: https://github.com/bsoule/expost/releases/download/v1.0.0/expost-1.0.0.tgz}
     version: 1.0.0
 
   extend@3.0.2:
@@ -2695,7 +2695,7 @@ packages:
     hasBin: true
 
   pixelteer@https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz:
-    resolution: {integrity: sha512-cI9cBSJLDHgwxX1qx4wSAFN0URWqDux9gYmf1KRYV1WpIXxC4VFHY2+C7ZpjUML6ZhtvYHjtVVkjeBGi3V2DDQ==, tarball: https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz}
+    resolution: {tarball: https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz}
     version: 1.0.0
     peerDependencies:
       puppeteer: ^22.6.5
@@ -3816,7 +3816,7 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@fontsource-variable/lora@5.2.8': {}
+  '@fontsource-variable/lora@5.3.0': {}
 
   '@fontsource/source-sans-pro@5.2.5': {}
 
