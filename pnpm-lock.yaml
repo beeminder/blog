@@ -1981,7 +1981,7 @@ packages:
     engines: {node: '>=12.0.0'}
 
   expost@https://github.com/bsoule/expost/releases/download/v1.0.0/expost-1.0.0.tgz:
-    resolution: {tarball: https://github.com/bsoule/expost/releases/download/v1.0.0/expost-1.0.0.tgz}
+    resolution: {integrity: sha512-7CBbsLwa6tQwUpmtS+VeBZYHljOOyilSDI7ukP+AMI+G+oDh3iPloFN12wEYxsQLQQ5O0I2r/Ypu3rY0GZCJAA==, tarball: https://github.com/bsoule/expost/releases/download/v1.0.0/expost-1.0.0.tgz}
     version: 1.0.0
 
   extend@3.0.2:
@@ -2626,7 +2626,7 @@ packages:
     hasBin: true
 
   pixelteer@https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz:
-    resolution: {tarball: https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz}
+    resolution: {integrity: sha512-cI9cBSJLDHgwxX1qx4wSAFN0URWqDux9gYmf1KRYV1WpIXxC4VFHY2+C7ZpjUML6ZhtvYHjtVVkjeBGi3V2DDQ==, tarball: https://github.com/pinepeakdigital/pixelteer/releases/download/v1.0.0/pixelteer-1.0.0.tgz}
     version: 1.0.0
     peerDependencies:
       puppeteer: ^22.6.5
