@@ -7639,5 +7639,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "beeminder philosophy", "tips"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "slop",
+"disqus_id": "slop",
+"source": "doc.bmndr.co/slop",
+"redirects": [],
+"date": "2026-08-04",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "beeminder philosophy", "ai"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
