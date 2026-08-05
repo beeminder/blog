@@ -1,3 +1,5 @@
+@AGENTS.md
+
 ## Agent skills
 
 ### Issue tracker
@@ -14,7 +16,7 @@ Single-context layout — one `CONTEXT.md` and `docs/adr/` at the repo root. See
 
 ### Build pipeline
 
-Padm.us (Etherpad CMS) → `posts.json` manifest → Astro build → Render → Cloudflare → blog.beeminder.com. See `docs/agents/build-pipeline.md`.
+Etherpad → `posts.json` manifest → Astro build → Render → Cloudflare → blog.beeminder.com. See `docs/agents/build-pipeline.md`.
 
 ### User-facing strings
 

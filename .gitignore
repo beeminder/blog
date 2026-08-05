@@ -31,6 +31,10 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# python bytecode
+__pycache__/
+*.pyc
+
 # zenflow
 .zenflow/*
 !.zenflow/settings.json
