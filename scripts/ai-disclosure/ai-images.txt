@@ -45,6 +45,7 @@
 2023/08/tworunners.png
 
 [probable]
+# User-reviewed 2026-08-05: correct as is — left untreated.
 2022/08/bee-on-scale-with-graph.png
 2022/09/bee-on-scale-with-graph.png
 
@@ -177,8 +178,6 @@
 2024/02/ai-bees-in-love.png
 # was https://github.com/beeminder/blog/assets/9928/026a125d-90ad-4f1c-aa58-bfe2e38f2910 (in /humbee)
 2024/02/ai-gift-bee.png
-# was https://github.com/beeminder/blog/assets/46881/4bf7a707-23e0-40e3-9ff3-3fad601e1d07 (in /humbee)
-2024/02/ai-habits-banner.png
 # was https://github.com/beeminder/blog/assets/9928/1baaa36a-1202-484c-8373-9aa6f0161243 (in /rainbowdash)
 2024/03/ai-rainbow-pony.png
 # was https://github.com/beeminder/blog/assets/9928/6edb7235-6b24-4f96-8018-0d33e17ede40 (in /wakatime)
