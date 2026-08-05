@@ -167,3 +167,29 @@
 2026/06/ai-cozy-couch-bees.png
 # was https://github.com/user-attachments/assets/f5d43172-0e53-410d-b4c5-94f50f150199 (in /goproblems)
 2026/07/ai-goban-bees.png
+# was https://github.com/beeminder/blog/assets/9928/c84444c0-3838-487d-9d11-06e46d7ad2f5 (in /diy)
+2024/01/ai-diy-tower.png
+# was https://github.com/beeminder/blog/assets/9928/cb21b83f-3cc6-4964-ab63-18eb8366c499 (in /love)
+2024/02/ai-bees-in-love.png
+# was https://github.com/beeminder/blog/assets/9928/026a125d-90ad-4f1c-aa58-bfe2e38f2910 (in /humbee)
+2024/02/ai-gift-bee.png
+# was https://github.com/beeminder/blog/assets/46881/4bf7a707-23e0-40e3-9ff3-3fad601e1d07 (in /humbee)
+2024/02/ai-habits-banner.png
+# was https://github.com/beeminder/blog/assets/9928/1baaa36a-1202-484c-8373-9aa6f0161243 (in /rainbowdash)
+2024/03/ai-rainbow-pony.png
+# was https://github.com/beeminder/blog/assets/9928/6edb7235-6b24-4f96-8018-0d33e17ede40 (in /wakatime)
+2024/03/ai-bee-stopwatch.png
+# was https://github.com/beeminder/blog/assets/46881/82eecb6f-48a5-49cb-91a9-8ac9bddc90d4 (in /wetfeet)
+2024/05/ai-wet-feet-money.png
+# was https://github.com/beeminder/blog/assets/46881/6fa49c52-0b18-406d-bf36-98747e45523b (in /wetterfeet)
+2024/05/ai-bee-sandals.png
+# was https://github.com/beeminder/blog/assets/46881/a41d477e-8408-4874-8a70-53a0e07aa5f2 (in /wetterfeet)
+2024/05/ai-feet-wave.png
+# was https://github.com/beeminder/blog/assets/9928/a0f0ff0e-d871-4cc3-8fe3-a51e789f80b7 (in /ynab)
+2024/05/ai-budget-bee.png
+# was https://github.com/beeminder/blog/assets/46881/421a8614-498e-49cc-af00-6521ebcdba7b (in /groupies)
+2024/06/ai-its-alive.png
+# was https://github.com/beeminder/blog/assets/46881/9ec6c19b-6183-4a7f-b6dc-31527a19937d (in /journal)
+2024/06/ai-monk-journal.png
+# was https://github.com/beeminder/blog/assets/46881/4e583a35-9467-477c-9046-77349f9e1d0f (in /ownwords)
+2024/07/ai-memo-bee.png
