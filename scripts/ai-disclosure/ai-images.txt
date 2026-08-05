@@ -1,0 +1,169 @@
+# AI-generated images in public/wp-content/uploads, identified 2026-08-03.
+# Sections: watermark = DALL-E rainbow strip detected programmatically;
+# filename = generator named in filename; visual = classified by inspection;
+# probable = needs human confirmation.
+
+[watermark]
+2022/06/dall-e-bee-self-flagellate.png
+2022/07/DALL·E-2022-07-25-22.07.54-a-cute-bespectacled-bee-ruefully-observing-a-burning-book-from-a-slight-distance.png
+2022/08/DALL-E-red-orange.png
+2022/09/DALL·E-2022-09-29-02.49.35-a-painting-of-a-penny-subtracted-from-a-stack-of-dollar-bills.png
+2022/10/DALL-E-a-painting-of-some-stressed-out-bees.png
+2022/10/DALL-E-bee-nailing-it.png
+2022/10/DALL-E-smooth-bees.png
+2022/10/bee-crashing-on-skis.png
+2022/11/DALL-E-raining-payment-methods.png
+2022/11/tmp1451.png
+2022/12/dall-e-bee-in-mirror.png
+2022/12/dall-e-knitting-bee.png
+2023/01/DALL·E-2023-01-26-13.53.31-a-bond-villain-at-his-desk-stroking-a-yellow-black-striped-cat-plotting-to-do-evil-with-honey.png
+2023/01/DALL·E-2023-01-26-13.53.35-a-vermeer-painting-of-a-king-with-many-beehives-and-honey.png
+2023/01/DALL·E-2023-01-26-13.53.38-a-vermeer-painting-of-a-king-with-many-beehives-and-honey.png
+2023/01/dall-e-bee-hill.png
+2023/01/dall-e-bees-taking-over.png
+2023/01/dall-e-ren-and-stimpy.png
+2023/02/dall-e-bond-villain.png
+2023/02/dall-e-take-over-world.png
+2023/02/toxin-puzzle.png
+2023/03/bee-doorway.png
+2023/03/dall-e-jellybeans-tareable.png
+2023/03/drawbridge-striped-soldiers.png
+2023/03/futuristic-gateway-beetheme.png
+2023/04/ebeneezer-scrooge-gift.png
+
+[filename]
+2022/06/midjourney-crying-wolf.png
+2022/06/midjourney-cyberpunk-creepy-bee-max-res.png
+2022/06/midjourney-cyberpunk-creepy-bee.webp
+2022/09/DALL·E-2022-09-29-03.08.26-gas-station-sign-advertising-9.999-_-gallon-gas.png
+2023/04/odifako_chess_match__bees__to_think__checkmate__wings__hands__t_0a56c047-ce4e-4d91-b8c3-7cde40b564e3.png
+
+[visual]
+2023/05/bee-at-forge.png
+2023/05/mathboardwithbee.png
+2023/06/people_demonstrating_different_emotions.png
+2023/08/tworunners.png
+
+[probable]
+2022/08/bee-on-scale-with-graph.png
+2022/09/bee-on-scale-with-graph.png
+
+[rehosted]
+# Treated copies of AI images originally hotlinked from GitHub's CDN.
+# Pad must be updated to point at the new URL.
+# was https://user-images.githubusercontent.com/9928/190226999-74a6b0ca-16a1-4446-a95a-e95402e31c3c.png (in /cbt)
+2022/09/dall-e-boxing-bee.png
+# was https://user-images.githubusercontent.com/46881/261721881-fc48a804-9ee1-426b-9336-7c6e7c06f90a.png (in /blogmorphosis)
+2023/08/ai-book-butterfly.png
+# was https://user-images.githubusercontent.com/46881/266202247-5bcb4d04-f5db-4c4e-bff3-a92f589e3d29.png (in /astroblog)
+2023/09/ai-labeled-contraption.png
+# was https://github.com/user-attachments/assets/b91f0207-c9ec-4c65-a67f-a79fcdc752bc (in /sociallyefficient)
+2013/03/ai-burning-dollar.png
+# was https://github.com/user-attachments/assets/858f9bfe-ce05-483b-8c75-2211253b52b3 (in /beenice)
+2014/01/ai-boxing-punch.png
+# was https://user-images.githubusercontent.com/9928/289316926-e02c91a2-b4cc-4929-a563-cbf191193ef9.png (in /cry)
+1970/01/ai-wolf-crocodile-tears.png
+# was https://github.com/user-attachments/assets/bdfee87d-f784-4b19-9002-38c9569850a6 (in /postel)
+2020/07/ai-card-house.png
+# was https://user-images.githubusercontent.com/46881/271141213-610ee865-d1c3-49d4-aab0-611d8df01109.png (in /readwise)
+2023/09/ai-bee-scholar.png
+# was https://user-images.githubusercontent.com/46881/261724657-41d0688f-016b-4c6e-9bee-c08a13e4f344.png (in /college)
+2023/10/ai-study-clutter.png
+# was https://user-images.githubusercontent.com/9928/279875492-2e682836-57ab-4fd8-a298-78b8d16a956f.png (in /manifold)
+2023/11/ai-origami-bee.png
+# was https://user-images.githubusercontent.com/9928/283332349-1bb3a3ca-eb88-4778-b6bc-2730e865ea00.png (in /antimagic404)
+2023/11/ai-detective-bees.png
+# was https://user-images.githubusercontent.com/9928/286863288-52513c6c-b772-4d62-8c04-44de49b73c11.png (in /risk)
+2023/11/ai-bee-market.png
+# was https://user-images.githubusercontent.com/9928/290430987-e1878b09-9d50-4faf-a204-6b9776964c36.png (in /rocks)
+2023/12/ai-stone-jars.png
+# was https://user-images.githubusercontent.com/9928/274054398-2f1fd0ea-b21b-4ecc-8bed-d3b126730931.png (in /honeygrams)
+2023/12/ai-honey-money.png
+# was https://user-images.githubusercontent.com/9928/292218820-d64b4920-b107-4bb2-bc61-0033c5f7e6d1.png (in /honeygrams)
+2023/12/ai-golden-bee-seal.png
+# was https://user-images.githubusercontent.com/9928/294140904-8d9db8eb-fe3f-4954-99e2-511c770e5696.png (in /montholutions)
+2024/01/ai-bee-zodiac.png
+# was https://user-images.githubusercontent.com/9928/294791619-2b91db4b-6d1d-4fc2-a8b6-b2e84e8485a5.png (in /pigouminder)
+2024/01/ai-bee-piggy.png
+# was https://github.com/user-attachments/assets/cc2f4aee-2e31-41f4-aa1e-07ee55e13a8d (in /grayson)
+2024/07/ai-book-stairs.png
+# was https://github.com/user-attachments/assets/50cb5328-5a2d-4a4e-bfc1-152c4176d998 (in /legolaps)
+2024/08/ai-rat-marbles.png
+# was https://github.com/user-attachments/assets/ea71b25b-e23e-4cfc-b669-ec8cbdb531d3 (in /oura)
+2024/08/ai-bee-ring.png
+# was https://github.com/user-attachments/assets/431d2f0d-83b3-449e-bfe4-d2080354813c (in /squeam)
+2024/09/ai-skull-visage.png
+# was https://github.com/user-attachments/assets/b6fd44a9-0933-42a5-a929-4fcc32198e48 (in /nuclear)
+2024/10/ai-beemergency-panel.png
+# was https://github.com/user-attachments/assets/b888ae86-0f80-4e6f-a2f7-a51fe823d19f (in /hyperrational)
+2024/10/ai-rainbow-desk.jpg
+# was https://github.com/user-attachments/assets/ad9eb5b9-5211-4603-924f-44b9d70057eb (in /uncle)
+2024/12/ai-white-flag-bee.png
+# was https://github.com/user-attachments/assets/d744a079-102f-4dc8-b3e7-0413f6a31281 (in /whyweigh)
+2025/01/ai-scale-vs-scale.jpg
+# was https://github.com/user-attachments/assets/959d0a92-56a9-47ca-846b-9c4a1cac3ac3 (in /proxymetrics)
+2025/01/ai-proxyminder-3000.png
+# was https://github.com/user-attachments/assets/b6fe32cd-e0cd-428c-9911-b721438521c0 (in /fatebook)
+2025/02/ai-mosaic-scales.png
+# was https://github.com/user-attachments/assets/13ff9ce4-71eb-4a8e-84a1-ad603ad88b97 (in /homeostasis)
+2025/02/ai-bee-radio.png
+# was https://github.com/user-attachments/assets/d8025de7-0f81-493b-9dd2-166b98c87ba3 (in /aibeem)
+2025/03/ai-robot-bees.png
+# was https://github.com/user-attachments/assets/67a74b50-0b03-4708-8fae-789e662bd357 (in /postminder)
+2025/03/ai-forum-taskmaster.png
+# was https://github.com/user-attachments/assets/f5d75474-7df1-49fe-bd42-5bcba31b1bf1 (in /brigade)
+2025/04/ai-reader-queue.png
+# was https://github.com/user-attachments/assets/756db57a-e87a-4df3-8202-d4d3ae519e40 (in /optivate)
+2025/05/ai-math-bee.jpg
+# was https://github.com/user-attachments/assets/5dd3d925-65bd-4a7e-a7fd-9ff66169af63 (in /rolodex)
+2025/05/ai-honeycomb-rolodex.png
+# was https://github.com/user-attachments/assets/f91b59bc-b884-42e5-ba8f-8ba51a23d492 (in /timestream)
+2025/06/ai-time-stream.png
+# was https://github.com/user-attachments/assets/a46abda2-b9b2-4a83-8eea-575bf82ea734 (in /timestream)
+2025/06/ai-clock-girl.png
+# was https://github.com/user-attachments/assets/986deae6-e023-4531-9e99-c138377ac739 (in /freshenable)
+2025/06/ai-fresh-stacks.png
+# was https://github.com/user-attachments/assets/b86727c9-6192-4998-abd2-b3ade481dae4 (in /deprecate)
+2025/07/ai-boombox-wings.png
+# was https://github.com/user-attachments/assets/2ddf2a36-0b94-4ec7-bba4-8ed6d970c6ac (in /boobeemium)
+2025/07/ai-paywalled-honey.png
+# was https://github.com/user-attachments/assets/1774c74e-822e-49d5-a080-ef04188f920b (in /defcon)
+2025/08/ai-defcon-bee.png
+# was https://github.com/user-attachments/assets/05fb3088-21b3-4d35-a11c-aed0db25c3c3 (in /flipod)
+2025/08/ai-blueprint-bee.png
+# was https://github.com/user-attachments/assets/279176b3-48dc-4655-a2cb-f39f75009b07 (in /magicstrings)
+2025/09/ai-magic-word-shop.png
+# was https://github.com/user-attachments/assets/8dc4d29c-a205-4bf8-8605-c0b0b8991e74 (in /magicdata)
+2025/09/ai-plush-bees.png
+# was https://github.com/user-attachments/assets/bcc4947c-aeae-40b9-af59-bafde922d06e (in /tare)
+2025/10/ai-tare-scale.png
+# was https://github.com/user-attachments/assets/ddd876ea-c49e-4d91-9a83-be1f1d40749a (in /protein)
+2025/10/ai-protein-gauge.png
+# was https://github.com/user-attachments/assets/c55b87b5-0fd0-4bcb-9bcf-65b15ebd0185 (in /inkhaven)
+2025/11/ai-inkraven.png
+# was https://github.com/user-attachments/assets/87a8ef7a-58bf-4eef-8a4f-5270807421f6 (in /inkhaven2)
+2025/12/ai-blue-raven.png
+# was https://github.com/user-attachments/assets/5f8f0e42-fecc-4525-a246-9f77abe3b5f6 (in /quals)
+2025/12/ai-guinea-pig-doctor.png
+# was https://github.com/user-attachments/assets/c9489f46-7037-42d9-9981-9770f1794897 (in /cryptoglossia)
+2026/01/ai-glossolalia-crowd.png
+# was https://github.com/user-attachments/assets/e416d3be-9398-4952-96d1-b2bee621f800 (in /steam)
+2026/01/ai-bee-gamer.png
+# was https://github.com/user-attachments/assets/7e058aed-4885-46aa-82b5-f7b56cc867b9 (in /hotkey)
+2026/02/ai-hotkey-bee.png
+# was https://github.com/user-attachments/assets/6471099e-6ac6-48c6-ae28-0db5729e4a0c (in /goodjargon)
+2026/02/ai-jargon-gallery.png
+# was https://github.com/user-attachments/assets/dc1c36fd-5a0e-4443-9e65-f53e3b652a4b (in /snooze)
+2026/03/ai-snooze-panic.png
+# was https://github.com/user-attachments/assets/89d1cfe2-5a8f-4ca6-9cfd-e7f241c9f8a4 (in /boardgamegeek)
+2026/03/ai-nerds-geeks.png
+# was https://github.com/user-attachments/assets/c13193d2-d8b6-4900-9439-02a72efdf082 (in /darkgreen)
+2026/04/ai-green-streak.png
+# was https://github.com/user-attachments/assets/dfd1c8ec-f3ba-4353-98d5-f4203f8289db (in /sliders)
+2026/04/ai-pledge-machine.png
+# was https://github.com/user-attachments/assets/c0675ded-c841-474c-8d85-783e4b0488c8 (in /forster)
+2026/05/ai-final-version-scroll.png
+# was https://github.com/user-attachments/assets/7282952b-27c5-42b4-94e5-4563072c8f0a (in /burge)
+2026/06/ai-cozy-couch-bees.png
+# was https://github.com/user-attachments/assets/f5d43172-0e53-410d-b4c5-94f50f150199 (in /goproblems)
+2026/07/ai-goban-bees.png
