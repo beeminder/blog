@@ -51,6 +51,10 @@
 [rehosted]
 # Treated copies of AI images originally hotlinked from GitHub's CDN.
 # Pad must be updated to point at the new URL.
+# was https://github.com/user-attachments/assets/e49a8faa-6ac3-4883-b480-2921b2debf43 (in /melzaminder, user-confirmed AI)
+2025/01/ai-lunch-review.png
+# was https://github.com/user-attachments/assets/e88a5f0a-b1ff-4396-b8a8-5b78e52d21e3 (in /ramble, user-confirmed AI)
+2026/07/ai-rambler-grid.png
 # was https://user-images.githubusercontent.com/9928/190226999-74a6b0ca-16a1-4446-a95a-e95402e31c3c.png (in /cbt)
 2022/09/dall-e-boxing-bee.png
 # was https://user-images.githubusercontent.com/46881/261721881-fc48a804-9ee1-426b-9336-7c6e7c06f90a.png (in /blogmorphosis)
