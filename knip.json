@@ -1,7 +1,11 @@
 {
   "$schema": "https://unpkg.com/knip@6/schema.json",
   "tags": ["-lintignore"],
-  "entry": ["src/scripts/*.ts", "vitest.snapshot.diff.ts"],
+  "entry": [
+    "src/scripts/*.ts",
+    "vitest.snapshot.diff.ts",
+    "scripts/ai-disclosure/*.mjs"
+  ],
   "ignore": ["src/i18n/tk.ts"],
   "ignoreDependencies": [
     "pixelmatch",

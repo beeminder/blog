@@ -690,6 +690,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/sleep' 1`] = `"https://t
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/sliders' 1`] = `"https://the_source_domain/sliders/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/slop' 1`] = `"https://the_source_domain/slop/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/slytherin404' 1`] = `"https://the_source_domain/slytherin404/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/smarmbot' 1`] = `"https://the_source_domain/smarmbot/export/txt"`;
