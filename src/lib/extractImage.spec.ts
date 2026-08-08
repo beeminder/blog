@@ -53,6 +53,22 @@ describe("extractImage", () => {
     ).toEqual(expect.objectContaining({ title: 'He said "hi"' }));
   });
 
+  it("keeps an apostrophe inside a double-quoted alt", () => {
+    expect(
+      extractImage(
+        '<img src="https://blog.beeminder.com/image.png" alt="Editor\'s note" />',
+      ),
+    ).toEqual(expect.objectContaining({ alt: "Editor's note" }));
+  });
+
+  it("keeps an apostrophe inside a double-quoted src", () => {
+    expect(
+      extractImage('<img src="https://blog.beeminder.com/it\'s.png" />'),
+    ).toEqual(
+      expect.objectContaining({ src: "https://blog.beeminder.com/it's.png" }),
+    );
+  });
+
   it("keeps a title that spans multiple lines", () => {
     expect(
       extractImage(
