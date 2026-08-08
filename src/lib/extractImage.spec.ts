@@ -36,4 +36,44 @@ describe("extractImage", () => {
       ),
     ).toEqual(expect.objectContaining({ alt: "the_alt", title: "the_title" }));
   });
+
+  it("keeps an apostrophe inside a double-quoted title", () => {
+    expect(
+      extractImage(
+        '<img src="https://blog.beeminder.com/image.png" title="She\'s behind" />',
+      ),
+    ).toEqual(expect.objectContaining({ title: "She's behind" }));
+  });
+
+  it("keeps a double quote inside a single-quoted title", () => {
+    expect(
+      extractImage(
+        `<img src="https://blog.beeminder.com/image.png" title='He said "hi"' />`,
+      ),
+    ).toEqual(expect.objectContaining({ title: 'He said "hi"' }));
+  });
+
+  it("keeps an apostrophe inside a double-quoted alt", () => {
+    expect(
+      extractImage(
+        '<img src="https://blog.beeminder.com/image.png" alt="Editor\'s note" />',
+      ),
+    ).toEqual(expect.objectContaining({ alt: "Editor's note" }));
+  });
+
+  it("keeps an apostrophe inside a double-quoted src", () => {
+    expect(
+      extractImage('<img src="https://blog.beeminder.com/it\'s.png" />'),
+    ).toEqual(
+      expect.objectContaining({ src: "https://blog.beeminder.com/it's.png" }),
+    );
+  });
+
+  it("keeps a title that spans multiple lines", () => {
+    expect(
+      extractImage(
+        '<img src="https://blog.beeminder.com/image.png" title="line one\nline two" />',
+      ),
+    ).toEqual(expect.objectContaining({ title: "line one\nline two" }));
+  });
 });
