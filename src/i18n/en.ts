@@ -24,7 +24,7 @@ export const en = {
     documentTitle: (title: string) => `${title} | Beeminder Blog`,
     rssTitle: "RSS",
     defaultDescription:
-      "Beeminder is goal-tracking with teeth. We plot your progress on a graph with a Bright Red Line (formerly Yellow Brick Road). If your datapoints cross that line, we take your money. The Beeminder blog is a hodgepodge of productivity nerdery and behavioral economics written by the founders and various friends.",
+      "Beeminder is goal-tracking with teeth. We plot your progress on a graph with a Bright Red Line (formerly Yellow Brick Road). If your datapoints cross that line, we take your money. The Beeminder blog is a hodgepodge of productivity nerdery and behavioral economics written by the founders and various friends. 100% human-written always.",
   },
 
   header: {
@@ -50,7 +50,7 @@ export const en = {
     aboutHeading: "About",
     // HTML fragments (set:html): contain links / emphasis.
     aboutLede: `<a href="http://beeminder.com">Beeminder</a> is goal-tracking with teeth. We plot your progress on a graph with a Bright Red Line (formerly <i>Yellow Brick Road</i>). If your datapoints cross that line, we take your money.`,
-    aboutBlog: `The Beeminder blog is a hodgepodge of productivity nerdery and behavioral economics written by the founders and various friends.`,
+    aboutBlog: `The Beeminder blog is a hodgepodge of productivity nerdery and behavioral economics written by the founders and various friends. 100% human-written always.`,
     dogfoodHeading: "Eating Our Own Dog Food",
     dogfoodAlt: "dogfood graph",
     dogfoodTitle: "The reason we still have a blog",
