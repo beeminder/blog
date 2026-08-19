@@ -7649,5 +7649,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "beeminder philosophy", "ai"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "sqrt",
+"disqus_id": "sqrt",
+"source": "doc.bmndr.co/sqrt",
+"redirects": [],
+"date": "2026-08-18",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "new features", "math"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
