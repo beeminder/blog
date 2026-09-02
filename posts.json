@@ -7659,5 +7659,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "new features", "math"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "ariely",
+"disqus_id": "ariely",
+"source": "doc.bmndr.co/ariely",
+"redirects": [],
+"date": "2026-09-01",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "science"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
