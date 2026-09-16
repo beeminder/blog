@@ -7669,5 +7669,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "science"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "pop",
+"disqus_id": "pop",
+"source": "doc.bmndr.co/pop",
+"redirects": [],
+"date": "2026-09-15",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "web design", "anti-magic"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
