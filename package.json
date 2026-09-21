@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/sitemap": "^3.7.4",
     "@fontsource-variable/lora": "^5.3.0",
     "@fontsource/source-sans-pro": "^5.3.0",
     "astro": "^7.2.8",
