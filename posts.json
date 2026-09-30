@@ -7679,5 +7679,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "web design", "anti-magic"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "paternalism",
+"disqus_id": "paternalism",
+"source": "doc.bmndr.co/paternalism",
+"redirects": [],
+"date": "2026-09-29",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "web design", "anti-magic", "anti-settings", "software engineering"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
