@@ -7689,5 +7689,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "web design", "anti-magic", "anti-settings", "software engineering"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "procrastinate",
+"disqus_id": "procrastinate",
+"source": "doc.bmndr.co/procrastinate",
+"redirects": [],
+"date": "2026-10-13",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "rationality", "writing", "procrastination"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
