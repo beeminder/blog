@@ -570,6 +570,8 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pareto' 1`] = `"https://
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/paretocaps' 1`] = `"https://the_source_domain/paretocaps/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/paternalism' 1`] = `"https://the_source_domain/paternalism/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/paypal' 1`] = `"https://the_source_domain/paypal/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pcrc' 1`] = `"https://the_source_domain/pcrc/export/txt"`;
@@ -590,11 +592,15 @@ exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pocket' 1`] = `"https://
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pomopoker' 1`] = `"https://the_source_domain/pomopoker/export/txt"`;
 
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/pop' 1`] = `"https://the_source_domain/pop/export/txt"`;
+
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/postel' 1`] = `"https://the_source_domain/postel/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/postminder' 1`] = `"https://the_source_domain/postminder/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/predict' 1`] = `"https://the_source_domain/predict/export/txt"`;
+
+exports[`canonicalizeUrl > handles source 'doc.bmndr.co/procrastinate' 1`] = `"https://the_source_domain/procrastinate/export/txt"`;
 
 exports[`canonicalizeUrl > handles source 'doc.bmndr.co/protein' 1`] = `"https://the_source_domain/protein/export/txt"`;
 
