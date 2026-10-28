@@ -7699,5 +7699,15 @@
 "status": "publish",
 "tags": ["bee-all", "rationality", "writing", "procrastination"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "unfitbit",
+"disqus_id": "unfitbit",
+"source": "doc.bmndr.co/fitsunsetbit",
+"redirects": [],
+"date": "2026-10-27",
+"author": "bsoule",
+"status": "publish",
+"tags": ["bee-all", "api", "fitbit", "fitness", "integrations", "new features", "quantified self"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
