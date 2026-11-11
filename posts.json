@@ -7709,5 +7709,15 @@
 "status": "publish",
 "tags": ["bee-all", "api", "fitbit", "fitness", "integrations", "new features", "quantified self"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "consistency",
+"disqus_id": "consistency",
+"source": "doc.bmndr.co/consistency",
+"redirects": [],
+"date": "2026-11-10",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "quantified self", "writing", "rationality"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
