@@ -40,3 +40,6 @@ __pycache__/
 !.zenflow/settings.json
 
 sourcery.html
+sourcery.*.jsonl
+
+image-audit/
