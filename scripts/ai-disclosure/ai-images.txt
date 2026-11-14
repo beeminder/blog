@@ -205,6 +205,8 @@
 2011/06/stick.jpg
 # in /monkey, in place of a stock-look photo
 2012/04/monkey.jpg
+# in /habits, in place of a stock-look photo
+2012/08/habitnun.jpg
 # in /resolutions, in place of a stock-look photo
 2012/12/more.png
 # in /recommit, in place of a stock-look photo
@@ -215,12 +217,16 @@
 2013/04/wsj-bull.jpg
 # in /philip, in place of a stock-look photo
 2014/07/bluesky.jpg
+# in /buzz5, in place of a stock-look photo
+2014/09/catbee-e1409814003568.jpg
 # in /deadlines, in place of a stock-look photo
 2014/10/multiple_alarm_clocks.jpg
 # in /veggieminding, in place of a stock-look photo
 2014/11/veggie-cornucopia.jpg
 # in /trust, in place of a stock-look photo
 2015/09/laughing-elephant.jpg
+# in /willpower, in place of a stock-look photo
+2016/03/marshmallow-kid.jpg
 # in /obscure, in place of a stock-look photo
 2016/04/bee-face-obscure.jpeg
 # in /derail, in place of a stock-look photo
