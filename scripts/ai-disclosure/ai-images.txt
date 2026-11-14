@@ -198,3 +198,20 @@
 2024/07/ai-memo-bee.png
 # was https://github.com/user-attachments/assets/c3fddf57-991c-4135-a5c5-195ff4279eca (in /consistency, user-confirmed AI; caption by corner_caption.py, 10 px, bottom-right)
 2026/11/ai-heraldic-seal.png
+
+[cartoon]
+# AI cartoons drawn in Faire's style. image-audit/review/server.mjs keeps this section in step.
+# in /recommit, in place of a stock-look photo
+2013/02/ostrich.jpg
+# in /premium, in place of a stock-look photo
+2013/04/tada.jpg
+# in /philip, in place of a stock-look photo
+2014/07/bluesky.jpg
+# in /trust, in place of a stock-look photo
+2015/09/laughing-elephant.jpg
+# in /obscure, in place of a stock-look photo
+2016/04/bee-face-obscure.jpeg
+# in /derail, in place of a stock-look photo
+2016/09/19thomas-600.jpg
+# in /survivor, in place of a stock-look photo
+2019/04/dead-bees.jpg
