@@ -201,17 +201,35 @@
 
 [cartoon]
 # AI cartoons drawn in Faire's style. image-audit/review/server.mjs keeps this section in step.
+# in /stickk, in place of a stock-look photo
+2011/06/stick.jpg
+# in /monkey, in place of a stock-look photo
+2012/04/monkey.jpg
+# in /resolutions, in place of a stock-look photo
+2012/12/more.png
 # in /recommit, in place of a stock-look photo
 2013/02/ostrich.jpg
 # in /premium, in place of a stock-look photo
 2013/04/tada.jpg
+# in /wsj, in place of a stock-look photo
+2013/04/wsj-bull.jpg
 # in /philip, in place of a stock-look photo
 2014/07/bluesky.jpg
+# in /deadlines, in place of a stock-look photo
+2014/10/multiple_alarm_clocks.jpg
+# in /veggieminding, in place of a stock-look photo
+2014/11/veggie-cornucopia.jpg
 # in /trust, in place of a stock-look photo
 2015/09/laughing-elephant.jpg
 # in /obscure, in place of a stock-look photo
 2016/04/bee-face-obscure.jpeg
 # in /derail, in place of a stock-look photo
 2016/09/19thomas-600.jpg
+# in /will, in place of a stock-look photo
+2017/08/commit-asylum.jpg
 # in /survivor, in place of a stock-look photo
 2019/04/dead-bees.jpg
+# in /dogeatdog, in place of a stock-look photo
+2019/05/dog-as-hot-dog.jpg
+# in /vegdays, in place of a stock-look photo
+2019/09/skeptical-cow.jpeg
