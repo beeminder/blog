@@ -215,6 +215,8 @@
 2013/04/tada.jpg
 # in /wsj, in place of a stock-look photo
 2013/04/wsj-bull.jpg
+# in /autocancel, in place of a stock-look photo
+2013/05/moneydomino.jpeg
 # in /philip, in place of a stock-look photo
 2014/07/bluesky.jpg
 # in /buzz5, in place of a stock-look photo
