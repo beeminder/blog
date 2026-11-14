@@ -196,3 +196,5 @@
 2024/06/ai-monk-journal.png
 # was https://github.com/beeminder/blog/assets/46881/4e583a35-9467-477c-9046-77349f9e1d0f (in /ownwords)
 2024/07/ai-memo-bee.png
+# was https://github.com/user-attachments/assets/c3fddf57-991c-4135-a5c5-195ff4279eca (in /consistency, user-confirmed AI; caption by corner_caption.py, 10 px, bottom-right)
+2026/11/ai-heraldic-seal.png

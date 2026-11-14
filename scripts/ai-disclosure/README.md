@@ -33,6 +33,9 @@ right-click-saves.
 
 1. `slopify.py input.png output.png` — bakes the caption (red Courier with a
    white stroke so it survives red/busy backgrounds; size scales with width).
+   For a smaller caption kept inside a solid-colour corner, use
+   `corner_caption.py input.png output.png br` (or bl, tr, tl); it picks the
+   largest size from 13 px down that fits, and `--max-size=N` caps it.
 2. The treated file goes in `public/wp-content/uploads/YYYY/MM/` matching the
    post's date, with an evocative greppable name (`ai-book-butterfly.png`).
 3. If the pad hotlinked the image from GitHub's CDN, the pad's src URL is
