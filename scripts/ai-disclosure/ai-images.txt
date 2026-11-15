@@ -227,6 +227,8 @@
 2014/11/veggie-cornucopia.jpg
 # in /trust, in place of a stock-look photo
 2015/09/laughing-elephant.jpg
+# in /revealed, in place of a stock-look photo
+2016/02/paul-samuelson.jpg
 # in /willpower, in place of a stock-look photo
 2016/03/marshmallow-kid.jpg
 # in /obscure, in place of a stock-look photo
