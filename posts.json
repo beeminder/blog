@@ -7719,5 +7719,15 @@
 "status": "publish",
 "tags": ["bee-all", "quantified self", "writing", "rationality"],
 "excerpt": "MAGIC_AUTO_EXTRACT"
+},{
+"slug": "mulligans",
+"disqus_id": "mulligans",
+"source": "doc.bmndr.co/mulligans",
+"redirects": [],
+"date": "2026-11-24",
+"author": "dreev",
+"status": "publish",
+"tags": ["bee-all", "science", "streaks", "rationality", "milkman", "psychology", "tips"],
+"excerpt": "MAGIC_AUTO_EXTRACT"
 }
 ]
